@@ -8,8 +8,8 @@ I’m Catherine Ray, a researcher training to be a mathematician. My current res
 
 ### Research publications:
 
-[Automorphisms of Abelian Varieties and Principal Polarizations](http://web.archive.org/web/20200420170156/https://arxiv.org/abs/1811.07007) joint with D. Lee
-[Towards Directed Collapsibility](http://web.archive.org/web/20200420170156/https://arxiv.org/abs/1902.01039) joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre
+-[Automorphisms of Abelian Varieties and Principal Polarizations](http://web.archive.org/web/20200420170156/https://arxiv.org/abs/1811.07007) joint with D. Lee
+-[Towards Directed Collapsibility](http://web.archive.org/web/20200420170156/https://arxiv.org/abs/1902.01039) joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre
 
 ### Research preprints:
 
