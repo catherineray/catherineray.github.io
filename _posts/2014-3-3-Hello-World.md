@@ -1,10 +1,9 @@
 ---
 layout: post
-title: You're up and running!
+title: Old Posts Are Being Manually Restored
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+During an update to the server in September and an issue with the backup system, the site was corrupted. Some posts have been totally lost. All previous comments have been totally lost.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+I have been running this blog regularly since 2013. I am manually restoring the posts one by one. If you have a post you’d like to reference in particular, email me and I will prioritize putting that up.
