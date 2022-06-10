@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I’m Catherine Ray, a researcher training to be a mathematician. My current research is namely in understanding the interplay of Galois theory and Galois representations with homotopy theory. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology.
+My name is Catherine Ray, and I'm a mathematician. My current research is namely in understanding the interplay of Galois theory and Galois representations with homotopy theory. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology.
 
 ### Research publications:
 
