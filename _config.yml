@@ -17,16 +17,16 @@ avatar:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: fractalcows@gmail.com
   facebook:
   flickr:
-  github: 
+  github: catherineray
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
-  stackoverflow: https://math.stackexchange.com/users/166716/catherine-ray
+  stackoverflow: #https://math.stackexchange.com/users/166716/catherine-ray
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
