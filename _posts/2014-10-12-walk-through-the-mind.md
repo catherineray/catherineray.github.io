@@ -1,0 +1,8 @@
+---
+title: "Walk through the mind (Pencil)"
+date: "2014-10-12"
+categories: 
+  - "art"
+---
+
+[![10723632_10204076377982369_1582911413_n](/wp-content/uploads/2014/10/10723632_10204076377982369_1582911413_n.jpg)](/wp-content/uploads/2014/10/10723632_10204076377982369_1582911413_n.jpg)
