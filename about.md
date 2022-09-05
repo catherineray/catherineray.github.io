@@ -6,7 +6,7 @@ permalink: /about/
 
 My name is Catherine Ray, and I'm a mathematician. My current research is namely in understanding the interplay of Galois theory and Galois representations with homotopy theory. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology.
 
-![](images/302286186_3338558643054750_1837839150131142314_n.jpg =x250)
+![text](images/302286186_3338558643054750_1837839150131142314_n.jpg)
 
 ### Research publications:
 
