@@ -11,7 +11,7 @@ My name is Catherine Ray, and I'm a mathematician. My current research is namely
 ### Research publications:
 
 - [Automorphisms of Abelian Varieties and Principal Polarizations](https://link.springer.com/article/10.1007/s12215-020-00590-7) joint with D. Lee; _Rendiconti del Circolo Matematico di Palermo Series 2 volume 71, pages 483–494 (2022)_ [arxiv](https://arxiv.org/abs/1811.07007)  
-- [Towards Directed Collapsibility](https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17) joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre; _Part of the Association for Women in Mathematics Series book series (AWMS, Chapter 10, volume 21)_ [arxiv](https://arxiv.org/abs/1902.01039) 
+- [Towards Directed Collapsibility](https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17) joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre; _Advances in Mathematical Sciences, 2020, Volume 21_ [arxiv](https://arxiv.org/abs/1902.01039) 
 
 ### Research preprints:
 
