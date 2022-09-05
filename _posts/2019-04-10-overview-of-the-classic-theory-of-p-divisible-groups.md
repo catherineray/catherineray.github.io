@@ -7,4 +7,4 @@ categories:
 
 Here are the texed notes for my 1 hour oberwolfach talk (the key thing I left out is Cartier duality). I included Manin’s original approach, and remark on some details I find left out of most sources.
 
- [officialober-1](/pdf/officialober.pdf)
+ [officialober-1](/pdfs/officialober.pdf)
