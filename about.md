@@ -10,8 +10,8 @@ My name is Catherine Ray, and I'm a mathematician. My current research is namely
 
 ### Research publications:
 
-- [Automorphisms of Abelian Varieties and Principal Polarizations](https://arxiv.org/abs/1811.07007) joint with D. Lee
-- [Towards Directed Collapsibility](https://arxiv.org/abs/1902.01039) joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre
+- [Automorphisms of Abelian Varieties and Principal Polarizations](https://link.springer.com/article/10.1007/s12215-020-00590-7) Rendiconti del Circolo Matematico di Palermo Series 2 volume 71, pages 483–494 (2022) [arxiv version](https://arxiv.org/abs/1811.07007) joint with D. Lee 
+- [Towards Directed Collapsibility](https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17) Part of the Association for Women in Mathematics Series book series (AWMS, Chapter 10, volume 21) [arxiv version](https://arxiv.org/abs/1902.01039) joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre
 
 ### Research preprints:
 
@@ -24,9 +24,9 @@ A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of 
 ### Expository writing:
 
 - [Calculating pi_*(tmf) at the prime 2](https://people.math.rochester.edu/faculty/doug/otherpapers/ray-a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
-- [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](http://web.archive.org/web/20200420170156/http://rin.io/wp-content/uploads/2016/11/gromovprooffill.pdf)
-- [Fiber Bundles of Formal Disks](http://web.archive.org/web/20200420170156/http://rin.io/fiber-bundles-of-formal-disks/) (with A. Holeman)
-- [An Overview of the Classic Theory of P-Divisible Groups](http://web.archive.org/web/20200420170156/http://rin.io/wp-content/uploads/2019/04/officialober-1.pdf) (Published in Oberwolfach Proceedings)
+- [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
+- [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
+- [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
 
 ### Contact me
 
