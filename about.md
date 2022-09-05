@@ -8,8 +8,6 @@ My name is Catherine Ray, and I'm a mathematician. My current research is namely
 
 ![](images/Screenshot from 2022-09-05 16-32-44.png)
 
-<img src="images/302286186_3338558643054750_1837839150131142314_n.jpg" width="200"/>
-
 ### Research publications:
 
 - [Automorphisms of Abelian Varieties and Principal Polarizations](https://link.springer.com/article/10.1007/s12215-020-00590-7) joint with D. Lee; _Rendiconti del Circolo Matematico di Palermo Series 2, Volume 71, pages 483–494, 2022_ [arxiv](https://arxiv.org/abs/1811.07007)  
