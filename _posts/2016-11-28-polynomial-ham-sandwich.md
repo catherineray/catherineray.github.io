@@ -6,4 +6,4 @@ categories:
   - "papers"
 ---
 
-[gromovprooffill](/wp-content/uploads/2016/11/gromovprooffill.pdf)
+[gromovprooffill](/images/wp-content/uploads/2016/11/gromovprooffill.pdf)
