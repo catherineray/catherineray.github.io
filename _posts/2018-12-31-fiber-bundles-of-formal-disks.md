@@ -10,4 +10,4 @@ Here is an incomplete proof that varieties are fiber bundles of formal disks ove
 
 Acknowledgements: This is the result of a working group with Dan Fletcher, Adam Holeman, and me as part of the Northwestern Homotopy Working Seminar (started by Matthew Weatherly, Grigory Kondyrev, and me). The working session in which Adam and I figured out the proof, Dan was not there, which is why his name is not mentioned, but he was very helpful in understanding the claim. This proof is the result of Yaroslav Khromenkov coming up with the idea of it, and Adam and I understanding and correcting his solution during a working session.
 
-[If the pdf viewer doesn’t work, here is a link to the paper.](/wp-content/uploads/2018/12/formalgroup-1.pdf)
+[Here is the paper.](/images/wp-content/uploads/2018/12/formalgroup-1.pdf)
