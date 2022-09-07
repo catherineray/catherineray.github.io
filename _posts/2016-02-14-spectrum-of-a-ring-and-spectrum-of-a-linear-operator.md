@@ -7,7 +7,7 @@ categories:
 
 A quick post before bed, an impressionist stroke on some nice things lurking in linear algebra. I love polynomials. They are the ultimate tools that make me feel like I’m touching something, calculating at the level of a polynomial is a good clean feeling. I want to show you that it is nice to think of a vector space over \\(F\\) as a \\(F[x]\\)-module (thanks Emmy Noether). Thanks to Semon Rezchikov for helping me get over a few bumps in grasping some of the following.
 
-Let \\(A\\) be a finite type \(\mathbb{C}\)-algebra, then \(A = \mathbb{C}[x_1, \ldots, x_n]/(f_1, \ldots , f_k)\), then Spec \(A\) is the variety cut out of \(\mathbb{C}^n\) by \(f_1, \ldots, f_k\).
+Let \\(A\\) be a finite type \\(\mathbb{C}\\)-algebra, then \\(A = \mathbb{C}[x_1, \ldots, x_n]/(f_1, \ldots , f_k)\\), then Spec \\(A\\) is the variety cut out of \\(\mathbb{C}^n\\) by \\(f_1, \ldots, f_k\\).
 
 We can specify representation of \(C[x]\) on a vector space \(V\) by specifying where to send \(x\). That is, by specifying a linear operator \(A\).
 
