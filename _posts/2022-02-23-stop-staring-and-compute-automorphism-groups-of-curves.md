@@ -12,6 +12,16 @@ Let’s compute the automorphism groups of some curves. There are many ways to d
 
 Let’s start with the most straightforward one. Run sage and type this into your terminal, hitting enter after each line.
 
+
+
+
+  A.<x,y>=AffineSpace(QQ,2)
+  C=Curve(y^8-x*(x-1)^4)
+  S=C.riemann_surface(prec=100)
+  G=S.symplectic_automorphism_group()
+  print(G.gens()[0:15])
+  print(G.order())
+
 ```
 A.<x,y>=AffineSpace(QQ,2)
 C=Curve(y^8-x*(x-1)^4)
