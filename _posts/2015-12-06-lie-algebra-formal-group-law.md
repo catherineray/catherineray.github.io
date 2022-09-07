@@ -7,23 +7,23 @@ categories:
 
 _This post assumes that you are familiar with the definition of Lie group/algebra, and that you are comfortable with the Lazard ring. Note: This is less of an expository post and more of an unfinished question._
 
-Why care about formal group laws? Well, we want to study smooth algebraic groups, but Lie algebras fail us in characteristic p (for example, \(\frac{d}{dx}(x^p) = 0\)), so, rather than a tangent bundle, we take something closer to a jet bundle.
+Why care about formal group laws? Well, we want to study smooth algebraic groups, but Lie algebras fail us in characteristic p (for example, \\(\frac{d}{dx}(x^p) = 0\\)), so, rather than a tangent bundle, we take something closer to a jet bundle.
 
-> Lie algebras are to smooth groups over \(\mathbb{R}\) or \(\mathbb{C}\) as formal group laws are to smooth algebraic groups over any ring \(R\).
+> Lie algebras are to smooth groups over \\(\mathbb{R}\\) or \(\mathbb{C}\\) as formal group laws are to smooth algebraic groups over any ring \\(R\\).
 
 I want to apply this analogy! I want this deeply. I’m trying to puzzle out how to see if this analogy is deep or superficial. How deep does the rabbit hole go? Let’s look at an example.
 
-Given the universal enveloping algebra of a Lie algebra \(\mathfrak{g}\), we might think of this as a deformation of the Symmetric algebra:
+Given the universal enveloping algebra of a Lie algebra \\(\mathfrak{g}\\), we might think of this as a deformation of the Symmetric algebra:
 
 \\(U_{\epsilon}(\mathfrak{g}) := T(\mathfrak{g})/(x \otimes y - y \otimes x - \epsilon[x, y])\\)
 
 \\(\mathbb{C}[\mathfrak{g}^*] \simeq Symm[\mathfrak{g}] := T(\mathfrak{g})(x \otimes y - y \otimes x)\\)
 
-Action on all of this is the adjoint action, that is, the action which takes an element \(g\) of a Lie group \(G\) sends \(X \mapsto gXg^{-1}\). Orbits of this action stratify the dual Lie algebra, and there is a symplectic form that lives on each orbit.
+Action on all of this is the adjoint action, that is, the action which takes an element \\(g\\) of a Lie group \\(G\\) sends \\(X \mapsto gXg^{-1}\\). Orbits of this action stratify the dual Lie algebra, and there is a symplectic form that lives on each orbit.
 
-I want to think of the adjoint action as directly analogous to the compositional conjugation action on the spectrum of the Lazard ring (over a ring \(R\)).
+I want to think of the adjoint action as directly analogous to the compositional conjugation action on the spectrum of the Lazard ring (over a ring \\(R\\)).
 
-This action takes an invertible power series \(u\) and applies it in the following manner to a formal group law \(F\) over \(R\).
+This action takes an invertible power series \\(u\\) and applies it in the following manner to a formal group law \\(F\\) over \\(R\\).
 
 \\(F(x, y) \mapsto u^{-1}(F(u(x), u(y)))\\)
 
