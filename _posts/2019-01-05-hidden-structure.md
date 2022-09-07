@@ -1,6 +1,6 @@
 ---
 title: "Hidden Structure"
-date: "2019-01-05"
+date: "2017-01-05"
 categories: 
   - "writing"
 ---
