@@ -5,9 +5,7 @@ categories:
   - "math"
 ---
 
-_This post assumes that you’re familiar with the definition of a prime ideal, a local ring, \\(R_{(p)}\\), the sphere spectrum, \\(\mathbb{S}\\), and the Lazard ring, \\(L\\)._
-
-During a talk [Jacob Lurie](http://www.math.harvard.edu/~lurie/) gave at Harvard this April, he labeled the moduli space of (1-d commutative) formal group laws as \\(\text{Spec }\mathbb{S}\\).
+_This post assumes that you’re familiar with the definition of a prime ideal, a local ring, \\(R_{(p)}\\), the sphere spectrum, \\(\mathbb{S}\\), and the Lazard ring, \\(L\\). During a talk [Jacob Lurie](http://www.math.harvard.edu/~lurie/) gave at Harvard this April, he labeled the moduli space of (1-d commutative) formal group laws as \\(\text{Spec }\mathbb{S}\\).
 
 [Eric Peterson](https://math.berkeley.edu/~ericp/) kindly explained why \\(\text{Spec }\mathbb{S} \simeq \text{Spec }L\\) and I found his answer so lovely that I wish to share (all mistakes are due to me).
 
@@ -40,7 +38,7 @@ A “prime ideal” of \\(Perf_R\\) is a “proper thick tensor-ideal” \\(P\\)
 
 \\\(a \otimes b \in \mathcal{P} \Rightarrow a \in \mathcal{P} \text{ or } b \in \mathcal{P}\\\)
 
-So, if \\(K_*(-)\\) is a homology theory with Künneth isomorphisms \\\(K_*(X \wedge Y) \simeq K_*(X) \otimes_{K_*} K_*(Y))\\\)
+So, if \\( K_*(-) \\) is a homology theory with Künneth isomorphisms \\(K_*(X \wedge Y) \simeq K_*(X) \otimes_{K_*} K_*(Y))\\)
 
 \\(\Rightarrow \mathcal{P} = {X | K_*(X) = 0}\\) must be a “prime ideal”.
 
