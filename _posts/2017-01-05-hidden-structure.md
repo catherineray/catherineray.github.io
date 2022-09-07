@@ -5,6 +5,8 @@ categories:
   - "writing"
 ---
 
+A poem, for a change of pace.
+
 Beauty wilts and love will flucture 
 what remains is hidden structure
 blushing primes sly chiding knots 
