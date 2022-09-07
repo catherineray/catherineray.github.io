@@ -9,7 +9,7 @@ _Thanks to Mia Hughes and John Huerta for the helpful discussions on this topic.
 
 I am here taking another quick jab at trying to understand the construction of the Tits-Freudenthal Magic square. Let’s see if we can get into Vinberg’s mindset when he wrote down Vinberg’s construction.
 
-Let’s say we knew the following theorem: \\\(\text{ the derivations of } \mathcal{J}_3(\mathbb{O}) = f_4\\\) We want to write down derivations of other algebras, \\(\mathbb{O} \otimes_{\mathbb{R}} \mathbb{D}\\), where \\(\mathbb{D}\\) is a division algebra.
+Let’s say we knew the following theorem: \\(\text{ the derivations of } \mathcal{J}_3(\mathbb{O}) = f_4\\) We want to write down derivations of other algebras, \\(\mathbb{O} \otimes_{\mathbb{R}} \mathbb{D}\\), where \\(\mathbb{D}\\) is a division algebra.
 
 Let’s see how we might derive the fact that \\\(\text{der}(\mathcal{J}_3(\mathbb{A})) \simeq a_3(\mathbb{A}) \oplus \text{der}(\mathbb{A})\\\)
 
