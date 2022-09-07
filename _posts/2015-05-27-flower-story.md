@@ -1,5 +1,5 @@
 ---
-title: "Spf (E^*[[x]]): Your walk through a flower garden"
+title: "Spf (E*[[x]]): Your walk through a flower garden"
 date: "2015-05-27"
 categories: 
   - "writing"
