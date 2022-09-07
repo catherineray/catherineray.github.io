@@ -6,7 +6,7 @@ categories:
   - "math"
 ---
 
-Let’s compute the automorphism groups of some curves. Often presented as an insurmountable task, we must couragously go forward. There are many ways to do this! We will be using 3 different algorithms for this. If you do not have sage math working, you can use [the sagecell emulator](https://sagecell.sagemath.org/).
+Let’s compute the automorphism groups of some curves. Often presented as an insurmountable task, we must couragously go forward. There are many ways to do this! We will be using 3 different algorithms, so choose according to your taste. If you do not have SageMath installed on your computer, you can use [the sagecell emulator](https://sagecell.sagemath.org/).
 
 ## Directly into your terminal using SageMath
 
