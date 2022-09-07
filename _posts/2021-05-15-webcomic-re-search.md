@@ -17,8 +17,6 @@ Please enjoy my webcomic on what it feels like to run into a concept for the fir
 
 ![](images/wp-content/uploads/2021/03/p3.jpg)
 
-![](images/wp-content/uploads/2021/03/p4.jpg)
-
 ![](images/wp-content/uploads/2021/03/p5.jpg)
 
 ![](images/wp-content/uploads/2021/03/p6.jpg)
