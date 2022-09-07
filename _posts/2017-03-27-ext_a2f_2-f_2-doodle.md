@@ -5,4 +5,4 @@ categories:
   - "art"
 ---
 
-![](/wp-content/uploads/2017/03/IMG_20170327_142155-846x1024-1.jpg)
+![](/images/wp-content/uploads/2017/03/IMG_20170327_142155-846x1024-1.jpg)
