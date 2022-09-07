@@ -6,21 +6,11 @@ categories:
   - "math"
 ---
 
-Let’s compute the automorphism groups of some curves. There are many ways to do this! We will be using 3 different algorithms for this.
+Let’s compute the automorphism groups of some curves. There are many ways to do this! We will be using 3 different algorithms for this. If you do not have sage math working, you can use [the sagecell emulator](https://sagecell.sagemath.org/).
 
 ## Directly into your terminal using SageMath
 
 Let’s start with the most straightforward one. Run sage and type this into your terminal, hitting enter after each line.
-
-
-
-
-  A.<x,y>=AffineSpace(QQ,2)
-  C=Curve(y^8-x*(x-1)^4)
-  S=C.riemann_surface(prec=100)
-  G=S.symplectic_automorphism_group()
-  print(G.gens()[0:15])
-  print(G.order())
 
 ```
 A.<x,y>=AffineSpace(QQ,2)
