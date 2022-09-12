@@ -5,13 +5,13 @@ categories:
   - "math"
 ---
 
-_This proof was made possible by a couple helpful and fabulous conversations with [Yifeng Liu](http://www.math.northwestern.edu/~liuyf\\). All errors are mine and mine alone._
+_This proof was made possible by a couple helpful and fabulous conversations with [Yifeng Liu](http://www.math.northwestern.edu/~liuyf). All errors are mine and mine alone._
 
 This is toward my understanding of the phrase “Why is height so important as an invariant? Because the height of a formal group law comes from the symmetry of the underlying variety.”
 
-In short — **high amount of symmetry in the underlying abelian variety implies a high height of its formal group law** (the converse is NOT true, if this was true, [Elkies’s supersingularity theorem](/a-question-on-primes\\) would be false).
+In short — **high amount of symmetry in the underlying abelian variety implies a high height of its formal group law** (the converse is NOT true, if this was true, [Elkies’s supersingularity theorem](/a-question-on-primes) would be false).
 
-One method of getting lower dimensional formal group laws from abelian varieties of higher dimension is via using the theory of complex multiplication — splitting the abelian variety by splitting the prime [(as I exposited in my paper here)](/every-height\\).
+One method of getting lower dimensional formal group laws from abelian varieties of higher dimension is via using the theory of complex multiplication — splitting the abelian variety by splitting the prime [(as I exposited in my paper here)](/every-height).
 
 **I show that for abelian varieties with CM, the height of the formal group law pieces are expressible as a formula in terms of the degree of some field extensions of \\(Q_p\\) (one corresponding to each prime living over \\(p\\)) and the dimension of the rational endomorphism ring of the variety as a \\(Q\\)-vector space.**
 
