@@ -13,23 +13,21 @@ permalink: /resources/
 ### "Basics":
 
 - [Math Girls](http://bentobooks.com/resources/math-girls-sample.pdf)
-- [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures]()
+- [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures](https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/)
 - [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)\
-- [The Algebra II Lectures of the Poetic Kazuya Kato](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf)
+
 - [Topology for Physicists]()
-- [Pictorial basic topology via physics and engineering examples]()
-- [Kindergarten Quantum Mechanics]()
+- [Pictorial basic topology via physics and engineering examples](https://www2.math.upenn.edu/~ghrist/notes.html)
+- [Kindergarten Quantum Mechanics](https://arxiv.org/pdf/quant-ph/0510032.pdf)
 
 ### Medium Spice:
-
-[A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper
+- [The Algebra II Lectures of the Poetic Kazuya Kato](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf)
 
 ### Learning Haskell 
 
 
 ### The Brain:
 
-A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of Ramified Curves — (my thesis in progress)
 
 ### Robotics
 
