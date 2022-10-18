@@ -5,10 +5,8 @@ permalink: /resources/
 ---
 
 
-“The thing to keep in mind is that all these “basics” were once cutting-edge research. And the people who got to the bottom of these matters were not trivial idiots. They were great masters. The more you look at this material in this way, the more you’ll find you can tolerate it in good humor, and without fearing its deadening effects on your strange, wild mind.”
+"The thing to keep in mind is that all these "basics" were once cutting-edge research. And the people who got to the bottom of these matters were not trivial idiots. They were great masters. The more you look at this material in this way, the more you’ll find you can tolerate it in good humor, and without fearing its deadening effects on your strange, wild mind."
 — Laurens Gunnarsen
-
-![](images/Screenshot from 2022-09-05 16-32-44.png)
 
 ### "Basics":
 
