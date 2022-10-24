@@ -19,7 +19,9 @@ My name is Catherine Ray, and I'm a mathematician. My current research is namely
 
 ### In progress:
 
-A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of Ramified Curves — (my thesis in progress)
+-A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of Ramified Curves — (my thesis in progress)
+-Covers of the Octahedron; joint with D. Lee 
+-Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
 
 ### Expository writing:
 
