@@ -12,20 +12,11 @@ permalink: /resources/
 
 - [Math Girls](http://bentobooks.com/resources/math-girls-sample.pdf)
 - [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures](https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/)
-- [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)\
+- [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)
 
-- [Topology for Physicists]()
+- [Topology for Physicists](http://www.thp.uni-koeln.de/zirn/011_Website_Martin_Zirnbauer/3_Teaching/LectureNotes/02ToPhys_SS11.pdf)
 - [Pictorial basic topology via physics and engineering examples](https://www2.math.upenn.edu/~ghrist/notes.html)
 - [Kindergarten Quantum Mechanics](https://arxiv.org/pdf/quant-ph/0510032.pdf)
 
 ### Medium Spice:
 - [The Algebra II Lectures of the Poetic Kazuya Kato](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf)
-
-### Learning Haskell 
-
-
-### The Brain:
-
-
-### Robotics
-
