@@ -7,7 +7,7 @@ categories:
 
 \\(“(B-1)^n = B^n”\\)
 
-\begin{align} (B-1)^2 &= B^2\\ B^2 - 2B^1 + 1 &= B^2 \\ -2B^1+1 & = 0\\ B^1 &= \frac{1}{2} \\ B_1 &= \frac12 \end{align}
+\begin{align} (B-1)^2 &= B^2 \\\ B^2 - 2B^1 + 1 &= B^2 \\\ -2B^1+1 & = 0 \\\ B^1 &= \frac{1}{2} \\\ B_1 &= \frac12 \end{align}
 
 \begin{align} (B-1)^3 &= B^3\\ B^3 - 3B^2 + 3B^1 - 1 &= B^3 \\ B^3 - 3B^2 + 3B_1 - 1 &= B^3 \\ -3B^2 + 3(\frac{1}{2})-1& = 0\\ -3B_2 + \frac{1}{2} &= 0 \\ B_2 &= \frac{1}{6} \end{align}
 
