@@ -4,7 +4,7 @@ date: "2023-02-28"
 categories: 
   - "math"
 ---
-(In Progress) Recently, I have been haunted by the number 1/2. It shows up in the Weil conjectures via the Riemann Hypothesis. It shows up in HKR-isomorphism when multiplying by the square root of the Todd class to amend the multiplicative structure. It shows up in the way we measure distance betwen vectors (\\(L^2\\) distance, anyway).  
+(Post In Progress) Recently, I have been haunted by the number 1/2. It shows up in the Weil conjectures via the Riemann Hypothesis. It shows up in HKR-isomorphism when multiplying by the square root of the Todd class to amend the multiplicative structure. It shows up in the way we measure distance betwen vectors (\\(L^2\\) distance, anyway).  
 
 Through a suggestion of Ezra Getzler, it seems one place begin to understand the nature of the 1/2 is to understand the Harish-Chandra isomorphism. The statement is as follows. 
 
