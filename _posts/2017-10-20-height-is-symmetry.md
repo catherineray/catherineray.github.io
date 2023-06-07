@@ -30,7 +30,7 @@ Notation:
 
 **Theorem:**
 
-1. the decomposition \\(D \otimes \mathbb{Q}_p = \prod_{w \in \Sigma^{(p)}_L} D_w\\) and \\(\mathcal{O}_L = \prod \mathcal{O}_{L_w}\\) gives a decomposition \\(F = \prod_w F_w\\)
+1. the decomposition \\(D \otimes \mathbb{Q}_p \\) \\( = \prod_{w \in \Sigma^{(p)}_L} D_w\\) and \\(\mathcal{O}_L = \prod \mathcal{O}_{L_w}\\) gives a decomposition \\(F = \prod_w F_w\\)
 2. The height of \\(F_w\\) equals \\([L_w : \mathbb{Q}_p]\cdot\\) r.
 
 We see that part 2 is very interesting — we are expressing the _height of the chunk of the p-divisible group in terms of the rank of the endomorphism ring of the variety_.
