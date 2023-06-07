@@ -5,7 +5,7 @@ categories:
   - "math"
 ---
 
-_Hello, my name is Catherine. I don’t want much, just looking for a nice Variety to spend my days with. If you apply, I’d like you to have a well understood group law that comes from some 3-fold symmetry, but I’m a simple girl, easy to please, and I don’t need your group law to be all fancy and closed — a group chunk (group law which closed at least locally to the origin) is fine by me. I’ll have to put you through an interview process to see if you’re group chunk gives me a formal group law which is height 3, but don’t worry, it’ll be painless. Please let me know if you have a friend that matches this description!_
+_Hello. I don’t want much, just looking for a nice Variety to spend my days with. If you apply, I’d like you to have a well understood group law that comes from some 3-fold symmetry, but I’m a simple girl, easy to please, and I don’t need your group law to be all fancy and closed — a group chunk (group law which closed at least locally to the origin) is fine by me. I’ll have to put you through an interview process to see if you’re group chunk gives me a formal group law which is height 3, but don’t worry, it’ll be painless. Please let me know if you have a friend that matches this description!_
 
 This post is mostly a set-up to an (ill-formed) question. It’s motivated by this question:
 
@@ -21,11 +21,11 @@ It was also pointed out to me by Doug Ravenel that height 3 formal group laws ca
 
 We begin with the vague desire of deriving a variety from some relationship on a tetrahedron (hoping that this variety has both a group law, and that the group law is height 3). Inna suggested that I look at a right angled tetrahedron to make my life easier, so we will look there.
 
-[![0](/wp-content/uploads/2016/04/0.jpg)](/wp-content/uploads/2016/04/0.jpg)
+[![0](/images/wp-content/uploads/2016/04/0.jpg)](/images/wp-content/uploads/2016/04/0.jpg)
 
 I had an idea for a group law on right-angled tetrahedrons: is a group in which each element is indexed by an angle, that is, the angle \(theta\) of the plane that intersects it symmetrically (to produce the tetrahedron).
 
-[![0 (1)](/wp-content/uploads/2016/04/0-1.jpg)](/wp-content/uploads/2016/04/0-1.jpg)
+[![0 (1)](/images/wp-content/uploads/2016/04/0-1.jpg)](/images/wp-content/uploads/2016/04/0-1.jpg)
 
 Then, we might add their volumes. We now get a third volume. What is an angle which gives us a tetrahedron with this volume? Is it unique?
 
