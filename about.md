@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-My name is Cathe__rin__e Ray (they/them), and I'm a mathematician. My current research is namely in understanding the interplay of Galois theory and Galois representations with homotopy theory. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology.
+My name is Cathe**rin**e Ray (they/them), and I'm a mathematician. My current research is namely in understanding the interplay of Galois theory and Galois representations with homotopy theory. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology.
 
 ![](images/Screenshot from 2022-09-05 16-32-44.png)
 
