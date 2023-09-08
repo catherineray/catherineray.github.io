@@ -8,6 +8,11 @@ My name is Cathe**rin**e Ray (they/them), and I'm a mathematician. My current re
 
 ![](images/Screenshot from 2022-09-05 16-32-44.png)
 
+### Contact me
+
+Curiosity is welcome: fractalcows@gmail.com
+My work email: cray@uni-muenster.de
+
 ### Research publications:
 
 - [Automorphisms of Abelian Varieties and Principal Polarizations](https://link.springer.com/article/10.1007/s12215-020-00590-7) joint with D. Lee; _Rendiconti del Circolo Matematico di Palermo Series 2, Volume 71, pages 483–494, 2022_ [arxiv](https://arxiv.org/abs/1811.07007)  
@@ -29,7 +34,3 @@ My name is Cathe**rin**e Ray (they/them), and I'm a mathematician. My current re
 - [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
 - [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
 - [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
-
-### Contact me
-
-Curiosity is welcome: fractalcows@gmail.com
