@@ -4,6 +4,8 @@ date: "2023-09-16"
 categories: 
   - "math"
 ---
+This post is written together with Josh Mundinger. 
+
 We seek to understand the relations between \(1/2\)'s that appear across mathematics. From the Riemann Hypothesis to the L2 norm, we aim to see the myriad and enticing ways this unfurls; each instance of $1/2$ connected in an anarchic network of equals. In this blog post, we examine a specific example arising in representation theory: the center of the universal enveloping algebra $U\mathfrak g$ of a Lie algebra $\mathfrak g$.
 
 The PBW theorem implies there is an isomorphism of vector spaces 
