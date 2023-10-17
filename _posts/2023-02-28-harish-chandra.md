@@ -12,7 +12,7 @@ which on \\(\text{Sym}^i\\) is given by the symmetrization map
 \\[ sym: x_1x_2\cdots x_i \mapsto \frac{1}{i!} \sum_{\sigma \in S_i} x_{\sigma 1}x_{\sigma 2}\cdots x_{\sigma i}.\\]
 
 The symmetrization map is not a ring homomorphism. Duflo showed, however, that by *twisting* the symmetrization map, one obtains a ring homomorphism. 
-The Chevalley restriction theorem then identifies  \\(\text{Sym}(\mathfrak g)^\mathfrak g\\) with \\(\text{Sym}\mathfrak h^W\\), where \\(\mathfrak h\\) is a Cartan subalgebra and \\(W\\) is the Weyl group.
+The Chevalley restriction theorem then identifies  \\(\text{Sym}(\mathfrak g)^\mathfrak g\\) with \\(\text{Sym}(\mathfrak h)^W\\), where \\(\mathfrak h\\) is a Cartan subalgebra and \\(W\\) is the Weyl group.
 
 On the other hand, when  \\(\mathfrak g\\) is semisimple, there is another way to understand  \\(Z(U\mathfrak g)\\). 
 The Harish-Chandra isomorphism is a "quantized" version of the Chevalley isomorphism, 
@@ -31,7 +31,7 @@ In the case of \\(\mathfrak{sl}_2\\), we show via explicit computation that the 
 
 We investigate the compatibility between three different maps between semi-simple Lie algebras. In particular, we wish to fill in the remaining arrow. We show this commutes explicitly in the case of \\(\mathfrak{sl}_2\\) by diagram chasing the generator by hand. Let's go!
 
-![](images/Screenshot from 2023-10-17 15-42-38.png)
+![](/images/Screenshot from 2023-10-17 15-42-38.png)
 
 The Lie algebra \\(\mathfrak{sl}_2\\) has basis \\(E,F,H\\) with commutation relations 
 \\[ [E,F]=H, \qquad [H,E] = 2E, \qquad [H,F] = -2F.\\]
@@ -58,7 +58,7 @@ The image of \\(z \in Z(U\mathfrak{sl}_2)\\) in \\(\mathbb C[\mathfrak h] = \mat
 
 Let's compute the action of Casimir \\(\Omega\\) on \\(1_\lambda\\):
 
-![](images/Screenshot from 2023-10-17 15-42-48.png)
+![](/images/Screenshot from 2023-10-17 15-42-48.png)
 
 So we have shown that under the Harish-Chandra map,
 ![](images/Screenshot from 2023-10-17 15-42-52.png)
@@ -67,7 +67,7 @@ So we have shown that under the Harish-Chandra map,
 Let's check that \\(\frac{1}{2}\lambda^2 + \lambda\\) is invariant under the \\(W \bullet\\) action. For \\(mathfrak{sl}_2\\), we have \\([H, E]=2E\\), so that the root associated to \\(E\\) is the function \\(\alpha(H) = 2.\\) Then, \\(\rho$ is \\(\frac12\\) of the sum of the simple roots, in other words, \\(\rho = \frac12 (2) = 1\\). The action of \\(W \bullet\\) sends \\(\lambda \mapsto -(\lambda+1)-1 = -\lambda - 2.\\)
 
 So we have shown that under the Harish-Chandra map,
-![](images/Screenshot from 2023-10-17 15-42-58.png)
+![](/images/Screenshot from 2023-10-17 15-42-58.png)
 
 
 ##Duflo 
@@ -87,8 +87,6 @@ If
 then \\(tr(ad(x)^2) = 8a^2 + 8bc \\).
 Hence our differential operator \\(\partial_q \\) is 
 \\[ \partial_q = 1 + \frac{1}{48} (8 \partial_H^2 + 8 \partial_E \partial_F) + h.o.t. = 1 + \frac{1}{6}(\partial_H^2 + \partial_E\partial_F) + h.o.t.\\]
-
-%We now wish to associate a differential operator. The Taylor series of \\(E,F,H \\) are a basis for \\(\mathfrak g= \mathfrak{sl}_2 \\), and \\(\partial_E,\partial_F,\partial_H \\) are a basis for \\(\mathfrak g^\ast \\). Taking the Taylor series for \\(q(x) \\) in coordinates \\(E,F,H \\) gives a series in \\(\partial_E,\partial_F,\partial_H \\).
 
 Applying this differential operator to 
 \\(\frac{1}{2}H^2 + 2 EF \in (S\mathfrak g)^{\mathfrak g}\\)
@@ -118,4 +116,4 @@ is sent to \\(\frac{1}{2}\lambda^2 + \lambda + \frac{1}{2} = \frac{1}{2}\left(\l
 
 We now diagram chase the other side. We showed that the Chevalley map sends the symmetrized Casimir operator \\(\frac{1}{2}H^2 + 2EF\\) to \\(\frac{1}{2} \lambda^2\\) where \\(1_\lambda\\) is the eigenvalue of \\(H\\). The \\(\rho\\)-shift map sends \\(\lambda\\) to \\(\lambda + 1\\), which sends the image of the Chevalley map \\(\frac{1}{2} \lambda^2\\) to \\(\frac{1}{2} (\lambda + 1)^2\\). Therefore, the diagram commutes. We have filled in the square victoriously!
 
-![](images/Screenshot from 2023-10-17 15-51-12.png)
+![](/images/Screenshot from 2023-10-17 15-51-12.png)
