@@ -31,7 +31,7 @@ In the case of \\(\mathfrak{sl}_2\\), we show via explicit computation that the 
 
 We investigate the compatibility between three different maps between semi-simple Lie algebras. In particular, we wish to fill in the remaining arrow. We show this commutes explicitly in the case of \\(\mathfrak{sl}_2\\) by diagram chasing the generator by hand. Let's go!
 
-![](/images/Screenshot from 2023-10-17 15-42-38.png)
+ ![](/images/Screenshot from 2023-10-17 15-42-38.png)
 
 The Lie algebra \\(\mathfrak{sl}_2\\) has basis \\(E,F,H\\) with commutation relations 
 \\[ [E,F]=H, \qquad [H,E] = 2E, \qquad [H,F] = -2F.\\]
@@ -59,7 +59,7 @@ The image of \\(z \in Z(U\mathfrak{sl}_2)\\) in \\(\mathbb C[\mathfrak h] = \mat
 
 Let's compute the action of Casimir \\(\Omega\\) on \\(1_\lambda\\):
 
-![](/images/Screenshot from 2023-10-17 15-42-48.png)
+-> ![](/images/Screenshot from 2023-10-17 15-42-48.png) <-
 
 So we have shown that under the Harish-Chandra map,
 ![](images/Screenshot from 2023-10-17 15-42-52.png)
