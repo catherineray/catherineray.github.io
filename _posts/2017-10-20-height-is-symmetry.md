@@ -4,16 +4,13 @@ date: "2017-10-20"
 categories: 
   - "math"
 ---
-
-_This proof was made possible by a couple helpful and fabulous conversations with [Yifeng Liu](http://www.math.northwestern.edu/~liuyf). All errors are mine and mine alone._
-
-This is toward my understanding of the phrase “Why is height so important as an invariant? Because the height of a formal group law comes from the symmetry of the underlying variety.”
-
-In short — **high amount of symmetry in the underlying abelian variety implies a high height of its formal group law** (the converse is NOT true, if this was true, [Elkies’s supersingularity theorem](/a-question-on-primes) would be false).
+This is toward my understanding of the phrase “Why is height so important as an invariant? Because the height of a formal group law comes from the symmetry of the underlying variety.” In short — **high amount of symmetry in the underlying abelian variety implies a high height of its formal group law** (the converse is NOT true, if this was true, [Elkies’s supersingularity theorem](/a-question-on-primes) would be false).
 
 One method of getting lower dimensional formal group laws from abelian varieties of higher dimension is via using the theory of complex multiplication — splitting the abelian variety by splitting the prime [(as I exposited in my paper here)](/every-height).
 
 **I show that for abelian varieties with CM, the height of the formal group law pieces are expressible as a formula in terms of the degree of some field extensions of \\(Q_p\\) (one corresponding to each prime living over \\(p\\)) and the dimension of the rational endomorphism ring of the variety as a \\(Q\\)-vector space.**
+
+_This proof was made possible by a couple helpful and fabulous conversations with [Yifeng Liu](https://sites.google.com/view/liuyifeng/home). All errors are mine and mine alone._
 
 Notation:
 
@@ -30,7 +27,7 @@ Notation:
 
 **Theorem:**
 
-1. the decomposition \\( D \otimes \mathbb{Q}_p \\) \\( = \prod_{w \in \Sigma^{(p)}_L} D_w\\) and \\( \mathcal{O}_L = \prod \mathcal{O}_{L_w} \\) gives a decomposition \\( F = \prod_w F_w \\)
+1. the decomposition \\( D \otimes \mathbb{Q}_p \\) \\( = \prod\_{w \in \Sigma^{(p)}_L} D_w\\) and \\( \mathcal{O}\_L = \prod \mathcal{O}\_{L\_w} \\) gives a decomposition \\( F = \prod\_w F\_w \\)
 2. The height of \\(F_w\\) equals \\([L_w : \mathbb{Q}_p]\cdot\\) r.
 
 We see that part 2 is very interesting — we are expressing the _height of the chunk of the p-divisible group in terms of the rank of the endomorphism ring of the variety_.
@@ -84,7 +81,7 @@ _Proof (Part 2):_ For any abelian variety \\(A\\) (of genus \\(g\\)), we get the
 
 \\(A[p]\\) is a pointed scheme, and \\(A[p]^o\\) is the connected component in which this point sits. Further, \\(A[p]\\) is an Artinian scheme of length \\(p^{2g}\\).
 
-Let \\(\mathcal{O}_K\\) be the ring of integers of the CM field \\(K\\) acting on our abelian variety \\(A\\) (note that \\(K\\) and \\(L\\) are different fields). Here we denote \\(O_{K_p}\\) as the ring of integers of \\(K \otimes Q_p\\). We know that \\(\mathcal{O}_{K_p}\\) acts on each of the components of the exact sequence.
+Let \\(\mathcal{O}\_K\\) be the ring of integers of the CM field \\(K\\) acting on our abelian variety \\(A\\) (note that \\(K\\) and \\(L\\) are different fields). Here we denote \\(O\_{K\_p}\\) as the ring of integers of \\(K \otimes Q_p\\). We know that \\(\mathcal{O}\_{K\_p}\\) acts on each of the components of the exact sequence.
 
 We will show that \\(A[p]^o(k) = F_{p^{2g}}\\) when \\(p\\) is inert in \\(O_K\\) _(that is, the height of the p-divisible group is concentrated in its connected component)_. When \\(p\\) is inert in \\(O_K\\), \\(O_{K_p/p} \simeq F_{p^{2g}}\\).
 
@@ -120,5 +117,5 @@ Therfore, the height of the p-divisible group of an abelian variety with CM is t
 
 So, that’s it! We’ve shown, for \\(F\\) a formal group associated to a CM variety:
 
-1. the decomposition \\( D \otimes \mathbb{Q}_p = \prod_{w \in \Sigma^{(p)}_L} D_w \\) and \\( \mathcal{O}_L = \prod \mathcal{O}_{L_w} \\) gives a decomposition \\(F = \prod_w F_w\\)
+1. the decomposition \\( D \otimes \mathbb{Q}\_p = \prod_{w \in \Sigma^{(p)}\_L} D_w \\) and \\( \mathcal{O}\_L = \prod \mathcal{O}\_{L\_w} \\) gives a decomposition \\(F = \prod_w F_w\\)
 2. The height of \\(F_w\\) equals \\([L_w : \mathbb{Q}_p]\cdot \\) r.
