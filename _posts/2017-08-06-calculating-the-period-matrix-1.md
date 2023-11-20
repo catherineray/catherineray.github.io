@@ -1,5 +1,5 @@
 ---
-title: "Calculating the Period Matrix of a Shiga Curve, (y^3 = x^4-1)."
+title: "Calculating the Period Matrix of a Shiga Curve, \\(y^3 = x^4-1\\)."
 date: "2017-08-06"
 categories: 
   - "math"
