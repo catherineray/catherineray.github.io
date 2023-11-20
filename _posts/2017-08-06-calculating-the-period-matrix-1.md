@@ -79,7 +79,8 @@ Next, we can write down the rest of the vectors, \\(\gamma_2, …, \gamma_6\\) a
 
 Let’s say \\(\gamma_2\\) is the rotation of \\(\gamma_1\\) by 120 degrees, then as a vector representation of a complex number, \\(\int_{\gamma_2} \omega_1 =(\frac{x}{2}, - \frac{\sqrt(3)}{2} i)\\), which is the rotation matrix for \\(\theta = 120\\) multiplying the vector \\(a :=(-x, 0)\\). Thinking of \\(a\\) as a complex number:
 
-So, since \\(\gamma_2 \mapsto e^{\tau*i/3}a\\) \\(\gamma_3 \mapsto e^{2 \tau *i/3}a\\) \\(\gamma_4 \mapsto e^{3 \tau*i/3} a\\) \\(\gamma_5 \mapsto e^{4 \tau*i /3} a\\) \\(\gamma_6 \mapsto e^{5 \tau*i/3} a\\)
+So, since \\(\gamma\_2 \mapsto e^{\tau i/3}a\\) \\(\gamma\_3 \mapsto e^{2 \tau 
+ i/3}a\\) \\(\gamma\_4 \mapsto e^{3 \tau i/3} a\\) \\(\gamma_5 \mapsto e^{4 \tau i /3} a\\) \\(\gamma_6 \mapsto e^{5 \tau i/3} a\\)
 
 **Second Row**
 
@@ -135,6 +136,8 @@ Further, \\(\gamma_1\\) is related to \\(\gamma_2\\) by a rotation of \\(300\\) 
 
 In the end, all collected, in complex number form, our period matrix is this glorious beast, let us define
 
-\\(a : -(3+\sqrt{3})D\\), \\(b := -2\sqrt{3}D\\), \\(c := -\frac{4}{1+ \sqrt{3}}D\\)
+\\(a : -(3+\sqrt{3})D\\),  
+\\(b := -2\sqrt{3}D\\),  
+\\(c := -\frac{4}{1+ \sqrt{3}}D\\)
 
-\\( \begin{pmatrix} a & ae^{\tau i/3} &ae^{2\tau i/3} &ae^{3\tau i/3} &ae^{4\tau i/3} &ae^{5\tau i/3} \\ b &b e^{\tau i/3} &b e^{2\tau i/3} & be^{3\tau i/3} & be^{4\tau i/3} &be^{5\tau i/3} \\ c & c e^{5\tau i/6} & c e^{10\tau i/6} & ce^{15\tau i/6} & ce^{20\tau i/6} & ce^{25\tau i/6} \end{pmatrix}\\)
+\\( \begin{matrix} a & ae^{\tau i/3} &ae^{2\tau i/3} &ae^{3\tau i/3} &ae^{4\tau i/3} &ae^{5\tau i/3} \\ b &b e^{\tau i/3} &b e^{2\tau i/3} & be^{3\tau i/3} & be^{4\tau i/3} &be^{5\tau i/3} \\ c & c e^{5\tau i/6} & c e^{10\tau i/6} & ce^{15\tau i/6} & ce^{20\tau i/6} & ce^{25\tau i/6} \end{matrix}\\)
