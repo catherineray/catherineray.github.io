@@ -50,7 +50,9 @@ Alright, I’m getting off track. How do break out of the cage imposed by the Eu
 
 Our manifold \\(M\\) is the base space, and the fiber (over each point \\(p\\) in \\(M\\)) is just the tangent plane over that point, which we’ll denote as \\(T_p(M)\\) because I’m lazy and don’t want to type “the tangent plane over the point \\(p\\) in our manifold \\(M\\)” each goddamn time.
 
-If you’re visual thinker like me, here are some pictures to make you feel good about yourself. ​ [![tangent3](/images/wp-content/uploads/2014/11/tangent3.gif)](/images/wp-content/uploads/2014/11/tangent3.gif) [![tangent4](/images/wp-content/uploads/2014/11/tangent4.gif)](/images/wp-content/uploads/2014/11/tangent4.gif) [![img8](/images/wp-content/uploads/2014/11/img8.png)](/images/wp-content/uploads/2014/11/img8.png)
+If you’re visual thinker like me, here are some pictures to make you feel good about yourself. 
+
+​[![tangent3](/images/wp-content/uploads/2014/11/tangent3.gif)](/images/wp-content/uploads/2014/11/tangent3.gif) [![tangent4](/images/wp-content/uploads/2014/11/tangent4.gif)](/images/wp-content/uploads/2014/11/tangent4.gif) [![img8](/images/wp-content/uploads/2014/11/img8.png)](/images/wp-content/uploads/2014/11/img8.png)
 
 Oooh, ahhhh. So shiny.
 
