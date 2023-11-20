@@ -79,8 +79,11 @@ Next, we can write down the rest of the vectors, \\(\gamma_2, …, \gamma_6\\) a
 
 Let’s say \\(\gamma_2\\) is the rotation of \\(\gamma_1\\) by 120 degrees, then as a vector representation of a complex number, \\(\int_{\gamma_2} \omega_1 =(\frac{x}{2}, - \frac{\sqrt(3)}{2} i)\\), which is the rotation matrix for \\(\theta = 120\\) multiplying the vector \\(a :=(-x, 0)\\). Thinking of \\(a\\) as a complex number:
 
-So, since \\(\gamma_2 \mapsto e^{\tau i/3}a\\) \\(\gamma\_3 \mapsto e^{2 \tau 
- i/3}a\\) \\(\gamma_4 \mapsto e^{3 \tau i/3} a\\) \\(\gamma_5 \mapsto e^{4 \tau i /3} a\\) \\(\gamma_6 \mapsto e^{5 \tau i/3} a\\)
+So, since \\(\gamma_2 \mapsto e^{\tau i/3}a\\), then 
+\\(\gamma\_3 \mapsto e^{2 \tau i/3}a\\)  
+\\(\gamma_4 \mapsto e^{3 \tau i/3} a\\)  
+\\(\gamma_5 \mapsto e^{4 \tau i /3} a\\)  
+\\(\gamma_6 \mapsto e^{5 \tau i/3} a\\).
 
 **Second Row**
 
