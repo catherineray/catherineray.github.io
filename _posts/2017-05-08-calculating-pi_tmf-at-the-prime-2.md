@@ -1,5 +1,5 @@
 ---
-title: "Calculating (pi_*(tmf)) at the prime 2"
+title: "Calculating \\(pi_*(tmf)\\) at the prime 2"
 date: "2017-05-08"
 categories: 
   - "math"
