@@ -31,13 +31,13 @@ In a followup post, we will further see why both arise via a lovely geometric fl
 
 We investigate the compatibility between three different maps between semi-simple Lie algebras. In particular, we wish to fill in the remaining arrow. We show this commutes explicitly in the case of \\(\mathfrak{sl}_2\\) by diagram chasing the generator by hand. Let's go!
 
- ![](/images/Screenshot from 2023-12-07 16-56-15.png)
+![](/images/Screenshot from 2023-10-17 15-42-38.png)
 
 The Lie algebra \\(\mathfrak{sl}_2\\) has basis \\(E,F,H\\) with commutation relations 
 \\[ [E,F]=H, \qquad [H,E] = 2E, \qquad [H,F] = -2F.\\]
 
 The matrices representing \\(E, F, H\\) are as follows: 
-![](/images/Screenshot from 2023-10-17 17-33-28.png)
+ ![](/images/Screenshot from 2023-12-07 16-56-15.png)
 
 The Cartan subalgebra \\(\mathfrak h\\) is spanned by \\(H\\),
 and the Weyl group \\(W = \mathbb Z/2\mathbb Z\\) acts on \\(W\\) by \\(H \mapsto -H\\).
