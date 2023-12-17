@@ -122,7 +122,7 @@ To my dismay, I still don’t understand Quillen’s proof. But let’s get back
 
 I’ll mention one more interesting thing about \\(L\\)-functions in this story.
 
-As a subset of \\(Hom_{Ring}(MU\_*,Q)\\), let’s look at the set of maps that send \\(Z[P^n] \to Z\_{(p)}\\).
+As a subset of \\(Hom\_{Ring}(MU\_*,Q)\\), let’s look at the set of maps that send \\(Z[P^n] \to Z\_{(p)}\\).
 
 1. This set is in bijective correspondence with the set of { \\(L\\)-series with \\(Z_{(p)}\\) coefficients, having leading term 1 }.
 2. This set is endowed with an abelian group structure via the multiplication of \\(L\\)-series (series beginning with 1 are invertible).
