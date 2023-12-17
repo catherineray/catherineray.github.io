@@ -93,13 +93,13 @@ Specifically, I’ve been wondering about (5) in this excerpt of the paper “Di
 
 [![Bildschirmfoto 2015-06-25 um 1.09.30 nachm.](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-25-um-1.09.30-nachm..png)](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-25-um-1.09.30-nachm..png)
 
-_Note that it is not ridiculous for (3) to be equivalent to (5): the \\(b_i\\) are defined in terms of \\(L_{\epsilon}\\), so secretly \\(\epsilon\\) is present in the statement of (3)._
+_Note that it is not ridiculous for (3) to be equivalent to (5): the \\(b_i\\) are defined in terms of \\(L\_{\epsilon}\\), so secretly \\(\epsilon\\) is present in the statement of (3)._
 
 We’ve been acquainted with the notion of a Dirichlet series and an Euler factor. At last, we can decipher the meaning of (5).
 
 Recall that a genus is an operator that takes in a manifold (up to some equivalence relation) and spits out a number that characterizes it — of great interest to any who care about algebraic invariants. More specifically, an “\\(R\\)-genus” is a ring homomorphism \\(MU_* \xrightarrow{g} R\\) from (complex-oriented) cobordism classes of manifolds to a commutative ring \\(R\\).
 
-Keep in mind that in the _rational_ case, the generators of the ring \\(MU_*\\) are the complex projective spaces of each dimension, \\(P^n\\). \\(MU_* \otimes Q \simeq Z[P^n]\\)
+Keep in mind that in the _rational_ case, the generators of the ring \\(MU\_*\\) are the complex projective spaces of each dimension, \\(P^n\\). \\(MU\_* \otimes Q \simeq Z[P^n]\\)
 
 Given a genus \\(g\\), we can build a few different things to study its properties in a more manageable form. Today, we’re just going to mention two associated formal power series: the Dirichlet series, and the series we get out of [Hirzebruch’s construction](http://www.map.mpim-bonn.mpg.de/Formal_group_laws_and_genera#Hirzebruch_genera).
 
@@ -108,9 +108,9 @@ Given a genus \\(g\\), we can build a few different things to study its properti
 
 For example, let’s say \\(g(P^n) = 1\\) for all \\(n\\), (that is, \\(g\\) is the Todd genus) then \\(L_g(x) = \sum_{n \geq 1} \frac{1}{n^s}\\). The classical fella, \\(\zeta(s)\\), that we started this post with!
 
-This isn’t just interesting, it also gives us a pretty useful theorem, which tells us that the p-primary divisiblility which takes place in \\(MU_*\\) can be nicely described in terms of the L series associated to objects in \\(Hom_{Ring}(MU_*, -)\\).
+This isn’t just interesting, it also gives us a pretty useful theorem, which tells us that the p-primary divisiblility which takes place in \\(MU\_*\\) can be nicely described in terms of the L series associated to objects in \\(Hom_{Ring}(MU\_*, -)\\).
 
-Keep in mind that Quillen proved that \\(MU_*\\) is the universal formal group, so, for example, a ring homomorphism from \\(g: MU_* \to Z_{(p)}\\) is nothing more than a formal group structure for \\(Z_{(p)}\\).
+Keep in mind that Quillen proved that \\(MU_*\\) is the universal formal group, so, for example, a ring homomorphism from \\(g: MU\_* \to Z_{(p)}\\) is nothing more than a formal group structure for \\(Z_{(p)}\\).
 
 This was a world-shaking result. It began to give us hope looking at the seemingly orderless, complicated, multi-layered signal sent by the stable homotopy groups of spheres. Quillen’s result led to first localizing this “signal” at a prime, then engineering various band-pass filters to isolate the individual messages, i.e., breaking this complicated multi-layered object into layers.
 
@@ -122,7 +122,7 @@ To my dismay, I still don’t understand Quillen’s proof. But let’s get back
 
 I’ll mention one more interesting thing about \\(L\\)-functions in this story.
 
-As a subset of \\(Hom_{Ring}(MU _*,Q)\\), let’s look at the set of maps that send \\(Z[P^n] \to Z_{(p)}\\).
+As a subset of \\(Hom_{Ring}(MU\_*,Q)\\), let’s look at the set of maps that send \\(Z[P^n] \to Z\_{(p)}\\).
 
 1. This set is in bijective correspondence with the set of { \\(L\\)-series with \\(Z_{(p)}\\) coefficients, having leading term 1 }.
 2. This set is endowed with an abelian group structure via the multiplication of \\(L\\)-series (series beginning with 1 are invertible).
