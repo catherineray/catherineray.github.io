@@ -8,11 +8,11 @@ categories:
 This post is written together *with Josh Mundinger*. Last time, we compared the Harish-Chandra isomorphism \\(Z(U\mathfrak g) \cong (\text{Sym} \mathfrak h)^{W,\cdot}\\) for \\(\mathfrak g=  \mathfrak{sl}\_2\\) to the Duflo isomorphism \\(Z(U\mathfrak g) \cong (\text{Sym } \mathfrak g)^{\mathfrak g} \cong (\text{Sym} \mathfrak h)^W\\), and found that they differ exactly by a translation by \\(\rho\\). In this blog post, we study just the Harish-Chandra map \\(Z(U\mathfrak g) \to \mathbb C[\mathfrak h]\\), using the Fourier transform to explain why the image is invariant under the dot action \\((W,\cdot)\\).Recall that the Harish-Chandra map sends \\(z \in Z(U\mathfrak g)\\) to the action of \\(z\\)on the Verma module \\(M_\lambda\\).The dot action of \\(W\\)is defined by \\(w \cdot \lambda = w(\lambda + \rho) - \rho\\).Thus, 
 for \\(\mathfrak sl_2\\), we need to show that the center of \\(U\mathfrak sl_2\\)acts by the same scalar on \\(M_{\lambda}\\)and \\(M_{-\lambda - 2}\\).
 
-##Twisted differential operators
+## Twisted differential operators
 The Beilinson-Bernstein localization theorem provides a geometric way to understand the universal enveloping algebra of a semisimple Lie algebra \\(\mathfrak g\\) through differential operators.
 For a smooth variety \\(X/\mathbb C\\), the \emph{sheaf of differential operators} \\(D_X\\) on \\(X\\) is the sheaf of \\(\mathbb C\\)-linear operators \\(\mathcal{O}_X \to \mathcal{O}_X\\)which locally look like 
-\\[\sum_{i_1,\ldots,i_n} f_{i_1,\ldots, i_n} \frac{\partial^{i_1}}{\partial x_1^{i_1}}\frac{\partial^{i_2}}{\partial x_2^{i_2}}\cdots \frac{\partial^{i_n}}{\partial x_n^{i_n}},\\]
-where \\(f_{i_1,\ldots, i_n}\\)are regular functions and \\(x_1,\ldots, x_n\\)are local coordinates.
+\\[\sum_{i\_1,\ldots,i\_n} f_{i\_1,\ldots, i\_n} \frac{\partial^{i\_1}}{\partial x\_1^{i\_1}}\frac{\partial^{i\_2}}{\partial x\_2^{i\_2}}\cdots \frac{\partial^{i\_n}}{\partial x\_n^{i_n}},\\]
+where \\(f_{i\_1,\ldots, i\_n}\\)are regular functions and \\(x_1,\ldots, x_n\\)are local coordinates.
 More generally, if \\(\mathcal L\\) is a line bundle on \\(X\\), then the sheaf of differential operators \\(D^{\mathcal L}\\) on \\(\mathcal L\\) is the sheaf of operators \\(\mathcal L \to \mathcal L\\) which look locally as above. This ring may be expressed in terms of \\(D_X\\) by the formula 
 \\[ D^{\mathcal L}  = \mathcal L \otimes D_X \otimes \mathcal L^{-1} \\]
 In our case, we are interested in \\(X = \mathbb P^1 = SL_2/B\\), the flag variety for \\(SL_2\\).
@@ -21,20 +21,20 @@ and we will write \\(D^{\lambda} = D^{\mathcal O(\lambda)}\\).
 
 It turns out that the algebra \\(D^\lambda\\)makes sense even when \\(\lambda\\) is not an integer!
 We have a map 
-\\[\pi: \C^2\setminus 0 \to \bb{P}^1.\\]
-This is a quotient map for the action of \\(\mathbb G_m\\)by dilation on \\(\mathbb C^2\\).
-The derivative of the \\(\mathbb G_m\\(-action is given by the Euler vector field 
+\\[\pi: \mathbb{C}^2\setminus 0 \to \mathbb{P}^1.\\]
+This is a quotient map for the action of \\(\mathbb G_m\\) by dilation on \\(\mathbb C^2\\).
+The derivative of the \\(\mathbb G_m\\)-action is given by the Euler vector field 
 \\[ eu = x_1 \frac{\partial}{\partial x_1} + x_2 \frac{\partial}{\partial x_2}\\]
 where \\(x_1\\)and \\(x_2\\)are linear coordinates on \\(\mathbb C^2\\).
 In these terms,
-\\[D^\lambda := (\pi_*D_{\C^2 \backslash 0}/(eu - \lambda))^{\G_m}.\\]
-The above formula makes sense for any complex number \\(\lambda\\).The sheaf of rings \\(D^\lambda\\)is a sheaf of \emph{twisted differential operators} on \\(\mathbb P^1\\).
+\\[D^\lambda := (\pi_*D_{\mathbb C^2 \backslash 0}/(eu - \lambda))^{\mathbb G_m}.\\]
+The above formula makes sense for any complex number \\(\lambda\\).The sheaf of rings \\(D^\lambda\\)is a sheaf of **twisted differential operators** on \\(\mathbb P^1\\).
 
-##Infinitesimal action and a Lemma of Beilinson-Bernstein}
+## Infinitesimal action and a Lemma of Beilinson-Bernstein}
 
 The theorem of Beilinson and Bernstein relates \\(\mathfrak g\\) to the flag variety \\(X = G/B\\).
 The line bundles on \\(G/B\\) are \\(\mathcal O(\lambda)\\) for \\(\lambda\\) a character of \\(B/[B,B]\\). 
-In case \\(G = SL_2\\), then \\(G/B = \mathbb P^1\\), and \\(\mathcal O(\lambda)\\)for integer \\(\lambda\\)are the usual line bundles on \\(\mathbb P^1\\).
+In case \\(G = SL_2\\), then \\(G/B = \mathbb P^1\\), and \\(\mathcal O(\lambda)\\) for integer \\(\lambda\\)are the usual line bundles on \\(\mathbb P^1\\).
 \begin{lemma}\cite[Lemme]{bb81}
     \label{lemma: global-sections-of-D}
     If \\(G\\) is a semisimple complex algebraic group and \\(X = G/B\\) is the flag variety of \\(G\\), then 
@@ -66,7 +66,7 @@ for all \\(\lambda \in \mathbb C\\).
 We have now given explicit formulas for the map in Lemma \ref{lemma: global-sections-of-D}.
 
 
-##Fourier
+## Fourier
 In this section we show that the Fourier transform descends to an equivalence of categories between the category of \\(D^\lambda\\(-modules to the category of \\(D^{-\lambda - 2}\\(-modules for generic \\(\lambda\\).The Fourier transform naturally transforms differential operators on a vector space \\(V\\)to differential operators on the dual space \\(V^*\\).We show how this induces a map on twisted differential operators on \\(\mathbb P^1\\), where the \\(\rho\\(-shift will naturally appear.
 
 Let \\(V = \C^2\\)with coordinates \\(x_1,x_2\\).On \\(V^*\\), we will use dual coordinates  \\((\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}) =: (y_1, y_2)\\).Note that for \\(\mathfrak g\\)acting on a vector space \\(V\\), the action of \\(x\in \mathfrak g\\)on \\(V^*\\)is defined as \\(x(v^*) = v^*\circ(-x)\\).
@@ -104,7 +104,7 @@ and thus \\(D^\lambda_{\mathbb P V} \to D^{-\lambda - 2}_{\mathbb PV^*}\\(
 To fill in the triangle, we need to check that \\(\varphi\\)intertwines the infinitesimal action of \\(\mathfrak{sl}_2\\)on \\(V\\)and \\(V^*\\).
 We calculated both of these earlier! The Fourier transform sends infinitesimal actions defined by equations (1), (2), (3) to (4), (5), (6) respectively. Thus we conclude the triangle commutes.
 
-\subsection{Central characters} 
+## Central Characters
 By Lemma \ref{lemma: global-sections-of-D}, this commutative triangle induces the following triangle on global sections:
 % https://q.uiver.app/#q=WzAsMyxbMCwxLCJVXFxtYXRoZnJha3tzbF8yfSJdLFsxLDAsIlV7XFxtYXRoZnJha3tzbH1fMn0vSV9cXGxhbWJkYSJdLFsxLDIsIlVcXG1hdGhmcmFre3NsfV8yL0lfey1cXGxhbWJkYS0yfSJdLFswLDJdLFswLDFdLFsxLDIsIlxccGhpIiwyXV0=
 \[\begin{tikzcd}[cramped]
