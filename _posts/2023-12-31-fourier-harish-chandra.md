@@ -30,7 +30,7 @@ In these terms,
 \\[D^\lambda := (\pi_*D_{\mathbb C^2 \backslash 0}/(eu - \lambda))^{\mathbb G_m}.\\]
 The above formula makes sense for any complex number \\(\lambda\\).The sheaf of rings \\(D^\lambda\\)is a sheaf of **twisted differential operators** on \\(\mathbb P^1\\).
 
-## Infinitesimal action and a Lemma of Beilinson-Bernstein}
+## Infinitesimal action and a Lemma of Beilinson-Bernstein
 
 The theorem of Beilinson and Bernstein relates \\(\mathfrak g\\) to the flag variety \\(X = G/B\\).
 The line bundles on \\(G/B\\) are \\(\mathcal O(\lambda)\\) for \\(\lambda\\) a character of \\(B/[B,B]\\). 
@@ -47,51 +47,41 @@ Given a path \\(\gamma: (-\epsilon, \epsilon) \to G\\) with \\(\gamma(0)=1\\), w
 \[ \mathfrak g \to Vect(X).\]
 In case \\(G = SL_2\\), \\(X = \mathbb P^1\\), we can calculate these operators on \\(\mathbb C^2 \setminus 0\\), then descend using the map \\(\pi: \mathbb C^2 \setminus 0 \to \mathbb P^1\\).
 Here are formulas for the infinitesimal action on \\(\mathbb C^2 \setminus 0\\):
-\begin{align}
-    E &= \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} &\mapsto& x_1 \frac{\partial}{\partial x_2} \\ 
-    F &= \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} &\mapsto& x_2 \frac{\partial}{\partial x_1} \\
-    H &= \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} & \mapsto& x_1 \frac{\partial}{\partial x_1} - x_2 \frac{\partial}{\partial x_2}.
-\end{align}
+
+![](images/Screenshot from 2023-12-31 18-36-02.png) 
+
 These formulas give a Lie algebra homomorphism \\(\mathfrak{sl}\_2\to \text{Vect}(\mathbb C^2 \setminus 0) \to D\_{\mathbb C^2 \setminus 0}\\),
 inducing a homomorphism of associative algebras \\(U\mathfrak{sl\_2} \to D_{\mathbb C^2 \setminus 0}\\).
-The image of \\(\mathfrak{sl_2}\\)is \\(\mathbb G_m\\(-invariant since the action of \\(SL_2\\)commutes with dilation.
+The image of \\(\mathfrak{sl_2}\\)is \\(\mathbb G_m\\)-invariant since the action of \\(SL_2\\) commutes with dilation.
 So we get a ring homomorphism
-\\[\mathrm{act}: U\mathfrak{sl}_2 \to D^\lambda = \pi_\ast(D_{\mathbb C^2 \setminus 0}/(eu - \lambda))^{\mathbb G_m}\\]
+\\[\mathrm{act}: U\mathfrak{sl}\_2 \to D^\lambda = \pi_\ast(D_{\mathbb C^2 \setminus 0}/(eu - \lambda))^{\mathbb G_m}\\]
 for all \\(\lambda \in \mathbb C\\).
 We have now given explicit formulas for the map in the Lemma above.
 
 
 ## Fourier
-In this section we show that the Fourier transform descends to an equivalence of categories between the category of \\(D^\lambda\\(-modules to the category of \\(D^{-\lambda - 2}\\(-modules for generic \\(\lambda\\). The Fourier transform naturally transforms differential operators on a vector space \\(V\\)to differential operators on the dual space \\(V^*\\).We show how this induces a map on twisted differential operators on \\(\mathbb P^1\\), where the \\(\rho\\(-shift will naturally appear.
+In this section we show that the Fourier transform descends to an equivalence of categories between the category of \\(D^\lambda\\)-modules to the category of \\(D^{-\lambda - 2}\\)-modules for generic \\(\lambda\\). The Fourier transform naturally transforms differential operators on a vector space \\(V\\)to differential operators on the dual space \\(V^\*\\).We show how this induces a map on twisted differential operators on \\(\mathbb P^1\\), where the \\(\rho\\(-shift will naturally appear.
 
-Let \\(V = \C^2\\)with coordinates \\(x_1,x_2\\).On \\(V^*\\), we will use dual coordinates  \\((\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}) =: (y_1, y_2)\\).Note that for \\(\mathfrak g\\)acting on a vector space \\(V\\), the action of \\(x\in \mathfrak g\\)on \\(V^*\\)is defined as \\(x(v^*) = v^*\circ(-x)\\).
-Thus, on the dual basis, we get the following action of \\(\mathfrak{sl}_2\\(:
-\begin{align}
-    E &= \begin{pmatrix} 0 & 0 \\ -1 & 0 \end{pmatrix} &\mapsto& -y_2 \frac{\partial}{\partial y_1} \\ 
-    F &= \begin{pmatrix} 0 & -1 \\ 0 & 0 \end{pmatrix} &\mapsto& y_1 \frac{\partial}{\partial y_2} \\
-    H &= \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} & \mapsto& y_2 \frac{\partial}{\partial y_2} - y_1\frac{\partial}{\partial y_1}.
-\end{align}
+Let \\(V = \C^2\\)with coordinates \\(x_1,x_2\\).On \\( V^\* \\), we will use dual coordinates  \\((\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}) =: (y_1, y_2)\\).Note that for \\(\mathfrak g\\)acting on a vector space \\(V\\), the action of \\(x\in \mathfrak g\\)on \\(V^*\\)is defined as \\(x(v^\*) = v^\* \circ(-x)\\).
+Thus, on the dual basis, we get the following action of \\(\mathfrak{sl}_2\\):
+
+![](images/Screenshot from 2023-12-31 17-42-34.png)
+
 
 Note that these matrices are different than the ones we had before. In this basis, \\(E\\)acts by \\(-F\\)on the dual, \\(F\\)acts by \\(-E\\)on the dual, and \\(H\\)acts by \\(-F\\) on \\(V^*\\)
 
-The Fourier transform \\(\phi: D_V \to D_{V^*}\\)is defined by 
+The Fourier transform \\(\phi: D_V \to D_{V^*}\\) is defined by 
 \\[ \phi(x_i) = \frac{\partial}{\partial y_i}, \quad \phi\left(\frac{\partial}{\partial x_i}\right) = - y_i.\\]
 The goal of this section is to show that the Fourier transform \\(\phi\\)induces the following commutative triangle.
 
-\[
-% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBGAXVJADcBDAGwFcYkQAtAHS4FsAzYAHMAviBGl0mXPkIpypYtTpNW7DgAoAIgD0ejerwBGUegEpxkkBmx4CRBQCZlDFm0SdtO4D17MRFiLKMFBC8ESg-ABOELxIZCA4EEiOEpExcYgJSUjkaSDRsbk0OYiplCJAA
-\begin{tikzcd}
-                              & D^\lambda_{\bb{P}(V)} \arrow[dd, "\phi"] \\
-U(\mf{g}) \arrow[rd, "\mathrm{act}"] \arrow[ru, "\mathrm{act}"] &                         \\
-                              & D^{-\lambda-2}_{\bb{P}(V^*)}             
-\end{tikzcd},
-\]
+![](images/Screenshot from 2023-12-31 17-42-15.png)
+
 where \\(\mathrm{act}\\)is the infinitesimal action of the last section.
 This commutative triangle implies that the central character of \\(\lambda\\)is the same as the central character of \\(-\lambda - 2\\), which gives us that the Harish-Chandra homomorphism is invariant under the \\((W,\cdot)\\)action.
 
-We begin by showing the vertical arrow is well defined by an explicit calculation with the Euler fields on \\(V\\)and \\(V^*\\):
+We begin by showing the vertical arrow is well defined by an explicit calculation with the Euler fields on \\(V \\)and \\( V^* \\):
 \\[\phi (eu) = \sum_i (-\frac{\partial}{\partial y\_i}y\_i) = \sum_i (-y_i \frac{\partial}{\partial y_i}-1)= -eu - 2.\\]
-Hence \\(\varphi( (eu - \lambda)D_{V}) = \varphi( (eu - (-\lambda - 2))D_{V^*})\\).
+Hence \\( \varphi( (eu - \lambda)D\_{V}) = \varphi( (eu - (-\lambda - 2))D\_{V^\*}) \\).
 Now \\(D_V\\)and \\(D_{V \setminus 0}\\) are not the same, as the latter is a sheaf on the non-affine scheme \\(V \setminus 0\\). Nonetheless we get a map
 \\[ \varphi: D_{V \setminus 0}/ (eu - \lambda)D_{V\setminus 0} \to D_{V^* \setminus 0}/ (eu - (-\lambda - 2)D_{V^* \setminus 0} \\]
 and thus \\(D^\lambda_{\mathbb P V} \to D^{-\lambda - 2}_{\mathbb PV^*}\\).
@@ -100,16 +90,8 @@ To fill in the triangle, we need to check that \\(\varphi\\) intertwines the inf
 We calculated both of these earlier! The Fourier transform sends infinitesimal actions defined by equations (1), (2), (3) to (4), (5), (6) respectively. Thus we conclude the triangle commutes.
 
 ## Central Characters
-By Lemma \ref{lemma: global-sections-of-D}, this commutative triangle induces the following triangle on global sections:
-% https://q.uiver.app/#q=WzAsMyxbMCwxLCJVXFxtYXRoZnJha3tzbF8yfSJdLFsxLDAsIlV7XFxtYXRoZnJha3tzbH1fMn0vSV9cXGxhbWJkYSJdLFsxLDIsIlVcXG1hdGhmcmFre3NsfV8yL0lfey1cXGxhbWJkYS0yfSJdLFswLDJdLFswLDFdLFsxLDIsIlxccGhpIiwyXV0=
-\[\begin{tikzcd}[cramped]
-  & {U{\mathfrak{sl}_2}/I_\lambda} \\
-  {U\mathfrak{sl_2}} \\
-  & {U\mathfrak{sl}_2/I_{-\lambda-2}}
-  \arrow[from=2-1, to=3-2]
-  \arrow[from=2-1, to=1-2]
-  \arrow["\phi"', from=1-2, to=3-2]
-\end{tikzcd}\]
+By the Lemma (Global Sections of D), this commutative triangle induces the following triangle on global sections:
+![](images/Screenshot from 2023-12-31 17-42-53.png)
 where \\(I_\lambda\\)is the ideal of the central character of \\(\lambda\\)under the Harish-Chandra homomorphism
 This shows that the Harish-Chandra homomorphism is invariant under \\(\lambda \mapsto -\lambda - 2\\), as desired.
 
