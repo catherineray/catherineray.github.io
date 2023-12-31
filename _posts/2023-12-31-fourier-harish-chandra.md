@@ -4,24 +4,7 @@ date: "2023-12-31"
 categories: 
   - "math"
 ---
----
-title: "Half Haunted: The 1/2 in Harish-Chandra via the Fourier Transform"
-date: "2023-12-31"
-categories: 
-  - "math"
----
----
-title: "Half Haunted: The 1/2 in Harish-Chandra via the Fourier Transform"
-date: "2023-12-31"
-categories: 
-  - "math"
----
----
-title: "Half Haunted: The 1/2 in Harish-Chandra via the Fourier Transform"
-date: "2023-12-31"
-categories: 
-  - "math"
----
+
 This post is written together *with Josh Mundinger*. Last time, we compared the Harish-Chandra isomorphism \\(Z(U\mathfrak g) \cong (\text{Sym} \mathfrak h)^{W,\cdot}\\) for \\(\mathfrak g=  \mathfrak{sl}\_2\\) to the Duflo isomorphism \\(Z(U\mathfrak g) \cong (\text{Sym } \mathfrak g)^{\mathfrak g} \cong (\text{Sym} \mathfrak h)^W\\), and found that they differ exactly by a translation by \\(\rho\\). In this blog post, we study just the Harish-Chandra map \\(Z(U\mathfrak g) \to \mathbb C[\mathfrak h]\\), using the Fourier transform to explain why the image is invariant under the dot action \\((W,\cdot)\\).Recall that the Harish-Chandra map sends \\(z \in Z(U\mathfrak g)\\) to the action of \\(z\\)on the Verma module \\(M_\lambda\\).The dot action of \\(W\\)is defined by \\(w \cdot \lambda = w(\lambda + \rho) - \rho\\).Thus, 
 for \\(\mathfrak sl_2\\), we need to show that the center of \\(U\mathfrak sl_2\\)acts by the same scalar on \\(M_{\lambda}\\)and \\(M_{-\lambda - 2}\\).
 
