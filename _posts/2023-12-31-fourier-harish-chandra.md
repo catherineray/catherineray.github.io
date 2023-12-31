@@ -60,7 +60,7 @@ We have now given explicit formulas for the map in the Lemma above.
 
 
 ## Fourier
-In this section we show that the Fourier transform descends to an equivalence of categories between the category of \\(D^\lambda\\)-modules to the category of \\(D^{-\lambda - 2}\\)-modules for generic \\(\lambda\\). The Fourier transform naturally transforms differential operators on a vector space \\(V\\)to differential operators on the dual space \\(V^\*\\).We show how this induces a map on twisted differential operators on \\(\mathbb P^1\\), where the \\(\rho\\(-shift will naturally appear.
+In this section we show that the Fourier transform descends to an equivalence of categories between the category of \\(D^\lambda\\)-modules to the category of \\(D^{-\lambda - 2}\\)-modules for generic \\(\lambda\\). The Fourier transform naturally transforms differential operators on a vector space \\(V\\)to differential operators on the dual space \\(V^\*\\).We show how this induces a map on twisted differential operators on \\(\mathbb P^1\\), where the \\(\rho\\)-shift will naturally appear.
 
 Let \\(V = \mathbb{C}^2\\) with coordinates \\(x_1,x_2\\). On \\( V^\* \\), we will use dual coordinates  \\((\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}) =: (y_1, y_2)\\).Note that for \\(\mathfrak g\\) acting on a vector space \\(V\\), the action of \\(x\in \mathfrak g\\) on \\(V^*\\) is defined as \\(x(v^\*) = v^\* \circ(-x)\\).
 Thus, on the dual basis, we get the following action of \\(\mathfrak{sl}_2\\):
