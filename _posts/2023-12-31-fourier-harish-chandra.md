@@ -44,7 +44,7 @@ In case \\(G = SL_2\\), then \\(G/B = \mathbb P^1\\), and \\(\mathcal O(\lambda)
 
 The map in this Lemma is induced by the **infinitesimal action** of \\(G\\)on \\(X = G/B\\).
 Given a path \\(\gamma: (-\epsilon, \epsilon) \to G\\) with \\(\gamma(0)=1\\), we obtain a family of automorphisms of \\(X\\); differentiating them gives a vector field on \\(X\\).This vector field depends only on \\(\gamma'(0)\\), and so we obtain a Lie algebra homomorphism
-\[ \mathfrak g \to Vect(X).\]
+\\[ \mathfrak g \to \text{Vect}(X).\\]
 In case \\(G = SL_2\\), \\(X = \mathbb P^1\\), we can calculate these operators on \\(\mathbb C^2 \setminus 0\\), then descend using the map \\(\pi: \mathbb C^2 \setminus 0 \to \mathbb P^1\\).
 Here are formulas for the infinitesimal action on \\(\mathbb C^2 \setminus 0\\):
 
@@ -91,8 +91,11 @@ We calculated both of these earlier! The Fourier transform sends infinitesimal a
 
 ## Central Characters
 By the Lemma (Global Sections of D), this commutative triangle induces the following triangle on global sections:
+
 ![](/images/Screenshot from 2023-12-31 17-42-53.png)
-where \\(I_\lambda\\) is the ideal of the central character of \\(\lambda\\) under the Harish-Chandra homomorphism
+
+where \\(I_\lambda\\) is the ideal of the central character of \\(\lambda\\) under the Harish-Chandra homomorphism.
+
 This shows that the Harish-Chandra homomorphism is invariant under \\(\lambda \mapsto -\lambda - 2\\), as desired.
 
 The reason that the shift \\(\lambda \mapsto -\lambda - 2\\) shows up in today's story comes from the Fourier transform of the Euler field. When the Fourier transform is treated in a more coordinate-free manner, the canonical bundle shows up. The canonical bundle of \\(\mathbb P^1\\) is \\(\mathcal O(-2)\\), and that \\(-2\\) is the same \\(-2\\) as in \\(-\lambda - 2\\). We will elaborate on this in the future.
