@@ -1,5 +1,5 @@
 ---
-title: "The Cup Product of the Klein Bottle \\(\mathbb{Z}/2\\)"
+title: "The Cup Product of the Klein Bottle mod 2"
 date: "2015-12-06"
 categories: 
   - "math"
