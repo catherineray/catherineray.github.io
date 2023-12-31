@@ -72,7 +72,7 @@ Note that these matrices are different than the ones we had before. In this basi
 
 The Fourier transform \\(\phi: D_V \to D_{V^*}\\) is defined by 
 \\[ \phi(x_i) = \frac{\partial}{\partial y_i}, \quad \phi\left(\frac{\partial}{\partial x_i}\right) = - y_i.\\]
-The goal of this section is to show that the Fourier transform \\(\phi\\)induces the following commutative triangle.
+The goal of this section is to show that the Fourier transform \\(\phi\\) induces the following commutative triangle.
 
 ![](/images/Screenshot from 2023-12-31 17-42-15.png)
 
