@@ -61,7 +61,7 @@ Given a formal group \\(F_t\\), we may construct Lubin K-theory using Landweber-
 
 Note that the \\(MU^*\\)-module structure induced by the genus \\(g_t: MU^* \to \mathbb{Z}[t]\\) associated to the formal group law \\(F_t(x,y)\\).
 
-[![Bildschirmfoto 2015-10-26 um 11.02.26 vorm.](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.02.26-vorm..png)](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.02.26-vorm..png)
+[![Bildschirmfoto 2015-10-26 um 11.02.26 vorm.](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.02.26-vorm..png)](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.02.26-vorm..png)
 
 ## Proof of Exactness
 
@@ -75,7 +75,7 @@ At \\(3 \mid t\\), \\(\mathbb{L}_t^*\\) is not Landweber-exact, but is construct
 
 Let’s prove this.
 
-[![Bildschirmfoto 2015-10-26 um 10.48.57 vorm.](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.48.57-vorm..png)](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.48.57-vorm..png)
+[![Bildschirmfoto 2015-10-26 um 10.48.57 vorm.](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.48.57-vorm..png)](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.48.57-vorm..png)
 
 Indeed, that it is not Landweber-exact suggests that Lubin K-theory, at \\(3 | t\\), behaves like Morava K-theory of height 2; and in general, that Lubin K-theory behaves like a variant of a Morava E-theory of height 2 at the prime 3 (it is in fact Bousfield equivalent).
 
@@ -95,11 +95,11 @@ Claim: \\\(E^*(B\mathbb{Z}/p) = E^*(\mathbb{C}P^\infty)/[p]_F(x)\\\) for any com
 4. Taking \\(\Omega^\infty\\) preserves fiber sequences, so the last few nodes give a fiber sequence \\(K(Z, 1) \to K(Z/p, 1) \to K(Z, 2) \xrightarrow{p} K(Z, 2)\\) of spaces.
 5. The data of this iterated fiber sequence is equal to the data of the pullback square of fiber sequences
 
-[![Bildschirmfoto 2015-10-26 um 10.44.02 vorm.](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.44.02-vorm..png)](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.44.02-vorm..png)
+[![Bildschirmfoto 2015-10-26 um 10.44.02 vorm.](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.44.02-vorm..png)](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.44.02-vorm..png)
 
 Note that, \\(K(Z, 1) = S^1, K(Z/2, 1) = RP^\infty,\\) and \\(K(Z, 2) = CP^\infty\\). As an example, in the case where \\(p = 2\\): \\\(E^*(\mathbb{R} P^\infty) = E^*(\mathbb{C} P^\infty)/[2]_F(X)\\\):
 
-[![Bildschirmfoto 2015-10-26 um 10.43.58 vorm.](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.43.58-vorm..png)](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.43.58-vorm..png)
+[![Bildschirmfoto 2015-10-26 um 10.43.58 vorm.](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.43.58-vorm..png)](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-10.43.58-vorm..png)
 
 Returning to the general case, using the AHSS, \\\(E^{p,q}_2 = H^p_{cell} (\mathbb{C} P^\infty; E_qS^1) \Rightarrow E^{p+q}(RP^\infty)\\\)
 
@@ -109,7 +109,7 @@ From this, we know that \\(e(p^*\mathcal{L}) = p^*(e(\mathcal{L})) = p^*(x) = [p
 
 Examples: \\(\mathbb{K}^*(B\mathbb{Z}/2); \mathbb{L} ^t_*(B \mathbb{Z}/2); \mathbb{L}^t_*(B\mathbb{Z}/3)\\).
 
-[![Bildschirmfoto 2015-10-26 um 11.09.38 vorm.](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.09.38-vorm..png)](/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.09.38-vorm..png)
+[![Bildschirmfoto 2015-10-26 um 11.09.38 vorm.](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.09.38-vorm..png)](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.09.38-vorm..png)
 
 We see that it collapses to \\(K^*(RP^\infty) = \mathbb{Z}[\beta^{pm}][[x]]/(2x + x^2)\\).
 
