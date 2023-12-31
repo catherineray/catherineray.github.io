@@ -6,11 +6,11 @@ categories:
 ---
 
 This post is written together *with Josh Mundinger*. Last time, we compared the Harish-Chandra isomorphism \\(Z(U\mathfrak g) \cong (\text{Sym} \mathfrak h)^{W,\cdot}\\) for \\(\mathfrak g=  \mathfrak{sl}\_2\\) to the Duflo isomorphism \\(Z(U\mathfrak g) \cong (\text{Sym } \mathfrak g)^{\mathfrak g} \cong (\text{Sym} \mathfrak h)^W\\), and found that they differ exactly by a translation by \\(\rho\\). In this blog post, we study just the Harish-Chandra map \\(Z(U\mathfrak g) \to \mathbb C[\mathfrak h]\\), using the Fourier transform to explain why the image is invariant under the dot action \\((W,\cdot)\\).Recall that the Harish-Chandra map sends \\(z \in Z(U\mathfrak g)\\) to the action of \\(z\\)on the Verma module \\(M_\lambda\\).The dot action of \\(W\\)is defined by \\(w \cdot \lambda = w(\lambda + \rho) - \rho\\).Thus, 
-for \\(\mathfrak sl_2\\), we need to show that the center of \\(U\mathfrak sl_2\\)acts by the same scalar on \\(M_{\lambda}\\)and \\(M_{-\lambda - 2}\\).
+for \\(\mathfrak sl_2\\), we need to show that the center of \\(U\mathfrak sl_2\\) acts by the same scalar on \\(M_{\lambda}\\)and \\(M_{-\lambda - 2}\\).
 
 ## Twisted differential operators
 The Beilinson-Bernstein localization theorem provides a geometric way to understand the universal enveloping algebra of a semisimple Lie algebra \\(\mathfrak g\\) through differential operators.
-For a smooth variety \\(X/\mathbb C\\), the \emph{sheaf of differential operators} \\(D_X\\) on \\(X\\) is the sheaf of \\(\mathbb C\\)-linear operators \\(\mathcal{O}\_X \to \mathcal{O}\_X\\) which locally look like 
+For a smooth variety \\(X/\mathbb C\\), the **sheaf of differential operators** \\(D_X\\) on \\(X\\) is the sheaf of \\(\mathbb C\\)-linear operators \\(\mathcal{O}\_X \to \mathcal{O}\_X\\) which locally look like 
 \\[\sum_{i\_1,\ldots,i\_n} f_{i\_1,\ldots, i\_n} \frac{\partial^{i\_1}}{\partial x\_1^{i\_1}}\frac{\partial^{i\_2}}{\partial x\_2^{i\_2}}\cdots \frac{\partial^{i\_n}}{\partial x\_n^{i_n}},\\]
 where \\(f_{i\_1,\ldots, i\_n}\\)are regular functions and \\(x_1,\ldots, x_n\\)are local coordinates.
 More generally, if \\(\mathcal L\\) is a line bundle on \\(X\\), then the sheaf of differential operators \\(D^{\mathcal L}\\) on \\(\mathcal L\\) is the sheaf of operators \\(\mathcal L \to \mathcal L\\) which look locally as above. This ring may be expressed in terms of \\(D_X\\) by the formula 
@@ -62,13 +62,13 @@ We have now given explicit formulas for the map in the Lemma above.
 ## Fourier
 In this section we show that the Fourier transform descends to an equivalence of categories between the category of \\(D^\lambda\\)-modules to the category of \\(D^{-\lambda - 2}\\)-modules for generic \\(\lambda\\). The Fourier transform naturally transforms differential operators on a vector space \\(V\\)to differential operators on the dual space \\(V^\*\\).We show how this induces a map on twisted differential operators on \\(\mathbb P^1\\), where the \\(\rho\\(-shift will naturally appear.
 
-Let \\(V = \C^2\\)with coordinates \\(x_1,x_2\\).On \\( V^\* \\), we will use dual coordinates  \\((\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}) =: (y_1, y_2)\\).Note that for \\(\mathfrak g\\)acting on a vector space \\(V\\), the action of \\(x\in \mathfrak g\\)on \\(V^*\\)is defined as \\(x(v^\*) = v^\* \circ(-x)\\).
+Let \\(V = \C^2\\)with coordinates \\(x_1,x_2\\). On \\( V^\* \\), we will use dual coordinates  \\((\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}) =: (y_1, y_2)\\).Note that for \\(\mathfrak g\\)acting on a vector space \\(V\\), the action of \\(x\in \mathfrak g\\)on \\(V^*\\)is defined as \\(x(v^\*) = v^\* \circ(-x)\\).
 Thus, on the dual basis, we get the following action of \\(\mathfrak{sl}_2\\):
 
 ![](/images/Screenshot from 2023-12-31 17-42-34.png)
 
 
-Note that these matrices are different than the ones we had before. In this basis, \\(E\\)acts by \\(-F\\)on the dual, \\(F\\)acts by \\(-E\\)on the dual, and \\(H\\)acts by \\(-F\\) on \\(V^*\\)
+Note that these matrices are different than the ones we had before. In this basis, \\(E\\) acts by \\(-F\\) on the dual, \\(F\\) acts by \\(-E\\) on the dual, and \\(H\\)acts by \\(-F\\) on \\(V^*\\)
 
 The Fourier transform \\(\phi: D_V \to D_{V^*}\\) is defined by 
 \\[ \phi(x_i) = \frac{\partial}{\partial y_i}, \quad \phi\left(\frac{\partial}{\partial x_i}\right) = - y_i.\\]
