@@ -10,7 +10,7 @@ for \\(\mathfrak sl_2\\), we need to show that the center of \\(U\mathfrak sl_2\
 
 ## Twisted differential operators
 The Beilinson-Bernstein localization theorem provides a geometric way to understand the universal enveloping algebra of a semisimple Lie algebra \\(\mathfrak g\\) through differential operators.
-For a smooth variety \\(X/\mathbb C\\), the \emph{sheaf of differential operators} \\(D_X\\) on \\(X\\) is the sheaf of \\(\mathbb C\\)-linear operators \\(\mathcal{O}_X \to \mathcal{O}_X\\)which locally look like 
+For a smooth variety \\(X/\mathbb C\\), the \emph{sheaf of differential operators} \\(D_X\\) on \\(X\\) is the sheaf of \\(\mathbb C\\)-linear operators \\(\mathcal{O}\_X \to \mathcal{O}\_X\\) which locally look like 
 \\[\sum_{i\_1,\ldots,i\_n} f_{i\_1,\ldots, i\_n} \frac{\partial^{i\_1}}{\partial x\_1^{i\_1}}\frac{\partial^{i\_2}}{\partial x\_2^{i\_2}}\cdots \frac{\partial^{i\_n}}{\partial x\_n^{i_n}},\\]
 where \\(f_{i\_1,\ldots, i\_n}\\)are regular functions and \\(x_1,\ldots, x_n\\)are local coordinates.
 More generally, if \\(\mathcal L\\) is a line bundle on \\(X\\), then the sheaf of differential operators \\(D^{\mathcal L}\\) on \\(\mathcal L\\) is the sheaf of operators \\(\mathcal L \to \mathcal L\\) which look locally as above. This ring may be expressed in terms of \\(D_X\\) by the formula 
