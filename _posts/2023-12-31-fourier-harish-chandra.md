@@ -48,7 +48,7 @@ Given a path \\(\gamma: (-\epsilon, \epsilon) \to G\\) with \\(\gamma(0)=1\\), w
 In case \\(G = SL_2\\), \\(X = \mathbb P^1\\), we can calculate these operators on \\(\mathbb C^2 \setminus 0\\), then descend using the map \\(\pi: \mathbb C^2 \setminus 0 \to \mathbb P^1\\).
 Here are formulas for the infinitesimal action on \\(\mathbb C^2 \setminus 0\\):
 
-![](images/Screenshot from 2023-12-31 18-36-02.png) 
+![](/images/Screenshot from 2023-12-31 18-36-02.png) 
 
 These formulas give a Lie algebra homomorphism \\(\mathfrak{sl}\_2\to \text{Vect}(\mathbb C^2 \setminus 0) \to D\_{\mathbb C^2 \setminus 0}\\),
 inducing a homomorphism of associative algebras \\(U\mathfrak{sl\_2} \to D_{\mathbb C^2 \setminus 0}\\).
@@ -65,7 +65,7 @@ In this section we show that the Fourier transform descends to an equivalence of
 Let \\(V = \C^2\\)with coordinates \\(x_1,x_2\\).On \\( V^\* \\), we will use dual coordinates  \\((\frac{\partial}{\partial x_1}, \frac{\partial}{\partial x_2}) =: (y_1, y_2)\\).Note that for \\(\mathfrak g\\)acting on a vector space \\(V\\), the action of \\(x\in \mathfrak g\\)on \\(V^*\\)is defined as \\(x(v^\*) = v^\* \circ(-x)\\).
 Thus, on the dual basis, we get the following action of \\(\mathfrak{sl}_2\\):
 
-![](images/Screenshot from 2023-12-31 17-42-34.png)
+![](/images/Screenshot from 2023-12-31 17-42-34.png)
 
 
 Note that these matrices are different than the ones we had before. In this basis, \\(E\\)acts by \\(-F\\)on the dual, \\(F\\)acts by \\(-E\\)on the dual, and \\(H\\)acts by \\(-F\\) on \\(V^*\\)
@@ -74,7 +74,7 @@ The Fourier transform \\(\phi: D_V \to D_{V^*}\\) is defined by
 \\[ \phi(x_i) = \frac{\partial}{\partial y_i}, \quad \phi\left(\frac{\partial}{\partial x_i}\right) = - y_i.\\]
 The goal of this section is to show that the Fourier transform \\(\phi\\)induces the following commutative triangle.
 
-![](images/Screenshot from 2023-12-31 17-42-15.png)
+![](/images/Screenshot from 2023-12-31 17-42-15.png)
 
 where \\(\mathrm{act}\\)is the infinitesimal action of the last section.
 This commutative triangle implies that the central character of \\(\lambda\\)is the same as the central character of \\(-\lambda - 2\\), which gives us that the Harish-Chandra homomorphism is invariant under the \\((W,\cdot)\\)action.
@@ -91,7 +91,7 @@ We calculated both of these earlier! The Fourier transform sends infinitesimal a
 
 ## Central Characters
 By the Lemma (Global Sections of D), this commutative triangle induces the following triangle on global sections:
-![](images/Screenshot from 2023-12-31 17-42-53.png)
+![](/images/Screenshot from 2023-12-31 17-42-53.png)
 where \\(I_\lambda\\)is the ideal of the central character of \\(\lambda\\)under the Harish-Chandra homomorphism
 This shows that the Harish-Chandra homomorphism is invariant under \\(\lambda \mapsto -\lambda - 2\\), as desired.
 
