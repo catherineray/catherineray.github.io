@@ -11,7 +11,7 @@ The PBW theorem implies there is an isomorphism of vector spaces
 which on \\(\text{Sym}^i\\) is given by the symmetrization map 
 \\[ sym: x_1x_2\cdots x_i \mapsto \frac{1}{i!} \sum_{\sigma \in S_i} x_{\sigma 1}x_{\sigma 2}\cdots x_{\sigma i}.\\]
 
-The symmetrization map is not a ring homomorphism. Duflo showed, however, that by *twisting* the symmetrization map, one obtains a ring homomorphism. 
+Note that this is not the identity map because \\(Sym\\) indicates coinvariants and not invariants of the symmetric group. The symmetrization map is not a ring homomorphism. Duflo showed, however, that by *twisting* the symmetrization map, one obtains a ring homomorphism. 
 The Chevalley restriction theorem then identifies  \\(\text{Sym}(\mathfrak g)^\mathfrak g\\) with \\(\text{Sym}(\mathfrak h)^W\\), where \\(\mathfrak h\\) is a Cartan subalgebra and \\(W\\) is the Weyl group.
 
 On the other hand, when  \\(\mathfrak g\\) is semisimple, there is another way to understand  \\(Z(U\mathfrak g)\\). 
