@@ -31,9 +31,9 @@ Where \\(D\phi(q)\\) is the Jacobian of \\(\phi\\), evaluated at the point \\(q\
 
 And, \\(g(y)\\), the nonlinear stuff, is then the difference of our original equation and the linear portion: \\(g(y) = \phi(y) - D\phi(q)\cdot(y-q)\\).
 
-**Afternote:** If this was an equation with terms explicitly dependent on \(t\), we could take the two dimensional Taylor series. That is, if \(y’ = \phi(t, y)\), then, locally around \((y_c, t_c)\):
+**Afternote:** If this was an equation with terms explicitly dependent on \(t\), we could take the two dimensional Taylor series. That is, if \\(y’ = \phi(t, y)\\), then, locally around \\((y_c, t_c)\\):
 
-\(\phi(y,t) = \phi(y_c, t_c)\)
+\\(\phi(y,t) = \phi(y_c, t_c)\\)
 
 \\(+ \frac{\partial \phi}{\partial y}(y_c, t_c) \cdot (y_c - y) + \frac{\partial \phi}{\partial t}(y_c, t_c) \cdot (t_c - t) \\)
 
