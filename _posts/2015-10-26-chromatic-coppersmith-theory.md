@@ -20,7 +20,7 @@ I found this kind of enlightening and so I want to show you how I came across it
 Morava constructed a family of elliptic cohomology theories by deforming K-theory (well, by deforming the multiplicative group associated to K-theory). His construction can be viewed as a recipe:
 
 1. **start with a point of interest (an algebraic group)** e.g., \\(\mathbb{C}^\times\\) e.g., \\(y^3 = x^3 - x \\) over \\(\mathbb{F}_3\\)
-2. **deform that point (create a family of algebraic groups indexed by one parameter)** e.g., \\(\mathbb{C}^\times/q^{\mathbb{Z}}\\) where \\(q:= e^{2\pi i}\\), we vary the norm of \\(0 \leq |q| < 1\\). e.g., \\(y^3 = x^3 + tx^2 - x\\) over \\(\mathbb{F}_3[[t]]\\)
+2. **deform that point (create a family of algebraic groups indexed by one parameter)** e.g., \\(\mathbb{C}^\times/q^{\mathbb{Z}}\\) where \\(q:= e^{2\pi i}\\), we vary the norm of \\(0 \leq \|q\| < 1\\). e.g., \\(y^3 = x^3 + tx^2 - x\\) over \\(\mathbb{F}_3[[t]]\\)
 3. look at the formal group laws associated to your family, this is still indexed by one parameter (in fact, they can be viewed as ONE formal group law, if you keep the parameter formal)
 4. either apply the Landweber exact functor theorem to the whole family stalkwise (specializing the parameter), or apply the Landweber exact functor theorem to the ONE formal group law (keeping the parameter formal).
 
@@ -39,7 +39,7 @@ We take an easy example of an elliptic curve group contraction, and set it into 
 
 The elliptic curve is defined over \\(R = \mathbb{Z}[t]\\), but it is not elliptic everywhere, in the sense that there are prime ideals p of Spec (R) for which E is not elliptic over \\(R/p\\). The discriminant of \\(E_t\\) is \\(\Delta = 16(4-t^2)\\), so we have bad reduction over the prime \\(2\\). To be elliptic everywhere, we invert 2 and live in the coefficient ring \\(\mathbb{Z}[1/2][[t]]\\).
 
-The easiest way to get the formal group is to take the logarithm \\(L(x)\\) first, then find the formal group \\(F\\) satisfying the relation \\(L(F(x,y)) = L(x) + L(y)\\). We do this for our family of curves (by homogenizing, solving for \\(z\\), and solving for the invariant differential, \\(omega\\)), and find:
+The easiest way to get the formal group is to take the logarithm \\(L(x)\\) first, then find the formal group \\(F\\) satisfying the relation \\(L(F(x,y)) = L(x) + L(y)\\). We do this for our family of curves (by homogenizing, solving for \\(z\\), and solving for the invariant differential, \\(\omega\\)), and find:
 
 \begin{align*} L(x) & \equiv x + t\frac{x^3}{3} \\ &+ (-2 + t)\frac{x^5}{5} \\ &+ (-6t + t^3)\frac{x^7}{7} \\ & + (2 - 4t^2 + \frac{1}{3}t^4)\frac{x^9}{3} \\ &+ (30t - 20t^3 + t^5)\frac{x^{11}}{11} \\ & + (-20 + 90t^2 - 30t^4 + t^6)\frac{x^{13}}{13} \mod (x^{14}) \end{align*}
 
@@ -57,9 +57,9 @@ What’s the moral of the story? Here, we started with an elliptic curve over (a
 
 Given a formal group \\(F_t\\), we may construct Lubin K-theory using Landweber-Ravenel-Stong. Let me make this clear, we are treating the formal group law family as one formal group law, otherwise, when \\(3 \mid t\\), our formal group law is not Landweber exact.
 
-\\\(MU^*(-) \otimes_{MU^*} \mathbb{Z}[t]\Big[\frac{1}{2}\Big] \simeq \mathbb{L}_t^*(-)\\\)
+\\\(MU^\*(-) \otimes_{MU^\*} \mathbb{Z}[t][\frac{1}{2}]\simeq \mathbb{L}_t^*(-)\\\)
 
-Note that the \\(MU^*\\)-module structure induced by the genus \\(g_t: MU^* \to \mathbb{Z}[t]\\) associated to the formal group law \\(F_t(x,y)\\).
+Note that the \\(MU^\*\\)-module structure induced by the genus \\(g_t: MU^\* \to \mathbb{Z}[t]\\) associated to the formal group law \\(F_t(x,y)\\).
 
 [![Bildschirmfoto 2015-10-26 um 11.02.26 vorm.](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.02.26-vorm..png)](/images/wp-content/uploads/2015/10/Bildschirmfoto-2015-10-26-um-11.02.26-vorm..png)
 
