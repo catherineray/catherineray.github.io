@@ -23,7 +23,7 @@ If we want to get rid of the pesky first term, we can we pick \\(y_c\\) to be an
 
 \\\(\phi(y) = \frac{\partial \phi}{\partial y}(q) \cdot (q - y) + \frac{\partial^2 \phi}{\partial y^2}(q) \cdot (q - y)^2 + \dots\\\)
 
-If \\(y\\) is an initial value close to \\(q\\), that is, \\(|| y - q|| = \epsilon_0\\) is small, then \\(|| y - q ||^2\\) and all higher powers are going to be _hella_ small, so we can sometimes ignore them. Locally around \\(q\\):
+If \\(y\\) is an initial value close to \\(q\\), that is, \\(\|\|y - q\|\| = \epsilon_0\\) is small, then \\(\|\|y - q\|\|^2\\) and all higher powers are going to be _hella_ small, so we can sometimes ignore them. Locally around \\(q\\):
 
 \\\(\phi(y) = D\phi(q) \cdot (y-q) + \text{ small nonlinear stuff }\\\)
 
