@@ -9,7 +9,7 @@ Today, we’ll be talking about a relation between the discrete and continuous.
 
 A friend of mine, Aaron Slipper, explained to me a simple and striking perspective of the Euler-MacLaurin formula — and his work extending it.
 
-He came upon this through the proof of Jacobi, relayed to him by our beloved teacher Laurens Gunnarsen. The proof of Jacobi uses the lattice group \(\mathbb{Z} \subset \mathbb{R}\), so Aaron sought and found analogous relationships for other lattice groups.
+He came upon this through the proof of Jacobi, relayed to him by our beloved teacher Laurens Gunnarsen. The proof of Jacobi uses the lattice group \\(\mathbb{Z} \subset \mathbb{R}\\), so Aaron sought and found analogous relationships for other lattice groups.
 
 ## The translation group, 1-d case
 
@@ -17,11 +17,13 @@ One mental model for Aaron’s construction is as follows. We are given a discre
 
 Each element in the discrete group can be written as a sequence of moves from the identity.
 
-[![Bildschirmfoto 2015-09-23 um 10.34.50 vorm.](/images/wp-content/uploads/2015/08/Bildschirmfoto-2015-09-23-um-10.34.50-vorm..png)](/images/wp-content/uploads/2015/08/Bildschirmfoto-2015-09-23-um-10.34.50-vorm..png)
-
 Here we have
 
-\\(F(0) = f(0)\) \(F(1) = f(0) + f(1)\) \(F(n) = f(0) + f(1) + …. + f(n)\\)
+\\(F(0) = f(0)\\) 
+
+\\(F(1) = f(0) + f(1)\\) 
+
+\\(F(n) = f(0) + f(1) + …. + f(n)\\)
 
 That is:
 
@@ -165,7 +167,7 @@ Look at what becomes of the determinant here.
 
 For a matrix of this form, the determinant is \\\(c^2 - a^2 - b^2\\\) Keep that in mind, because it is the Casimir element of this Lie algebra.
 
-Now, the group acts on its Lie algebra by conjugation, giving rise to what is called the adjoint representation. Given A in the Lie algebra, and U in the Lie group, we put \\\([Ad_U](A) = UAU^{-1}\\\)
+Now, the group acts on its Lie algebra by conjugation, giving rise to what is called the adjoint representation. Given A in the Lie algebra, and U in the Lie group, we put \\(\[Ad_U\](A) = UAU^{-1}\\)
 
 The crucial thing to appreciate here is that the trace of \\(A\\) and the trace of \\(UAU^{-1}\\) are guaranteed to be the same, and the determinants are also going to match. That is, trace and determinants are both functions of the conjugacy class of A, rather than of A itself.
 
@@ -220,9 +222,9 @@ Let’s reparameterize the hyperbola in terms of one variable, \\(t\\), to get a
 
 We can define the distance between two points to be the infimum distance of all curves between them.
 
-One way to make a hyperbola is to pick two points on your y-axis, let them be c units apart, and look at all points p such that \\(|p-A| - |p-B| = c/2\\). Let’s call this hyperbola \\(R_h\\).
+One way to make a hyperbola is to pick two points on your y-axis, let them be c units apart, and look at all points p such that \\(\|p-A\| - \|p-B\| = c/2\\). Let’s call this hyperbola \\(R_h\\).
 
-What are the integers of a hyperbola? Maybe they are the subset of the points \\(p\\) with the property that \\(|p-A|\\) AND \\(|p-B|\\) are whole numbers, let’s call this subset \\(Z_h\\). Perhaps this is not quite what we want.
+What are the integers of a hyperbola? Maybe they are the subset of the points \\(p\\) with the property that \\(\|p-A\|\\) AND \\(\|p-B\|\\) are whole numbers, let’s call this subset \\(Z_h\\). Perhaps this is not quite what we want.
 
 There’s something called operator calculus or umbral calculus, and it’s suited for our goal of writing down a detiling polynomial for a discrete subgroup of the hyperbola \\(Z_h \subset R_h\\).
 
