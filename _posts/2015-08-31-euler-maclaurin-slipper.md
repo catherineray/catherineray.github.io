@@ -212,7 +212,7 @@ So we can write down the detiling polynomial with the generators presented as ma
 
 Then once we can write down a detiling polynomial for a line with a non Euclidean metric, that is, write down d/dt such that The operator d/dt generates the hyperbolic line by translation by the exponential (as a flow on the hyperbola), the issue that I have is figuring out if I want the integers of a hyperbolic to be
 
-Of a hyperbola 1) projection Or 2) Arc length based Or 3) The subset of the hyperbola that consists of Points P such that |P-A| is an integer, and |P-B| is an integer
+Of a hyperbola 1) projection Or 2) Arc length based Or 3) The subset of the hyperbola that consists of Points P such that \|P-A\| is an integer, and \|P-B\| is an integer
 
 So then I guess really we want our integers to be a discrete subgroup of wrt this group operation.
 
