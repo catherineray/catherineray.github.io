@@ -26,4 +26,4 @@ __can be found on libgen if a link is not given__
 - [The Algebra II Lectures of the Poetic Kazuya Kato](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf)
 
 ##All Sorts of Neural Networks
--[Chris Olah's blog](https://colah.github.io/)
+- [Chris Olah's blog](https://colah.github.io/)
