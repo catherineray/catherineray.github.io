@@ -8,11 +8,11 @@ permalink: /resources/
 
 ### "Basics" in Maths:
 
-- [Phacking](https://www.youtube.com/watch?v=tLM7xS6t4FE&ab_channel=SciShow)
+- [p-hacking](https://www.youtube.com/watch?v=tLM7xS6t4FE&ab_channel=SciShow)
 - [The Evolution of Trust](https://ncase.me/trust/) (An introduction to Game Theory)
-- [The Magnificent 2D Matrix](https://ncase.me/matrix/)
 - [Math Girls](http://bentobooks.com/resources/math-girls-sample.pdf)
 - [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures](https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/)
+- [The Magnificent 2D Matrix](https://ncase.me/matrix/)
 - [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)
 - [Topology for Physicists](http://www.thp.uni-koeln.de/zirn/011_Website_Martin_Zirnbauer/3_Teaching/LectureNotes/02ToPhys_SS11.pdf)
 - [Pictorial basic topology via physics and engineering examples](https://www2.math.upenn.edu/~ghrist/notes.html)
