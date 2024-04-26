@@ -8,6 +8,7 @@ permalink: /resources/
 
 ### "Basics" in Maths:
 
+- [Phacking](https://www.youtube.com/watch?v=tLM7xS6t4FE&ab_channel=SciShow)
 - [The Evolution of Trust](https://ncase.me/trust/) (An introduction to Game Theory)
 - [The Magnificent 2D Matrix](https://ncase.me/matrix/)
 - [Math Girls](http://bentobooks.com/resources/math-girls-sample.pdf)
