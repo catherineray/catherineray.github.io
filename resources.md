@@ -9,7 +9,7 @@ permalink: /resources/
 ### "Basics" in Maths:
 
 - [The Evolution of Trust](https://ncase.me/trust/) (An introduction to Game Theory)
-- [The Magmnificent 2D Matrix](https://ncase.me/matrix/)
+- [The Magnificent 2D Matrix](https://ncase.me/matrix/)
 - [Math Girls](http://bentobooks.com/resources/math-girls-sample.pdf)
 - [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures](https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/)
 - [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)
