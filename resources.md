@@ -26,5 +26,6 @@ __can be found on libgen if a link is not given__
 - Classics in mathematics: Problems and Theorems in Analysis I: Series, Integral Calculus, Theory of Functions (Polya and Szego)
 - [The Algebra II Lectures of the Poetic Kazuya Kato](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf)
 
-### All Sorts of Neural Networks
+### All Sorts of Neural Networks and Machine Learning
 - [Chris Olah's blog](https://colah.github.io/)
+- [image]!(/images/ml_map.png) [sci-ket learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
