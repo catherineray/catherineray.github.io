@@ -28,4 +28,4 @@ __can be found on libgen if a link is not given__
 
 ### All Sorts of Neural Networks and Machine Learning
 - [Chris Olah's blog](https://colah.github.io/)
-- ![](/images/ml_map.png) [sci-ket learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
+- ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
