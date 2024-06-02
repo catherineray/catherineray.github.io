@@ -10,15 +10,18 @@ My name is Cathe**rin**e Ray (they/them), and I'm a mathematician. My current ma
 
 I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to study mathematics full time under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/), and with my PhD from Northwestern working with Paul Goerss. I am currently a postdoc at Uni-Münster in the Arithmetic and Homotopy Theory Working Group lead by Thomas Nikolaus and Christopher Deninger.
 
-Here is a <details>
-  <summary>summary of my past and present research.</summary>
-  
+<details>
+  <summary>Here is a summary of my past and present research.</summary>
+  Hello World!
 </details>
 
 ### Contact me
 
 Curiosity is welcome: fractalcows@gmail.com
 My work email: cray@uni-muenster.de
+
+
+If you are interested in my research mathematics, here are some fun papers of mine: 
 
 ### Research publications:
 
@@ -31,7 +34,8 @@ My work email: cray@uni-muenster.de
 
 ### In progress:
 
-- A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of Ramified Curves — (my thesis in progress)
+- A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of Ramified Curves — (my thesis, readable arxiv version in progress)
+- The homotopy groups of E_6^{hC_9} and the odd primary Kevaire invariant; joint with E. Belmont
 - Covers of the Octahedron; joint with D. Lee 
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
 
