@@ -22,6 +22,7 @@ I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/1
 ### Contact me
 
 Curiosity is welcome: fractalcows@gmail.com
+
 My work email: cray@uni-muenster.de
 
 
