@@ -16,7 +16,20 @@ I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/1
 
 <details>
   <summary>Here is a summary of my past and present research.</summary>
-  Hello World!
+   ![](images/wp-content/uploads/2014/06/IMG_0813.jpg) 
+  My first projects in robotics were in 2011: a dinky hexapod that autonomously followed people around, and Rubik's cube solving robot.
+  
+  In Spring 2012, I [became interested](http://rin.io/coupled-oscillator-love/) in physical examples of [nonlinear systems](http://rin.io/matlab-lorenz-attractor/) due to a [research project](http://thefutureofthings.com/4060-flexible-memristor-chips/) at the Chemistry and Physics Department of Mary Baldwin College, and modeled the resistant switching behavior of [flexible TiO2](http://books.google.com/books?id=Aey-h9lgcQgC&pg=PA111&lpg=PA111&dq=tio2+memristor+mary+baldwin&source=bl&ots=_Cxkt4ZyU8&sig=12ZG4phc_r1cNRkhmyg99YZ1dUc&hl=en&sa=X&ei=U0dcVN2RBdHToAT4u4LoDQ&ved=0CEMQ6AEwBQ#v=onepage&q=tio2%20memristor%20mary%20baldwin&f=false).
+  
+  [![nist3](images/wp-content/uploads/2014/06/nist3-1024x567.jpg)
+  [Source](http://thefutureofthings.com/4060-flexible-memristor-chips/)
+  
+  Summer 2012, the [Positronics Division of the George Washington University Robotics Lab](http://robotics.gwu.edu/positronics/?page_id=9) took me under their wing as an intern. Our team smoothed joint movement of the Willow Garage Personal Robot 2 (PR2), alongside improving load equalization (below). I [programmed the PR2](http://rin.io/semi-autonomous-robotics-2012-my-1st-software-project/) to autonomously "learn" to place objects in holes with the corresponding shape (using only past motor position commands and the finger gripper sensors).
+  
+  On the side, fascinated by the phenomena of producing argon plasma glow via the introduction of an RF source at 2.45GHz to a conductive cavity, I modeled the modes of conductive [polyhedra](http://en.wikipedia.org/wiki/Goldberg_polyhedron)[.](http://robotics.gwu.edu/positronics/?page_id=9)
+  
+  ![Screenshot from 2014-11-06 20:07:39](images/wp-content/uploads/2014/06/Screenshot-from-2014-11-06-200739.png)
+  [Source](http://robotics.gwu.edu/positronics/?p=59)
 </details>
 
 ### Contact me
