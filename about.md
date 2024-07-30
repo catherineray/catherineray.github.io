@@ -16,6 +16,8 @@ I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/1
 
 <details>
   <summary>Here is a summary of my past and present research.</summary>
+  (Currently under construction, mind the mess). 
+  
   My first projects in robotics were in 2011: a dinky hexapod that autonomously followed people around, and Rubik's cube solving robot.
   ![](images/wp-content/uploads/2014/06/IMG_0813.jpg)
   
