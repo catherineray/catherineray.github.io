@@ -3,11 +3,16 @@ layout: page
 title: Resources
 permalink: /resources/
 ---
+
+### All Sorts of Neural Networks and Machine Learning
+- [Chris Olah's blog](https://colah.github.io/)
+- ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
+
+### "Basics" in Maths:
+
 > "The thing to keep in mind is that all these "basics" were once cutting-edge research. And the people who got to the bottom of these matters were not trivial idiots. They were great masters. The more you look at this material in this way, the more you’ll find you can tolerate it in good humor, and without fearing its deadening effects on your strange, wild mind."
 > 
 > — Laurens Gunnarsen
-
-### "Basics" in Maths:
 
 - [p-hacking](https://www.youtube.com/watch?v=tLM7xS6t4FE&ab_channel=SciShow)
 - [The Evolution of Trust](https://ncase.me/trust/) (An introduction to Game Theory)
@@ -26,6 +31,3 @@ __can be found on libgen if a link is not given__
 - Classics in mathematics: Problems and Theorems in Analysis I: Series, Integral Calculus, Theory of Functions (Polya and Szego)
 - [The Algebra II Lectures of the Poetic Kazuya Kato](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf)
 
-### All Sorts of Neural Networks and Machine Learning
-- [Chris Olah's blog](https://colah.github.io/)
-- ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
