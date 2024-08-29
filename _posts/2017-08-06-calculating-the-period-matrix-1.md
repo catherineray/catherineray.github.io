@@ -143,4 +143,4 @@ In the end, all collected, in complex number form, our period matrix is this glo
 \\(b := -2\sqrt{3}D\\),  
 \\(c := -\frac{4}{1+ \sqrt{3}}D\\)
 
-\\( \begin{matrix} a & ae^{\tau i/3} &ae^{2\tau i/3} &ae^{3\tau i/3} &ae^{4\tau i/3} &ae^{5\tau i/3} \\ b &b e^{\tau i/3} &b e^{2\tau i/3} & be^{3\tau i/3} & be^{4\tau i/3} &be^{5\tau i/3} \\ c & c e^{5\tau i/6} & c e^{10\tau i/6} & ce^{15\tau i/6} & ce^{20\tau i/6} & ce^{25\tau i/6} \end{matrix}\\)
+\\( \begin{matrix} a & ae^{\tau i/3} &ae^{2\tau i/3} &ae^{3\tau i/3} &ae^{4\tau i/3} &ae^{5\tau i/3} \\\ b &b e^{\tau i/3} &b e^{2\tau i/3} & be^{3\tau i/3} & be^{4\tau i/3} &be^{5\tau i/3} \\\ c & c e^{5\tau i/6} & c e^{10\tau i/6} & ce^{15\tau i/6} & ce^{20\tau i/6} & ce^{25\tau i/6} \end{matrix}\\)
