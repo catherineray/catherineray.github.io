@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-My name is Cathe**rin**e Ray (they/them), and I'm a mathematician. 
+My name is Cathe**rin**e Ray (they/them), and I'm a mathematician and artist. 
 
-My current mathematical research is on arithmetic patterns in homotopy theory and physics. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. I continue to work in chronic pain research and make lots of art!
+My current mathematical research is on arithmetic patterns in homotopy theory and physics. I also work in chronic pain research. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. 
 
   ![](images/Screenshot from 2022-09-05 16-32-44.png)
   
@@ -19,7 +19,7 @@ I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/1
   (Currently under construction, mind the mess). 
   
   My first projects in robotics were in 2011: a dinky hexapod that autonomously followed people around, and Rubik's cube solving robot.
-    <img src="images/wp-content/uploads/2014/06/IMG_0813.jpg">
+    <img src="catherineray.github.io/images/wp-content/uploads/2014/06/IMG_0813.jpg">
   
   In Spring 2012, I [became interested](http://rin.io/coupled-oscillator-love/) in physical examples of [nonlinear systems](http://rin.io/matlab-lorenz-attractor/) due to a [research project](http://thefutureofthings.com/4060-flexible-memristor-chips/) at the Chemistry and Physics Department of Mary Baldwin College, and modeled the resistant switching behavior of [flexible TiO2](http://books.google.com/books?id=Aey-h9lgcQgC&pg=PA111&lpg=PA111&dq=tio2+memristor+mary+baldwin&source=bl&ots=_Cxkt4ZyU8&sig=12ZG4phc_r1cNRkhmyg99YZ1dUc&hl=en&sa=X&ei=U0dcVN2RBdHToAT4u4LoDQ&ved=0CEMQ6AEwBQ#v=onepage&q=tio2%20memristor%20mary%20baldwin&f=false).
   
