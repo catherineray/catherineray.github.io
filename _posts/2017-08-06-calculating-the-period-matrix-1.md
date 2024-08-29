@@ -46,9 +46,9 @@ Let us start with the model corresponding to 24 triangles with angles \\(\pi/12*
 
 We can then pick any \\(\gamma_j\\) combination to parallel edges as long as they satisfy a certain intersection condition. The intersection matrix must have determinant nonzero, we pick the intersection matrix:
 
-\\(\begin{matrix} A & 0 \\ 0 & A^T \end{matrix} \\)
+\\(\begin{pmatrix} A & 0 \\\ 0 & A^T \end{pmatrix} \\)
 
-Where \\(A := \begin{pmatrix} 0 & -1 & 1 \\ 1 & 0 & -1 \\ -1 & 1 & 0 \end{pmatrix}\\)
+Where \\(A := \begin{pmatrix} 0 & -1 & 1 \\\ 1 & 0 & -1 \\\ -1 & 1 & 0 \end{pmatrix}\\)
 
 We take the convention that:
 
