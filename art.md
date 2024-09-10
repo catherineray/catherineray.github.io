@@ -4,7 +4,7 @@ title: Art
 permalink: /art/
 ---
 
-Testing gallery
+Please enjoy this small collection of my art. :) 
 
 <ul class="image-gallery">
   {% for image in site.static_files %}
