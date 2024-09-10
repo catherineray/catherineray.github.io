@@ -2,7 +2,7 @@
 layout: page
 title: Art
 permalink: /art/
-classes: wide
+full-width: true
 ---
 
 Please enjoy this small collection of my art. :) I primarily work with pastels, acrylic, spray paint and polaroids. 
