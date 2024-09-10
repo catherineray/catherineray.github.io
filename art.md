@@ -7,7 +7,7 @@ full-width: true
 
 Please enjoy this small collection of my art. :) I primarily work with pastels, acrylic, spray paint and polaroids. 
 
-The chaos-god-penrose tattoo design is a collaboration with Chris Orta [@killabunzz](https://www.instagram.com/killabunzz/). 
+The chaos god penrose tiling tattoo design is a collaboration with Chris Orta [@killabunzz](https://www.instagram.com/killabunzz/). 
 
 <ul class="image-gallery">
   {% for image in site.static_files %}
