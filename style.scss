@@ -289,6 +289,7 @@ footer {
 ul.image-gallery {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none; 
 }
 
 li.image-gallery-card {
