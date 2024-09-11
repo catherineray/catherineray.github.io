@@ -84,11 +84,6 @@ ul, ol {
 
 ul {
   list-style-type: disc;
-  //nati addition
-  position: absolute;
-    width: 100vw;
-    left: 0;
-    padding-left: 0;
 }
 
 ol {
@@ -294,7 +289,12 @@ footer {
 ul.image-gallery {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none; 
+  list-style-type: none;
+  //nati addition 
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  padding-left: 0;
 }
 
 li.image-gallery-card {
