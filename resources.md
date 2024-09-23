@@ -3,6 +3,8 @@ layout: page
 title: Resources
 permalink: /resources/
 ---
+### Online Therapy for People in Europe 
+- [It's Complicated](https://complicated.life/)
 
 ### All Sorts of Neural Networks and Machine Learning
 - [Chris Olah's blog](https://colah.github.io/)
