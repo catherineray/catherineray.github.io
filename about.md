@@ -31,6 +31,8 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 ### In progress:
 
+- Criterion for Geometrically Modelling the Lubin-Tate action
+- New Families of Newton Strata in the Torelli Locus
 - A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of Ramified Curves — (my thesis, readable arxiv version in progress)
 - The homotopy groups of E_6^{hC_9} and the odd primary Kevaire invariant; joint with E. Belmont
 - Covers of the Octahedron; joint with D. Lee 
@@ -38,7 +40,11 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 ### Expository writing:
 
+- [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf)
+- [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf)
+- [Models of Formal Group Laws of Every Height](https://rin.io/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
+- [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
 - [Calculating pi_*(tmf) at the prime 2](https://people.math.rochester.edu/faculty/doug/otherpapers/ray-a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
 - [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
 - [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
-- [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
+
