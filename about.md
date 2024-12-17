@@ -10,7 +10,6 @@ I also work in chronic pain research. Before I was in math, I worked mostly in s
 
 I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to study mathematics full time under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/), and with my PhD from Northwestern working with Paul Goerss. I am currently a postdoc at Uni-Münster in the Arithmetic and Homotopy Theory Working Group lead by Thomas Nikolaus and Christopher Deninger.
 
-[Here](pdfs/application_general_audience.pdf) is a summary of my work as a graduate student for a general audience, including original illustrations. 
 
 ### Contact me
 
@@ -39,7 +38,7 @@ If you are interested in my research mathematics, here are some fun papers of mi
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
 
 ### Expository writing:
-
+- [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations. 
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf)
 - [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf)
 - [Models of Formal Group Laws of Every Height](https://rin.io/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
