@@ -6,9 +6,10 @@ permalink: /resources/
 ### Online Therapy for People in Europe 
 - [It's Complicated](https://complicated.life/)
 
-### All Sorts of Neural Networks and Machine Learning
-- [Chris Olah's blog](https://colah.github.io/)
-- ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
+###  Machine Learning and Neural Networks
+
+- All the basic algorithms in ML arranged in a nice graph to follow, work through the examples ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
+- Chris has excellent clear expositions of basic topics in neural networks and deep learning, [Chris Olah's blog](https://colah.github.io/)
 
 ### "Basics" in Maths:
 
