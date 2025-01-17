@@ -11,7 +11,7 @@ categories:
 
 For weeks, I was doing nothing but computing etale sheaf cohomologies of ramified covers of the projective plane. I would decompose sheaves on these curves by cutting around the neighborhood of ramification point (the stomach), and capturing the properties of the ramification group from the ramification point (the heart). The gluing back datum was the punctured neighborhood of the sheaf.
 
-Lyrics: 
+# Lyrics: 
 I'll cut you into manageable pieces
 I hope you're not too hard to glue back together
 There's so many ways to form an affine cover
