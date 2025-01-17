@@ -1,0 +1,7 @@
+I have been working recently to counter the writers block that has formed through an unhealthy perfectionism. In order to do this, I will post some old art and music which at the time I felt was "not good enough to share" or "inappropriate for a professional mathematician to have associated to them." But all of these labels and caring too much about what other people think -- I am sick of them. I just want to be my full authentic self. So I will be. Enjoy!
+
+This drawing is an old drawing I made when I was preparing for my qualifying exam in my second year of grad school at Northwestern. It is the crystalline period map. 
+
+The tower to the left is the "Lubin-Tate" tower, the deeper it goes the more level structure. In the upper right corner there is projective space, and the "cat like" creatures below are moduli stacks of curves. I always draw the moduli stack of elliptic curves as a cat because it has 2 stacky points (it's ears) and a third stacky point if you compactify "the sock" of the fundamental domain, which is its tail. At the time I was working on what became my PhD thesis, of using moduli stacks of curves with level structure to understand actions of groups on the moduli stack of formal groups with level structure. 
+
+While we are sharing old things, here is a writeup Artem, Kolya and I made in 2018 or 2019 of how to use the two tower isomorphism to approach the Chromatic vanishing conjecture. 
