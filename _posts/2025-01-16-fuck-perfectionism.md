@@ -1,6 +1,6 @@
 ---
 title: "Fuck Perfectionism"
-date: "2025-01-17"
+date: "2025-01-16"
 categories: 
   - "psych"
 ---
