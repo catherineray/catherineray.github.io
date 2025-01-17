@@ -1,3 +1,12 @@
+---
+title: "The Crystalline Period Map"
+date: "2025-01-17"
+categories: 
+  - "art"
+  - "math"
+---
+
+
 ![](/images/lubin-tate.jpg)  This drawing is an old drawing I made when I was preparing for my qualifying exam in my second year of grad school at Northwestern. It is the crystalline period map. The tower to the left is the "Lubin-Tate" tower, the deeper it goes the more level structure. In the upper right corner there is projective space, and the "cat like" creatures below are moduli stacks of curves. I always draw the moduli stack of elliptic curves as a cat because it has 2 stacky points (it's ears) and a third stacky point if you compactify "the sock" of the fundamental domain, which is its tail. At the time I was working on what became my PhD thesis, of using moduli stacks of curves with level structure to understand actions of groups on the moduli stack of formal groups with level structure. 
 
 If I was braver then, I would have added this drawing to the paper which I wrote at an Arizona Winter School. I still think that paper is good resource for learning quickly about the Fargue Fontaine curve. [A Global Crystalline Period Map](https://arxiv.org/pdf/1911.08615) All of this is on my mind because I have had the great privledge and joy of returning to this topic after years away. 
