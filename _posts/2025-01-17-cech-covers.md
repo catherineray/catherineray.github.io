@@ -25,36 +25,36 @@ A global section $H^0(X, \Omega^1_X)$ can be specified by either a basis in term
 
 
 # Lyrics: 
-I'll cut you into manageable pieces
-I hope you're not too hard to glue back together
-There's so many ways to form an affine cover
-Yet I keep slicing open your stomach
-And I pull out your heart
-I don't know why
-that's where I like to start
-
-It's an easy thing to fall in love with a hand
-When its lifeless and the fingers are missing
-I can trace the truth As it sits motionless
-beneath my glass, slowly twitching
-
-And when I stitch it back together
-It jumps and motions toward the sky
-There's a hanging sequence of all of your pieces
-And your other hand is waving hi
-
-I'll cut you into manageable pieces
-I hope you're not too hard to glue back together
-There's so many ways to form an affine cover
-Yet I keep slicing open your stomach
-And I pull out your heart
-I don't know why
-that's where I like to start
-
-Those intersections between your skin
-Reveal raw flesh that I'm kissing
-There's so many ways to stitch you back
-I GIVE YOU MORE EYES MORE EYES MORE EYES MORE EYES YOUR DICK IS MISSING, i needed it to make more eyes
-
-I love to cut you apart to find the ways you combine
-How many times can I do this before you fall apart forever?
+I'll cut you into manageable pieces\ 
+I hope you're not too hard to glue back together\ 
+There's so many ways to form an affine cover\ 
+Yet I keep slicing open your stomach\ 
+And I pull out your heart\ 
+I don't know why\ 
+that's where I like to start\ 
+\ 
+It's an easy thing to fall in love with a hand\ 
+When its lifeless and the fingers are missing\ 
+I can trace the truth As it sits motionless\ 
+beneath my glass, slowly twitching\ 
+\ 
+And when I stitch it back together\ 
+It jumps and motions toward the sky\ 
+There's a hanging sequence of all of your pieces\ 
+And your other hand is waving hi\ 
+\ 
+I'll cut you into manageable pieces\ 
+I hope you're not too hard to glue back together\ 
+There's so many ways to form an affine cover\ 
+Yet I keep slicing open your stomach\ 
+And I pull out your heart\ 
+I don't know why\ 
+that's where I like to start\ 
+\ 
+Those intersections between your skin\ 
+Reveal raw flesh that I'm kissing\ 
+There's so many ways to stitch you back\ 
+I GIVE YOU MORE EYES MORE EYES MORE EYES MORE EYES YOUR DICK IS MISSING, i needed it to make more eyes\ 
+\ 
+I love to cut you apart to find the ways you combine\ 
+How many times can I do this before you fall apart forever?\ 
