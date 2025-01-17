@@ -21,40 +21,40 @@ In particular, if take the decomposition of $X$ into the point at infinity and i
 
 $$0 \to H^0(X, \mathcal{F}) \hookrightarrow  \mathcal{F}(U) \times \mathcal{F}^\wedge_\infty \to \mathcal{F}^\wedge_\infty[\frac{1}{T}] \to H^0(X, \mathcal{F}) \to 0.$$
 
-A global section $H^0(X, \Omega^1_X)$ can be specified by either a basis in terms of $\mathcal{F}(U)$, in terms of $\mathcal{F}^\wedge_\infty.$ This is because we are considering $H^0(X, \mathcal{F})$ as a subset of $\mathcal{F}(U) \times \mathcal{F}^\wedge_\infty$. 
+A global section $H^0(X, \Omega^1\_X)$ can be specified by either a basis in terms of $\mathcal{F}(U)$, in terms of $\mathcal{F}^\wedge\_\infty.$ This is because we are considering $H^0(X, \mathcal{F})$ as a subset of $\mathcal{F}(U) \times \mathcal{F}^\wedge_\infty$. 
 
 
 # Lyrics: 
-I'll cut you into manageable pieces\ 
-I hope you're not too hard to glue back together\ 
-There's so many ways to form an affine cover\ 
-Yet I keep slicing open your stomach\ 
-And I pull out your heart\ 
-I don't know why\ 
-that's where I like to start\ 
-\ 
-It's an easy thing to fall in love with a hand\ 
-When its lifeless and the fingers are missing\ 
-I can trace the truth As it sits motionless\ 
-beneath my glass, slowly twitching\ 
-\ 
-And when I stitch it back together\ 
-It jumps and motions toward the sky\ 
-There's a hanging sequence of all of your pieces\ 
-And your other hand is waving hi\ 
-\ 
-I'll cut you into manageable pieces\ 
-I hope you're not too hard to glue back together\ 
-There's so many ways to form an affine cover\ 
-Yet I keep slicing open your stomach\ 
-And I pull out your heart\ 
-I don't know why\ 
-that's where I like to start\ 
-\ 
-Those intersections between your skin\ 
-Reveal raw flesh that I'm kissing\ 
-There's so many ways to stitch you back\ 
-I GIVE YOU MORE EYES MORE EYES MORE EYES MORE EYES YOUR DICK IS MISSING, i needed it to make more eyes\ 
-\ 
-I love to cut you apart to find the ways you combine\ 
-How many times can I do this before you fall apart forever?\ 
+I'll cut you into manageable pieces<br> 
+I hope you're not too hard to glue back together<br> 
+There's so many ways to form an affine cover<br> 
+Yet I keep slicing open your stomach<br> 
+And I pull out your heart<br> 
+I don't know why<br> 
+that's where I like to start<br> 
+<br> 
+It's an easy thing to fall in love with a hand<br> 
+When its lifeless and the fingers are missing<br> 
+I can trace the truth As it sits motionless<br> 
+beneath my glass, slowly twitching<br> 
+<br> 
+And when I stitch it back together<br> 
+It jumps and motions toward the sky<br> 
+There's a hanging sequence of all of your pieces<br> 
+And your other hand is waving hi<br> 
+<br> 
+I'll cut you into manageable pieces<br> 
+I hope you're not too hard to glue back together<br> 
+There's so many ways to form an affine cover<br> 
+Yet I keep slicing open your stomach<br> 
+And I pull out your heart<br> 
+I don't know why<br> 
+that's where I like to start<br> 
+<br> 
+Those intersections between your skin<br> 
+Reveal raw flesh that I'm kissing<br> 
+There's so many ways to stitch you back<br> 
+I GIVE YOU MORE EYES MORE EYES MORE EYES MORE EYES YOUR DICK IS MISSING, i needed it to make more eyes<br> 
+<br> 
+I love to cut you apart to find the ways you combine<br> 
+How many times can I do this before you fall apart forever?<br> 
