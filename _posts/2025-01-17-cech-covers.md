@@ -11,6 +11,19 @@ categories:
 
 For weeks, I was doing nothing but computing etale sheaf cohomologies of ramified covers of the projective plane. I would decompose sheaves on these curves by cutting around the neighborhood of ramification point (the stomach), and capturing the properties of the ramification group from the ramification point (the heart). The gluing back datum was the punctured neighborhood of the sheaf.
 
+Let $X$ be a curve over a complete local ring, and let us decompose it into two affine pieces $X = A \cup B.$ 
+
+Given a sheaf $\mathcal{F}$ over $X$, we have the following Mayer-Vietoris sequence. 
+
+$$0 \to H^0(X, \mathcal{F}) \hookrightarrow  \mathcal{F}(A) \times \mathcal{F}(B) \to \mathcal{F}(A) \cap \mathcal{F}(B) \to H^1(X, \mathcal{F} \to 0.$$
+
+In particular, if take the decomposition of $X$ into the point at infinity and its complement $X = U \cup \{\infty\}$, we get the following sequence, let $T$ be a divisor at $\infty$. 
+
+$$0 \to H^0(X, \mathcal{F}) \hookrightarrow  \mathcal{F}(U) \times \mathcal{F}^\wedge_\infty \to \mathcal{F}^\wedge_\infty[\frac{1}{T}] \to H^0(X, \mathcal{F}) \to 0.$$
+
+A global section $H^0(X, \Omega^1_X)$ can be specified by either a basis in terms of $\mathcal{F}(U)$, in terms of $\mathcal{F}^\wedge_\infty.$ This is because we are considering $H^0(X, \mathcal{F})$ as a subset of $\mathcal{F}(U) \times \mathcal{F}^\wedge_\infty$. 
+
+
 # Lyrics: 
 I'll cut you into manageable pieces
 I hope you're not too hard to glue back together
