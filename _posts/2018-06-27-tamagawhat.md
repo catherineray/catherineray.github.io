@@ -11,31 +11,31 @@ This quarter (Spring 2018) we held a seminar on the Lurie-Gaitsgory proof of the
 
 Lecture 3: Disk’s Edge
 
-[Lecture-3-Disksedge.m4a](/wp-content/uploads/2018/05/Lecture-3-Disksedge.m4a)
+[Lecture-3-Disksedge.m4a](/images/wp-content/uploads/2018/05/Lecture-3-Disksedge.m4a)
 
 * * *
 
 Lecture 5: Bun and Ran
 
-[Lecture-5-Bunandran.m4a](/wp-content/uploads/2018/05/Lecture-5-Bunandran.m4a)
+[Lecture-5-Bunandran.m4a](/images/wp-content/uploads/2018/05/Lecture-5-Bunandran.m4a)
 
 * * *
 
 Lecture 6: Bernoulli Numbers
 
-[Lecture-6-BernoulliImJ.m4a](/wp-content/uploads/2018/05/Lecture-6-BernoulliImJ.m4a)
+[Lecture-6-BernoulliImJ.m4a](/images/wp-content/uploads/2018/05/Lecture-6-BernoulliImJ.m4a)
 
 * * *
 
 Lecture 7: Sheaves on Ran
 
-[Lecture-7-SheavesonRan.m4a](/wp-content/uploads/2018/05/Lecture-7-SheavesonRan.m4a)
+[Lecture-7-SheavesonRan.m4a](/images/wp-content/uploads/2018/05/Lecture-7-SheavesonRan.m4a)
 
 * * *
 
 Lecture 8: Beilinson-Drin(fel’d)
 
-[Lecture-8-BeilinsonDrin.m4a](/wp-content/uploads/2018/06/Lecture-8-BeilinsonDrin.m4a)
+[Lecture-8-BeilinsonDrin.m4a](/images/wp-content/uploads/2018/06/Lecture-8-BeilinsonDrin.m4a)
 
 * * *
 
