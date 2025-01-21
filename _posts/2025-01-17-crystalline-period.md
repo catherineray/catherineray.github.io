@@ -13,6 +13,6 @@ If I was braver then, I would have added this drawing to the paper which I wrote
 
 All of this is on my mind because I have had the great privledge and joy of returning to this topic after years away. 
 
-While we are sharing old things, in 2018 or 2019, Artem, Kolya and I made an outline of an approach to rational Chromatic Vanishing  \\( H^*(J_h, W(k)) \times \mathbb{Q} \simeq H^*(J_h, W(k)[[u\_1, ..., u_{h-1}]][u^{\pm}]) \times \mathbb{Q} \\) using the two tower isomorphism which reduces the problem to directly calculating the $GL_h(\mathbb{Q}_p)$ action on constant functions on the Drinfeld projective space [Chromatic Vanishing Approach](pdfs/chromaticvanishingapproach.pdf). 
+While we are sharing old things, in 2018 or 2019, Artem, Kolya and I made an outline of an approach to rational Chromatic Vanishing  `\\( H^*(J_h, W(k)) \times \mathbb{Q} \simeq H^*(J_h, W(k)[[u_1, ..., u_{h-1}]][u^{\pm}]) \times \mathbb{Q} \\)` using the two tower isomorphism which reduces the problem to directly calculating the `\\( GL_h(\mathbb{Q}_p) \\)` action on constant functions on the Drinfeld projective space [Chromatic Vanishing Approach](pdfs/chromaticvanishingapproach.pdf). 
 
 At the time, the tools to compute the p-adic cohomology of the Drinfeld projective plane were not available to us so we ulitmately were scooped.  I was initially sad about this because I felt then I could not prioritize thinking about these awesome and gorgeous concepts. However, recently I have begun with many others a spin-off project, which I am delighted and healed by. :)
