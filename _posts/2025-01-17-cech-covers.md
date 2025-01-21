@@ -7,7 +7,7 @@ categories:
   - "music"
 ---
 
-[Cech Covers](images/Cech cover.m4a) (click the link to listen to us). I wrote this song with my old beloved room mate Christian Gorski in my last year of grad school while I was wrapping up my thesis. 
+[Cech Covers](images/Cech cover.m4a) (click the link to listen to us). I wrote this song with my beloved old room mate Christian Gorski in my last year of grad school while I was wrapping up my thesis. 
 
 For weeks, I was doing nothing but computing etale sheaf cohomologies of ramified covers of the projective plane. I would decompose sheaves on these curves by cutting around the neighborhood of ramification point (the stomach), and capturing the properties of the ramification group from the ramification point (the heart). The gluing back datum was the punctured neighborhood of the sheaf.
 
