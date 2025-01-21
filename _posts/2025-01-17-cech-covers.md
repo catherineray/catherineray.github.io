@@ -7,7 +7,7 @@ categories:
   - "music"
 ---
 
-[Cech Covers](images/Cech cover.m4a) (click the link to listen). I wrote this song with my old beloved room mate Christian Gorski in my last year of grad school while I was wrapping up my thesis. 
+[Cech Covers](images/Cech cover.m4a) (click the link to listen to us). I wrote this song with my old beloved room mate Christian Gorski in my last year of grad school while I was wrapping up my thesis. 
 
 For weeks, I was doing nothing but computing etale sheaf cohomologies of ramified covers of the projective plane. I would decompose sheaves on these curves by cutting around the neighborhood of ramification point (the stomach), and capturing the properties of the ramification group from the ramification point (the heart). The gluing back datum was the punctured neighborhood of the sheaf.
 
@@ -35,7 +35,8 @@ that's where I like to start<br>
 <br> 
 It's an easy thing to fall in love with a hand<br> 
 When its lifeless and the fingers are missing<br> 
-I can trace the truth As it sits motionless<br> 
+I can trace the truth<br>
+As it sits motionless<br> 
 beneath my glass, slowly twitching<br> 
 <br> 
 And when I stitch it back together<br> 
@@ -54,7 +55,8 @@ that's where I like to start<br>
 Those intersections between your skin<br> 
 Reveal raw flesh that I'm kissing<br> 
 There's so many ways to stitch you back<br> 
-I GIVE YOU MORE EYES MORE EYES MORE EYES MORE EYES YOUR DICK IS MISSING, i needed it to make more eyes<br> 
+I GIVE YOU MORE EYES MORE EYES MORE EYES MORE EYES<br>
+YOUR DICK IS MISSING, i needed it to make more eyes<br> 
 <br> 
 I love to cut you apart to find the ways you combine<br> 
 How many times can I do this before you fall apart forever?<br> 
