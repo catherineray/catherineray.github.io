@@ -10,9 +10,9 @@ These notes began as my way of attempting to understand examples of abelian vari
 
 I wish to mention that this set of examples is different than those of Gorbunov-Mahowald, as they define varieties with formal group laws of height \\(p-1\\) for every prime \\(p\\) . 
 	
-To create formal group laws of higher heights \\(h \geq 3\\(, we will need to look at varieties of dimension higher than one by Cartier duality.  If we request a p-divisible group with a piece of dimension 1 height 3, we wish for \\(G_{1/3}\\) but since abelian varieties admit polarizations, the p-divisible group must be its own Cartier dual, it must be of the form:
+To create formal group laws of higher heights \\(h \geq 3\\), we will need to look at varieties of dimension higher than one by Cartier duality. (For an introduction to the slope notation I use here, check out [Overview of Classical Theory of p-Divisible Groups](https://rin.io/overview-of-the-classic-theory-of-p-divisible-groups/). If we request a p-divisible group with a piece of dimension 1 height 3, we wish for \\(G_{1/3}\\) but since abelian varieties admit polarizations, the p-divisible group must be its own Cartier dual, it must be of the form: $$G_{1/3} \times G_{2/3}$$ so it's total dimension is 1 + 2 = 3.
 
-We represent p-divisible groups as a finite product of \\(G_{r/s}\\) where \\(r\\) is their dimension and \\(s\\) is their height, and the Cartier dual of a p-divisible group takes \\(G_{r/s} \mapsto G_{s-r/s}\\). $$G_{1/3} \times G_{2/3}$$ so it's total dimension is 1 + 2 = 3. Thanks to Andrew Salch for this explanation.
+Sidenote: We represent p-divisible groups as a finite product of \\(G_{r/s}\\) where \\(r\\) is their dimension and \\(s\\) is their height, and the Cartier dual of a p-divisible group takes \\(G_{r/s} \mapsto G_{s-r/s}\\). Thanks to Andrew Salch for this explanation.
 
 To find formal group laws of dimension 1, we will split these formal group laws into a formal summand, and prove that there exists a height \\(h\\) component of dimension 1.
 
