@@ -5,21 +5,21 @@ categories:
   - "math"
 ---
 
-_This post assumes that you’re familiar with the definition of a prime ideal, a local ring, \\(R_{(p)}\\), the sphere spectrum, \\(\mathbb{S}\\), and the Lazard ring, \\(L\\). During a talk [Jacob Lurie](http://www.math.harvard.edu/~lurie/) gave at Harvard this April, he labeled the moduli space of (1-d commutative) formal group laws as \\(\text{Spec }\mathbb{S}\\).
+_This post assumes that you’re familiar with the definition of a prime ideal, a local ring, \\( R\_{(p)} \\), the sphere spectrum, \\(\mathbb{S}\\), and the Lazard ring, \\(L\\). During a talk [Jacob Lurie](http://www.math.harvard.edu/~lurie/) gave at Harvard this April, he labeled the moduli space of (1-d commutative) formal group laws as \\(\text{Spec }\mathbb{S}\\).
 
 [Eric Peterson](https://math.berkeley.edu/~ericp/) kindly explained why \\(\text{Spec }\mathbb{S} \simeq \text{Spec }L\\) and I found his answer so lovely that I wish to share (all mistakes are due to me).
 
-#### Why is \\(\text{Spec }L\\) iso to \\(\text{Spec }\mathbb{S}\\)?
+## Why is \\(\text{Spec }L\\) iso to \\(\text{Spec }\mathbb{S}\\)?
 
 This is part of the story of geometers working with higher algebra asking “what is an ideal of a ring spectrum?”
 
-**A ring \\(R\\) ——————-> category** \\(Mod_R \supseteq Perf_R\\) (finitely presented)
+**A ring \\(R\\) ——————-> category** \\(Mod_R \supseteq \mathrm{Perf}_R\\) (finitely presented)
 
-Note that \\(Perf_R\\) _is the category of [perfect complexes](http://www.math.unl.edu/~siyengar2/Papers/OW0206.pdf) of \\(R\\)-modules. A perfect complex of \\(R\\)-modules is a chain complex of finitely generated projective \\(R\\)-modules \\(P_i\\), and is thus of the form \\\(0 \to P_s \to … \to P_i \to 0\\\)_
+Note that \\(\mathrm{Perf}_R\\) is the category of [Perfect complexes](http://www.math.unl.edu/~siyengar2/Papers/OW0206.pdf) of \\(R\\)-modules. A Perfect complex of \\(R\\)-modules is a chain complex of finitely generated projective \\(R\\)-modules \\(P_i\\), and is thus of the form \\\(0 \to P_s \to … \to P_i \to 0\\\)_
 
-**The ring spectrum \\(\mathbb{S}\\) ——————-> category** \\(Mod_{\mathbb{S}} \supseteq Perf_{\mathbb{S}}\\)
+**The ring spectrum \\(\mathbb{S}\\) ——————-> category** \\(Mod_{\mathbb{S}} \supseteq \mathrm{Perf}_{\mathbb{S}}\\)
 
-Note that \\(Mod_\mathbb{S} \simeq\\) Spectra, and \\(Perf_\mathbb{S} \simeq\\) Finite Spectra
+Note that \\(Mod_\mathbb{S} \simeq\\) Spectra, and \\(\mathrm{Perf}_\mathbb{S} \simeq\\) Finite Spectra
 
 _A finite spectrum is a spectrum which is the de-suspension of \\(\Sigma^\infty F\\), where \\(F\\) is a finite CW-complex._
 
@@ -27,29 +27,29 @@ There’s [a theorem by Balmer](/images/wp-content/uploads/2015/04/spectrum.pdf)
 
 \\(\text{Spec }R\\) as a space; \\(p\\) as a point (an element of \\(\text{Spec }R\\))
 
-\\(Perf_R\\) as a space; \\(\mathcal{P}\\) as a point (a subcategory of \\(Perf_R\\))
+\\(\mathrm{Perf}_R\\) as a space; \\(\mathcal{P}\\) as a point (a subcategory of \\(\mathrm{Perf}_R\\))
 
 satisfying that \\(\mathcal{P}\\) is:
 
-1. \\(\otimes\\)-closed against R-modules \\\(a \in Perf_R; b \in \mathcal{P} \Rightarrow a \otimes b \in \mathcal{P}\\\)
-2. a thick subcategory of \\(Perf_R\\) (i.e., it’s closed under cofiber sequences and retracts i.e., closed under extension)
+1. \\(\otimes\\)-closed against R-modules \\\(a \in \mathrm{Perf}_R; b \in \mathcal{P} \Rightarrow a \otimes b \in \mathcal{P}\\\)
+2. a thick subcategory of \\(\mathrm{Perf}_R\\) (i.e., it’s closed under cofiber sequences and retracts i.e., closed under extension)
 
-A “prime ideal” of \\(Perf_R\\) is a “proper thick tensor-ideal” \\(P\\) (\\(\subsetneq Perf_R\\)) s.t.
+A “prime ideal” of \\(\mathrm{Perf}_R\\) is a “proper thick tensor-ideal” \\(P\\) (\\(\subsetneq \mathrm{Perf}_R\\)) s.t.
 
 \\\(a \otimes b \in \mathcal{P} \Rightarrow a \in \mathcal{P} \text{ or } b \in \mathcal{P}\\\)
 
-So, if \\( K_*(-) \\) is a homology theory with Künneth isomorphisms \\(K_*(X \wedge Y) \simeq K_*(X) \otimes_{K_*} K_*(Y))\\)
+So, if \\( K\_*(-) \\) is a homology theory with Künneth isomorphisms $$(K\_*(X \wedge Y) \simeq K\_*(X) \otimes\_{K\_*} K\_*(Y))$$
 
-\\(\Rightarrow \mathcal{P} = {X | K_*(X) = 0}\\) must be a “prime ideal”.
+$$\Rightarrow \mathcal{P} = {X | K\_*(X) = 0} \text{ must be a “prime ideal”.}$$ 
 
-Sanity check:
+Sanity check of its "ideal-ness":
 
-\begin{align*} K_*(X \wedge Y) & \simeq K_* X \otimes K_*Y \\ & \simeq 0 \otimes K_*Y \simeq 0 \\ \end{align*}
+$$K_*(X \wedge Y) \simeq K_* X \otimes K_*Y \simeq 0 \otimes K_*Y \simeq 0$$
 
 Here’s the surprising theorem that ties this prime ideal excursion into our original question (**Periodicity Theorem: Hopkins and Smith**):
 
-1. Any \\(C \subset Perf_{\mathbb{S}}\\) arises in this way
-2. All homology theories with Künneth isomorphisms are [Morava K-theories](http://ncatlab.org/nlab/show/Morava+K-theory#axiomatic_characterization) _including \\(Hk\\) where \\(k\\) is a field, which is just the infinite Morava K theory \\(K(\infty)_{(p)}\\)._
+1. Any \\(C \subset \mathrm{Perf}_{\mathbb{S}}\\) arises in this way
+2. All homology theories with Künneth isomorphisms are [Morava K-theories](http://ncatlab.org/nlab/show/Morava+K-theory#axiomatic_characterization) including \\(Hk\\) where \\(k\\) is a field, which is just the infinite Morava K theory \\(K(\infty)\_{(p)}\\).
 
 The proof of this is currently beyond my grasp, so I’m afraid I can’t talk you through it.
 
