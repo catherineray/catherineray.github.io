@@ -5,9 +5,7 @@ permalink: /art/
 full-width: true
 ---
 
-Please enjoy this small collection of my art. :) I primarily work with pastels, acrylic, spray paint and polaroids. 
-
-The chaos god penrose tiling tattoo design is a collaboration with Chris Orta [@killabunzz](https://www.instagram.com/killabunzz/). 
+Please enjoy this small collection of my art. :) I primarily work with pastels, acrylic, spray paint and polaroids. When I spray paint I make colorful street art murals of creatures. The chaos god penrose tiling tattoo design is a collaboration with Chris Orta [@killabunzz](https://www.instagram.com/killabunzz/). 
 
 <ul class="image-gallery">
   {% for image in site.static_files %}
