@@ -68,9 +68,7 @@ If we were working non-commutatively, then, we'd want to look at either
 
 NON-COMMUTATIVE GUESS #3 : \\( x^{-1} \frac{x}{e^x - 1} \\) or \\( \frac{x}{e^x - 1} x^{-1} \\)
 
-Back to operators:
-
-We define 
+Alright, we have some candidates. Let's get back to operators to make this into real math. We define 
 
 $$\begin{aligned} a^{-1}: \mathcal{E} & \to \mathcal{E} \\ f(z) &\mapsto \int_0^z f(u) du \end{aligned}$$
 
