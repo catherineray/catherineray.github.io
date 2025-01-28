@@ -10,7 +10,8 @@ I also work in chronic pain research. Before I was in math, I worked mostly in s
 
 <details>
 <summary>Here is a summary of my past non-math research and projects</summary>
-  
+
+  (In construction, can be viewed on my github).
   ![](images/wp-content/uploads/2014/06/IMG_0813.jpg) 
   
   My first projects in robotics were in 2011: a dinky hexapod that autonomously followed people around, and Rubik's cube solving robot.
