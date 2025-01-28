@@ -105,6 +105,6 @@ The directed graph Laplacian is
 
 $$ \nabla_G f(v) = \frac{1}{|N^+(v)|} \sum_{w \in N^+(v)} f(v) - f(w) $$
 
-Notice that if we consider the lattice of \\( Z \\) in \\( R \\) to be directed (going toward positive numbers), we recover 
+Notice that if we consider the lattice of \\( \mathbb{Z} \\) in \\( \mathbb{R} \\) to be directed (going toward positive numbers), we recover 
 
-$$ \Nabla f(z) = f(z) - f(z+1) .$$
+$$ \nabla_{\mathbb{Z}} f(z) = f(z) - f(z+1) .$$
