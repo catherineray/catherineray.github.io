@@ -86,16 +86,17 @@ and finally, we claim $$\Delta^{-1} = \frac{a}{e^a-1}a^{-1}.$$
 
 We take: \\( f(z) = z^s \\),  we need to calculate \\( \Delta^{-1}f := \frac{a}{e^a-1}a^{-1} \\). 
 
-$$\begin{aligned} \frac{a}{e^a-1}(a^{-1}z^s) &= \frac{a}{e^a-1}(\frac{z^{s+1}}{s+1}) \\ &= \sum_k B_k (\frac{d}{dz})^kt^k(\frac{z^{s+1}}{s+1}) \\ &= \sum_{k = 0}^{s+1} B_kt^k(s+1)(s)\cdots(s+1-k) \frac{z^{s+1}}{s+1})  \\ &= \sum_{k = 0}^{s+1} B_kt^k {s+1}{k}z^{s+1}  \end{aligned}$$
+$$\begin{aligned} \Delta^{-1}f(z) &= \frac{a}{e^a-1}(a^{-1}z^s) \\ &= \frac{a}{e^a-1}(\frac{z^{s+1}}{s+1}) \\ &= \sum_k B_k (\frac{d}{dz})^kt^k(\frac{z^{s+1}}{s+1}) \\ &= \sum_{k = 0}^{s+1} B_kt^k(s+1)(s)\cdots(s+1-k) \frac{z^{s+1-k}}{s+1}  \\ &= \frac{1}{s+1}\sum_{k = 0}^{s+1} B_kt^k { s+1 \choose k} z^{s+1-k}  \end{aligned}$$
 
-Using our discrete fundamental theorem of calculus, we see the following: 
+Note in particular that $\Delta^{-1}f(0) = 0$. Using our discrete fundamental theorem of calculus, we see the following: 
 
 Since \\( \Delta(\Delta^{-1}f) = f\\), let \\( f = z^s \\), then 
 
-$$\begin{aligned} \sum_{i=0}^{n-1} i^s &= (\Delta^{-1}f)(n) -  (\Delta^{-1}f)(0)  \\  \end{aligned}$$
+$$\begin{aligned} \sum_{i=0}^{n-1} i^s &= (\Delta^{-1}f)(n) -  (\Delta^{-1}f)(0)  \\  &= \frac{1}{s+1}\sum_{k = 0}^{s+1} B_kt^k { s+1 \choose k} n^{s+1-k} \end{aligned}$$
+
+Tada! We did it!
 
 # Graph Laplacians in More Generality
-
 As a suggestive aside, the definition of the graph Laplacian for a graph \\( G \\) is the following. Let $v \in V$ be the vertices in the graph, and let $N(v)$ be the set of vertices neighboring the vertex $v$.
 
 $$ \nabla_G f(v) = \frac{1}{|N(v)|} \sum_{w \in N(v)} f(v) - f(w) $$
