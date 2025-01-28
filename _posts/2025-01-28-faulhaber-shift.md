@@ -62,7 +62,7 @@ If we consider \\( e^x - 1 \\) as a function, we want to find another function \
 
 GUESS #1: \\( \frac{1}{e^x-1} \\) *beeping noise* nope this is not entire, has a pole when \\( x= 0 \\).
 
-GUESS #2: \\( \frac{x}{e^x-1}) \\) we can plug that pole, and get an entire function!! But we are getting an extra \\( x \\) factor, since we want to compose to 1.
+GUESS #2: \\( \frac{x}{e^x-1}) \\) we can plug that pole, and get an entire function!! However, we have this extra \\( x \\) factor floating around (since we want to compose to 1).
 
 If we were working non-commutatively, then, we'd want to look at either 
 
