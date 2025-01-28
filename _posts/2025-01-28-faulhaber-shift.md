@@ -98,17 +98,17 @@ Tada! We did it!
 
 There is also the following fabulous quick derivation trick of the Bernoulli numbers, which we discussed several years ago in [Umbral Calculus Derivation of the Bernoulli Numbers](https://rin.io/derivation-of-the-bernoulli-numbers/).
 
-A quick way to remember the sum formula is to set $B^i$ equal to the Bernoulli number $B_i$. This can be earnestly done if one uses umbral methods.
+A quick way to remember the sum formula is to set \\( B^i \\) equal to the Bernoulli number \\( B_i \\). This can be earnestly done if one uses umbral methods.
 
 $$1^s + \cdots + n^s = \frac{(B + n + 1)^{s+1}-B^{s+1}}{s+1}$$
 
 # Graph Laplacians in More Generality
 
-The definition of the graph Laplacian for a graph \\( G \\) is the following. Let $v \in V$ be the vertices in the graph, and let $N(v)$ be the set of vertices neighboring the vertex $v$.
+The definition of the graph Laplacian for a graph \\( G \\) is the following. Let \\( v \in V \\) be the vertices in the graph, and let \\( N(v) \\) be the set of vertices neighboring the vertex \\( v \\).
 
 $$ \nabla_G f(v) = \frac{1}{|N(v)|} \sum_{w \in N(v)} f(v) - f(w) $$
 
-The directed graph Laplacian is 
+The directed graph Laplacian rather looks at \\( N^+(v) \\), the set of vertices the vertex \\( v \\) maps to with edge length 1:
 
 $$ \nabla_G f(v) = \frac{1}{|N^+(v)|} \sum_{w \in N^+(v)} f(v) - f(w) $$
 
