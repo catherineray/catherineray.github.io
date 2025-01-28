@@ -9,32 +9,23 @@ permalink: /about/
 I also work in chronic pain research. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. 
 
 <details>
-<summary> test </summary>
-  [link1](http://rin.io/about)
-
-  [link2](http://rin.io/about)
-</details>
-
-
-<details>
 <summary>Here is a summary of my past non-math research and projects</summary>
   
   ![](images/wp-content/uploads/2014/06/IMG_0813.jpg) 
   
   My first projects in robotics were in 2011: a dinky hexapod that autonomously followed people around, and Rubik's cube solving robot.
+  
+  In Spring 2012, I [became interested](http://rin.io/coupled-oscillator-love/) in physical examples of [nonlinear systems](http://rin.io/matlab-lorenz-attractor/) due to a [research project](http://thefutureofthings.com/4060-flexible-memristor-chips/) at the Chemistry and Physics Department of Mary Baldwin College, and modeled the resistant switching behavior of [flexible TiO2](http://books.google.com/books?id=Aey-h9lgcQgC&pg=PA111&lpg=PA111&dq=tio2+memristor+mary+baldwin&source=bl&ots=_Cxkt4ZyU8&sig=12ZG4phc_r1cNRkhmyg99YZ1dUc&hl=en&sa=X&ei=U0dcVN2RBdHToAT4u4LoDQ&ved=0CEMQ6AEwBQ#v=onepage&q=tio2%20memristor%20mary%20baldwin&f=false).
 
-In Spring 2012, I [became interested](http://rin.io/coupled-oscillator-love/) in physical examples of [nonlinear systems](http://rin.io/matlab-lorenz-attractor/) due to a [research project](http://thefutureofthings.com/4060-flexible-memristor-chips/) at the Chemistry and Physics Department of Mary Baldwin College, and modeled the resistant switching behavior of [flexible TiO2](http://books.google.com/books?id=Aey-h9lgcQgC&pg=PA111&lpg=PA111&dq=tio2+memristor+mary+baldwin&source=bl&ots=_Cxkt4ZyU8&sig=12ZG4phc_r1cNRkhmyg99YZ1dUc&hl=en&sa=X&ei=U0dcVN2RBdHToAT4u4LoDQ&ved=0CEMQ6AEwBQ#v=onepage&q=tio2%20memristor%20mary%20baldwin&f=false).
-
-[![nist3](images/wp-content/uploads/2014/06/nist3-1024x567.jpg)
-[Source](http://thefutureofthings.com/4060-flexible-memristor-chips/)
+![](images/memristor.png)
 
 Summer 2012, the [Positronics Division of the George Washington University Robotics Lab](http://robotics.gwu.edu/positronics/?page_id=9) took me under their wing as an intern. Our team smoothed joint movement of the Willow Garage Personal Robot 2 (PR2), alongside improving load equalization (below). I [programmed the PR2](http://rin.io/semi-autonomous-robotics-2012-my-1st-software-project/) to autonomously "learn" to place objects in holes with the corresponding shape (using only past motor position commands and the finger gripper sensors).
-
-On the side, fascinated by the phenomena of producing argon plasma glow via the introduction of an RF source at 2.45GHz to a conductive cavity, I modeled the modes of conductive [polyhedra](http://en.wikipedia.org/wiki/Goldberg_polyhedron)[.](http://robotics.gwu.edu/positronics/?page_id=9)
 
 ![Screenshot from 2014-11-06 20:07:39](images/wp-content/uploads/2014/06/Screenshot-from-2014-11-06-200739.png)
 
 [Source](http://robotics.gwu.edu/positronics/?p=59)
+
+On the side, fascinated by the phenomena of producing argon plasma glow via the introduction of an RF source at 2.45GHz to a conductive cavity, I modeled the modes of conductive [polyhedra](http://en.wikipedia.org/wiki/Goldberg_polyhedron)[.](http://robotics.gwu.edu/positronics/?page_id=9)
 
 After transferring to [GMU](http://rin.io/18-lessons/) Fall 2012, I extended their simulation for [predicting the material properties](http://rin.io/computational-materials-science/) of compound materials and explored [algorithms of AI chess players](http://rin.io/chess-engine/).
 
@@ -64,13 +55,13 @@ In January 2015, I was a [visiting researcher](https://web.archive.org/web/2019
 
 I stopped keeping temporal notes of projects around 2015. Most of my extra curriculars post moving to math academia have been artistic or biological.
 
-Since around 2018, I have continued to do biological research on the side, especially around chronic pain and it's relationship to mental health. An overview of that work can be found here: [The Biome](https://rin.io/biome/)
+I continue to do biological research on the side, especially around chronic pain and it's relationship to mental health. An overview of that work can be found here: [The Biome](https://rin.io/biome/)
 
 Over the period of 2021-2023, I collaborated with Chris Orta to design and tattoo two massive full robot-skeleton snakes going from the top of my back to my mid calf. In the summer of 2023, I got heavily into street art graffiti, learning from my artistic collaborator Daniel Burnett: some samples of my graffiti work can be seen in the art section of my webpage. I have traveled around the U.S. and Europe making graffiti since.
 
 In August 2023, I joined Chris Walker and a group of other fabulous artists to finish up and sail a boat made from a bouncy castle, which we lived on for a week. (add picture)
 
-My friend Petra Flurin and I wrote a comic together called Endomortis, more on that soon!
+My dear friend Petra Flurin and I wrote a comic together called Endomortis, more on that soon!
 </details>
 
 I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to study mathematics full time under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/), and with my PhD from Northwestern working with [Paul Goerss](https://sites.math.northwestern.edu/~pgoerss/). I am currently a postdoc at Uni-Münster in the Arithmetic and Homotopy Theory Working Group lead by [Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html) and [Christopher Deninger](https://en.wikipedia.org/wiki/Christopher_Deninger).
