@@ -122,7 +122,7 @@ $$ \nabla_{\mathbb{Z}, 0} f(z) = f(z) - f(z+1) .$$
 
 This is quite interesting because the _left inverse_ of a graph Laplacian is the Green's function associated to the uniform random walk on the graph where you hop to each of your neighbors of distance one away with probability one. The Bernoulli numbers are derived from the _right inverse_ of \\( \Delta = -\nabla_{\mathbb{Z}, 0} \\). That's a big difference in description of the inverses on both sides! 
 
-Let's use this language to boogie. Take the lattice \\( \Lambda := \mathbb{Z} + \tau\mathbb{Z} \subseq \mathbb{C} \\) ,  with the directions pointing toward the positive imaginary and positive real directions. The neighbors of the vertex 
+Let's use this language to boogie. Take the lattice \\( \Lambda := \mathbb{Z} + \tau\mathbb{Z} \subset \mathbb{C} \\) ,  with the directions pointing toward the positive imaginary and positive real directions. The neighbors of the vertex 
 
 $$\begin{aligned} \nabla_{\lambda, (0, 0)} f(z) & = \frac12 (f(z) - f(z+1)) + \frac{1}{2}(f(z) - f(z+\tau))  \\ &= f(z) - \frac12(f(z+1) + f(z+\tau)) \\ & = \big( \mathrm{id} - \frac{\mathrm{id}}{2}(e^a + e^{\tau a})\big) f(z) \end{aligned}$$
 
