@@ -41,11 +41,16 @@ $$\begin{aligned} e^{ta}: \mathcal{E} & \to \mathcal{E} \\ f(z) &\mapsto e^{ta}f
 
 Lemma: $$e^{ta}f(z) = f(z+t)$$
 
-Proof: Take \\( f(z) := \sum_i c_iz^n) \\), then 
+Proof: I can't help myself, I just love power series. We prove this by expanding both sides and observing that they are the same. Take \\( f(z) := \sum_i c_iz^n) \\), then
 
-(insert picture here). 
+$$\begin{aligned} e^{ta}f(z) &= f(z) \\& + (t\frac{d}{dz})f(z) \\ & +  (t\frac{d}{dz})^nf(z)  \\ & + \cdots \end{aligned}$$
+i.e., 
+$$\begin{aligned} e^{ta}f(z) &= c_0 + c_1z + c_2z^2 + \cdots + c_nz^n + \cdots \\& + c_1t + 2c_2tz + \cdots + tnc_nz^{n-1} + \cdots \\ &  + n!\frac{c_nt^n}{n!} + (n+1)!\frac{c_{n+1}t^nz}{n!} + \cdots  \\ & + \cdots \end{aligned}$$
 
-Note, we may write \\( \Delta = e^{a} - 1 \\). 
+Let's expand the other guy, 
+$$\begin{aligned} f(z+t) &= c_0 + c_1(z+t) + c_2(z+t)^2 + \cdots + c_n(z+t)^n + \cdots,  \\ &= (c_0 + c_1t+ c_nt^n +  \cdots) + (c_1t + 2c_2t + \cdots + nc_nt^{n-1} + \cdots)z + \cdots \end{aligned}.$$
+
+It's the same yay. That means we can write $$\Delta = e^{a} - 1.$$
 
 So, given our big clue above, if we can find \\( \Delta^{-1} \\), we can solve our addition problem.
 
@@ -97,7 +102,8 @@ A quick way to remember the sum formula is to set $B^i$ equal to the Bernoulli n
 $$1^s + \cdots + n^s = \frac{(B + n + 1)^{s+1}-B^{s+1}}{s+1}$$
 
 # Graph Laplacians in More Generality
-As a suggestive aside, the definition of the graph Laplacian for a graph \\( G \\) is the following. Let $v \in V$ be the vertices in the graph, and let $N(v)$ be the set of vertices neighboring the vertex $v$.
+
+The definition of the graph Laplacian for a graph \\( G \\) is the following. Let $v \in V$ be the vertices in the graph, and let $N(v)$ be the set of vertices neighboring the vertex $v$.
 
 $$ \nabla_G f(v) = \frac{1}{|N(v)|} \sum_{w \in N(v)} f(v) - f(w) $$
 
@@ -131,5 +137,7 @@ I'm not sure where to go from here, I'd love for this to in some way compare to 
 
 $$\kappa_a(z, s, \tau) = \sum_{\lambda \in \Lambda}\frac{(\overline{z+\lambda})^a}{|z+\lambda|^s}.$$
 
-A good reference on these are [Elliptic Functions according to Eisenstein and
-Kronecker : An Update.](https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_5.pdf), where the definition of Kronecker-Eisenstien series is on page 7. See in particular the elliptic analogs of Bernoulli numbers discussed on page 8.
+A good reference on these is [Elliptic Functions according to Eisenstein and
+Kronecker : An Update](https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_5.pdf), where the definition of Kronecker-Eisenstien series is on page 7. See in particular the elliptic analogs of Bernoulli numbers discussed on page 8.
+
+This is a nostalgic topic for me which feels like home to step back to. I previously contemplated the analogs of such shifts in 2015 while I was still a robotics inventor sitting in the back of lectures at Berkeley [On Detiling Polynomials: A Generalization of the Euler MacLaurin Formula](https://rin.io/euler-maclaurin-slipper/). 
