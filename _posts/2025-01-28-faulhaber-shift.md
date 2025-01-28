@@ -118,3 +118,18 @@ This is quite interesting because the _left inverse_ of a graph Laplacian is the
 Let's use this language to boogie. Take the lattice \\( \Lambda := \mathbb{Z} + \tau\mathbb{Z} \subseq \mathbb{C} \\) ,  with the directions pointing toward the positive imaginary and positive real directions. The neighbors of the vertex 
 
 $$\begin{aligned} \nabla_{\lambda, (0, 0)} f(z) & = \frac12 (f(z) - f(z+1)) + \frac{1}{2}(f(z) - f(z+\tau))  \\ &= f(z) - \frac12(f(z+1) + f(z+\tau)) \\ & = \big( \mathrm{id} - \frac{\mathrm{id}}{2}(e^a + e^{\tau a})\big) f(z) \end{aligned}$$
+
+If we allow ourselves full license to fuck around, let's set $\tau = i$ and play GUESS THAT INVERSE. We consider the function 
+$$1-\frac{1}{2}(e^x + e^{\tau x})$$
+And look at it's inverse: 
+$$\begin{aligned} \frac{1}{1-\frac{1}{2}(e^x + e^{\tau x})} &= \frac{2}{e^x + e^{\tau x}-2} \\ &= \frac{2}{\sum_n \frac{(1+\tau^n)x^n}{n!}-2}\end{aligned}$$
+This function has a pole of order 3 at 0, and for the simplest case \\( \tau = i \\), we also have poles at roots of \\( i \\). We can plug those poles, no problem: 
+
+$$\frac{2a^3(a+1)(a-1)(a+i)(a-i)}{e^a + e^{ia} - 2}$$
+
+I'm not sure where to go from here, I'd love for this to in some way compare to the Kronecker-Eisenstein series, which are defined as follows: 
+
+$$\kappa_a(z, s, \tau) = \sum_{\lambda \in \Lambda}\frac{(\overline{z+\lambda})^a}{|z+\lambda|^s}.$$
+
+A good reference on these are [Elliptic Functions according to Eisenstein and
+Kronecker : An Update.](https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_5.pdf).
