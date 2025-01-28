@@ -12,17 +12,11 @@ $$ \frac{x}{e^x-1} = \sum_{k \geq 0} B_k \frac{x^k}{m!} $$
 
 But why? Where did this come from? Well, the mathematicians of the time were contemplating the following sorts of patterns: 
 
-\\( 1+2+\cdots+n = \frac{n(n+1)}{2} \\)
+$$\begin{aligned}  1+2+\cdots+n &= \frac{n(n+1)}{2}  \\ 1^2+2^2+\cdots+n^2 & = \frac{n(n+1)(2n+1)}{6}  \\ 1^3+2^3+\cdots+n^3 & = \frac{n^2(n+1)^2}{4}  \\  1^k + 2^k +  \cdots + n^k & = \text{ }?? \end{aligned}$$
 
-\\( 1^2+2^2+\cdots+n^2 = \frac{n(n+1)(2n+1)}{6} \\)
+The general formula requires \\( B_k \\) :)
 
-\\( 1^3+2^3+\cdots+n^3 = \frac{n^2(n+1)^2}{4} \\)
-
-\\( 1^k + 2^k +  \cdots + n^k = ?? \\)
-
-The general formula requires \\( B_k \\)! 
-
-To give you an idea of how hard this is, I don't know of a proof of the \\( k= 3 \\) case that that doesn't involve guessing the formula then showing inductively (other than the Bernoulli version I'm about to show). 
+To give you an idea of how hard this is, I don't even know of a proof of the \\( k = 2 \\) case that that doesn't involve guessing the formula then showing inductively (other than the Bernoulli version I'm about to show). 
 
 Today I'm giving a modern explanation of Faulhaber's trick. This is based on [notes of John Baez](https://math.ucr.edu/home/baez/qg-winter2004/bernoulli.pdf).
 
@@ -30,7 +24,7 @@ Consider \\( \mc{E} \\) to be the space of entire functions on \\( \mathbb{C} \\
 
 Next, consider the finite difference operator
 
-\\( \Delta(f(z)) = f(z+1) - f(z) \\)
+$$ \Delta(f(z)) = f(z+1) - f(z) .$$
 
 Discrete Fundamental Theorem of Calculus: If \\( \Delta F = f \\), then $$ \sum_{i = 0}^{n-1} f(i) = F(n) - F(0) $$
 
@@ -41,9 +35,9 @@ Let's set some groundwork before proceeding, we consider an operator (called the
 
 $$\begin{aligned} a: \mathcal{E} & \to \mathcal{E} \\ f(z) &\mapsto \frac{d}{dz}f(z) \end{aligned}$$
 
-Let us define \\( e^{ta}: \mathcal{E} \to \mathcal{E}) \\)  as \\( e^{ta} = \sum_{k \geq 0} \frac{(ta)^k }{k!} \\). We consider:
+Let us further define our friend the exponential
 
-$$\begin{aligned} e^{ta}: \mathcal{E} & \to \mathcal{E} \\ f(z) &\mapsto e^{ta}f(z) \end{aligned}$$
+$$\begin{aligned} e^{ta}: \mathcal{E} & \to \mathcal{E} \\ f(z) &\mapsto e^{ta}f(z) := \sum_{k \geq 0} \frac{(ta)^k }{k!}(f(z)) \end{aligned}$$
 
 Lemma: $$e^{ta}f(z) = f(z+t)$$
 
@@ -95,6 +89,8 @@ Since \\( \Delta(\Delta^{-1}f) = f\\), let \\( f = z^s \\), then
 $$\begin{aligned} \sum_{i=0}^{n-1} i^s &= (\Delta^{-1}f)(n) -  (\Delta^{-1}f)(0)  \\  &= \frac{1}{s+1}\sum_{k = 0}^{s+1} B_kt^k { s+1 \choose k} n^{s+1-k} \end{aligned}$$
 
 Tada! We did it!
+
+There is also the following fabulous quick derivation trick of the Bernoulli numbers, which we discussed several years ago in [Umbral Calculus Derivation of the Bernoulli Numbers)(https://rin.io/derivation-of-the-bernoulli-numbers/).
 
 # Graph Laplacians in More Generality
 As a suggestive aside, the definition of the graph Laplacian for a graph \\( G \\) is the following. Let $v \in V$ be the vertices in the graph, and let $N(v)$ be the set of vertices neighboring the vertex $v$.
