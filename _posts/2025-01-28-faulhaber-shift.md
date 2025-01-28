@@ -123,7 +123,7 @@ If we allow ourselves full license to fuck around, let's set $\tau = i$ and play
 $$1-\frac{1}{2}(e^x + e^{\tau x})$$
 And look at it's inverse: 
 $$\begin{aligned} \frac{1}{1-\frac{1}{2}(e^x + e^{\tau x})} &= \frac{2}{e^x + e^{\tau x}-2} \\ &= \frac{2}{\sum_n \frac{(1+\tau^n)x^n}{n!}-2}\end{aligned}$$
-This function has a pole of order 3 at 0, and for the simplest case \\( \tau = i \\), we also have poles at roots of \\( i \\). We can plug those poles, no problem: 
+This function has a pole of order 3 at 0, and for the simplest case \\( \tau = i \\), the remaining poles are of order one at roots of \\( i \\). We can plug those poles, no problem: 
 
 $$\frac{2a^3(a+1)(a-1)(a+i)(a-i)}{e^a + e^{ia} - 2}$$
 
@@ -132,4 +132,4 @@ I'm not sure where to go from here, I'd love for this to in some way compare to 
 $$\kappa_a(z, s, \tau) = \sum_{\lambda \in \Lambda}\frac{(\overline{z+\lambda})^a}{|z+\lambda|^s}.$$
 
 A good reference on these are [Elliptic Functions according to Eisenstein and
-Kronecker : An Update.](https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_5.pdf).
+Kronecker : An Update.](https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_5.pdf), where the definition of Kronecker-Eisenstien series is on page 7. See in particular the elliptic analogs of Bernoulli numbers discussed on page 8.
