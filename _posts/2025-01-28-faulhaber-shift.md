@@ -1,4 +1,3 @@
-
 ---
 title: "The Bernoulli Numbers Come from a Shift Operator"
 date: "2025-01-28"
