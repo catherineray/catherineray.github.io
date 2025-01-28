@@ -7,6 +7,15 @@ permalink: /about/
   ![image](images/Aboutme.jpeg)
 
 I also work in chronic pain research. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. 
+
+<details>
+<summary> test </summary>
+  [link1](http://rin.io/about)
+
+  [link2](http://rin.io/about)
+</details>
+
+
 <details>
 <summary>Here is a summary of my past non-math research and projects</summary>
   
