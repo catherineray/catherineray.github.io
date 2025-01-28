@@ -37,8 +37,6 @@ Summer 2013, I interned as a software engineer at Cloudera. During my time there
 Fall 2013, I played with [SLAM and motion planning on the ARDrone](http://masc.cs.gmu.edu/wiki/DeformGroup). For HackMIT 2013, I collaborated with [Kartik Talwar](http://kartikt.com/) and [Spencer Hewett](http://www.skip.it/) to create a Google Glass application that [calculates the human pulse from the video feed](http://rin.io/hackmit-polyglass/).\
 [![Screen-shot-2013-11-23-at-3.56.25-PM](images/wp-content/uploads/2014/06/Screen-shot-2013-11-23-at-3.56.25-PM.png)
 
-In late November 2013, I made the rookie mistake of [trying to prove the Collatz conjecture](https://web.archive.org/web/20190213160322/http://rin.io/collatz-attempt/) (mainly using the prime factor relations within the number sequences and finding a few neat recurrence relations).
-
 Early 2014, I briefly devoted my time to designing a keychain-sized food scanner [that detects gluten and other common food allergen proteins](http://rin.io/reframing-the-gluten-scanner/). From late 2013 to mid 2014, I dipped my toes into audio processing by automating the collection and classification of lab-animal vocalizations. Through this, I discovered that one can detect libido and stress change as early as preclinical trials.
 
 [![Screenshot from 2014-06-21 19:46:05](https://web.archive.org/web/20190213160322im_/http://rin.io/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-194605.png)](https://web.archive.org/web/20190213160322/http://rin.io/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-194605.png)
@@ -53,7 +51,9 @@ Early 2015, I began mentoring Ada Rosa on mobility assistance for those with ALS
 
 In January 2015, I was a [visiting researcher](https://web.archive.org/web/20190213160322/http://www.santafe.edu/gevent/detail/arrival/1962/) at the Santa Fe Institute, and gave a seminar on [Simplifying Multiscale Modeling](https://web.archive.org/web/20190213160322/http://www.santafe.edu/gevent/detail/science/1963/). I still think about applications of topology to multi-scale modeling, and occasionally venture to consider modeling complex systems of a biological nature with an eye toward [immunotherapy](https://web.archive.org/web/20190213160322/http://www.infoiasi.ro/bin/Annals/Article?v=XXIV1&a=2) and [neuroscience](https://web.archive.org/web/20190213160322/http://xxx.tau.ac.il/pdf/1410.8826.pdf).
 
-I stopped keeping temporal notes of projects around 2015. Most of my extra curriculars post moving to math academia have been artistic or biological.
+I stopped keeping temporal notes of projects around 2015. Most of my extra curriculars post moving to math academia have been artistic or biological. 
+
+I studied Russian for 2 years and spent 4 months in Russia in 2019, the end of my trip was right at the beginning of Putin's violent crackdown on Moscow. 
 
 I continue to do biological research on the side, especially around chronic pain and it's relationship to mental health. An overview of that work can be found here: [The Biome](https://rin.io/biome/)
 
