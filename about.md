@@ -54,13 +54,13 @@ In January 2015, I was a [visiting researcher](https://web.archive.org/web/2019
 
 I stopped keeping temporal notes of projects around 2015. Most of my extra curriculars post moving to math academia have been artistic or biological. 
 
-I studied Russian for 2 years and spent 4 months in Russia in 2019, the end of my trip was right at the beginning of Putin's violent crackdown on Moscow. 
+I studied Russian from 2018-2020 and spent 4 months in Russia in 2019, the end of my trip was right at the beginning of Putin's violent crackdown on Moscow. 
 
 I continue to do biological research on the side, especially around chronic pain and it's relationship to mental health. An overview of that work can be found here: [The Biome](https://rin.io/biome/)
 
 Over the period of 2021-2023, I collaborated with Chris Orta to design and tattoo two massive full robot-skeleton snakes going from the top of my back to my mid calf. In the summer of 2023, I got heavily into street art graffiti, learning from my artistic collaborator Daniel Burnett: some samples of my graffiti work can be seen in the art section of my webpage. I have traveled around the U.S. and Europe making graffiti since.
 
-In August 2023, I joined Chris Walker and a group of other fabulous artists to finish up and sail a boat made from a bouncy castle, which we lived on for a week. (add picture)
+In August 2023, I joined Chris Walker and a group of other fabulous artists to finish up and sail a boat made from a bouncy castle, which we lived on for a week.
 
 My dear friend Petra Flurin and I wrote a comic together called Endomortis, more on that soon!
 </details>
