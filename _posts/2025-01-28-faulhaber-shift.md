@@ -87,7 +87,7 @@ We take: \\( f(z) = z^s \\),  we need to calculate \\( \Delta^{-1}f := \frac{a}{
 
 $$\begin{aligned} \Delta^{-1}f(z) &= \frac{a}{e^a-1}(a^{-1}z^s) \\ &= \frac{a}{e^a-1}(\frac{z^{s+1}}{s+1}) \\ &= \sum_k B_k (\frac{d}{dz})^kt^k(\frac{z^{s+1}}{s+1}) \\ &= \sum_{k = 0}^{s+1} B_kt^k(s+1)(s)\cdots(s+1-k) \frac{z^{s+1-k}}{s+1}  \\ &= \frac{1}{s+1}\sum_{k = 0}^{s+1} B_kt^k { s+1 \choose k} z^{s+1-k}  \end{aligned}$$
 
-Note in particular that $\Delta^{-1}f(0) = 0$. Using our discrete fundamental theorem of calculus, we see the following: 
+Note in particular that \\( \Delta^{-1}f(0) = 0 \\). Using our discrete fundamental theorem of calculus, we see the following: 
 
 Since \\( \Delta(\Delta^{-1}f) = f\\), let \\( f = z^s \\), then 
 
@@ -119,7 +119,7 @@ Notice that if we consider the lattice of \\( \mathbb{Z} \\) in \\( \mathbb{R} \
 
 $$ \nabla_{\mathbb{Z}, 0} f(z) = f(z) - f(z+1) .$$
 
-This is quite interesting because the _left inverse_ of a graph Laplacian is the Green's function associated to the uniform random walk on the graph where you hop to each of your neighbors of distance one away with probability one. The Bernoulli numbers are derived from the _right inverse_ of $\Delta = -\nabla_{\mathbb{Z}, 0}$. That's a big difference in description of the inverses on both sides! 
+This is quite interesting because the _left inverse_ of a graph Laplacian is the Green's function associated to the uniform random walk on the graph where you hop to each of your neighbors of distance one away with probability one. The Bernoulli numbers are derived from the _right inverse_ of \\( \Delta = -\nabla_{\mathbb{Z}, 0} \\). That's a big difference in description of the inverses on both sides! 
 
 Let's use this language to boogie. Take the lattice \\( \Lambda := \mathbb{Z} + \tau\mathbb{Z} \subseq \mathbb{C} \\) ,  with the directions pointing toward the positive imaginary and positive real directions. The neighbors of the vertex 
 
