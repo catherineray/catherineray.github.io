@@ -12,11 +12,11 @@ $$ \frac{x}{e^x-1} = \sum_{k \geq 0} B_k \frac{x^k}{m!} $$
 
 But why? Where did this come from? Well, the mathematicians of the time were contemplating the following sorts of patterns: 
 
-$$\begin{aligned}  1+2+\cdots+n &= \frac{n(n+1)}{2}  \\ 1^2+2^2+\cdots+n^2 & = \frac{n(n+1)(2n+1)}{6}  \\ 1^3+2^3+\cdots+n^3 & = \frac{n^2(n+1)^2}{4}  \\  1^k + 2^k +  \cdots + n^k & = \text{ }?? \end{aligned}$$
+$$\begin{aligned}  1+2+\cdots+n &= \frac{n(n+1)}{2}  \\ 1^2+2^2+\cdots+n^2 & = \frac{n(n+1)(2n+1)}{6}  \\ 1^3+2^3+\cdots+n^3 & = \frac{n^2(n+1)^2}{4}  \\  1^s + 2^s +  \cdots + n^s & = \text{ }?? \end{aligned}$$
 
 The general formula requires \\( B_k \\) :)
 
-To give you an idea of how hard this is, I don't even know of a proof of the \\( k = 2 \\) case that that doesn't involve guessing the formula then showing inductively (other than the Bernoulli version I'm about to show). 
+To give you an idea of how hard this is, I don't even know of a proof of the \\( s = 2 \\) case that that doesn't involve guessing the formula then showing inductively (other than the Bernoulli version I'm about to show). 
 
 Today I'm giving a modern explanation of Faulhaber's trick. This is based on [notes of John Baez](https://math.ucr.edu/home/baez/qg-winter2004/bernoulli.pdf).
 
@@ -90,7 +90,11 @@ $$\begin{aligned} \sum_{i=0}^{n-1} i^s &= (\Delta^{-1}f)(n) -  (\Delta^{-1}f)(0)
 
 Tada! We did it!
 
-There is also the following fabulous quick derivation trick of the Bernoulli numbers, which we discussed several years ago in [Umbral Calculus Derivation of the Bernoulli Numbers)(https://rin.io/derivation-of-the-bernoulli-numbers/).
+There is also the following fabulous quick derivation trick of the Bernoulli numbers, which we discussed several years ago in [Umbral Calculus Derivation of the Bernoulli Numbers](https://rin.io/derivation-of-the-bernoulli-numbers/).
+
+A quick way to remember the sum formula is to set $B^i$ equal to the Bernoulli number $B_i$. This can be earnestly done if one uses umbral methods.
+
+$$1^s + \cdots + n^s = \frac{(B + n + 1)^{s+1}-B^{s+1}}{s+1}$$
 
 # Graph Laplacians in More Generality
 As a suggestive aside, the definition of the graph Laplacian for a graph \\( G \\) is the following. Let $v \in V$ be the vertices in the graph, and let $N(v)$ be the set of vertices neighboring the vertex $v$.
