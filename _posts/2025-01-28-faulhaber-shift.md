@@ -140,6 +140,6 @@ I'm not sure where to go from here, I'd love for this to in some way compare to 
 $$\kappa_a(z, s, \tau) = \sum_{\lambda \in \Lambda}\frac{(\overline{z+\lambda})^a}{|z+\lambda|^s}.$$
 
 A good reference on these is [Elliptic Functions according to Eisenstein and
-Kronecker : An Update](https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_5.pdf), where the definition of Kronecker-Eisenstien series is on page 7. See in particular the elliptic analogs of Bernoulli numbers discussed on page 8.
+Kronecker : An Update](https://webusers.imj-prg.fr/~pierre.charollois/Charollois-Sczech_5.pdf), where the definition of Kronecker-Eisenstein series is on page 7. See in particular the elliptic analogs of Bernoulli numbers discussed on page 8.
 
 This is a nostalgic topic for me which feels like home to step back to. I previously contemplated the analogs of such shifts in 2015 while I was still a robotics inventor sitting in the back of lectures at Berkeley [On Detiling Polynomials: A Generalization of the Euler MacLaurin Formula](https://rin.io/euler-maclaurin-slipper/). 
