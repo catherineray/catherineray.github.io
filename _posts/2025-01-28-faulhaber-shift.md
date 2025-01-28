@@ -20,7 +20,7 @@ To give you an idea of how hard this is, I don't even know of a proof of the \\(
 
 Today I'm giving a modern explanation of Faulhaber's trick. This is based on [notes of John Baez](https://math.ucr.edu/home/baez/qg-winter2004/bernoulli.pdf).
 
-Consider \\( \mc{E} \\) to be the space of entire functions on \\( \mathbb{C} \\). We can consider \\( \mc{E} \subset \mathbb{C}[[z]] \\)
+Consider \\( \mathcal{E} \\) to be the space of entire functions on \\( \mathbb{C} \\). We can consider \\( \mathcal{E} \subset \mathbb{C}[[z]] \\)
 
 Next, consider the finite difference operator
 
@@ -29,7 +29,7 @@ $$ \Delta(f(z)) = f(z+1) - f(z) .$$
 Discrete Fundamental Theorem of Calculus: If \\( \Delta F = f \\), then $$ \sum_{i = 0}^{n-1} f(i) = F(n) - F(0) $$
 
 For example: If \\( f(z) = z^s \\), then if \\( \exists F \\) such that \\( \Delta F = f \\), then 
-$$ \Sigma^{n-1}_{i=0} i^s = F(n) - F(0).$$
+$$ \sum^{n-1}_{i=0} i^s = F(n) - F(0).$$
 
 Let's set some groundwork before proceeding, we consider an operator (called the ''annihilation operator" in conformal field theory):
 
@@ -68,11 +68,11 @@ We define
 
 $$\begin{aligned} a^{-1}: \mathcal{E} & \to \mathcal{E} \\ f(z) &\mapsto \int_0^z f(u) du \end{aligned}$$
 
-Note, \\( a a^{-1} f = f, but  the other order is not always true \\( a^{-1} a f \neq f \\)  (because of the icky \\( + c \\) ).
+Note, \\( a a^{-1} f = f \\), but  the other order is not always true \\( a^{-1} a f \neq f \\)  (because of the icky \\( + c \\) ).
 
 That means our noncommutative guess  \\( \frac{x}{e^x - 1} x^{-1} \\) is a good bet! In fact, we define the following operator: 
 
-\\( \frac{a}{e^a-1} := \sigma_{k \geq 0} B_k \frac{a^k}{k!} \\) 
+$$\begin{aligned}  \frac{a}{e^a-1} \colon \mathcal{E} &\to \mathcal{E} \\ f(z) &\mapsto \sum_{k \geq 0} B_k \frac{a^k}{k!}f(z)\end{aligned} $$
 
 and finally, we claim $$\Delta^{-1} = \frac{a}{e^a-1}a^{-1}.$$
 
