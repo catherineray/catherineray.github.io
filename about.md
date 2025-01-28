@@ -53,13 +53,15 @@ Early 2015, I began mentoring Ada Rosa on mobility assistance for those with ALS
 
 In January 2015, I was a [visiting researcher](https://web.archive.org/web/20190213160322/http://www.santafe.edu/gevent/detail/arrival/1962/) at the Santa Fe Institute, and gave a seminar on [Simplifying Multiscale Modeling](https://web.archive.org/web/20190213160322/http://www.santafe.edu/gevent/detail/science/1963/). I still think about applications of topology to multi-scale modeling, and occasionally venture to consider modeling complex systems of a biological nature with an eye toward [immunotherapy](https://web.archive.org/web/20190213160322/http://www.infoiasi.ro/bin/Annals/Article?v=XXIV1&a=2) and [neuroscience](https://web.archive.org/web/20190213160322/http://xxx.tau.ac.il/pdf/1410.8826.pdf).
 
-I stopped keeping temporal notes of projects around 2015.
+I stopped keeping temporal notes of projects around 2015. Most of my extra curriculars post moving to math academia have been artistic or biological.
 
 Since around 2018, I have continued to do biological research on the side, especially around chronic pain and it's relationship to mental health. An overview of that work can be found here: [The Biome](https://rin.io/biome/)
 
-Over the period of 2021-2023, I collaborated with Chris Orta to design and tattoo two massive full robot-skeleton snakes going from the top of my back to my mid calf. In the summer of 2023, I got heavily into street art graffiti, learning from my artistic collaborator Daniel Burnett: some samples of my work can be seen in the art section of my webpage. I have traveled around the U.S. and Europe making graffiti since.
+Over the period of 2021-2023, I collaborated with Chris Orta to design and tattoo two massive full robot-skeleton snakes going from the top of my back to my mid calf. In the summer of 2023, I got heavily into street art graffiti, learning from my artistic collaborator Daniel Burnett: some samples of my graffiti work can be seen in the art section of my webpage. I have traveled around the U.S. and Europe making graffiti since.
 
 In August 2023, I joined Chris Walker and a group of other fabulous artists to finish up and sail a boat made from a bouncy castle, which we lived on for a week. (add picture)
+
+My friend Petra Flurin and I wrote a comic together called Endomortis, more on that soon!
 </details>
 
 I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to study mathematics full time under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/), and with my PhD from Northwestern working with [Paul Goerss](https://sites.math.northwestern.edu/~pgoerss/). I am currently a postdoc at Uni-Münster in the Arithmetic and Homotopy Theory Working Group lead by [Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html) and [Christopher Deninger](https://en.wikipedia.org/wiki/Christopher_Deninger).
