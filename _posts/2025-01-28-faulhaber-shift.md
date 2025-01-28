@@ -5,7 +5,7 @@ categories:
   - "math"
 ---
 
-![](images/german-tales.jpg)
+![](/images/german-tales.jpg)
 
 The Bernoulli numbers were defined by Faulhaber in terms of the following generating series.
 
