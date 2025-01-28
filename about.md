@@ -74,6 +74,8 @@ Curiosity is welcome: fractalcows@gmail.com
 
 My work email: cray@uni-muenster.de
 
+![](/images/lubin-tate.jpg) 
+
 If you are interested in my research mathematics, here are some fun papers of mine: 
 
 ### Research publications:
