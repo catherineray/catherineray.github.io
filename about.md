@@ -89,9 +89,10 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 ### In progress:
 
-- Criterion for Geometrically Modelling the Lubin-Tate action
-- New Families of Newton Strata in the Torelli Locus
-- A Geometric Model of Higher K-theories at Height h=p^{k-1}(p-1) via Families of Ramified Curves — (my thesis, readable arxiv version in progress)
+- A Generalization of Whitehead Torsion for Any Localizing Invariant
+- New Families of Newton Strata in the Torelli Locus 
+- Criterion for Geometrically Modelling the Lubin-Tate action (Thesis Paper 1)
+- Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves (Thesis Paper 2)
 - The homotopy groups of E_6^{hC_9} and the odd primary Kevaire invariant; joint with E. Belmont
 - Covers of the Octahedron; joint with D. Lee 
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
