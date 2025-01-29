@@ -29,7 +29,7 @@ $$ \Delta(f(z)) = f(z+1) - f(z) .$$
 
 Discrete Fundamental Theorem of Calculus: If \\( \Delta F = f \\), then $$ \sum_{i = 0}^{n-1} f(i) = F(n) - F(0) $$
 
-For example: If \\( f(z) = z^s \\), then if \\( \exists F \\) such that \\( \Delta F = f \\), then 
+For example, here's a _big clue_: If \\( f(z) = z^s \\), then if \\( \exists F \\) such that \\( \Delta F = f \\), then 
 $$ \sum^{n-1}_{i=0} i^s = F(n) - F(0).$$
 
 Let's set some groundwork before proceeding, we consider an operator (called the ''annihilation operator" in conformal field theory):
@@ -62,7 +62,7 @@ If we consider \\( e^x - 1 \\) as a function, we want to find another function \
 
 GUESS #1: \\( \frac{1}{e^x-1} \\) *beeping noise* nope this is not entire, has a pole when \\( x= 0 \\).
 
-GUESS #2: \\( \frac{x}{e^x-1}) \\) we can plug that pole, and get an entire function!! However, we have this extra \\( x \\) factor floating around (since we want to compose to 1).
+GUESS #2: \\( \frac{x}{e^x-1}) \\) we can plug that pole, and get an entire function!! However, we have this extra \\( x \\) factor floating around (since we want to compose to 1, i.e., the identity operator).
 
 If we were working non-commutatively, then, we'd want to look at either 
 
