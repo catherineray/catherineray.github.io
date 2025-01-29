@@ -134,7 +134,7 @@ This function has a pole of order 3 at 0, and for the simplest case \\( \tau = i
 $$\frac{2a^3(a+1)(a-1)(a+i)(a-i)}{e^a + e^{ia} - 2}$$
 
 I'm not sure where to go from here, I'd love for this to in some way compare to the Kronecker-Eisenstein series 
-(which tantalizingly involves the character \\( \phi(z) = e^{\frac{z-\overline{z}}{A}} \\)). Here, \\( A = \frac{\text{im } \tau}{\pi} \\) is the area of the fundamental domain of the lattice \\( \Lambda \\) divided by \\( pi \\). The Kronecker-Eisenstein series is defined as follows, (typically the role of the letter \\( b \\) is played by \\( a \\), but we are already using \\( a \\) to stand for annihilation operator).
+(which tantalizingly involves the character \\( \phi(z) = e^{\frac{z-\overline{z}}{A}} \\)). Here, \\( A = \frac{\text{im } \tau}{\pi} \\) is the area of the fundamental domain of the lattice \\( \Lambda \\) divided by \\( \pi \\). The Kronecker-Eisenstein series is defined as follows, (typically the role of the letter \\( b \\) is played by \\( a \\), but we are already using \\( a \\) to stand for annihilation operator).
 
 $$\kappa_{b}(z, w, s, \tau) = \sum_{\lambda \in \Lambda}^*\frac{(\overline{z}+\overline{\lambda})^b}{|z+\lambda|^s}\phi(z \overline{w}),$$
 
