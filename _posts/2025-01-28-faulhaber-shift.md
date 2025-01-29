@@ -124,7 +124,7 @@ Let's use this language to boogie. Take the lattice \\( \Lambda := \mathbb{Z} + 
 
 $$\begin{aligned} \nabla_{\lambda, (0, 0)} f(z) & = \frac12 (f(z) - f(z+1)) + \frac{1}{2}(f(z) - f(z+\tau))  \\ &= f(z) - \frac12(f(z+1) + f(z+\tau)) \\ & = \big( \mathrm{id} - \frac{\mathrm{id}}{2}(e^a + e^{\tau a})\big) f(z) \end{aligned}$$
 
-If we allow ourselves full license to fuck around, let's set $\tau = i$ and play GUESS THAT INVERSE. We consider the function 
+If we allow ourselves full license to fuck around, let's set \\( \tau = i \\) and play GUESS THAT INVERSE. We consider the function 
 $$1-\frac{1}{2}(e^x + e^{\tau x})$$
 And look at it's inverse: 
 $$\begin{aligned} \frac{1}{1-\frac{1}{2}(e^x + e^{\tau x})} &= \frac{2}{e^x + e^{\tau x}-2} \\ &= \frac{2}{\sum_n \frac{(1+\tau^n)x^n}{n!}-2}\end{aligned}$$
