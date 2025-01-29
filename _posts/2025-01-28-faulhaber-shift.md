@@ -110,7 +110,7 @@ The directed graph Laplacian rather looks at \\( N^+(v) \\), the set of vertices
 
 $$ \nabla_G f(v) = \frac{1}{|N^+(v)|} \sum_{w \in N^+(v)} f(v) - f(w) $$
 
-We can define the graph Laplacian to act on entire functions on $\mathbb{C}$: 
+We can define the graph Laplacian to act on entire functions on \\( \mathbb{C} \\): 
 
 $$ \nabla_{G, v} f(z) = \frac{1}{|N(v)|} \sum_{w \in N(v)} f(z+v) - f(z+w) $$
 
