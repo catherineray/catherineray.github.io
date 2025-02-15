@@ -21,7 +21,7 @@ This paper will construct examples of abelian varieties whose formal group laws 
 
 I wish to argue for a indirect construction of the variety which gives us formal group laws of higher height. We use the philosophy that if one is unable to directly construct local things, one can instead construct a global thing and completing/specializing to get the desired local thing. 
 
-There are _many_ global things that specialize to the same local thing. We choose the variety \\(\mathbb{C}^m/\mathbb{Z}[\zeta_N]\\) as our global model because its endomorphism ring is very simple (*) -- it is (and at the very least contains) \\(\mathbb{Z}[\zeta_N]\\(, and its automorphism group is \\(\mathbb{Z}[\zeta_N]^\times\\). For \\(N\\) prime, by Dirichlet's unit theorem, \\(\mathbb{Z}[\zeta_N]^\times \simeq \mathbb{Z}/NZ^\times \times \mathbb{Z}^{(N-3)/2}\\).
+There are _many_ global things that specialize to the same local thing. We choose the variety \\(\mathbb{C}^m/\mathbb{Z}[\zeta_N]\\) as our global model because its endomorphism ring is very simple (*) -- it is (and at the very least contains) \\(\mathbb{Z}[\zeta_N]\\), and its automorphism group is \\(\mathbb{Z}[\zeta_N]^\times\\). For \\(N\\) prime, by Dirichlet's unit theorem, \\(\mathbb{Z}[\zeta_N]^\times \simeq \mathbb{Z}/NZ^\times \times \mathbb{Z}^{(N-3)/2}\\).
 
 (*)Unless it is what Taniyama-Shimura call degenerate, then the endomorphism ring is a little more complicated.
 
