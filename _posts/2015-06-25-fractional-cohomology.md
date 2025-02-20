@@ -96,7 +96,7 @@ Edit: I’ve since learned that there’s something called Shape Theory.
 
 > “The intuitive idea of shape theory is to define invariants of quite general topological spaces by approximating them with ‘good’ spaces, either by embedding them into good spaces, and looking at open or polyhedral neighborhoods of them, or by considering abstract inverse systems of good spaces. The two approaches are closely related.” [- nLab](http://ncatlab.org/nlab/show/shape+theory)
 
-I wonder if the fuzzy torus could be made equivalent to the cartesian product of two Warsaw circles! The Warsaw circle is the made from the curve \\({(x, \sin(\frac{1}{x})) | x \in (0, 1)} \cup {(0,0)}\\) closed by a line: 
+I wonder if the fuzzy torus could be made equivalent to the cartesian product of two Warsaw circles! The Warsaw circle is the made from the curve \\({(x, \sin(\frac{1}{x})) \| x \in (0, 1)} \cup {(0,0)}\\) closed by a line: 
 
 [![Source: Wikipedia](/images/wp-content/uploads/2015/06/Warsaw_Circle.png)](/wp-content/uploads/2015/06/Warsaw_Circle.png)
 
