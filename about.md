@@ -67,7 +67,7 @@ My dear friend Petra Flurin and I wrote a comic together called Endomortis, more
 
 I am currently a postdoc at Uni-Münster in the Arithmetic and Homotopy Theory Working Group lead by [Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html) and [Christopher Deninger](https://en.wikipedia.org/wiki/Christopher_Deninger). 
 
-Before that, I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to study mathematics full time under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/) and [Kazuya Kato (加藤 和也)](https://en.wikipedia.org/wiki/Kazuya_Kato), and with my PhD from Northwestern working with [Paul Goerss](https://sites.math.northwestern.edu/~pgoerss/). 
+Before that, I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to develop medical technology and study mathematics under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/) and [Kazuya Kato (加藤 和也)](https://en.wikipedia.org/wiki/Kazuya_Kato), and with my PhD from Northwestern working with [Paul Goerss](https://sites.math.northwestern.edu/~pgoerss/). 
 
 
 ### Contact me
