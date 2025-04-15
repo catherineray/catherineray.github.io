@@ -91,11 +91,20 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 ### In progress:
 
+Zeta Functions in Homotopy Theory: 
 - A Generalization of Whitehead Torsion for Any Localizing Invariant
-- New Families of Newton Strata in the Torelli Locus 
-- Criterion for Geometrically Modelling the Lubin-Tate action (Thesis Paper 1)
-- Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves (Thesis Paper 2)
+- Connecting Kevaire-Milnor to Quillen-Lichtenbaum: The splittings of K(S) and L_{K(1)}K(Z) are compatible (Bernoulli Numbers in K-theory)
+
+Moduli Stacks of Curves in Homotopy Theory:
+My thesis attempted to resolve a 40 year old conjecture, and involves a lot of parts. To make it digestible, I have broken it up into 3 parts which are forthcoming.
+- (Thesis Paper 1) A Walk Through a Garden: Criterion for Modeling Groups Acting on Stacks (Especially the Lubin-Tate Action)
+- (Thesis Paper 2) Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves for $h = p-1$
+- (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Ramified Families of Curves for $h = p^{k-1}(p-1)$
+
 - The homotopy groups of E_6^{hC_9} and the odd primary Kevaire invariant; joint with E. Belmont
+- The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus) 
+
+Old and likely dead:
 - Covers of the Octahedron; joint with D. Lee 
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
 
