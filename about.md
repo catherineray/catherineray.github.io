@@ -78,7 +78,7 @@ My work email: cray@uni-muenster.de
 
 ![](/images/lubin-tate.jpg) 
 
-If you are interested in my research mathematics, here are some fun papers of mine: 
+If you are interested in my research mathematics, here are some fun papers of mine.
 
 ### Research publications:
 
@@ -93,15 +93,15 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 Zeta Functions in Homotopy Theory: 
 - A Generalization of Whitehead Torsion for Any Localizing Invariant
-- Connecting Kevaire-Milnor to Quillen-Lichtenbaum: The splittings of K(S) and L_{K(1)}K(Z) are compatible (Bernoulli Numbers in K-theory)
+- Connecting Kevaire-Milnor to Quillen-Lichtenbaum: The splittings of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) are compatible (Bernoulli Numbers in K-theory)
 
 Moduli Stacks of Curves in Homotopy Theory:
 My thesis attempted to resolve a 40 year old conjecture, and involves a lot of parts. To make it digestible, I have broken it up into 3 parts which are forthcoming.
 - (Thesis Paper 1) A Walk Through a Garden: Criterion for Modeling Groups Acting on Stacks (Especially the Lubin-Tate Action)
-- (Thesis Paper 2) Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves for $h = p-1$
-- (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Ramified Families of Curves for $h = p^{k-1}(p-1)$
+- (Thesis Paper 2) Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves for \\( h = p-1 \\)
+- (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Ramified Families of Curves for \\( h = p^{k-1}(p-1) \\)
 
-- The homotopy groups of E_6^{hC_9} and the odd primary Kevaire invariant; joint with E. Belmont
+- The homotopy groups of \\( E_6^{hC_9} \\) and the odd primary Kevaire invariant; joint with E. Belmont
 - The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus) 
 
 Old and likely dead:
