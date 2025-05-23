@@ -109,12 +109,17 @@ Old and likely dead:
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
 
 ### Expository writing:
-- [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations. 
+- [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations.
+- [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
+
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf) Background on p-adic geometry toward proving the Monodromy Weight conjecture.
+
 - [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf)
 - [Models of Formal Group Laws of Every Height](https://rin.io/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
 - [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
+- [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
+
 - [Calculating pi_*(tmf) at the prime 2](https://people.math.rochester.edu/faculty/doug/otherpapers/ray-a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
 - [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
-- [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
+
 
