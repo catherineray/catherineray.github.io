@@ -9,3 +9,9 @@ I've felt for a long time that automorphisms of curves should control or at leas
 In this post, I conjecture that the Frobenius eigenvalues of Artin-Schreier-Witt Curves (\\( \mathbb{Z}/p^k \\)-covers) are Gauss sums, generalizing an old and classic theorem of Davenport and Hasse (fuck nazis though). I explain and expand (i.e., make the paper type check and fill in details, like damn it's mad curt) a gorgeous reproof of this theorem using local systems by Robert Coleman.
 
 This playful note is toward exploring this force, and outlining a conjectural approach for further exploiting it. Enjoy and click. [Read about my Gauss Sums :P](/pdfs/Gauss_sums.pdf)
+
+<object data="http://rin.io/pdfs/Gauss_sums.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://rin.io/pdfs/Gauss_sums.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://rin.io/pdfs/Gauss_sums.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
