@@ -17,7 +17,7 @@ $$0 \to H^0(X, \mathcal{F}) \hookrightarrow  \mathcal{F}(A) \times \mathcal{F}(B
 
 In particular, if take the decomposition of \\(X\\) into the point at infinity and its complement \\(X = U \cup \{\infty\}\\), we get the following sequence, let \\(T\\) be a divisor at \\(\infty\\). 
 
-$$0 \to H^0(X, \mathcal{F}) \hookrightarrow  \mathcal{F}(U) \times \mathcal{F}^\wedge_\infty \to \mathcal{F}^\wedge_\infty[\frac{1}{T}] \to H^0(X, \mathcal{F}) \to 0.$$
+$$0 \to H^0(X, \mathcal{F}) \hookrightarrow  \mathcal{F}(U) \times \mathcal{F}^\wedge_\infty \to \mathcal{F}^\wedge_\infty[\frac{1}{T}] \to H^1(X, \mathcal{F}) \to 0.$$
 
 A global section \\(H^0(X, \Omega^1\_X)\\) can be specified by either a basis in terms of \\(\mathcal{F}(U)\\), in terms of \\(\mathcal{F}^\wedge\_\infty.\\) This is because we are considering \\(H^0(X, \mathcal{F})\\) as a subset of \\(\mathcal{F}(U) \times \mathcal{F}^\wedge_\infty\\). 
 
