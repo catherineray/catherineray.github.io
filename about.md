@@ -119,7 +119,7 @@ Old and likely dead:
 - [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
 - [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
 
-- [Calculating pi_*(tmf) at the prime 2](https://people.math.rochester.edu/faculty/doug/otherpapers/ray-a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
+- [Calculating pi_*(tmf) at the prime 2](https://rin.io/images/wp-content/uploads/2017/05/a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
 - [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
 
 
