@@ -95,6 +95,7 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 Zeta Functions in Homotopy Theory: 
 - Riemann Roch for Rademeister Torsion in K-theory and L-Theory
+- L-genera and Localizations in K-theory; joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj
 - Syntomic cohomology of ring spectra and a \\( T(h) \\)-local zeta function; joint with Gabe Angelini-Knoll
 - All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) (on hiatus)
 
@@ -107,6 +108,9 @@ My thesis attempted to resolve a 40 year old conjecture, and involves a lot of p
 - The homotopy groups of \\( E_6^{hC_9} \\) and the odd primary Kevaire invariant; joint with E. Belmont
 - The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus) 
 
+Jacquet-Langlands and Homotopy Theory: 
+- Transchromatic Splitting Conjecture; joint with many.
+
 Old and likely dead:
 - Covers of the Octahedron; joint with D. Lee 
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
@@ -115,16 +119,19 @@ Old and likely dead:
 - [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations.
 - [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
+- (Coming Soon) K-theoretic Tate Poutou Duality
+- (Coming Soon) Zeta-Functions and THH
 
-- (Coming Soon) K-theoretic Tate Poutou Duality 
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf) Background on p-adic geometry toward proving the Monodromy Weight conjecture.
-
-- [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf)
-- [Models of Formal Group Laws of Every Height](https://rin.io/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
+- [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf) Explaining that the stabilizer of the Hecke Action is the Morvava Stabilizer Group.
 - [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
-- [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
 
-- [Calculating pi_*(tmf) at the prime 2](https://rin.io/images/wp-content/uploads/2017/05/a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
+- [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
 - [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
+
+My two Master's theses
+- [Calculating pi_*(tmf) at the prime 2](https://rin.io/images/wp-content/uploads/2017/05/a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
+- [Models of Formal Group Laws of Every Height](https://rin.io/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
+  
 
 
