@@ -95,7 +95,7 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 Zeta Functions in Homotopy Theory: 
 - Riemann Roch for Rademeister Torsion in K-theory and L-Theory
-- Syntomic cohomology of ring spectra and a $T(h)$-local zeta function; joint with Gabe Angelini-Knoll
+- Syntomic cohomology of ring spectra and a \\( T(h) \\)-local zeta function; joint with Gabe Angelini-Knoll
 - All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) (on hiatus)
 
 Moduli Stacks of Curves in Homotopy Theory:
