@@ -94,8 +94,9 @@ If you are interested in my research mathematics, here are some fun papers of mi
 ### In progress:
 
 Zeta Functions in Homotopy Theory: 
-- A Generalization of Whitehead Torsion for Any Localizing Invariant
-- Connecting Kevaire-Milnor to Quillen-Lichtenbaum: The splittings of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) are compatible (Bernoulli Numbers in K-theory)
+- Riemann Roch for Rademeister Torsion in K-theory and L-Theory
+- Syntomic cohomology of ring spectra and a $T(h)$-local zeta function; joint with Gabe Angelini-Knoll
+- All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) (on hiatus)
 
 Moduli Stacks of Curves in Homotopy Theory:
 My thesis attempted to resolve a 40 year old conjecture, and involves a lot of parts. To make it digestible, I have broken it up into 3 parts which are forthcoming.
@@ -114,6 +115,8 @@ Old and likely dead:
 - [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations.
 - [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
+
+- (Coming Soon) K-theoretic Tate Poutou Duality 
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf) Background on p-adic geometry toward proving the Monodromy Weight conjecture.
 
 - [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf)
