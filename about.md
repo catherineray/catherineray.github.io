@@ -89,7 +89,7 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 ### Research preprints:
 
-- (Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) 
+- (Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (2025)
 - [A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper (2018)
 
 ### In progress:
