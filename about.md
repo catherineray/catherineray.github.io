@@ -89,7 +89,8 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 ### Research preprints:
 
-[A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper
+- (Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) 
+- [A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper (2018)
 
 ### In progress:
 
@@ -101,7 +102,6 @@ Zeta Functions in Homotopy Theory:
 
 Moduli Stacks of Curves in Homotopy Theory:
 My thesis attempted to resolve a 40 year old conjecture, and involves a lot of parts. To make it digestible, I have broken it up into 3 parts which are forthcoming.
-- (Thesis Paper 1) A Walk Through a Garden: Criterion for Modeling Groups Acting on Stacks (Especially the Lubin-Tate Action)
 - (Thesis Paper 2) Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves for \\( h = p-1 \\)
 - (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Ramified Families of Curves for \\( h = p^{k-1}(p-1) \\)
 
