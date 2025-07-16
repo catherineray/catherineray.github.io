@@ -78,8 +78,6 @@ Curiosity is welcome: fractalcows@gmail.com
 
 My work email: cray@uni-muenster.de
 
-![](/images/lubin-tate.jpg) 
-
 If you are interested in my research mathematics, here are some fun papers of mine.
 
 ### Research publications:
@@ -89,7 +87,9 @@ If you are interested in my research mathematics, here are some fun papers of mi
 
 ### Research preprints:
 
-- (Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (2025)
+
+- [Towards the \\( p=3 \\) Kervaire Invariant Problem: The E2-page for the homotopy fixed points spectral sequence computing \\(π_*(E^6{hC9}) \\)](https://arxiv.org/abs/2507.10157) joint with Eva Belmont (July 2025)
+- (Survey / Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (July 2025)
 - [A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper (2018)
 
 ### In progress:
@@ -105,7 +105,6 @@ My thesis attempted to resolve a 40 year old conjecture, and involves a lot of p
 - (Thesis Paper 2) Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves for \\( h = p-1 \\)
 - (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Ramified Families of Curves for \\( h = p^{k-1}(p-1) \\)
 
-- The homotopy groups of \\( E_6^{hC_9} \\) and the odd primary Kevaire invariant; joint with E. Belmont
 - The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus) 
 
 Jacquet-Langlands and Homotopy Theory: 
@@ -117,10 +116,11 @@ Old and likely dead:
 
 ### Expository writing:
 - [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations.
+
+- [Zeta Functions and THH](pdfs/Zeta_Functions_and_THH_Talk3.pdf) July 16 2025
 - [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
 - (Coming Soon) K-theoretic Tate Poutou Duality
-- (Coming Soon) Zeta-Functions and THH
 
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf) Background on p-adic geometry toward proving the Monodromy Weight conjecture.
 - [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf) Explaining that the stabilizer of the Hecke Action is the Morvava Stabilizer Group.
@@ -134,4 +134,4 @@ My two Master's theses
 - [Models of Formal Group Laws of Every Height](https://rin.io/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
   
 
-
+![](/images/lubin-tate.jpg) 
