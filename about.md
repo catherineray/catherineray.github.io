@@ -77,7 +77,8 @@ Curiosity is welcome: fractalcows@gmail.com
 
 My work email: cray@uni-muenster.de
 
-If you are interested in my research mathematics, here are some fun papers of mine.
+If you are interested in my research mathematics, here are some fun papers of mine. [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations.
+
 
 ### Research publications:
 
@@ -114,7 +115,6 @@ Old and likely dead:
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
 
 ### Expository writing:
-- [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations.
 
 - [Zeta Functions and THH](pdfs/Zeta_Functions_and_THH_Talk3.pdf) July 16 2025
 - [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
