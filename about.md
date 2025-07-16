@@ -65,11 +65,10 @@ In August 2023, I joined Chris Walker and a group of other fabulous artists to f
 My dear friend Petra Flurin and I wrote a comic together called Endomortis, more on that soon!
 </details>
 
-I am currently a [postdoc at Uni-Münster](https://www.uni-muenster.de/FB10srvi/persdb/MM-member.php?id=1772) in the Arithmetic and Homotopy Theory Working Group lead by [Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html) and [Christopher Deninger](https://en.wikipedia.org/wiki/Christopher_Deninger). 
+I am currently a [postdoc at Uni-Münster](https://www.uni-muenster.de/FB10srvi/persdb/MM-member.php?id=1772) in the Arithmetic and Homotopy Theory Working Group lead by [Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html) and [Christopher Deninger](https://en.wikipedia.org/wiki/Christopher_Deninger). Here's a recent interview I did as part of On a Tangent: Voices of Mathematics Muenster: [How an Inventor becomes a Mathematican](https://open.spotify.com/episode/6yw6nazYdvFW4lp24rolZd?si=kOzCIF7lQYeGPBlgWI-gjg).
 
 Before that, I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to develop medical technology and study mathematics under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/) and [Kazuya Kato (加藤 和也)](https://en.wikipedia.org/wiki/Kazuya_Kato), and with my PhD from Northwestern working with [Paul Goerss](https://sites.math.northwestern.edu/~pgoerss/). 
 
-Here's a recent interview I did as part of On a Tangent: Voices of Mathematics Muenster: [How an Inventor becomes a Mathematican](https://open.spotify.com/episode/6yw6nazYdvFW4lp24rolZd?si=kOzCIF7lQYeGPBlgWI-gjg).
 
 
 ### Contact me
