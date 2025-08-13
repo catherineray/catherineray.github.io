@@ -80,7 +80,7 @@ My work email: cray@uni-muenster.de
 
 If you are interested in my research mathematics, a few fun papers are below. [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student for a general audience, including original illustrations.
 
-You will find both the names Catherine Ray and Rin Ray on my research papers, these refer to the same person. I prefer to go by Rin nowadays.
+You will find the name Catherine Ray on my old research papers and Rin Ray on my newer works, these both refer to the same person. I prefer Rin nowadays.
 
 ### Research publications:
 
