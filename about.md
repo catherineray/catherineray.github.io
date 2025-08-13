@@ -8,6 +8,7 @@ permalink: /about/
 
 I also work in chronic pain research. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. 
 
+
 <details>
 <summary>Here is a summary of my past non-math research and projects</summary>
 
@@ -77,8 +78,9 @@ Curiosity is welcome: fractalcows@gmail.com
 
 My work email: cray@uni-muenster.de
 
-If you are interested in my research mathematics, here are some fun papers of mine. [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student *for a general audience*, including original illustrations.
+If you are interested in my research mathematics, a few fun papers are below. [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student for a general audience, including original illustrations.
 
+You will find both the names Catherine Ray and Rin Ray on my research papers, these refer to the same person. I prefer to go by Rin nowadays.
 
 ### Research publications:
 
@@ -86,7 +88,6 @@ If you are interested in my research mathematics, here are some fun papers of mi
 - [Towards Directed Collapsibility](https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17) joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre; _Advances in Mathematical Sciences, Volume 21, pages 255–271, 2020_ [arxiv](https://arxiv.org/abs/1902.01039) 
 
 ### Research preprints:
-
 
 - [Towards the \\( p=3 \\) Kervaire Invariant Problem: The \\( E_2 \\)-page for the homotopy fixed points spectral sequence computing \\(π_*(E_6^{hC9}) \\)](https://arxiv.org/abs/2507.10157) joint with Eva Belmont (July 2025)
 - (Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (July 2025)
@@ -119,7 +120,7 @@ Old and likely dead:
 - [Zeta Functions and THH](pdfs/Zeta_Functions_and_THH_Talk3.pdf) July 16 2025
 - [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
-- (Coming Soon) K-theoretic Tate Poutou Duality
+- (Coming Soon) K-theoretic Tate Poutou Duality Seminar (March 2025)
 
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf) Background on p-adic geometry toward proving the Monodromy Weight conjecture.
 - [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf) Explaining that the stabilizer of the Hecke Action is the Morvava Stabilizer Group.
