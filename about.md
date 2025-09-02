@@ -80,7 +80,7 @@ My work email: cray@uni-muenster.de
 
 If you are interested in my research mathematics, a few fun papers are below. [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student for a general audience, including original illustrations.
 
-You will find the name Catherine Ray on my old research papers and Rin Ray on my newer works, these both refer to the same person. I prefer Rin nowadays.
+(You will find the name Catherine Ray on my old research papers and Rin Ray on my newer works, these both refer to the same person. I prefer Rin nowadays.)
 
 ### Research publications:
 
@@ -107,7 +107,7 @@ Jacquet-Langlands and Homotopy Theory:
 
 Moduli Stacks of Curves in Homotopy Theory:
 
-The group cohomology of the maximal finite subgroups of the Lubin-Tate action is the E_2 page needed to capture all p-torsion information in the stable homotopy groups of spheres, and the only nontrivial p-torsion for odd primes is found at heights $p^{k-1}(p-1)$. 
+The group cohomology of the maximal finite subgroups of the Lubin-Tate action is the E_2 page needed to capture all p-torsion information in the stable homotopy groups of spheres, and the only nontrivial p-torsion for odd primes is found at heights \\( p^{k-1}(p-1) \\). 
 
 My thesis (2023) attempts to resolve a 40 year old conjecture describing the Lubin-Tate action for all maximal finite subgroups, in the process proividing a higher height alternative to tmf which does not use Shimura varieties.  A key insight is to replace the role of level structures with higher ramification information. To make the thesis more digestible, I have broken it up into 3 parts which are forthcoming.
 - (Thesis Paper 2) Squirming Jewels: Moduli Stacks of G-Curves Model the Lubin-Tate Action for \\( h = p-1 \\)
