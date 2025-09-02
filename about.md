@@ -6,7 +6,7 @@ permalink: /about/
 
   ![image](images/Aboutme.jpeg)
 
-I also work in chronic pain research. Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. 
+Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. I continue to work in chronic pain research. 
 
 
 <details>
@@ -96,20 +96,21 @@ You will find the name Catherine Ray on my old research papers and Rin Ray on my
 ### In progress:
 
 Zeta Functions in Homotopy Theory: 
-- Riemann Roch for Rademeister Torsion in K-theory and L-Theory
-- L-genera and Localizations in K-theory; joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj
+- Riemann Roch for Rademeister Torsion in K-theory and L-Theory (Toward Categorifying the relationship of Symplectic L-functions and Rademeister Torsion)
 - Syntomic cohomology of ring spectra and a \\( T(h) \\)-local zeta function; joint with Gabe Angelini-Knoll
+- L-genera and Localizations in K-theory; joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj
+
 - All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) (on hiatus)
 
-Moduli Stacks of Curves in Homotopy Theory:
-My thesis attempted to resolve a 40 year old conjecture, and involves a lot of parts. To make it digestible, I have broken it up into 3 parts which are forthcoming.
-- (Thesis Paper 2) Squirming Jewels: Modelling the Lubin-Tate action with Ramified Families of Curves for \\( h = p-1 \\)
-- (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Ramified Families of Curves for \\( h = p^{k-1}(p-1) \\)
-
-- The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus) 
-
 Jacquet-Langlands and Homotopy Theory: 
-- Transchromatic Splitting Conjecture; joint with many.
+- Toward the Transchromatic Splitting Conjecture Via a Mod p-Two Tower Correspondence; joint with T. Barthel, L. Mann, T. Schlank, P.Srinivasan, J. Weinstein, Y. Xu, Z. Yang, X. Zhou.
+
+Moduli Stacks of Curves in Homotopy Theory:
+My thesis (from 2023) attempts to resolve a 40 year old conjecture describing the Lubin-Tate action for all maximal finite subgroups of the morava stabilizer group, in the process proividing a higher height alternative to tmf which does not use Shimura varieties. The group cohomology Lubin-Tate action is the E_2 page needed to capture all p-torsion information in the stable homotopy groups of spheres. A key insight is to replace the role of level structures with higher ramification information. To make the thesis more digestible, I have broken it up into 3 parts which are forthcoming.
+- (Thesis Paper 2) Squirming Jewels: Moduli Stacks of G-Curves Model the Lubin-Tate Action for \\( h = p-1 \\)
+- (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Moduli Stacks of G-Curves for \\( h = p^{k-1}(p-1) \\)
+
+- The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus)  [Here's a note toward this: Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
 Old and likely dead:
 - Covers of the Octahedron; joint with D. Lee 
