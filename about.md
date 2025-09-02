@@ -100,7 +100,7 @@ Zeta Functions in Homotopy Theory:
 - Toward Categorifying the relationship of Symplectic L-functions and Rademeister Torsion: Riemann Roch for Rademeister Torsion in K-theory and L-Theory
 - L-genera and Localizations in K-theory; joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj
 
-- All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) (on hiatus)
+- All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) joint with Andres Mejia and Noah Riggenbach (on hiatus)
 
 Jacquet-Langlands and Homotopy Theory: 
 - Toward the Transchromatic Splitting Conjecture Via a Mod p-Two Tower Correspondence; joint with T. Barthel, L. Mann, T. Schlank, P.Srinivasan, J. Weinstein, Y. Xu, Z. Yang, X. Zhou.
