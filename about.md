@@ -78,8 +78,7 @@ Curiosity is welcome: fractalcows@gmail.com
 
 My work email: cray@uni-muenster.de
 
-If you are interested in my research mathematics, a few fun papers are below. [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student for a general audience, including original illustrations.
-
+If you are interested in my research mathematics, a few fun papers are below. 
 (You will find the name Catherine Ray on my old research papers and Rin Ray on my newer works, these both refer to the same person. I prefer Rin nowadays.)
 
 ### Research publications:
@@ -120,11 +119,12 @@ Old and likely dead:
 - Duality resolutions for general linear groups; joint with E. Belmont, P. VanKoughnett
 
 ### Expository writing:
-
 - [Zeta Functions and THH](pdfs/Zeta_Functions_and_THH_Talk3.pdf) July 16 2025
 - [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
 - (Coming Soon) K-theoretic Tate Poutou Duality Seminar (March 2025)
+
+- [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student for a general audience, including original illustrations.
 
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf) Background on p-adic geometry toward proving the Monodromy Weight conjecture.
 - [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf) Explaining that the stabilizer of the Hecke Action is the Morvava Stabilizer Group.
