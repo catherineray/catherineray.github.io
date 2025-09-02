@@ -108,7 +108,7 @@ Moduli Stacks of Curves in Homotopy Theory:
 
 The group cohomology of the maximal finite subgroups of the Lubin-Tate action is the E_2 page needed to capture all p-torsion information in the stable homotopy groups of spheres. 
 
-My thesis (2023) attempts to resolve a 40 year old conjecture describing the Lubin-Tate action for all maximal finite subgroups, in the process proividing a higher height alternative to tmf which does not use Shimura varieties.  A key insight is to replace the role of level structures with higher ramification information. To make the thesis more digestible, I have broken it up into 3 parts which are forthcoming. The only nontrivial p-torsion for odd primes is found at heights \\( p^{k-1}(p-1) \\). 
+My thesis (2023) attempts to resolve the 40 year old open problem of describing the Lubin-Tate action for all maximal finite subgroups. In the process, it proivides a higher height version of tmf, an alternative to taf which does not use Shimura varieties but rather Hurwitz spaces. A key insight is to replace the role of level structures with higher ramification information. To make the thesis more digestible, I have broken it up into 3 parts which are forthcoming. The only nontrivial p-torsion for odd primes is found at heights \\( p^{k-1}(p-1) \\). 
 - (Thesis Paper 2) Squirming Jewels: Moduli Stacks of G-Curves Model the Lubin-Tate Action for \\( h = p-1 \\)
 - (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Moduli Stacks of G-Curves for \\( h = p^{k-1}(p-1) \\)
 
