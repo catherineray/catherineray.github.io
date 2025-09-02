@@ -6,7 +6,7 @@ permalink: /about/
 
   ![image](images/Aboutme.jpeg)
 
-Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. I continue to work in chronic pain research. 
+Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. I continue to work in chronic pain research, which you can read about [here](https://rin.io/biome/). 
 
 
 <details>
