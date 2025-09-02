@@ -96,8 +96,8 @@ If you are interested in my research mathematics, a few fun papers are below. [H
 ### In progress:
 
 Zeta Functions in Homotopy Theory: 
-- Riemann Roch for Rademeister Torsion in K-theory and L-Theory (Toward Categorifying the relationship of Symplectic L-functions and Rademeister Torsion)
 - Syntomic cohomology of ring spectra and a \\( T(h) \\)-local zeta function; joint with Gabe Angelini-Knoll
+- Toward Categorifying the relationship of Symplectic L-functions and Rademeister Torsion: Riemann Roch for Rademeister Torsion in K-theory and L-Theory
 - L-genera and Localizations in K-theory; joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj
 
 - All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) (on hiatus)
