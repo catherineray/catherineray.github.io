@@ -121,15 +121,11 @@ Old and likely dead:
 ### Expository writing:
 - [Zeta Functions and THH](pdfs/Zeta_Functions_and_THH_Talk3.pdf) July 16 2025
 - [Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
-
 - (Coming Soon) K-theoretic Tate Poutou Duality Seminar (March 2025)
-
 - [Here](pdfs/application_general_audience.pdf) is a 4 page summary of my work as a graduate student for a general audience, including original illustrations.
-
 - [Geometry for Prime Addicts](https://rin.io/images/wp-content/uploads/2018/04/padicgeometry-1.pdf) Background on p-adic geometry toward proving the Monodromy Weight conjecture.
 - [The Hecke Orbit Conjecture and Homotopy Theory](https://github.com/catherineray/catherineray.github.io/blob/master/pdfs/heckeorbitshomotopy_.pdf) Explaining that the stabilizer of the Hecke Action is the Morvava Stabilizer Group.
 - [An Overview of the Classic Theory of P-Divisible Groups](/pdfs/officialober-1.pdf) (Published in Oberwolfach Proceedings)
-
 - [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
 - [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
 
