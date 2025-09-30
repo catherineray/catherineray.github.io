@@ -88,10 +88,11 @@ If you are interested in my research mathematics, a few fun papers are below.
 
 ### Research preprints:
 
-- (Thesis Paper 2) [Moduli Stacks of G-Curves Model in Homotopy Theory at \\( h = p-1 \\)](https://arxiv.org/abs/2509.23428) (Sept 2025) 
+- (Thesis Paper 2) [Moduli Stacks of G-Curves in Homotopy Theory at \\( h = p-1 \\)](https://arxiv.org/abs/2509.23428) (Sept 2025) 
 - [Towards the \\( p=3 \\) Kervaire Invariant Problem: The \\( E_2 \\)-page for the homotopy fixed points spectral sequence computing \\(π_*(E_6^{hC9}) \\)](https://arxiv.org/abs/2507.10157) joint with Eva Belmont (July 2025)
 - (Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (July 2025)
 - [A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper (2018)
+
 
 ### In progress:
 
@@ -107,10 +108,9 @@ Jacquet-Langlands and Homotopy Theory:
 
 Moduli Stacks of Curves in Homotopy Theory:
 
-The group cohomology of the maximal finite subgroups of the Lubin-Tate action is the E_2 page needed to capture all p-torsion information in the stable homotopy groups of spheres. My thesis (2023) attempts to resolve the 40 year old open problem of describing the Lubin-Tate action for all maximal finite subgroups. In the process, it proivides a higher height version of tmf, an alternative to taf which does not use Shimura varieties but rather Hurwitz spaces. A key insight is to replace the role of level structures with higher ramification information. To make the thesis more digestible, I have broken it up into 3 parts, the last of which is forthcoming. The only nontrivial p-torsion for odd primes is found at heights \\( p^{k-1}(p-1) \\). 
+The group cohomology of the maximal finite subgroups of the Lubin-Tate action is the E_2 page needed to capture all p-torsion information in the stable homotopy groups of spheres. My thesis (2023) attempts to resolve the 40 year old open problem of describing the Lubin-Tate action for all maximal finite subgroups. It does so by outlining a universal way to build a geometric model using a moduli stack of \\( G \\)-curves given a subgroup \\( G \\).  A key insight is to replace the role of level structures with higher ramification information. To make the thesis more digestible, I have broken it up into 3 parts, the last of which is forthcoming. The only nontrivial p-torsion for odd primes is found at heights \\( p^{k-1}(p-1) \\). 
 
 - (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Moduli Stacks of G-Curves for \\( h = p^{k-1}(p-1) \\)
-
 - The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus)  [Here's a note toward this: Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
 Old and likely dead:
@@ -128,9 +128,8 @@ Old and likely dead:
 - [Fiber Bundles of Formal Disks](/pdfs/formalgroup-1.pdf) (with A. Holeman)
 - [A Complete Proof of the Polynomial Ham Sandwich Theorem, Based on Gromov’s Proof](/pdfs/gromovprooffill.pdf)
 
-My two Master's theses
+My two Master's theses:
 - [Calculating pi_*(tmf) at the prime 2](https://rin.io/images/wp-content/uploads/2017/05/a1-2.pdf) (An Illustrated Guide to the May Spectral Sequence)
 - [Models of Formal Group Laws of Every Height](https://rin.io/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
   
-
 ![](/images/lubin-tate.jpg) 
