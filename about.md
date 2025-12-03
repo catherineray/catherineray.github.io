@@ -48,7 +48,7 @@ Zeta Functions in Homotopy Theory:
 - All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) joint with Andres Mejia and Noah Riggenbach (on hiatus)
 
 Jacquet-Langlands and Homotopy Theory: 
-- Toward the Transchromatic Splitting Conjecture Via a Mod p-Two Tower Correspondence; joint with T. Barthel, L. Mann, T. Schlank, P.Srinivasan, J. Weinstein, Y. Xu, Z. Yang, X. Zhou.
+- Toward the Transchromatic Splitting Conjecture Via a Mod p-Two Tower Correspondence; joint with T. Barthel, L. Mann, A. Senger, T. Schlank, P.Srinivasan, J. Weinstein, Y. Xu, Z. Yang, X. Zhou.
 
 Moduli Stacks of Curves in Homotopy Theory:
 
