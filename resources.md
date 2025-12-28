@@ -16,6 +16,9 @@ permalink: /resources/
 - A Manga Guide to Linear algebra (by Shin Takahashi and Iroha Inoue)
 - [The Magnificent 2D Matrix](https://ncase.me/matrix/)
 
+## Understanding Calculus 
+- Dangerous and Illegal Operations in Calculus (by Garrett)
+
 ## Intro to Proof Writing
 - [Math Girls](http://bentobooks.com/resources/math-girls-sample.pdf) 
 - Mathematics as Problem Solving (by Alexander Soifer)
