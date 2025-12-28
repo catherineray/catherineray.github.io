@@ -40,7 +40,7 @@ You are a human first and foremost! If you are feeling off and need help, you ca
 
 ### Other "Basics"
 - [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures](https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/)
-- [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)
+- [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf) (by Barry Mazur)
 - [Kindergarten Quantum Mechanics](https://arxiv.org/pdf/quant-ph/0510032.pdf)
 - A topological picturebook (by George Francis)
 
