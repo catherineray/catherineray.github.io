@@ -67,7 +67,7 @@ __can be found on libgen if a link is not given__
 - [Topology for Physicists](http://www.thp.uni-koeln.de/zirn/011_Website_Martin_Zirnbauer/3_Teaching/LectureNotes/02ToPhys_SS11.pdf)
 - Homotopic Topology (by Fuchs and Fomenko)
 
-###  Machine Learning and Neural Networks
+## Basics of Machine Learning and Neural Networks
 
-- All the basic algorithms in ML arranged in a nice graph to follow, work through the examples ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
 - Chris has excellent clear expositions of basic topics in neural networks and deep learning, [Chris Olah's blog](https://colah.github.io/)
+- All the basic algorithms in ML arranged in a nice graph to follow, work through the examples ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
