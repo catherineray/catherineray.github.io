@@ -32,10 +32,8 @@ permalink: /resources/
 - [p-hacking](https://www.youtube.com/watch?v=tLM7xS6t4FE&ab_channel=SciShow)
 - [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures](https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/)
 - [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)
-- [Topology for Physicists](http://www.thp.uni-koeln.de/zirn/011_Website_Martin_Zirnbauer/3_Teaching/LectureNotes/02ToPhys_SS11.pdf)
 - [Kindergarten Quantum Mechanics](https://arxiv.org/pdf/quant-ph/0510032.pdf)
 - A topological picturebook (by George Francis)
-- Gauge Fields, Knots, and Gravity (by John Baez)
 
 ### Medium Spice in Maths: 
 __can be found on libgen if a link is not given__
@@ -55,8 +53,10 @@ __can be found on libgen if a link is not given__
 - [The Algebra II Lectures of the Poetic Kazuya Kato](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf)
 
 ## Topology
+- Gauge Fields, Knots, and Gravity (by John Baez)
 - Elementary Applied Topology [Pictorial basic topology via physics and engineering examples](https://www2.math.upenn.edu/~ghrist/notes.html) (by Robert Ghrist)
 - Homotopic Topology (by Fuchs and Fomenko)
+- [Topology for Physicists](http://www.thp.uni-koeln.de/zirn/011_Website_Martin_Zirnbauer/3_Teaching/LectureNotes/02ToPhys_SS11.pdf)
 
 ###  Machine Learning and Neural Networks
 
