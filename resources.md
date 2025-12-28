@@ -4,7 +4,7 @@ title: Resources
 permalink: /resources/
 ---
 ## Online Therapy  
-You are a human first and foremost! If you are feeling off and need help, you can set up an appointment within the next few days to talk to someone about your situation.
+You are a human first and foremost! If you are feeling off and could use support, you can set up an appointment within the next few days to talk to someone about your situation.
 
 ### Online Talk Therapy
 - [It's Complicated](https://complicated.life/) for European Time Zones
