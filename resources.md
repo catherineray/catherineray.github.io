@@ -69,5 +69,5 @@ __can be found on libgen if a link is not given__
 
 ## Basics of Machine Learning and Neural Networks
 
-- Chris has excellent clear expositions of basic topics in neural networks and deep learning, [Chris Olah's blog](https://colah.github.io/)
+- [Chris Olah's blog](https://colah.github.io/) Chris has excellent clear expositions of basic topics in neural networks and deep learning. 
 - All the basic algorithms in ML arranged in a nice graph to follow, work through the examples ![](/images/ml_map.png) [sci-kit learn](https://scikit-learn.org/stable/tutorial/machine_learning_map/)
