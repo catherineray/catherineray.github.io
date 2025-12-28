@@ -51,7 +51,7 @@ __can be found on libgen if a link is not given__
 - Analysis by Its History (by Hairer and Wanner)
 - Classics in mathematics: Problems and Theorems in Analysis I: Series, Integral Calculus, Theory of Functions (Polya and Szego)
 - Harmonic analysis as the exploitation of symmetry–a historical survey (by George W. Mackey)
-- Visual Complex Analysis
+- Visual Complex Analysis (Tristan Needham)
 - Ordinary Differential Equations (by V. Arnol'd)
 - A source book in classical analysis (by Garrett Birkhoff)
 
