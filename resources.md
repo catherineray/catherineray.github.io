@@ -35,8 +35,10 @@ You are a human first and foremost! If you are feeling off and need help, you ca
 ### Intro to Game Theory
 - [The Evolution of Trust](https://ncase.me/trust/) 
 
-### Other "Basics"
+### Intro to p-hacking
 - [p-hacking](https://www.youtube.com/watch?v=tLM7xS6t4FE&ab_channel=SciShow)
+
+### Other "Basics"
 - [An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures](https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/)
 - [When is one thing equal to some other things?](http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf)
 - [Kindergarten Quantum Mechanics](https://arxiv.org/pdf/quant-ph/0510032.pdf)
