@@ -12,8 +12,6 @@ I am currently a [postdoc at Uni-Münster](https://www.uni-muenster.de/FB10srvi/
 
 Before that, I graduated from [George Mason University at 16](http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/) with a B.S. in Computational Physics, and accepted the [Thiel Fellowship](http://www.thielfellowship.org/about/about-the-fellowship/) in 2014 to develop medical technology and study mathematics under my mentor, [Edward Frenkel](http://www.edwardfrenkel.com/). I graduated with my Master's degree from UChicago working with [Peter May](http://www.math.uchicago.edu/~may/) and [Kazuya Kato (加藤 和也)](https://en.wikipedia.org/wiki/Kazuya_Kato), and with my PhD from Northwestern working with [Paul Goerss](https://sites.math.northwestern.edu/~pgoerss/). 
 
-
-
 ### Contact me
 
 Curiosity is welcome: fractalcows@gmail.com
@@ -22,6 +20,8 @@ My work email: cray@uni-muenster.de
 
 If you are interested in my research mathematics, a few fun papers are below. 
 (You will find the name Catherine Ray on my old research papers and Rin Ray on my newer works, these both refer to the same person. I prefer Rin nowadays.)
+
+  ![image](images/zeta_blackboard.jpeg)
 
 ### Research publications:
 
