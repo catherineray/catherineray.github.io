@@ -11,9 +11,9 @@ An ongoing desire of mine is to geometrically approach elliptic spectra.
 
 Note that I’m _not_ talking about geometric cocycles for tmf. I’m talking about the vague goal of understanding elliptic spectra in their own right using “geometric” techniques (properties of the object that are invariant under a chosen collection of transformations of that object).
 
-There is a presentation of an elliptic homology theory as a bordism theory with singularities outlined by Landweber in [Elliptic Cohomology and Modular Forms](http://www.math.sciences.univ-nantes.fr/~hossein/GdT-Elliptique/Ell-Mod-Form-Landweber.pdf) (based on [this paper](https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&sqi=2&ved=0CCYQFjAA&url=http%3A%2F%2Fwww.mscand.dk%2Farticle%2Fdownload%2F11491%2F9508&ei=cXNKVfPXFMuqswHi3IGwAw&usg=AFQjCNEeheGSekzsZA9GOe93zWTjXLjppQ&sig2=0CLHgmEREwIGQ0wWUzmp8Q&bvm=bv.92291466,d.bGg "this paper") which presents \\(H_*(-;\mathbb{Z})\\) as a bordism theory with singularities).
+There is a presentation of an elliptic homology theory as a bordism theory with singularities outlined by Landweber in [Elliptic Cohomology and Modular Forms](http://www.math.sciences.univ-nantes.fr/~hossein/GdT-Elliptique/Ell-Mod-Form-Landweber.pdf) (based on [this paper](https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&sqi=2&ved=0CCYQFjAA&url=http%3A%2F%2Fwww.mscand.dk%2Farticle%2Fdownload%2F11491%2F9508&ei=cXNKVfPXFMuqswHi3IGwAw&usg=AFQjCNEeheGSekzsZA9GOe93zWTjXLjppQ&sig2=0CLHgmEREwIGQ0wWUzmp8Q&bvm=bv.92291466,d.bGg "this paper") which presents \\(H\_*(-;\mathbb{Z})\\) as a bordism theory with singularities).
 
-This seemed like the beginning of the answer to my desire, but I now think that this construction is basically a less intuitive version of \\(MSO_*(-) \otimes_{MSO_*} R\\), thinking about “tensoring out” classes in \\(MSO\\) as coning them off. I’ll explain what I mean by “coning them off” in a bit, first let me outline the construction:
+This seemed like the beginning of the answer to my desire, but I now think that this construction is basically a less intuitive version of \\(MSO\_*(-) \otimes\_{MSO\_*} R\\), thinking about “tensoring out” classes in \\(MSO\\) as coning them off. I’ll explain what I mean by “coning them off” in a bit, first let me outline the construction:
 
 #### Outline:
 
@@ -23,9 +23,9 @@ This seemed like the beginning of the answer to my desire, but I now think that 
 
 Let’s go through it!
 
-_Before we begin, you might wonder why we’re working with \\(MSO\\). Landweber works with \\(MSO_*[\frac{1}{2}]\\) and not \\(MU\\); the map from \\(MU\\) to our elliptic spectrum \\(E\\) factors through \\(MSO\\) (we can forget structure on our bordisms)._
+Before we begin, you might wonder why we’re working with \\(MSO\\). Landweber works with \\(MSO_*[\frac{1}{2}]\\) and not \\(MU\\); the map from \\(MU\\) to our elliptic spectrum \\(E\\) factors through \\(MSO\\) (we can forget structure on our bordisms).
 
-_Notational side, \\(MSO_* := \pi_*(MSO)\\), and \\(\mathbb{S}^n\\) means the the suspension spectrum with \\(S^n\\) as it’s 0th space, i.e. \\(\Sigma^\infty S^n_+\\)._
+_Notational aside_, \\(MSO_* := \pi_*(MSO)\\), and \\(\mathbb{S}^n\\) means the the suspension spectrum with \\(S^n\\) as it’s 0th space, i.e. \\(\Sigma^\infty S^n_+\\).
 
 #### Reason to kill the generators
 
@@ -33,7 +33,7 @@ Start with an elliptic genus, a concrete ring homomorphism \\(MSO_* to R\\) that
 
 What generators of \\(MSO_*\\) are killed by this elliptic genus?
 
-In other words, what is \\(ker(MSO_* \xrightarrow{\phi} \mathbb{Z}[\frac{1}{2}][\delta, \epsilon])\\)? _Let’s say \\(\delta\\) has degree 2, and \\(\epsilon\\) has degree 4._
+In other words, what is \\(ker(MSO_* \xrightarrow{\phi} \mathbb{Z}[\frac{1}{2}][\delta, \epsilon])\\)? Let’s say \\(\delta\\) has degree 2, and \\(\epsilon\\) has degree 4.
 
 As we know (thanks Milnor), \\(MSO_*[\frac{1}{2}] \simeq \mathbb{Z}[x_2, x_4, x_6, x_8, …]\\) (\\(MSO_*\\) has some 2-torsion, adjoining 2 allows us to think of \\(x_i\\) as \\(CP^{i}\\)) so we can rewrite \\(\phi\\) as:
 
@@ -55,9 +55,9 @@ Well, before we get caught up in fantasy, what does “\\(MSO/\alpha\\)” even 
 
 Let’s use our intuition for what \\(R/\alpha\\) should be when \\(R\\) is a ring, that is, the exact sequence \\(0 \to (a) \to R \to R/\alpha \to 0\\). I point this out to motivate that the quotient of a ring spectra by the ideal of a ring will be a cokernel (in nice cases).
 
-Given an element \\(\alpha \in \pi_n(E)\\), we get a map \\(\Sigma^n M \xrightarrow{\times \alpha} M\\) where \\(M\\) is an \\(E\\)-module.
+Given an element \\(\alpha \in \pi\_n(E)\\), we get a map \\(\Sigma^n M \xrightarrow{\times \alpha} M\\) where \\(M\\) is an \\(E\\)-module.
 
-_How? We have an element \\(\alpha \in \pi_n(E)]\\), that is:_
+_How? We have an element \\(\alpha \in \pi\_n(E)]\\), that is:_
 
 _\\\(\mathbb{S}^n \xrightarrow{\alpha} E\\\), apply the functor \\(- \wedge M\\)_
 
@@ -77,7 +77,7 @@ Taking homotopy groups:
 
 \\\(… \to \pi_k(\Sigma^nE) \to \pi_k(E) \to \pi_k(C(\alpha)) \to \pi_{k+1}(\Sigma^nE) \to …\\\)
 
-We require that mult-by-\\(\alpha\\) acts injectively in \\(E\\) s.t. \\(C(\alpha)\\) is just the cokernel of \\(\times \alpha\\). If mult-by-\\(\alpha\\) acts injectively, then \\(0 \to \pi_k(\Sigma^E) \xrightarrow{\times \alpha} \pi_k(E) \to \pi_k(C(\alpha)) \to 0\\) is an exact sequence for all \\(k\\), and \\(\pi_*(C(\alpha))\\) will give us the ring we’d expect, \\(\pi_*(E)/\alpha\\)).
+We require that mult-by-\\(\alpha\\) acts injectively in \\(E\\) s.t. \\(C(\alpha)\\) is just the cokernel of \\(\times \alpha\\). If mult-by-\\(\alpha\\) acts injectively, then \\(0 \to \pi_k(\Sigma^E) \xrightarrow{\times \alpha} \pi\_k(E) \to \pi\_k(C(\alpha)) \to 0\\) is an exact sequence for all \\(k\\), and \\(\pi\_*(C(\alpha))\\) will give us the ring we’d expect, \\(\pi\_*(E)/\alpha\\)).
 
 _Conceptually (and formally), we might think of the members of \\(ker(\phi)\\) as [stratifolds](http://en.wikipedia.org/wiki/Stratifold)._
 
