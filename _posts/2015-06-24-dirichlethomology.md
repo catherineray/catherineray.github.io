@@ -114,7 +114,7 @@ Keep in mind that Quillen proved that \\(MU\_* \\) is the universal formal group
 
 This was a world-shaking result. It began to give us hope looking at the seemingly orderless, complicated, multi-layered signal sent by the stable homotopy groups of spheres. Quillen’s result led to first localizing this “signal” at a prime, then engineering various band-pass filters to isolate the individual messages, i.e., breaking this complicated multi-layered object into layers.
 
-In [this breathtaking paper](http://arxiv.org/pdf/0707.3216v1.pdf), Morava eloquently states:  [mowawa](/images/mowawa.png).
+In [this breathtaking paper](http://arxiv.org/pdf/0707.3216v1.pdf), Morava eloquently states:  [![mowawa](/images/mowawa.png)](/images/mowawa.png).
 
 To my dismay, I still don’t understand Quillen’s proof. But let’s get back to the Dirichlet story.
 
