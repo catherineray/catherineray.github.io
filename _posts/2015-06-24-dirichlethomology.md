@@ -99,7 +99,7 @@ We’ve been acquainted with the notion of a Dirichlet series and an Euler facto
 
 Recall that a genus is an operator that takes in a manifold (up to some equivalence relation) and spits out a number that characterizes it — of great interest to any who care about algebraic invariants. More specifically, an “\\(R\\)-genus” is a ring homomorphism \\(MU_* \xrightarrow{g} R\\) from (complex-oriented) cobordism classes of manifolds to a commutative ring \\(R\\).
 
-Keep in mind that in the _rational_ case, the generators of the ring \\(MU\_*\\) are the complex projective spaces of each dimension, \\(P^n\\). \\( MU \_* \otimes Q \simeq Z[P^n]\\)
+Keep in mind that in the *rational* case, the generators of the ring \\(MU\_\*\\) are the complex projective spaces of each dimension, \\(P^n\\). \\( MU\_\* \otimes Q \simeq Z[P^n] \\)
 
 Given a genus \\(g\\), we can build a few different things to study its properties in a more manageable form. Today, we’re just going to mention two associated formal power series: the Dirichlet series, and the series we get out of [Hirzebruch’s construction](http://www.map.mpim-bonn.mpg.de/Formal_group_laws_and_genera#Hirzebruch_genera).
 
@@ -114,7 +114,7 @@ Keep in mind that Quillen proved that \\(MU\_* \\) is the universal formal group
 
 This was a world-shaking result. It began to give us hope looking at the seemingly orderless, complicated, multi-layered signal sent by the stable homotopy groups of spheres. Quillen’s result led to first localizing this “signal” at a prime, then engineering various band-pass filters to isolate the individual messages, i.e., breaking this complicated multi-layered object into layers.
 
-In [this breathtaking paper](http://arxiv.org/pdf/0707.3216v1.pdf), Morava eloquently states:  [Screen Shot 2015-07-06 at 10.37.37 PM](/images/wp-content/uploads/2015/06/Screen-Shot-2015-07-06-at-10.37.37-PM.png).
+In [this breathtaking paper](http://arxiv.org/pdf/0707.3216v1.pdf), Morava eloquently states:  [mowawa](/images/mowawa.png).
 
 To my dismay, I still don’t understand Quillen’s proof. But let’s get back to the Dirichlet story.
 
