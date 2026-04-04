@@ -32,7 +32,7 @@ If you are interested in my research mathematics, a few fun papers are below.
 
 - (Thesis Paper 2) [Moduli Stacks of G-Curves in Homotopy Theory at \\( h = p-1 \\)](https://arxiv.org/abs/2509.23428) (Sept 2025) 
 - [Towards the \\( p=3 \\) Kervaire Invariant Problem: The \\( E_2 \\)-page for the homotopy fixed points spectral sequence computing \\(π_*(E_6^{hC9}) \\)](https://arxiv.org/abs/2507.10157) joint with Eva Belmont (July 2025)
-- (Thesis Paper 1) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (July 2025)
+- (Errors in this version, under construction) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (July 2025)
 - [A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper (2018)
 
 
