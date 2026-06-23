@@ -4,8 +4,9 @@ date: "2026-04-19"
 categories: 
   - "art"
 ---
+![](/images/nothingtoseehere.jpeg)
 
-My first play was performed in LA directed by my amazing friend Jacques Manjarrez as part of Nothing to See Here. The last night was recorded and can be seen (here)[https://youtu.be/YNYGaUns5wY?si=r--t-V_5jJw9tXTR&t=3602].
+My first play was performed in LA directed by my amazing friend (Jacques Manjarrez)[https://jacquesmanjarrez.com/] as part of Nothing to See Here. The last night was recorded and can be seen (here)[https://youtu.be/YNYGaUns5wY?si=r--t-V_5jJw9tXTR&t=3602].
 
 Impaction by Rin Ray
 _________________________________________
@@ -158,11 +159,12 @@ Sound change: The music suddenly stops as soon as all creatures leave the stage.
 
 Main character collapses onto their knees, and rips off their blindfold.
 
-If pink is chosen: the main character chokes the creature to death. saying "i love you I love you I love you" 
+BRANCHED ENDING:
+If pink is chosen: 
 
-They look accusingly at the audience. 
+The main character goes over to the creature, and chokes the creature to death. saying "i love you I love you I love you" 
 
-TV behind the main character is covered with eyes staring at the audience.
+They look accusingly at the audience. TV behind the main character is covered with eyes staring at the audience.
 
 MC: How could you? How could I? 
 
@@ -178,7 +180,8 @@ MC: *Mimes using syringes and incisions*
 
 MC: Waits in silence for a while in the middle of the stage 
  
-Sick Creature: *Gets up, is walking but limping and still unwell. Sick creature approaches them on the same path they were dragged. Sick creature crouches down and hug the MC and start crying,
-MC: hugs back and starts crying as well.
+Sick Creature: *Gets up, is walking but limping and still unwell. Holding parts of itself together. Sick creature approaches MC on the same path they were dragged. Sick creature crouches down and hug the MC and start crying,
+
+MC: hugs back and starts crying as well. 
 
 End
