@@ -178,7 +178,7 @@ MC: We must try ourselves.
 
 MC: *Mimes using syringes and incisions*
 
-MC: Waits in silence for a while in the middle of the stage 
+MC: Sits back and waits in silence for a while in the middle of the stage.
  
 Sick Creature: *Gets up, is walking but limping and still unwell. Holding parts of itself together. Sick creature approaches MC on the same path they were dragged. Sick creature crouches down and hug the MC and start crying,
 
