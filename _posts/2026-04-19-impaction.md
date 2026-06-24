@@ -9,14 +9,14 @@ categories:
 My first play was performed in LA directed by my amazing friend (Jacques Manjarrez)[https://jacquesmanjarrez.com/] as part of Nothing to See Here. The last night was recorded and can be seen (here)[https://youtu.be/YNYGaUns5wY?si=r--t-V_5jJw9tXTR&t=3602].
 
 Impaction by Rin Ray
-_________________________________________
+- - -
 Cast:
 Main Character
 Sick Creature (a human wrapped in blankets to look vaguely unidentifiable but certainly alive)
 Doctor (wearing a rhinocerous mask and pink lab coat)
 Creatures - a crowd in costumes 
 Props: Lots of yellow and pink ribbon, a chair, and a phone.
-_________________________________________
+- - -
 Main Character + Sick Creature on Stage + phone near the back of stage
 
 Main Character: Standing up, staring out into space, at the mostly lifeless body. 
@@ -41,9 +41,7 @@ Picks phone back up, calls Doctor.
 
 MC: "Doctor, I can't reach anyone who does (the procedure), do you know someone?" 
 
-___________
-
-Gets up to go outside, a flash of different styles and genres of music start to play 
+MC gets up to go outside, a flash of different styles and genres of music start to play 
 
 A parade emerges from behind the audience, they weave through the audience. There are minions, clowns, demons, nuns, a flamingo all shitfaced drunk.  
 
@@ -61,7 +59,7 @@ The being ( a flamingo ) holding that ribbon suddenly stops and walks up to the 
 
 Main character holds on tight, then looks at their hand with the ribbon in it, and then back at the flamingo. Main character lets go of the ribbon, and the flamingo immediately turns around and joins the rest of the parade.
 
-___________
+- - -
 
 The parade mostly clears the stage as the main character exits. There's still a small parade continuously passing with ribbons leading offstage parallel to the stage. Upbeat quickly shifting music continues to play. 
 
@@ -87,23 +85,21 @@ Doctor: "hi do you offer the procedure?"
 
 MC: "Hallo, bieten Sie die operation an?"
 
-More characters enter 
+*More characters enter*
 
 Doctor: "Bonjour, proposez-vous l'OPÉRATION?"
 
 MC: Hola, ¿ofrecen la OPERACIÓN?
 
-the doctor brings up the banana to their other ear as if they are on two phones at once. 
+*the doctor brings up the banana to their other ear as if they are on two phones at once.* 
 
 Doctor: salve, operationem offersne?
 
 Doctor: they have always abandoned us, we must do it ourselves.
 
-The parade is getting louder and closer to them until they are walking in front of and around them, club music pounding. 
+*The parade is getting louder and closer to them until they are walking in front of and around them, club music pounding. The doctor and main character become obscured.*
 
-The doctor and main character become obscured.
-
-Doctor: exits taking their chair and their phone while covered. 
+Doctor: *exits taking their chair and their phone while covered.* 
 
 Still while covered: Sick Creature enters and lays down on the floor, they have two ribbons already tied around its throat, held up by costumed people. 
 
@@ -117,7 +113,7 @@ The main character is blindfolded sitting on a chair.
 
 Costumed people: part behind the Main Character and move such that the ribbons separate into two colors/two paths (yellow and pink ribbons), behind main character. Looks like a fork in the road 
 
-Doctor: (behind MC) Here are the options.
+Doctor: (*walks out to stand behind MC*) Here are the options.
 
 Doctor: You can end its suffering, kill it (points to pink ribbon). Or you can try the proceedure yourself, but act as its tormentor as you try. (points to yellow ribbon)
 
