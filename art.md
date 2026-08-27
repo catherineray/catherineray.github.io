@@ -54,7 +54,7 @@ Please enjoy this small collection of my art. :) I primarily work with pastels, 
   position: relative;
   margin: 0;
   padding: 0;
-  aspect-ratio: 1;
+  aspect-ratio: 2/3;
   overflow: hidden;
 }
 
