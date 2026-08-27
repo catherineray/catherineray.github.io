@@ -4,15 +4,15 @@ title: Art
 permalink: /art/
 full-width: true
 art:
-  - file: mural-creature
-    title: Creature mural
-    types: [spraypaint, acrylic]
-  - file: chaos-god-penrose
+  - file: caterpillar
+    title: Caterpillar Bikechain Mech Mural
+    types: [spraypaint, acrylic, painting]
+  - file: chaos-penrose
     title: Chaos god penrose tiling, collaboration with Chris Orta [@killabunzz](https://www.instagram.com/killabunzz/)
     types: [tattoo]
-  - file: IMG_4471
-    title: Harbour at dusk
-    types: [polaroid]
+  - file: exhausted-silence
+    title: Exhausted Silence
+    types: [blood, painting]
 ---
 
 Please enjoy this small collection of my art. :) I primarily work with pastels, acrylic, spray paint and polaroids. When I spray paint I make colorful street art murals of creatures.
