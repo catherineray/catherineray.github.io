@@ -4,9 +4,13 @@ title: About
 permalink: /about/
 ---
 
-  ![image](images/Aboutme.jpeg)
+
+  ![image](images/zeta_blackboard.jpeg)
+
 
 Before I was in math, I worked mostly in scientific simulation, autonomous robotics, and medical technology. I continue to work in chronic pain research, which you can read about [here](https://rin.io/biome/). 
+
+  ![image](images/Aboutme.jpeg)
 
 I am currently a [postdoc at Uni-Münster](https://www.uni-muenster.de/FB10srvi/persdb/MM-member.php?id=1772) in the Arithmetic and Homotopy Theory Working Group lead by [Thomas Nikolaus](https://www.uni-muenster.de/IVV5WS/WebHop/user/nikolaus/index.html) and [Christopher Deninger](https://en.wikipedia.org/wiki/Christopher_Deninger). Here's a recent interview I did as part of On a Tangent: Voices of Mathematics Muenster: [How an Inventor becomes a Mathematican](https://open.spotify.com/episode/6yw6nazYdvFW4lp24rolZd?si=kOzCIF7lQYeGPBlgWI-gjg).
 
@@ -20,8 +24,6 @@ My work email: cray@uni-muenster.de
 
 If you are interested in my research mathematics, a few fun papers are below. 
 (You will find the name Catherine Ray on my old research papers and Rin Ray on my newer works, these both refer to the same person. I prefer Rin nowadays.)
-
-  ![image](images/zeta_blackboard.jpeg)
 
 ### Research publications:
 
