@@ -46,33 +46,28 @@ Please enjoy this small collection of my art. :) I primarily work with pastels, 
 .image-gallery-card { aspect-ratio: auto; break-inside: avoid; }
 .image-gallery-image { height: auto; object-fit: unset; }
 
-<!--
 .image-gallery {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 0;
+  display: block;
+  columns: 4 200px;
+  column-gap: 0;
 }
-  
+
 .image-gallery-card {
   position: relative;
   margin: 0;
   padding: 0;
-  aspect-ratio: 2/3;
-  overflow: hidden;
+  display: block;
+  break-inside: avoid;
 }
-
-
 
 .image-gallery-image {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
-  -->
 
 .image-gallery-label {
   position: absolute;
