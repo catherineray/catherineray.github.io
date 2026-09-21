@@ -542,7 +542,6 @@ permalink: /about/
     
     <section>
       <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: -2deg;" data-text="THE PATH">THE PATH</h2>
-
       <div class="note" style="--accent: var(--cyan);">
         <p>
           I am currently a
@@ -557,10 +556,8 @@ permalink: /about/
             Interview &mdash; How an Inventor becomes a Mathematician
           </a>
         </p>
-      </div>
-    
+      </div>   
     <img class="band-img" src="{{ site.baseurl }}/images/zeta_blackboard.jpeg" alt="A blackboard of zeta function computations">
-
       <div class="note" style="--accent: var(--violet);">
         <p>
           Before that, I graduated from
