@@ -57,7 +57,7 @@ Moduli Stacks of Curves in Homotopy Theory:
 
 The group cohomology of the maximal finite subgroups of the Lubin-Tate action is the E_2 page needed to capture all p-torsion information in the stable homotopy groups of spheres. My thesis (2023) attempts to resolve the 40 year old open problem of describing the Lubin-Tate action for all maximal finite subgroups. It does so by outlining a universal way to build a geometric model using a moduli stack of \\( G \\)-curves given a subgroup \\( G \\).  A key insight is to replace the role of level structures with higher ramification information. To make the thesis more digestible, I have broken it up into 3 parts, the last of which is forthcoming. The only nontrivial p-torsion for odd primes is found at heights \\( p^{k-1}(p-1) \\). 
 
-- (Thesis Paper 3) Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Moduli Stacks of G-Curves for \\( h = p^{k-1}(p-1) \\)
+- Writhing Jewels: A Conjectural Description of the Lubin-Tate Action via Moduli Stacks of G-Curves for \\( h = p^{k-1}(p-1) \\)
 - The Eigenvalues of Frobenius of Artin-Schreier-Witt Curves are Gauss Sums (New Families of Newton Strata in the Torelli Locus)  [Here's a note toward this: Using Automorphism Groups of Curves to Control the Slopes of their Jacobians](http://rin.io/pdfs/Gauss_sums.pdf) 
 
 Old and likely dead:
