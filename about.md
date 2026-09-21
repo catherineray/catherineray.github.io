@@ -556,8 +556,10 @@ permalink: /about/
             Interview &mdash; How an Inventor becomes a Mathematician
           </a>
         </p>
-      </div>   
-    <img class="band-img" src="{{ site.baseurl }}/images/zeta_blackboard.jpeg" alt="A blackboard of zeta function computations">
+      </div> 
+
+      <img class="band-img" src="{{ site.baseurl }}/images/zeta_blackboard.jpeg" alt="A blackboard of zeta function computations">
+      
       <div class="note" style="--accent: var(--violet);">
         <p>
           Before that, I graduated from
