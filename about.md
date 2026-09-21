@@ -539,9 +539,7 @@ permalink: /about/
   <!-- ========================================== the path ============= -->
 
   <div class="scroll">
-
-    <img class="band-img" src="{{ site.baseurl }}/images/zeta_blackboard.jpeg" alt="A blackboard of zeta function computations">
-
+    
     <section>
       <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: -2deg;" data-text="THE PATH">THE PATH</h2>
 
@@ -560,6 +558,8 @@ permalink: /about/
           </a>
         </p>
       </div>
+    
+    <img class="band-img" src="{{ site.baseurl }}/images/zeta_blackboard.jpeg" alt="A blackboard of zeta function computations">
 
       <div class="note" style="--accent: var(--violet);">
         <p>
