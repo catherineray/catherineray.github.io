@@ -523,7 +523,7 @@ permalink: /about/
     <div class="char-wrap">
       <span class="burst burst-b"></span>
       <div class="photo-slot char-slot"></div>
-      <span class="slot-note">your illustration<br>goes here</span>
+      <span class="slot-note">illustration<br>goes here</span>
     </div>
 
     <div class="card">
