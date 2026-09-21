@@ -514,7 +514,7 @@ permalink: /about/
 
     <div class="photo-wrap">
       <span class="burst"></span>
-      <img class="photo-slot" src="{{ site.baseurl }}/images/Aboutme.jpeg" alt="Rin Ray">
+      <img class="photo-slot" src="{{ site.baseurl }}/images/aabout.png" alt="Rin Ray">
     </div>
 
     <a class="cv cv-math" href="/cv-math.pdf">CV MATH</a>
