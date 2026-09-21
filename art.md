@@ -6,13 +6,43 @@ full-width: true
 art:
   - file: caterpillar
     title: Caterpillar Bikechain Mech Mural
-    types: [spraypaint, acrylic, painting]
+    types: [spraypaint]
   - file: chaos-penrose
     title: Chaos god penrose tiling, collaboration with Chris Orta [@killabunzz](https://www.instagram.com/killabunzz/)
     types: [tattoo]
   - file: exhausted-silence
     title: Exhausted Silence
     types: [blood, painting]
+  - file: Messenger_creation_FEBCBDB3-6B9E-44BC-8FBB-DFCE332BB1D5
+    title: Self Portrait Winter 2026
+    types: [oil pastels]
+  - file: pride-snakes
+    title: Pride Scissor Snakes 
+    types: [spraypaint]
+  - file: neon-mantis
+    title: Neon Mantis
+    types: [spraypaint]
+  - file: static-depersonalization
+    title: Static Depersonalization
+    types: [acyrlic]
+  - file: 2020-10-25
+    title: Boss Bitch Bunch 2020
+    types: [acyrlic, pen]
+  - file: chinesenewyear
+    title: Chinese New Year
+    types: [acrylic]
+  - file: fab-liquid-demon
+    title: Does this dress make my ass look good?
+    types: [acrylic]
+  - file: mischief-tarantula
+    title: Mischief (Interface) Tarantula
+    types: [rainbow scratch paper]
+  - file: sleep-duck
+    title: Sleep Rubber Duck
+    types: [photograph, body paint]
+  - file: z_IMG_20251115_152202_202
+    title: Egret Regret
+    types: [acrylic]
 ---
 
 Please enjoy this small collection of my art. :) I primarily work with pastels, acrylic, spray paint and polaroids. When I spray paint I make colorful street art murals of creatures. 
