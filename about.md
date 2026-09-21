@@ -35,6 +35,7 @@ If you are interested in my research mathematics, a few fun papers are below.
 
 ### Research preprints:
 
+- [On the Chromatic Splitting Conjecture at Coheight 1](https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf) joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou; on Jacquet-Langlands and Homotopy Theory.
 - (Thesis Paper 2) [Moduli Stacks of G-Curves in Homotopy Theory at \\( h = p-1 \\)](https://arxiv.org/abs/2509.23428) (Sept 2025) 
 - [Towards the \\( p=3 \\) Kervaire Invariant Problem: The \\( E_2 \\)-page for the homotopy fixed points spectral sequence computing \\(π_*(E_6^{hC9}) \\)](https://arxiv.org/abs/2507.10157) joint with Eva Belmont (July 2025)
 - (Errors in this version, under construction) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (July 2025)
@@ -51,9 +52,6 @@ Zeta Functions in Homotopy Theory:
 - L-genera and Localizations in K-theory; joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj
   
 - All Bernoulli Numbers in Homotopy Theory Are Shifts: Connecting Kevaire-Milnor to Quillen-Lichtenbaum using the compatibility of \\( K(\mathbb{S}) \\) and \\( L_{K(1)}K(\mathbb{Z}) \\) joint with Andres Mejia and Noah Riggenbach (on hiatus)
-
-Jacquet-Langlands and Homotopy Theory: 
-- Toward the Transchromatic Splitting Conjecture Via a Mod p-Two Tower Correspondence; joint with T. Barthel, L. Mann, A. Senger, T. Schlank, P.Srinivasan, J. Weinstein, Y. Xu, Z. Yang, X. Zhou.
 
 Moduli Stacks of Curves in Homotopy Theory:
 
