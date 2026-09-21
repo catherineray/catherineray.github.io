@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome
+title: About Rin
 permalink: /about/
 ---
 
@@ -286,7 +286,6 @@ permalink: /about/
     font-size: .88rem;
     line-height: 1.7;
   }
-  .note + .note { margin-top: 1.6rem; }
   .note p { margin: 0 0 .9em; }
   .note p:last-child { margin: 0; }
   .note-cream { background: var(--cream); }
@@ -402,11 +401,27 @@ permalink: /about/
     width: 100%;
     height: auto;
     max-width: 100%;
-    margin: 0 0 3rem;
+    margin: 0;
     border: 3px solid var(--ink);
     border-radius: 14px;
+    box-shadow: 8px 8px 0 var(--accent, var(--cyan));
   }
-  .band-img.band-end { margin: 3rem 0 0; }
+
+  /* One rhythm for every stacked block in a section. Each block casts an
+     8px hard shadow, so the margin carries that 8px PLUS the 1.6rem gap —
+     which is what makes every visible gap measure the same 1.6rem. */
+  .note + .note,
+  .note + .band-img,
+  .band-img + .note,
+  .note + .papers,
+  .papers + .note,
+  .band-img + .papers,
+  .papers + .band-img { margin-top: calc(1.6rem + 8px); }
+
+  .band-img.band-end {
+    margin-top: 3rem;
+    box-shadow: 8px 8px 0 var(--peach);
+  }
 
   footer {
     width: min(92vw, 700px);
