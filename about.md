@@ -35,8 +35,8 @@ If you are interested in my research mathematics, a few fun papers are below.
 
 ### Research preprints:
 
-- [On the Chromatic Splitting Conjecture at Coheight 1](https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf) joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou; on Jacquet-Langlands and Homotopy Theory.
-- [Moduli Stacks of G-Curves in Homotopy Theory at \\( h = p-1 \\)](https://arxiv.org/abs/2509.23428) (Sept 2025) 
+- [On the Chromatic Splitting Conjecture at Coheight 1](https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf) joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou; on Jacquet-Langlands and Homotopy Theory. (Sept 2026)
+- [Moduli Stacks of G-Curves in Homotopy Theory at \\( h = p-1 \\)](https://arxiv.org/abs/2509.23428) (Sept 2025, significant update Sept 2026) 
 - [Towards the \\( p=3 \\) Kervaire Invariant Problem: The \\( E_2 \\)-page for the homotopy fixed points spectral sequence computing \\(π_*(E_6^{hC9}) \\)](https://arxiv.org/abs/2507.10157) joint with Eva Belmont (July 2025)
 - (Expository Errors, Under Construction) [Modeling Group Actions on Stacks (Especially the Lubin-Tate Action)](https://arxiv.org/abs/2507.00309) (July 2025)
 - [A Global Crystalline Period Map](https://arxiv.org/abs/1911.08615) joint with M. Neaton and A. Pieper (2018)
