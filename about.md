@@ -601,7 +601,7 @@ permalink: /about/
       <div class="note" style="--accent: var(--yellow);">
         <p>
           I primarily work with pastels, acrylic, spray paint and polaroids. When I
-          spray paint I make colorful street murals of creatures. Please enjoy this small collection of my art.
+          spray I make colorful street murals of creatures. Please enjoy this small collection of my art.
         </p>
         <p class="chips" style="margin-top:.2em">
           <span class="chip" style="background: var(--pink-btn);">pastels</span>
