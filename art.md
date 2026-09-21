@@ -15,25 +15,25 @@ art:
     types: [blood, painting]
   - file: Messenger_creation_FEBCBDB3-6B9E-44BC-8FBB-DFCE332BB1D5
     title: Self Portrait Winter 2026
-    types: [oil pastels]
+    types: [pastels]
   - file: pride-snakes
     title: Pride Scissor Snakes 
-    types: [spraypaint]
+    types: [spraypaint, painting]
   - file: neon-mantis
     title: Neon Mantis
-    types: [spraypaint]
+    types: [spraypaint, painting]
   - file: static-depersonalization
     title: Static Depersonalization
-    types: [acyrlic]
+    types: [acyrlic, painting]
   - file: 2020-10-25
     title: Boss Bitch Bunch 2020
-    types: [acyrlic, pen]
+    types: [acyrlic, pen, painting]
   - file: chinesenewyear
     title: Chinese New Year
-    types: [acrylic]
+    types: [acrylic, painting]
   - file: fab-liquid-demon
     title: Does this dress make my ass look good?
-    types: [acrylic]
+    types: [acrylic, painting]
   - file: mischief-tarantula
     title: Mischief (Interface) Tarantula
     types: [rainbow scratch paper]
@@ -42,7 +42,7 @@ art:
     types: [photograph, body paint]
   - file: z_IMG_20251115_152202_202
     title: Egret Regret
-    types: [acrylic]
+    types: [acrylic, painting]
 ---
 
 Please enjoy this small collection of my art. :) I primarily work with pastels, acrylic, spray paint and polaroids. When I spray paint I make colorful street art murals of creatures. 
