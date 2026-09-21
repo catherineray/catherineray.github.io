@@ -522,8 +522,9 @@ permalink: /about/
 
     <div class="char-wrap">
       <span class="burst burst-b"></span>
-      <div class="photo-slot char-slot"></div>
+      <img class="photo-slot" src="{{ site.baseurl }}/gallery/Messenger_creation_FEBCBDB3-6B9E-44BC-8FBB-DFCE332BB1D5.jpeg" alt="Pastel">
       <span class="slot-note">illustration<br>goes here</span>
+      
     </div>
 
     <div class="card">
