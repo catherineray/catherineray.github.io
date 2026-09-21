@@ -24,10 +24,10 @@ art:
     types: [spraypaint, painting]
   - file: static-depersonalization
     title: Static Depersonalization
-    types: [acyrlic, painting]
+    types: [acrylic, painting]
   - file: 2020-10-25
     title: Boss Bitch Bunch 2020
-    types: [acyrlic, pen, painting]
+    types: [acrylic, pen, painting]
   - file: chinesenewyear
     title: Chinese New Year
     types: [acrylic, painting]
