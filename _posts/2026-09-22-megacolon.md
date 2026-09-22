@@ -24,7 +24,7 @@ We found another option -- my favorite vet suggested we try **neostigmine**, a d
 
 This is not a claim that it works for every cat, and it is not a protocol to follow at home. It is a written account of one cat's treatment, detailed enough that you can take it to your own vet and ask whether it is worth considering.
 
-I am raising money to cover Cake's initial treatment costs and ongoing treatment, you can donate (here)[https://www.gofundme.com/f/help-cake-heal-from-megacolon]. 
+I am raising money to cover the exorbitant treatment costs involved in saving Cake's life (keeping him alive until we found the treatment recorded in this article) you can donate [here](https://www.gofundme.com/f/help-cake-heal-from-megacolon). 
 
 | | |
 |---|---|
