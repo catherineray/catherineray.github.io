@@ -18,7 +18,7 @@ categories:
 
 Cake had megacolon that kept coming back. The standard fix is surgery, and by the time it was needed he was too unwell — and too heavy — to come through it safely. Enemas, a full manual clear-out, laxatives and a wet-food diet all failed to hold. At that point the realistic option given to me was putting him to sleep.
 
-We found another option -- my favorite vet suggested we try **neostigmine**, a drug that makes a weak colon push harder. He is still here, eating, grooming and using his litter tray. I waited to write this article until I had carefully documented his progress and dosing over a period of 7 months after recovery. He needs an injection every few weeks and will most likely need one for the rest of his life. 
+We found another option -- my favorite vet suggested we try **neostigmine**, a drug that makes a weak colon push harder. He is still here -- eating, grooming, using his litter tray, and happier than he was before this nightmarish adventure began. He just needs an injection every few weeks, and probably always will.
 
 **Neostigmine is not an established treatment for megacolon in cats.** There is no trial behind it, no licensed indication, nothing in the standard textbooks. It is a folklore treatment — known to some vets, used quietly, never formally written up. That is exactly why it may not have been offered to you, and it is the first thing section 01 explains.
 
