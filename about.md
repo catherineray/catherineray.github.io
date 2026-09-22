@@ -73,7 +73,7 @@ permalink: /about/
     isolation: isolate;
     z-index: 10;
   }
-  
+
   .title::before {
     content: attr(data-text);
     position: absolute;
@@ -289,6 +289,9 @@ permalink: /about/
   .note p { margin: 0 0 .9em; }
   .note p:last-child { margin: 0; }
   .note-cream { background: var(--cream); }
+  .note ul { margin: 0; padding-left: 1.2em; }
+  .note li { margin: 0 0 .5em; }
+  .note li:last-child { margin-bottom: 0; }
 
   /* paper lists */
 
@@ -439,8 +442,26 @@ permalink: /about/
     padding: .1em .35em;
   }
 
+  /* jump-ahead row, sits directly under the hero */
+
+  .jump {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .5rem .7rem;
+    margin: 0 0 2.4rem;
+    font-size: .76rem;
+    color: var(--ink-soft);
+  }
+  .jump .chip { background: var(--yellow); }
+  .jump .chip:hover { background: var(--cyan); }
+
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 1.2rem; }
+
   @media (prefers-reduced-motion: reduce) {
     .cv, .chip { transition: none; }
+    html { scroll-behavior: auto; }
   }
 
   /* ======================================================== phone ====== */
@@ -521,9 +542,9 @@ permalink: /about/
     <span class="spark spark-d"></span>
 
     <p class="bubble">
-      My name is Cathe<b>rin</b>e Ray (they/them), and I&rsquo;m a mathematician
-      and artist. My current math research is on arithmetic patterns in
-      homotopy theory and physics.
+      My name is <a href="https://mathoverflow.net/users/56462/catherine-ray">Cathe<b>rin</b>e Ray</a>
+      (they/them), and I&rsquo;m a mathematician and artist. My current math research is on
+      arithmetic patterns in homotopy theory and physics.
     </p>
 
     <div class="photo-wrap">
@@ -537,7 +558,7 @@ permalink: /about/
     <div class="char-wrap">
       <span class="burst burst-b"></span>
       <img class="photo-slot" src="{{ site.baseurl }}/images/aaabout.png" alt="Pastel">
-      
+
     </div>
 
     <div class="card">
@@ -554,7 +575,12 @@ permalink: /about/
   <!-- ========================================== the path ============= -->
 
   <div class="scroll">
-    
+
+    <p class="jump">
+      <span>Here for the maths?</span>
+      <a class="chip" href="#research">Skip to the research &darr;</a>
+    </p>
+
     <section>
       <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: -2deg;" data-text="THE PATH">THE PATH</h2>
       <div class="note" style="--accent: var(--cyan);">
@@ -571,10 +597,10 @@ permalink: /about/
             Interview &mdash; How an Inventor becomes a Mathematician
           </a>
         </p>
-      </div> 
+      </div>
 
       <img class="band-img" src="{{ site.baseurl }}/images/zeta_blackboard.jpeg" alt="A blackboard of zeta function computations">
-      
+
       <div class="note" style="--accent: var(--violet);">
         <p>
           Before that, I graduated from
@@ -588,8 +614,173 @@ permalink: /about/
           and
           <a href="https://en.wikipedia.org/wiki/Kazuya_Kato">Kazuya Kato (加藤 和也)</a>,
           and with my PhD from Northwestern working with
-          <a href="https://sites.math.northwestern.edu/~pgoerss/">Paul Goerss</a>.
+          <a href="https://sites.math.northwestern.edu/~pgoerss/">Paul Goerss</a>
+          and Yifeng Liu.
         </p>
+      </div>
+    </section>
+
+    <!-- ===================================== before maths =========== -->
+
+    <section>
+      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="BEFORE MATHS">BEFORE MATHS</h2>
+
+      <div class="note" style="--accent: var(--peach);">
+        <p>
+          <b>tl;dr</b> my technical background is mainly in robotics (machine learning and SLAM),
+          and computational physics. In autumn 2014 I began teaching myself algebraic topology
+          full time, and did not stop.
+        </p>
+      </div>
+
+      <h3 class="sub" style="--accent: var(--orange);">Robotics and autonomous systems</h3>
+
+      <div class="papers" style="--accent: var(--orange);">
+
+        <article class="paper">
+          <h3>A hexapod that followed people around, and a Rubik&rsquo;s cube solving robot<span class="status">2011</span></h3>
+          <p class="meta">my first two robotics projects</p>
+        </article>
+
+        <article class="paper">
+          <h3>Positronics Division, George Washington University Robotics Lab<span class="status">Summer 2012</span></h3>
+          <p class="meta">
+            Our team smoothed joint movement of the Willow Garage Personal Robot 2 (PR2) and
+            improved load equalization. I
+            <a href="https://rin.io/autonomous-robotic-force-proprioception/">programmed the PR2</a>
+            to autonomously &ldquo;learn&rdquo; to place objects in holes of the corresponding
+            shape, using only past motor position commands and the finger gripper sensors.
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3>SLAM and motion planning on the ARDrone<span class="status">Fall 2013</span></h3>
+        </article>
+
+        <article class="paper">
+          <h3><a href="https://rin.io/hackmit-polyglass/">Polyglass</a> &mdash; a Google Glass app that computes a human pulse from the video feed<span class="status">HackMIT 2013</span></h3>
+          <p class="meta">joint with Kartik Talwar and Spencer Hewett</p>
+        </article>
+
+      </div>
+
+      <h3 class="sub" style="--accent: var(--violet);">Simulation and computational physics</h3>
+
+      <div class="papers" style="--accent: var(--violet);">
+
+        <article class="paper">
+          <h3>Resistive switching behaviour of flexible TiO<sub>2</sub><span class="status">Spring 2012</span></h3>
+          <p class="meta">
+            a memristor project at the Chemistry and Physics Department of Mary Baldwin College,
+            which is where I
+            <a href="https://rin.io/coupled-oscillator-love/">became interested</a> in physical
+            examples of <a href="https://rin.io/matlab-lorenz-attractor/">nonlinear systems</a>
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3>Modes of conductive polyhedra<span class="status">2012</span></h3>
+          <p class="meta">
+            a side project, out of fascination with argon plasma glow produced by introducing an
+            RF source at 2.45&nbsp;GHz to a conductive cavity
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3><a href="https://rin.io/computational-materials-science/">Predicting the material properties of compound materials</a><span class="status">Fall 2012</span></h3>
+          <p class="meta">
+            extending GMU&rsquo;s simulation after transferring there; alongside
+            <a href="https://rin.io/stockfish/">algorithms of AI chess players</a>
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3><a href="https://rin.io/collatz-attempt/">The rookie mistake of trying to prove the Collatz conjecture</a><span class="status">Nov 2013</span></h3>
+          <p class="meta">
+            mainly via prime factor relations within the number sequences, and a few neat
+            recurrence relations
+          </p>
+        </article>
+
+      </div>
+
+      <h3 class="sub" style="--accent: var(--cyan);">Machine learning and language</h3>
+
+      <div class="papers" style="--accent: var(--cyan);">
+
+        <article class="paper">
+          <h3><a href="https://rin.io/camel-paper/">CAMEL &mdash; learning the grammar rules of compressed Braille from partially translated text</a><span class="status">Spring 2013</span></h3>
+          <p class="meta">
+            I used Braille as a test language, but this is a framework to automate the decoding of
+            any partially understood (ancient) language by creating probabilistic dictionaries
+          </p>
+          <p class="chips">
+            <a class="chip" href="https://github.com/catherineray/CAMEL">code</a>
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3>Software Engineering Intern, Cloudera<span class="status">Summer 2013</span></h3>
+          <p class="meta">
+            <a href="https://web.archive.org/web/20130826025116/http://blog.cloudera.com/blog/2013/08/what-i-learned-during-my-summer-internship-at-cloudera/">developed a consumer download metrics tracking system</a>
+            for internal use
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3>Automating the collection and classification of lab-animal vocalizations<span class="status">late 2013 &ndash; mid 2014</span></h3>
+          <p class="meta">how I dipped my toes into audio processing</p>
+        </article>
+
+      </div>
+
+      <h3 class="sub" style="--accent: var(--pink);">Medical and assistive technology</h3>
+
+      <div class="papers" style="--accent: var(--pink);">
+
+        <article class="paper">
+          <h3><a href="https://rin.io/pressure-ulcer-prevent/">Improving mobility devices</a><span class="status">Summer 2013 &ndash; Spring 2014</span></h3>
+          <p class="meta">
+            a nonprovisional patent was submitted in Dec 2014 for the five pressure sore relief
+            mechanisms that grew out of this
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3><a href="https://rin.io/gluten-scanner/">A keychain-sized food scanner</a> for gluten and other common food allergen proteins<span class="status">Early 2014</span></h3>
+        </article>
+
+        <article class="paper">
+          <h3><a href="https://rin.io/neuroprosthetic/">Neuroprosthetics</a><span class="status">Summer 2014</span></h3>
+          <p class="meta">
+            starting on the software side with convergence analysis of common decoder algorithms,
+            then moving to the hardware side and optical recording methods
+          </p>
+        </article>
+
+        <article class="paper">
+          <h3>Mentored Ada Rosa on mobility assistance for people with ALS and spinal cord injuries<span class="status">Early 2015</span></h3>
+          <p class="meta">
+            <a href="https://www.youtube.com/watch?v=YJxgEDr699w">here she is showing off the eye control feature</a>
+          </p>
+        </article>
+
+      </div>
+
+      <h3 class="sub" style="--accent: var(--yellow);">Complex systems</h3>
+
+      <div class="papers" style="--accent: var(--yellow);">
+
+        <article class="paper">
+          <h3>Visiting Researcher, Santa Fe Institute<span class="status">Jan 2015</span></h3>
+          <p class="meta">
+            gave a seminar on <em>Simplifying Multiscale Modeling</em>. I still think about
+            applications of topology to multiscale modeling, and occasionally venture to consider
+            modeling complex systems of a biological nature with an eye toward immunotherapy and
+            neuroscience.
+          </p>
+        </article>
+
       </div>
     </section>
 
@@ -602,6 +793,11 @@ permalink: /about/
         <p>
           I primarily work with pastels, acrylic, spray paint and polaroids. When I
           spray I make colorful street murals of creatures. Please enjoy this small collection of my art.
+        </p>
+        <p>
+          Away from the desk I rock climb, write short stories, speak intermediate German,
+          beginners Russian and Spanish, embarrassingly &ldquo;robotic&rdquo; American Sign
+          Language, read braille, and play trombone and ukulele.
         </p>
         <p class="chips" style="margin-top:.2em">
           <span class="chip" style="background: var(--pink-btn);">pastels</span>
@@ -643,7 +839,7 @@ permalink: /about/
 
     <!-- ==================================== publications ============ -->
 
-    <section>
+    <section id="research">
       <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -1.5deg;" data-text="PUBLISHED">PUBLISHED</h2>
 
       <div class="papers" style="--accent: var(--pink);">
@@ -653,7 +849,8 @@ permalink: /about/
           <p class="meta">
             joint with D. Lee &middot;
             <em>Rendiconti del Circolo Matematico di Palermo</em>, Series 2,
-            vol. 71, pp. 483&ndash;494, 2022
+            vol. 71, pp. 483&ndash;494, 2022 &middot;
+            circulated in preprint as <em>Automorphisms of the Jacobian</em>
           </p>
           <p class="chips"><a class="chip" href="https://arxiv.org/abs/1811.07007">arXiv</a></p>
         </article>
@@ -793,6 +990,17 @@ permalink: /about/
           <h3>Duality resolutions for general linear groups</h3>
           <p class="meta">joint with E. Belmont, P. VanKoughnett</p>
         </article>
+      </div>
+
+      <h3 class="sub" style="--accent: var(--peach);">Still at the back of my mind</h3>
+
+      <div class="note" style="--accent: var(--peach);">
+        <p>Questions I have not stopped turning over, from well outside my day job:</p>
+        <ul>
+          <li>How can we apply topological techniques to improve multiscale modeling?</li>
+          <li>What are the underlying semantics of a reasoning tool for computer-aided scientific research?</li>
+          <li>How can we build a proof writing tool which automatically fills in proof outlines?</li>
+        </ul>
       </div>
     </section>
 
