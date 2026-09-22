@@ -293,6 +293,49 @@ permalink: /about/
   .note li { margin: 0 0 .5em; }
   .note li:last-child { margin-bottom: 0; }
 
+  /* ================================================ expandable ======== */
+
+  /* The "Before Math" section is a <details>: the tl;dr card is the
+     always-visible, highlighted <summary>; the project lists fold out
+     beneath it. Works with no JavaScript. */
+
+  .fold > summary {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    background: var(--yellow);
+    box-shadow: 8px 8px 0 var(--pink);
+    transition: transform .08s ease, box-shadow .08s ease;
+  }
+  .fold > summary::-webkit-details-marker { display: none; }
+  .fold > summary::marker { content: ''; }
+  .fold > summary:hover { transform: translate(-2px, -2px); box-shadow: 10px 10px 0 var(--pink); }
+  .fold > summary:active { transform: translate(8px, 8px); box-shadow: 0 0 0 var(--pink); }
+  .fold > summary:focus-visible { outline: 3px dashed var(--ink); outline-offset: 5px; }
+
+  .fold-cue {
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
+    margin-top: 1rem;
+    padding: .35em 1em;
+    background: var(--pink-btn);
+    color: var(--paper);
+    font-family: var(--display);
+    font-size: .85rem;
+    letter-spacing: .02em;
+    border: 3px solid var(--ink);
+    border-radius: 999px;
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+  .fold-cue .arrow { display: inline-block; transition: transform .2s ease; }
+  .fold[open] .fold-cue .arrow { transform: rotate(180deg); }
+  .fold .when-open { display: none; }
+  .fold[open] .when-open { display: inline; }
+  .fold[open] .when-closed { display: none; }
+
+  .fold[open] > summary { margin-bottom: calc(2.2rem + 8px); }
+
   /* paper lists */
 
   .papers { display: flex; flex-direction: column; }
@@ -460,7 +503,7 @@ permalink: /about/
   section[id] { scroll-margin-top: 1.2rem; }
 
   @media (prefers-reduced-motion: reduce) {
-    .cv, .chip { transition: none; }
+    .cv, .chip, .fold > summary, .fold-cue .arrow { transition: none; }
     html { scroll-behavior: auto; }
   }
 
@@ -522,6 +565,7 @@ permalink: /about/
     footer { padding: 0 16px 3rem; width: 100%; }
     .sec-head { font-size: 1.5rem; -webkit-text-stroke: 2.5px var(--ink); }
     .paper h3 { font-size: .88rem; }
+    .fold-cue { font-size: .78rem; }
   }
 </style>
 
@@ -620,6 +664,177 @@ permalink: /about/
       </div>
     </section>
 
+    <!-- ===================================== before math =========== -->
+
+    <section id="before-math">
+      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="BEFORE MATH">BEFORE MATH</h2>
+
+      <details class="fold">
+        <summary class="note">
+          <p>
+            <b>tl;dr</b> my technical background is mainly in robotics (machine learning and SLAM),
+            and computational physics. In autumn 2014 I began teaching myself algebraic topology
+            full time, and did not stop.
+          </p>
+          <span class="fold-cue">
+            <span class="when-closed">SEE ALL THE PROJECTS</span>
+            <span class="when-open">FOLD THEM BACK UP</span>
+            <span class="arrow" aria-hidden="true">&darr;</span>
+          </span>
+        </summary>
+
+        <h3 class="sub" style="--accent: var(--orange);">Robotics and autonomous systems</h3>
+
+        <div class="papers" style="--accent: var(--orange);">
+
+          <article class="paper">
+            <h3>A hexapod that followed people around, and a Rubik&rsquo;s cube solving robot<span class="status">2011</span></h3>
+            <p class="meta">my first two robotics projects</p>
+          </article>
+
+          <article class="paper">
+            <h3>Positronics Division, George Washington University Robotics Lab<span class="status">Summer 2012</span></h3>
+            <p class="meta">
+              Our team smoothed joint movement of the Willow Garage Personal Robot 2 (PR2) and
+              improved load equalization. I
+              <a href="https://rin.io/autonomous-robotic-force-proprioception/">programmed the PR2</a>
+              to autonomously &ldquo;learn&rdquo; to place objects in holes of the corresponding
+              shape, using only past motor position commands and the finger gripper sensors.
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3>SLAM and motion planning on the ARDrone<span class="status">Fall 2013</span></h3>
+          </article>
+
+          <article class="paper">
+            <h3><a href="https://rin.io/hackmit-polyglass/">Polyglass</a> &mdash; a Google Glass app that computes a human pulse from the video feed<span class="status">HackMIT 2013</span></h3>
+            <p class="meta">joint with Kartik Talwar and Spencer Hewett</p>
+          </article>
+
+        </div>
+
+        <h3 class="sub" style="--accent: var(--violet);">Simulation and computational physics</h3>
+
+        <div class="papers" style="--accent: var(--violet);">
+
+          <article class="paper">
+            <h3>Resistive switching behaviour of flexible TiO<sub>2</sub><span class="status">Spring 2012</span></h3>
+            <p class="meta">
+              a memristor project at the Chemistry and Physics Department of Mary Baldwin College,
+              which is where I
+              <a href="https://rin.io/coupled-oscillator-love/">became interested</a> in physical
+              examples of <a href="https://rin.io/matlab-lorenz-attractor/">nonlinear systems</a>
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3>Modes of conductive polyhedra<span class="status">2012</span></h3>
+            <p class="meta">
+              a side project, out of fascination with argon plasma glow produced by introducing an
+              RF source at 2.45&nbsp;GHz to a conductive cavity
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3><a href="https://rin.io/computational-materials-science/">Predicting the material properties of compound materials</a><span class="status">Fall 2012</span></h3>
+            <p class="meta">
+              extending GMU&rsquo;s simulation after transferring there; alongside
+              <a href="https://rin.io/stockfish/">algorithms of AI chess players</a>
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3><a href="https://rin.io/collatz-attempt/">The rookie mistake of trying to prove the Collatz conjecture</a><span class="status">Nov 2013</span></h3>
+            <p class="meta">
+              mainly via prime factor relations within the number sequences, and a few neat
+              recurrence relations
+            </p>
+          </article>
+
+        </div>
+
+        <h3 class="sub" style="--accent: var(--cyan);">Machine learning and language</h3>
+
+        <div class="papers" style="--accent: var(--cyan);">
+
+          <article class="paper">
+            <h3><a href="https://rin.io/camel-paper/">CAMEL &mdash; learning the grammar rules of compressed Braille from partially translated text</a><span class="status">Spring 2013</span></h3>
+            <p class="meta">
+              I used Braille as a test language, but this is a framework to automate the decoding of
+              any partially understood (ancient) language by creating probabilistic dictionaries
+            </p>
+            <p class="chips">
+              <a class="chip" href="https://github.com/catherineray/CAMEL">code</a>
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3>Software Engineering Intern, Cloudera<span class="status">Summer 2013</span></h3>
+            <p class="meta">
+              <a href="https://web.archive.org/web/20130826025116/http://blog.cloudera.com/blog/2013/08/what-i-learned-during-my-summer-internship-at-cloudera/">developed a consumer download metrics tracking system</a>
+              for internal use
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3>Automating the collection and classification of lab-animal vocalizations<span class="status">late 2013 &ndash; mid 2014</span></h3>
+            <p class="meta">how I dipped my toes into audio processing</p>
+          </article>
+
+        </div>
+
+        <h3 class="sub" style="--accent: var(--pink);">Medical and assistive technology</h3>
+
+        <div class="papers" style="--accent: var(--pink);">
+
+          <article class="paper">
+            <h3><a href="https://rin.io/pressure-ulcer-prevent/">Improving mobility devices</a><span class="status">Summer 2013 &ndash; Spring 2014</span></h3>
+            <p class="meta">
+              a nonprovisional patent was submitted in Dec 2014 for the five pressure sore relief
+              mechanisms that grew out of this
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3><a href="https://rin.io/gluten-scanner/">A keychain-sized food scanner</a> for gluten and other common food allergen proteins<span class="status">Early 2014</span></h3>
+          </article>
+
+          <article class="paper">
+            <h3><a href="https://rin.io/neuroprosthetic/">Neuroprosthetics</a><span class="status">Summer 2014</span></h3>
+            <p class="meta">
+              starting on the software side with convergence analysis of common decoder algorithms,
+              then moving to the hardware side and optical recording methods
+            </p>
+          </article>
+
+          <article class="paper">
+            <h3>Mentored Ada Rosa on mobility assistance for people with ALS and spinal cord injuries<span class="status">Early 2015</span></h3>
+            <p class="meta">
+              <a href="https://www.youtube.com/watch?v=YJxgEDr699w">here she is showing off the eye control feature</a>
+            </p>
+          </article>
+
+        </div>
+
+        <h3 class="sub" style="--accent: var(--yellow);">Complex systems</h3>
+
+        <div class="papers" style="--accent: var(--yellow);">
+
+          <article class="paper">
+            <h3>Visiting Researcher, Santa Fe Institute<span class="status">Jan 2015</span></h3>
+            <p class="meta">
+              gave a seminar on <em>Simplifying Multiscale Modeling</em>. I still think about
+              applications of topology to multiscale modeling, and occasionally venture to consider
+              modeling complex systems of a biological nature with an eye toward immunotherapy and
+              neuroscience.
+            </p>
+          </article>
+
+        </div>
+      </details>
+    </section>
+
     <!-- ==================================== art portfolio =========== -->
 
     <section>
@@ -643,170 +858,6 @@ permalink: /about/
           <span class="chip" style="background: var(--lilac-deep);">tattoo design</span>
         </p>
         <a class="cv cv-art" href="/art/">SEE THE GALLERY &rarr;</a>
-      </div>
-    </section>
-
-    <!-- ===================================== before math =========== -->
-
-    <section>
-      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="BEFORE MATH">BEFORE MATH</h2>
-
-      <div class="note" style="--accent: var(--peach);">
-        <p>
-          <b>tl;dr</b> my technical background is mainly in robotics (machine learning and SLAM),
-          and computational physics. In autumn 2014 I began teaching myself algebraic topology
-          full time, and did not stop.
-        </p>
-      </div>
-
-      <h3 class="sub" style="--accent: var(--orange);">Robotics and autonomous systems</h3>
-
-      <div class="papers" style="--accent: var(--orange);">
-
-        <article class="paper">
-          <h3>A hexapod that followed people around, and a Rubik&rsquo;s cube solving robot<span class="status">2011</span></h3>
-          <p class="meta">my first two robotics projects</p>
-        </article>
-
-        <article class="paper">
-          <h3>Positronics Division, George Washington University Robotics Lab<span class="status">Summer 2012</span></h3>
-          <p class="meta">
-            Our team smoothed joint movement of the Willow Garage Personal Robot 2 (PR2) and
-            improved load equalization. I
-            <a href="https://rin.io/autonomous-robotic-force-proprioception/">programmed the PR2</a>
-            to autonomously &ldquo;learn&rdquo; to place objects in holes of the corresponding
-            shape, using only past motor position commands and the finger gripper sensors.
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3>SLAM and motion planning on the ARDrone<span class="status">Fall 2013</span></h3>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://rin.io/hackmit-polyglass/">Polyglass</a> &mdash; a Google Glass app that computes a human pulse from the video feed<span class="status">HackMIT 2013</span></h3>
-          <p class="meta">joint with Kartik Talwar and Spencer Hewett</p>
-        </article>
-
-      </div>
-
-      <h3 class="sub" style="--accent: var(--violet);">Simulation and computational physics</h3>
-
-      <div class="papers" style="--accent: var(--violet);">
-
-        <article class="paper">
-          <h3>Resistive switching behaviour of flexible TiO<sub>2</sub><span class="status">Spring 2012</span></h3>
-          <p class="meta">
-            a memristor project at the Chemistry and Physics Department of Mary Baldwin College,
-            which is where I
-            <a href="https://rin.io/coupled-oscillator-love/">became interested</a> in physical
-            examples of <a href="https://rin.io/matlab-lorenz-attractor/">nonlinear systems</a>
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3>Modes of conductive polyhedra<span class="status">2012</span></h3>
-          <p class="meta">
-            a side project, out of fascination with argon plasma glow produced by introducing an
-            RF source at 2.45&nbsp;GHz to a conductive cavity
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://rin.io/computational-materials-science/">Predicting the material properties of compound materials</a><span class="status">Fall 2012</span></h3>
-          <p class="meta">
-            extending GMU&rsquo;s simulation after transferring there; alongside
-            <a href="https://rin.io/stockfish/">algorithms of AI chess players</a>
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://rin.io/collatz-attempt/">The rookie mistake of trying to prove the Collatz conjecture</a><span class="status">Nov 2013</span></h3>
-          <p class="meta">
-            mainly via prime factor relations within the number sequences, and a few neat
-            recurrence relations
-          </p>
-        </article>
-
-      </div>
-
-      <h3 class="sub" style="--accent: var(--cyan);">Machine learning and language</h3>
-
-      <div class="papers" style="--accent: var(--cyan);">
-
-        <article class="paper">
-          <h3><a href="https://rin.io/camel-paper/">CAMEL &mdash; learning the grammar rules of compressed Braille from partially translated text</a><span class="status">Spring 2013</span></h3>
-          <p class="meta">
-            I used Braille as a test language, but this is a framework to automate the decoding of
-            any partially understood (ancient) language by creating probabilistic dictionaries
-          </p>
-          <p class="chips">
-            <a class="chip" href="https://github.com/catherineray/CAMEL">code</a>
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3>Software Engineering Intern, Cloudera<span class="status">Summer 2013</span></h3>
-          <p class="meta">
-            <a href="https://web.archive.org/web/20130826025116/http://blog.cloudera.com/blog/2013/08/what-i-learned-during-my-summer-internship-at-cloudera/">developed a consumer download metrics tracking system</a>
-            for internal use
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3>Automating the collection and classification of lab-animal vocalizations<span class="status">late 2013 &ndash; mid 2014</span></h3>
-          <p class="meta">how I dipped my toes into audio processing</p>
-        </article>
-
-      </div>
-
-      <h3 class="sub" style="--accent: var(--pink);">Medical and assistive technology</h3>
-
-      <div class="papers" style="--accent: var(--pink);">
-
-        <article class="paper">
-          <h3><a href="https://rin.io/pressure-ulcer-prevent/">Improving mobility devices</a><span class="status">Summer 2013 &ndash; Spring 2014</span></h3>
-          <p class="meta">
-            a nonprovisional patent was submitted in Dec 2014 for the five pressure sore relief
-            mechanisms that grew out of this
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://rin.io/gluten-scanner/">A keychain-sized food scanner</a> for gluten and other common food allergen proteins<span class="status">Early 2014</span></h3>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://rin.io/neuroprosthetic/">Neuroprosthetics</a><span class="status">Summer 2014</span></h3>
-          <p class="meta">
-            starting on the software side with convergence analysis of common decoder algorithms,
-            then moving to the hardware side and optical recording methods
-          </p>
-        </article>
-
-        <article class="paper">
-          <h3>Mentored Ada Rosa on mobility assistance for people with ALS and spinal cord injuries<span class="status">Early 2015</span></h3>
-          <p class="meta">
-            <a href="https://www.youtube.com/watch?v=YJxgEDr699w">here she is showing off the eye control feature</a>
-          </p>
-        </article>
-
-      </div>
-
-      <h3 class="sub" style="--accent: var(--yellow);">Complex systems</h3>
-
-      <div class="papers" style="--accent: var(--yellow);">
-
-        <article class="paper">
-          <h3>Visiting Researcher, Santa Fe Institute<span class="status">Jan 2015</span></h3>
-          <p class="meta">
-            gave a seminar on <em>Simplifying Multiscale Modeling</em>. I still think about
-            applications of topology to multiscale modeling, and occasionally venture to consider
-            modeling complex systems of a biological nature with an eye toward immunotherapy and
-            neuroscience.
-          </p>
-        </article>
-
       </div>
     </section>
 
@@ -1047,3 +1098,10 @@ permalink: /about/
     </section>
 
     <img class="band-img band-end" src="{{ site.baseurl }}/images/lubin-tate.jpg" alt="Lubin-Tate illustration">
+
+  </div>
+
+</main>
+
+</body>
+</html>
