@@ -577,7 +577,7 @@ permalink: /about/
   <div class="scroll">
 
     <p class="jump">
-      <span>Here for the maths?</span>
+      <span>Here for the math?</span>
       <a class="chip" href="#research">Skip to the research &darr;</a>
     </p>
 
@@ -620,10 +620,10 @@ permalink: /about/
       </div>
     </section>
 
-    <!-- ===================================== before maths =========== -->
+    <!-- ===================================== before math =========== -->
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="BEFORE MATHS">BEFORE MATHS</h2>
+      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="BEFORE math">BEFORE math</h2>
 
       <div class="note" style="--accent: var(--peach);">
         <p>
