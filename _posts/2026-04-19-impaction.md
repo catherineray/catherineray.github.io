@@ -126,22 +126,6 @@ My first play, *Impaction*, was performed in LA as part of *Nothing to See Here*
 
 *(A TV in the background shows yellow on one side, pink on the other. The audience votes.)*
 
-**MC:** "So that's what you choose?"
-
-*(MC takes a deep breath, swivels, and grabs the ribbon the audience chose. Falls from the chair to their knees.)*
-
-*(Everyone holding the other colour runs offstage with their ribbon. The people holding the chosen colour grab Sick Creature — limp, screaming, crying — and drag it off along that ribbon's path. The parade takes the chair with them.)*
-
-**Sound:** *(The music cuts out the moment the last creature leaves the stage.)*
-
-*(MC collapses onto their knees and rips off the blindfold.)*
-
----
-
-### The Ending
-
-*The audience chose. Now you do — pick a ribbon.*
-
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
 <style>
@@ -151,6 +135,11 @@ My first play, *Impaction*, was performed in LA as part of *Nothing to See Here*
     --purple-shadow: #9a7bd0;
     --ink: #1a1a1a;
     margin: 2rem 0 3rem;
+  }
+  .ribbon-prompt {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1.25rem;
   }
   .ribbon-buttons {
     display: flex;
@@ -197,14 +186,23 @@ My first play, *Impaction*, was performed in LA as part of *Nothing to See Here*
   .ribbon-ending p:last-child { margin-bottom: 0; }
 </style>
 
+<noscript><style>.ribbon-ending[hidden] { display: block; } .ribbon-ending + .ribbon-ending { margin-top: 1.5rem; } .ribbon-buttons { display: none; }</style></noscript>
+
 <div class="ribbon-choice">
+  <p class="ribbon-prompt">The audience raised their hands. Raise yours — pick a ribbon.</p>
+
   <div class="ribbon-buttons">
     <button type="button" class="ribbon-btn yellow" aria-expanded="false" aria-controls="ending-yellow">YELLOW</button>
     <button type="button" class="ribbon-btn pink" aria-expanded="false" aria-controls="ending-pink">PINK</button>
   </div>
 
   <div id="ending-yellow" class="ribbon-ending yellow" hidden>
-    <h4>If yellow is chosen</h4>
+    <h4>The audience chose yellow</h4>
+    <p><strong>MC:</strong> "So that's what you choose?"</p>
+    <p><em>(MC takes a deep breath, swivels, and grabs the yellow ribbon running to Sick Creature's throat. Falls from the chair to their knees.)</em></p>
+    <p><em>(Everyone holding pink runs offstage with their ribbon. Once they are gone, the people holding yellow take hold of Sick Creature — limp, screaming, crying — and drag it off along the yellow path. The parade takes the chair with them.)</em></p>
+    <p><strong>Sound:</strong> <em>(The music cuts out the moment the last creature leaves the stage.)</em></p>
+    <p><em>(MC collapses onto their knees and rips off the blindfold.)</em></p>
     <p><strong>MC:</strong> "We must try ourselves."</p>
     <p><em>(MC mimes using syringes and making incisions.)</em></p>
     <p><em>(MC sits back and waits in silence for a while in the middle of the stage.)</em></p>
@@ -214,7 +212,12 @@ My first play, *Impaction*, was performed in LA as part of *Nothing to See Here*
   </div>
 
   <div id="ending-pink" class="ribbon-ending pink" hidden>
-    <h4>If pink is chosen</h4>
+    <h4>The audience chose pink</h4>
+    <p><strong>MC:</strong> "So that's what you choose?"</p>
+    <p><em>(MC takes a deep breath, swivels, and grabs the pink ribbon running to Sick Creature's throat. Falls from the chair to their knees.)</em></p>
+    <p><em>(Everyone holding yellow runs offstage with their ribbon. Once they are gone, the people holding pink take hold of Sick Creature — limp, screaming, crying — and drag it off along the pink path. The parade takes the chair with them.)</em></p>
+    <p><strong>Sound:</strong> <em>(The music cuts out the moment the last creature leaves the stage.)</em></p>
+    <p><em>(MC collapses onto their knees and rips off the blindfold.)</em></p>
     <p><em>(MC goes over to the creature and chokes it to death, saying:)</em> "I love you. I love you. I love you."</p>
     <p><em>(MC looks accusingly at the audience. The TV behind them is covered in eyes, staring out at the audience.)</em></p>
     <p><strong>MC:</strong> "How could you? How could I?"</p>
