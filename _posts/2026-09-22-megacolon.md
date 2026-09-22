@@ -341,8 +341,6 @@ If your cat is where Cake was, these are the questions that opened up the useful
 
 ## References
 
-Several of those report primary findings that exist in the peer-reviewed literature and I have not always located the original; treat them accordingly.
-
 [^1]: Washabau RJ, Holt D. Pathogenesis, diagnosis, and therapy of feline idiopathic megacolon. *Veterinary Clinics of North America: Small Animal Practice.* 1999;29(2):589–603. [Link](https://www.sciencedirect.com/science/article/pii/S0195561699500363)
 
 [^2]: Washabau RJ, Stalis IH. Alterations in colonic smooth muscle function in cats with idiopathic megacolon. *American Journal of Veterinary Research.* 1996;57(4):580–587.
