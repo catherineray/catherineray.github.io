@@ -1,183 +1,114 @@
 ---
 title: "Impaction (My First Play)"
-date: "2026-04-19"
-categories: 
+date: "2026-04-19" 
+categories:
   - "art"
 ---
+
 ![](/images/nothingtoseehere.jpeg)
 
-My first play was performed in LA directed by my amazing friend (Jacques Manjarrez)[https://jacquesmanjarrez.com/] as part of Nothing to See Here. The last night was recorded and can be seen (here)[https://youtu.be/YNYGaUns5wY?si=r--t-V_5jJw9tXTR&t=3602].
+My first play *Impaction* was performed in LA, directed by my amazing friend [Jacques Manjarrez](https://jacquesmanjarrez.com/) as part of *Nothing to See Here*. The last night was recorded and can be seen [here](https://youtu.be/YNYGaUns5wY?si=r--t-V_5jJw9tXTR&t=3602).
 
-Impaction by Rin Ray
-- - -
-Cast:
-Main Character
-Sick Creature (a human wrapped in blankets to look vaguely unidentifiable but certainly alive)
-Doctor (wearing a rhinocerous mask and pink lab coat)
-Creatures - a crowd in costumes 
-Props: Lots of yellow and pink ribbon, a chair, and a phone.
-- - -
-Main Character + Sick Creature on Stage + phone near the back of stage
+## Impaction 
+by Rin Ray
 
-Main Character: Standing up, staring out into space, at the mostly lifeless body. 
+### Cast
+- Main Character 
+- Sick Creature (a human wrapped in blankets to look vaguely unidentifiable but certainly alive)
+- Doctor (wearing a rhinoceros mask and pink lab coat)
+- Creatures (a crowd in costumes)
 
-Sick Creature: Laying on their side, crying slightly, labored breathing 
+### Props
+- Lots of yellow and pink ribbon
+- A chair  
+- A phone
 
-Main Character: Backing up slowly and sinking down, next to the phone (not looking at it), still staring at Sick Creature, then slowly building tension 
+---
 
-Main Character: slowly through shakey breaths, limited crying, calling "hi does your clinic offer (the procedure)"
+*Main Character and Sick Creature on stage. Phone near the back of stage.*
 
-dissapointed voice: "ah i see ok, thank you."
+**Main Character:** *(Standing up, staring out into space, at the mostly lifeless body.)*
 
-crosses off of list.
+**Sick Creature:** *(Laying on their side, crying slightly, labored breathing.)*  
 
-Approaches the creature, and pets the hair of the creature as they call once more, again 
+**Main Character:** *(Backing up slowly and sinking down, next to the phone, not looking at it, still staring at Sick Creature, then slowly building tension.)*
 
-Increasingly agitated, throws phone down. 
+**Main Character:** *(Slowly through shaky breaths, limited crying)* "Hi, does your clinic offer the procedure?"
 
-Sick Creature: flinches and curls in on themselves, breathing more quickly and shallower, building up to a panic
+**Dissapointed voice:** "Ah I see, okay. Thank you." *(Crosses off of list.)*
 
-Picks phone back up, calls Doctor.
+*(Approaches the creature, and pets its hair as they call once more, again increasingly agitated, throws phone down.)*
 
-MC: "Doctor, I can't reach anyone who does (the procedure), do you know someone?" 
+**Sick Creature:** *(Flinches and curls in on themselves, breathing more quickly and shallower, building up to a panic.)*
 
-MC gets up to go outside, a flash of different styles and genres of music start to play 
+*(Main Character picks phone back up, calls Doctor.)*
 
-A parade emerges from behind the audience, they weave through the audience. There are minions, clowns, demons, nuns, a flamingo all shitfaced drunk.  
+**MC:** "Doctor, I can't reach anyone who does the procedure, do you know someone?" 
 
-Each person holding a pink or yellow ribbon trailing behind them, the music continues to rapidly switch as they float by.
+*(MC gets up to go outside. A flash of different styles and genres of music start to play. A parade emerges from behind the audience, they weave through the audience. There are minions, clowns, demons, nuns, a flamingo, all shitfaced drunk. Each holding a pink or yellow ribbon trailing behind them. The music continues to rapidly switch as they float by.)*
 
-There are strings and ribbons flowing through the space
+*(Strings and ribbons flow through the space. The characters pull to the side and play rock paper scissors in an uncanny chittering clown language. The next batch of people come out with ribbons in the same way, in front of where the main character is. The costumed people freestyle mischievously in their mayhem.)*  
 
-The characters pull to the side and play rock paper scissor in an uncanny chittering clown language. 
+*(Suddenly main character is in this web of ribbons, dodging from side to side, running their hands through them. They "trip" and grab one. The being, a flamingo, holding that ribbon suddenly stops and walks up to the main character, hugging them. Main character holds on tight, then looks at their hand with the ribbon in it, and back at the flamingo. Main character lets go of the ribbon, and the flamingo immediately turns around and joins the rest of the parade.)*
 
-The next batch of people come out with ribbons in the same way, in front of where the main character is. The costumed people freestyle mischieviously in their mayhem. 
+---
 
-Suddenly main character is in this web of ribbons, dodging from side to side, running their hands through them, and they "trip" and they grab one 
+*(The parade mostly clears the stage as the main character exits. There's still a small parade continuously passing with ribbons leading offstage parallel to the stage. Upbeat quickly shifting music continues to play.)*
 
-The being ( a flamingo ) holding that ribbon suddenly stops and walks up to the main character, hugging them. 
+*(There are two chairs. Doctor, wearing a pink doctor coat, is sitting on a chair next to a phone. Hidden behind them is another phone and a banana.)*
 
-Main character holds on tight, then looks at their hand with the ribbon in it, and then back at the flamingo. Main character lets go of the ribbon, and the flamingo immediately turns around and joins the rest of the parade.
+*(Main Character opens a door, arriving.)*
 
-- - -
+**Main Character:** "Help me."
 
-The parade mostly clears the stage as the main character exits. There's still a small parade continuously passing with ribbons leading offstage parallel to the stage. Upbeat quickly shifting music continues to play. 
+**Doctor:** "What? Okay."  
 
-There are two chairs, 
+*(Main Character and Doctor both start calling frantically while the parade continues, alternate between both saying:)*
 
-Doctor (wearing a pink doctor coat): Sitting on a chair next to a phone (hidden behind them is another phone and a banana)
+"Hi, do you offer the procedure?"  
 
-Main Character opens a door, arriving.
+*(The minimal crowd of characters that has been continuing to parade in the background are joined by more characters. Main Character and Doctor continue to call, they start asking the same in various languages, and build asking this question at a frantic pace.)*
 
-Main Character: Help me.
+**Doctor:** "Bonjour, proposez-vous l'opération?"
 
-Doctor: What? Okay.
+**MC:** "Hola, ¿ofrecen la operación?" 
 
-Main Character and Doctor both start calling frantically while the parade continues, alternate between both saying:
+*(The doctor brings up the banana to their other ear as if they are on two phones at once.)*
 
-"hi do you offer "the proceedure""
+**Doctor:** "Salve, operationem offersne?"
 
-The minimal crowd of characters that has been continuing to parade in the background are joined by more characters. 
+**Doctor:** "They have always abandoned us, we must do it ourselves."
 
-Main Character and doctor continue to call, they start asking the same in various languages, and build asking this question at a frantic pace.
+*(The parade is getting louder and closer to them until they are walking in front of and around them, club music pounding. The doctor and main character become obscured.)*
 
-Doctor: "hi do you offer the procedure?"
+*(Doctor exits taking their chair and phone while covered. Still while covered, Sick Creature enters and lays down on the floor, they have two ribbons already tied around its throat, held up by costumed people.)*  
 
-MC: "Hallo, bieten Sie die operation an?"
+**Sound change:** *(Upbeat music is still playing, but slowed down with a "playing in a different room" type sound.)*
 
-*More characters enter*
+*(Costumed people in front of main character part in the middle, and move to the left and right behind the main character. This reveals Sick Creature on the floor in front of Main Character.)*
 
-Doctor: "Bonjour, proposez-vous l'OPÉRATION?"
+*(The Main Character is blindfolded sitting on a chair. Costumed people part behind the Main Character and move such that the ribbons separate into two colors/paths - yellow and pink - behind Main Character. Looks like a fork in the road.)*  
 
-MC: Hola, ¿ofrecen la OPERACIÓN?
+**Doctor:** *(Walks out to stand behind MC)* "Here are the options."
 
-*the doctor brings up the banana to their other ear as if they are on two phones at once.* 
+**Doctor:** "You can end its suffering, kill it." *(Points to pink ribbon)* "Or you can try the procedure yourself, but act as its tormentor as you try." *(Points to yellow ribbon)*
 
-Doctor: salve, operationem offersne?
+**MC:** "What will they lead to?"
 
-Doctor: they have always abandoned us, we must do it ourselves.
+**Doctor:** "You cannot know the future."
 
-*The parade is getting louder and closer to them until they are walking in front of and around them, club music pounding. The doctor and main character become obscured.*
+*(The ribbons around the neck of Sick Creature are being held in each direction. These ribbons feed into the two paths behind the Main Character, such that the Main Character is in a triangle of ribbon. The costumed people holding the ribbons around the Sick Creature's neck begin to pull.)*
 
-Doctor: *exits taking their chair and their phone while covered.* 
+**Sick Creature:** *(Fighting against the ribbons at its neck, clawing wildly and whimpering, in clear agony and pain, getting more intense by the second.)*
 
-Still while covered: Sick Creature enters and lays down on the floor, they have two ribbons already tied around its throat, held up by costumed people. 
+**Main Character:** *(Breathing heavily, sitting on a chair, still blindfolded. Begins to get up and crawls on hands and knees to stroke the Creature's face as they whimper. The costumed people holding the Creature's two ribbons move closer so the Main Character's triangle begins shrinking - this forces the Main Character put back in the chair by the triangle shrinking.)*  
 
-Sound change: upbeat music is still playing, but slowed down "playing in a different room" type sound
+**Creature:** *(Screaming and seizing in pain, continuing to claw at the ribbon.)*
 
-Costumed people in front of main character part in the middle, and move to the left and right behind the main character. 
+*(The Main Character turns to the audience.)*
 
-This reveals sick creature on the floor in front of main character.
+**MC:** "Fuck! What do I do? Fuck!"  
 
-The main character is blindfolded sitting on a chair.  
+**Offstage Narrator:** "Those who want yellow, raise your hand. Those who want pink, raise your hand."
 
-Costumed people: part behind the Main Character and move such that the ribbons separate into two colors/two paths (yellow and pink ribbons), behind main character. Looks like a fork in the road 
-
-Doctor: (*walks out to stand behind MC*) Here are the options.
-
-Doctor: You can end its suffering, kill it (points to pink ribbon). Or you can try the proceedure yourself, but act as its tormentor as you try. (points to yellow ribbon)
-
-MC: What will they lead to? 
-
-Doctor: You cannot know the future.
-
-The ribbons around the neck of sick creature are being held in each direction. These ribbons feed into the two paths behind the main character, such that the main character is in a triangle of ribbon 
-
-The costumed people holding the ribbons around the sick creatures neck begin to pull. 
-
-Sick creature: fighting against the ribbons at its neck, clawing wildly and whimpering, in clear agony and pain, getting more intense by the second
-
-Main character: breathing heavily, sitting on a chair, still blindfolded and begins to get up and crawls on hands and knees to stroke the creatures face as they whimper. 
-
-The costumed people holding the creature's two ribbons move closer so the main character's triangle begins shrinking - this forces the main character put back in the chair by the triangle shrinking. 
-
-Creature: Screaming and seizing in pain, continuing to claw at the ribbon
-
-The main character turns to the audience
-
-MC: Fuck! What do I do? Fuck! 
-
-Offstage Narrator: Those who want yellow, raise your hand, those who want pink raise your hand
-
-TV in background has yellow on one side, pink on the other.
-
-Audience votes on yellow or pink.
-
-MC: So that's what you choose?
-
-MC takes a deep breath and swivels to to grab the ribbon chosen by the audience connected to the sick creature. 
-
-Then falls from the chair to their knees
-
-Suddenly, all the people with the other color run off the stage with their ribbon, after they leave, the people with the chosen color grab the sick creature and grab them limply screaming and crying dragging them one side of the stage following the path that was there. (Parade also take the chair off)
-
-Sound change: The music suddenly stops as soon as all creatures leave the stage. 
-
-Main character collapses onto their knees, and rips off their blindfold.
-
-BRANCHED ENDING:
-If pink is chosen: 
-
-The main character goes over to the creature, and chokes the creature to death. saying "i love you I love you I love you" 
-
-They look accusingly at the audience. TV behind the main character is covered with eyes staring at the audience.
-
-MC: How could you? How could I? 
-
-MC: Collapses.
-
-The screen behind the main character: "I forgive you".
-
-If yellow is chosen:
-
-MC: We must try ourselves. 
-
-MC: *Mimes using syringes and incisions*
-
-MC: Sits back and waits in silence for a while in the middle of the stage.
- 
-Sick Creature: *Gets up, is walking but limping and still unwell. Holding parts of itself together. Sick creature approaches MC on the same path they were dragged. Sick creature crouches down and hug the MC and start crying,
-
-MC: hugs back and starts crying as well. 
-
-End
+<div style="text-align:center;"> <span id="yellow" style="background-color: yellow; padding: 5px; margin: 0 10px; cursor: pointer;">Yellow Ribbon</span> <span id="pink" style="background-color: pink; padding: 5px; margin: 0 10px; cursor: pointer;">Pink Ribbon</span> </div> <div id="yellowEnding" style="display: none;"> <strong>Yellow Ending:</strong><br> <strong>MC:</strong> "We must try ourselves." <em>(Mimes using syringes and incisions)</em> <br> <em>(MC sits back and waits in silence for a while in the middle of the stage.)</em> <br> <strong>Sick Creature:</strong> <em>(Gets up, walking but limping and still unwell. Holding parts of itself together. Approaches MC on the same path they were dragged. Crouches down and hugs the MC and starts crying.)</em> <br> <strong>MC:</strong> <em>(Hugs back and starts crying as well.)</em> </div> <div id="pinkEnding" style="display: none;"> <strong>Pink Ending:</strong><br> <em>(The Main Character goes over to the Creature, and chokes the Creature to death saying "I love you, I love you, I love you". They look accusingly at the audience. TV behind the Main Character is covered with eyes staring at the audience.)</em> <br> <strong>MC:</strong> "How could you? How could I?" <em>(Collapses)</em> <br> <em>(The screen behind the Main Character: "I forgive you".)</em> </div> <script> const yellow = document.getElementById('yellow'); const pink = document.getElementById('pink'); const yellowEnding = document.getElementById('yellowEnding'); const pinkEnding = document.getElementById('pinkEnding'); yellow.addEventListener('click', function handleClick() { yellowEnding.style.display = 'block'; }); pink.addEventListener('click', function handleClick() { pinkEnding.style.display = 'block'; }); </script>
