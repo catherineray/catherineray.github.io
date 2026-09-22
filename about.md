@@ -552,7 +552,7 @@ permalink: /about/
       <img class="photo-slot" src="{{ site.baseurl }}/images/aabout.png" alt="Rin Ray">
     </div>
 
-    <a class="cv cv-math" href="/pdfs/RinRayCV-Math.pdf">CV MATH</a>
+    <a class="cv cv-math" href="/pdfs/RinRay-CV-Math.pdf">CV MATH</a>
     <a class="cv cv-other" href="/cv-other.pdf">CV OTHER</a>
 
     <div class="char-wrap">
