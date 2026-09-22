@@ -623,7 +623,7 @@ permalink: /about/
     <!-- ===================================== before math =========== -->
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="BEFORE math">BEFORE math</h2>
+      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="BEFORE MATH">BEFORE MATH</h2>
 
       <div class="note" style="--accent: var(--peach);">
         <p>
