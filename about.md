@@ -620,6 +620,32 @@ permalink: /about/
       </div>
     </section>
 
+    <!-- ==================================== art portfolio =========== -->
+
+    <section>
+      <h2 class="sec-head" style="--shadow: var(--yellow); --tilt: 2deg;" data-text="THE OTHER STUDIO">THE OTHER STUDIO</h2>
+
+      <div class="note" style="--accent: var(--yellow);">
+        <p>
+          I primarily work with pastels, acrylic, spray paint and polaroids. When I
+          spray I make colorful street murals of creatures. Please enjoy this small collection of my art.
+        </p>
+        <p>
+          Away from the desk I rock climb, write short stories, speak intermediate German,
+          beginners Russian and Spanish, embarrassingly &ldquo;robotic&rdquo; American Sign
+          Language, read braille, and play trombone and ukulele.
+        </p>
+        <p class="chips" style="margin-top:.2em">
+          <span class="chip" style="background: var(--pink-btn);">pastels</span>
+          <span class="chip" style="background: var(--cyan);">acrylic</span>
+          <span class="chip" style="background: var(--orange);">spray paint</span>
+          <span class="chip" style="background: var(--peach);">polaroids</span>
+          <span class="chip" style="background: var(--lilac-deep);">tattoo design</span>
+        </p>
+        <a class="cv cv-art" href="/art/">SEE THE GALLERY &rarr;</a>
+      </div>
+    </section>
+
     <!-- ===================================== before math =========== -->
 
     <section>
@@ -781,32 +807,6 @@ permalink: /about/
           </p>
         </article>
 
-      </div>
-    </section>
-
-    <!-- ==================================== art portfolio =========== -->
-
-    <section>
-      <h2 class="sec-head" style="--shadow: var(--yellow); --tilt: 2deg;" data-text="THE OTHER STUDIO">THE OTHER STUDIO</h2>
-
-      <div class="note" style="--accent: var(--yellow);">
-        <p>
-          I primarily work with pastels, acrylic, spray paint and polaroids. When I
-          spray I make colorful street murals of creatures. Please enjoy this small collection of my art.
-        </p>
-        <p>
-          Away from the desk I rock climb, write short stories, speak intermediate German,
-          beginners Russian and Spanish, embarrassingly &ldquo;robotic&rdquo; American Sign
-          Language, read braille, and play trombone and ukulele.
-        </p>
-        <p class="chips" style="margin-top:.2em">
-          <span class="chip" style="background: var(--pink-btn);">pastels</span>
-          <span class="chip" style="background: var(--cyan);">acrylic</span>
-          <span class="chip" style="background: var(--orange);">spray paint</span>
-          <span class="chip" style="background: var(--peach);">polaroids</span>
-          <span class="chip" style="background: var(--lilac-deep);">tattoo design</span>
-        </p>
-        <a class="cv cv-art" href="/art/">SEE THE GALLERY &rarr;</a>
       </div>
     </section>
 
@@ -978,19 +978,7 @@ permalink: /about/
           </p>
         </article>
       </div>
-
-      <h3 class="sub" style="--accent: var(--lilac-deep);">Old and likely dead</h3>
-
-      <div class="papers" style="--accent: var(--lilac-deep);">
-        <article class="paper">
-          <h3>Covers of the Octahedron</h3>
-          <p class="meta">joint with D. Lee</p>
-        </article>
-        <article class="paper">
-          <h3>Duality resolutions for general linear groups</h3>
-          <p class="meta">joint with E. Belmont, P. VanKoughnett</p>
-        </article>
-      </div>
+    </section>
 
     <!-- ====================================== expository ============ -->
 
@@ -1059,11 +1047,3 @@ permalink: /about/
     </section>
 
     <img class="band-img band-end" src="{{ site.baseurl }}/images/lubin-tate.jpg" alt="Lubin-Tate illustration">
-
-  </div>
-
-</main>
-
-
-</body>
-</html>
