@@ -992,18 +992,6 @@ permalink: /about/
         </article>
       </div>
 
-      <h3 class="sub" style="--accent: var(--peach);">Still at the back of my mind</h3>
-
-      <div class="note" style="--accent: var(--peach);">
-        <p>Questions I have not stopped turning over, from well outside my day job:</p>
-        <ul>
-          <li>How can we apply topological techniques to improve multiscale modeling?</li>
-          <li>What are the underlying semantics of a reasoning tool for computer-aided scientific research?</li>
-          <li>How can we build a proof writing tool which automatically fills in proof outlines?</li>
-        </ul>
-      </div>
-    </section>
-
     <!-- ====================================== expository ============ -->
 
     <section>
