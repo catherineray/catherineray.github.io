@@ -29,7 +29,7 @@ This is not a claim that it works for every cat, and it is not a protocol to fol
 | **Diagnosis** | Dilated megacolon, recurrent obstipation |
 | **Complicating factor** | Spinal spondylosis, painful defecation |
 | **Surgery** | Ruled out — too unwell and too heavy for safe anaesthesia |
-| **Current regime** | Neostigmine as needed, daily lactulose, monthly Solensia |
+| **Current regime** | Neostigmine as needed, daily lactulose, Solensia every 6 weeks |
 
 ---
 
