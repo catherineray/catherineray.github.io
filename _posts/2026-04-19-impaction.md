@@ -200,12 +200,12 @@ My first play, *Impaction*, was performed in LA as part of *Nothing to See Here*
     <h4>The audience chose yellow</h4>
     <p><strong>MC:</strong> "So that's what you choose?"</p>
     <p><em>(MC takes a deep breath, swivels, and grabs the yellow ribbon running to Sick Creature's throat. Falls from the chair to their knees.)</em></p>
-    <p><em>(Everyone holding pink runs offstage with their ribbon. Once they are gone, the people holding yellow take hold of Sick Creature — limp, screaming, crying — and drag it off along the yellow path. The parade takes the chair with them.)</em></p>
+    <p><em>(Everyone holding pink runs offstage with their ribbon. Once they are gone, the people holding yellow release Sick Creature — limp, screaming, crying. The parade takes the chair with them.)</em></p>
     <p><strong>Sound:</strong> <em>(The music cuts out the moment the last creature leaves the stage.)</em></p>
     <p><em>(MC collapses onto their knees and rips off the blindfold.)</em></p>
     <p><strong>MC:</strong> "We must try ourselves."</p>
-    <p><em>(MC mimes using syringes and making incisions.)</em></p>
-    <p><em>(MC sits back and waits in silence for a while in the middle of the stage.)</em></p>
+    <p><em>(MC mimes using syringes and making incisions and getting tangled in the yellow ribbon.)</em></p>
+    <p><em>(MC scoots remaining seated on the floor to the back of the middle stage, face facing forward, and waits with a 1000 yard stare.)</em></p>
     <p><strong>Sick Creature:</strong> <em>(Gets up — walking, but limping and still unwell, holding parts of itself together. Approaches MC along the same path it was dragged down. Crouches, hugs MC, and starts crying.)</em></p>
     <p><strong>MC:</strong> <em>(Hugs back and starts crying too.)</em></p>
     <p><em>End.</em></p>
