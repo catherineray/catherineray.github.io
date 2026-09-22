@@ -55,7 +55,7 @@ That is the gap this document is trying to close, and it cuts both ways. A folkl
 >
 > The same literature contains the awkward finding too: give 0.022 mg/kg four times at half-hour intervals and gastric emptying *slows*.[^8] Whatever neostigmine does to the horse gut, it doesn't do it uniformly — useful distally, possibly counterproductive proximally.
 >
-> Then there's the species problem. The classical account of feline megacolon puts the lesion in the smooth muscle rather than the nerves,[^1][^2] which is uncomfortable, because a drug that works by making neuronal acetylcholine linger needs a myocyte still capable of answering it. **That picture has since got murkier** — section 02.
+> Then there's the species problem. The classical account of feline megacolon puts the lesion in the smooth muscle rather than the nerves,[^1][^2] which is uncomfortable, because a drug that works by making neuronal acetylcholine linger needs a myocyte still capable of answering it. That picture has since gotten murkier — section 02.
 
 ---
 
@@ -94,9 +94,9 @@ This is not merely a plausible story. In a radiographic study of 1,365 cats, tho
 
 ### How we knew it was real
 
-In my entire acquaintance with Cake, he had never washed the back half of his body. His front half was immaculate. This was put down to his size — we was 11 kg when I adopted him, and was able to get him down to 9 kg. Even a 9 kg cat may simply not be able to bend that far.
+In my entire acquaintance with Cake, he had never washed the back half of his body. His front half was immaculate. This was put down to his size — he was 11 kg when I adopted him, and was around 9 kg by the time the symptoms of megacolon began. Even a 9 kg cat may simply not be able to bend that far.
 
-He started grooming his back end again shortly after beginning monthly pain relief, **before he had lost any meaningful weight**. That timing is the whole argument. If bulk had been the obstacle, the behaviour would have returned gradually as the weight came off. It did not. It returned when the pain was treated.
+He started grooming his back end again shortly after beginning pain relief every 6 weeks, **before he had lost any meaningful weight**. That timing is the whole argument. If bulk had been the obstacle, the behaviour would have returned gradually as the weight came off. It did not. It returned when the pain was treated.
 
 > **Worth checking on your own cat**
 >
