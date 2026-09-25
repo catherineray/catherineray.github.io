@@ -1055,14 +1055,14 @@ rail_sections:   # listed in the sidebar under "About Rin"
             </p>
             <p class="why unexpected">
               I expected to hear about getting around. What I kept hearing about was pain —
-              constant, and largely unaddressed by anyone they had seen. It was not a thing I could
-              answer with a mechanism. What I could do was make sure the mechanisms were not
-              locked up: I wrote up all the mechanical engineering and soft robotics I’d invented as a
-              nonprovisional patent application,
+              constant, and largely unaddressed by anyone they had seen.<br><br>
+              It was not a thing I could answer with mechanical engineering. What I could do was
+              make sure the mechanisms were not locked up: I wrote up all the mechanical engineering
+              and soft robotics I’d invented as a nonprovisional patent application,
               <em>Robotic Mobility Assistive Wheelchairs</em>, and then decided not to file it, and
               they went out under a Creative Commons license instead. A patent would have meant the
-              people I built them for waiting on somebody else to license it first. Then I went to
-              work on <a href="https://rin.io/biome/">chronic pain</a>, which I am still doing.
+              people I built them for waiting on somebody else to license it first.<br><br>
+              Then I went to work on understanding and treating <a href="https://rin.io/biome/">chronic pain</a>, which I am still doing.
             </p>
             <p class="why echo">
               Both halves arrived, about a decade late. Medicare began covering
