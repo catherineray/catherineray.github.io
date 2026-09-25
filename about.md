@@ -74,7 +74,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     position: relative;
     width: min(92vw, 700px);
     aspect-ratio: 671 / 819;
-    margin: 0 auto calc(min(92vw, 700px) * -0.2);   /* the drawing area runs taller than its contents; pull THE PATH up */
+    margin: 0 auto calc(min(92vw, 700px) * -0.12);   /* the drawing area runs taller than its contents; pull THE PATH up a little */
     padding-block: 0;
   }
   .stage > * { position: absolute; }
@@ -256,7 +256,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .scroll {
     width: min(92vw, 700px);
     margin: 0 auto;
-    padding: 1.5rem 0 4.5rem;
+    padding: 2.5rem 0 4.5rem;
     box-sizing: border-box;
   }
 
