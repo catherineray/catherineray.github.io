@@ -34,10 +34,10 @@ writing:
   - kind: Poem
     slug: hidden-structure
     lines:
-      - Beauty wilts and love will flucture
-      - what remains is hidden structure
-      - blushing primes sly chiding knots
-      - intertwine betwixt our thoughts
+      - "creation lives to create"
+      - "chipping from the ob’lisk slate"
+      - "talk amoungst our little selves"
+      - "speculating filling shelves"
   - kind: Poem
     slug: staring
     title: Staring
