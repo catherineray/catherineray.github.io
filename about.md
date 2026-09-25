@@ -7,9 +7,9 @@ hide_title: true   # the ABOUT ME artwork is the heading
 rail_highlights: true   # show the genre highlights in the sidebar here
 rail_sections:   # listed in the sidebar under "About Rin"
   - { id: about-path, label: "THE PATH", color: "#6cc8f0" }
-  - { id: about-lab, label: "SCI/ART", color: "#f4a58a", sub: true }   # The Other Lab (and The Other Studio below it)
+  - { id: about-lab, label: "SCI/ART", color: "#ec3f9e" }   # The Other Lab (and The Other Studio below it); color matches its section title
   - { id: about-contact, label: "CONTACT", color: "#f9a13c" }
-  - { id: about-published, label: "MATH", color: "#ec3f9e" }   # the research part: Published, Preprints, In progress, Expository
+  - { id: about-published, label: "MATH", color: "#6cc8f0" }   # the research part: Published, Preprints, In progress, Expository
   - { id: about-teaching, label: "TEACHING", color: "#6cc8f0" }
 ---
 
