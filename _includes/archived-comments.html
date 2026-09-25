@@ -3,7 +3,7 @@
 {% if archived and archived.comments.size > 0 %}
 <section class="archived-comments" aria-labelledby="archived-comments-title">
   <h2 id="archived-comments-title">Comments from the old blog ({{ archived.comments.size }})</h2>
-  <p class="archived-note">Recovered from the <a href="{{ archived.source }}">Wayback Machine</a> of the old site after my servers and back up servers got black-hatted.</p>
+  <p class="archived-note">Recovered from the <a href="{{ archived.source }}">Wayback Machine</a> of the old site after my back-up servers got black-hatted.</p>
   <ol class="archived-list">
     {% for c in archived.comments %}
     <li class="archived-comment depth-{{ c.depth }}{% if c.kind != 'comment' %} is-pingback{% endif %}" id="old-comment-{{ c.id }}">
