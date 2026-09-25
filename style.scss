@@ -819,10 +819,10 @@ a.chip-genre, .chip-genre {
   .rail { flex-direction: row !important; flex-wrap: nowrap !important; align-items: center !important; justify-content: space-between; gap: 12px !important; padding: 10px 14px !important; }
   .rail .rail-name { font-size: 24px; width: min-content; line-height: .95; margin: 0 !important; flex: none; }   /* RIN over RAY */
   .rail .rail-name::before { width: 100%; }
-  .rail .rail-pages { flex-direction: row !important; flex-wrap: nowrap; justify-content: flex-end; gap: 12px; padding-bottom: 0; border-bottom: 0 !important; overflow: hidden; flex: 1 1 auto; }
+  .rail .rail-pages { flex-direction: row !important; flex-wrap: nowrap; justify-content: space-evenly; gap: 6px; padding-bottom: 0; border-bottom: 0 !important; overflow: hidden; flex: 1 1 auto; max-width: 400px; margin-inline: auto; }   /* icons centered in the space beside the name */
   .rail .rail-pages > a { min-height: 0; gap: 2px; flex-direction: column; align-items: center; }
   .rail .rail-pages .rail-short { display: block; font: 700 11px $rail-mono; letter-spacing: .06em; text-transform: lowercase; line-height: 1; }
   .rail .rail-pages .rail-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .rail .rail-pages img { width: 46px; height: 46px; }
+  .rail .rail-pages img { width: min(72px, calc((100vw - 150px) / 4)); height: min(72px, calc((100vw - 150px) / 4)); }   /* icons fill the bar beside the name */
   .rail .rail-sections, .rail .rail-search, .rail .rail-filters, .rail .rail-pinned { display: none !important; }
 }
