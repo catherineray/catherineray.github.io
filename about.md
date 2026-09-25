@@ -11,6 +11,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
   - { id: about-contact, label: "CONTACT", color: "#f9a13c" }
   - { id: about-published, label: "MATH", color: "#ec3f9e" }   # the research part: Published, Preprints, In progress, Expository
   - { id: about-teaching, label: "TEACHING", color: "#6cc8f0" }
+  - { id: archived-comments-title, label: "COMMENTS", color: "#9b7fd4" }   # the old blog comments at the bottom
 ---
 
 <html lang="en">
