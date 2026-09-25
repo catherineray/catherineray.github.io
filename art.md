@@ -14,6 +14,9 @@ posts_link: { text: "Every drawing, comic, song, play and piece of writing poste
 # art: title and mediums for each gallery image (file = the image's name in /gallery/ without extension).
 # Both gallery walls read this list; entries with `post:` (from a blog post) or `link:` only show here, not on the Portfolio.
 # link: clicking the piece opens that page instead of the enlarged view. post: slug of the blog post it came from.
+# gallery_first: pieces that open both gallery walls, in this order (file names from the art: list)
+gallery_first: [neon-mantis]
+
 art:
   - file: caterpillar
     title: Caterpillar Bikechain Mech Mural
