@@ -1,6 +1,6 @@
 ---
 layout: work
-title_shadow: "#ec3f9e"   # color of the title's offset copy
+title_shadow: "#6cc8f0"   # color of the title's offset copy
 title: Portfolio
 permalink: /portfolio/
 rail: minimal
