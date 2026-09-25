@@ -15,7 +15,7 @@ posts_link: { text: "Every drawing, comic, song, play and piece of writing poste
 # Both gallery walls read this list; entries with `post:` (from a blog post) or `link:` only show here, not on the Portfolio.
 # link: clicking the piece opens that page instead of the enlarged view. post: slug of the blog post it came from.
 # gallery_first: pieces that open both gallery walls, in this order (file names from the art: list)
-gallery_first: [neon-mantis, a-vibing]
+gallery_first: [neon-mantis, a-vibing, 00-lain-mexicocity, exhausted-silence]
 
 art:
   - file: caterpillar
