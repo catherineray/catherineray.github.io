@@ -956,7 +956,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     </p>
 
     <section id="before-math" data-level="curious">
-      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE OTHER LAB" id="about-lab">THE OTHER LAB</h2>
+      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="THE OTHER LAB" id="about-lab">THE OTHER LAB</h2>
 
       <details class="fold">
         <summary class="note">
