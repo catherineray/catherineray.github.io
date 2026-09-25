@@ -6,7 +6,7 @@ permalink: /portfolio/
 rail: minimal
 # Selected work. The layout (_layouts/work.html) is shared with the Art page (/art/), so any design change applies to both;
 # this file only lists what the Portfolio shows. Entries point at posts by slug (the filename without the date).
-intro: "Selected Work. Vessel for the Universe to Play with Itself."
+intro: "When the universe remembers it has no skin."
 other_link: { label: "See everything →", url: /art/ }
 gallery_selected: true   # only the selected pieces, not the ones that came from blog posts
 gallery_hide: [film, digital photo]   # In a box shows polaroids only here; the other photos are on /art/

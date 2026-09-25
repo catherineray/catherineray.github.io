@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="{{ "./favicon.png" | relative_url }}" type="image/x-icon">
+    {% comment %} the tab icon follows the part of the site you are in (sidebar icons) {% endcomment %}
+    {% assign fav = "about" %}
+    {% if page.genre %}{% assign fg = site.data.genres | where: "key", page.genre | first %}{% assign fav = fg.icon | split: "/" | last | remove: ".png" %}
+    {% elsif page.genre_key %}{% assign fg = site.data.genres | where: "key", page.genre_key | first %}{% assign fav = fg.icon | split: "/" | last | remove: ".png" %}
+    {% elsif page.url == "/portfolio/" or page.url == "/art/" %}{% assign fav = "art" %}
+    {% elsif page.url == "/blog/" %}{% assign fav = "excerpts" %}
+    {% elsif page.url == "/resources/" %}{% assign fav = "resources" %}{% endif %}
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicons/{{ fav }}-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="{{ site.baseurl }}/images/favicons/{{ fav }}-512.png">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/images/favicons/{{ fav }}-180.png">
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
