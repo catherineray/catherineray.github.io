@@ -983,18 +983,21 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <button type="button" data-set="plain">passing through</button>
         <button type="button" data-set="curious" aria-pressed="true">here for the story</button>
         <button type="button" data-set="pedantic">here for the science</button>
-        <span class="hint lvl lvl-plain">One line per project, no background assumed.</span>
+        <span class="hint lvl lvl-plain">No background assumed, one line per project.</span>
         <span class="hint lvl lvl-curious">What I built, why I cared, and where the field has gone since.</span>
         <span class="hint lvl lvl-pedantic">No story: what was done, how, and what limited it — grouped by method.</span>
       </div>
 
       <details class="fold">
         <summary class="note">
-          <p class="lvl lvl-plain lvl-curious">
-            <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> What I have spent my time building, mostly, is instruments for overhearing. A blinded robot, feeling for its own hand. Rats, telling each other how they are feeling. A cat, feeling for his colon. A brain, through the scar it grows around anything that listens. Half a page of Braille, about the missing half. Arithmetic, about superconductors nobody had made yet. A drone, plasma, a face, a wheelchair, dinner, a stack of medical papers — and others. There are always others.
+          <p class="lvl lvl-curious">
+            <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> What I have spent my time building, mostly, is instruments for overhearing. A blinded robot, feeling for its own hand. Rats, telling each other how they are feeling. A cat, feeling for his colon. A brain, through the scar it grows around anything that listens. Half a page of Braille, about the missing half. Arithmetic, about superconductors nobody had made yet. A drone and a wheelchair, microwaved argon and a plate of food, a face, septic blood — and others. There are always others.
           </p>
-          <p class="lvl lvl-plain lvl-curious">
+          <p class="lvl lvl-curious">
             Most of this came before the mathematics found me — or before I found it. Two threads have remained in my hands: <a href="https://rin.io/biome/">a cluster of diseases that keep showing up together and keep being treated apart</a>, and <a href="https://rin.io/megacolon/">a treatment that works and was never written down</a>.
+          </p>
+          <p class="lvl lvl-plain">
+            <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> For over a decade I have studied the three kinds of silence: what is absent, what is fading, and what is spoken in another room. Two threads remain in my hands: <a href="https://rin.io/biome/">a cluster of diseases that keep being treated apart</a>, and <a href="https://rin.io/megacolon/">a treatment that was never written down</a>.
           </p>
           <p class="lvl lvl-pedantic">
             <strong class="tldr-lead">A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer:</strong> motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure. Two lines remain active: <a href="https://rin.io/biome/">sensory processing as a shared mechanism across an autoimmune, gastrointestinal and chronic pain diseasome</a> (2024–), and <a href="https://rin.io/megacolon/">neostigmine in feline idiopathic megacolon</a> (2026).
