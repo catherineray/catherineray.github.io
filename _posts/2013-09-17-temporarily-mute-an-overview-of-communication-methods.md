@@ -3,6 +3,15 @@ title: "Temporarily Mute: An Overview of Communication Methods"
 date: "2013-09-17"
 categories: 
   - "writing"
+genre: prose
+tags:
+  - laryngitis
+  - nonverbal-communication
+  - american-sign-language
+  - augmentative-and-alternative-communication
+format: personal
+topics:
+  - "Programming & tools"
 ---
 
 If you’ve run into me in the past 2 days, I’ve squeaked at you and scribbled on my notebook “lost my voice! How are you?” As of this post, I am still mute. However, I will write it in the past tense to create a false sense of encouragement that my voice will return soon.

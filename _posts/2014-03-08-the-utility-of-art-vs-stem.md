@@ -7,6 +7,15 @@ categories:
   - "life"
   - "math"
   - "writing"
+genre: prose
+tags:
+  - art-and-science
+  - stem
+  - philosophy-of-mathematics
+  - interview
+format: opinion
+topics:
+  - "Drawing, painting & comics"
 ---
 
 I was recently asked an interesting question in an interview:

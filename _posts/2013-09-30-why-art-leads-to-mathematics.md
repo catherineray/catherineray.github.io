@@ -4,6 +4,16 @@ date: "2013-09-30"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - mathematics-education
+  - math-outreach
+  - art-and-mathematics
+  - essay
+format: opinion
+topics:
+  - "Drawing, painting & comics"
+  - "Writing & theater"
 ---
 
 I was recently approached to write an essay to convince (high school) art students that math is freaking excellent. This was the result:

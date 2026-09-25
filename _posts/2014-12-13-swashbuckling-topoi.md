@@ -3,6 +3,16 @@ title: "Swashbuckling Notes on Topos Theory"
 date: "2014-12-13"
 categories: 
   - "math"
+genre: math
+tags:
+  - topos-theory
+  - sheaf-theory
+  - locales
+  - intuitionistic-logic
+  - category-theory
+format: notes
+topics:
+  - "Algebra & representation theory"
 ---
 
 _This collection of notes resulted from my desire for an intuitive grasp of basic concepts in topos theory, and is meant to [complement](http://arxiv.org/pdf/1012.5647.pdf) to a [standard introduction to topoi](http://www.fuw.edu.pl/~kostecki/ittt.pdf) (i.e., this is pedagogically unsound)._

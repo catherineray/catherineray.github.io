@@ -5,6 +5,16 @@ categories:
   - "explanation"
   - "german"
   - "linux"
+genre: science
+tags:
+  - linux
+  - compose-key
+  - keyboard-layouts
+  - german-language
+format: tutorial
+topics:
+  - "Programming & tools"
+  - "Writing & theater"
 ---
 
 Want to type in another language but you love your US keyboard layout?

@@ -4,6 +4,16 @@ date: "2013-06-09"
 categories: 
   - "code"
   - "python"
+genre: science
+tags:
+  - code
+  - python
+  - meal-planning
+  - automation
+  - smtplib
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 I bring my lunch to work to avoid food poisoning (I have food allergies, not paranoia). To be able to make these lunches for work when exhausted, I’d like a list of what to pack for a set number of days.
@@ -122,3 +132,5 @@ if __name__ == ‘__main__’:
 Looking at foodemail.py, I see that my coding has become more efficient over this past year.
 
 I hope that these programs are useful for your food planning!
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/foodemail.py">cow-code / foodemail.py</a></p>

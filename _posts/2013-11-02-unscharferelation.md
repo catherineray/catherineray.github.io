@@ -5,6 +5,17 @@ categories:
   - "explanation"
   - "german"
   - "physics"
+genre: science
+tags:
+  - uncertainty-principle
+  - quantum-mechanics
+  - physics
+  - german-language
+  - observer-effect
+format: explanation
+topics:
+  - "Physics"
+  - "Life, study & work"
 ---
 
 Konzepte der Quantenmechanik durch den dunklen Nebel der Unwissenheit aufgefressen. Lass mich den Nebel eines verbreiteten Missverständnisses aufheben. Lass mich deine gegenwärtige Meinung ändern.

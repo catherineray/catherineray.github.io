@@ -3,6 +3,17 @@ title: "Group Law on the (Punctured) Affine Line"
 date: "2015-03-18"
 categories: 
   - "math"
+genre: math
+tags:
+  - group-schemes
+  - affine-line
+  - multiplicative-group
+  - algebraic-geometry
+  - hopf-algebras
+format: explanation
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Algebra & representation theory"
 ---
 
 _There are likely inaccuracies in this post, as I am just beginning to learn the basics of algebraic geometry. Constructive criticism is strongly encouraged._

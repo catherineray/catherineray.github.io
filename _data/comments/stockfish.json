@@ -1,0 +1,25 @@
+{
+ "source": "https://web.archive.org/web/20201112031232/http://rin.io/chess-engine/",
+ "comments": [
+  {
+   "id": "25136",
+   "parent": null,
+   "kind": "comment",
+   "author": "RZJ",
+   "author_url": null,
+   "date": "2015-07-04T03:01:25+00:00",
+   "html": "<p>Wow. Just what I was looking for! Great article. I learnt a lot. It has really spiked my interest to try my hand at a chess engine.</p>",
+   "depth": 0
+  },
+  {
+   "id": "27301",
+   "parent": null,
+   "kind": "comment",
+   "author": "Gaurav Gupta",
+   "author_url": null,
+   "date": "2015-08-03T01:30:51+00:00",
+   "html": "<p>Loved the analysis. Have few questions?. Where can I place them?</p>",
+   "depth": 0
+  }
+ ]
+}

@@ -4,6 +4,14 @@ date: "2013-07-10"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - perl
+  - programming-language-basics
+  - scripting
+format: notes
+topics:
+  - "Programming & tools"
 ---
 
 Before today, the most Perl I’d written/read was dinky one-liners.

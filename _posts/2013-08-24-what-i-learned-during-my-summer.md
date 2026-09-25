@@ -3,6 +3,17 @@ title: "What I Learned During My Summer Internship at Cloudera"
 date: "2013-08-24"
 categories: 
   - "explanation"
+genre: prose
+tags:
+  - internship
+  - cloudera
+  - apache-hadoop
+  - apache-flume
+  - apache-impala
+format: personal
+topics:
+  - "Algebra & representation theory"
+  - "Life, study & work"
 ---
 
 The purpose of this post is to link you to a post I wrote for Cloudera's blog:  [What I Learned During My Summer Internship at Cloudera](https://web.archive.org/web/20130826025116/http://blog.cloudera.com/blog/2013/08/what-i-learned-during-my-summer-internship-at-cloudera/)

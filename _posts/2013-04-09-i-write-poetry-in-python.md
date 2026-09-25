@@ -4,6 +4,16 @@ date: "2013-04-09"
 categories: 
   - "python"
   - "writing"
+genre: art
+tags:
+  - songwriting
+  - song-lyrics
+  - humor
+  - programmer-culture
+format: poetry
+topics:
+  - "Programming & tools"
+  - "Music"
 ---
 
 I enjoy songwriting. Here are the lyrics to a silly, fun song I wrote a couple of months ago.

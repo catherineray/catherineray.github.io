@@ -4,6 +4,16 @@ date: "2013-07-29"
 categories: 
   - "code"
   - "linux"
+genre: science
+tags:
+  - bash
+  - git
+  - github
+  - shell-scripting
+  - linux
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 I’ve recently decided that I should put some of my projects on GitHub.

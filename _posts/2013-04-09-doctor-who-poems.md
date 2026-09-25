@@ -3,6 +3,14 @@ title: "Doctor Who Poems"
 date: "2013-04-09"
 categories: 
   - "writing"
+genre: art
+tags:
+  - poetry
+  - doctor-who
+  - fan-poetry
+format: poetry
+topics:
+  - "Writing & theater"
 ---
 
 I was writing a letter to my grandma. In the letter, I included a poem. My Uncle asked if I would send him more poems.

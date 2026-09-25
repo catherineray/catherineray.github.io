@@ -3,6 +3,16 @@ title: "A Short Post on a Problem of Euler"
 date: "2015-09-13"
 categories: 
   - "math"
+genre: math
+tags:
+  - continued-fractions
+  - diophantine-approximation
+  - pell-equation
+  - number-theory
+  - history-of-mathematics
+format: explanation
+topics:
+  - "Number theory"
 ---
 
 I came across a free book giveaway with everything from Maugham’s tropical works to various Russian math titles which I couldn’t read.

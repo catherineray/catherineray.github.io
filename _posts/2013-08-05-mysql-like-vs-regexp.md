@@ -4,6 +4,15 @@ date: "2013-08-05"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - mysql
+  - sql
+  - regular-expressions
+  - query-performance
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Using LIKE in a query is an order of magnitude faster than using REGEXP. The downside is that LIKE doesn't offer the control and generality that REGEXP does.

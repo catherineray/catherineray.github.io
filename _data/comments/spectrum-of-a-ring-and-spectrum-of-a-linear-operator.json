@@ -1,0 +1,25 @@
+{
+ "source": "https://web.archive.org/web/20160629150545/http://rin.io/spectrum-of-a-ring-and-spectrum-of-a-linear-operator/",
+ "comments": [
+  {
+   "id": "35874",
+   "parent": null,
+   "kind": "comment",
+   "author": "Callan",
+   "author_url": null,
+   "date": "2016-02-14T12:23:40+00:00",
+   "html": "<p>Nice post. One thing that is probably known but may not be (that I learnt from here: <a href=\"https://golem.ph.utexas.edu/category/2015/09/where_does_the_spectrum_come_f.html\">https://golem.ph.utexas.edu/category/2015/09/where_does_the_spectrum_come_f.html</a> )<br/>\nis that if you allow nilpotents (which after all is one of the things schemes capture that varieties don’t) this then makes sense of the spectrum of a linear operator with mulitplicity, namely:<br/>\nSpec_mult A \\iso spec C[x]/ \\chi_A(X)<br/>\nwhere \\chi_A(X) denotes the characteristic polynomial (dually this explains what information the characteristic polynomial captures, though this is known from analysis of jordan normal form).</p>",
+   "depth": 0
+  },
+  {
+   "id": "36977",
+   "parent": null,
+   "kind": "comment",
+   "author": "Allen Knutson",
+   "author_url": null,
+   "date": "2016-04-23T05:14:27+00:00",
+   "html": "<p>Okay, but why “spectrum”? Because the scheme Spec C[x]/(char poly of T) is (supported on) the set of eigenvalues, and for the right Ts coming from quantum mechanics, these are the energy levels of atoms, e.g. Rydberg lines. So Spec R is the colors that R emits, if you’ll believe that.</p>",
+   "depth": 0
+  }
+ ]
+}

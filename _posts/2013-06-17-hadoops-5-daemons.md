@@ -4,6 +4,16 @@ date: "2013-06-17"
 categories: 
   - "art"
   - "explanation"
+genre: science
+tags:
+  - apache-hadoop
+  - hdfs
+  - mapreduce
+  - distributed-computing
+  - illustration
+format: explanation
+topics:
+  - "Drawing, painting & comics"
 ---
 
 At work the other day, I was reading about Hadoop’s 5 daemons. The information wasn’t quite clicking, so I drew a picture to cement the concepts into my mind. (I’ve checked that all information regarding Hadoop in this blogpost is publicly available.)

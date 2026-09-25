@@ -4,6 +4,17 @@ date: "2014-03-26"
 categories: 
   - "explanation"
   - "research-projects"
+genre: science
+tags:
+  - celiac-disease
+  - gluten-detection
+  - gliadin
+  - immunoassay
+  - raman-spectroscopy
+  - biosensors
+format: explanation
+topics:
+  - "Biology & medicine"
 ---
 
 A lesson that every scientist (or any person in a fast-paced creative field) learns: **be glad when we find out that our research idea has already been done**.
@@ -27,9 +38,9 @@ The scanner **allows those with food allergies to avoid accidentally poisoning t
 - Identify the minima and maxima on the absorption spectrum of a given protein (currently gluten) with a 1D array of IR / Vis lasers and an Avalanche photodiode Si(c).
 - Perform differential data analysis to determine if the food is contaminated.
 
-This scanner would be able to analyse the food ~>1cm in depth without effecting the food, whereas (if desired) taking a small sample out of the food at an opportune sampling point allows for deeper results.
+This scanner would be able to analyze the food ~>1cm in depth without effecting the food, whereas (if desired) taking a small sample out of the food at an opportune sampling point allows for deeper results.
 
-Originally planning on taking spectroscopic approach, I found that it was _incredibly noisy_ (see below) to detect gluten in a vinegar solution [gluten is insoluble in water], let alone amongst protein rich food!
+Originally planning on taking spectroscopic approach, I found that it was _incredibly noisy_ (see below) to detect gluten in a vinegar solution [gluten is insoluble in water], let alone among protein rich food!
 
 [![](/wp-content/uploads/2014/03/20140315_090810.jpg)](/wp-content/uploads/2014/03/20140315_090810.jpg)
 

@@ -3,6 +3,16 @@ title: "Umbral Calculus Derivation of the Bernoulli numbers"
 date: "2016-12-28"
 categories: 
   - "math"
+genre: math
+tags:
+  - bernoulli-numbers
+  - umbral-calculus
+  - combinatorics
+  - number-theory
+format: explanation
+topics:
+  - "Number theory"
+  - "Combinatorics & puzzles"
 ---
 
 \\(“(B-1)^n = B^n”\\)

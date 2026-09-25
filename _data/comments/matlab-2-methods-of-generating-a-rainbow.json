@@ -1,0 +1,25 @@
+{
+ "source": "https://web.archive.org/web/20200218115601/http://rin.io:80/matlab-2-methods-of-generating-a-rainbow/",
+ "comments": [
+  {
+   "id": "6",
+   "parent": null,
+   "kind": "comment",
+   "author": "David Morris",
+   "author_url": "http://www.blogger.com/profile/08486312353895449814",
+   "date": "2013-04-21T17:21:08+00:00",
+   "html": "<p>But can’t you do it by multiplying each color by a stochastic matrix to get the next one?</p>",
+   "depth": 0
+  },
+  {
+   "id": "38911",
+   "parent": null,
+   "kind": "comment",
+   "author": "Yi",
+   "author_url": null,
+   "date": "2016-12-30T16:52:24+00:00",
+   "html": "<p>This is amazing work!<br/>\nI’m wondering if the author could also consider the purple color?<br/>\nThanks</p>",
+   "depth": 0
+  }
+ ]
+}

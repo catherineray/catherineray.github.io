@@ -3,6 +3,17 @@ title: "Group Contractions for Elliptic Curves"
 date: "2015-07-18"
 categories: 
   - "math"
+genre: math
+tags:
+  - elliptic-curves
+  - lie-group-contractions
+  - formal-group-height
+  - moduli-of-elliptic-curves
+  - lie-algebras
+format: notes
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
 ---
 
 When you construct a particular sheaf over an elliptic curve and then continuously vary the elliptic curve, what happens to the sheaf? I’m not sure, so I am first trying to understand what group contractions mean for elliptic curves.
@@ -17,7 +28,7 @@ Now, as \(t \to 0\), the above Lie algebras are, for each t, the Lie algebras of
 
 There’s the usual moduli stack of elliptic curves, and then we have the “compactified” one, and where we add points that are not actually represented by elliptic curve but are “degenerate limit cases.”
 
-Over C all of this is easy to see: elliptic curves are given by \(C/\Gamma\), where \(\Gamma\) is a lattice. The lattice is spanned by vectors v, w. Assume you make w longer and longer, the limit can be sensibly interpreted as \(C/v\) (which is an infinitely long cylinder: if you increase one of the two radii of a torus towards infinity, you get just an infinitely long tube).
+Over C all of this is easy to see: elliptic curves are given by \(C/\Gamma\), where \(\Gamma\) is a lattice. The lattice is spanned by vectors v, w. Assume you make w longer and longer, the limit can be sensibly interpreted as \(C/v\) (which is an infinitely long cylinder: if you increase one of the two radii of a torus toward infinity, you get just an infinitely long tube).
 
 But what is \(C/v\)? WLOG we can assume \(v=2\pi i\) (or any other value). Now \(\exp: C \to C\) sends \(z+v\) to the same thing as z and takes image in \(C\){0}, so it induces a map \(C/v \to C\){0}. That map is a bijection. The corresponding group structure on \(C\){0} is just multiplication. Similarly, we can send both v and w to infinity and get back the additive formal group.
 

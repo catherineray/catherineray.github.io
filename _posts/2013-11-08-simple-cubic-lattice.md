@@ -6,6 +6,18 @@ categories:
   - "explanation"
   - "physics"
   - "python"
+genre: science
+tags:
+  - code
+  - python
+  - vpython
+  - crystal-lattices
+  - computational-physics
+  - 3d-visualization
+format: tutorial
+topics:
+  - "Physics"
+  - "Programming & tools"
 ---
 
 Today, let’s have some fun playing with perspective rendering in Python! My graphics package of choice is VPython:
@@ -47,3 +59,5 @@ Same number of atoms with smaller radii? Alter the value of R.
 <table cellpadding="0" cellspacing="0" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/11/Screenshot-from-2013-11-07-19-53-35.png" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/11/Screenshot-from-2013-11-07-19-53-35.png" height="317" width="320"></a></td></tr><tr><td style="text-align: center;"><code>R = 0.2</code></td></tr></tbody></table>
 
 [Want more advanced computational physics with Python?](http://www-personal.umich.edu/~mejn/computational-physics/)
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/cubiclattice.py">cow-code / cubiclattice.py</a></p>

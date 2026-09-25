@@ -3,6 +3,16 @@ title: "Visual Grade 2 Braille Dictionary Introduction"
 date: "2013-10-13"
 categories: 
   - "braille"
+genre: science
+tags:
+  - braille
+  - contracted-braille
+  - accessibility
+  - mnemonics
+format: announcement
+topics:
+  - "Braille & accessibility"
+  - "Life, study & work"
 ---
 
 I learned braille for 3 reasons. The first is my hobby of picking something random and learning it. The second is because I wanted to learn touch typing. The third is because I often fell asleep while reading and left the light on. This way, I can read myself to sleep without a light on!

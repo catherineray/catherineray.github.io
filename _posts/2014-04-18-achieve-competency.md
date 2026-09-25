@@ -4,6 +4,15 @@ date: "2014-04-18"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - self-directed-learning
+  - interdisciplinary-learning
+  - learning-strategies
+  - polymathy
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 _tl;dr In order to build your knowledge base, start with a question you want answered and work back from it._
@@ -20,7 +29,7 @@ Fostering your competency in many fields \(\rightarrow\) wide-spread aesthetic a
 
 **Complement mere competency** by studying a few select topics in enough depth to appreciate their deeper beauty and underlying simplicity.
 
-**How, you might ask, do you achieve competency in many disciplines?** **Would you like to learn [physics||maths||…], but have no idea where to start?**
+**How, you might ask, do you achieve competency in many disciplines?** **Would you like to learn [physics||math||…], but have no idea where to start?**
 
 ## 0. Start with a question that you want answered and work back from it.
 

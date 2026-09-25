@@ -3,6 +3,17 @@ title: "Spf (E*[[x]]): Your walk through a flower garden"
 date: "2015-05-27"
 categories: 
   - "writing"
+genre: math
+tags:
+  - elliptic-curves
+  - formal-groups
+  - algebraic-geometry
+  - mathematical-exposition
+  - illustration
+format: explanation
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
 ---
 
 Inspired by the [extraordinary expository style](http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf) of Dr. Kazuya Kato, I’ve started reading parts of a (translated) [Japanese children’s book](http://www.cyberspace.org/~n8rxs/chapt8.htm) when I’m stuck on a tough paper or concept — revisiting the concept with such a dreamlike world in mind usually unfolds an illustrative perspective. A misty world which begs to be put into firm ground via prolonged formal and concrete afterthought.

@@ -1,0 +1,227 @@
+---
+layout: page
+---
+{% comment %}
+  Shared layout for the Portfolio (/portfolio/, selected work) and the Art page (/art/, everything).
+  Change the look here and both pages follow. Each page only lists its work in its front matter:
+    intro, other_link {label, url}, gallery_selected, gallery_video,
+    comics, writing (items: slug, kind, image?, blurb?, lines?, title?, watch?),
+    music: { albums: [{ slug|url, title?, note?, tracks }], lyrics, adult: { tracks, lyrics } },
+    plates (Math, drawn), posts_link.
+  A section only appears when the page has data for it.
+{% endcomment %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
+<style>
+  /* this page only: give the work the full width next to the rail */
+  .site-main #main.container { max-width: 1500px; }
+  .portfolio { --lilac: #d5c2ef; --pink: #ec3f9e; --ink: #1b1b1b; --ink-soft: #4a3a63; --yellow: #fbe919; --paper: #ffffff; --cream: #faf3c8; }
+  .portfolio a { color: var(--ink); text-decoration-color: #006358; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .portfolio p a, .portfolio .small a, .portfolio .piece-blurb a { color: #006358; }
+  .top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin: 0 0 14px; }
+  .portfolio .intro { margin: 0; }
+
+  /* section jump links (undoing the old site-wide nav rules) */
+  .jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; float: none; font-size: inherit; }
+  .jump a { margin: 0; font: 700 13px 'Space Mono', monospace; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; padding: 0 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); }
+  .jump a:hover { background: var(--yellow); }
+
+  /* section heads */
+  .sec-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; margin: 44px 0 14px; }
+  .sec-head h2 { font-family: 'Archivo Black', 'Helvetica Neue', Impact, sans-serif; font-size: 1.6rem; margin: 0; }
+  .portfolio .all { flex: none; font: 700 14px 'Space Mono', monospace; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; background: var(--yellow); border: 2px solid var(--ink); border-radius: 999px; padding: 6px 14px; }
+  .portfolio .all:hover { background: var(--paper); }
+  .portfolio .sec-head:first-of-type { margin-top: 0; }
+
+  /* tiles */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 18px; }
+  .tile, .piece { position: relative; display: flex; flex-direction: column; min-width: 0; background: var(--paper); border: 3px solid var(--ink); border-radius: 12px; overflow: hidden; color: var(--ink); text-decoration: none; box-shadow: 5px 5px 0 var(--ink); transition: transform .12s, box-shadow .12s; }
+  a.tile:hover, a.piece:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--pink); }
+  .tile-img { display: block; width: 100%; height: 170px; object-fit: cover; margin: 0; border-bottom: 3px solid var(--ink); background: var(--lilac); }
+  /* image on the left, words on the right (the play) */
+  .tile.side { flex-direction: row; grid-column: span 2; }
+  .tile.side .tile-img { flex: none; width: 45%; max-width: 220px; height: auto; aspect-ratio: 3 / 4; align-self: flex-start; border-bottom: 0; border-right: 3px solid var(--ink); }
+  .tile.side .tile-body { padding: 14px 16px; }
+  @media (max-width: 560px) { .tile.side { grid-column: auto; } }
+  .tile-body { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; padding: 12px 14px 14px; flex: 1; }
+  .tile .name { font-family: 'Archivo Black', Impact, sans-serif; font-size: 1.15rem; line-height: 1.2; text-decoration: none; }
+  .tile .small { font-size: .85rem; line-height: 1.45; color: var(--ink-soft); margin: 0; }
+  .tile .ext { margin-top: auto; padding-top: 4px; font: 700 13px 'Space Mono', monospace; text-transform: uppercase; }
+  .portfolio .stamp { display: inline-block; font: 700 12px 'Space Mono', monospace; letter-spacing: .12em; text-transform: uppercase; background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); border-radius: 999px; padding: 1px 9px; }
+
+  /* poem / lyrics cards (made by lyric-card.html) */
+  .piece { gap: .7rem; padding: 14px 16px 12px; }
+  .piece .stamp { align-self: flex-start; }
+  .piece .verse { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; font-style: italic; font-size: 1.05rem; line-height: 1.45; flex: 1; }
+  .piece .piece-blurb { font-size: .85rem; color: var(--ink-soft); }
+  .piece-foot { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-top: 2px solid var(--ink); padding-top: .5rem; margin-top: auto; }
+  .piece-foot .piece-title { font-weight: 700; }
+  .piece time { font: 14px 'Space Mono', monospace; color: var(--ink-soft); }
+
+  /* the songs tile: a compact player */
+  .tile.songs { grid-column: span 2; }
+  @media (max-width: 560px) { .tile.songs { grid-column: auto; } }
+  .songs .tile-body { flex: none; padding-bottom: 6px; }
+  .songs .tracklist { flex: 1; }
+  .songs .track { padding: 8px 14px 12px; grid-template-columns: 30px 1rem 1fr auto; gap: 10px; }
+  .songs .track .play { width: 30px; height: 30px; }
+  .songs .t-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .songs .t-bar { left: 14px; right: 14px; bottom: 4px; }
+
+  /* the 18+ switch */
+  .adult { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 22px; padding-top: 16px; border-top: 2px dashed var(--ink-soft); }
+  .adult-toggle { display: inline-flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 16px 0 8px; font: 700 15px 'Space Mono', monospace; letter-spacing: .08em; color: var(--ink); background: var(--paper); border: 2px solid var(--ink); border-radius: 999px; cursor: pointer; }
+  .adult-toggle:hover { background: var(--yellow); }
+  .adult-toggle .switch { position: relative; width: 38px; height: 22px; border-radius: 999px; background: var(--lilac); border: 2px solid var(--ink); transition: background .15s; }
+  .adult-toggle .switch::after { content: ''; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--ink); transition: transform .15s; }
+  .adult-toggle[aria-expanded="true"] { background: var(--ink); color: var(--cream); }
+  .adult-toggle[aria-expanded="true"] .switch { background: var(--pink); }
+  .adult-toggle[aria-expanded="true"] .switch::after { transform: translateX(16px); background: var(--paper); }
+  .adult-hint { font: 14px 'Space Mono', monospace; color: var(--ink-soft); }
+  .adult-body { width: 100%; margin-top: 6px; }
+  .adult-body[hidden] { display: none; }
+  @media (prefers-reduced-motion: reduce) { .tile, .piece, .adult-toggle .switch, .adult-toggle .switch::after { transition: none; } }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  #comics { scroll-margin-top: 16px; }
+  /* Math, drawn */
+  .portfolio .kicker { font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 1.2rem; }
+  .plates { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; list-style: none; padding: 0; margin: 0; }
+  .plate { margin: 0; border: 3px solid var(--ink); border-radius: 12px; background: var(--paper); overflow: hidden; box-shadow: 5px 5px 0 var(--ink); }
+  .plate a { display: block; text-decoration: none; color: var(--ink); }
+  .plate img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin: 0; border-bottom: 3px solid var(--ink); background: var(--lilac); }
+  .plate figcaption { padding: .8rem 1rem 1rem; }
+  .plate .plate-title { font-weight: 700; display: block; margin-bottom: .3rem; }
+  .plate .plate-idea { font-size: .85rem; line-height: 1.5; color: var(--ink-soft); }
+  .plate a:hover .plate-title { background: var(--yellow); }
+  /* album heading inside a songs tile */
+  .songs .album-name { font-family: 'Archivo Black', Impact, sans-serif; font-size: 1.05rem; line-height: 1.2; text-decoration: none; }
+  /* buttons on a feature tile (from the post's card_links) */
+  .tile-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+  .tile-btn { display: inline-block; padding: 6px 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--yellow); color: var(--ink); font: 700 13px 'Space Mono', monospace; text-decoration: none; }
+  .tile-btn.alt { background: var(--paper); }
+  .tile-btn:hover { background: #6cc8f0; }
+  /* the corner button (See everything / Selected work): bigger */
+  .top .all { font-size: 17px; padding: 12px 22px; border-width: 3px; box-shadow: 4px 4px 0 var(--ink); }
+  .top .all:hover { background: #6cc8f0; }
+  /* the corner button stays top-right on both pages, however long the intro is */
+  .top { flex-wrap: nowrap; align-items: flex-start; }
+  .top .intro { flex: 1 1 auto; min-width: 0; max-width: 62ch; }
+  .top .all { flex: none; margin-left: auto; }
+  @media (max-width: 620px) { .top { flex-wrap: wrap; } .top .all { margin-left: 0; } }
+  /* section titles drawn like the About page: white letters, ink outline, colored offset (kept upright so they stay sharp) */
+  .sec-head .gh {
+    position: relative; display: inline-block; margin: 0;
+    font-family: 'Archivo Black', 'Helvetica Neue', Impact, sans-serif; font-size: clamp(1.5rem, 5vw, 2.3rem); line-height: 1; letter-spacing: -.01em;
+    color: #ffffff; -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill;
+    isolation: isolate; -webkit-font-smoothing: antialiased; /* no tilt: rotated text renders blurry */
+  }
+  .sec-head .gh::before {
+    content: attr(data-text); position: absolute; left: 0; top: 0; width: 100%;
+    transform: translate(5px, 5px); z-index: -1;
+    color: var(--shadow); -webkit-text-stroke: 3px var(--shadow); paint-order: stroke fill; white-space: nowrap;
+  }
+  .sec-head { margin-top: 56px; }
+  /* bigger comic and writing cards */
+  .comic-cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 560px), 1fr)) !important; }
+  .comic-panels { max-width: 320px !important; }
+  .comic-title { font-size: 1.7rem !important; }
+  .comic-note { font-size: 17px !important; }
+  .comic-credit { font-size: 15px !important; }
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 22px; }
+  .tile.side .tile-img { max-width: 320px; }
+  .tile .name { font-size: 1.55rem; }
+  .tile .small { font-size: 1rem; }
+  .piece { padding: 18px 20px 14px; }
+  .piece .verse { font-size: 1.25rem; }
+  .piece-foot .piece-title { font-size: 1.05rem; }
+</style>
+
+<div class="portfolio">
+
+<div class="top">
+  <p class="intro">{{ page.intro }}</p>
+  {% if page.other_link %}<a class="all" href="{{ site.baseurl }}{{ page.other_link.url }}">{{ page.other_link.label }}</a>{% endif %}
+</div>
+
+<div class="sec-head"><h2 id="gallery" class="gh" data-text="GALLERY" style="--shadow: #ec3f9e; --tilt: -2deg;">GALLERY</h2></div>
+{% if page.gallery_selected %}{% include gallery-wall.html video=page.gallery_video selected=true hide=page.gallery_hide %}{% else %}{% include gallery-wall.html video=page.gallery_video %}{% endif %}
+
+{% if page.comics %}
+<div class="sec-head"><h2 id="comics" class="gh" data-text="COMICS" style="--shadow: #6cc8f0; --tilt: 1.5deg;">COMICS</h2></div>
+{% include comic-cards.html comics=page.comics %}
+{% endif %}
+
+{% if page.writing %}
+<div class="sec-head"><h2 id="writing" class="gh" data-text="WRITING" style="--shadow: #f9a13c; --tilt: -1.5deg;">WRITING</h2></div>
+<div class="tiles">
+  {% for w in page.writing %}{% assign wp = site.posts | where: "slug", w.slug | first %}{% if wp %}
+    {% if w.image %}
+    <div class="tile side">
+      <img class="tile-img" src="{{ site.baseurl }}{{ w.image }}" alt="" loading="lazy">
+      <div class="tile-body">
+        <span class="stamp">{{ w.kind }}</span>
+        <a class="name" href="{{ site.baseurl }}{{ wp.url }}">{{ w.title | default: wp.title }}</a>
+        {% if w.blurb %}<p class="small">{{ w.blurb | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>{% endif %}
+        {% if wp.card_links %}<span class="tile-actions">{% for l in wp.card_links %}{% if l.url == "post" %}<a class="tile-btn" href="{{ site.baseurl }}{{ wp.url }}">{{ l.label }}</a>{% else %}<a class="tile-btn alt" href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}</span>
+        {% elsif w.watch %}<a class="ext" href="{{ w.watch }}">Watch it performed ↗</a>{% endif %}
+      </div>
+    </div>
+    {% else %}{% include lyric-card.html song=w stamp=w.kind %}{% endif %}
+  {% endif %}{% endfor %}
+</div>
+{% endif %}
+
+{% if page.music %}
+<div class="sec-head"><h2 id="music" class="gh" data-text="MUSIC" style="--shadow: #9b7fd4; --tilt: 2deg;">MUSIC</h2></div>
+<div class="tiles">
+  {% for a in page.music.albums %}
+  {% assign ap = nil %}{% if a.slug %}{% assign ap = site.posts | where: "slug", a.slug | first %}{% endif %}
+  <div class="tile songs">
+    <div class="tile-body"><span class="stamp">Songs</span>
+      {% if a.title %}{% if ap %}<a class="album-name" href="{{ site.baseurl }}{{ ap.url }}">{{ a.title }}</a>{% elsif a.url %}<a class="album-name" href="{{ a.url }}">{{ a.title }}</a>{% else %}<span class="album-name">{{ a.title }}</span>{% endif %}{% endif %}
+      {% if a.note %}<p class="small">{{ a.note }}</p>{% endif %}
+    </div>
+    {% include tracklist.html tracks=a.tracks %}
+  </div>
+  {% endfor %}
+  {% for m in page.music.lyrics %}{% include lyric-card.html song=m %}{% endfor %}
+</div>
+{% assign adult = page.music.adult %}
+{% if adult %}
+<section class="adult">
+  <button class="adult-toggle" type="button" aria-expanded="false" aria-controls="adult-body">
+    <span class="switch" aria-hidden="true"></span><span>18+</span>
+  </button>
+  <span class="adult-hint">Explicit songs and lyrics. Off by default.</span>
+  <div id="adult-body" class="adult-body" hidden>
+    <div class="tiles">
+      {% if adult.tracks.size > 0 %}<div class="tile songs"><div class="tile-body"><span class="stamp">18+ songs</span></div>{% include tracklist.html tracks=adult.tracks %}</div>{% endif %}
+      {% for m in adult.lyrics %}{% include lyric-card.html song=m %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endif %}
+
+{% if page.plates %}
+<div class="sec-head"><h2 id="math-drawn" class="gh" data-text="MATH, DRAWN" style="--shadow: #fbe919; --tilt: -2deg;">MATH, DRAWN</h2></div>
+<p class="kicker">Mathematics explained through illustration</p>
+<ul class="plates">
+{% for plate in page.plates %}{% assign pp = site.posts | where: "slug", plate.slug | first %}{% if pp %}
+  <li><figure class="plate"><a href="{{ site.baseurl }}{{ pp.url }}"><img src="{{ site.baseurl }}{{ plate.image }}" alt="" loading="lazy"><figcaption><span class="plate-title">{{ pp.title }}</span><span class="plate-idea">{{ plate.idea }}</span></figcaption></a></figure></li>
+{% endif %}{% endfor %}
+</ul>
+{% endif %}
+
+{% if page.posts_link %}
+<div class="sec-head"><h2 id="posts" class="gh" data-text="ALL ART POSTS" style="--shadow: #f4a58a; --tilt: 1.5deg;">ALL ART POSTS</h2></div>
+<p>{{ page.posts_link.text }} <a href="{{ site.baseurl }}{{ page.posts_link.url }}">art posts &rarr;</a></p>
+{% endif %}
+
+{{ content }}
+</div>
+
+{% include track-player.html %}
+
+
+

@@ -4,6 +4,16 @@ date: "2013-12-31"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - higher-education
+  - productivity
+  - procrastination
+  - career-advice
+  - thiel-fellowship
+format: list
+topics:
+  - "Life, study & work"
 ---
 
 Some of these may seem obvious; keeping their importance in mind is not so obvious.
@@ -42,7 +52,7 @@ Keep these in mind; these simple rules changed my life for the better.
 
 Limiting yourself to the current ideas of one discipline makes original research unnecessarily difficult. I find original research is really just connecting past ideas into a new idea that is more than the sum of its parts.
 
-My friend Adam Munich wrote this lovely [post](https://web.archive.org/web/20140105065824/https://adammunich.com/specialization-ought-to-be-a-thing-of-the-past/) detailing the dangers of overspecializing. I highly recommend it!
+My friend Joule Munich wrote this lovely [post](https://web.archive.org/web/20140105065824/https://adammunich.com/specialization-ought-to-be-a-thing-of-the-past/) detailing the dangers of overspecializing. I highly recommend it!
 
 ### 7. Be aware that friendly curiosity occasionally comes off as interrogation.
 

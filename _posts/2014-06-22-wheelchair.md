@@ -3,6 +3,18 @@ title: "PRIIIME: Modular Powered Wheelchair"
 date: "2014-06-22"
 categories: 
   - "research-projects"
+genre: science
+tags:
+  - assistive-technology
+  - powered-wheelchairs
+  - mechanism-design
+  - autonomous-navigation
+  - pressure-ulcers
+  - open-hardware
+format: explanation
+topics:
+  - "Biology & medicine"
+  - "Braille & accessibility"
 ---
 
 #### Executive Summary
@@ -32,7 +44,7 @@ Based on modifications of existing mechanisms, [1] presents a creative design me
 
 #### Modular Design
 
-In recent years, powered wheelchairs with sophisticated control have become available. However, these are very expensive and beyond the reach of potential customers particularly in developing countries. To make powered wheelchair an affordable alternative, a modular design approach is highly desirable, wherein different modules are added to a manual wheelchair depending on the user’s requirement and affordability. [2] The first step towards a modular approach for developing wheelchairs is the identification of modules. These modules were identified by talking to various doctors dealing with different wheelchair users and the users themselves [2]. Following features, which can be incorporated in different modules, are listed in order of their significance:
+In recent years, powered wheelchairs with sophisticated control have become available. However, these are very expensive and beyond the reach of potential customers particularly in developing countries. To make powered wheelchair an affordable alternative, a modular design approach is highly desirable, wherein different modules are added to a manual wheelchair depending on the user’s requirement and affordability. [2] The first step toward a modular approach for developing wheelchairs is the identification of modules. These modules were identified by talking to various doctors dealing with different wheelchair users and the users themselves [2]. Following features, which can be incorporated in different modules, are listed in order of their significance:
 
 1. Self-controlled mobility by assisting it with automated transmission system, so that the user can enjoy increased independence.
 2. Seat elevation, so that the user can access the earlier unreachable environments and get over psychological hassles.
@@ -129,7 +141,7 @@ The stresses generated from the compression and deformation of the soft tissues 
 1. Normal stresses (those that act perpendicularly to the skin)
 2. Shear stresses (those that act parallel to the skin)
 
-Rather than lying directly on a hip, lie at an angle with cushions supporting the back or front. The seat cushion must have a forward slope to encourage more comfortable posture. A center groove eliminates direct pressure on the coccyx, whilst relieving pressure in the back and lower legs with lumbar and lower leg support. (Similar to [_GSeat MOBILITY Wheelchair Gel Cushion - Gseat Ultra_](http://www.amazon.com/GSeat-Ultra-Portable-Ergonomic-Cushion/dp/B000X2DOJE) by Gelco.)
+Rather than lying directly on a hip, lie at an angle with cushions supporting the back or front. The seat cushion must have a forward slope to encourage more comfortable posture. A center groove eliminates direct pressure on the coccyx, while relieving pressure in the back and lower legs with lumbar and lower leg support. (Similar to [_GSeat MOBILITY Wheelchair Gel Cushion - Gseat Ultra_](http://www.amazon.com/GSeat-Ultra-Portable-Ergonomic-Cushion/dp/B000X2DOJE) by Gelco.)
 
 #### Triple-phase Wheelchair Mechanism Design
 
@@ -177,7 +189,7 @@ Automated Hermetically-sealed Plastic Waste Containment design (deprecated) Afte
 
 #### Competitive Landscape Study
 
-**Standard Powered Wheelchair ~4K-8K Redman Power Chair** “Our new 2011 Chief 107-Zrx Black Hawk Edition, with many additional features not yet shown on the website, has a cash pre-paid price of **$29,995**. We also have a select few of last year’s demo models (the 107-Zrx) available at $22,500. Additionally, there are a few rebuilt units priced to sell at 20,500 with a twelve-month warranty included in the cost.” Specs: Maximum weight limit 250/350 lbs Seat height 17.5″ (to top of seat base front adjustable to 16.6″ rear – custom as low as 16″) Seat depth 18″ Back height 26″ (from seat base), adjustable 5″ Arm height adjusts from 7″ to 11″ from seat base to top of arm pad Adjustable leg length 13″ to 17″ Ground clearance 3″ Features 4-wheel suspension and uneven ground compensation Overall width 23″ Overall length 39.5″ Turning radius 26″ Driving range 15-20 miles Maximum speed 6.5 MPH standard (9 MPH option) Chair weight: 375 pounds (no accessories, unoccupied) Load capacity: 350 pounds (maximum, occupant and accessories) Total weight: 727 pounds (maximum; chair, occupant, and accessories) **Karma Ergo 115 20” [Manual]** The new’Ergo’ 115 is equipped with Karma’s unique S-Ergo shaped seating system, which redistributes pressure and helps to prevent the occupant sliding down the seat. The S-Ergo seat has been pressure mapped for the optimum shape. In addition to the seating system the wheelchair benefits from detachable anti-bacterial upholstery treated with Aegis microbe shield. The upholstery is available in; silver, black, red and green to enable the user to customise their wheelchair. The Ergo 115 also has swing away detachable footrest hangers. The new shaped armrests have been out rigged to reduce the overall width of the wheelchair. The streamlined oval tubes give the S-Ergo not only make the S-Ergo look great but also add to the strength of the wheelchair structure which is incredibly light. It is available in transit and self propel, in either 16″ x 17″, 18″ x 17″ and 20″ x 17″ seat widths. 519 pounds (**870$**) **Panasonic Bed**
+**Standard Powered Wheelchair ~4K-8K Redman Power Chair** “Our new 2011 Chief 107-Zrx Black Hawk Edition, with many additional features not yet shown on the website, has a cash pre-paid price of **$29,995**. We also have a select few of last year’s demo models (the 107-Zrx) available at $22,500. Additionally, there are a few rebuilt units priced to sell at 20,500 with a twelve-month warranty included in the cost.” Specs: Maximum weight limit 250/350 lbs Seat height 17.5″ (to top of seat base front adjustable to 16.6″ rear – custom as low as 16″) Seat depth 18″ Back height 26″ (from seat base), adjustable 5″ Arm height adjusts from 7″ to 11″ from seat base to top of arm pad Adjustable leg length 13″ to 17″ Ground clearance 3″ Features 4-wheel suspension and uneven ground compensation Overall width 23″ Overall length 39.5″ Turning radius 26″ Driving range 15-20 miles Maximum speed 6.5 MPH standard (9 MPH option) Chair weight: 375 pounds (no accessories, unoccupied) Load capacity: 350 pounds (maximum, occupant and accessories) Total weight: 727 pounds (maximum; chair, occupant, and accessories) **Karma Ergo 115 20” [Manual]** The new’Ergo’ 115 is equipped with Karma’s unique S-Ergo shaped seating system, which redistributes pressure and helps to prevent the occupant sliding down the seat. The S-Ergo seat has been pressure mapped for the optimum shape. In addition to the seating system the wheelchair benefits from detachable anti-bacterial upholstery treated with Aegis microbe shield. The upholstery is available in; silver, black, red and green to enable the user to customize their wheelchair. The Ergo 115 also has swing away detachable footrest hangers. The new shaped armrests have been out rigged to reduce the overall width of the wheelchair. The streamlined oval tubes give the S-Ergo not only make the S-Ergo look great but also add to the strength of the wheelchair structure which is incredibly light. It is available in transit and self propel, in either 16″ x 17″, 18″ x 17″ and 20″ x 17″ seat widths. 519 pounds (**870$**) **Panasonic Bed**
 
 #### Research in Autonomous Navigation with Wheelchairs
 

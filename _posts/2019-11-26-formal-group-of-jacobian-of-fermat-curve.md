@@ -3,6 +3,18 @@ title: "Honda, Taira, On the Formal Structure of the Jacobian Variety of the Fer
 date: "2019-11-26"
 categories: 
   - "math"
+genre: math
+tags:
+  - fermat-curves
+  - jacobian-varieties
+  - formal-groups
+  - p-adic-integers
+  - formal-group-height
+format: paper
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
+  - "Number theory"
 ---
 
 This paper of Honda was very hard for me to track down. I found it in a retired library volume in a thrift store in England. It was not previously available digitally. Hopefully, this digital copy will make it easier for others to enjoy Honda’s incredible insight and understanding of how to create power series in one variable with high amounts of arithmetic information, and in general of higher height formal group laws.

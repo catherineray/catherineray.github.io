@@ -1,13 +1,22 @@
 ---
 title: "Respect Our Work."
 date: "2014-07-22"
+genre: prose
+tags:
+  - pure-mathematics
+  - pure-vs-applied-research
+  - math-advocacy
+  - higher-education
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 Already, criticism has be thrown at me for deciding to focus on pure mathematics. I am often told (with the best intentions) that I should go back to doing applied math/engineering. I’m guessing that other people who’ve decided to study theoretical subjects suffer from a similar lack of respect.
 
 Hopefully, this post will be helpful for you, my friends. Perhaps, to send to your families, engineers, etc. to save you time when you are sick of answering the same questions — laced with misunderstanding. Perhaps, to find consolation and recognize that you are not alone.
 
-**This post (admittedly written with the muses of frustration and maths evangelism) can be generalized to theoretical endeavors of any flavor.**
+**This post (admittedly written with the muses of frustration and math evangelism) can be generalized to theoretical endeavors of any flavor.**
 
 #### Why do you want to study theoretical science/math?
 
@@ -41,11 +50,11 @@ Here’s an exploration of [Which Mathematical Ideas Have Done The Most To Chang
 
 [Math provides you with powerful intuitions that can improve your daily life](http://www.quora.com/Academia/What-are-the-most-powerful-intuitions-in-your-field):
 
-0. Maths develops the logical mindset, assiduous and aesthetic values needed to implement regular concise conversation and clear explanation. It teaches us to not accept hand-wavey proofs, but to derive them ourselves from first principles.
+0. Math develops the logical mindset, assiduous and aesthetic values needed to implement regular concise conversation and clear explanation. It teaches us to not accept hand-wavey proofs, but to derive them ourselves from first principles.
 
-1. The ability to analyze a problem as a structure, work it out step by step and solve it generally translates between fields, allowing one trained in maths to easily move to other puzzle-based disciplines. For example, a maths person can transfer their skillset to computer programming by seeing code and programming languages as a collection of structures and rules governing their interactions.
+1. The ability to analyze a problem as a structure, work it out step by step and solve it generally translates between fields, allowing one trained in math to easily move to other puzzle-based disciplines. For example, a math person can transfer their skillset to computer programming by seeing code and programming languages as a collection of structures and rules governing their interactions.
 
-2. An understanding of maths allows us to appreciate our environment by observing patterns and connections between objects that we wouldn’t otherwise see. After studying a field such as Model Theory, you begin to see deep connections (across fields of study) in the abstractions of seemingly unrelated concepts. Limiting yourself to the current ideas of one discipline makes original research unnecessarily difficult. I find that most original research is really just connecting past ideas into a new idea that is more than the sum of its parts.
+2. An understanding of math allows us to appreciate our environment by observing patterns and connections between objects that we wouldn’t otherwise see. After studying a field such as Model Theory, you begin to see deep connections (across fields of study) in the abstractions of seemingly unrelated concepts. Limiting yourself to the current ideas of one discipline makes original research unnecessarily difficult. I find that most original research is really just connecting past ideas into a new idea that is more than the sum of its parts.
 
 3. Some visually oriented mathematicians overlay representations of abstract concepts on their environments as they go about daily life. This visual overlay of abstract stimuli increases the ability to appreciate things in their own right and builds visual intuition. However, overlaying mathematics on life differs significantly from making a mathematical model of your surroundings: the latter is far more concrete. Overlaying connections on stochastic stimuli is an enrichment to perception, whereas modeling stimuli is separate from it.
 

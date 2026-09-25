@@ -3,6 +3,16 @@ title: "An Informal Categorical Introduction to Lie’s Theorems"
 date: "2014-09-16"
 categories: 
   - "math"
+genre: math
+tags:
+  - lie-groups
+  - lie-algebras
+  - lie-theory
+  - equivalence-of-categories
+  - category-theory
+format: explanation
+topics:
+  - "Algebra & representation theory"
 ---
 
 _This quick post assumes basic knowledge of Lie algebras and category equivalence. I am new to category theory, and appreciative of constructive feedback._

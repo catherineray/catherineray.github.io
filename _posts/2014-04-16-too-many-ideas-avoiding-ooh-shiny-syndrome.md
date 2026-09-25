@@ -4,6 +4,16 @@ date: "2014-04-16"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - productivity
+  - creativity
+  - perfectionism
+  - note-taking
+  - deadlines
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 It is often the affliction of creative people that we have _**too many ideas**_ and think of time as our most precious resource.
@@ -43,6 +53,6 @@ These artificial deadlines allow you to feel like you’ve “finished” a proj
 
 Worry not, my friends. These 3 large changes may take time to become integrated into the busy lifestyle of an active creative.
 
-However, that hard work is worth it! I’ve found that implementing these 3 changes allows me to satisfy my obsessive drive to finish what I’ve started whilst laying the groundwork for my future projects.
+However, that hard work is worth it! I’ve found that implementing these 3 changes allows me to satisfy my obsessive drive to finish what I’ve started while laying the groundwork for my future projects.
 
 Hopefully, they will also help you!

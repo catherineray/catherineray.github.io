@@ -4,6 +4,17 @@ date: "2015-03-29"
 categories: 
   - "german"
   - "math"
+genre: math
+tags:
+  - formal-group-laws
+  - elliptic-curves
+  - formal-completion
+  - german-language
+  - lie-theory
+format: explanation
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
 ---
 
 _Ich lerne Deutsch. Bitte, vergizieh mir und meine Unwissenheit der deutschen Grammatik._ In der Studie von Gruppen mit topogischen Struktur, wir haben die globale Objekt (die Gruppe) mit eine lokalen Objekt (die infinitesimale Gruppe) ersetzen. Wir betrachten dieses Spiel folgt vor:

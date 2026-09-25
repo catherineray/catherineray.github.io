@@ -4,6 +4,19 @@ date: "2014-04-29"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - code
+  - javascript
+  - browser-devtools
+  - web-scraping
+  - csv
+  - vim
+  - spotify
+format: tutorial
+topics:
+  - "Programming & tools"
+  - "Music"
 ---
 
 I recently switched my music vendor from Google Music to Spotify. To [avoid manually searching for each song](https://xkcd.com/974/), I semi-automized the transition as follows.
@@ -36,3 +49,5 @@ Now you have a CSV file of arists, titles to do with what you wish. To proceed w
 **3. Copy/paste into [Ivy](https://www.tunemymusic.com/).**
 
 **4. Paste Ivy results** into desired playlist.
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/csv_playlist_google_music.js">cow-code / csv_playlist_google_music.js</a></p>

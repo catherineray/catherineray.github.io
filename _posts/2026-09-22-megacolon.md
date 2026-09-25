@@ -6,6 +6,17 @@ categories:
   - "medicine"
   - "veterinary medicine"
   - "bio"
+genre: science
+tags:
+  - feline-megacolon
+  - neostigmine
+  - prokinetic-agents
+  - veterinary-medicine
+  - obstipation
+  - acetylcholinesterase-inhibitors
+format: explanation
+topics:
+  - "Biology & medicine"
 ---
 
 *Owner documentation of a life saving treatment that worked for one nine-year-old cat with megacolon, written for owners who have been told euthanasia or surgery are the only sensible options and who may not know that another one exists.*
@@ -30,7 +41,7 @@ I am raising money to cover the exorbitant treatment costs involved in saving Ca
 |---|---|
 | **Diagnosis** | Dilated megacolon, recurrent obstipation |
 | **Complicating factor** | Spinal spondylosis, painful defecation |
-| **Surgery** | Ruled out — too unwell and too heavy for safe anaesthesia |
+| **Surgery** | Ruled out — too unwell and too heavy for safe anesthesia |
 | **Current regime** | Neostigmine as needed, daily lactulose, Solensia every 6 weeks |
 
 ---
@@ -53,7 +64,7 @@ That is the gap this document is trying to close, and it cuts both ways. A folkl
 
 > **For biologists and medicine workers:** Go looking for feline data on this and you find nothing. No pharmacokinetics, no efficacy trial, no safety series. Not a thin literature — an absent one.
 >
-> Everything supporting it comes from other species. In horses, neostigmine is the prokinetic most often reached for in large colon impaction.[^9] A CRI at 0.008 mg/kg/h raises faecal output and makes pelvic flexure smooth muscle contract in the organ bath.[^8] At 0.044 mg/kg IM it improves caecal and colonic contractility on ultrasound in Arabians — though those authors preferred metoclopramide, which they judged safer and longer-acting in that breed.[^9] Foals with meconium impaction get 0.005–0.01 mg/kg IM or SC.[^11] Humans get it for acute colonic pseudo-obstruction.[^12]
+> Everything supporting it comes from other species. In horses, neostigmine is the prokinetic most often reached for in large colon impaction.[^9] A CRI at 0.008 mg/kg/h raises fecal output and makes pelvic flexure smooth muscle contract in the organ bath.[^8] At 0.044 mg/kg IM it improves caecal and colonic contractility on ultrasound in Arabians — though those authors preferred metoclopramide, which they judged safer and longer-acting in that breed.[^9] Foals with meconium impaction get 0.005–0.01 mg/kg IM or SC.[^11] Humans get it for acute colonic pseudo-obstruction.[^12]
 >
 > The same literature contains the awkward finding too: give 0.022 mg/kg four times at half-hour intervals and gastric emptying *slows*.[^8] Whatever neostigmine does to the horse gut, it doesn't do it uniformly — useful distally, possibly counterproductive proximally.
 >
@@ -63,7 +74,7 @@ That is the gap this document is trying to close, and it cuts both ways. A folkl
 
 ## 02 · What megacolon actually is
 
-The colon is the last stretch of bowel. It draws water out of waste and pushes what is left towards the exit in waves of muscular contraction.
+The colon is the last stretch of bowel. It draws water out of waste and pushes what is left toward the exit in waves of muscular contraction.
 
 In megacolon the colon stretches wide and loses much of its ability to push.[^1] Waste sits there. The longer it sits, the more water is drawn out of it, and the harder it becomes. Harder waste is harder to move, so it sits longer still.
 
@@ -98,19 +109,19 @@ This is not merely a plausible story. In a radiographic study of 1,365 cats, tho
 
 In my entire acquaintance with Cake, he had never washed the back half of his body. His front half was immaculate. This was put down to his size — he was 11 kg when I adopted him, and was around 9 kg by the time the symptoms of megacolon began. Even a 9 kg cat may simply not be able to bend that far.
 
-He started grooming his back end again shortly after beginning pain relief every 6 weeks, **before he had lost any meaningful weight**. That timing is the whole argument. If bulk had been the obstacle, the behaviour would have returned gradually as the weight came off. It did not. It returned when the pain was treated.
+He started grooming his back end again shortly after beginning pain relief every 6 weeks, **before he had lost any meaningful weight**. That timing is the whole argument. If bulk had been the obstacle, the behavior would have returned gradually as the weight came off. It did not. It returned when the pain was treated.
 
 > **Worth checking on your own cat**
 >
-> A scruffy or matted coat over the lower back, dandruff you only see behind the ribs, or a dirty bottom on a cat who used to be fastidious. Grooming is one of four validated behavioural domains used to assess musculoskeletal pain in cats — alongside mobility, activity and temperament — and all four improve measurably after analgesia.[^6] It is easy for everyone in the room to attribute to age or weight. It is worth saying out loud at the appointment.
+> A scruffy or matted coat over the lower back, dandruff you only see behind the ribs, or a dirty bottom on a cat who used to be fastidious. Grooming is one of four validated behavioral domains used to assess musculoskeletal pain in cats — alongside mobility, activity and temperament — and all four improve measurably after analgesia.[^6] It is easy for everyone in the room to attribute to age or weight. It is worth saying out loud at the appointment.
 
-> **For biologists and medicine workers:** Spondylosis deformans is a ventral process sitting outside the vertebral canal — new bone laid down where the annulus fibrosus attaches, in response to disc degeneration. It isn't facet osteoarthrosis and it isn't degenerative lumbosacral stenosis, and it shouldn't be discussed as though it were. Absent imaging that shows foraminal encroachment, don't reach for a neurogenic explanation. What I'm proposing is behavioural avoidance.
+> **For biologists and medicine workers:** Spondylosis deformans is a ventral process sitting outside the vertebral canal — new bone laid down where the annulus fibrosus attaches, in response to disc degeneration. It isn't facet osteoarthrosis and it isn't degenerative lumbosacral stenosis, and it shouldn't be discussed as though it were. Absent imaging that shows foraminal encroachment, don't reach for a neurogenic explanation. What I'm proposing is behavioral avoidance.
 >
 > The finding turns up incidentally in older cats often enough[^19] that seeing it on a film proves nothing by itself. You have to build the case. There are two ways in.
 >
 > Population level: across 1,365 cats, acquired lumbosacral abnormalities carried an odds ratio of 4.11 for distal GI dysfunction.[^5] That is not a subtle effect.
 >
-> Patient level: run a therapeutic trial against a behaviour that pain specifically limits, and caudal grooming is close to ideal for the purpose. It requires flexion and rotation, so it's mechanically specific. Cranial grooming survives in a cat who is merely sore rather than systemically ill, which hands you an internal control. And it's a validated pain domain that responds to analgesia in cats with musculoskeletal disease.[^6] Here it returned when the anti-NGF started, not as the weight came off.
+> Patient level: run a therapeutic trial against a behavior that pain specifically limits, and caudal grooming is close to ideal for the purpose. It requires flexion and rotation, so it's mechanically specific. Cranial grooming survives in a cat who is merely sore rather than systemically ill, which hands you an internal control. And it's a validated pain domain that responds to analgesia in cats with musculoskeletal disease.[^6] Here it returned when the anti-NGF started, not as the weight came off.
 >
 > The obvious objection is that all of this is unblinded and owner-reported, and caregiver placebo effect in veterinary analgesia is real and well documented. It's worth noting that in Bennett and Morton's cohort the veterinary surgeons' scores fell significantly as well as the owners'.[^6] That helps. It doesn't settle it. Supporting evidence, not proof.
 
@@ -126,9 +137,9 @@ This is a common and instructive failure. If your cat has an enema and still see
 
 > **For biologists and medicine workers:** Whatever you infuse ends up in the descending colon and rectum. If the dehydrated mass is sitting in an ascending or transverse colon that has dilated to accommodate it, a conventional enema never gets near — and the stool that does come out reads as success to everyone in the room, which is the part that costs you time. I should be clear that this is me reasoning from where the fluid goes rather than citing a measured endpoint. I haven't found anyone who has quantified it.
 
-### Stage 2 — worked, did not hold · Full manual deobstipation under anaesthetic
+### Stage 2 — worked, did not hold · Full manual deobstipation under anesthetic
 
-The vet emptied the entire colon by hand under general anaesthetic. At the same time she confirmed that nothing was physically blocking the way — no narrowed pelvis, no growth, nothing swallowed.
+The vet emptied the entire colon by hand under general anesthetic. At the same time she confirmed that nothing was physically blocking the way — no narrowed pelvis, no growth, nothing swallowed.
 
 That check turns out to be the single most important event in this whole account, for reasons that become clear in section 05.
 
@@ -144,7 +155,7 @@ The blockage rebuilt anyway. This is the pivotal observation: his colon had been
 
 ### Stage 4 — unavailable · Subtotal colectomy
 
-Where megacolon keeps recurring, the definitive treatment is an operation removing most of the colon. Cats generally do well afterwards — 72.2% favourable outcomes in the 2022 cohort,[^4] and a high rate of owner satisfaction across 18 hospitals in a 2021 series[^24] — and if it is genuinely available to your cat it is usually the better long-term answer.[^1][^16]
+Where megacolon keeps recurring, the definitive treatment is an operation removing most of the colon. Cats generally do well afterwards — 72.2% favorable outcomes in the 2022 cohort,[^4] and a high rate of owner satisfaction across 18 hospitals in a 2021 series[^24] — and if it is genuinely available to your cat it is usually the better long-term answer.[^1][^16]
 
 It was not available to Cake. By the time the question was live he was both markedly obese at 9 kg and unwell from the obstipation itself, and the combination made a long abdominal surgery an unacceptable risk. This is worth being precise about, because "not a surgical candidate" covers two very different situations: a cat who is too well to need it yet, and a cat who has become too unwell to survive it. Cake was the second.
 
@@ -154,17 +165,17 @@ There is a bitter logic in that which is worth naming. The disease that makes su
 
 For most of this document the non-surgical route reads as a consolation prize, and I want to correct that, because it isn't only one.
 
-Subtotal colectomy is major abdominal surgery, and the recovery is not nothing. Soft stools and sometimes frank diarrhoea are expected for the first few months afterwards, stools become firmer with time but **rarely return fully to normal**, and some cats have occasional soft-stool leakage.[^25] Outcomes are good and most cats end up with an excellent quality of life[^24][^25] — I am not arguing against the operation. But a cat who never has it also never has the anaesthetic, never has the laparotomy, never has the months of loose stool, and never carries the small risk of the anastomosis failing.
+Subtotal colectomy is major abdominal surgery, and the recovery is not nothing. Soft stools and sometimes frank diarrhea are expected for the first few months afterwards, stools become firmer with time but **rarely return fully to normal**, and some cats have occasional soft-stool leakage.[^25] Outcomes are good and most cats end up with an excellent quality of life[^24][^25] — I am not arguing against the operation. But a cat who never has it also never has the anesthetic, never has the laparotomy, never has the months of loose stool, and never carries the small risk of the anastomosis failing.
 
-Cake has none of that. He has a dose every few weeks, a spoonful of syrup in his dinner, and an otherwise ordinary life. Measured against a cat who sailed through colectomy, that is second best. Measured against what was actually on the table for him — which was repeated anaesthetics or euthanasia — it is a good outcome by any standard, and it is allowed to be one.
+Cake has none of that. He has a dose every few weeks, a spoonful of syrup in his dinner, and an otherwise ordinary life. Measured against a cat who sailed through colectomy, that is second best. Measured against what was actually on the table for him — which was repeated anesthetics or euthanasia — it is a good outcome by any standard, and it is allowed to be one.
 
-> **For biologists and medicine workers:** Cats with chronic obstipation or megacolon are normally considered colectomy candidates,[^16] so any record ought to say exactly why this one wasn't — and ought to distinguish a risk-based exclusion from a staging one, because only the first can be undone. Cake's was both at once: the anaesthetic and perioperative risk of marked obesity, compounded by what established obstipation had already done to him systemically.
+> **For biologists and medicine workers:** Cats with chronic obstipation or megacolon are normally considered colectomy candidates,[^16] so any record ought to say exactly why this one wasn't — and ought to distinguish a risk-based exclusion from a staging one, because only the first can be undone. Cake's was both at once: the anesthetic and perioperative risk of marked obesity, compounded by what established obstipation had already done to him systemically.
 >
 > Reassessing surgical candidacy after weight reduction belongs in the written plan rather than left to occur to somebody, particularly for a patient facing years of intermittent cholinergic therapy that nobody has safety data for.
 >
-> That said, the comparison is less lopsided than it first looks. Median follow-up in the largest recent outcomes series was 64 days, and removing the ileocolic junction was associated with worse outcomes[^24] — so what becomes of these cats years later isn't well described either. Add the expected morbidity: soft stool or diarrhoea through the first months, rarely normalising completely.[^25]
+> That said, the comparison is less lopsided than it first looks. Median follow-up in the largest recent outcomes series was 64 days, and removing the ileocolic junction was associated with worse outcomes[^24] — so what becomes of these cats years later isn't well described either. Add the expected morbidity: soft stool or diarrhea through the first months, rarely normalizing completely.[^25]
 >
-> Which leaves the real choice as one between a surgical option whose long-term course is thinly characterised and a pharmacological one whose long-term course isn't characterised at all. Neither arm has the data you would want. I'd rather say that plainly than pretend the decision was obvious in either direction.
+> Which leaves the real choice as one between a surgical option whose long-term course is thinly characterized and a pharmacological one whose long-term course isn't characterized at all. Neither arm has the data you would want. I'd rather say that plainly than pretend the decision was obvious in either direction.
 
 ---
 
@@ -190,7 +201,7 @@ Neostigmine was used only:
 >
 > The mechanical danger is where I'm reasoning rather than citing, so take it as physics rather than evidence.
 >
-> Laplace: wall tension scales with pressure and with radius, and inversely with wall thickness. A colon that has been chronically dilated and thinned is therefore precisely the geometry that turns a given pressure into maximal wall tension — meaning the cats most likely to be handed a prokinetic for impaction are the cats least able to tolerate one. Well short of perforation you get vascular compression within the wall, mucosal ischaemia, and ulceration against something abrasive that isn't going anywhere, with translocation to follow. And the stimulus isn't evenly distributed either: the less-affected proximal segments still contract perfectly well, and what they generate is transmitted straight into the segment that is widest, thinnest and least able to push back. I haven't found anyone who has modelled this for the feline colon specifically.
+> Laplace: wall tension scales with pressure and with radius, and inversely with wall thickness. A colon that has been chronically dilated and thinned is therefore precisely the geometry that turns a given pressure into maximal wall tension — meaning the cats most likely to be handed a prokinetic for impaction are the cats least able to tolerate one. Well short of perforation you get vascular compression within the wall, mucosal ischaemia, and ulceration against something abrasive that isn't going anywhere, with translocation to follow. And the stimulus isn't evenly distributed either: the less-affected proximal segments still contract perfectly well, and what they generate is transmitted straight into the segment that is widest, thinnest and least able to push back. I haven't found anyone who has modeled this for the feline colon specifically.
 
 ### Why the human comparison only partly holds
 
@@ -226,7 +237,7 @@ Neostigmine is used in people for acute colonic pseudo-obstruction, which is def
 - **Lactulose** keeps the stool soft enough to be moved.
 - **Neostigmine** supplies the force to move it.
 
-Soft stool with no propulsion simply sits there — that is what the months on lactulose alone demonstrated. Strong propulsion against a hardened mass only builds pressure — that is the danger in section 05. Neither element is sufficient. The aim is soft but formed stool; watery diarrhoea means the dose needs revisiting with the vet rather than adjusting yourself.
+Soft stool with no propulsion simply sits there — that is what the months on lactulose alone demonstrated. Strong propulsion against a hardened mass only builds pressure — that is the danger in section 05. Neither element is sufficient. The aim is soft but formed stool; watery diarrhea means the dose needs revisiting with the vet rather than adjusting yourself.
 
 > **For biologists and medicine workers:** Lactulose is a synthetic disaccharide that mammalian intestinal enzymes can't touch, so it reaches the colon intact, pulls water in osmotically, and is then fermented to short-chain organic acids which drop luminal pH and add further osmotic load. Hyperosmotic laxatives sit squarely in the standard multimodal package for this disease.[^1] 5 ml q24h is on the cautious side for a 7–9 kg cat by conventional titration, and whether giving it more often would stretch the interval between neostigmine episodes is genuinely unknown here. If you do escalate, watch potassium — hypokalaemia worsens colonic motility, which rather defeats the object.
 >
@@ -234,11 +245,11 @@ Soft stool with no propulsion simply sits there — that is what the months on l
 
 ### Solensia, monthly
 
-An injection for pain every 6 weeks. It is a felinised monoclonal antibody that binds nerve growth factor, a substance that sensitises nerves to pain.[^14] It is licensed for osteoarthritis pain in cats;[^15] using it for spinal pain is a slightly different application.
+An injection for pain every 6 weeks. It is a felinized monoclonal antibody that binds nerve growth factor, a substance that sensitizes nerves to pain.[^14] It is licensed for osteoarthritis pain in cats;[^15] using it for spinal pain is a slightly different application.
 
 Its role here is not only comfort. If defecation stops hurting, the cat stops deferring it — which breaks the pain–avoidance loop from section 03 at the other end from the laxative and the prokinetic.
 
-> **For biologists and medicine workers:** Frunevetmab, a felinised anti-NGF monoclonal at 7 mg/ml, dosed by weight band — one 1 ml vial for 2.5–7 kg, two for 7.1–14 kg, aiming at a minimum of 1 mg/kg;[^15] the EU SPC quotes 1–2.8 mg/kg monthly.[^16] Efficacy in osteoarthritis pain came out of a randomised placebo-controlled field study,[^14] and the pharmacokinetics and immunogenicity after IV and SC dosing have been worked out separately.[^23]
+> **For biologists and medicine workers:** Frunevetmab, a felinized anti-NGF monoclonal at 7 mg/ml, dosed by weight band — one 1 ml vial for 2.5–7 kg, two for 7.1–14 kg, aiming at a minimum of 1 mg/kg;[^15] the EU SPC quotes 1–2.8 mg/kg monthly.[^16] Efficacy in osteoarthritis pain came out of a randomized placebo-controlled field study,[^14] and the pharmacokinetics and immunogenicity after IV and SC dosing have been worked out separately.[^23]
 >
 > Keep an eye on the vial count when a patient is crossing that band boundary on the way down. Underdose at the heavier end and you have inadequate analgesia quietly sustaining the very pain–avoidance loop the drug was brought in to break — which is a particularly irritating failure mode, because from the outside it looks like the drug simply not working. Clearance is by protein catabolism, not hepatic or renal. Anti-drug antibodies can develop and cost you the effect, and nobody has established whether it's safe alongside NSAIDs in cats.[^15]
 
@@ -256,7 +267,7 @@ Cake's re-dosing is triggered by palpation — feeling the abdomen for waste bui
 
 ![Two-panel anatomical diagram. Panel A, side view of a cat: the colon sits high in the rear abdomen running backwards, the bladder low and further back, and the palpation zone is marked behind the last rib. Panel B, cross-section from behind: spine at the top, colon high on the cat's left, bladder low and central, and flat fingertips pressing gently inward from either side.](/wp-content/uploads/2026/09/cake-palpation-diagram.svg)
 
-*The colon sits **high and towards the cat's left**, running backwards through the rear half of the abdomen. The bladder sits **low, central and further back**. Both can feel firm. Telling them apart is the reason to be taught this in person rather than from a diagram.*
+*The colon sits **high and toward the cat's left**, running backwards through the rear half of the abdomen. The bladder sits **low, central and further back**. Both can feel firm. Telling them apart is the reason to be taught this in person rather than from a diagram.*
 
 ### How it is done
 
@@ -277,7 +288,7 @@ Cake's re-dosing is triggered by palpation — feeling the abdomen for waste bui
 >
 > In a male cat, a urinary blockage is life-threatening within hours, not days. If you feel a tense, firm, round structure low and far back in a cat who is straining, do not press on it — phone the vet immediately and say you cannot tell which it is.
 
-> **For biologists and medicine workers:** The descending colon runs dorsally and to the left through the caudal abdomen towards the pelvic inlet, and a faecal column palpates as a firm tube, often segmented enough to feel like beads under the fingers. The bladder sits ventral and caudal and goes spherical as it fills. An owner can absolutely confuse the two, which is what makes the differential here more than academic: a straining cat with a tense round caudoventral structure may be urethrally obstructed — and urinary obstruction is itself a contraindication to neostigmine.[^13]
+> **For biologists and medicine workers:** The descending colon runs dorsally and to the left through the caudal abdomen toward the pelvic inlet, and a fecal column palpates as a firm tube, often segmented enough to feel like beads under the fingers. The bladder sits ventral and caudal and goes spherical as it fills. An owner can absolutely confuse the two, which is what makes the differential here more than academic: a straining cat with a tense round caudoventral structure may be urethrally obstructed — and urinary obstruction is itself a contraindication to neostigmine.[^13]
 >
 > The palpation-triggered, pre-emptive dosing is the part of this I'd actually want someone to take away. It shifts the intervention point from established obstipation to detected early accumulation, and that shift is the whole reason cholinergic stimulation stays on the right side of its own contraindication here. Where an owner is doing the palpating, document what they were taught and where their threshold for escalating sits.
 >
@@ -331,7 +342,7 @@ If your cat is where Cake was, these are the questions that opened up the useful
 4. Is my cat a surgical candidate — and if not, what specifically rules it out, and could that change?
 5. If surgery is off the table, are there prokinetic options worth trying, including ones that are not standard?
 
-> **For biologists and medicine workers:** Before anyone reaches for neostigmine on the strength of this account, let's address the established competitors. Cisapride is a feline colonic prokineticthe reference which is illegal in the EU, but used in some other countries; it makes idiopathic megacolonic smooth muscle contract in vitro, and interestingly those contractions are only partly dependent on enteric cholinergic nerves[^7b] — which is a point in its favour, given the ganglion cell attrition in section 02.[^18]
+> **For biologists and medicine workers:** Before anyone reaches for neostigmine on the strength of this account, let's address the established competitors. Cisapride is a feline colonic prokineticthe reference which is illegal in the EU, but used in some other countries; it makes idiopathic megacolonic smooth muscle contract in vitro, and interestingly those contractions are only partly dependent on enteric cholinergic nerves[^7b] — which is a point in its favor, given the ganglion cell attrition in section 02.[^18]
 >
 > Next, let's consider ranitidine (1–2 mg/kg PO q12h) and nizatidine (2.5–5.0 mg/kg PO q12h). Both stimulate feline colonic smooth muscle, apparently by inhibiting acetylcholinesterase — the same mechanism as neostigmine, orally available, and already described in this disease. Cimetidine and famotidine don't do it.[^16][^18] Prucalopride at 0.64 mg/kg has cats defecating within the hour without changing consistency; misoprostol contracts feline colonic smooth muscle in vitro. Metoclopramide, domperidone and erythromycin act too far proximally to help here, and bethanechol's side effects have kept it out of use.[^16][^19]
 
@@ -349,7 +360,7 @@ If your cat is where Cake was, these are the questions that opened up the useful
 
 [^5]: Thanaboonnipat C, Kumjumroon K, Boonkwang K, Tangsutthichai N, Sukserm W, Choisunirachon N. Radiographic lumbosacral vertebral abnormalities and constipation in cats. *Veterinary World.* 2021;14(2):492–498. [Link](https://www.veterinaryworld.org/Vol.14/February-2021/22.html)
 
-[^6]: Bennett D, Morton C. A study of owner observed behavioural and lifestyle changes in cats with musculoskeletal disease before and after analgesic therapy. *Journal of Feline Medicine and Surgery.* 2009;11(12):997–1004. doi:10.1016/j.jfms.2009.09.016 [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11318772/)
+[^6]: Bennett D, Morton C. A study of owner observed behavioral and lifestyle changes in cats with musculoskeletal disease before and after analgesic therapy. *Journal of Feline Medicine and Surgery.* 2009;11(12):997–1004. doi:10.1016/j.jfms.2009.09.016 [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11318772/)
 
 [^7]: Webb CB. Hepatic lipidosis: clinical review drawn from collective effort. *Journal of Feline Medicine and Surgery.* 2018;20(3):217–227. [Link](https://journals.sagepub.com/doi/10.1177/1098612X18758591)
 
@@ -389,4 +400,4 @@ If your cat is where Cake was, these are the questions that opened up the useful
 
 [^24]: Grossman RM, Sumner JP, Lopez DJ, et al. Evaluation of outcomes following subtotal colectomy for the treatment of idiopathic megacolon in cats. *Journal of the American Veterinary Medical Association.* 2021. doi:10.2460/JAVMA.20.07.0418 — *18 hospitals, 2000–2018; high owner satisfaction; removal of the ileocolic junction associated with worse outcome; median follow-up 64 days.* [Link](https://everycat.org/cat-health/evaluation-of-outcomes-following-subtotal-colectomy-for-the-treatment-of-idiopathic-megacolon-in-cats/)
 
-[^25]: Megacolon. American College of Veterinary Surgeons, owner education resource. *Post-colectomy course: soft stools and occasional diarrhoea for the first few months, progressively firmer but rarely fully normal; occasional soft-stool leakage; postoperative constipation rare; continence preserved.* [Link](https://www.acvs.org/small-animal/megacolon/)
+[^25]: Megacolon. American College of Veterinary Surgeons, owner education resource. *Post-colectomy course: soft stools and occasional diarrhea for the first few months, progressively firmer but rarely fully normal; occasional soft-stool leakage; postoperative constipation rare; continence preserved.* [Link](https://www.acvs.org/small-animal/megacolon/)

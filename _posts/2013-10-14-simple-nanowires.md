@@ -5,6 +5,16 @@ categories:
   - "explanation"
   - "physics"
   - "writing"
+genre: science
+tags:
+  - nanophotonics
+  - nanowires
+  - optical-waveguides
+  - photonic-integrated-circuits
+  - physics
+format: explanation
+topics:
+  - "Physics"
 ---
 
 Below is a quick attempt to summarize and extrapolate from an article on Optical Routing And Sensing With Nanowire Assemblies in a simple manner, without assuming the reader is deeply familiar with the esoteric lexicon of photonics and optoelectronics. I can’t freely distribute the article which inspired this post; check with your local university to find a copy. More information on the relevant article is post script.

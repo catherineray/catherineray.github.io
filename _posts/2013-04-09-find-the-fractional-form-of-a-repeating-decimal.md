@@ -4,6 +4,15 @@ date: "2013-04-09"
 categories: 
   - "explanation"
   - "math"
+genre: math
+tags:
+  - repeating-decimals
+  - rational-numbers
+  - arithmetic
+  - elementary-number-theory
+format: explanation
+topics:
+  - "Number theory"
 ---
 
 I think math shortcuts and tricks are groovy. Here’s an arithmetic trick to find the fractional form of a repeating decimal.

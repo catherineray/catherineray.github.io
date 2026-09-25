@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% comment %} Math / Science / Art posts / Prose pages: the genre's posts as the same tiles as All posts → Recents. {% endcomment %}
+{% assign g = site.data.genres | where: "key", page.genre_key | first %}
+{% assign genre_posts = site.posts | where: "genre", page.genre_key %}
+{% assign statics = site.static_files | map: "path" %}
+{% include posts-style.html %}
+<style>
+  .site-main #main.container { max-width: 1200px; }
+  .genre-page .genre-intro { max-width: 60ch; margin: 0 0 6px; }
+</style>
+<div class="genre-page ap recents-tiles" style="--genre: {{ g.color }};">
+  {% include page-title.html text=g.name shadow=g.color %}
+  <div class="genre-intro">{{ content }}</div>
+  <div class="ap-sec-row"><h2 class="ap-sec ap-sec-recents">{{ genre_posts.size }} posts <button type="button" class="sort-toggle" aria-label="Change order">newest first ↓</button></h2><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></div>
+  <div id="ap-posts">
+    <ol class="ap-list">
+    {% for post in genre_posts %}{% include post-item.html %}{% endfor %}
+    </ol>
+  </div>
+</div>
+{% include words-toggle.html %}

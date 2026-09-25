@@ -3,6 +3,17 @@ title: "(Pic(X)) vs. (CP^infty)"
 date: "2015-02-25"
 categories: 
   - "math"
+genre: math
+tags:
+  - picard-group
+  - line-bundles
+  - classifying-spaces
+  - multiplicative-formal-group
+  - algebraic-geometry
+format: notes
+topics:
+  - "Homotopy theory"
+  - "Formal groups"
 ---
 
 _There are likely inaccuracies in this post, as I wrote it quickly and am just beginning to learn the basics of algebraic geometry. Constructive criticism is strongly encouraged._

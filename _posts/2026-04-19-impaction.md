@@ -3,6 +3,19 @@ title: "Impaction (My First Play)"
 date: "2026-04-19"
 categories:
   - "art"
+genre: art
+tags:
+  - playwriting
+  - theater
+  - script
+  - experimental-theater
+format: fiction
+topics:
+  - "Writing & theater"
+# buttons on its highlight card on the All posts page (url "post" = this post)
+card_links:
+  - { label: "Experience it yourself: read the screenplay", url: "post" }
+  - { label: "Watch it performed ↗", url: "https://youtu.be/YNYGaUns5wY?t=3602" }
 ---
 
 ![](/images/nothingtoseehere.jpeg)
@@ -32,7 +45,7 @@ My first play, *Impaction*, was performed in LA as part of *Nothing to See Here*
 
 **MC:** *(Standing, staring out into space at the mostly lifeless body.)*
 
-**Sick Creature:** *(Lying on their side, crying slightly, breathing laboured.)*
+**Sick Creature:** *(Lying on their side, crying slightly, breathing labored.)*
 
 **MC:** *(Backs up slowly and sinks down next to the phone without looking at it, still staring at Sick Creature. Tension slowly builds. Through shaky breaths, holding back tears, dials.)* "Hi, does your clinic offer the procedure?"
 

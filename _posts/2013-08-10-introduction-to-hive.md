@@ -4,6 +4,16 @@ date: "2013-08-10"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - apache-hive
+  - hiveql
+  - sql
+  - data-warehousing
+  - erdos-number
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Let's say we have a plain text file, erdos.txt, with the following contents:

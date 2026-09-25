@@ -1,0 +1,17 @@
+{% comment %}
+  Numbered track rows for the Portfolio's songs section; the player script lives in portfolio.md.
+  include.tracks: list of { title, file | soundcloud, duration, explicit }
+{% endcomment %}
+<ol class="tracklist">
+{% for t in include.tracks %}
+  <li class="track"{% if t.soundcloud %} data-sc="{{ t.soundcloud }}"{% endif %}>
+    <button class="play" type="button" aria-label="Play {{ t.title | escape }}"><svg viewBox="0 0 16 16" aria-hidden="true"><path class="i-play" d="M4 2.5v11l9-5.5z"/><path class="i-pause" d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/></svg></button>
+    <span class="t-num">{{ forloop.index }}</span>
+    <span class="t-title">{{ t.title }}{% if t.explicit %} <span class="t-flag">explicit</span>{% endif %}</span>
+    <span class="t-time">{{ t.duration }}</span>
+    <span class="t-bar" aria-hidden="true"><span class="t-fill"></span></span>
+    {% if t.soundcloud %}<a class="t-ext" href="{{ t.soundcloud }}">Listen on SoundCloud ↗</a>
+    {% else %}<audio controls preload="metadata" src="{{ site.baseurl }}{{ t.file | uri_escape }}"></audio>{% endif %}
+  </li>
+{% endfor %}
+</ol>

@@ -4,6 +4,15 @@ date: "2013-04-11"
 categories: 
   - "explanation"
   - "math"
+genre: math
+tags:
+  - collinearity
+  - analytic-geometry
+  - linear-equations
+  - algebra
+format: explanation
+topics:
+  - "Geometry & topology"
 ---
 
 On the topic of groovy math, here’s some smooth algebra.

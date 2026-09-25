@@ -4,6 +4,15 @@ date: "2014-01-21"
 categories: 
   - "explanation"
   - "linux"
+genre: science
+tags:
+  - linux
+  - ubuntu
+  - process-management
+  - command-line
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 A surprising amount of Linux users are unfamiliar with how to force quit programs via the command-line. It is often that your only option to escape a process gone awry is using the term window.

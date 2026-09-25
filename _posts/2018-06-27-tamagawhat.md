@@ -3,6 +3,16 @@ title: "Ukulele Songs from the TamagaWHAT Seminar"
 date: "2018-06-27"
 categories: 
   - "music"
+genre: art
+tags:
+  - ukulele
+  - songwriting
+  - tamagawa-number-conjecture
+  - math-songs
+format: artwork
+topics:
+  - "Music"
+  - "Writing & theater"
 ---
 
 This quarter (Spring 2018) we held a seminar on the Lurie-Gaitsgory proof of the function field case of the Tamagawa conjecture (Jora Belousov, Grigory Kondyrev, Yifeng Liu, and myself). I also started learning the uke, and I wrote a song for each talk (many use the tune of an existing song). I think the quality improved as I went on, so feel free to start from Lecture 8.

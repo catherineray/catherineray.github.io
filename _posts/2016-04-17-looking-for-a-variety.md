@@ -3,6 +3,17 @@ title: "Newspaper Ad: Looking for a Variety"
 date: "2016-04-17"
 categories: 
   - "math"
+genre: math
+tags:
+  - formal-group-laws
+  - formal-group-height
+  - abelian-varieties
+  - group-chunks
+  - algebraic-geometry
+format: notes
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
 ---
 
 _Hello. I don’t want much, just looking for a nice Variety to spend my days with. If you apply, I’d like you to have a well understood group law that comes from some 3-fold symmetry, but I’m a simple girl, easy to please, and I don’t need your group law to be all fancy and closed — a group chunk (group law which closed at least locally to the origin) is fine by me. I’ll have to put you through an interview process to see if you’re group chunk gives me a formal group law which is height 3, but don’t worry, it’ll be painless. Please let me know if you have a friend that matches this description!_

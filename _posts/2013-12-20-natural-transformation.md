@@ -4,6 +4,14 @@ date: "2013-12-20"
 categories: 
   - "explanation"
   - "math"
+genre: math
+tags:
+  - category-theory
+  - natural-transformations
+  - functors
+format: explanation
+topics:
+  - "Algebra & representation theory"
 ---
 
 This quick post assumes a basic knowledge of categories and functors, which can be gained from a previous [video post](/the-monads-trilogy-categories-functors/).

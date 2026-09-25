@@ -8,6 +8,16 @@ categories:
   - "physics"
   - "python"
   - "research-projects"
+genre: science
+tags:
+  - computational-materials-science
+  - condensed-matter-physics
+  - matlab
+  - python
+format: paper
+topics:
+  - "Physics"
+  - "Programming & tools"
 ---
 
 In 2012, I researched computational materials science/physics for [Dr. Dimitrios Papaconstantopoulos.](http://spacs.gmu.edu/profile/dimitrios-a-papaconstantopoulos/) The following is my semester report. All source code is listed at the end of the report.

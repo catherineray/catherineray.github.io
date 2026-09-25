@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20171001064735/http://rin.io/a-recipe/",
+ "comments": [
+  {
+   "id": "13690",
+   "parent": null,
+   "kind": "comment",
+   "author": "Akhil Mathew",
+   "author_url": "http://math.berkeley.edu/~amathew",
+   "date": "2015-01-06T15:43:22+00:00",
+   "html": "<p>It’s actually not quite true that the *higher* algebraic K-theory of the ring of C^\\infty functions on a compact manifold M (or continuous functions on a compact space) is the topological K-theory of M; for instance, if M is a point, then the algebraic K-theory of the complex numbers is not quite KU. (However, it is KU up to p-adic completion at any prime p.) In the construction of topological K-theory, it is important that the topology on the real or complex numbers should be taken into account. You might be interested in the paper <a href=\"http://arxiv.org/pdf/1110.5851v2.pdf\">http://arxiv.org/pdf/1110.5851v2.pdf</a> where these distinctions are important (although the algebraic version is used).</p>",
+   "depth": 0
+  }
+ ]
+}

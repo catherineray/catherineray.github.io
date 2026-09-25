@@ -1,0 +1,45 @@
+{% comment %}
+  comics: list from the page's front matter. Each entry either points at a post (slug)
+  or stands alone (title, credit, cover, description). Each card: portrait preview on the left, words on the right;
+  panels = images stacked top to bottom like a page;
+  a missing cover/description shows a labeled placeholder.
+{% endcomment %}
+<div class="comic-cards">
+{% for c in include.comics %}
+  {% assign p = nil %}{% if c.slug %}{% assign p = site.posts | where: "slug", c.slug | first %}{% endif %}
+  {% assign title = c.title | default: p.title | remove: "webcomic: " %}
+  {% if p %}{% assign href = p.url | prepend: site.baseurl %}{% else %}{% assign href = c.url %}{% endif %}
+  {% if href %}<a class="comic-card" href="{{ href }}">{% else %}<div class="comic-card">{% endif %}
+    <span class="comic-panels">
+      {% if c.panels %}{% for panel in c.panels %}<img src="{{ site.baseurl }}{{ panel }}" alt="" loading="lazy">{% endfor %}
+      {% elsif c.cover %}<img class="comic-cover" src="{{ site.baseurl }}{{ c.cover }}" alt="{{ title }} title page" loading="lazy">
+      {% else %}<span class="comic-placeholder">[{{ title | upcase }} TITLE PAGE]</span>{% endif %}
+    </span>
+    <span class="comic-meta">
+      {% if c.status %}<span class="comic-status">{{ c.status }}</span>{% endif %}
+      <span class="comic-title">{{ title }}</span>
+      {% if c.credit %}<span class="comic-credit">{{ c.credit }}</span>{% endif %}
+      <span class="comic-note">{% if c.description %}{{ c.description }}{% elsif p %}Updated panel by panel as it's made. Started {{ p.date | date: "%B %Y" }}.{% else %}[DESCRIPTION]{% endif %}</span>
+    </span>
+  {% if href %}</a>{% else %}</div>{% endif %}
+{% endfor %}
+</div>
+
+<style>
+  /* portrait preview on the left, words on the right; cards sit side by side */
+  .comic-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 22px; }
+  .comic-card { display: flex; flex-direction: row; background: #ffffff; border: 3px solid #1b1b1b; border-radius: 12px; box-shadow: 6px 6px 0 #ec3f9e; overflow: hidden; text-decoration: none; color: #1b1b1b; transition: transform .12s, box-shadow .12s; }
+  a.comic-card:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 #fbe919; }
+  .comic-panels { flex: none; width: 45%; max-width: 220px; align-self: flex-start; display: grid; grid-auto-flow: row; grid-auto-rows: 1fr; aspect-ratio: 3 / 4; border-right: 3px solid #1b1b1b; background: #faf3c8; overflow: hidden; }
+  .comic-panels img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: cover; margin: 0; border-bottom: 3px solid #1b1b1b; }
+  .comic-panels img:last-child { border-bottom: 0; }
+  .comic-panels img.comic-cover { object-fit: contain; }
+  .comic-placeholder { display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem; margin: 12px; border: 2px dashed #4a3a63; border-radius: 8px; font-family: 'Archivo Black', Impact, sans-serif; font-size: clamp(.75rem, 2.6vw, 1rem); overflow-wrap: anywhere; color: #4a3a63; }
+  .comic-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 14px 16px; min-width: 0; font-family: 'Space Mono', 'Courier New', monospace; flex: 1; }
+  .comic-status { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; background: #fbe919; border: 2px solid #1b1b1b; border-radius: 999px; padding: 1px 9px; }
+  .comic-title { font-family: 'Archivo Black', Impact, sans-serif; font-size: 1.15rem; line-height: 1.2; }
+  .comic-credit { font-size: 13px; color: #4a3a63; }
+  .comic-note { font-family: 'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.45; color: #4a3a63; }
+  @media (max-width: 420px) { .comic-meta { padding: 10px 12px; } .comic-title { font-size: 1rem; } .comic-note { font-size: 14px; } }
+  @media (prefers-reduced-motion: reduce) { .comic-card { transition: none; } }
+</style>

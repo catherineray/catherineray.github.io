@@ -3,6 +3,17 @@ title: "Landweber-Ravenel-Stong Construction Flowchart"
 date: "2015-04-12"
 categories: 
   - "math"
+genre: math
+tags:
+  - landweber-exact-functor-theorem
+  - complex-cobordism
+  - complex-oriented-cohomology
+  - lazard-ring
+  - homotopy-theory
+format: notes
+topics:
+  - "Homotopy theory"
+  - "Formal groups"
 ---
 
 Here’s a flowchart I made while preparing for an upcoming talk. I fear that it may be hard to follow without being already familiar with the story, but there’s little harm in posting it. Maybe it’ll help someone navigate the literature.

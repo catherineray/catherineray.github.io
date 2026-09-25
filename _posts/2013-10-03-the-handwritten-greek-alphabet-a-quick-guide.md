@@ -3,6 +3,14 @@ title: "The Handwritten Greek Alphabet: A Quick Guide"
 date: "2013-10-03"
 categories: 
   - "explanation"
+genre: math
+tags:
+  - greek-alphabet
+  - handwriting
+  - mathematical-notation
+format: explanation
+topics:
+  - "Life, study & work"
 ---
 
 Early on in their endeavors, most mathematicians and physicists teach themselves to handwrite the letters of Greek alphabet as quickly as the letters of the English alphabet.

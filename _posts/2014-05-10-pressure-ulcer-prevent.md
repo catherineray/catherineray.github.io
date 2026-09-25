@@ -3,6 +3,17 @@ title: "Pressure Ulcer Prevention"
 date: "2014-05-10"
 categories: 
   - "research-projects"
+genre: science
+tags:
+  - pressure-ulcers
+  - wound-care
+  - tissue-biomechanics
+  - wheelchair-users
+  - geriatrics
+format: notes
+topics:
+  - "Biology & medicine"
+  - "Braille & accessibility"
 ---
 
 **A pressure ulcer is an ulcerated area of skin caused by irritation and continuous pressure on part of the body.** It starts as an area of skin damage which spreads to the tissues underlying the skin. In severe cases (Stage IV), there can be permanent damage to muscle or bone underneath the skin. Pressure ulcers are most common over bony prominences. Leading contributors to pressure ulcers: pressure, moisture, friction/shear and nutrition. Tissue is stressed between the bony mass and a rigid surface (such as a chair seat or bed mattress).
@@ -171,7 +182,7 @@ As the top layer, 4-way stretch microfiber moves with the body to effectively el
 
 _Sidenote: My work focused on the prevention and relief of pressure sores from a mechanical perspective. I encourage the reader to additionally [explore](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3223487/) the active research topic of tissue regeneration in treatment of wounds._
 
-Thank you to [0]Adam Munich, [1]Danielle Fong, [2]Paul Sebexen, [3]Matthew Putman, and [4]Kettner Griswold Sr. for your suggestions, inventiveness, and encouragement.
+Thank you to [0]Joule Munich, [1]Danielle Fong, [2]Paul Sebexen, [3]Matthew Putman, and [4]Kettner Griswold Sr. for your suggestions, inventiveness, and encouragement.
 
 Additional thanks to the kind nurses and residents at Paul Springs for answering my questions on mobility assistance in geriatric care.
 

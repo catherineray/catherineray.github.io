@@ -3,6 +3,16 @@ title: "Introductory Science Kit"
 date: "2014-01-06"
 categories: 
   - "explanation"
+genre: science
+tags:
+  - science-education
+  - stem-outreach
+  - optics
+  - hands-on-learning
+format: list
+topics:
+  - "Physics"
+  - "Life, study & work"
 ---
 
 Katriona Guthrie-Honea, Austin Russell, and I recently brainstormed to come up with an introductory science kit. The goal of the kit is to create wonder and light the flame of curiosity; revealing that science is a series of fun puzzles and that magic is more beautiful when you understand how it is done.

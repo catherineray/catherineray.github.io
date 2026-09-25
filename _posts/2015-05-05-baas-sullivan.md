@@ -3,6 +3,18 @@ title: "Bordism with singularities construction of elliptic homology"
 date: "2015-05-05"
 categories: 
   - "math"
+genre: math
+tags:
+  - baas-sullivan-theory
+  - elliptic-cohomology
+  - elliptic-genera
+  - cobordism-theory
+  - landweber-exact-functor-theorem
+  - homotopy-theory
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Algebra & representation theory"
 ---
 
 _This post assumes familiarity with the [Landweber exact functor theorem](/landweber-exactness/), elliptic genera, and bordism theories._

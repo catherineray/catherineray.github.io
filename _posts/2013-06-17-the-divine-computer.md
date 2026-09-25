@@ -3,6 +3,16 @@ title: "The Divine Computer"
 date: "2013-06-17"
 categories: 
   - "art"
+genre: art
+tags:
+  - drawing
+  - sketch
+  - morse-code
+  - databases
+format: artwork
+topics:
+  - "Braille & accessibility"
+  - "Programming & tools"
 ---
 
 I have been drawing mainly hands for a while, so I figured I’d use my free time to sketch something different.

@@ -3,6 +3,19 @@ title: "Using Automorphism Groups of Curves to Control the Slopes of their Jacob
 date: "2025-05-23"
 categories: 
   - "math"
+genre: math
+tags:
+  - code
+  - gauss-sums
+  - artin-schreier-witt-curves
+  - newton-polygons
+  - davenport-hasse-theorem
+  - automorphism-groups
+  - arithmetic-geometry
+format: paper
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Number theory"
 ---
 I've felt for a long time that automorphisms of curves should control or at least exert serious force on the slopes on their Jacobians. Symmetry forces height, as I've written about previously in [Models of Formal Groups Laws of Every Height](https://rin.io/every-height/), and [Endomorphisms Directly Control Slope](https://rin.io/height-is-symmetry/).  
 
@@ -10,8 +23,6 @@ In this post, I conjecture that the Frobenius eigenvalues of Artin-Schreier-Witt
 
 This playful note is toward exploring this force, and outlining a conjectural approach for further exploiting it. Enjoy and click. [Read about my Gauss Sums :P](/pdfs/Gauss_sums.pdf)
 
-<object data="http://rin.io/pdfs/Gauss_sums.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://rin.io/pdfs/Gauss_sums.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://rin.io/pdfs/Gauss_sums.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
+{% include pdf.html src="/pdfs/Gauss_sums.pdf" title="Gauss sums note" %}
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/newton">newton (Newton polygons of Artin–Schreier–Witt curves)</a></p>

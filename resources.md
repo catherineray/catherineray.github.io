@@ -1,5 +1,6 @@
 ---
 layout: page
+title_shadow: "#6cc8f0"   # color of the title's offset copy
 title: Resources
 permalink: /resources/
 ---
@@ -13,7 +14,7 @@ You are a human first and foremost! If you are feeling off and could use support
 ### Online Psychiatry
 - [TalkSpace](https://www.talkspace.com/)
 
-## "Basics" in Maths:
+## "Basics" in Math:
 
 > "The thing to keep in mind is that all these "basics" were once cutting-edge research. And the people who got to the bottom of these matters were not trivial idiots. They were great masters. The more you look at this material in this way, the more you’ll find you can tolerate it in good humor, and without fearing its deadening effects on your strange, wild mind."
 > 
@@ -30,7 +31,7 @@ You are a human first and foremost! If you are feeling off and could use support
 - [Math Girls](http://bentobooks.com/resources/math-girls-sample.pdf) 
 - Mathematics as Problem Solving (by Alexander Soifer)
 - Proofs from the Book (by Martin Aigner and Günter M. Ziegler)
-- Induction and Analogy in Maths (by Polya)
+- Induction and Analogy in Math (by Polya)
 
 ### Intro to Game Theory
 - [The Evolution of Trust](https://ncase.me/trust/) 
@@ -44,7 +45,7 @@ You are a human first and foremost! If you are feeling off and could use support
 - [Kindergarten Quantum Mechanics](https://arxiv.org/pdf/quant-ph/0510032.pdf)
 - A topological picturebook (by George Francis)
 
-## Medium Spice in Maths: 
+## Medium Spice in Math: 
 __can be found on libgen if a link is not given__
 
 ### Analysis

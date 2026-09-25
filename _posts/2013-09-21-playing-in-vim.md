@@ -4,6 +4,17 @@ date: "2013-09-21"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - vim
+  - text-editors
+  - code-folding
+  - task-management
+  - productivity
+format: tutorial
+topics:
+  - "Programming & tools"
+  - "Life, study & work"
 ---
 
 Today’s dose of code will be less of a program and more of an advanced vim tutorial.

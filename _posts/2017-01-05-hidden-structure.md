@@ -3,6 +3,13 @@ title: "Hidden Structure"
 date: "2017-01-05"
 categories: 
   - "writing"
+genre: art
+tags:
+  - rhyming-verse
+  - mathematics-in-poetry
+format: poetry
+topics:
+  - "Writing & theater"
 ---
 
 Beauty wilts and love will flucture  

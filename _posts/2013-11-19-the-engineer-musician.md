@@ -4,6 +4,16 @@ date: "2013-11-19"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - music-and-engineering
+  - trombone
+  - programming
+  - learning
+format: opinion
+topics:
+  - "Algebra & representation theory"
+  - "Programming & tools"
 ---
 
 There is a connection between engineering and music. For the sake of simplicity, I will shorten “math, physics, computer science, mechanical & electrical engineering” to “engineering.”
@@ -30,4 +40,4 @@ I will attempt to demonstrate this connection with two specific examples: learni
 
 Similarly, I find that composing orchestral music and creating/working on original research use similar structural thought and insight. Enough examples, I think you’ve got the point!
 
-Although I am not a master of engineering nor music, I consider myself an engineer/scientist and an amateur trombonist. I enjoy learning and developing myself in both areas. I personally think of both music and engineering (especially mathematics, programming, and robotics) as collections of 3D structures to play with and put together whilst keeping in mind various properties and limitations.
+Although I am not a master of engineering nor music, I consider myself an engineer/scientist and an amateur trombonist. I enjoy learning and developing myself in both areas. I personally think of both music and engineering (especially mathematics, programming, and robotics) as collections of 3D structures to play with and put together while keeping in mind various properties and limitations.

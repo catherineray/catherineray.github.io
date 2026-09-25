@@ -1,17 +1,44 @@
 ---
 layout: default
 ---
+{% assign g = site.data.genres | where: "key", page.genre | first %}
+<a class="blog-masthead" href="{{ site.baseurl }}/blog/" aria-label="Good Fibrations: all posts">
+  <span class="page-title" data-text="Good Fibrations" style="--ts: #fbe919;">Good Fibrations</span>
+  <span class="blog-masthead-line"><i>math is art</i> · A blog since 2013. Scraps of a playground annealing in the dark.</span>
+</a>
+<article class="post"{% if g %} style="--genre: {{ g.color }};"{% endif %}>
+  <div class="post-chips">
+    {% if g %}<a class="chip chip-genre" href="{{ site.baseurl }}{{ g.url }}">{{ g.name }}</a>{% endif %}
+    {% if page.format %}<span class="chip">{{ page.format }}</span>{% endif %}
+    {% if page.status %}<span class="chip chip-status">{{ page.status }}</span>{% endif %}
+    {% for t in page.tags %}<span class="chip">{{ t }}</span>{% endfor %}
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time>
+  </div>
 
-<article class="post">
   <h1>{{ page.title }}</h1>
 
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
+  {% if g %}
+    {% assign more = site.posts | where: "genre", page.genre %}
+    <section class="more-in-genre" aria-label="More in {{ g.name }}">
+      <div class="more-label">More in {{ g.name }}</div>
+      <div class="more-cards">
+        {% assign shown = 0 %}
+        {% for p in more %}
+          {% if p.url != page.url and shown < 3 %}
+            <a class="more-card" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+            {% assign shown = shown | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% include archived-comments.html %}
 
   {% include disqus.html %}
 </article>
+

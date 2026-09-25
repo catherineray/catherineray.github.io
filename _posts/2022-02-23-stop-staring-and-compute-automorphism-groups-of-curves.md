@@ -4,6 +4,19 @@ date: "2022-02-23"
 categories: 
   - "code"
   - "math"
+genre: math
+tags:
+  - code
+  - automorphism-groups
+  - algebraic-curves
+  - riemann-surfaces
+  - sagemath
+  - gap-system
+  - computational-algebraic-geometry
+format: tutorial
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Algebra & representation theory"
 ---
 
 Let’s compute the automorphism groups of some curves. Often presented as an insurmountable task, we must couragously go forward. There are many ways to do this! We will be using 3 different algorithms, so choose according to your taste. If you do not have SageMath installed on your computer, you can use [the sagecell emulator](https://sagecell.sagemath.org/).
@@ -164,3 +177,5 @@ GeoEndoRepCC := GeometricEndomorphismRepresentationCC(P);
 GeoEndoRep := GeometricEndomorphismRepresentation(P, F);
 print GeoEndoRep;
 ```
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/aut-jac">aut-jac</a></p>

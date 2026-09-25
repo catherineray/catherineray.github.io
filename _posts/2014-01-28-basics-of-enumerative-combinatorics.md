@@ -3,6 +3,15 @@ title: "Quick Basics of Enumerative Combinatorics"
 date: "2014-01-28"
 categories: 
   - "math"
+genre: math
+tags:
+  - enumerative-combinatorics
+  - binomial-coefficients
+  - permutations
+  - combinations
+format: notes
+topics:
+  - "Combinatorics & puzzles"
 ---
 
 While going through past notebooks, I came across a table I’d compiled which covered basic enumerative combinatorics.

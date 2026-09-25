@@ -4,6 +4,15 @@ date: "2013-04-08"
 categories: 
   - "code"
   - "explanation"
+genre: prose
+tags:
+  - resume-writing
+  - programming-languages
+  - career-advice
+format: opinion
+topics:
+  - "Programming & tools"
+  - "Writing & theater"
 ---
 
 I love programming and know a few programming languages. Every programmer I’ve met has a favorite language, however, most of us can code in more than one language. As I was revising the ‘Language’ portion of my resume, I became confused.

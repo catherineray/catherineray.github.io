@@ -4,6 +4,15 @@ date: "2014-06-11"
 categories: 
   - "explanation"
   - "life"
+genre: prose
+tags:
+  - research-workflow
+  - productivity
+  - focus
+  - pure-mathematics
+format: personal
+topics:
+  - "Life, study & work"
 ---
 
 My default mode of research consists of many projects at once, spanning multiple disciplines.

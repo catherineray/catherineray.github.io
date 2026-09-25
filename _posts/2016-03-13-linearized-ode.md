@@ -3,6 +3,17 @@ title: "How do I explicitly write an ODE as a linear ODE + a nonlinear ODE?"
 date: "2016-03-13"
 categories: 
   - "math"
+genre: math
+tags:
+  - ordinary-differential-equations
+  - linearization
+  - stability-theory
+  - dynamical-systems
+  - equilibrium-points
+format: tutorial
+topics:
+  - "Analysis & calculus"
+  - "Physics"
 ---
 
 I was learning about linearized stability and was confused by where the magical linearized version of the equation was coming from. I finally understand it, and so stupidly simple so I want to tell you about it. First, I’ll motivate the question. If you don’t care about the motivation, just scroll ahead a bit.

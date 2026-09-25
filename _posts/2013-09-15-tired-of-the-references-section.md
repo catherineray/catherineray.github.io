@@ -1,6 +1,16 @@
 ---
 title: "Tired of the References Section?"
 date: "2013-09-15"
+genre: prose
+tags:
+  - citation-management
+  - bibliography
+  - higher-education
+  - productivity
+format: opinion
+topics:
+  - "Combinatorics & puzzles"
+  - "Life, study & work"
 ---
 
 Due to my accelerated graduation, I’m taking a lot of general education requirements this semester.

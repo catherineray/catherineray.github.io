@@ -3,6 +3,17 @@ title: "Oriented Cobordism Cohomology"
 date: "2015-01-28"
 categories: 
   - "math"
+genre: math
+tags:
+  - oriented-cobordism
+  - cobordism-theory
+  - generalized-cohomology-theories
+  - complex-cobordism
+  - algebraic-topology
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Geometry & topology"
 ---
 
 _Edit: When I say cobordism, I mean oriented cobordism unless stated otherwise. Also note that I accidentally flip-flopped \\(\\Omega^\*\\) and \\(\\Omega\_\*\\) â€” \\(\\Omega^n\\) should be cobordism classes of maps from manifolds of codimension \\(n\\) to \\(X\\), and \\(\\Omega\_n\\) is cobordism classes of maps from manifolds of dimension \\(n\\) to \\(X\\)._

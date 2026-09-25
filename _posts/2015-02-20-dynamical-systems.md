@@ -3,6 +3,18 @@ title: "Some Thoughts on Dynamical Systems"
 date: "2015-02-20"
 categories: 
   - "math"
+genre: math
+tags:
+  - multiscale-modeling
+  - dependent-type-theory
+  - fibrations
+  - higher-dimensional-automata
+  - dynamical-systems
+  - homotopy-type-theory
+format: notes
+topics:
+  - "Homotopy theory"
+  - "Physics"
 ---
 
 I’ve resurrected this post from my draft graveyard after chatting with Chas Leichner about the lightly related notion of [domain theory](http://en.wikipedia.org/wiki/Domain_theory), and the interaction between computation and [topos theory](/swashbuckling-topoi/).
@@ -41,7 +53,7 @@ There are two main notions of “transition systems” those in operational sema
 
 > “We believe that these [Petri nets, etc.] are special cases of homotopy retracts when cast in the category of higher-dimensional transition systems. We hope to … use this to design new state-space reduction methods.” - [Formal Relationships Between Geometrical and Classical Models for Concurrency](http://www.lix.polytechnique.fr/~goubault/papers/mimram_cs_adj.pdf)
 
-If this tickles your fancy, a more precise definition of higher dimensional transition systems is given in section 5, page 19 of [Simulations as Homotopies](http://www-home.math.uwo.ca/~kworytki/getco2.pdf). Additionally, the treatment multiscale models as transition systems is proposed, but not applied, in [Aspects of multiscale modelling in a process algebra for biological systems.](http://arxiv.org/pdf/1011.0491v1.pdf)
+If this tickles your fancy, a more precise definition of higher dimensional transition systems is given in section 5, page 19 of [Simulations as Homotopies](http://www-home.math.uwo.ca/~kworytki/getco2.pdf). Additionally, the treatment multiscale models as transition systems is proposed, but not applied, in [Aspects of multiscale modeling in a process algebra for biological systems.](http://arxiv.org/pdf/1011.0491v1.pdf)
 
 This way of (potentially) simplifying multiscale modeling fits into the [Rosetta Stone](https://math.ucr.edu/home/baez/rosetta.pdf)‘s notion of ‘a general science of systems and processes.’
 

@@ -4,6 +4,15 @@ date: "2014-05-30"
 categories: 
   - "explanation"
   - "life"
+genre: prose
+tags:
+  - productivity
+  - task-management
+  - kanban
+  - personal-organization
+format: personal
+topics:
+  - "Life, study & work"
 ---
 
 _I used to overcomplicate my todo system._

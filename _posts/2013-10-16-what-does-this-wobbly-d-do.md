@@ -6,6 +6,15 @@ categories:
   - "explanation"
   - "latex"
   - "math"
+genre: math
+tags:
+  - partial-derivatives
+  - multivariable-calculus
+  - chain-rule
+  - mathjax
+format: explanation
+topics:
+  - "Analysis & calculus"
 ---
 
 What is the difference between \(\frac{d}{dx}\) and \(\frac{\partial}{\partial x}\)?

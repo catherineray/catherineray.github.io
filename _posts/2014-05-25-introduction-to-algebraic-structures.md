@@ -4,6 +4,17 @@ date: "2014-05-25"
 categories: 
   - "explanation"
   - "math"
+genre: math
+tags:
+  - abstract-algebra
+  - group-theory
+  - algebraic-structures
+  - lattice-theory
+  - illustration
+format: explanation
+topics:
+  - "Algebra & representation theory"
+  - "Drawing, painting & comics"
 ---
 
 This post is an experiment in explaining math concepts via colorful hand-drawn diagrams.

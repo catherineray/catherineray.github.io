@@ -3,6 +3,14 @@ title: "Unfinished Painter’s Tape Mural"
 date: "2014-08-04"
 categories: 
   - "art"
+genre: art
+tags:
+  - mural
+  - painters-tape-art
+  - work-in-progress
+format: artwork
+topics:
+  - "Drawing, painting & comics"
 ---
 
 [![2014-05-25 19.29.52-1](/wp-content/uploads/2014/08/2014-05-25-19.29.52-1.jpg)](/wp-content/uploads/2014/08/2014-05-25-19.29.52-1.jpg)

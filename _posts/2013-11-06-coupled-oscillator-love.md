@@ -5,6 +5,16 @@ categories:
   - "explanation"
   - "math"
   - "physics"
+genre: science
+tags:
+  - chaos-synchronization
+  - coupled-oscillators
+  - nonlinear-dynamics
+  - chuas-circuit
+  - laser-physics
+format: explanation
+topics:
+  - "Physics"
 ---
 
 Disclaimer: This informal post assumes you are familiar with basic photonics and applied chaos theory.

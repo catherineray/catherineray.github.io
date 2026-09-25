@@ -1,0 +1,39 @@
+<script>
+// "Overstimulated? Just words": one switch shown twice (Highlights and Recents). Words = no pictures:
+// highlights become plain titles, Recents becomes the list. Remembered in this browser.
+(function () {
+  var ap = document.querySelector('.ap'), btns = document.querySelectorAll('.words-toggle');
+  function set(words) {
+    ap.classList.toggle('recents-tiles', !words);
+    ap.classList.toggle('words', words);
+    btns.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(words));
+      b.textContent = words ? 'Back to pictures' : 'Overstimulated? Just words';
+    });
+  }
+  var saved = false; try { saved = localStorage.getItem('rin-recents-words') === '1'; } catch (e) {}
+  set(saved);
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var words = b.getAttribute('aria-pressed') !== 'true';
+      set(words);
+      try { localStorage.setItem('rin-recents-words', words ? '1' : '0'); } catch (e) {}
+    });
+  });
+})();
+</script>
+<script>
+// "newest first ↓" next to the heading: click to flip the order. On All posts it drives the sidebar's Order menu.
+(function () {
+  var btn = document.querySelector('.sort-toggle'); if (!btn) return;
+  var sel = document.getElementById('rail-sort');
+  function label(old) { btn.textContent = old ? 'oldest first ↑' : 'newest first ↓'; btn.setAttribute('aria-pressed', String(old)); }
+  var old = false;
+  btn.addEventListener('click', function () {
+    old = !old; label(old);
+    if (sel && document.getElementById('ap-posts') && document.querySelector('.rail-filters')) { sel.value = old ? 'old' : 'new'; sel.dispatchEvent(new Event('change')); }
+    else document.querySelectorAll('#ap-posts .ap-list').forEach(function (ol) { Array.prototype.slice.call(ol.children).reverse().forEach(function (li) { ol.appendChild(li); }); });
+  });
+  if (sel) sel.addEventListener('change', function () { old = sel.value === 'old'; label(old); });
+})();
+</script>

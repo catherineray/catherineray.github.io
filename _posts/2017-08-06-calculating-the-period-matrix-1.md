@@ -3,6 +3,18 @@ title: "Calculating the Period Matrix of a Shiga Curve, \\(y^3 = x^4-1\\)."
 date: "2017-08-06"
 categories: 
   - "math"
+genre: math
+tags:
+  - code
+  - period-matrix
+  - riemann-surfaces
+  - jacobian-varieties
+  - cyclic-covers
+  - algebraic-curves
+format: explanation
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Programming & tools"
 ---
 _Motivational Sidenote:_ _This is part of my project in attempting to understand the notion of height (in formal group law theory) in terms of the symmetry of the underlying variety._
 
@@ -52,12 +64,12 @@ Where \\(A := \begin{pmatrix} 0 & -1 & 1 \\\ 1 & 0 & -1 \\\ -1 & 1 & 0 \end{pmat
 
 We take the convention that:
 
-- \\(\gamma_1\\) is associated to the edge labelled 1
+- \\(\gamma_1\\) is associated to the edge labeled 1
 - \\(\gamma_2\\) is associated to the edge labeled 5
-- \\(\gamma_3\\) is associated to the edge labelled 8
-- \\(\gamma_4\\) is associated to the edge labelled 10
-- \\(\gamma_5\\) is associated to the edge labelled 12
-- \\(\gamma_6\\) is associated to the edge labelled 4
+- \\(\gamma_3\\) is associated to the edge labeled 8
+- \\(\gamma_4\\) is associated to the edge labeled 10
+- \\(\gamma_5\\) is associated to the edge labeled 12
+- \\(\gamma_6\\) is associated to the edge labeled 4
 
 Our surface, with 24 triangles of the appropriate angles, is then the following, the \\(v_i\\) corresponding to \\(\gamma_i\\)’s drawn in.
 
@@ -144,3 +156,5 @@ In the end, all collected, in complex number form, our period matrix is this glo
 \\(c := -\frac{4}{1+ \sqrt{3}}D\\)
 
 \\( \begin{matrix} a & ae^{\tau i/3} &ae^{2\tau i/3} &ae^{3\tau i/3} &ae^{4\tau i/3} &ae^{5\tau i/3} \\\ b &b e^{\tau i/3} &b e^{2\tau i/3} & be^{3\tau i/3} & be^{4\tau i/3} &be^{5\tau i/3} \\\ c & c e^{5\tau i/6} & c e^{10\tau i/6} & ce^{15\tau i/6} & ce^{20\tau i/6} & ce^{25\tau i/6} \end{matrix}\\)
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/aut-jac">aut-jac</a></p>

@@ -6,6 +6,17 @@ categories:
   - "explanation"
   - "math"
   - "matlab"
+genre: science
+tags:
+  - code
+  - matlab
+  - cylindrical-coordinates
+  - coordinate-transformations
+  - 3d-plotting
+  - scientific-visualization
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Let’s say we want to create an aesthetically pleasing visualization of 2 coaxial cylinders.
@@ -52,3 +63,5 @@ view(140, 24)
 % white background
 set(gcf,'color','white')
 ```
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/coaxial_cylinder.m">cow-code / coaxial_cylinder.m</a></p>

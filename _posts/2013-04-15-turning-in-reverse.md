@@ -3,6 +3,15 @@ title: "Turning in Reverse"
 date: "2013-04-15"
 categories: 
   - "explanation"
+genre: prose
+tags:
+  - driving
+  - reversing
+  - mnemonics
+format: explanation
+topics:
+  - "Writing & theater"
+  - "Life, study & work"
 ---
 
 Do you have trouble remembering how to properly steer when driving in reverse?

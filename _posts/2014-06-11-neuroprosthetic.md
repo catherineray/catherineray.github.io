@@ -4,6 +4,18 @@ date: "2014-06-11"
 categories: 
   - "explanation"
   - "research-projects"
+genre: science
+tags:
+  - neuroprosthetics
+  - voltage-imaging
+  - genetically-encoded-voltage-indicators
+  - neuromuscular-junction
+  - light-field-microscopy
+  - optofluidic-microscopy
+format: explanation
+topics:
+  - "Physics"
+  - "Biology & medicine"
 ---
 
 #### Diving Into Neuroprosthetics

@@ -3,6 +3,16 @@ title: "What is the &#8220;universal enveloping algebra&#8221; of a formal group
 date: "2016-02-06"
 categories: 
   - "math"
+genre: math
+tags:
+  - formal-group-laws
+  - universal-enveloping-algebra
+  - hopf-algebras
+  - lie-algebras
+format: notes
+topics:
+  - "Formal groups"
+  - "Algebra & representation theory"
 ---
 
 I posted [earlier a query toward](/lie-algebra-formal-group-law/) exploring the analogy between

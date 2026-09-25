@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20170526205358/http://rin.io:80/freudenthal-tits-magic-square/",
+ "comments": [
+  {
+   "id": "38023",
+   "parent": null,
+   "kind": "comment",
+   "author": "Metatron",
+   "author_url": null,
+   "date": "2016-10-24T17:40:47+00:00",
+   "html": "<p>Did they show you the expansion of derivations in terms of nested associators?  The octonionic case is quite subtle and one only recovers exponentiation of F4 unitary transformations with restrictions on the traceless matrices.  This is why octonionic quantum mechanics is tricky.</p>\n<p>See:</p>\n<p><a href=\"https://arxiv.org/abs/hep-th/0302079\">hep-th/0302079</a></p>",
+   "depth": 0
+  }
+ ]
+}

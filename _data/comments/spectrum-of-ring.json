@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20191019212626/http://rin.io/spec/",
+ "comments": [
+  {
+   "id": "14248",
+   "parent": null,
+   "kind": "comment",
+   "author": "Josh G",
+   "author_url": null,
+   "date": "2015-01-21T16:28:00+00:00",
+   "html": "<p>I think you do yourself a disservice by jumping right from “algebraic curves” to the viewpoint of (affine) schemes as functors. To make the connection more concrete, one should first understand the connection between varieties (or even just algebraic curves) and their coordinate rings, and then understand how Spec of the coordinate ring recovers the Zariski topology on the original variety. *Then* one can take the more abstract viewpoint, whereby one wishes to treat not just integral domains over a field, but *any* ring as the coordinate ring of some “geometric object”, namely, a scheme. And *then* one can generalize from schemes as the categorical duals of rings to the “functor of points” viewpoint. Taking this route will give you a much more intuitive, geometric picture of what is going on (and should enable you to connect your intuitive geometric picture of algebraic curves to the highly abstract picture of schemes as functors.)</p>\n<p>From this viewpoint, it is clear why $hom(\\mathbb{Z}[t], S)$ should just be $S$. Imagine every ring is the ring of “well-behaved” functions on some geometric object. Then certainly $\\mathbb{Z}[t]$ is the ring of polynomial functions on the line (where, here, we haven’t specified *which* line – real, complex, or what have you – but that’s okay because we’re only considering polynomials with integer coefficients, which make sense on the line over any ring). And $S$ is the ring of well-behaved functions on some geometric object which we’ll call $Spec(S)$. Since rings are categorically dual to schemes, $hom(\\mathbb{Z}[t], S)$ should be dual to $hom(Spec(S), line)$. But what are maps from $Spec(S)$ to the line? They are exactly the (well-behaved) functions on $Spec(S)$ – i.e., the elements of $S$!</p>",
+   "depth": 0
+  }
+ ]
+}

@@ -3,6 +3,16 @@ title: "How do I construct the Tits-Freudenthal magic square?"
 date: "2016-07-16"
 categories: 
   - "math"
+genre: math
+tags:
+  - freudenthal-tits-magic-square
+  - jordan-algebras
+  - exceptional-lie-algebras
+  - octonions
+  - derivation-algebras
+format: explanation
+topics:
+  - "Algebra & representation theory"
 ---
 
 _Thanks to Mia Hughes and John Huerta for the helpful discussions on this topic._

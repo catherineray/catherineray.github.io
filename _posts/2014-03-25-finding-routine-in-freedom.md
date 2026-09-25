@@ -3,6 +3,15 @@ title: "Finding Routine in Freedom"
 date: "2014-03-25"
 categories: 
   - "life"
+genre: prose
+tags:
+  - productivity
+  - daily-routine
+  - time-management
+  - self-employment
+format: personal
+topics:
+  - "Life, study & work"
 ---
 
 I've just recently taken on a contract project. Adding that project onto my wheelchair and protein detector projects is a fun exercise in multi-threading that contributed to a recent realization.

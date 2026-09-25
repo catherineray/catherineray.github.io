@@ -1,0 +1,11 @@
+{% comment %} One post in the list / tile wall. Expects `post` to be set. {% endcomment %}
+    {% assign g = site.data.genres | where: "key", post.genre | first %}
+    {% assign parts = post.content | split: 'src="' %}{% assign thumb = "" %}{% if parts.size > 1 %}{% assign thumb = parts[1] | split: '"' | first %}{% endif %}
+    {% if thumb contains "/wp-content/" %}{% unless thumb contains "/images/" %}{% assign thumb = thumb | replace: "/wp-content/", "/images/wp-content/" %}{% endunless %}{% endif %}
+    <li class="ap-item" data-genre="{{ post.genre }}" data-topics="|{{ post.topics | join: '|' }}|" data-text="{{ post.title | downcase | escape }} {{ post.tags | join: ' ' }} {{ post.topics | join: ' ' | downcase }}" style="--g: {{ g.color | default: '#999' }};">
+      <a class="ap-tthumb" href="{{ site.baseurl }}{{ post.url }}" tabindex="-1" aria-hidden="true">{% if post.card_image %}<img src="{{ site.baseurl }}{{ post.card_image }}" alt="" loading="lazy">{% elsif post.card_lines %}<span class="ap-lines">{% for l in post.card_lines %}{{ l }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span>{% elsif statics contains thumb %}<img src="{{ site.baseurl }}{{ thumb }}" alt="" loading="lazy">{% else %}<span class="none"><img src="{{ site.baseurl }}{{ g.icon }}" alt=""></span>{% endif %}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+      <span class="ap-dot" title="{{ g.name }}"></span>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <span class="ap-meta"><span class="ap-gtag"><img src="{{ site.baseurl }}{{ g.icon }}" alt="">{{ g.name }}</span>{% for t in post.topics %}<span class="ap-tag">{{ t }}</span>{% endfor %}</span>
+    </li>

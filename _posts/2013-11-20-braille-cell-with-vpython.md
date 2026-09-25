@@ -5,6 +5,17 @@ categories:
   - "braille"
   - "code"
   - "python"
+genre: science
+tags:
+  - code
+  - braille
+  - python
+  - vpython
+  - 3d-visualization
+format: tutorial
+topics:
+  - "Biology & medicine"
+  - "Braille & accessibility"
 ---
 
 The internet went down at my house, and I decided to play with vpython again!
@@ -35,3 +46,5 @@ if string.isdigit(): draw(str(string))
 Let’s see it in action! The letter “j” (or “just” in G2):
 
 [![](/wp-content/uploads/2013/11/Screenshot-from-2013-11-20-14-54-44.png)](/wp-content/uploads/2013/11/Screenshot-from-2013-11-20-14-54-44.png)
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/braillecell.py">cow-code / braillecell.py</a></p>

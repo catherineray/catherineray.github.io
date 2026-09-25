@@ -3,6 +3,17 @@ title: "A First Look at an Equivariant Elliptic Cohomology"
 date: "2015-06-18"
 categories: 
   - "math"
+genre: math
+tags:
+  - elliptic-cohomology
+  - equivariant-cohomology
+  - borel-construction
+  - formal-group-laws
+  - algebraic-topology
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Formal groups"
 ---
 
 Usually, besides the information preserved by the formal group law of the elliptic curve, we can’t see any information about the elliptic curve when looking at the output of its associated cohomology theory. The formal group law only* remembers if the curve was singular/supersingular, and the characteristic of its field.

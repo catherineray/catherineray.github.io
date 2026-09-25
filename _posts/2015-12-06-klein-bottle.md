@@ -3,6 +3,17 @@ title: "The Cup Product of the Klein Bottle mod 2"
 date: "2015-12-06"
 categories: 
   - "math"
+genre: math
+tags:
+  - cup-product
+  - klein-bottle
+  - poincare-duality
+  - intersection-form
+  - algebraic-topology
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Geometry & topology"
 ---
 
 I didn’t want to use a brute force method, so I thought for a while about how to compute the cup product of the Klein bottle. This is what I came up with. I thought I’d share it.

@@ -3,6 +3,17 @@ title: "What is the orientation of a ring?"
 date: "2015-07-28"
 categories: 
   - "math"
+genre: math
+tags:
+  - orientation
+  - p-adic-integers
+  - complex-orientation
+  - commutative-algebra
+  - algebraic-topology
+format: notes
+topics:
+  - "Homotopy theory"
+  - "Number theory"
 ---
 
 My dear friend Alex Mennen and I had some fun this morning defining the orientation of a ring.

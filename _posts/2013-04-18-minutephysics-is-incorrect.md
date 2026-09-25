@@ -4,6 +4,17 @@ date: "2013-04-18"
 categories: 
   - "explanation"
   - "math"
+genre: math
+tags:
+  - geometric-series
+  - convergence
+  - divergent-series
+  - real-analysis
+  - sequences-and-series
+format: explanation
+topics:
+  - "Analysis & calculus"
+  - "Physics"
 ---
 
 I recently watched a [video by MinutePhysics](http://www.youtube.com/watch?v=kIq5CZlg8Rg) where he seems to prove that infinity = -1.

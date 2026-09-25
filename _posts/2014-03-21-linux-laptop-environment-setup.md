@@ -5,6 +5,17 @@ categories:
   - "explanation"
   - "german"
   - "linux"
+genre: science
+tags:
+  - linux
+  - ubuntu
+  - bash-aliases
+  - python
+  - dotfiles
+  - scientific-python
+format: list
+topics:
+  - "Programming & tools"
 ---
 
 I'm regularly asked about the setup of my laptop: a System76 [Gazelle Professional](https://www.system76.com/laptops/model/gazp9) named Felix running Ubuntu 14.04. Writing a return to that query produced the following:

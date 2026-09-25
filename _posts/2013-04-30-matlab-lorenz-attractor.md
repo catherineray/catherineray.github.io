@@ -6,6 +6,18 @@ categories:
   - "explanation"
   - "math"
   - "matlab"
+genre: math
+tags:
+  - code
+  - lorenz-attractor
+  - chaos-theory
+  - dynamical-systems
+  - ordinary-differential-equations
+  - matlab
+format: tutorial
+topics:
+  - "Physics"
+  - "Programming & tools"
 ---
 
 I’m a big fan of the Lorenz Attractor, which, when plotted, resembles the half open wings of a butterfly. This attractor was derived from a simplified model of convection in the earth’s atmosphere. One simple version of the Lorenz attractor is pictured below:
@@ -50,3 +62,5 @@ This results in the figure:
 [![](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-23-25.png)](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-23-25.png)
 
 [To create a surface/mesh from this line plot, we proceed…](/matlab-create-mesh-or-surface-from-line-plot/)
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/lorenz.m">cow-code / lorenz.m</a></p>

@@ -4,6 +4,17 @@ date: "2013-08-06"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - grep
+  - bash
+  - apache-hive
+  - hiveql
+  - apache-impala
+  - shell-scripting
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Grep is a magical beast which can be used to make your bash scripts excellent. This post will give you a taste of its utility. Let's say I have a file, temp.txt which contains two lines:

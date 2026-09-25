@@ -3,6 +3,18 @@ title: "On Detiling Polynomials: A Generalization of the Euler MacLaurin Formula
 date: "2015-08-31"
 categories: 
   - "math"
+genre: math
+tags:
+  - euler-maclaurin-formula
+  - lattices
+  - finite-differences
+  - operator-calculus
+  - analysis
+format: explanation
+topics:
+  - "Number theory"
+  - "Analysis & calculus"
+  - "Combinatorics & puzzles"
 ---
 
 Today, we’ll be talking about a relation between the discrete and continuous.

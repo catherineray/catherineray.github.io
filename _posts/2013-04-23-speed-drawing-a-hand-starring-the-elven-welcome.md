@@ -4,6 +4,17 @@ date: "2013-04-23"
 categories: 
   - "art"
   - "video"
+genre: art
+tags:
+  - speed-drawing
+  - hand-drawing
+  - drawing
+  - time-lapse-video
+  - tolkien
+format: artwork
+topics:
+  - "Algebra & representation theory"
+  - "Drawing, painting & comics"
 ---
 
 A video of me drawing a hand as my interpretation of Tolkien’s _Elven Welcome_ plays in the background. Enjoy!

@@ -3,6 +3,16 @@ title: "Installing CoffeeScript on Ubuntu 13.04"
 date: "2013-08-28"
 categories: 
   - "linux"
+genre: science
+tags:
+  - coffeescript
+  - nodejs
+  - ubuntu
+  - linux
+  - installation
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Unfortunately, the current CoffeeScript docs do not support installation on the latest Ubuntu distro. To get around this, we must manually install the dependencies. Don't worry, I've done most of the work for you.

@@ -5,6 +5,17 @@ categories:
   - "cohomology"
   - "math"
   - "topology"
+genre: math
+tags:
+  - complex-cobordism
+  - complex-orientation
+  - normal-bundles
+  - landweber-exact-functor-theorem
+  - algebraic-topology
+format: notes
+topics:
+  - "Homotopy theory"
+  - "Algebra & representation theory"
 ---
 
 _This post assumes knowledge of the definition of the oriented cobordism ring, as well as the equivalence \(\pi_*MU \simeq MU^*(pt) =: MU^*\), and familiarity with the [Landweber exact-functor theorem](/landweber-exactness/)._

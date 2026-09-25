@@ -1,0 +1,139 @@
+---
+layout: default
+title: All posts
+permalink: /blog/
+rail: filters
+# Highlights come from `pinned:` in _data/genres.yml; topics from _data/topics.yml and each post's `topics:`.
+# The search, genre, topic and order controls live in the sidebar (_includes/rail.html, `rail: filters`).
+---
+{% assign statics = site.static_files | map: "path" %}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
+{% include posts-style.html %}
+
+<div class="ap recents-tiles">
+  <div class="ap-title">{% include page-title.html text="Good Fibrations" shadow="#fbe919" %}</div>
+  <p class="ap-tagline">math is art</p>
+  <p class="ap-count">A blog since 2013. Scraps of a playground annealing in the dark.</p>
+
+  <div class="ap-sec-row" id="ap-hl-h"><h2 class="ap-sec">Highlights</h2><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></div>
+  <div class="ap-hl" aria-label="Highlights">
+    {% for g in site.data.genres %}{% assign n = site.posts | where: "genre", g.key | size %}
+    <section class="ap-hl-col" style="--g: {{ g.color }};">
+      <a class="ap-hl-head" href="{{ site.baseurl }}{{ g.url }}"><img src="{{ site.baseurl }}{{ g.icon }}" alt="">{{ g.name }}<span>{{ n }}</span></a>
+      {% for slug in g.pinned %}{% assign p = site.posts | where: "slug", slug | first %}{% if p %}
+        {% assign parts = p.content | split: 'src="' %}{% assign thumb = "" %}{% if parts.size > 1 %}{% assign thumb = parts[1] | split: '"' | first %}{% endif %}
+        {% if thumb contains "/wp-content/" %}{% unless thumb contains "/images/" %}{% assign thumb = thumb | replace: "/wp-content/", "/images/wp-content/" %}{% endunless %}{% endif %}
+        {% capture pic %}{% if p.card_image %}<img class="ap-thumb" src="{{ site.baseurl }}{{ p.card_image }}" alt="" loading="lazy">{% elsif p.card_lines %}<span class="ap-thumb ap-lines">{% for l in p.card_lines %}{{ l }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span>{% elsif statics contains thumb %}<img class="ap-thumb" src="{{ site.baseurl }}{{ thumb }}" alt="" loading="lazy">{% else %}<span class="ap-thumb none"><img src="{{ site.baseurl }}{{ g.icon }}" alt=""></span>{% endif %}{% endcapture %}
+        {% capture hdata %} data-genre="{{ p.genre }}" data-topics="|{{ p.topics | join: '|' }}|" data-text="{{ p.title | downcase | escape }} {{ p.tags | join: ' ' }} {{ p.topics | join: ' ' | downcase }}"{% endcapture %}
+        {% if p.card_links %}
+        <div class="ap-card has-links"{{ hdata }}>
+          <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}">{{ pic }}<span class="ap-card-body"><b>{{ p.title }}</b><time>{{ p.date | date: "%b %Y" }}</time></span></a>
+          <span class="ap-card-actions">{% for l in p.card_links %}{% if l.url == "post" %}<a class="ap-btn" href="{{ site.baseurl }}{{ p.url }}">{{ l.label }}</a>{% else %}<a class="ap-btn alt" href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}</span>
+        </div>
+        {% elsif p.card_audio %}
+        <div class="ap-card has-audio"{{ hdata }}>
+          <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}">{{ pic }}</a>
+          <div class="ap-card-player">{% include tracklist.html tracks=p.card_audio %}</div>
+          <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}"><span class="ap-card-body"><b>{{ p.title }}</b><time>{{ p.date | date: "%b %Y" }}</time></span></a>
+        </div>
+        {% else %}
+        <a class="ap-card" href="{{ site.baseurl }}{{ p.url }}"{{ hdata }}>
+          {{ pic }}
+          <span class="ap-card-body"><b>{{ p.title }}</b><time>{{ p.date | date: "%b %Y" }}</time></span>
+        </a>
+        {% endif %}
+      {% endif %}{% endfor %}
+    </section>
+    {% endfor %}
+  </div>
+
+
+  <div class="ap-sec-row"><h2 class="ap-sec ap-sec-recents">Recents <button type="button" class="sort-toggle" aria-label="Change order">newest first ↓</button></h2><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></div>
+  <div id="ap-posts">
+  {% assign lasty = "" %}
+  {% for post in site.posts %}
+    {% assign y = post.date | date: "%Y" %}
+    {% if y != lasty %}{% unless forloop.first %}</ol></section>{% endunless %}<section class="ap-yearblock"><h2 class="ap-year" id="y{{ y }}">{{ y }}</h2><ol class="ap-list">{% assign lasty = y %}{% endif %}
+    {% include post-item.html %}
+    {% if forloop.last %}</ol></section>{% endif %}
+  {% endfor %}
+  <p class="ap-empty is-hidden">No posts match. Try another topic or genre.</p>
+  </div>
+</div>
+
+
+{% include words-toggle.html %}
+<script>
+// the sidebar controls (data-f) filter and order this list
+(function () {
+  var box = document.getElementById('ap-posts');
+  var state = { genre: 'all', topic: 'all', q: '', sort: 'new' };
+  var controls = document.querySelectorAll('[data-f]');
+  function sync() {
+    controls.forEach(function (c) {
+      var f = c.dataset.f;
+      if (c.tagName === 'BUTTON') c.setAttribute('aria-pressed', String(c.dataset.v === state[f]));
+      else if (c.value !== state[f]) c.value = state[f];
+    });
+  }
+  function apply() {
+    var n = 0;
+    box.querySelectorAll('.ap-yearblock').forEach(function (block) {
+      var k = 0;
+      block.querySelectorAll('.ap-item').forEach(function (el) {
+        var ok = (state.genre === 'all' || el.dataset.genre === state.genre)
+          && (state.topic === 'all' || el.dataset.topics.indexOf('|' + state.topic + '|') !== -1)
+          && (!state.q || el.dataset.text.indexOf(state.q) !== -1);
+        el.classList.toggle('is-hidden', !ok); if (ok) k++;
+      });
+      block.classList.toggle('is-hidden', !k); n += k;
+    });
+    // highlights follow the same filters; empty genre columns (and the whole block) step aside
+    var any = 0;
+    document.querySelectorAll('.ap-hl-col').forEach(function (col) {
+      var k = 0;
+      col.querySelectorAll('.ap-card').forEach(function (c) {
+        var ok = (state.genre === 'all' || c.dataset.genre === state.genre)
+          && (state.topic === 'all' || c.dataset.topics.indexOf('|' + state.topic + '|') !== -1)
+          && (!state.q || c.dataset.text.indexOf(state.q) !== -1);
+        c.classList.toggle('is-hidden', !ok); if (ok) k++;
+      });
+      col.classList.toggle('is-empty', !k); any += k;
+    });
+    document.querySelector('.ap-hl').classList.toggle('is-empty', !any);
+    document.querySelector('.ap-hl').classList.toggle('is-filtered', state.genre !== 'all' || state.topic !== 'all' || !!state.q);
+    document.getElementById('ap-hl-h').classList.toggle('is-empty', !any);
+    document.querySelectorAll('.rail-shown .n').forEach(function (b) { b.textContent = n; });
+    box.querySelector('.ap-empty').classList.toggle('is-hidden', n > 0);
+  }
+  function order() {
+    var old = state.sort === 'old';
+    if ((box.dataset.order === 'old') === old) return;
+    Array.prototype.slice.call(box.querySelectorAll('.ap-yearblock')).reverse().forEach(function (b) {
+      var ol = b.querySelector('.ap-list');
+      Array.prototype.slice.call(ol.children).reverse().forEach(function (li) { ol.appendChild(li); });
+      box.insertBefore(b, box.querySelector('.ap-empty'));
+    });
+    box.dataset.order = old ? 'old' : 'new';
+  }
+  function set(f, v) {
+    state[f] = v; sync(); if (f === 'sort') order(); apply();
+    if (f !== 'q') document.querySelector('.ap-title').scrollIntoView({ block: 'start' });
+  }
+  controls.forEach(function (c) {
+    var f = c.dataset.f;
+    if (c.tagName === 'BUTTON') c.addEventListener('click', function () { set(f, c.dataset.v); });
+    else if (c.type === 'search') c.addEventListener('input', function () { set(f, c.value.trim().toLowerCase()); });
+    else c.addEventListener('change', function () { set(f, c.value); });
+  });
+  // arriving from a post's sidebar: /blog/?genre=math&topic=Music&q=braille
+  var qs = new URLSearchParams(location.search);
+  ['genre', 'topic', 'sort'].forEach(function (f) { if (qs.get(f)) state[f] = qs.get(f); });
+  if (qs.get('q')) { state.q = qs.get('q').toLowerCase(); var qi = document.getElementById('rail-q'); if (qi) qi.value = qs.get('q'); }
+  sync(); if (state.sort === 'old') order();
+  apply();
+})();
+</script>
+
+{% include track-player.html %}

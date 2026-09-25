@@ -5,6 +5,18 @@ categories:
   - "code"
   - "explanation"
   - "matlab"
+genre: science
+tags:
+  - code
+  - matlab
+  - delaunay-triangulation
+  - surface-reconstruction
+  - lorenz-attractor
+  - scientific-visualization
+format: tutorial
+topics:
+  - "Physics"
+  - "Programming & tools"
 ---
 
 This is a continuation of [Matlab: Lorentz Attractor](/matlab-lorenz-attractor/), however, these methods can be applied to any line plot or collection of points.
@@ -41,3 +53,5 @@ shading interp
 What if we’d like a surface instead of the mesh? Then we’ll change `trimesh` to `trisurf` add transparency (`alpha = 0.7`) and find:
 
 [![](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-33-45.png)](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-33-45.png)
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/surfaceplot.m">cow-code / surfaceplot.m</a></p>

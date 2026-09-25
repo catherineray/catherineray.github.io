@@ -6,6 +6,18 @@ categories:
   - "explanation"
   - "math"
   - "python"
+genre: math
+tags:
+  - code
+  - prime-sieves
+  - sieve-of-eratosthenes
+  - algorithm-analysis
+  - runtime-benchmarking
+  - python
+format: explanation
+topics:
+  - "Number theory"
+  - "Programming & tools"
 ---
 
 I’m currently reading _Algorithms Unplugged_, lent to me by my friend and professor, Dr. Marr.
@@ -101,3 +113,5 @@ Taking a brief glance at the output, I found confirmation of the authors’ clai
 * * *
 
 *Berthold Vöcking, Helmut Alt, Martin Dietzfelbinger, Rüdiger Reischuk, Christian Scheideler, Heribert Vollmer, Dorothea Wagner
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/primeruntime.py">cow-code / primeruntime.py</a></p>

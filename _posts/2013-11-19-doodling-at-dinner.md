@@ -3,6 +3,15 @@ title: "Doodling at Dinner"
 date: "2013-11-19"
 categories: 
   - "art"
+genre: art
+tags:
+  - drawing
+  - doodling
+  - sketchbook
+  - surrealism
+format: artwork
+topics:
+  - "Drawing, painting & comics"
 ---
 
 [![](/wp-content/uploads/2013/11/drawing-1.jpg)](/wp-content/uploads/2013/11/drawing-1.jpg)

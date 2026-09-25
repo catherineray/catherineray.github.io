@@ -3,6 +3,17 @@ title: "The Landweber exact-functor theorem"
 date: "2015-04-11"
 categories: 
   - "math"
+genre: math
+tags:
+  - landweber-exact-functor-theorem
+  - complex-cobordism
+  - formal-group-laws
+  - flat-modules
+  - chromatic-homotopy-theory
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Formal groups"
 ---
 
 _This post assumes familiarity with formal group laws, the definition of exact sequences, the motivation of the Landweber-Ravenel-Stong construction, that the exactness axioms are one of the generalized Eilenberg-Steenrod axioms, and the fact that formal group laws over \\(R\\) are represented by maps from the Lazard ring to \\(R\\)._

@@ -22,7 +22,8 @@ footer-links:
   facebook:
   flickr:
   github: catherineray
-  instagram:
+  mathoverflow: 56462/catherine-ray   # user id/name on mathoverflow.net
+  instagram: fractalcows
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
@@ -87,3 +88,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# every post gets the same sidebar as All posts (search, genre, topic); clicking one goes to All posts filtered
+defaults:
+  - scope: { path: "", type: posts }
+    values: { rail: filters }

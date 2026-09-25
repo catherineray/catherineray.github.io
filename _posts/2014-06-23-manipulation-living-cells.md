@@ -3,6 +3,18 @@ title: "Manipulation of Living Cells &#038; Dead Ones"
 date: "2014-06-23"
 categories: 
   - "physics"
+genre: science
+tags:
+  - biophysics
+  - optical-tweezers
+  - gel-electrophoresis
+  - dielectrophoresis
+  - cell-manipulation
+  - physics
+format: explanation
+topics:
+  - "Physics"
+  - "Biology & medicine"
 ---
 
 There are many methods for manipulating living cells and pieces of dead ones. The method of choice is entirely context dependent.

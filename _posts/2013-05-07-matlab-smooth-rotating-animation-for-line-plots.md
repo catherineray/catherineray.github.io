@@ -6,6 +6,18 @@ categories:
   - "explanation"
   - "matlab"
   - "video"
+genre: science
+tags:
+  - code
+  - matlab
+  - animation
+  - videowriter
+  - 3d-plotting
+  - lorenz-attractor
+format: tutorial
+topics:
+  - "Physics"
+  - "Programming & tools"
 ---
 
 I recently became stuck trying to create an animation which consists of a smooth rotation of a viewpoint around the Lorenz attractor. Methods I use for changing viewpoints with respect to surface objects were creating jerky, lagging animations when applied to my line plot.
@@ -30,3 +42,5 @@ close(vidObj);
 This results in the following smooth animation: 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7dRru3vDqiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/smoothanimation.m">cow-code / smoothanimation.m</a></p>

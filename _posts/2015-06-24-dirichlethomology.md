@@ -3,6 +3,18 @@ title: "Dirichlet Series and Homology Theories"
 date: "2015-06-24"
 categories: 
   - "math"
+genre: math
+tags:
+  - dirichlet-series
+  - euler-product
+  - riemann-zeta-function
+  - analytic-number-theory
+  - homology-theories
+format: explanation
+topics:
+  - "Number theory"
+  - "Homotopy theory"
+  - "Analysis & calculus"
 ---
 
 Euler was a swashbuckler. He considered the following series, nevermind that it sums to infinity, let’s see what we can do with it!
@@ -87,7 +99,7 @@ Then I need \\(\chi(s)\\) that spits out \\(\chi(1) = 1\\), \\(\chi(2) = 0\\), \
 
 This L(s) is called the L-function or Dirichlet series, and it is of great interest to people in general, particularly in the study of rational points on curves.
 
-But, if you’ve been reading this blog for very long, you won’t be suprised to hear that I am interested because they come up in the dialogue between formal group laws and complex homology theories.
+But, if you’ve been reading this blog for very long, you won’t be surprised to hear that I am interested because they come up in the dialogue between formal group laws and complex homology theories.
 
 Specifically, I’ve been wondering about (5) in this excerpt of the paper “Dirchlet Series and Homology theory” by Smith and Stong:
 

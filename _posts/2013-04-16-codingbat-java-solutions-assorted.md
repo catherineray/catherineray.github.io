@@ -5,6 +5,17 @@ categories:
   - "code"
   - "explanation"
   - "java"
+genre: science
+tags:
+  - java
+  - codingbat
+  - programming-exercises
+  - arrays
+  - string-manipulation
+format: problem-set
+topics:
+  - "Algebra & representation theory"
+  - "Programming & tools"
 ---
 
 I’m brushing up on my Java lately using a wonderful code practice site called [CodingBat](http://codingbat.com/). Below are a few of the solutions I’ve found to their practice problems.

@@ -6,6 +6,17 @@ categories:
   - "explanation"
   - "math"
   - "python"
+genre: math
+tags:
+  - code
+  - triangular-numbers
+  - integer-sequences
+  - recreational-mathematics
+  - python
+format: explanation
+topics:
+  - "Combinatorics & puzzles"
+  - "Programming & tools"
 ---
 
 I was recently hanging out with some friends, and one of them brought out an old math problem sheet. This problem sheet was briefly passed around and then put away again. One of the problems was a cute math puzzle. This problem was...
@@ -32,3 +43,5 @@ for n in range(0, x-1):
 ```
 
 This finds the number of triangle numbers less than 1234 (which corresponds to the number of 1s in the sequence), then subtracts this number from 1234*2.
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/smallmathpuzzles.py">cow-code / smallmathpuzzles.py</a></p>

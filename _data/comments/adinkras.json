@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20150821033950/http://rin.io:80/adinkras/",
+ "comments": [
+  {
+   "id": "6288",
+   "parent": null,
+   "kind": "comment",
+   "author": "Tristan Hubsch",
+   "author_url": "http://physics1.howard.edu/~thubsch/",
+   "date": "2014-08-31T03:34:10+00:00",
+   "html": "<p>Hi, there! Nice work. Perhaps some of the following works might also grab your attention:<br/>\nClassification of (World-Line) Adinkras: [arxiv:math-ph/0512016], [arXiv:0806.0050], [arXiv:0806.0051], [arXiv:0811.3410], [arXiv:0901.4970], [arXiv:1108.4124]<br/>\nFiltered Clifford Supermodules: [arxiv:math-ph/0603012]<br/>\nWorld-Sheet Adinkras: [arXiv:1104.0722], [arXiv:1104.3135]<br/>\nAdinkras on (Special) Riemann Surfaces: [arXiv:1311.3736]<br/>\nAdinkra Networks and Other Constructions: [arXiv:1202.4342], [arXiv:1202.4418], [arXiv:1310.3258]<br/>\nPerhaps the presentation  can give you some additional ideas… See, for example, p.15-18: the chart of binary linear doubly-even block codes remains unfinished essentially b/c we got kicked off supercomputer grids for hogging CPU time; a more efficient approach is needed than what is described in Appendix C of [arXiv:0806.0050]. Just in case… <img alt=\":-)\" class=\"wp-smiley\" src=\"http://rin.io/wp-includes/images/smilies/icon_smile.gif\"/><br/>\nAnyhow, nice to see other folks become interested in these neat objects.<br/>\nCheers, Tristan</p>",
+   "depth": 0
+  }
+ ]
+}

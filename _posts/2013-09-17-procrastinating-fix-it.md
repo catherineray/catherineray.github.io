@@ -4,6 +4,15 @@ date: "2013-09-17"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - procrastination
+  - productivity
+  - time-management
+  - mindfulness
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 I am often asked how to stop procrastinating or asked how I get so much done. While I think I don’t get enough done, I will share some of my methods of crushing procrastination with mindfulness.

@@ -6,15 +6,32 @@ categories:
   - "camel"
   - "explanation"
   - "research-projects"
+genre: science
+tags:
+  - code
+  - braille
+  - machine-learning
+  - natural-language-processing
+  - research-poster
+  - accessibility
+format: paper
+topics:
+  - "Braille & accessibility"
+  - "Robotics & machine learning"
 ---
 
-The poster I’m using to present my research creating CAMEL is finally finished (full-size version: [CAMEL_poster](/wp-content/uploads/2013/04/Ray_CAMEL.pdf)).
+The poster I’m using to present my research creating CAMEL is finally finished (full-size version: [CAMEL_poster](/images/wp-content/uploads/2013/04/Ray_CAMEL.pdf)).
+
+<figure class="pdf-embed">
+  <a href="/images/wp-content/uploads/2013/04/Ray_CAMEL.pdf"><img src="/images/wp-content/uploads/2013/04/Ray_CAMEL-poster.png" alt="The CAMEL research poster: Contextual Machine Learning Through the Analysis and Chunking of Partially Translated Grade 2 Braille" style="width: 100%; border: 3px solid #1b1b1b; border-radius: 10px; background: #fff;"></a>
+  <figcaption><a href="/images/wp-content/uploads/2013/04/Ray_CAMEL.pdf" target="_blank" rel="noopener">Open the full-size poster (PDF) ↗</a></figcaption>
+</figure>
 
 ![Rin 2013-04-18 at 12.50.33 PM](/wp-content/uploads/2013/04/Rin-2013-04-18-at-12.50.33-PM.png)
 
 In order to condense [the entirety of my paper](/camel-paper/) into a viewer-friendly poster, I decided to **make diagrams to describe the program’s inner workings in layman’s terms**.
 
-If you like the format of this poster: [all code used in this project is on github](https://github.com/catherineray/CAMEL/tree/master/poster).
+If you like the format of this poster: [all code used in this project is on github](https://github.com/catherineray/MachLearn-G2Braille/tree/master/poster).
 
 #### Introduction to CAMEL
 
@@ -90,3 +107,5 @@ The most difficult part of the poster was creating a mature acknowledgements sec
 - my friends for putting up with me when I stop in the middle of a conversation to write down ideas and/or zone-out thinking
 
 Although these were essential to my completion of this project, I think it’s best to not include these points in the poster.
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/MachLearn-G2Braille">MachLearn-G2Braille (CAMEL)</a></p>

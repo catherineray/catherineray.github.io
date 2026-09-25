@@ -6,6 +6,16 @@ categories:
   - "explanation"
   - "math"
   - "matlab"
+genre: science
+tags:
+  - code
+  - matlab
+  - colormaps
+  - data-visualization
+  - rgb-color-model
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 In my data visualization class, we had an assignment to create a “rainbow” (create and display 128 vertical stripes of color in one image, in RGB sequence). Something like this:
@@ -51,3 +61,5 @@ print -dpng 'rainbow.png'
 [![](/wp-content/uploads/2013/04/rainbow3.png)](/wp-content/uploads/2013/04/rainbow3.png)
 
 This creates a different rainbow and satisfies the professor’s algorithmic requirement.
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/rainbow.m">cow-code / rainbow.m</a></p>

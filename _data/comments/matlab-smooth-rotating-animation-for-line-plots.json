@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20180728205447/http://rin.io:80/matlab-smooth-rotating-animation-for-line-plots/",
+ "comments": [
+  {
+   "id": "8978",
+   "parent": null,
+   "kind": "comment",
+   "author": "Thank You!!!",
+   "author_url": null,
+   "date": "2014-11-04T19:28:36+00:00",
+   "html": "<p>You are a God amongst men!!! I have been trying for over a week to get a 3D plot to rotate smoothly. It kept jumping around as it rotated, zooming in and out, giving weird perspectives, etc. etc. I’ve scoured every Stackoverflow and mathworks post on the issue, consulted every matlab coder I know, NO ONE could figure it out.</p>\n<p>The solution? “axis vis3d”</p>\n<p>I have no idea why those 9 characters solved all of the world’s problems but they did. Thanks.</p>",
+   "depth": 0
+  }
+ ]
+}

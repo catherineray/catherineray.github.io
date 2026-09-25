@@ -1,0 +1,45 @@
+{
+ "source": "https://web.archive.org/web/20170720121231/http://rin.io:80/flurry/",
+ "comments": [
+  {
+   "id": "37959",
+   "parent": null,
+   "kind": "comment",
+   "author": "Moe",
+   "author_url": null,
+   "date": "2016-09-13T07:04:30+00:00",
+   "html": "<p>Hey what Springer book is that one? Is it part of the series in statistics category?</p>",
+   "depth": 0
+  },
+  {
+   "id": "37980",
+   "parent": "37959",
+   "kind": "comment",
+   "author": "rin",
+   "author_url": null,
+   "date": "2016-09-14T12:47:15+00:00",
+   "html": "<p>It is “Invitation to Algebraic Geometry.”</p>",
+   "depth": 1
+  },
+  {
+   "id": "38004",
+   "parent": "37980",
+   "kind": "comment",
+   "author": "Moe",
+   "author_url": "http://www.pinterest.com/moe_0003",
+   "date": "2016-09-15T12:43:44+00:00",
+   "html": "<p>Is it assigned by your college?</p>",
+   "depth": 2
+  },
+  {
+   "id": "38012",
+   "parent": "38004",
+   "kind": "comment",
+   "author": "rin",
+   "author_url": null,
+   "date": "2016-09-15T18:19:41+00:00",
+   "html": "<p>No, it was recommended to me as a nice exposition.</p>",
+   "depth": 3
+  }
+ ]
+}

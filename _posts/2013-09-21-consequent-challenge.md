@@ -4,6 +4,16 @@ date: "2013-09-21"
 categories: 
   - "code"
   - "python"
+genre: science
+tags:
+  - python
+  - one-liners
+  - sorting
+  - file-io
+  - timed-challenges
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Today, as I was writing [a post](/playing-in-vim/) on sorting in vim, I issued myself a challenge.

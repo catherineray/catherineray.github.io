@@ -4,13 +4,22 @@ date: "2013-04-11"
 categories: 
   - "chess"
   - "explanation"
+genre: prose
+tags:
+  - chess
+  - chess-openings
+  - pawn-structure
+  - castling
+format: list
+topics:
+  - "Combinatorics & puzzles"
 ---
 
 _Disclaimer: I’m a mediocre chess player, I do not consider myself a chess expert. These simple tips are for beginners looking to surprise intermediate players during games._
 
 This post assumes you know basic chess rules and some chess terminology. If you are unfamiliar with Algebraic chess notation, I suggest you read [this.](/algebraic-chess-notation/)
 
-**Setting up the board.** Queen on her colour.
+**Setting up the board.** Queen on her color.
 
 [![](/wp-content/uploads/2013/04/queenoncolor.png)](/wp-content/uploads/2013/04/queenoncolor.png)
 
@@ -66,7 +75,7 @@ However, white’s pawn fork (b5 threatens Ra6 and Rc6) isn’t a stable fork, f
 
 Additionally, the white king is under check, and the white side is at a material disadvantage. From here, assuming it’s white’s move: 1. Kg2 Nxd2 2. bxa6 Rxa6 3. Kh3 Nb1 4. Kg4 Ra3 and then they dance. I predict 0-1.
 
-Playing black? Confused during openings? Use the **Sicilian Defence.**
+Playing black? Confused during openings? Use the **Sicilian Defense.**
 
 <table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-01-05.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-01-05.png"></a></td></tr><tr><td style="text-align: center;">1. e4 c5</td></tr></tbody></table>
 

@@ -3,6 +3,17 @@ title: "What is an elliptic curve?"
 date: "2015-03-25"
 categories: 
   - "math"
+genre: math
+tags:
+  - elliptic-curves
+  - algebraic-geometry
+  - schemes
+  - mordell-weil-theorem
+  - arithmetic-geometry
+format: explanation
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Number theory"
 ---
 
 ![Screen Shot 2015-04-09 at 12.09.45 PM](/wp-content/uploads/2015/03/Screen-Shot-2015-04-09-at-12.09.45-PM.png)

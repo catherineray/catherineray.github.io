@@ -4,6 +4,16 @@ date: "2013-10-22"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - attribution-bias
+  - sexual-violence
+  - victim-blaming
+  - social-psychology
+  - survivor-advocacy
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 [Project Unbreakable](http://projectunbreakable.tumblr.com/) is a project run by Grace Brown, Kaelyn Siversky, Christina Dunlop, and Kerri Pang. It was created to raise awareness of the common nature of sexual assault and serves to alter the general sociocultural perception of rape. Disproving the regular assumption that rape is an uncommon, unfortunate occurrence that happens only to those who deserve it. The project is a composed of a collection of art submitted by survivors. These submissions are photographs of a survivors holding posters decorated with quotes from their attackers. Submissions also include quotes from others in reaction to survivors seeking help (e.g., “You deserved it,” “I don’t believe you”). This project features male rape survivors and showcases the reality that men can get raped. There is no discrimination as to who can participate in Project Unbreakable (“anyone who has experienced any form of sexual abuse, whether physical or emotional”). However, they do not accept admissions from children.

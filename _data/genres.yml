@@ -1,0 +1,43 @@
+# the four genres shown in the rail, in order; pinned = post slugs (filename without date)
+- key: math
+  name: Math
+  url: /math/
+  color: "#ec3f9e"
+  icon: /images/icons/math.png
+  pinned:
+    - harish-chandra
+    - faulhaber-shift
+    - informal-tmf
+    - dirichlethomology
+- key: science
+  name: Science
+  url: /science/
+  color: "#6cc8f0"
+  icon: /images/icons/science.png
+  pinned:
+    - megacolon
+    - biome
+    - neuroprosthetic
+    - wheelchair
+    - pressure-ulcer-prevent
+- key: art
+  name: Art
+  url: /art/posts/
+  color: "#f9a13c"
+  icon: /images/icons/art.png
+  pinned:
+    - impaction
+    - webcomic-re-search
+    - ytm-2024-design
+    - cech-covers
+- key: prose
+  name: Prose
+  url: /prose/
+  color: "#9b7fd4"
+  icon: /images/icons/excerpts.png
+  pinned:
+    - job-title-universe-debugger-importance
+    - fuck-perfectionism
+    - im-not-good-at-math
+    - caterpillars-life-lesson
+    - the-purpose-of-communicaton-assigning-credit

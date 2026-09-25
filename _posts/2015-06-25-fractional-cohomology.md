@@ -3,6 +3,17 @@ title: "Thoughts on Fractional Cohomology"
 date: "2015-06-25"
 categories: 
   - "math"
+genre: math
+tags:
+  - cohomology
+  - grothendieck-group
+  - orbifolds
+  - filtered-modules
+  - algebraic-topology
+format: notes
+topics:
+  - "Homotopy theory"
+  - "Algebra & representation theory"
 ---
 
 Before I get into this post, allow me to give a bit of back story.

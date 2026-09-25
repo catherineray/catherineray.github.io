@@ -3,6 +3,17 @@ title: "What is the difference between homotopy and coherent homotopy?"
 date: "2015-07-04"
 categories: 
   - "math"
+genre: math
+tags:
+  - coherent-homotopy
+  - a-infinity-structures
+  - ring-spectra
+  - homotopy-theory
+  - algebraic-topology
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Algebra & representation theory"
 ---
 
 This question had been bugging me for a while, and I have been unable to find a source that is suited to the beginning topologist. Eric Peterson kindly answered this for me, and I found his explanation so astoundingly beautiful that I wish to share on the off chance that you, dear reader, will similarly appreciate this visually rich narrative. All errors are mine and not his.

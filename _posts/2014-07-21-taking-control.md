@@ -4,6 +4,15 @@ date: "2014-07-21"
 categories: 
   - "art"
   - "life"
+genre: art
+tags:
+  - drawing
+  - illustration
+  - quotation
+  - self-agency
+format: artwork
+topics:
+  - "Drawing, painting & comics"
 ---
 
 [![hobbermandone](/wp-content/uploads/2014/07/hobbermandone.png)](/wp-content/uploads/2014/07/hobbermandone.png)

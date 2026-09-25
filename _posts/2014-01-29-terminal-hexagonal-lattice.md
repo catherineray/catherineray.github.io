@@ -4,6 +4,16 @@ date: "2014-01-29"
 categories: 
   - "code"
   - "python"
+genre: science
+tags:
+  - code
+  - python
+  - ascii-art
+  - hexagonal-lattice
+format: tutorial
+topics:
+  - "Programming & tools"
+  - "Drawing, painting & comics"
 ---
 
 Here: have a script to generate plaintext hexagonal lattices for you when you’re feeling blue.
@@ -42,3 +52,5 @@ if __name__ == "__main__":
 . .   . .   . .   . .   . .   . .   . .   . .   . .   . .   
    . .   . .   . .   . .   . .   . .   . .   . .   . .   . .
 ```
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/hexagons.py">cow-code / hexagons.py</a></p>

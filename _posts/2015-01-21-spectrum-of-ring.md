@@ -3,6 +3,17 @@ title: "Spectrum of a Ring"
 date: "2015-01-21"
 categories: 
   - "math"
+genre: math
+tags:
+  - algebraic-geometry
+  - affine-schemes
+  - functor-of-points
+  - commutative-algebra
+  - elliptic-curves
+format: explanation
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Algebra & representation theory"
 ---
 
 We have a functor Spec from Ring to Schemes:

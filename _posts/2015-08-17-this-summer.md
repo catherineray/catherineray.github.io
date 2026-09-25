@@ -3,6 +3,15 @@ title: "Some comments on math communication"
 date: "2015-08-17"
 categories: 
   - "writing"
+genre: prose
+tags:
+  - mathematical-communication
+  - public-speaking
+  - mathematical-community
+  - higher-education
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 I read Bill Thurston’s [On Proof and Progress](http://arxiv.org/abs/math/9404236) this morning. This led me to consider a few things I’ve learned this summer about the sociology and psychology of being a part of the mathematical community, which I figured I’d share on the off chance that you might find it encouraging or helpful.

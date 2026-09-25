@@ -4,6 +4,17 @@ date: "2013-04-10"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - perl
+  - find-and-replace
+  - command-line
+  - linux
+  - one-liners
+format: tutorial
+topics:
+  - "Algebra & representation theory"
+  - "Programming & tools"
 ---
 
 Perl’s string handling is a beautiful thing. I’ll talk about grep in a later post.

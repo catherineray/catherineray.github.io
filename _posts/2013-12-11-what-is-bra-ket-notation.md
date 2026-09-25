@@ -5,6 +5,15 @@ categories:
   - "explanation"
   - "math"
   - "physics"
+genre: science
+tags:
+  - dirac-notation
+  - quantum-mechanics
+  - hilbert-spaces
+  - physics
+format: explanation
+topics:
+  - "Physics"
 ---
 
 Bra-ket notation is concise and useful.

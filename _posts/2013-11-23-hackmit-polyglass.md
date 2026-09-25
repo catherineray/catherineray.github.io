@@ -6,6 +6,18 @@ categories:
   - "explanation"
   - "python"
   - "research-projects"
+genre: science
+tags:
+  - eulerian-video-magnification
+  - google-glass
+  - hackathon
+  - heart-rate-estimation
+  - computer-vision
+  - python
+format: announcement
+topics:
+  - "Number theory"
+  - "Programming & tools"
 ---
 
 I attended HackMIT 2013 and had an absolute blast! [Kartik Talwar](http://kartikt.com/), [Spencer Hewett](http://www.skip.it/) and I make a fantastic team.

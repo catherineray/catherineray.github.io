@@ -5,6 +5,26 @@ categories:
   - "art"
   - "math"
   - "music"
+genre: art
+tags:
+  - songwriting
+  - sheaf-cohomology
+  - cech-cohomology
+  - mayer-vietoris-sequence
+  - math-songs
+format: artwork
+topics:
+  - "Music"
+  - "Writing & theater"
+# lines shown on its highlight card on the All posts page, in place of a picture
+card_lines:
+  - "I'll cut you into manageable pieces"
+  - "I hope you're not too hard to glue back together"
+  - "There's so many ways to form an affine cover"
+  - "Yet I keep slicing open your stomach"
+# recording playable from its highlight card on the All posts page
+card_audio:
+  - { title: "Čech Covers", file: "/images/Cech cover.m4a" }
 ---
 
 [Cech Covers](/images/Cech cover.m4a) (click the link to listen to us). I wrote this song with my beloved old room mate Christian Gorski in my last year of grad school while I was wrapping up my thesis. For weeks, I was doing nothing but computing etale sheaf cohomologies of ramified covers of the projective plane. I would decompose sheaves on these curves by cutting around the neighborhood of ramification point (the stomach), and capturing the properties of the ramification group from the ramification point (the heart). The gluing back datum was the punctured neighborhood of the sheaf.

@@ -3,6 +3,17 @@ title: "Spectrum of a Ring and Spectrum of a Linear Operator"
 date: "2016-02-14"
 categories: 
   - "math"
+genre: math
+tags:
+  - spectral-theory
+  - prime-spectrum
+  - minimal-polynomial
+  - linear-algebra
+  - commutative-algebra
+format: explanation
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Algebra & representation theory"
 ---
 
 

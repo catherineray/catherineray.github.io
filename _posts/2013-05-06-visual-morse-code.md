@@ -4,6 +4,16 @@ date: "2013-05-06"
 categories: 
   - "explanation"
   - "video"
+genre: prose
+tags:
+  - morse-code
+  - nato-phonetic-alphabet
+  - mnemonics
+  - video
+format: explanation
+topics:
+  - "Braille & accessibility"
+  - "Programming & tools"
 ---
 
 This video also sneakily teaches you the phonetic alphabet.

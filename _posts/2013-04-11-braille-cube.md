@@ -4,6 +4,16 @@ date: "2013-04-11"
 categories: 
   - "braille"
   - "cubing"
+genre: prose
+tags:
+  - braille
+  - rubiks-cube
+  - speedcubing
+  - accessibility
+  - tactile-design
+format: personal
+topics:
+  - "Braille & accessibility"
 ---
 
 Often, when cubing, I’m asked: _Can you solve it with your eyes closed?_

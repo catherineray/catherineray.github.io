@@ -3,6 +3,18 @@ title: "A Precursor to Characteristic Classes"
 date: "2015-02-19"
 categories: 
   - "math"
+genre: math
+tags:
+  - characteristic-classes
+  - line-bundles
+  - chern-classes
+  - complex-projective-space
+  - classifying-spaces
+  - algebraic-topology
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Algebraic & arithmetic geometry"
 ---
 
 _I’ll assume that you know [what a line bundle is](/intro-to-bundles/) and are comfortable with the following equivalences; if you aren’t familiar with the notation in these equivalences, [John Baez](http://math.ucr.edu/home/baez/calgary/BG.html) might help. Note that integral cohomology := cohomology with coefficients in \(\mathbb{Z}\)._

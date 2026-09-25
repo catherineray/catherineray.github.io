@@ -4,6 +4,16 @@ date: "2013-10-04"
 categories: 
   - "explanation"
   - "life"
+genre: prose
+tags:
+  - productivity
+  - weekly-planner
+  - time-management
+  - braille
+format: personal
+topics:
+  - "Braille & accessibility"
+  - "Life, study & work"
 ---
 
 Sometimes, when juggling a particularly busy lifestyle, a stand-alone Todo list isn’t enough. I find it useful to supplement my [Todo system](/todo-system/) with a weekly schedule in order to quickly allocate Todos to each day.

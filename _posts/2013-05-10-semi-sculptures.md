@@ -3,6 +3,17 @@ title: "Semi-Sculptures"
 date: "2013-05-10"
 categories: 
   - "art"
+genre: art
+tags:
+  - sculpture
+  - wire-sculpture
+  - tesseract
+  - lego-mindstorms
+  - science-art
+format: artwork
+topics:
+  - "Geometry & topology"
+  - "Drawing, painting & comics"
 ---
 
 <table align="center" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;"><img border="0" height="640" src="/wp-content/uploads/2013/05/img_1098-225x300-1.jpg" width="480"></a></td></tr><tr><td style="text-align: center;">Proton (2 up quarks and a down quark) : Wire</td></tr></tbody></table>

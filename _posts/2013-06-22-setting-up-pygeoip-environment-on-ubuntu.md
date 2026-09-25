@@ -6,6 +6,16 @@ categories:
   - "explanation"
   - "linux"
   - "python"
+genre: science
+tags:
+  - python
+  - ip-geolocation
+  - geoip
+  - ubuntu
+  - linux
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 GeoIP uses a large database to find information about a given IP address or website. I went through a couple different package installations before it integrated with my programs successfully. The fairly simple process I settled upon to set up the functional package, [pygeoip](https://pypi.python.org/pypi/pygeoip/) (python API for GeoIP), is as follows:
@@ -21,7 +31,7 @@ To find the path of GeoIP.dat, embrace the power of `  (not ', `  on US keyb
 find `pwd` -name 'GeoIP.dat'
 ```
 
-After [downloading GeoLiteCity.dat](https://code.google.com/p/pysnip/downloads/detail?name=GeoLiteCity.dat&amp;can=2&amp;q=), a simple way rename the file to GeoIPCity.dat whilst moving said file to the same path as GeoIP.dat (for convenience)...
+After [downloading GeoLiteCity.dat](https://code.google.com/p/pysnip/downloads/detail?name=GeoLiteCity.dat&amp;can=2&amp;q=), a simple way rename the file to GeoIPCity.dat while moving said file to the same path as GeoIP.dat (for convenience)...
 
 ```
 sudo mv Downloads/GeoLiteCity.dat /usr/share/GeoIP/GeoIPCity.dat

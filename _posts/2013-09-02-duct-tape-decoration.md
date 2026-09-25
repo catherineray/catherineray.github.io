@@ -4,6 +4,16 @@ date: "2013-09-02"
 categories: 
   - "art"
   - "trombone"
+genre: art
+tags:
+  - duct-tape-art
+  - stencil
+  - trombone
+  - craft
+format: tutorial
+topics:
+  - "Drawing, painting & comics"
+  - "Music"
 ---
 
 Let’s say you want to decorate an all-black surface, without damaging it deeply. If engraving and sharpies aren’t within your acceptable option set, I suggest duct-tape and an exact-o knife. Begin covering your surface with a duct tape canvas. Next, sketch your desired design on some paper (I suggest graph paper) and secure each piece of paper with scotch tape.

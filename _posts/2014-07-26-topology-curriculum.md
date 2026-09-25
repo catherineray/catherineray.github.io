@@ -4,6 +4,16 @@ date: "2014-07-26"
 categories: 
   - "explanation"
   - "math"
+genre: math
+tags:
+  - algebraic-topology
+  - self-directed-learning
+  - reading-list
+  - category-theory
+format: list
+topics:
+  - "Homotopy theory"
+  - "Algebra & representation theory"
 ---
 
 My topology curriculum is an example of [How To: Learn a New Discipline](/achieve-competency/).

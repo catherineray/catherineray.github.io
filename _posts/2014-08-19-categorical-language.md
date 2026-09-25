@@ -3,6 +3,16 @@ title: "A Unifying Language"
 date: "2014-08-19"
 categories: 
   - "math"
+genre: math
+tags:
+  - category-theory
+  - morphisms
+  - commutative-diagrams
+  - graph-theory
+format: explanation
+topics:
+  - "Algebra & representation theory"
+  - "Combinatorics & puzzles"
 ---
 
 Mathematics is a _huge_ subject.

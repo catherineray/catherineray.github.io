@@ -4,6 +4,17 @@ date: "2013-10-14"
 categories: 
   - "code"
   - "python"
+genre: science
+tags:
+  - code
+  - python
+  - morse-code
+  - scripting
+  - dictionaries
+format: tutorial
+topics:
+  - "Braille & accessibility"
+  - "Programming & tools"
 ---
 
 Today, I wanted to code an efficient letter to Morse code translator in Python and whipped this up. I’ve found that a familiarity with many of Python’s lesser-known built-in functions is quite useful in situations such as this!
@@ -30,3 +41,5 @@ if len(sys.argv)>=2:
 else: 
  print "Enter a string to translate, friend!"
 ```
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/englishtomorse.py">cow-code / englishtomorse.py</a></p>

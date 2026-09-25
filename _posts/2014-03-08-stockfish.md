@@ -4,13 +4,25 @@ date: "2014-03-08"
 categories: 
   - "chess"
   - "research-projects"
+genre: science
+tags:
+  - computer-chess
+  - stockfish
+  - alpha-beta-pruning
+  - game-tree-search
+  - bitboards
+  - artificial-intelligence
+format: paper
+topics:
+  - "Combinatorics & puzzles"
+  - "Robotics & machine learning"
 ---
 
 This is a paper I wrote my 3rd year of university as I was working on my [Machine Learning-based Braille translator research](/category/camel/). Enjoy!
 
 **Abstract**
 
-Playing chess has been on the forefront of AI research since Alan Turing and his students proposed chess playing machines. The game of chess is a domain of human thought where very limited sets of rules yield inexhaustible depths, challenges, frustration and beauty. The playing strategies of AI and human players have diverged proportional to the increase of available computing power, namely speed and storage space. Human players recognize and aim to achieve particular patterns; typically, they perform a deep search weighted towards moves that lead to such desired patterns, transferring past knowledge and adapting it to their present situation. AI chess is mostly played by parsing through a huge database, with broad search algorithms used to search for the next optimal move.
+Playing chess has been on the forefront of AI research since Alan Turing and his students proposed chess playing machines. The game of chess is a domain of human thought where very limited sets of rules yield inexhaustible depths, challenges, frustration and beauty. The playing strategies of AI and human players have diverged proportional to the increase of available computing power, namely speed and storage space. Human players recognize and aim to achieve particular patterns; typically, they perform a deep search weighted toward moves that lead to such desired patterns, transferring past knowledge and adapting it to their present situation. AI chess is mostly played by parsing through a huge database, with broad search algorithms used to search for the next optimal move.
 
 All chess engines work by looking at a heuristically determined subset of the legal moves stemming from a given position and evaluating numbers to represent the new position’s relative value obtained by making those moves; then, recursively doing the same thing for the resulting positions. This is done using an evaluation function. An efficient evaluation function provides a better toolbox to guide the chess tree search, which improves the strength and speed of the AI player.
 

@@ -5,6 +5,15 @@ categories:
   - "code"
   - "explanation"
   - "java"
+genre: science
+tags:
+  - java
+  - codingbat
+  - programming-exercises
+  - boolean-logic
+format: problem-set
+topics:
+  - "Programming & tools"
 ---
 
 For warmups, [CodingBat](http://codingbat.com/) provides solutions. Some of my solutions differ from the provided.

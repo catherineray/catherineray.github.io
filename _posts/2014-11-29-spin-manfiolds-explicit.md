@@ -3,6 +3,16 @@ title: "Spin Manifolds"
 date: "2014-11-29"
 categories: 
   - "math"
+genre: math
+tags:
+  - spin-geometry
+  - smooth-manifolds
+  - tangent-bundles
+  - differential-geometry
+  - fiber-bundles
+format: explanation
+topics:
+  - "Geometry & topology"
 ---
 
 **Disclaimer: This exposition is profane.** It is the result of me trying to be productive during a raging headache, and ending up with comic relief.

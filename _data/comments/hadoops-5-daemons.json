@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20200218115417/http://rin.io:80/hadoops-5-daemons/",
+ "comments": [
+  {
+   "id": "32021",
+   "parent": null,
+   "kind": "comment",
+   "author": "Shyam",
+   "author_url": null,
+   "date": "2015-10-13T03:17:27+00:00",
+   "html": "<p>Hi </p>\n<p>Do you know which process prepares the execution plan to fetch the data blocks from data nodes. </p>\n<p>Thanks<br/>\nShyam</p>",
+   "depth": 0
+  }
+ ]
+}

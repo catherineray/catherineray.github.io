@@ -4,6 +4,15 @@ date: "2013-04-19"
 categories: 
   - "art"
   - "trombone"
+genre: art
+tags:
+  - trombone
+  - instrument-decoration
+  - drawing
+format: artwork
+topics:
+  - "Drawing, painting & comics"
+  - "Music"
 ---
 
 To celebrate the removal of my braces (a few months ago), I drew on my tenor trombone’s bell.

@@ -1,0 +1,6 @@
+{% comment %}
+  The one page-title style for the whole site: white capitals, ink outline, a colored copy offset behind
+  (same look as ABOUT ME on the About page and RIN RAY in the sidebar).
+  include.text: the title; include.shadow: the offset color (default pink).
+{% endcomment %}
+<h1 class="page-title" data-text="{{ include.text | escape }}" style="--ts: {{ include.shadow | default: '#ec3f9e' }};">{{ include.text }}</h1>

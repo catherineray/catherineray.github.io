@@ -5,6 +5,16 @@ categories:
   - "art"
   - "comic"
   - "masseygirl"
+genre: art
+tags:
+  - webcomic
+  - comics
+  - mathematical-research
+  - massey-girl
+format: comic
+status: in progress
+topics:
+  - "Drawing, painting & comics"
 ---
 
 ![](/images/wp-content/uploads/2021/05/research0.jpg)

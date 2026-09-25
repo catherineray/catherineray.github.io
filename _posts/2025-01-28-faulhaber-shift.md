@@ -3,6 +3,17 @@ title: "The Bernoulli Numbers Come from a Shift Operator"
 date: "2025-01-28"
 categories: 
   - "math"
+genre: math
+tags:
+  - bernoulli-numbers
+  - faulhaber-formula
+  - finite-differences
+  - shift-operator
+  - generating-functions
+format: explanation
+topics:
+  - "Number theory"
+  - "Combinatorics & puzzles"
 ---
 
 ![](/images/german-tales.jpg)

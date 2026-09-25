@@ -4,6 +4,16 @@ date: "2013-09-29"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - thiel-fellowship
+  - entrepreneurship
+  - gifted-education
+  - higher-education
+  - early-college-entrance
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 _Disclaimer: The following is only my opinion. I am not directly affiliated with the Thiel Fellowship or Thiel Foundation, but I did have the opportunity this summer to interact with and work with many of the fellows and other people involved in the community._

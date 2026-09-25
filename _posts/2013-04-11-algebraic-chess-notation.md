@@ -4,6 +4,16 @@ date: "2013-04-11"
 categories: 
   - "chess"
   - "explanation"
+genre: prose
+tags:
+  - chess
+  - algebraic-notation
+  - chess-engines
+  - stockfish
+format: explanation
+topics:
+  - "Combinatorics & puzzles"
+  - "Robotics & machine learning"
 ---
 
 We use algebraic chess notation to represent chess positions without posting a full chessboard. This allows players to converse about chess positions clearly without a board in front of us. Imagine the chess board as a 2D plot. Below is the table I made to explain this notation in my paper _[How Stockfish Works: An Evaluation of the Databases Behind the Top Open-Source Chess Engine](/stockfish/)_. I will post more about this paper when I’ve finished editing it.

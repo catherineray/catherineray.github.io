@@ -1,0 +1,12 @@
+{% comment %}
+  One card with opening lines, linking to its post. include.song: { slug, title, note, lines }; include.stamp: label (default "Lyrics")
+{% endcomment %}
+{% assign m = include.song %}{% assign p = site.posts | where: "slug", m.slug | first %}
+{% if p %}
+<a class="piece" href="{{ site.baseurl }}{{ p.url }}">
+  <span class="stamp">{{ include.stamp | default: "Lyrics" }}</span>
+  {% if m.lines %}<span class="verse">{% for line in m.lines %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span>{% endif %}
+  {% if m.note %}<span class="piece-blurb">{{ m.note }}</span>{% endif %}
+  <span class="piece-foot"><span class="piece-title">{{ m.title | default: p.title }}</span><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%Y" }}</time></span>
+</a>
+{% endif %}

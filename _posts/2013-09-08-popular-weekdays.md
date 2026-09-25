@@ -4,6 +4,16 @@ date: "2013-09-08"
 categories: 
   - "code"
   - "python"
+genre: science
+tags:
+  - code
+  - python
+  - datetime
+  - day-of-week
+  - scripting
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 The code on my blog will range in quality from “I’m waiting in line and have 10 minutes to code” to “I’ve been working on this all day.”
@@ -72,3 +82,5 @@ Tue
 Sun
 Thu
 ```
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/dayofweek.py">cow-code / dayofweek.py</a> <a href="https://github.com/catherineray/cow-code/blob/master/randomday.py">cow-code / randomday.py</a></p>

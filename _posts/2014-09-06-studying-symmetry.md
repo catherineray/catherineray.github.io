@@ -3,6 +3,17 @@ title: "Studying Symmetry"
 date: "2014-09-06"
 categories: 
   - "math"
+genre: math
+tags:
+  - group-theory
+  - symmetry
+  - fourier-analysis
+  - lie-groups
+  - representation-theory
+format: explanation
+topics:
+  - "Algebra & representation theory"
+  - "Analysis & calculus"
 ---
 
 Group([oid](http://www.ams.org/notices/199607/weinstein.pdf)) theory is the study of symmetry. When we are dealing with objects that appear symmetric, group theory assists with analysis of these objects. The label of “symmetric” is applied to anything which stays invariant under some transformations.

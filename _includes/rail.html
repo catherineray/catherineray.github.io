@@ -1,0 +1,108 @@
+{% comment %} `rail_highlights: true` (About) adds the genre highlights under the search; `rail: minimal` leaves out the search box; `rail: filters` (All posts) swaps the search for filters on the post list: search, genre, topic, order {% endcomment %}
+{% assign minimal = false %}{% if page.rail == "minimal" %}{% assign minimal = true %}{% endif %}
+<aside class="rail{% if minimal %} rail-minimal{% endif %}">
+  <a class="rail-name" href="{{ site.baseurl }}/" data-text="RIN RAY">RIN RAY</a>
+
+  <nav class="rail-pages" aria-label="Pages">
+    <a href="{{ site.baseurl }}/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/about.png" alt="">About Rin</a>
+    {% if page.rail_sections %}
+    <span class="rail-sections" aria-label="On this page">
+      {% for sec in page.rail_sections %}<a href="#{{ sec.id }}"{% if sec.sub %} class="rail-sub"{% endif %} style="--sc: {{ sec.color }};">{{ sec.label }}</a>{% endfor %}
+    </span>
+    {% endif %}
+    {% if page.url == "/art/" %}<a href="{{ site.baseurl }}/art/" aria-current="page"><img src="{{ site.baseurl }}/images/icons/art.png" alt="">All art</a>
+    {% else %}<a href="{{ site.baseurl }}/portfolio/"{% if page.url == "/portfolio/" or page.url contains "/art/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/art.png" alt="">Portfolio</a>{% endif %}
+    {% if page.layout == "work" %}
+    <span class="rail-sections" aria-label="On this page">
+      <a href="#gallery" style="--sc: #ec3f9e;">Gallery</a>
+      {% if page.comics %}<a href="#comics" style="--sc: #6cc8f0;">Comics</a>{% endif %}
+      {% if page.writing %}<a href="#writing" style="--sc: #f9a13c;">Writing</a>{% endif %}
+      {% if page.music %}<a href="#music" style="--sc: #9b7fd4;">Music</a>{% endif %}
+      {% if page.plates %}<a href="#math-drawn" style="--sc: #fbe919;">Math, drawn</a>{% endif %}
+      {% if page.posts_link %}<a href="#posts" style="--sc: #f4a58a;">All art posts</a>{% endif %}
+    </span>
+    {% endif %}
+    <a href="{{ site.baseurl }}/blog/"{% if page.url == "/blog/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/excerpts.png" alt="">All posts</a>
+    <a href="{{ site.baseurl }}/resources/"{% if page.url == "/resources/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/resources.png" alt="">Resources</a>
+  </nav>
+
+  {% if page.rail == "filters" %}
+  <div class="rail-filters" role="search" aria-label="Filter the posts">
+    <label class="rail-flabel" for="rail-q">Search posts</label>
+    <input type="search" id="rail-q" data-f="q" placeholder="title, tag, topic…" autocomplete="off">
+    <p class="rail-flabel">Genre</p>
+    <button type="button" class="rail-genre-head rail-fbtn" data-f="genre" data-v="all" aria-pressed="true" style="--genre: transparent;"><span class="rail-all-dot"></span><span>All</span><span class="rail-count">{{ site.posts | size }}</span></button>
+    {% for g in site.data.genres %}{% assign n = site.posts | where: "genre", g.key | size %}
+    <button type="button" class="rail-genre-head rail-fbtn" data-f="genre" data-v="{{ g.key }}" aria-pressed="false" style="--genre: {{ g.color }};"><img src="{{ site.baseurl }}{{ g.icon }}" alt=""><span>{{ g.name }}</span><span class="rail-count">{{ n }}</span></button>
+    {% endfor %}
+    <p class="rail-flabel">Topic</p>
+    <div class="rail-topics">
+      <button type="button" class="rail-topic" data-f="topic" data-v="all" aria-pressed="true">all topics</button>
+      {% for t in site.data.topics %}<button type="button" class="rail-topic" data-f="topic" data-v="{{ t }}" aria-pressed="false">{{ t }}</button>{% endfor %}
+    </div>
+    <label class="rail-flabel" for="rail-sort">Order</label>
+    <select id="rail-sort" data-f="sort"><option value="new">newest first</option><option value="old">oldest first</option></select>
+    <p class="rail-shown"><b class="n">{{ site.posts | size }}</b> posts shown</p>
+  </div>
+  {% elsif minimal == false %}
+  <div class="rail-search" role="search">
+    <label for="rail-search-input">Search posts</label>
+    <input type="search" id="rail-search-input" placeholder="title, tag, topic…" autocomplete="off">
+    <ul id="rail-search-results" class="rail-search-results" aria-live="polite"></ul>
+  </div>
+  {% endif %}
+
+  {% if page.rail_highlights %}
+  <details class="rail-pinned" open>
+    <summary>Highlights</summary>
+    {% for g in site.data.genres %}
+      {% assign genre_posts = site.posts | where: "genre", g.key %}
+      <div class="rail-genre" style="--genre: {{ g.color }};">
+        <div class="rail-genre-head">
+          <img src="{{ site.baseurl }}{{ g.icon }}" alt="">
+          <a href="{{ site.baseurl }}{{ g.url }}">{{ g.name }}</a>
+          <span class="rail-count">{{ genre_posts.size }}</span>
+        </div>
+        {% for slug in g.pinned %}
+          {% assign p = site.posts | where: "slug", slug | first %}
+          {% if p %}<a class="rail-pin" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+            {% if p.card_links %}<span class="rail-pin-links">{% for l in p.card_links %}{% if l.url == "post" %}<a href="{{ site.baseurl }}{{ p.url }}">{{ l.label }}</a>{% else %}<a href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}</span>{% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </details>
+  {% endif %}
+</aside>
+<script>
+// on pages without the post list (e.g. a single post), the sidebar filters take you to All posts with that filter on
+(function () {
+  if (document.getElementById('ap-posts') || !document.querySelector('.rail-filters')) return;
+  function go(f, v) { location.href = '{{ site.baseurl }}/blog/' + (v && v !== 'all' ? '?' + f + '=' + encodeURIComponent(v) : ''); }
+  document.querySelectorAll('.rail-filters [data-f]').forEach(function (c) {
+    var f = c.dataset.f;
+    if (c.tagName === 'BUTTON') c.addEventListener('click', function () { go(f, c.dataset.v); });
+    else if (c.type === 'search') c.addEventListener('keydown', function (e) { if (e.key === 'Enter' && c.value.trim()) go('q', c.value.trim()); });
+    else c.addEventListener('change', function () { go(f, c.value); });
+  });
+  // on a post, show its own genre as the selected one
+  var cur = document.body.getAttribute('data-genre');
+  if (cur) document.querySelectorAll('.rail-fbtn').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.v === cur)); });
+  var shown = document.querySelector('.rail-shown'); if (shown) shown.style.display = 'none';
+  var q = document.getElementById('rail-q'); if (q) q.placeholder = 'search, then press Enter';
+})();
+</script>
+<script>
+// sidebar section links (About, Portfolio, All art): underline the section you are looking at
+(function () {
+  var links = document.querySelectorAll('.rail-sections a'); if (!links.length || !('IntersectionObserver' in window)) return;
+  var byId = {}; links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { links.forEach(function (a) { a.classList.toggle('is-here', a === byId[e.target.id]); }); } });
+  }, { rootMargin: '0px 0px -70% 0px' });
+  // headings without their own link (e.g. Preprints, In progress) keep the previous link underlined
+  var alias = { 'about-preprints': 'about-published', 'about-progress': 'about-published', 'about-expository': 'about-published', 'about-studio': 'about-lab' };
+  Object.keys(alias).forEach(function (k) { if (byId[alias[k]] && !byId[k]) byId[k] = byId[alias[k]]; });
+  document.addEventListener('DOMContentLoaded', function () { Object.keys(byId).forEach(function (id) { var h = document.getElementById(id); if (h) io.observe(h); }); });
+})();
+</script>

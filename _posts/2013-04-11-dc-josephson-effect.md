@@ -5,6 +5,17 @@ categories:
   - "explanation"
   - "physics"
   - "video"
+genre: science
+tags:
+  - josephson-effect
+  - superconductivity
+  - quantum-tunneling
+  - physics
+  - modern-physics
+  - science-video
+format: explanation
+topics:
+  - "Physics"
 ---
 
 I created a video for my Modern Physics class explaining the DC Josephson Effect in less than 5 minutes. You might enjoy it, I sure enjoyed making it!

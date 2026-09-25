@@ -1,6 +1,15 @@
 ---
 title: "Song Recommendations"
 date: "2014-03-07"
+genre: prose
+tags:
+  - playlist
+  - music-recommendations
+  - german-language
+format: list
+topics:
+  - "Music"
+  - "Life, study & work"
 ---
 
 [![](/wp-content/uploads/2014/03/screenshot_from_2014-03-07_11_3a35_3a37.png)](/wp-content/uploads/2014/03/screenshot_from_2014-03-07_11_3a35_3a37-1.png)

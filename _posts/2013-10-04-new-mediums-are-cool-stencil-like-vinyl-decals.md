@@ -3,6 +3,15 @@ title: "New Mediums Are Cool (Stencil-like Vinyl Decals)"
 date: "2013-10-04"
 categories: 
   - "art"
+genre: art
+tags:
+  - vinyl-decals
+  - stencil-art
+  - diy
+  - laptop-customization
+format: artwork
+topics:
+  - "Drawing, painting & comics"
 ---
 
 Problem: I wanted to use a different medium than sketching, and I wanted to personalize my laptop. Decals are way too expensive, the material to make them is super cheap.

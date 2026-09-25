@@ -4,6 +4,15 @@ date: "2014-01-27"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - test-anxiety
+  - meditation
+  - dune
+  - stress-management
+format: personal
+topics:
+  - "Life, study & work"
 ---
 
 Having a reliable method to control your fear and achieve focus quickly is indispensable. During one sleepless night reading Frank Herbert, I discovered my solution.
@@ -12,7 +21,7 @@ A bit of backstory: During undergrad, it was common before and during tests for 
 
 While meditating, one of my many calming methods is the recitation of poems, such as the _Jabberwocky_, _Litany Against Fear_, and _If_. I find that of all poems, the Litany calms me the most quickly.
 
-To immediately calm myself in risky situations, I use the same techniques. My favoured methods are solving simple integrations or reciting the _Litany Against Fear_.
+To immediately calm myself in risky situations, I use the same techniques. My favored methods are solving simple integrations or reciting the _Litany Against Fear_.
 
 This Litany, from the Original Dune, an “incantation spoken by many highly educated people who faced danger or fear during their everyday lives. The incantation helped focus their minds in times of peril.”
 

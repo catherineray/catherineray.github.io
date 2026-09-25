@@ -1,0 +1,35 @@
+{
+ "source": "https://web.archive.org/web/20201022183058/http://rin.io/generate-csv-of-google-music-playlist/",
+ "comments": [
+  {
+   "id": "27683",
+   "parent": null,
+   "kind": "comment",
+   "author": "Lummiere",
+   "author_url": null,
+   "date": "2015-08-06T16:25:54+00:00",
+   "html": "<p>Hello, man!</p>\n<p>Just a little suggestion: the script could output the results in a new window, avoiding the need to parse the text before save it as a CSV file.</p>\n<p>The following lines, based in your great work, do it that way:</p>\n<p><code><br/>\nvar csvData = '';<br/>\nvar playlist = document.querySelectorAll('.song-table tr.song-row');<br/>\nfor (var i = 0; i &lt; playlist.length; i++) {<br/>\n  var title = playlist[i].querySelectorAll('td[data-col=\"title\"] .content')[0].textContent;<br/>\n  var artist = playlist[i].querySelectorAll('td[data-col=\"artist\"] .content')[0].textContent;<br/>\n  csvData += '' + artist.replace(',', ' ') + ',' + title.replace(',', ' ') + '';<br/>\n}<br/>\nwindow.open('data:text/html;charset=utf-8,' + '' + csvData + '');<br/>\n</code></p>",
+   "depth": 0
+  },
+  {
+   "id": "27690",
+   "parent": "27683",
+   "kind": "comment",
+   "author": "Lummiere",
+   "author_url": null,
+   "date": "2015-08-06T17:29:24+00:00",
+   "html": "<p>After posting this improvement, I found a new possibility to avoid scrolling to get all the songs in the list. Here is the final proposal:</p>\n<p><code><br/>\nvar csvData = '';<br/>\nvar playlist = document.querySelectorAll('.song-table tr.song-row');<br/>\nvar container = document.getElementById('content-container');<br/>\ncontainer.scroller.style.height = '8000000px';<br/>\nfor (var i = 0; i &lt; playlist.length; i++) {<br/>\n\tvar title = playlist[i].querySelectorAll('td[data-col=\"title\"] .content')[0].textContent;<br/>\n\tvar artist = playlist[i].querySelectorAll('td[data-col=\"artist\"] .content')[0].textContent;</code></p>\n<p>\tcsvData += '' + artist.replace(',', ' ') + ',' + title.replace(',', ' ') + '';<br/>\n}</p>\n<p>window.open('data:text/html;charset=utf-8,' + '' + csvData + '');<br/>\n</p>",
+   "depth": 1
+  },
+  {
+   "id": "27692",
+   "parent": null,
+   "kind": "comment",
+   "author": "Lummiere",
+   "author_url": null,
+   "date": "2015-08-06T17:31:54+00:00",
+   "html": "<p>Hello, man!</p>\n<p>Just two little suggestions: the script could output the results in a new window, avoiding the need to parse the text before save it as a CSV file, and it can expand the list to get all the elements in just one run.</p>\n<p>The following lines, based in your great work, do it that way:</p>\n<p><code><br/>\nvar csvData = '';<br/>\nvar playlist = document.querySelectorAll('.song-table tr.song-row');<br/>\nvar container = document.getElementById('content-container');<br/>\ncontainer.scroller.style.height = '8000000px';<br/>\nfor (var i = 0; i &lt; playlist.length; i++) {<br/>\n\tvar title = playlist[i].querySelectorAll('td[data-col=\"title\"] .content')[0].textContent;<br/>\n\tvar artist = playlist[i].querySelectorAll('td[data-col=\"artist\"] .content')[0].textContent;<br/>\n\tcsvData += '&lt;li&gt;' + artist.replace(',', ' ') + ',' + title.replace(',', ' ') + '&lt;/li&gt;';<br/>\n}<br/>\nwindow.open('data:text/html;charset=utf-8,' + '&lt;ol&gt;' + csvData + '&lt;/ol&gt;');<br/>\n</code></p>\n<p>Thanks for sharing this with the world!</p>",
+   "depth": 0
+  }
+ ]
+}

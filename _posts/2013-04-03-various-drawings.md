@@ -3,6 +3,14 @@ title: "Various Drawings"
 date: "2013-04-03"
 categories: 
   - "art"
+genre: art
+tags:
+  - drawing
+  - illustration
+  - hand-drawing
+format: artwork
+topics:
+  - "Drawing, painting & comics"
 ---
 
 I enjoy drawing. Below are a few of them.

@@ -3,6 +3,19 @@ title: "The Height of a Formal Group Law in terms of the Symmetry of the Underly
 date: "2017-10-20"
 categories: 
   - "math"
+genre: math
+tags:
+  - formal-group-height
+  - cm-abelian-varieties
+  - complex-multiplication
+  - p-divisible-groups
+  - endomorphism-algebras
+  - arithmetic-geometry
+format: explanation
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
+  - "Number theory"
 ---
 This is toward my understanding of the phrase “Why is height so important as an invariant? Because the height of a formal group law comes from the symmetry of the underlying variety.” In short — **high amount of symmetry in the underlying abelian variety implies a high height of its formal group law** (the converse is NOT true, if this was true, [Elkies’s supersingularity theorem](/a-question-on-primes) would be false).
 

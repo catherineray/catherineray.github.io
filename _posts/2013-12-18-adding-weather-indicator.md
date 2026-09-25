@@ -3,6 +3,15 @@ title: "Adding Weather Indicator"
 date: "2013-12-18"
 categories: 
   - "linux"
+genre: science
+tags:
+  - ubuntu
+  - linux
+  - unity-desktop
+  - apt
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Get Weather on the Unity top panel in Ubuntu! Worry not, this tutorial doesn’t assume any term aliases.

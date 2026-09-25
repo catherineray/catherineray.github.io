@@ -3,6 +3,17 @@ title: "Maps of a Torus"
 date: "2014-12-28"
 categories: 
   - "math"
+genre: math
+tags:
+  - classifying-spaces
+  - eilenberg-maclane-spaces
+  - fundamental-group
+  - elliptic-cohomology
+  - homotopy-theory
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Geometry & topology"
 ---
 
 In Segal’s Bourbaki talk on [Elliptic cohomology](http://archive.numdam.org/ARCHIVE/SB/SB_1987-1988__30_/SB_1987-1988__30__187_0/SB_1987-1988__30__187_0.pdf), he mentions offhandedly that:

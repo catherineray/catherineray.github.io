@@ -3,6 +3,14 @@ title: "Visual Braille: [2] Prefix Indicator"
 date: "2013-10-14"
 categories: 
   - "braille"
+genre: science
+tags:
+  - braille
+  - contracted-braille
+  - accessibility
+format: artwork
+topics:
+  - "Braille & accessibility"
 ---
 
 Have no idea what’s going on? Have no fear: [Introduction to Visual Grade 2 Braille](/visual-grade-2-braille-dictionary-introduction/)

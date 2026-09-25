@@ -5,6 +5,16 @@ categories:
   - "explanation"
   - "math"
   - "research-projects"
+genre: math
+tags:
+  - collatz-conjecture
+  - number-theory
+  - dynamical-systems
+  - modular-arithmetic
+  - failed-proofs
+format: explanation
+topics:
+  - "Number theory"
 ---
 
 _[Number theory is the cocaine of mathematics.](http://rjlipton.wordpress.com/2009/11/04/on-mathematical-diseases/) The following resulted [not from my intention to prove the conjecture,](http://terrytao.wordpress.com/2011/08/25/the-collatz-conjecture-littlewood-offord-theory-and-powers-of-2-and-3/) but from the drive to deeply understand its underlying structure._

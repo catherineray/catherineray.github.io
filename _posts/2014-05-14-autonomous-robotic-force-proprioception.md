@@ -5,6 +5,19 @@ categories:
   - "code"
   - "python"
   - "research-projects"
+genre: science
+tags:
+  - code
+  - robotics
+  - ros
+  - pr2-robot
+  - force-control
+  - gazebo-simulation
+  - python
+format: personal
+topics:
+  - "Robotics & machine learning"
+  - "Programming & tools"
 ---
 
 I’m experimenting with committing past projects to [github](https://github.com/catherineray).
@@ -18,3 +31,5 @@ If you are unfamiliar with the PR2:
 Greg was relatively new to Python (an experienced Java coder), and I learned to code the same summer that we completed the project (previously, I had dabbled in mainly math and physics). Bear this in mind while viewing [our project](https://github.com/catherineray/PR2-positronics).
 
 This is an early demo I simulated in [gazebo](http://gazebosim.org/) of the PR2 learning to replicate arm movements (a major part of the project). Your browser does not support the video tag.
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/PR2-positronics">PR2-positronics</a></p>

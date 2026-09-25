@@ -4,6 +4,17 @@ date: "2013-07-11"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - todo-txt
+  - plain-text-productivity
+  - command-line
+  - vim
+  - productivity
+format: tutorial
+topics:
+  - "Programming & tools"
+  - "Life, study & work"
 ---
 
 I used to drown in a sea of post-it notes and repetitive todo lists, my thoughts spread across unorganized Dropbox files, repetitive Evernote entries and various iPhone apps (Checklist, Notes, GoogleTasks).

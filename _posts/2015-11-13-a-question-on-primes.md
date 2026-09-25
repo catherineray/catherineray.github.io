@@ -3,6 +3,17 @@ title: "A question on primes"
 date: "2015-11-13"
 categories: 
   - "math"
+genre: math
+tags:
+  - dirichlet-theorem
+  - chebotarev-density-theorem
+  - supersingular-elliptic-curves
+  - elkies-theorem
+  - number-theory
+format: notes
+topics:
+  - "Algebraic & arithmetic geometry"
+  - "Number theory"
 ---
 
 I recently encountered a result which seems to be analogous to the following result of Dirichlet, which I wrote in a few common forms to be more suggestive.

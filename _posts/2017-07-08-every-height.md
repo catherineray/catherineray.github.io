@@ -4,6 +4,20 @@ date: "2017-07-08"
 categories: 
   - "math"
   - "papers"
+genre: math
+tags:
+  - code
+  - formal-group-laws
+  - formal-group-height
+  - abelian-varieties
+  - complex-multiplication
+  - p-divisible-groups
+  - lubin-tate-theory
+format: paper
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
+  - "Number theory"
 ---
 
 These notes began as my way of attempting to understand examples of abelian varieties (over finite fields) whose formal group laws posess higher height. Indeed, the notion that _the height of a formal group law encodes the symmetry of the underlying abelian variety_ is a notion that I found irresistibly attractive to attempt to make precise and explore with examples.	
@@ -25,4 +39,6 @@ There are _many_ global things that specialize to the same local thing. We choos
 
 (*)Unless it is what Taniyama-Shimura call degenerate, then the endomorphism ring is a little more complicated.
 
-[If the pdf viewer doesn’t work, here’s the link to the paper.](/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf)
+{% include pdf.html src="/images/wp-content/uploads/2017/08/lubintatemodels-2.pdf" title="Lubin–Tate models paper" %}
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/lubin-tate-models">lubin-tate-models</a></p>

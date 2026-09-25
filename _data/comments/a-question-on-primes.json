@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20200112003639/http://rin.io:80/a-question-on-primes/",
+ "comments": [
+  {
+   "id": "33492",
+   "parent": null,
+   "kind": "comment",
+   "author": "Jack",
+   "author_url": null,
+   "date": "2015-11-18T01:37:25+00:00",
+   "html": "<p>Hi Rin!  A few comments:<br/>\n1) The existence of infinitely many ordinary primes is fairly easy; Elkies result is really about the supersingular ones, which are really rather sparse.<br/>\n2) Elkies’ result is definitely not a special chase of Chebotarev.  Chebotarev can answer the following kind of question: fix an elliptic curve, and a prime number l.  For every other prime number p (where the curve has good reduction), compute 1 + p – #E(F_p) modulo l.  Which residue classes occur and how often?  Elkies, on the other hand, answers the question: for all primes p such that E has good reduction, compute 1 + p – #E(F_p) mod p.  Does 0 occur infinitely often (open question: how often?).   Note that p here is playing two quite different roles.<br/>\nAs a side remark, Sato-Tate is also about the first kind of question, and knowing it shows little about the second kind of question in general.<br/>\n3) The second question is a bit confusing; for a given hyperelliptic curve over Q, its reduction will be hyperelliptic for every prime p where it has good reduction (in some sense, the geometry can’t change at primes of good reduction).  However, you can define a notion of supersingular (in fact there are varying degrees of supersingularity) and ask the same questions, and as far as I know little is known.  </p>\n<p>Jack</p>",
+   "depth": 0
+  }
+ ]
+}

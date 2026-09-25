@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20191019212555/http://rin.io/affine-line/",
+ "comments": [
+  {
+   "id": "23170",
+   "parent": null,
+   "kind": "comment",
+   "author": "Bilbo Baggins",
+   "author_url": null,
+   "date": "2015-05-28T03:41:31+00:00",
+   "html": "<p>There is no algebraic group structure one can put on the affine line with two (or more) points removed. If X is an algebraic group, then the the complex points X(C) of X will form a complex manifold with an analytic group structure (group schemes are always smooth in characteristic zero). In particular, X(C) will be a complex Lie group. So your question is whether the Riemann sphere minus three (or more points) admits such a structure. The complex dimension of this Lie group will be one, and so the Lie algebra will just be C. It follows that the only complex lie groups of dimension one are quotients of C by a discrete group, and so must either be C, C^*, or a complex torus. None of these is (even topologically) a sphere minus at least three points.  You also see in this way (more or less) that the group structure on the affine line minus either one or zero points is essentially unique.</p>",
+   "depth": 0
+  }
+ ]
+}

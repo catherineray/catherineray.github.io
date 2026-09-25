@@ -3,6 +3,15 @@ title: "Frodo Baggins Contacts REX Computing"
 date: "2014-02-23"
 categories: 
   - "writing"
+genre: prose
+tags:
+  - fan-fiction
+  - parody
+  - tolkien
+  - creative-writing
+format: fiction
+topics:
+  - "Writing & theater"
 ---
 
 Name: Frodo Baggins

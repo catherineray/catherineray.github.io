@@ -4,6 +4,14 @@ date: "2013-08-29"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - simulation-hypothesis
+  - debugging-metaphor
+  - philosophy-of-science
+format: opinion
+topics:
+  - "Writing & theater"
 ---
 
 During a late-night conversation with Austin Russell, he stated that we are living in a simulation. Together, we discussed the job description of a Universe Debugger, and created a fun way to project the world onto coding principles and concepts.

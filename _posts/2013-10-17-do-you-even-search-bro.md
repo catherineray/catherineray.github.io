@@ -4,6 +4,16 @@ date: "2013-10-17"
 categories: 
   - "code"
   - "explanation"
+genre: science
+tags:
+  - grep
+  - command-line
+  - linux
+  - regular-expressions
+  - ack
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 I recently came across a software engineer I respect greatly who is unfamiliar with the basics of grep (I know, right? Blew my mind). This is for him, hopefully it will help others. If you’re already familiar with this black magic || want to see a cool implementation, check out [Grep is a Magical Beast](/grep-is-magical-beast-ft-hiveql-and/).

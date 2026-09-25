@@ -4,6 +4,17 @@ date: "2013-11-19"
 categories: 
   - "braille"
   - "explanation"
+genre: science
+tags:
+  - braille
+  - fonts
+  - ubuntu
+  - linux
+  - accessibility
+format: tutorial
+topics:
+  - "Braille & accessibility"
+  - "Programming & tools"
 ---
 
 I mentioned that I set my system font to Braille in a previous post. This tutorial generalizes to any font you can find in a .ttf format!

@@ -1,20 +1,232 @@
 ---
-layout: default
+layout: none
+permalink: /
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rin Ray</title>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap">
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+<style>
+  :root {
+    --lilac:   #d5c2ef;
+    --pink:    #ec3f9e;
+    --cyan:    #6cc8f0;
+    --yellow:  #fbe919;
+    --ink:     #1b1b1b;
+    --ink-soft:#4a3a63;
+    --paper:   #ffffff;
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    --mono: 'Space Mono', 'Courier New', Courier, monospace;
+    --display: 'Archivo Black', 'Helvetica Neue', Impact, sans-serif;
+  }
 
+  html, body { background: var(--lilac); }
+  html, body { height: 100%; }
 
+  body {
+    margin: 0;
+    font-family: var(--mono);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------------------------------------------------------- stage ---- */
+
+  .stage {
+    position: relative;
+    width: min(94vw, 880px);
+    aspect-ratio: 1;
+    max-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ----------------------------------------------------------- name ---- */
+
+  .name {
+    position: relative;
+    z-index: 2;
+    max-width: 48%;
+    margin: 0;
+    text-align: center;
+    font-family: var(--display);
+    font-size: clamp(2.4rem, 9vw, 5rem);
+    line-height: .92;
+    letter-spacing: -.02em;
+    color: var(--paper);
+    -webkit-text-stroke: 4px var(--ink);
+    paint-order: stroke fill;
+    isolation: isolate;
+  }
+  /* the pink offset is its own layer behind the outline, positioned by
+     transform so it tracks the heading's own centring */
+  .name::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform: translate(7px, 7px);
+    z-index: -1;
+    color: var(--pink);
+    -webkit-text-stroke: 4px var(--pink);
+    paint-order: stroke fill;
+  }
+
+  .tagline {
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translateX(-50%);
+    z-index: 2;
+    margin: 0;
+    width: 60%;
+    text-align: center;
+    font-size: clamp(.62rem, 1.5vw, .85rem);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  /* ---------------------------------------------------------- nodes ---- */
+
+  .node {
+    position: absolute;
+    width: 19%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: inherit;
+    z-index: 3;
+  }
+  .node img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    transition: transform .22s cubic-bezier(.34,1.56,.64,1), filter .22s ease;
+  }
+  .node span {
+    font-size: clamp(.55rem, 1.35vw, .8rem);
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .2em .55em;
+    border-radius: 999px;
+    transition: background .18s ease, color .18s ease;
+  }
+  .node:hover img,
+  .node:focus-visible img {
+    transform: scale(1.13) rotate(-4deg);
+    filter: drop-shadow(5px 5px 0 rgba(27,27,27,.28));
+  }
+  .node:hover span,
+  .node:focus-visible span { background: var(--ink); color: var(--yellow); }
+  .node:focus-visible { outline: none; }
+  .node:focus-visible span { outline: 3px dashed var(--ink); outline-offset: 3px; }
+
+  /* six points on an ellipse around the name */
+  .n  { left: 50%;   top: 15%; }
+  .ne { left: 84.5%; top: 32.5%; }
+  .se { left: 84.5%; top: 67.5%; }
+  .s  { left: 50%;   top: 85%; }
+  .sw { left: 15.5%; top: 67.5%; }
+  .nw { left: 15.5%; top: 32.5%; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .node img { transition: none; }
+    .node:hover img, .node:focus-visible img { transform: none; }
+  }
+
+  /* ---------------------------------------------------------- phone ---- */
+
+  @media (max-width: 620px) {
+    html, body { height: auto; }
+    .stage {
+      aspect-ratio: auto;
+      max-height: none;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 2.5rem 16px 3rem;
+      gap: 1.2rem;
+    }
+    .name {
+      max-width: 100%;
+      font-size: 2.8rem;
+      -webkit-text-stroke: 3px var(--ink);
+    }
+    .name::before { transform: translate(5px, 5px); -webkit-text-stroke: 3px var(--pink); }
+    .tagline { position: static; transform: none; width: auto; margin-bottom: .6rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.8rem 1.2rem;
+      width: 100%;
+    }
+    .node {
+      position: static;
+      transform: none;
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<main class="stage">
+
+  <h1 class="name" data-text="RIN RAY">RIN RAY</h1>
+  <p class="tagline">mathematician &amp; artist</p>
+
+  <div class="grid">
+      <a class="node n" href="/about/">
+        <img src="{{ site.baseurl }}/images/icons/about.png" alt="">
+        <span>About Rin</span>
+      </a>
+
+      <a class="node ne" href="/math/">
+        <img src="{{ site.baseurl }}/images/icons/math.png" alt="">
+        <span>Math</span>
+      </a>
+
+      <a class="node se" href="/science/">
+        <img src="{{ site.baseurl }}/images/icons/science.png" alt="">
+        <span>Science</span>
+      </a>
+
+      <a class="node s" href="/art/">
+        <img src="{{ site.baseurl }}/images/icons/art.png" alt="">
+        <span>Art</span>
+      </a>
+
+      <a class="node sw" href="/resources/">
+        <img src="{{ site.baseurl }}/images/icons/resources.png" alt="">
+        <span>Resources</span>
+      </a>
+
+      <a class="node nw" href="/prose/">
+        <img src="{{ site.baseurl }}/images/icons/excerpts.png" alt="">
+        <span>Prose</span>
+      </a>
+  </div>
+
+</main>
+
+</body>
+</html>

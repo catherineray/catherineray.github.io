@@ -3,6 +3,17 @@ title: "Elliptic Curve Formal Group Laws: Philosophy and Derivation"
 date: "2015-05-01"
 categories: 
   - "math"
+genre: math
+tags:
+  - formal-group-laws
+  - elliptic-curves
+  - formal-completion
+  - group-schemes
+  - arithmetic-geometry
+format: explanation
+topics:
+  - "Formal groups"
+  - "Algebraic & arithmetic geometry"
 ---
 
 _Eine deutsche Übersetzung des folgenden Abschnitts befindet sich [hier](/elliptischen-kurve-fgg/)._
@@ -80,7 +91,7 @@ There’s three maps from projective coordinates back to affine coordinates. All
 
 For an elliptic curve in Weierstraß form, the \(z \neq 0\) chart doesn’t contain the identity of the elliptic curve, but the \(y \neq 0\) has the identity at \((0,0)\). We’re basically changing coordinates from the classical affine equation \((y^2=..)\), which lives on the \(z \neq 0 thing\), to the other one living on the \(y \neq 0\) thing.
 
-Think about it as follows: the elliptic curve lives in \(\mathbb{P}^2\), but we can describe its intersection with each of the coordinate charts. That’ll of course be different equations. The \(z \neq 0\) and \(x \neq 0\) are not suitable to talk about the neighbourhood of the identity, because they simply don’t CONTAIN the identity.
+Think about it as follows: the elliptic curve lives in \(\mathbb{P}^2\), but we can describe its intersection with each of the coordinate charts. That’ll of course be different equations. The \(z \neq 0\) and \(x \neq 0\) are not suitable to talk about the neighborhood of the identity, because they simply don’t CONTAIN the identity.
 
 #### Derivation (for simplified Weierstrass):
 

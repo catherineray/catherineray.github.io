@@ -3,6 +3,18 @@ title: "Complex Analysis: Poles, Residues, and Child’s Drawings"
 date: "2015-07-17"
 categories: 
   - "math"
+genre: math
+tags:
+  - riemann-roch-theorem
+  - residue-theorem
+  - sperner-lemma
+  - dessins-d-enfants
+  - riemann-surfaces
+  - complex-analysis
+format: explanation
+topics:
+  - "Analysis & calculus"
+  - "Algebraic & arithmetic geometry"
 ---
 
 _Thanks to Laurens Gunnarsen for his superb pedagogy and for this amazing explanation on the incredible depth of connections springing from the Sperner lemma. All errors are mine not his. This started with a chain of events, sitting in on number theory seminars and encountering Abel’s differentials of the first and second kind, interest in the dessin, and led up to asking Laurens:_

@@ -1,0 +1,291 @@
+{% comment %}
+  Edge-to-edge wall of every image in /gallery/, laid out as justified rows, with colored medium
+  filters and a click-to-enlarge viewer. Titles and mediums come from the `art:` list in art.md,
+  colors from _data/mediums.yml, proportions from _data/gallery_dims.yml
+  (rerun rin-io-worklog/gallery_dims.sh after adding images; missing ones are measured in the browser).
+  include.selected (optional): true on the Portfolio = only the selected works, leaving out pieces that came
+  from blog posts (`post:`) or stand for a post (`link:`); those show on the full /art/ wall only.
+  include.hide (optional): mediums to leave off this wall (the Portfolio hides film and digital photos: polaroids only).
+  include.skip (optional): anchor for a "Skip the gallery" button at the end of the filter bar.
+  include.video (optional): { file, youtube, poster }. It replaces the gallery image whose path
+  matches `poster` and plays muted on a loop inside the wall.
+{% endcomment %}
+{% assign artpage = site.pages | where: "name", "art.md" | first %}
+{% assign wall_art = artpage.art %}{% if include.selected %}{% assign wall_art = artpage.art | where_exp: "e", "e.post == nil" | where_exp: "e", "e.link == nil" %}{% endif %}{% if include.hide %}{% assign kept = "" | split: "" %}{% for e in wall_art %}{% assign skip_it = false %}{% for t in e.types %}{% if include.hide contains t %}{% assign skip_it = true %}{% endif %}{% endfor %}{% unless skip_it %}{% assign kept = kept | push: e %}{% endunless %}{% endfor %}{% assign wall_art = kept %}{% endif %}
+{% assign types = wall_art | map: "types" | join: "," | split: "," | uniq | sort %}
+{% assign vid = include.video %}
+
+<div class="gw">
+  <div class="gw-filters" role="group" aria-label="Filter the gallery by medium">
+    <button type="button" data-filter="all" aria-pressed="true" style="--m: #fbe919;">all</button>
+    {% for t in types %}{% if t != "" %}{% assign mc = site.data.mediums[t] | default: '#4a3a63' %}<button type="button" class="gw-med" data-filter="{{ t | slugify }}" aria-pressed="false" style="--m: {{ mc }};{% if mc == '#1b1b1b' or mc == '#4a3a63' %} --mt: #faf3c8;{% endif %}">{{ t }}</button>{% endif %}{% endfor %}
+    {% for wname in site.data.medium_groups.chip_order %}{% assign w = site.data.medium_groups.works | where: "name", wname | first %}{% assign has = false %}{% for e in wall_art %}{% for t in e.types %}{% if w.mediums contains t or w.also contains t %}{% assign has = true %}{% endif %}{% endfor %}{% endfor %}{% if has %}<button type="button" class="gw-g" data-filter="g-{{ w.name | slugify }}" aria-pressed="false" style="--m: {{ w.color }};">{{ w.name }}</button>{% endif %}{% endfor %}
+    {% for w in site.data.medium_groups.works %}{% for sub in w.subs %}{% assign has = false %}{% for e in wall_art %}{% for t in e.types %}{% if sub.mediums contains t %}{% assign has = true %}{% endif %}{% endfor %}{% endfor %}{% if has %}<button type="button" class="gw-sub" data-group="g-{{ w.name | slugify }}" data-filter="gs-{{ sub.name | slugify }}" aria-pressed="false" style="--m: {{ sub.color }};">{{ sub.name }}</button>{% endif %}{% endfor %}{% endfor %}
+    {% if include.skip %}<a class="gw-skip" href="{{ include.skip }}">Skip the gallery: comics, writing &amp; music &darr;</a>{% endif %}
+  </div>
+
+  <div class="gw-frame">
+  <ul class="gw-wall">
+  {% for image in site.static_files %}{% if image.path contains '/gallery/' %}
+    {% assign entry = artpage.art | where: "file", image.basename | first %}
+    {% if include.selected %}{% if entry.post or entry.link %}{% continue %}{% endif %}{% endif %}
+    {% if include.hide %}{% assign skip_it = false %}{% for t in entry.types %}{% if include.hide contains t %}{% assign skip_it = true %}{% endif %}{% endfor %}{% if skip_it %}{% continue %}{% endif %}{% endif %}
+    {% if entry.title %}{% assign label = entry.title | markdownify | strip_html | strip %}{% else %}{% assign label = "" %}{% endif %}
+    {% capture kinds %}{% for t in entry.types %}{{ t | slugify }} {% endfor %}{% assign wk = nil %}{% for w in site.data.medium_groups.works %}{% unless wk %}{% for t in entry.types %}{% if w.mediums contains t %}{% assign wk = w %}{% break %}{% endif %}{% endfor %}{% endunless %}{% endfor %}{% if wk %}g-{{ wk.name | slugify }} {% for sub in wk.subs %}{% for t in entry.types %}{% if sub.mediums contains t %}gs-{{ sub.name | slugify }} {% break %}{% endif %}{% endfor %}{% endfor %}{% endif %}{% for w in site.data.medium_groups.works %}{% if w != wk %}{% for t in entry.types %}{% if w.also contains t %}g-{{ w.name | slugify }} {% break %}{% endif %}{% endfor %}{% endif %}{% endfor %}{% endcapture %}
+    {% assign first_type = entry.types | first %}
+    {% assign ar = site.data.gallery_dims[image.basename] | default: 0 %}
+    {% assign from_post = nil %}{% if entry.post %}{% assign from_post = site.posts | where: "slug", entry.post | first %}{% endif %}
+    {% assign is_video = false %}{% if vid and image.path == vid.poster %}{% if vid.file or vid.youtube %}{% assign is_video = true %}{% endif %}{% endif %}
+    <li class="gw-item{% if is_video %} gw-video{% endif %}"{% unless is_video %} tabindex="0"{% endunless %} data-kind="{{ kinds | strip }}" data-ar="{{ ar }}" data-title="{{ label | escape }}" data-types="{{ entry.types | join: ' · ' }}"{% if entry.link %} data-link="{{ site.baseurl }}{{ entry.link }}"{% endif %}{% if from_post %} data-post-url="{{ site.baseurl }}{{ from_post.url }}" data-post-title="{{ from_post.title | escape }}"{% endif %} style="--m: {{ site.data.mediums[first_type] | default: '#1b1b1b' }};">
+      {% if is_video and vid.file %}<video src="{{ site.baseurl }}{{ vid.file | uri_escape }}" poster="{{ site.baseurl }}{{ image.path }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ label }}"></video>
+      {% elsif is_video %}<iframe src="https://www.youtube-nocookie.com/embed/{{ vid.youtube }}?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist={{ vid.youtube }}&amp;controls=0&amp;playsinline=1&amp;modestbranding=1" title="{{ label }}" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+      {% else %}<img src="{{ site.baseurl }}{{ image.path }}" alt="{{ label | escape }}" loading="lazy">{% endif %}
+      {% if label != "" or entry.types %}<span class="gw-label">{% if label != "" %}<b>{{ label }}</b>{% endif %}{% if entry.types %}<i>{{ entry.types | join: " · " }}</i>{% endif %}</span>{% endif %}
+    </li>
+  {% endif %}{% endfor %}
+  </ul>
+  </div>
+  <p class="gw-showall-row"><button type="button" class="gw-showall"></button></p>
+</div>
+
+<dialog class="gw-view" aria-label="Artwork">
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="gw-x" type="button" aria-label="Close">×</button>
+  <button class="gw-prev" type="button" aria-label="Previous">‹</button>
+  <button class="gw-next" type="button" aria-label="Next">›</button>
+</dialog>
+
+<style>
+  .gw-filters { position: sticky; top: 0; z-index: 3; display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 2px; margin: 0 0 8px; background: #cdc6f4; }
+  /* medium chips in their own color, like the art chips on the About page */
+  .gw-filters button { font: 700 13px 'Space Mono', monospace; letter-spacing: .06em; text-transform: uppercase; min-height: 32px; padding: 0 14px; border: 2px solid #1b1b1b; border-radius: 999px; background: var(--m); color: var(--mt, #1b1b1b); box-shadow: 3px 3px 0 #1b1b1b; cursor: pointer; display: inline-flex; align-items: center; transition: transform .1s, box-shadow .1s; }
+  .gw-filters button::before { display: none; }
+  .gw-filters button:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 #1b1b1b; }
+  .gw-skip { margin-left: auto; display: inline-flex; align-items: center; min-height: 32px; padding: 0 14px; border: 2px solid #fbe919; border-radius: 999px; background: #fbe919; color: #1b1b1b; font: 700 13px 'Space Mono', monospace; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+  .gw-skip:hover { background: #ec3f9e; border-color: #ec3f9e; color: #1b1b1b; }
+  .gw-filters button[aria-pressed="true"] { transform: translate(3px, 3px); box-shadow: 0 0 0 #1b1b1b; outline: 3px solid #1b1b1b; outline-offset: 2px; }
+
+  @media (max-width: 600px) { .gw-filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; } .gw-filters button { flex: none; } }
+
+  /* justified rows: the script sets each tile's size so every row runs edge to edge */
+  .gw-wall { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; border-radius: 10px; overflow: hidden; }
+  .gw-wall:not(.is-laid) { display: block; columns: 5 170px; column-gap: 0; } /* before/without the script */
+  .gw-wall:not(.is-laid) .gw-item { break-inside: avoid; }
+  .gw-wall:not(.is-laid) .gw-item img { height: auto; }
+  .gw-item { position: relative; flex: none; margin: 0; padding: 0; overflow: hidden; background: #1b1b1b; cursor: zoom-in; }
+  .gw-item.gw-video { cursor: default; }
+  .gw-item img, .gw-item video, .gw-item iframe { display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; border: 0; transition: transform .3s ease; }
+  .gw-item iframe { pointer-events: none; }
+  .gw-item:hover img, .gw-item:hover video { transform: scale(1.04); }
+  .gw-item.is-hidden { display: none !important; }
+  .gw-wall.is-laid .gw-item { animation: gw-in .35s ease both; }
+  @keyframes gw-in { from { opacity: 0; } to { opacity: 1; } }
+  .gw-item:focus-visible { outline: 3px solid #fbe919; outline-offset: -3px; }
+  .gw-label { position: absolute; left: 0; right: 0; bottom: 0; padding: 6px 8px; background: rgba(27, 27, 27, .84); border-top: 3px solid var(--m); color: #faf3c8; font: 12px/1.35 'Space Mono', monospace; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .gw-label b { display: block; }
+  .gw-label i { font-style: normal; color: #d5c2ef; text-transform: uppercase; letter-spacing: .06em; }
+  .gw-item:hover .gw-label, .gw-item:focus-visible .gw-label { opacity: 1; }
+  @media (hover: none) { .gw-label { display: none; } }
+
+  .gw-view { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; }
+  .gw-view::backdrop { background: rgba(20, 16, 30, .92); }
+  .gw-view figure { margin: 0; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 16px; box-sizing: border-box; }
+  .gw-view img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; margin: 0; border: 3px solid #1b1b1b; background: #1b1b1b; }
+  .gw-view figcaption { color: #faf3c8; font: 15px 'Space Mono', monospace; text-align: center; }
+  .gw-view figcaption a { color: #fbe919; }
+  .gw-item[data-link] { cursor: pointer; }
+  .gw-view figcaption i { font-style: normal; color: #d5c2ef; text-transform: uppercase; letter-spacing: .06em; font-size: 13px; }
+  .gw-view button { position: fixed; font: 700 22px 'Space Mono', monospace; width: 48px; height: 48px; border-radius: 50%; border: 2px solid #1b1b1b; background: #fbe919; color: #1b1b1b; cursor: pointer; }
+  .gw-view button:hover { background: #ffffff; }
+  .gw-x { top: 16px; right: 16px; }
+  .gw-prev { left: 16px; top: 50%; }
+  .gw-next { right: 16px; top: 50%; }
+  @media (prefers-reduced-motion: reduce) { .gw-item img, .gw-item video, .gw-label { transition: none; } .gw-item:hover img, .gw-item:hover video { transform: none; } .gw-wall.is-laid .gw-item { animation: none; } }
+  /* ---- keeping the gallery manageable: one row of filters (six most used + "more"), the wall folded to about three rows with "Show all" ---- */
+  .gw-showall-row { display: none; }
+  .gw-more-btn { display: none; }
+  .gw.gw-a .gw-filters { flex-wrap: wrap; }
+  .gw.gw-a .gw-filters button.gw-extra { display: none; }
+  .gw.gw-a.gw-more-open .gw-filters button.gw-extra { display: inline-flex; }
+  .gw.gw-a .gw-more-btn { display: inline-flex; --m: #ffffff; }
+  .gw.gw-a .gw-more-btn::before { display: none; }
+  .gw.gw-a .gw-frame { position: relative; }
+  .gw.gw-a.gw-folded .gw-frame { max-height: 620px; overflow: hidden; border-radius: 10px; }
+  .gw.gw-a.gw-folded .gw-frame.gw-fits::after { display: none; }
+  .gw.gw-a.gw-folded .gw-frame::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 110px; background: linear-gradient(transparent, #cdc6f4); pointer-events: none; }
+  .gw.gw-a .gw-showall-row { display: flex; justify-content: center; margin: 12px 0 0; }
+  .gw-showall { font: 700 15px 'Space Mono', monospace; letter-spacing: .05em; text-transform: uppercase; padding: 10px 20px; border: 3px solid #1b1b1b; border-radius: 999px; background: #fbe919; color: #1b1b1b; box-shadow: 4px 4px 0 #1b1b1b; cursor: pointer; }
+  .gw-showall:hover { background: #6cc8f0; }
+  /* B: one dropdown instead of the buttons, and the wall scrolls inside a fixed frame */
+  /* filters: the groups (On bodies / On walls / In a box / On paper); a group's finer chips appear once it is picked */
+  .gw .gw-med, .gw .gw-more-btn { display: none !important; }
+  .gw .gw-sub { display: none; font-size: 12px; min-height: 26px; padding: 0 11px; }
+  .gw .gw-sub.is-shown { display: inline-flex; }
+  .gw-filters .gw-sub-lead { display: none; align-self: center; font: 700 12px 'Space Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: #4a3a63; margin-left: 6px; }
+  .gw-filters .gw-sub-lead.is-shown { display: inline; }
+</style>
+
+<script>
+// Filters, justified layout and viewer. Row breaks are chosen together (not greedily) so every row
+// lands near one target height; a filter that leaves only a few pieces shows them large.
+(function () {
+  var box = document.querySelector('.gw');
+  if (!box) return;
+  var wall = box.querySelector('.gw-wall');
+  var items = Array.prototype.slice.call(wall.querySelectorAll('.gw-item'));
+  var btns = box.querySelectorAll('.gw-filters button');
+  var lastW = 0;
+
+  function ratio(it) {
+    var r = parseFloat(it.dataset.ar);
+    if (r > 0) return r;
+    var m = it.querySelector('img, video');
+    var w = m && (m.naturalWidth || m.videoWidth), h = m && (m.naturalHeight || m.videoHeight);
+    return w && h ? w / h : 1;
+  }
+
+  function layout() {
+    var W = wall.clientWidth;
+    if (!W) return;
+    lastW = W;
+    var vis = items.filter(function (it) { return !it.classList.contains('is-hidden'); });
+    var ars = vis.map(ratio), n = vis.length;
+    if (!n) return;
+    var target = W < 600 ? 120 : Math.max(170, Math.min(420, W / 5.5));
+    var cap = W < 600 ? W * 1.3 : 560;
+    if (n <= 4) target = Math.min(cap, W / ars.reduce(function (a, b) { return a + b; }, 0));
+
+    // a piece gets a row to itself when it is very wide (ratio >= 2), or a wide spray-paint mural (ratio >= 1.6)
+    function ownRow(x) { return ars[x] >= 2 || (ars[x] >= 1.6 && (' ' + (vis[x].dataset.kind || '') + ' ').indexOf(' spraypaint ') !== -1); }
+    var ownCap = Math.max(cap, 700);
+    function place(x, w, h) { vis[x].style.width = w + 'px'; vis[x].style.height = h + 'px'; }
+    // lay out each run of ordinary pieces between the own-row pieces as justified rows
+    function justifyRun(a, b) {
+      var m = b - a; if (!m) return;
+      var best = [0], cut = [0];   // best[j] = cheapest way to lay out the first j pieces of the run
+      for (var j = 1; j <= m; j++) {
+        best[j] = Infinity;
+        for (var i = j - 1, sum = 0; i >= 0 && j - i <= 14; i--) {
+          sum += ars[a + i];
+          var h = W / sum, d = (Math.min(h, cap) - target) / target;
+          var c = best[i] + d * d + (h > cap ? 1 : 0);
+          if (c < best[j]) { best[j] = c; cut[j] = i; }
+        }
+      }
+      var rows = [];
+      for (var k = m; k > 0; k = cut[k]) rows.unshift([a + cut[k], a + k]);
+      rows.forEach(function (r) {
+        var sum = 0, x;
+        for (x = r[0]; x < r[1]; x++) sum += ars[x];
+        var h = Math.min(W / sum, cap), rowW = Math.min(W, Math.round(h * sum)), used = 0;   // a lone tall piece is capped and centered
+        h = Math.round(h);
+        for (x = r[0]; x < r[1]; x++) {
+          var w = x === r[1] - 1 ? rowW - used : Math.floor(ars[x] * h);
+          used += w; place(x, w, h);
+        }
+      });
+    }
+    var start = 0;
+    for (var x = 0; x < n; x++) {
+      if (ownRow(x)) { justifyRun(start, x); place(x, W, Math.round(Math.min(W / ars[x], ownCap))); start = x + 1; }
+    }
+    justifyRun(start, n);
+    wall.classList.add('is-laid');
+  }
+  var queued = false;
+  function relayout() { if (!queued) { queued = true; requestAnimationFrame(function () { queued = false; layout(); }); } }
+
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      var f = b.dataset.filter;
+      items.forEach(function (it) {
+        it.classList.toggle('is-hidden', !(f === 'all' || (it.dataset.kind || '').split(' ').indexOf(f) !== -1));
+        it.style.animation = 'none'; it.offsetWidth; it.style.animation = '';   // replay the fade-in
+      });
+      layout();
+      if (box.getBoundingClientRect().top < 0) box.scrollIntoView();
+    });
+  });
+
+  items.forEach(function (it) {
+    if (parseFloat(it.dataset.ar) > 0) return;
+    var m = it.querySelector('img, video');
+    if (m) m.addEventListener(m.tagName === 'VIDEO' ? 'loadedmetadata' : 'load', function () { it.dataset.ar = ratio(it); relayout(); });
+  });
+
+  // viewer: click or Enter on a piece; arrow keys move through what is currently visible
+  var dlg = document.querySelector('.gw-view'), vImg = dlg.querySelector('img'), vCap = dlg.querySelector('figcaption'), list = [], at = 0;
+  function isArt(it) { return it && !it.classList.contains('gw-video'); }
+  function show(i) {
+    at = (i + list.length) % list.length;
+    var it = list[at], img = it.querySelector('img');
+    vImg.src = img.src; vImg.alt = img.alt; vCap.textContent = '';
+    if (it.dataset.title) { var b = document.createElement('b'); b.textContent = it.dataset.title; vCap.appendChild(b); vCap.appendChild(document.createElement('br')); }
+    var t = document.createElement('i'); t.textContent = it.dataset.types || ''; vCap.appendChild(t);
+    if (it.dataset.postUrl) {
+      var a = document.createElement('a'); a.href = it.dataset.postUrl; a.textContent = 'From the post: ' + it.dataset.postTitle + ' →';
+      vCap.appendChild(document.createElement('br')); vCap.appendChild(a);
+    }
+  }
+  function open(it) {
+    if (it.dataset.link) { location.href = it.dataset.link; return; }   // pieces that stand for a post go straight to it
+    list = items.filter(function (x) { return isArt(x) && !x.classList.contains('is-hidden'); });
+    show(list.indexOf(it)); dlg.showModal();
+  }
+  wall.addEventListener('click', function (e) { var it = e.target.closest('.gw-item'); if (isArt(it)) open(it); });
+  wall.addEventListener('keydown', function (e) { var it = e.target.closest('.gw-item'); if (isArt(it) && e.key === 'Enter') open(it); });
+  dlg.querySelector('.gw-x').onclick = function () { dlg.close(); };
+  dlg.querySelector('.gw-prev').onclick = function () { show(at - 1); };
+  dlg.querySelector('.gw-next').onclick = function () { show(at + 1); };
+  dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.tagName === 'FIGURE') dlg.close(); });
+  dlg.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(at - 1); if (e.key === 'ArrowRight') show(at + 1); });
+
+
+  // ---- one row of filters + folded wall ----
+  var showall = box.querySelector('.gw-showall');
+  btns.forEach(function (b) {
+    var f = b.dataset.filter;
+    b.dataset.n = f === 'all' ? items.length : items.filter(function (it) { return (it.dataset.kind || '').split(' ').indexOf(f) !== -1; }).length;
+  });
+  // A: keep the six most used mediums visible, the rest behind "more"
+  var ranked = Array.prototype.slice.call(btns).filter(function (b) { return b.classList.contains('gw-med'); }).sort(function (a, b) { return b.dataset.n - a.dataset.n; });
+  ranked.slice(6).forEach(function (b) { b.classList.add('gw-extra'); });
+  var more = document.createElement('button'); more.type = 'button'; more.className = 'gw-more-btn'; more.textContent = 'more ▾';
+  box.querySelector('.gw-filters').appendChild(more);
+  more.addEventListener('click', function () { var open = box.classList.toggle('gw-more-open'); more.textContent = open ? 'fewer ▴' : 'more ▾'; });
+  // the "Show all" button follows the filter: it names the medium, has no count, and hides when everything already fits
+  function updateShowall() {
+    var cur = box.querySelector('.gw-filters button[aria-pressed="true"]');
+    var what = !cur || cur.dataset.filter === 'all' ? 'pieces' : cur.textContent.trim();
+    var frame = box.querySelector('.gw-frame');
+    var overflowing = frame.scrollHeight > 640;
+    showall.parentNode.style.display = overflowing ? '' : 'none';
+    frame.classList.toggle('gw-fits', !overflowing);
+    showall.textContent = box.classList.contains('gw-folded') ? 'Show all ' + what + ' ▾' : 'Show fewer ▴';
+  }
+  showall.addEventListener('click', function () {
+    box.classList.toggle('gw-folded');
+    if (box.classList.contains('gw-folded')) box.scrollIntoView({ block: 'start' });
+    updateShowall();
+  });
+  btns.forEach(function (b) { b.addEventListener('click', function () { box.classList.add('gw-folded'); setTimeout(updateShowall, 0); }); });
+  box.classList.add('gw-a', 'gw-folded');
+  // sub chips: shown while their group (or one of its subs) is picked
+  var lead = document.createElement('span'); lead.className = 'gw-sub-lead'; lead.textContent = '→';
+  var firstSub = box.querySelector('.gw-sub'); if (firstSub) firstSub.parentNode.insertBefore(lead, firstSub);
+  function showSubs(f, group) {
+    var g = group || f, any = false;
+    var mine = Array.prototype.filter.call(box.querySelectorAll('.gw-sub'), function (b) { return b.dataset.group === g; });
+    if (mine.length < 2) mine = [];   // a single sub-chip would just repeat the group
+    box.querySelectorAll('.gw-sub').forEach(function (b) { var on = mine.indexOf(b) !== -1; b.classList.toggle('is-shown', on); if (on) any = true; });
+    lead.classList.toggle('is-shown', any);
+    if (group) { var gb = box.querySelector('.gw-g[data-filter="' + group + '"]'); if (gb) gb.setAttribute('aria-pressed', 'true'); }
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { showSubs(b.dataset.filter, b.dataset.group); }); });
+  setTimeout(updateShowall, 50);
+  if ('ResizeObserver' in window) new ResizeObserver(function () { if (wall.clientWidth !== lastW) relayout(); }).observe(wall);
+  else window.addEventListener('resize', relayout);
+  layout();
+})();
+</script>

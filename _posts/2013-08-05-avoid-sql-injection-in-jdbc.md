@@ -5,6 +5,18 @@ categories:
   - "code"
   - "explanation"
   - "java"
+genre: science
+tags:
+  - code
+  - sql-injection
+  - jdbc
+  - prepared-statements
+  - java
+  - mysql
+  - application-security
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 Let’s say I’m trying to insert some information into a mySQL table using JDBC.
@@ -104,3 +116,5 @@ public class EXAMPLEINSERT {
   }
 }
 ```
+
+<p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/EXAMPLEINSERT.java">cow-code / EXAMPLEINSERT.java</a></p>

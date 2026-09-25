@@ -4,6 +4,16 @@ date: "2014-03-11"
 categories: 
   - "explanation"
   - "writing"
+genre: science
+tags:
+  - cognitive-science
+  - analogy-making
+  - categorization
+  - douglas-hofstadter
+  - talk-notes
+format: notes
+topics:
+  - "Life, study & work"
 ---
 
 This is a summary of a talk I attended at Stanford by Douglas Hofstadter (well known for his authorship of _Gödel, Escher, Bach: An Eternal Golden Braid_).

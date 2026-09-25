@@ -1,0 +1,119 @@
+{% comment %}
+  Styles + script for the track rows made by tracklist.html. Include once per page, after the rows.
+  One song plays at a time; SoundCloud tracks play through SoundCloud's widget API, loaded on first play.
+{% endcomment %}
+<style>
+  .tracklist { list-style: none; margin: 0; padding: 0; }
+  .track { position: relative; display: grid; grid-template-columns: 36px 1.6rem 1fr auto; align-items: center; gap: 12px; margin: 0; padding: 10px 20px 14px; border-top: 2px solid var(--lilac); }
+  .track:first-child { border-top: 0; }
+  .track .play { width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 2px solid var(--ink); border-radius: 50%; background: var(--yellow); color: var(--ink); cursor: pointer; }
+  .track .play:hover { background: var(--pink); color: var(--paper); }
+  .track .play svg { width: 14px; height: 14px; fill: currentColor; }
+  .track .i-pause, .track.playing .i-play { display: none; }
+  .track.playing .i-pause { display: inline; }
+  .track.playing { background: #f6f2ff; }
+  .t-num { font: 14px 'Space Mono', monospace; color: var(--ink-soft); text-align: right; }
+  .t-title { font-weight: 700; min-width: 0; }
+  .t-time { font: 14px 'Space Mono', monospace; color: var(--ink-soft); white-space: nowrap; }
+  .t-bar { position: absolute; left: 20px; right: 20px; bottom: 5px; height: 4px; border-radius: 2px; background: var(--lilac); cursor: pointer; }
+  .t-fill { display: block; height: 100%; width: 0; border-radius: 2px; background: var(--pink); }
+  .track audio { grid-column: 1 / -1; width: 100%; height: 36px; }
+  .track:not(.js) .play, .track:not(.js) .t-bar { display: none; }
+  .track.js audio { display: none; }
+  .t-flag { font: 700 12px 'Space Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); border: 1px solid var(--ink-soft); border-radius: 4px; padding: 0 4px; vertical-align: middle; }
+  .t-ext { grid-column: 3 / -1; font: 14px 'Space Mono', monospace; }
+  .track.js .t-ext { display: none; }
+  .sc-frame { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; border: 0; left: 0; top: 0; }
+</style>
+<script>
+// custom track rows: one song plays at a time, the row fills as it plays, a finished track moves on to the next in its list.
+// local files play through <audio>; SoundCloud tracks through SoundCloud's widget API, loaded on the first press of play.
+// without JS the plain <audio controls> / SoundCloud links stay visible instead.
+(function () {
+  var current = null, scApi = null;
+  function fmt(s) { if (!isFinite(s)) return ''; s = Math.round(s); return Math.floor(s / 60) + ':' + ('0' + s % 60).slice(-2); }
+  function loadScApi() {
+    return scApi || (scApi = new Promise(function (ok, fail) {
+      var s = document.createElement('script');
+      s.src = 'https://w.soundcloud.com/player/api.js'; s.onload = ok; s.onerror = fail;
+      document.head.appendChild(s);
+    }));
+  }
+
+  var more = document.querySelector('.more-toggle');
+  if (more) more.addEventListener('click', function () {
+    var on = more.getAttribute('aria-expanded') !== 'true', box = document.getElementById('more-lyrics');
+    more.setAttribute('aria-expanded', on); box.hidden = !on;
+    more.textContent = on ? 'Show fewer lyrics' : 'View more lyrics';
+  });
+
+  // 18+ switch: off on every visit; switching it off again stops anything playing in there
+  var toggle = document.querySelector('.adult-toggle'), adultBody = document.getElementById('adult-body');
+  if (toggle) toggle.addEventListener('click', function () {
+    var on = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', on); adultBody.hidden = !on;
+    if (!on && current && adultBody.contains(current.el)) current.pause();
+  });
+
+  document.querySelectorAll('.track').forEach(function (tr) {
+    var btn = tr.querySelector('.play'), bar = tr.querySelector('.t-bar'),
+        fill = tr.querySelector('.t-fill'), time = tr.querySelector('.t-time'), total = time.textContent;
+    var row = { playing: false, el: tr };
+    tr.classList.add('js');
+
+    function show(on) {
+      row.playing = on; tr.classList.toggle('playing', on);
+      btn.setAttribute('aria-label', on ? 'Pause' : 'Play');
+      if (on && current && current !== row) current.pause();
+      if (on) current = row;
+    }
+    function progress(sec, dur) {
+      fill.style.width = (dur ? 100 * sec / dur : 0) + '%';
+      time.textContent = fmt(sec) + ' / ' + fmt(dur);
+    }
+    function ended() {
+      fill.style.width = '0'; time.textContent = total; show(false);
+      var next = tr.nextElementSibling; if (next) next.querySelector('.play').click();
+    }
+
+    if (tr.dataset.sc) {
+      var widget = null;
+      row.pause = function () { if (widget) widget.pause(); };
+      row.play = function () {
+        if (widget) return widget.play();
+        loadScApi().then(function () {
+          var f = document.createElement('iframe');
+          f.className = 'sc-frame'; f.allow = 'autoplay'; f.title = 'SoundCloud player'; f.tabIndex = -1;
+          f.src = 'https://w.soundcloud.com/player/?url=' + encodeURIComponent(tr.dataset.sc) + '&auto_play=true&visual=false';
+          tr.appendChild(f);
+          widget = SC.Widget(f);
+          var E = SC.Widget.Events;
+          widget.bind(E.READY, function () { widget.play(); });
+          widget.bind(E.PLAY, function () { show(true); });
+          widget.bind(E.PAUSE, function () { show(false); });
+          widget.bind(E.PLAY_PROGRESS, function (e) { widget.getDuration(function (d) { progress(e.currentPosition / 1000, d / 1000); }); });
+          widget.bind(E.FINISH, ended);
+        }, function () { location.href = tr.dataset.sc; });
+      };
+      row.seek = function (x) { if (widget) widget.getDuration(function (d) { widget.seekTo(d * x); }); };
+    } else {
+      var a = tr.querySelector('audio');
+      a.removeAttribute('controls');
+      row.play = function () { a.play(); };
+      row.pause = function () { a.pause(); };
+      row.seek = function (x) { if (a.duration) a.currentTime = a.duration * x; };
+      a.addEventListener('loadedmetadata', function () { total = fmt(a.duration); time.textContent = total; });
+      a.addEventListener('play', function () { show(true); });
+      a.addEventListener('pause', function () { show(false); });
+      a.addEventListener('timeupdate', function () { progress(a.currentTime, a.duration); });
+      a.addEventListener('ended', function () { a.currentTime = 0; ended(); });
+    }
+
+    btn.addEventListener('click', function () { row.playing ? row.pause() : row.play(); });
+    bar.addEventListener('click', function (e) {
+      var r = bar.getBoundingClientRect(); row.seek((e.clientX - r.left) / r.width);
+      if (!row.playing) row.play();
+    });
+  });
+})();
+</script>

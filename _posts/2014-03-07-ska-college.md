@@ -4,6 +4,17 @@ date: "2014-03-07"
 categories: 
   - "life"
   - "writing"
+genre: art
+tags:
+  - songwriting
+  - ska
+  - lyrics
+  - trombone
+  - higher-education
+format: poetry
+topics:
+  - "Music"
+  - "Writing & theater"
 ---
 
 I enjoy songwriting and have recently gotten into playing Third-Wave ska on my trombone. The basic premise of [ska](https://www.youtube.com/watch?v=7mIV6ADAnnk) is to play an incredibly upbeat tune with [shocking](https://www.youtube.com/watch?v=y6PxQ1yP6SI)/[macabre](https://www.youtube.com/watch?v=A-UTPKL-UGY) lyrics.

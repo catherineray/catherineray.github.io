@@ -4,6 +4,15 @@ date: "2013-04-19"
 categories: 
   - "braille"
   - "explanation"
+genre: science
+tags:
+  - braille
+  - assistive-technology
+  - accessibility
+  - braille-translation
+format: explanation
+topics:
+  - "Braille & accessibility"
 ---
 
 I recently saw an add for a product I am excited for (although most blind people I know prefer Siri):

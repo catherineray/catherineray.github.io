@@ -4,6 +4,18 @@ date: "2015-10-26"
 categories: 
   - "math"
   - "topology"
+genre: math
+tags:
+  - chromatic-homotopy-theory
+  - morava-e-theory
+  - formal-group-laws
+  - landweber-exact-functor-theorem
+  - elliptic-curves
+  - deformation-theory
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Formal groups"
 ---
 Today, I want to discuss the opposite procedures of deformations and contractions of complex-orientable cohomology theories.
 
@@ -123,7 +135,7 @@ We see that it collapses to \\(\mathbb{L}^*(BZ/3) = \mathbb{Z}[\beta^{pm}][[x]]/
 
 * * *
 
-I can not help but wonder if this method generalizes to the creation of other (besides, say, \\(x + y + txy\\)). cohomology theories which exhibit “height contraction” behaviour. The next hope is for a construction of height 3 which contracts to height 2. (This remains a hope because I am having difficulty writing down a simple example of a K3-variety which has a one-parameter contraction to a supersingular elliptic curve.)
+I can not help but wonder if this method generalizes to the creation of other (besides, say, \\(x + y + txy\\)). cohomology theories which exhibit “height contraction” behavior. The next hope is for a construction of height 3 which contracts to height 2. (This remains a hope because I am having difficulty writing down a simple example of a K3-variety which has a one-parameter contraction to a supersingular elliptic curve.)
 
 _Sidenote: we use “deformation” in the general setting of viewing any deformation as the replacement of a point \\(\text{Spec }k\\) with a fat point \\(\text{Spf }k[[t]]\\)._
 

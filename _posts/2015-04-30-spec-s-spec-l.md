@@ -3,6 +3,18 @@ title: "What does the sphere spectrum have to do with formal group laws?"
 date: "2015-04-30"
 categories: 
   - "math"
+genre: math
+tags:
+  - tensor-triangular-geometry
+  - balmer-spectrum
+  - sphere-spectrum
+  - thick-subcategory-theorem
+  - chromatic-homotopy-theory
+  - formal-group-laws
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Formal groups"
 ---
 
 _This post assumes that you’re familiar with the definition of a prime ideal, a local ring, \\( R\_{(p)} \\), the sphere spectrum, \\(\mathbb{S}\\), and the Lazard ring, \\(L\\). During a talk [Jacob Lurie](http://www.math.harvard.edu/~lurie/) gave at Harvard this April, he labeled the moduli space of (1-d commutative) formal group laws as \\(\text{Spec }\mathbb{S}\\).

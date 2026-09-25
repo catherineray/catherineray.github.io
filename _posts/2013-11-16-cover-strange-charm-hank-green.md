@@ -4,6 +4,16 @@ date: "2013-11-16"
 categories: 
   - "physics"
   - "video"
+genre: art
+tags:
+  - music-cover
+  - song-cover
+  - video
+  - physics
+format: artwork
+topics:
+  - "Physics"
+  - "Music"
 ---
 
 In a rush, so I figured I’d record an informal cover and leave all of the mistakes in. Not sure why it came out so low res!

@@ -1,6 +1,13 @@
 ---
 layout: post
 title: Old Posts Are Being Manually Restored
+genre: prose
+tags:
+  - blog-restoration
+  - site-update
+format: announcement
+topics:
+  - "Life, study & work"
 ---
 
 

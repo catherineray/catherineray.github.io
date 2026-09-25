@@ -1,0 +1,12 @@
+{% comment %}
+  Shows a PDF right in the page, with a link underneath in case it doesn't display
+  (phones often can't show PDFs inline; they get the link inside the frame instead).
+  include.src: path to the PDF (e.g. /pdfs/Gauss_sums.pdf); include.title: what it is, for the link text.
+{% endcomment %}
+{% assign pdf_src = include.src | prepend: site.baseurl %}
+<figure class="pdf-embed">
+  <object data="{{ pdf_src }}#navpanes=0&view=FitH" type="application/pdf" aria-label="{{ include.title | escape }} (PDF)">
+    <p class="pdf-fallback">This browser can't show the PDF here. <a href="{{ pdf_src }}">Open “{{ include.title }}” (PDF)</a></p>
+  </object>
+  <figcaption><a href="{{ pdf_src }}" target="_blank" rel="noopener">PDF not showing? Open “{{ include.title }}” ↗</a></figcaption>
+</figure>

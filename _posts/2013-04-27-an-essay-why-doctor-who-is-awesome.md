@@ -4,6 +4,16 @@ date: "2013-04-27"
 categories: 
   - "explanation"
   - "writing"
+genre: prose
+tags:
+  - doctor-who
+  - science-fiction
+  - television-criticism
+  - lgbtq-representation
+format: review
+topics:
+  - "Algebra & representation theory"
+  - "Writing & theater"
 ---
 
 _Doctor Who_ depicts the adventures of a humanoid alien, the Doctor, who roams the universe on a sentient spaceship. This spaceship is referred to as the TARDIS which is an acronym for Time and Relative Dimension(s) in Space. As a Time Lord, the Doctor is able to regenerate his body when he is near death. Each of his incarnations has their own quirks but otherwise share the memories and basic personality of the previous incarnations. The Doctor often brings human companions to accompany him on his quests through parallel universes and different dimensions. On these adventures he saves civilizations and rights wrongs. The Doctor regularly gains new companions and loses old ones. The companions provide a surrogate with whom the audience can identify, and they serve to further the story by manufacturing peril for the Doctor to resolve.

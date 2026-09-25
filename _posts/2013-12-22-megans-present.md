@@ -3,6 +3,14 @@ title: "Megan’s Present"
 date: "2013-12-22"
 categories: 
   - "art"
+genre: art
+tags:
+  - drawing
+  - marker-drawing
+  - ink-illustration
+format: artwork
+topics:
+  - "Drawing, painting & comics"
 ---
 
 I visited my friend, Megan Brusnahan, before I left for CA. She had a picture I’d drawn her in middle school (2009) mounted on her wall in a frame. I’d forgotten that I’d drawn this picture! It’s done entirely in black sharpie.

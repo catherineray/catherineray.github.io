@@ -6,6 +6,18 @@ categories:
   - "haskell"
   - "math"
   - "python"
+genre: math
+tags:
+  - project-euler
+  - enumerative-combinatorics
+  - lattice-paths
+  - binomial-coefficients
+  - python
+  - haskell
+format: problem-set
+topics:
+  - "Number theory"
+  - "Combinatorics & puzzles"
 ---
 
 DISCLAIMER: This is the solution to Project Euler’s problem 15. Please attempt to solve the problem yourself before reading my solution.
@@ -16,7 +28,7 @@ DISCLAIMER: This is the solution to Project Euler’s problem 15. Please attempt
 
 **How many such routes are there through a 20×20 grid?**
 
-I like to use this problem to demonstrate the efficacy of using simple maths to improve code.
+I like to use this problem to demonstrate the efficacy of using simple math to improve code.
 
 Instead of the naive solution….
 

@@ -5,6 +5,17 @@ categories:
   - "analysis"
   - "math"
   - "topology"
+genre: math
+tags:
+  - point-set-topology
+  - metric-spaces
+  - topological-spaces
+  - topological-maps
+  - robotic-mapping
+format: explanation
+topics:
+  - "Geometry & topology"
+  - "Robotics & machine learning"
 ---
 
 #### Topological Maps in Robotic Navigation
@@ -70,7 +81,7 @@ A function \(f\) is continuous over a space \(X\) iff \(\forall x, p \in X\) the
 
 This formal understanding of continuity leads directly to the unifying concept of this lecture, the study of “closeness”: the open set.
 
-A subset \(S\) of a metric space \(X\) is an open set iff every point of \(S\) has an open neighbourhood \(N_\epsilon\) that lies completely in \(S\). In precise terms:
+A subset \(S\) of a metric space \(X\) is an open set iff every point of \(S\) has an open neighborhood \(N_\epsilon\) that lies completely in \(S\). In precise terms:
 
 \(S\) is open \(\Leftrightarrow \forall a \in S \exists \epsilon > 0 | N_\epsilon(a) \subseteq S\).
 
@@ -80,13 +91,13 @@ A subset \(S\) of a metric space \(X\) is an open set iff every point of \(S\) h
 
 **Proof**
 
-Let \(x \in \bigcup\limits_{i \in I} A_i = A\). Then \(x \in A_i\) for some \(i\). Since \(A_i\) is open, by the definition of an open set: \(x\) has an open neighbourhood lying completely inside \(A_i\) which is also inside \(A\). \(_{QED}\)
+Let \(x \in \bigcup\limits_{i \in I} A_i = A\). Then \(x \in A_i\) for some \(i\). Since \(A_i\) is open, by the definition of an open set: \(x\) has an open neighborhood lying completely inside \(A_i\) which is also inside \(A\). \(_{QED}\)
 
 **Proof**
 
 To check that finite intersections of open sets are again open, it suffices to check this for the intersection of two open sets. Suppose \(x \in A \cap B\).
 
-Then \(x \in A\) and also has a neighbourhood, \(N_{\epsilon_A}\) lying in \(A\). Similarly, \(x\) has a neighbourhood \(N_{\epsilon_B}\) lying in \(B\). If \(\epsilon =\) min \({\epsilon_A, \epsilon_B}\), the neighbourhood \(N_\epsilon\) also lies in both \(A\) and \(B\) and hence in \(A \cap B\). \(_{QED}\)
+Then \(x \in A\) and also has a neighborhood, \(N_{\epsilon_A}\) lying in \(A\). Similarly, \(x\) has a neighborhood \(N_{\epsilon_B}\) lying in \(B\). If \(\epsilon =\) min \({\epsilon_A, \epsilon_B}\), the neighborhood \(N_\epsilon\) also lies in both \(A\) and \(B\) and hence in \(A \cap B\). \(_{QED}\)
 
 #### Continuous Functon
 
@@ -102,9 +113,9 @@ If \(f: X \rightarrow Y\) is a continuous function between metric spaces and \(B
 
 Let \(x \in f^{-1}(B)\). Then \(f(x) = y in B\).
 
-Since \(B\) is open, the point \(y\) has a neighbourhood \(N_\epsilon \subset B\).
+Since \(B\) is open, the point \(y\) has a neighborhood \(N_\epsilon \subset B\).
 
-By the definition of continuity, \(N_\epsilon\) contains the image of some neighbourhood \(N_\delta\) \(V\) of \(x\). Since \(f(V) \subset B\), we have \(V \subset f^{-1}(B)\) and so \(x\) has this nieghbourhood \(N_\delta \subset f^{-1}(B)\).
+By the definition of continuity, \(N_\epsilon\) contains the image of some neighborhood \(N_\delta\) \(V\) of \(x\). Since \(f(V) \subset B\), we have \(V \subset f^{-1}(B)\) and so \(x\) has this nieghbourhood \(N_\delta \subset f^{-1}(B)\).
 
 Hence, the definition of an open set, \(f^{-1}(B)\) is open in \(X\).
 
@@ -112,7 +123,7 @@ The converse also holds: If \(f: X \rightarrow Y\) is a function for which \(f^{
 
 #### The Open Ball: Interior and Boundary Points
 
-As we mentioned earlier: in \(\mathbb{R}^1\), the open neighbourhood is the open interval. In \(\mathbb{R}^2\) it is the open disc. In \(\mathbb{R}^3\) it is the open ball.
+As we mentioned earlier: in \(\mathbb{R}^1\), the open neighborhood is the open interval. In \(\mathbb{R}^2\) it is the open disc. In \(\mathbb{R}^3\) it is the open ball.
 
 An \(n\)-dimensional open ball of radius \(r\) is the collection of points of a distance less than \(r\) from a fixed point in Euclidean \(n\)-space. Explicitly, the open ball with center \(p\) and radius \(r\) is defined by:
 
@@ -128,7 +139,7 @@ A friend of the interior point is the definition we’ve been dancing around: a 
 
 Intuitively, a point is an interior point of it is not “right on the edge” of a set, and a boundary point if it is “right on the edge” of a set.
 
-Formally, a point \(p\) is a boundary point of \(S\) iff for every \(\epsilon > 0\), the open neighbourhood of \(p\) intersects both \(S\) and the complement of \(S\): \(\bar{S}\). That is: \(x\) is a boundary point of \(S\) iff:
+Formally, a point \(p\) is a boundary point of \(S\) iff for every \(\epsilon > 0\), the open neighborhood of \(p\) intersects both \(S\) and the complement of \(S\): \(\bar{S}\). That is: \(x\) is a boundary point of \(S\) iff:
 
 \(N_\epsilon(p) \cap S \neq \emptyset\) and \(N_\epsilon(p) \cap \bar{S} \neq \emptyset\)
 

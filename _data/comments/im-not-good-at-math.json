@@ -1,0 +1,65 @@
+{
+ "source": "https://web.archive.org/web/20200420161055/http://rin.io/im-not-good-at-math/",
+ "comments": [
+  {
+   "id": "10733",
+   "parent": null,
+   "kind": "comment",
+   "author": "John",
+   "author_url": null,
+   "date": "2014-11-30T03:01:38+00:00",
+   "html": "<p>Nice post.  I hope the girl does get the chance to learn about math in a context other than “a curriculum of symbol manipulations some adults expect you to memorize, designed for reasons that have more to do with the needs of bureaucracy than the needs of intellectually developing humans”.</p>",
+   "depth": 0
+  },
+  {
+   "id": "13080",
+   "parent": null,
+   "kind": "comment",
+   "author": "Tim Porter",
+   "author_url": null,
+   "date": "2014-12-21T17:00:31+00:00",
+   "html": "<p>Rin: you may like this short piece from Ronnie Brown:<br/>\n<a href=\"http://pages.bangor.ac.uk/~mas010/carpntry.htm\">http://pages.bangor.ac.uk/~mas010/carpntry.htm</a></p>",
+   "depth": 0
+  },
+  {
+   "id": "13671",
+   "parent": null,
+   "kind": "comment",
+   "author": "Ross",
+   "author_url": null,
+   "date": "2015-01-06T03:46:40+00:00",
+   "html": "<p>Shades of Lockhart’s  “A Mathematician’s Lament” which basically every single person on the planet over the age of 9 could benefit from reading. </p>\n<p>Thanks for this.</p>",
+   "depth": 0
+  },
+  {
+   "id": "18891",
+   "parent": null,
+   "kind": "comment",
+   "author": "Ronnie Brown",
+   "author_url": "http://pages.bangor.ac.uk/~mas010/publar.html",
+   "date": "2015-03-31T13:52:44+00:00",
+   "html": "<p>The question of “What is mathematics?” is rarely addressed in undergraduate teaching, but is crucial. In our “maths in context” course we found students were often passionately concerned with this.. I believe maths is concerned with the development of language for expression, validation, falsification, deduction, calculation. This also involves the development of concepts for expression and description of structure and patterns. </p>\n<p>This “top down”approach is often helpful to students.</p>",
+   "depth": 0
+  },
+  {
+   "id": "25306",
+   "parent": "18891",
+   "kind": "comment",
+   "author": "rin",
+   "author_url": null,
+   "date": "2015-07-09T00:08:04+00:00",
+   "html": "<p>I personally found that reading Lakatos, <a href=\"https://math.berkeley.edu/~kpmann/Lakatos.pdf\">Proofs and Refutations</a> has pacified my grappling with “What is mathematics?”</p>\n<p>I completely agree with you that the top-down approach is helpful. I am on the extreme side (almost exclusively top-down learning) and have noticed that the top down approach has two downsides which must be acknowledged and actively prevented. </p>\n<p>I am almost certainly preaching to the choir, but I am curious of your opinions and experiences regarding the following.</p>\n<p>We must not only give our students permission to demand that they get the innermost secrets taught to them, but teach them that they absolutely must insist. Repeatedly. That is, while taking the top down approach, explicitly cultivate in students a restless motivation to go deeper and demand justification. </p>\n<p>Otherwise they might get trapped in the false lullaby of pretty words (or be too embarrassed to ask most of their questions).</p>\n<p>We also need to place more emphasis on practicing the art of blundering about in the darkness. </p>\n<p>(1) Begin with a pattern which contains a deep concept, do not explain it! Just tell them that there is a genuine and deep idea in this pattern that they must find. (2) Allow your students to engage and tinker directly with this mysterious thing until they come upon something interesting. (3) Encourage them to communicate their findings in increasingly an increasingly precise manner.  Otherwise they might get trapped by a lack of confidence and inability to clearly express their own ideas.</p>\n<p>For example: giving your students pieces of paper from 3 different tessellation patterns mixed together, and  **without instruction** allowing them to play with the pieces until they discover for themselves that some fit together in tessellations and others don’t, and that there are multiple different puzzles all jumbled together.</p>\n<p>It is unclear to me whether it is best to state the claim before or after a proof. An explanation can be phrased as a trail which has no explicit end, the definitions and theorems as stops along it.</p>\n<p>For example: starting with the harmonic series and fooling around to arrive at the Euler product formula and L-function without stating them as your explicit goal.</p>\n<p>On a seperate note, I found that Felix Klein’s, <a href=\"https://archive.org/details/elementarymathem032765mbp\"> Elementary mathematics from an advanced viewpoint</a> gave me an appreciation of the “basics” in context like no other book has; it does an excellent job of balancing intuition with precision and technique.</p>",
+   "depth": 1
+  },
+  {
+   "id": "38127",
+   "parent": null,
+   "kind": "comment",
+   "author": "David Roberts",
+   "author_url": "https://ncatlab.org/nlab/show/David+Roberts",
+   "date": "2016-11-10T12:47:17+00:00",
+   "html": "<p>Don’t forget the infamous ‘Grothendieck prime’…</p>",
+   "depth": 0
+  }
+ ]
+}

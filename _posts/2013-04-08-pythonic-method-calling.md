@@ -5,6 +5,15 @@ categories:
   - "code"
   - "explanation"
   - "python"
+genre: science
+tags:
+  - python
+  - eval
+  - metaprogramming
+  - code-style
+format: tutorial
+topics:
+  - "Programming & tools"
 ---
 
 I have an aversion to hard-coding. Hard coding is when you write out a long, elaborate code that could also be written with a dynamic loop. This usually limits the ability to easily adjust your own code in case you want to change something later (or re-use it). “Hard coding” refers to “rigidly” writing out things instead of keeping them dynamic.

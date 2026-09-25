@@ -4,6 +4,16 @@ date: "2014-11-28"
 categories: 
   - "art"
   - "math"
+genre: prose
+tags:
+  - mathematics-education
+  - math-anxiety
+  - geometry
+  - dialogue
+format: personal
+topics:
+  - "Geometry & topology"
+  - "Life, study & work"
 ---
 
 A 10 year old girl and her father sat in the back of my car as I drove them home after Thanksgiving.

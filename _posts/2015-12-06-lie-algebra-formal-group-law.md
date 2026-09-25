@@ -3,6 +3,18 @@ title: "A quick comparison of Lie algebras and formal group laws"
 date: "2015-12-06"
 categories: 
   - "math"
+genre: math
+tags:
+  - formal-group-laws
+  - lie-algebras
+  - lazard-ring
+  - universal-enveloping-algebra
+  - coadjoint-orbits
+format: notes
+topics:
+  - "Formal groups"
+  - "Algebra & representation theory"
+  - "Geometric representation theory"
 ---
 
 _This post assumes that you are familiar with the definition of Lie group/algebra, and that you are comfortable with the Lazard ring. Note: This is less of an expository post and more of an unfinished question._

@@ -3,6 +3,16 @@ title: "Visual Braille: [1] Braille Alphabet"
 date: "2013-09-22"
 categories: 
   - "braille"
+genre: science
+tags:
+  - braille
+  - contracted-braille
+  - accessibility
+  - mnemonics
+format: artwork
+topics:
+  - "Braille & accessibility"
+  - "Life, study & work"
 ---
 
 Have no idea what's going on? Have no fear: [Introduction to Visual Grade 2 Braille](/visual-grade-2-braille-dictionary-introduction/)

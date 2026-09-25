@@ -1,0 +1,15 @@
+{
+ "source": "https://web.archive.org/web/20200217053331/http://rin.io:80/matlab-rotating-sphere-animation/",
+ "comments": [
+  {
+   "id": "31697",
+   "parent": null,
+   "kind": "comment",
+   "author": "Liuchi Li",
+   "author_url": null,
+   "date": "2015-10-05T01:50:28+00:00",
+   "html": "<p>Hey,</p>\n<p>I would like to do an animation of moving sphere (spinning at the same time). I have tried updating the object by doing hs=surf[X+0.1*i,Y+0.1*i,Z+0.1*i] inside the for loop but it did not work..</p>\n<p>Any suggestions are greatly appreciated!</p>",
+   "depth": 0
+  }
+ ]
+}

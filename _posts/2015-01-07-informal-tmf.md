@@ -3,6 +3,18 @@ title: "A Swashbuckling Tour of Elliptic Cohomology"
 date: "2015-01-07"
 categories: 
   - "math"
+genre: math
+tags:
+  - elliptic-cohomology
+  - formal-group-laws
+  - complex-cobordism
+  - chern-classes
+  - elliptic-curves
+  - topological-modular-forms
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Formal groups"
 ---
 
 In singular cohomology, the first chern class of two tensored line bundles \(c_1( A \otimes B) = c_1(A) + c_1(B)\) is the additive formal group law, \(F(x,y) = x + y\).

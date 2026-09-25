@@ -5,6 +5,15 @@ categories:
   - "explanation"
   - "trombone"
   - "video"
+genre: art
+tags:
+  - trombone
+  - slide-positions
+  - embouchure
+  - music-lesson
+format: tutorial
+topics:
+  - "Music"
 ---
 
 In which I play a bit, debunk some misconceptions, teach you the slide positions and embouchure (i.e., mouth shape), and show you how to safely bike with a trombone.

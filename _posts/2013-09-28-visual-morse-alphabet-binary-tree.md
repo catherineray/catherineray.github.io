@@ -3,6 +3,16 @@ title: "Visual Morse Alphabet Binary Tree"
 date: "2013-09-28"
 categories: 
   - "explanation"
+genre: science
+tags:
+  - morse-code
+  - binary-trees
+  - mnemonics
+  - infographic
+format: explanation
+topics:
+  - "Combinatorics & puzzles"
+  - "Braille & accessibility"
 ---
 
 The ultimate mental image for transmitting and receiving the Morse alphabet (click on the image for larger view).

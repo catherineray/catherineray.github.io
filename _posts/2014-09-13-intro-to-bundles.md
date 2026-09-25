@@ -3,6 +3,17 @@ title: "Introduction to Bundles"
 date: "2014-09-13"
 categories: 
   - "math"
+genre: math
+tags:
+  - fiber-bundles
+  - differential-geometry
+  - mobius-strip
+  - local-triviality
+  - algebraic-topology
+format: explanation
+topics:
+  - "Homotopy theory"
+  - "Geometry & topology"
 ---
 
 _Treating spaces as fiber bundles allows us to tame twisted beasts. Most of spin geometry is phrased in the language of fiber bundles, and this post will begin to introduce that language — extremely powerful in its simplicity._

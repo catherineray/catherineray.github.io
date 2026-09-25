@@ -1,9 +1,18 @@
 ---
-title: "The Purpose of Communicaton &#038; Assigning Credit"
+title: "The Purpose of Communication &#038; Assigning Credit"
 date: "2013-10-11"
 categories: 
   - "life"
   - "writing"
+genre: prose
+tags:
+  - research-ethics
+  - attribution
+  - scientific-collaboration
+  - innovation
+format: opinion
+topics:
+  - "Life, study & work"
 ---
 
 It is tempting for some to take all of the glory.

@@ -1,0 +1,19 @@
+{% assign comments_key = page.comments_key | default: page.slug %}
+{% assign archived = site.data.comments[comments_key] %}
+{% if archived and archived.comments.size > 0 %}
+<section class="archived-comments" aria-labelledby="archived-comments-title">
+  <h2 id="archived-comments-title">Comments from the old blog ({{ archived.comments.size }})</h2>
+  <p class="archived-note">Recovered from the <a href="{{ archived.source }}">Wayback Machine</a> of the old site after my servers and back up servers got black-hatted.</p>
+  <ol class="archived-list">
+    {% for c in archived.comments %}
+    <li class="archived-comment depth-{{ c.depth }}{% if c.kind != 'comment' %} is-pingback{% endif %}" id="old-comment-{{ c.id }}">
+      <div class="archived-meta">
+        {% if c.author_url %}<a class="archived-author" href="{{ c.author_url }}" rel="nofollow ugc">{{ c.author }}</a>{% else %}<span class="archived-author">{{ c.author }}</span>{% endif %}
+        {% if c.date %}<time datetime="{{ c.date }}">{{ c.date | date: "%B %e, %Y" }}</time>{% endif %}
+      </div>
+      <div class="archived-body">{{ c.html }}</div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}

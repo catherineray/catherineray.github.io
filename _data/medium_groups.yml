@@ -1,0 +1,25 @@
+# How the gallery filters are grouped. Each piece goes in ONE group: the first in this list
+# that any of its mediums matches. `subs` are the finer chips shown once that group is picked.
+# `also`: pieces with these mediums are cross-listed here as well, without leaving their own group
+# (the blood painting is in On paper → blood and in On/from bodies).
+# order the chips are shown in (separate from the matching order below)
+chip_order: ["On paper", "On walls", "On/from bodies", "In a box", "On glass"]
+works:
+  - { name: "On/from bodies", color: "#9b7fd4", mediums: [tattoo, body paint], also: [blood] }
+  - { name: "On walls",  color: "#6cc8f0", mediums: [spraypaint, "painter's tape", vinyl decal] }
+  - name: "On paper"
+    color: "#ec3f9e"
+    mediums: [painting, acrylic, blood, pastels, pen, pencil, charcoal, rainbow scratch paper]
+    subs:
+      - { name: "blood",      color: "#ee5fd4", mediums: [blood] }
+      - { name: "acrylic",    color: "#f9a13c", mediums: [acrylic] }
+      - { name: "pastels",    color: "#f4a58a", mediums: [pastels] }
+      - { name: "scrawlings", color: "#ffffff", mediums: [pen, pencil, charcoal, rainbow scratch paper] }
+  - name: "In a box"
+    color: "#faf3c8"
+    mediums: [polaroid, film, digital photo, photograph]
+    subs:
+      - { name: "polaroid",     color: "#faf3c8", mediums: [polaroid] }
+      - { name: "other analog", color: "#f9a13c", mediums: [film] }
+      - { name: "digital",      color: "#d5c2ef", mediums: [digital photo] }
+  - { name: "On glass",  color: "#ffffff", mediums: [digital] }
