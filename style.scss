@@ -816,9 +816,10 @@ a.chip-genre, .chip-genre {
 .rail-short { display: none; }
 // phones: the sidebar collapses to the name + the four page icons (labels, sections, search, filters, highlights hidden)
 @media (max-width: 820px) {
-  .rail { gap: 10px !important; padding: 12px 14px !important; }
-  .rail .rail-name { font-size: 26px; }
-  .rail .rail-pages { flex-direction: row !important; flex-wrap: nowrap; justify-content: flex-start; gap: 14px; padding-bottom: 8px; overflow: hidden; }
+  .rail { flex-direction: row !important; flex-wrap: nowrap !important; align-items: center !important; justify-content: space-between; gap: 12px !important; padding: 10px 14px !important; }
+  .rail .rail-name { font-size: 24px; width: min-content; line-height: .95; margin: 0 !important; flex: none; }   /* RIN over RAY */
+  .rail .rail-name::before { width: 100%; }
+  .rail .rail-pages { flex-direction: row !important; flex-wrap: nowrap; justify-content: flex-end; gap: 12px; padding-bottom: 0; border-bottom: 0 !important; overflow: hidden; flex: 1 1 auto; }
   .rail .rail-pages > a { min-height: 0; gap: 2px; flex-direction: column; align-items: center; }
   .rail .rail-pages .rail-short { display: block; font: 700 11px $rail-mono; letter-spacing: .06em; text-transform: lowercase; line-height: 1; }
   .rail .rail-pages .rail-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
