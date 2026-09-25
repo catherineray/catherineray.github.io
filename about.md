@@ -1264,7 +1264,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </article>
           <article class="paper">
             <h3><a href="https://rin.io/biome/">Everything downstream of a sensitive nervous system</a><span class="status">2024 – ongoing</span><span class="tech">Sensory processing as an organizing principle · gut microbiome · autoimmunity · chronic pain · glutamate excitability · joint with Luca Estinto</span></h3>
-            <p class="meta lvl lvl-plain">An essay arguing that a cluster of conditions usually treated separately may be one problem seen from different angles.</p>
+            <p class="meta lvl lvl-plain">An essay arguing that a cluster of conditions usually treated separately come from one mechanism.</p>
             <div class="lvl lvl-curious">
             <p class="why">
               The people I interviewed about wheelchairs kept telling me about pain, and pain was
