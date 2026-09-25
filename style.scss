@@ -725,18 +725,18 @@ a.chip-genre, .chip-genre {
   content: '';
   position: absolute;
   top: 50%;
-  width: 84px;
-  height: 84px;
-  margin-top: -42px;
+  width: 72px;
+  height: 72px;
+  margin-top: -36px;
   border-radius: 50%;
   background: repeating-conic-gradient(#ec3f9e 0deg 5deg, transparent 5deg 22deg, #6cc8f0 22deg 27deg, transparent 27deg 45deg, #9b7fd4 45deg 50deg, transparent 50deg 68deg, #1b1b1b 68deg 72deg, transparent 72deg 90deg);
-  -webkit-mask: radial-gradient(circle, transparent 0 33px, #000 34px 41px, transparent 42px);
-  mask: radial-gradient(circle, transparent 0 33px, #000 34px 41px, transparent 42px);
+  -webkit-mask: radial-gradient(circle, transparent 0 30px, #000 31px 35px, transparent 36px);
+  mask: radial-gradient(circle, transparent 0 30px, #000 31px 35px, transparent 36px);
   opacity: 0;
   pointer-events: none;
 }
-.rail-pages a::before { left: -12px; }
-.rail-fbtn::before { left: -4px; }
+.rail-pages a::before { left: -6px; }   /* centered on the 60px icon */
+.rail-fbtn::before { left: 6px; }
 .rail-pages a:hover::before, .rail-pages a:focus-visible::before,
 .rail-fbtn:hover::before, .rail-fbtn:focus-visible::before { opacity: 1; animation: rail-burst .68s steps(1) infinite; }
 .rail-pages a:hover img, .rail-pages a:focus-visible img,
@@ -826,3 +826,8 @@ a.chip-genre, .chip-genre {
   .rail .rail-pages img { width: min(72px, calc((100vw - 150px) / 4)); height: min(72px, calc((100vw - 150px) / 4)); }   /* icons fill the bar beside the name */
   .rail .rail-sections, .rail .rail-search, .rail .rail-filters, .rail .rail-pinned { display: none !important; }
 }
+
+// buttons with long labels: keep every line centered
+.tile-btn, .ap-btn, .words-toggle, .gw-showall, .top .all, .rail .rail-pin-links a, .cv, .fold-cue, .chip, .btn { text-align: center; }
+.tile-actions, .ap-card-actions { align-items: stretch; }
+.tile-btn { display: flex; align-items: center; justify-content: center; }

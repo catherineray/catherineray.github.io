@@ -148,6 +148,11 @@
     var W = wall.clientWidth;
     if (!W) return;
     lastW = W;
+    // phones: one piece per row, full width, at its own proportions
+    if (W < 600) {
+      items.forEach(function (it) { if (it.classList.contains('is-hidden')) return; var r = ratio(it); it.style.width = W + 'px'; it.style.height = Math.round(W / r) + 'px'; });
+      wall.classList.add('is-laid'); return;
+    }
     var vis = items.filter(function (it) { return !it.classList.contains('is-hidden'); });
     var ars = vis.map(ratio), n = vis.length;
     if (!n) return;

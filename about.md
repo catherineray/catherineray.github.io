@@ -838,6 +838,13 @@ rail_sections:   # listed in the sidebar under "About Rin"
   sub, sup { font-size: .72em; line-height: 0; position: relative; vertical-align: baseline; }
   sup { top: -.5em; }
   sub { bottom: -.25em; }
+  .cv, .fold-cue { text-align: center; }
+  /* later sections: even spacing between the research blocks */
+  .scroll > section { margin-bottom: 4rem; }
+  .scroll > section + section, .scroll > .band-img + section { margin-top: 0; }
+  .scroll > .band-img { display: block; margin: 0 0 4rem; }
+  .scroll > section > .sub { margin-top: 2.2rem; }
+  .scroll > section .papers + .sub { margin-top: 2.6rem; }
 </style>
 
 </head>
@@ -922,7 +929,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </p>
         <p class="chips" style="margin-top:.9em">
           <a class="chip" href="https://www.youtube.com/watch?v=LUA_efzGQlg">
-            Interview — WIRED, on the inventions
+            Interview-WIRED, on Medical Tech
           </a>
         </p>
         <p>
@@ -1964,6 +1971,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
     <!-- expository -->
 
+    <img class="band-img" src="{{ site.baseurl }}/images/lubin-tate.jpg" alt="Lubin-Tate illustration">
+
     <section>
       <h2 class="sec-head" style="--shadow: var(--peach); --tilt: 2deg;" data-text="EXPOSITORY" id="about-expository">EXPOSITORY</h2>
 
@@ -2035,10 +2044,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <div class="note" style="--accent: var(--cyan);">
         <p>I came into academia from outside, so I go out of my way to present mathematics in ways that are accessible to everyone. For me it is a visual, interactive, intuitive and artistic experience, and above all a narrative one. I keep learning materials for students of all levels on my <a href="/resources/">resources page</a>. My teaching statement:</p>
       </div>
-      {% include pdf.html src="/pdfs/teaching-statement.pdf" title="Teaching statement" %}
+      <a class="cv cv-art" href="/pdfs/teaching-statement.pdf">READ MY TEACHING STATEMENT →</a>
     </section>
 
-    <img class="band-img band-end" src="{{ site.baseurl }}/images/lubin-tate.jpg" alt="Lubin-Tate illustration">
 
   </div>
 
