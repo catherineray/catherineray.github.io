@@ -15,7 +15,7 @@ This site has been rebuilt and seeded with content that could be recovered by sc
 
 The design of this website is inspired by the beautiful portfolio of [Jennifer Xiao](https://www.jenniferxiao.com/).
 
-The graphic design of the *About Me* section comes from a mock-up version made for me by [Natalia Pacheco-Tallaj](https://natipt.github.io/) back in 2023.
+[Natalia Pacheco-Tallaj](https://natipt.github.io/) designed the About Me section as a canva sketch, and the first gallery layout on the art page, both in 2023.
 
 ---
 
