@@ -119,11 +119,11 @@ Every mouse sounds a bit different, their calls change over time, and the backgr
 
 - the **mean frequency**;
 - the **spectral purity**, how much of the power sits in the single loudest frequency: $$\frac{\max(\text{snibbet})}{\sum_i \text{snibbet}_i}$$ where a snibbet here is the power spectrum of a piece of the recording;
-- the **spectral discontinuity**, how much the spread of power across frequencies jumps from one time bin to the next: $$\delta_i = \min_{\Delta j} \sum_j \left| \hat{p}_{i+1}(f_{j+\Delta j}) - \hat{p}_i(f_j) \right|$$ where $$\hat{p}_i(f_j)$$ is the normalized power at frequency $$f_j$$ in time bin $$i$$.
+- the **spectral discontinuity**, how much the spread of power across frequencies jumps from one time bin to the next: $$\delta_i = \min_{\Delta j} \sum_j \left\lvert \hat{p}_{i+1}(f_{j+\Delta j}) - \hat{p}_i(f_j) \right\rvert$$ where $$\hat{p}_i(f_j)$$ is the normalized power at frequency $$f_j$$ in time bin $$i$$.
 
 A candidate counts as a call if:
 
-| | |
+| Test | Threshold |
 |---|---|
 | it lasts | more than 5 ms |
 | mean frequency | above 35 kHz |

@@ -991,12 +991,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <details class="fold">
         <summary class="note">
           <p class="lvl lvl-plain lvl-curious">
-            <b>tl;dr</b> I have a workshop and a habit of believing people. Also a robot I had
-            blinded on purpose, about where its own hand was. Rats, about what they meant. One cat,
-            about its colon. Half a page of Braille, about the other half. And the arithmetic,
-            about materials nobody had made yet. Most of this came before the mathematics. Two came
-            with me: <a href="https://rin.io/biome/">the sensory processing diseasome</a>, and treatments that work and were never
-            written down.
+            <strong class="tldr-lead">I build things, and I believe almost anything can be understood if you listen long enough.</strong> Mostly I have built ways to listen to things that weren't talking to me: a robot I blinded, so it had to work out where its own hand was; rats, eavesdropped on, about how they were feeling; a cat, about its colon; half a page of Braille, about the missing half; and arithmetic, about materials nobody had made yet. Most of this came before the mathematics. Two came with me: <a href="https://rin.io/biome/">the sensory processing diseasome</a>, and <a href="https://rin.io/megacolon/">treatments that work and were never written down</a>.
           </p>
           <p class="lvl lvl-pedantic">
             <strong class="tldr-lead">A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer:</strong> motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure. Two lines remain active: <a href="https://rin.io/biome/">sensory processing as a shared mechanism across an autoimmune, gastrointestinal and chronic pain diseasome</a> (2024–), and <a href="https://rin.io/megacolon/">neostigmine in feline idiopathic megacolon</a> (2026).
