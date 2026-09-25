@@ -4,14 +4,14 @@
   <a class="rail-name" href="{{ site.baseurl }}/" data-text="RIN RAY">RIN RAY</a>
 
   <nav class="rail-pages" aria-label="Pages">
-    <a href="{{ site.baseurl }}/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/about.png" alt="">About Rin</a>
+    <a href="{{ site.baseurl }}/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/about.png" alt="" title="About Rin"><span class="rail-label">About Rin</span></a>
     {% if page.rail_sections %}
     <span class="rail-sections" aria-label="On this page">
       {% for sec in page.rail_sections %}<a href="#{{ sec.id }}"{% if sec.sub %} class="rail-sub"{% endif %} style="--sc: {{ sec.color }};">{{ sec.label }}</a>{% endfor %}
     </span>
     {% endif %}
-    {% if page.url == "/art/" %}<a href="{{ site.baseurl }}/art/" aria-current="page"><img src="{{ site.baseurl }}/images/icons/art.png" alt="">All art</a>
-    {% else %}<a href="{{ site.baseurl }}/portfolio/"{% if page.url == "/portfolio/" or page.url contains "/art/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/art.png" alt="">Portfolio</a>{% endif %}
+    {% if page.url == "/art/" %}<a href="{{ site.baseurl }}/art/" aria-current="page"><img src="{{ site.baseurl }}/images/icons/art.png" alt="" title="All art"><span class="rail-label">All art</span></a>
+    {% else %}<a href="{{ site.baseurl }}/portfolio/"{% if page.url == "/portfolio/" or page.url contains "/art/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/art.png" alt="" title="Portfolio"><span class="rail-label">Portfolio</span></a>{% endif %}
     {% if page.layout == "work" %}
     <span class="rail-sections" aria-label="On this page">
       <a href="#gallery" style="--sc: #ec3f9e;">Gallery</a>
@@ -22,8 +22,8 @@
       {% if page.posts_link %}<a href="#posts" style="--sc: #f4a58a;">All art posts</a>{% endif %}
     </span>
     {% endif %}
-    <a href="{{ site.baseurl }}/blog/"{% if page.url == "/blog/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/excerpts.png" alt="">All posts</a>
-    <a href="{{ site.baseurl }}/resources/"{% if page.url == "/resources/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/resources.png" alt="">Resources</a>
+    <a href="{{ site.baseurl }}/blog/"{% if page.url == "/blog/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/excerpts.png" alt="" title="All posts"><span class="rail-label">All posts</span></a>
+    <a href="{{ site.baseurl }}/resources/"{% if page.url == "/resources/" %} aria-current="page"{% endif %}><img src="{{ site.baseurl }}/images/icons/resources.png" alt="" title="Resources"><span class="rail-label">Resources</span></a>
   </nav>
 
   {% if page.rail == "filters" %}

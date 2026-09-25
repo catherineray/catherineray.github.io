@@ -812,3 +812,14 @@ a.chip-genre, .chip-genre {
 .rail .rail-pages .rail-sections a.rail-sub { margin-left: 18px; min-height: 26px; font-size: 12px; }
 .rail .rail-pages .rail-sections a.rail-sub::before { width: 9px; height: 9px; }
 #archived-comments-title { scroll-margin-top: 20px; }
+
+// phones: the sidebar collapses to the name + the four page icons (labels, sections, search, filters, highlights hidden)
+@media (max-width: 820px) {
+  .rail { gap: 10px !important; padding: 12px 14px !important; }
+  .rail .rail-name { font-size: 26px; }
+  .rail .rail-pages { flex-direction: row !important; flex-wrap: nowrap; justify-content: space-between; gap: 6px; padding-bottom: 10px; }
+  .rail .rail-pages > a { min-height: 0; gap: 0; }
+  .rail .rail-pages .rail-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .rail .rail-pages img { width: 52px; height: 52px; }
+  .rail .rail-sections, .rail .rail-search, .rail .rail-filters, .rail .rail-pinned { display: none !important; }
+}
