@@ -34,7 +34,7 @@ art:
     title: Pride Scissor Snakes 
     types: [spraypaint, painting]
   - file: neon-mantis
-    title: Neon Mantis
+    title: "an orchid, dr. beam"
     types: [spraypaint, painting]
   - file: static-depersonalization
     title: Static Depersonalization
