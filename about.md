@@ -28,8 +28,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
     --lilac-deep: #bda4e0;
     --cream: #faf3c8;
     --pink: #ec3f9e;
-    --pink-btn: #f07fe0;
-    --pink-btn-hot: #ee5fd4;
+    --pink-btn: #ee5fd4;   /* was #f07fe0 (Rin: in-between pink, 25 Sep) */
+    --pink-btn-hot: #ec3f9e;
     --cyan: #6cc8f0;
     --orange: #f9a13c;
     --yellow: #fbe919;
@@ -242,7 +242,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     background: var(--paper);
     border: 3px solid var(--ink);
     border-radius: 16px;
-    box-shadow: 8px 8px 0 var(--peach);
+    box-shadow: 8px 8px 0 var(--orange);
     font-size: clamp(.55rem, 1.85vw, .95rem);
     line-height: 1.65;
     text-align: center;
@@ -250,18 +250,22 @@ rail_sections:   # listed in the sidebar under "About Rin"
   }
   .card p { margin: 0 0 .85em; }
   .card p:last-child { margin-bottom: 0; }
+  .card .chip { font-size: .9rem; padding: .05em .75em; margin-left: .2em; vertical-align: .1em; line-height: 1.3; }
 
   /* the scroll */
 
   .scroll {
     width: min(92vw, 700px);
     margin: 0 auto;
-    padding: 2.5rem 0 4.5rem;
+    padding: 2.5rem 0 1.5rem;
     box-sizing: border-box;
   }
 
   section { margin-bottom: 3.5rem; }
   section:last-of-type { margin-bottom: 0; }
+  /* Teaching is the last About section; the old-blog comments (also a <section>) follow it, so trim the gap */
+  section:has(#about-teaching) { margin-bottom: 0; }
+  .archived-comments { margin-top: 2.5rem; }
 
   .sec-head {
     --shadow: var(--pink);
@@ -434,7 +438,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     flex-wrap: wrap;
     align-items: center;
     gap: .5rem .6rem;
-    margin: 0 0 2rem;
+    margin: 0 0 1.2rem;
     font-size: .72rem;
     color: var(--ink-soft);
   }
@@ -463,6 +467,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .dial button:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--ink); }
   .dial button[aria-pressed="true"] { background: var(--pink-btn); color: var(--paper); }
   .dial button:focus-visible { outline: 3px dashed var(--ink); outline-offset: 4px; }
+  .tldr-lead { font-weight: 700; color: var(--ink); }
   .dial .hint { flex-basis: 100%; font-size: .7rem; line-height: 1.6; font-style: italic; }
 
   /* only the chosen level renders */
@@ -821,7 +826,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     .cv-art { flex-basis: auto; width: 100%; }
     .card { font-size: .82rem; padding: 1.4rem 1.3rem; }
 
-    .scroll { padding: 2rem 16px 3.5rem; width: 100%; }
+    .scroll { padding: 2rem 16px 1.5rem; width: 100%; }
     footer { padding: 0 16px 3rem; width: 100%; }
     .sec-head { font-size: 1.5rem; -webkit-text-stroke: 2.5px var(--ink); }
     .paper h3 { font-size: .88rem; }
@@ -832,7 +837,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .stub-line .status { margin: 0 .4em 0 0; background: var(--yellow); border: 2px solid var(--ink); }
   /* site-wide font rule: reading text Space Grotesk; small labels stay Space Mono */
   .chip, .status, .ptag, .yr, .lvl-label, .dial, .dial button, .lure-btn, .sub, .paper h3 .tech, time, .stub-line .status { font-family: var(--mono); }
-  /* the big pink buttons (CV MATH, PORTFOLIO, SEE ALL THE PROJECTS, SEE THE GALLERY) keep the heading font, as before */
+  /* the big pink buttons (CV MATH, PORTFOLIO, SEE THE PROJECTS, SEE THE GALLERY) keep the heading font, as before */
   .bubble, .card { font-family: var(--mono); }   /* the hero bubble and card stay in Space Mono */
   /* superscripts / subscripts sit where they should (H₃S, TiO₂); math itself is typeset by MathJax */
   sub, sup { font-size: .72em; line-height: 0; position: relative; vertical-align: baseline; }
@@ -856,8 +861,6 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .studio-strip { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
   .studio-strip a { display: block; text-decoration: none !important; color: var(--ink) !important; font-weight: 400 !important; }
   .studio-strip img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; margin: 0; border: 3px solid var(--ink); border-radius: 10px; }
-  .studio-strip span { display: block; margin-top: 4px; font: 700 .7rem var(--mono); text-align: center; }
-  .studio-strip a:hover img { transform: rotate(-3deg) scale(1.04); }
   @media (max-width: 560px) { .studio-strip { grid-template-columns: repeat(3, 1fr); } }
   .studio-doors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: .8rem; }
   .studio-doors a { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; background: var(--paper); border: 3px solid var(--ink); border-radius: 12px; box-shadow: 5px 5px 0 var(--d); text-decoration: none !important; color: var(--ink) !important; }
@@ -905,10 +908,11 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
     <div class="card">
       <p>
-        Before I was in math, I worked mostly in scientific simulation,
-        autonomous robotics, and medical technology. I continue to work in
-        chronic pain research, which you can read about
-        <a href="https://rin.io/biome/">here</a>.
+        Prior to mathematics, my work was primarily in scientific simulation,
+        autonomous robotics, and medical technology — areas in which I remain active.
+      </p>
+      <p>
+        <a class="chip" href="#about-lab">Read more ↓</a>
       </p>
     </div>
 
@@ -971,8 +975,18 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <a class="chip" href="#research">Skip to the research ↓</a>
     </p>
 
-    <section id="before-math" data-level="curious">
+    <section id="before-math" data-level="pedantic">
       <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="THE OTHER LAB" id="about-lab">THE OTHER LAB</h2>
+
+      <div class="dial">
+        <span class="lab">are you…</span>
+        <button type="button" data-set="plain">passing through</button>
+        <button type="button" data-set="curious">here for the story</button>
+        <button type="button" data-set="pedantic" aria-pressed="true">here for the science</button>
+        <span class="hint lvl lvl-plain">One line per project, no background assumed.</span>
+        <span class="hint lvl lvl-curious">What I built, why I cared, and where the field has gone since.</span>
+        <span class="hint lvl lvl-pedantic">No story: what was done, how, and what limited it — grouped by method.</span>
+      </div>
 
       <details class="fold">
         <summary class="note">
@@ -981,28 +995,19 @@ rail_sections:   # listed in the sidebar under "About Rin"
             blinded on purpose, about where its own hand was. Rats, about what they meant. One cat,
             about its colon. Half a page of Braille, about the other half. And the arithmetic,
             about materials nobody had made yet. Most of this came before the mathematics. Two came
-            with me: the sensory processing diseasome, and treatments that work and were never
+            with me: <a href="https://rin.io/biome/">the sensory processing diseasome</a>, and treatments that work and were never
             written down.
           </p>
           <p class="lvl lvl-pedantic">
-            <b>tl;dr</b> A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer: motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure. Two lines remain active.
+            <strong class="tldr-lead">A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer:</strong> motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure. Two lines remain active: <a href="https://rin.io/biome/">sensory processing as a shared mechanism across an autoimmune, gastrointestinal and chronic pain diseasome</a> (2024–), and <a href="https://rin.io/megacolon/">neostigmine in feline idiopathic megacolon</a> (2026).
           </p>
           <span class="fold-cue">
-            <span class="when-closed">SEE ALL THE PROJECTS</span>
+            <span class="when-closed">SEE THE PROJECTS</span>
             <span class="when-open">FOLD THEM BACK UP</span>
             <span class="arrow" aria-hidden="true">↓</span>
           </span>
         </summary>
 
-        <div class="dial">
-          <span class="lab">are you…</span>
-          <button type="button" data-set="plain">passing through</button>
-          <button type="button" data-set="curious" aria-pressed="true">here for the story</button>
-          <button type="button" data-set="pedantic">here for the science</button>
-          <span class="hint lvl lvl-plain">One line per project, no background assumed.</span>
-          <span class="hint lvl lvl-curious">What it was, why I cared, and what that field says now.</span>
-          <span class="hint lvl lvl-pedantic">No story: what was done, how, and what limited it — grouped by method.</span>
-        </div>
         <div class="narrative">
 
         <h3 class="sub" style="--accent: var(--pink);">Asking people what they need</h3>
@@ -1182,7 +1187,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <div class="papers" style="--accent: var(--cyan);">
 
           <article class="paper">
-            <h3>Learning the UltraSonic Language of Rats<span class="status">late 2013 – mid 2014</span><span class="tech">Computational bioacoustics · unsupervised clustering of rodent ultrasonic vocalizations · quasi-real-time monitoring in the animal’s own cage · preclinical safety pharmacology · affective-state readout · 3Rs refinement</span></h3>
+            <h3><a href="/mouse-vocalizations/">Learning the ultrasonic language of rats</a><span class="status">late 2013 – mid 2014</span><span class="tech">Computational bioacoustics · unsupervised clustering of rodent ultrasonic vocalizations · quasi-real-time monitoring in the animal’s own cage · preclinical safety pharmacology · affective-state readout · 3Rs refinement</span></h3>
             <p class="meta lvl lvl-plain">I taught a computer to sort what rats and mice say to each other, which became a way to test drugs before they reach people, and to bother the animals a good deal less while doing it.</p>
             <div class="lvl lvl-curious">
             <p class="why">
@@ -1735,7 +1740,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <div class="pro-group" style="--accent: var(--cyan);">
           <h3>Machine learning and signal processing</h3>
           <div class="pro">
-            <h4>Unsupervised classification of rodent ultrasonic vocalization for continuous preclinical monitoring<span class="yr">2013–2014</span></h4>
+            <h4><a href="/mouse-vocalizations/">Unsupervised classification of rodent ultrasonic vocalization for continuous preclinical monitoring</a><span class="yr">2013–2014</span></h4>
             <p class="ptags"><span class="ptag">computational bioacoustics</span><span class="ptag">unsupervised learning</span><span class="ptag">safety pharmacology</span></p>
             <p>Quasi-real-time clustering of ultrasonic calls from continuously monitored cages, deployed as a preclinical readout for compound effects on affective state. Vium. Two internal write-ups.</p>
             <p class="lim">Non-contact acquisition removes handling stress as a confound and increases information yield per cohort; <a href="https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2025.1655330/full">later multi-company validation</a> supports the approach. Prior unsupervised USV clustering exists (Grimsley et al., 2013).</p>
@@ -1804,17 +1809,17 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <div class="note studio" style="--accent: var(--violet);">
         <p>Pastels, acrylic, spray-painted creature murals, tattoos, polaroids. A taste:</p>
         <ul class="studio-strip">
-          <li><a href="/portfolio/?group=on-paper#gallery"><img src="{{ site.baseurl }}/gallery/Messenger_creation_FEBCBDB3-6B9E-44BC-8FBB-DFCE332BB1D5.jpeg" alt="" loading="lazy"><span>on paper</span></a></li>
-          <li><a href="/portfolio/?group=on-walls#gallery"><img src="{{ site.baseurl }}/gallery/caterpillar.png" alt="" loading="lazy"><span>on walls</span></a></li>
-          <li><a href="/portfolio/?group=on-from-bodies#gallery"><img src="{{ site.baseurl }}/gallery/chaos-penrose.png" alt="" loading="lazy"><span>on/from bodies</span></a></li>
-          <li><a href="/portfolio/?group=in-a-box#gallery"><img src="{{ site.baseurl }}/gallery/00-lain-mexicocity.png" alt="" loading="lazy"><span>in a box</span></a></li>
-          <li><a href="/portfolio/?group=on-glass#gallery"><img src="{{ site.baseurl }}/gallery/z-intuition-and-precision.png" alt="" loading="lazy"><span>on glass</span></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/00-lain-mexicocity.png" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/a-vibing.jpg" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/neon-mantis.png" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/chaos-penrose.png" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/sleep-duck.png" alt="Open the gallery" loading="lazy"></a></li>
         </ul>
         <p class="studio-more">And beyond the gallery:</p>
         <div class="studio-doors">
           <a href="/portfolio/#comics" style="--d: #6cc8f0;"><b>Comics</b><span>Endomortis, with Petra Flurin</span></a>
           <a href="/portfolio/#writing" style="--d: #f9a13c;"><b>Writing</b><span>a play and poems</span></a>
-          <a href="/portfolio/#music" style="--d: #9b7fd4;"><b>Music</b><span>songs about math, and not</span></a>
+          <a href="/portfolio/#music" style="--d: #9b7fd4;"><b>Music</b><span>songs and songwriting</span></a>
         </div>
         <div class="studio-btns"><a class="cv cv-art" href="/portfolio/">SEE THE PORTFOLIO →</a></div>
       </div>
