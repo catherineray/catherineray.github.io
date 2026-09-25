@@ -1,3 +1,28 @@
-During an update to the server in September 2021 and an issue with the backup system, the site was corrupted. Some posts have been totally lost. All previous comments have been totally lost.
+# Site Notice
 
-I have been running this blog regularly since 2013. I am manually restoring the posts one by one. If you have a post you’d like to reference in particular, email me and I will prioritize putting that up.
+## Data Loss Incident
+
+During a server update in September 2021, combined with an issue in the backup system, this site was corrupted. As a result:
+
+- **Some posts have been permanently lost.**
+- **Most previous comments have been permanently lost.**
+
+This site has been rebuilt and seeded with content that could be recovered by scraping the [Wayback Machine](https://web.archive.org/).
+
+---
+
+## Acknowledgements
+
+The design of this website is inspired by the beautiful portfolio of [Jennifer Xiao](https://www.jenniferxiao.com/).
+
+[Natalia Pacheco-Tallaj](https://natipt.github.io/) designed the About Me section as a canva sketch, and the first gallery layout on the art page, both in 2023.
+
+---
+
+## Art
+
+All art on this website is hand-drawn by me and is my own original work.
+
+---
+
+*Last updated: September 25, 2026*
