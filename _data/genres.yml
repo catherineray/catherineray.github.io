@@ -6,8 +6,8 @@
   icon: /images/icons/math.png
   pinned:
     - harish-chandra
-    - faulhaber-shift
     - informal-tmf
+    - faulhaber-shift
     - dirichlethomology
 - key: science
   name: Science
