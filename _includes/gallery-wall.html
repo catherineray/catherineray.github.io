@@ -110,7 +110,7 @@
   .gw.gw-a .gw-more-btn { display: inline-flex; --m: #ffffff; }
   .gw.gw-a .gw-more-btn::before { display: none; }
   .gw.gw-a .gw-frame { position: relative; }
-  .gw.gw-a.gw-folded .gw-frame { max-height: 620px; overflow: hidden; border-radius: 10px; }
+  .gw.gw-a.gw-folded .gw-frame { max-height: var(--fold-h, 620px); overflow: hidden; border-radius: 10px; }
   .gw.gw-a.gw-folded .gw-frame.gw-fits::after { display: none; }
   .gw.gw-a.gw-folded .gw-frame::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 110px; background: linear-gradient(transparent, #cdc6f4); pointer-events: none; }
   .gw.gw-a .gw-showall-row { display: flex; justify-content: center; margin: 12px 0 0; }
@@ -153,7 +153,10 @@
     lastW = W;
     // phones: one piece per row, full width, at its own proportions
     if (W < 600) {
-      items.forEach(function (it) { if (it.classList.contains('is-hidden')) return; var r = ratio(it); it.style.width = W + 'px'; it.style.height = Math.round(W / r) + 'px'; });
+      var shown = 0, foldH = 0;
+      items.forEach(function (it) { if (it.classList.contains('is-hidden')) return; var r = ratio(it), h = Math.round(W / r); it.style.width = W + 'px'; it.style.height = h + 'px'; if (shown < 5) foldH += h; shown++; });
+      // folded, show about five pieces before "Show all"
+      box.querySelector('.gw-frame').style.setProperty('--fold-h', (foldH + 40) + 'px');
       wall.classList.add('is-laid'); return;
     }
     var vis = items.filter(function (it) { return !it.classList.contains('is-hidden'); });
@@ -267,7 +270,7 @@
     var cur = box.querySelector('.gw-filters button[aria-pressed="true"]');
     var what = !cur || cur.dataset.filter === 'all' ? 'pieces' : cur.textContent.trim();
     var frame = box.querySelector('.gw-frame');
-    var overflowing = frame.scrollHeight > 640;
+    var overflowing = frame.scrollHeight > frame.clientHeight + 20;
     showall.parentNode.style.display = overflowing ? '' : 'none';
     frame.classList.toggle('gw-fits', !overflowing);
     showall.textContent = box.classList.contains('gw-folded') ? 'Show all ' + what + ' ▾' : 'Show fewer ▴';

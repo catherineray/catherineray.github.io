@@ -845,6 +845,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .scroll > .band-img { display: block; margin: 0 0 4rem; }
   .scroll > section > .sub { margin-top: 2.2rem; }
   .scroll > section .papers + .sub { margin-top: 2.6rem; }
+  /* same gap under every section title, and before every section (incl. after the skip chip) */
+  .scroll .sec-head + * { margin-top: 0 !important; }
+  .scroll .sec-head + .stub-line { margin-top: 0 !important; }
+  .scroll > .jump { margin: 0 0 4rem; }
 </style>
 
 </head>
@@ -952,7 +956,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     </p>
 
     <section id="before-math" data-level="curious">
-      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: 2deg;" data-text="THE OTHER LAB" id="about-lab">THE OTHER LAB</h2>
+      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE OTHER LAB" id="about-lab">THE OTHER LAB</h2>
 
       <details class="fold">
         <summary class="note">
@@ -1779,9 +1783,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- art portfolio -->
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--yellow); --tilt: -2deg;" data-text="THE OTHER STUDIO" id="about-studio">THE OTHER STUDIO</h2>
+      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="THE OTHER STUDIO" id="about-studio">THE OTHER STUDIO</h2>
 
-      <div class="note" style="--accent: var(--yellow);">
+      <div class="note" style="--accent: var(--violet);">
         <p>
           I primarily work with pastels, acrylic, spray paint and polaroids. When I
           spray I make colorful street murals of creatures. Please enjoy this small collection of my art.
@@ -1827,9 +1831,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- publications -->
 
     <section id="research">
-      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="PUBLISHED" id="about-published">PUBLISHED</h2>
+      <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: -2deg;" data-text="PUBLISHED" id="about-published">PUBLISHED</h2>
 
-      <div class="papers" style="--accent: var(--pink);">
+      <div class="papers" style="--accent: var(--cyan);">
 
         <article class="paper">
           <h3><a href="https://link.springer.com/article/10.1007/s12215-020-00590-7">Automorphisms of Abelian Varieties and Principal Polarizations</a></h3>
@@ -1858,9 +1862,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- preprints -->
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: 2deg;" data-text="PREPRINTS" id="about-preprints">PREPRINTS</h2>
+      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: 2deg;" data-text="PREPRINTS" id="about-preprints">PREPRINTS</h2>
 
-      <div class="papers" style="--accent: var(--violet);">
+      <div class="papers" style="--accent: var(--pink);">
 
         <article class="paper">
           <h3><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture at Coheight 1</a><span class="status">Sept 2026</span></h3>
@@ -1905,9 +1909,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- in progress -->
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--yellow); --tilt: -2deg;" data-text="IN PROGRESS" id="about-progress">IN PROGRESS</h2>
+      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="IN PROGRESS" id="about-progress">IN PROGRESS</h2>
 
-      <h3 class="sub" style="--accent: var(--orange);">Zeta Functions in Homotopy Theory</h3>
+      <h3 class="sub" style="--accent: var(--violet);">Zeta Functions in Homotopy Theory</h3>
 
       <div class="papers" style="--accent: var(--orange);">
         <article class="paper">
@@ -1974,9 +1978,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <img class="band-img" src="{{ site.baseurl }}/images/lubin-tate.jpg" alt="Lubin-Tate illustration">
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: 2deg;" data-text="EXPOSITORY" id="about-expository">EXPOSITORY</h2>
+      <h2 class="sec-head" style="--shadow: var(--orange); --tilt: 2deg;" data-text="EXPOSITORY" id="about-expository">EXPOSITORY</h2>
 
-      <div class="papers" style="--accent: var(--peach);">
+      <div class="papers" style="--accent: var(--orange);">
 
         <article class="paper">
           <h3><a href="pdfs/Zeta_Functions_and_THH_Talk3.pdf">Zeta Functions and THH</a></h3>
