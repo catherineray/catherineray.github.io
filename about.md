@@ -951,9 +951,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
           in 2014 to develop medical technology and study mathematics under my mentor,
           <a href="http://www.edwardfrenkel.com/">Edward Frenkel</a>.
         </p>
-        <p class="chips" style="margin-top:.9em">
+        <p class="chips" style="margin-top:.2em">
           <a class="chip" href="https://www.youtube.com/watch?v=LUA_efzGQlg">
-            Interview-WIRED, on Medical Tech
+            Interview — WIRED, on Medical Tech
           </a>
         </p>
         <p>
@@ -975,14 +975,14 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <a class="chip" href="#research">Skip to the research ↓</a>
     </p>
 
-    <section id="before-math" data-level="pedantic">
+    <section id="before-math" data-level="curious">
       <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="THE OTHER LAB" id="about-lab">THE OTHER LAB</h2>
 
       <div class="dial">
         <span class="lab">are you…</span>
         <button type="button" data-set="plain">passing through</button>
-        <button type="button" data-set="curious">here for the story</button>
-        <button type="button" data-set="pedantic" aria-pressed="true">here for the science</button>
+        <button type="button" data-set="curious" aria-pressed="true">here for the story</button>
+        <button type="button" data-set="pedantic">here for the science</button>
         <span class="hint lvl lvl-plain">One line per project, no background assumed.</span>
         <span class="hint lvl lvl-curious">What I built, why I cared, and where the field has gone since.</span>
         <span class="hint lvl lvl-pedantic">No story: what was done, how, and what limited it — grouped by method.</span>
@@ -991,7 +991,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <details class="fold">
         <summary class="note">
           <p class="lvl lvl-plain lvl-curious">
-            <strong class="tldr-lead">I build things, and I believe almost anything can be understood if you listen long enough.</strong> Mostly I have built ways to listen to things that weren't talking to me: a robot I blinded, so it had to work out where its own hand was; rats, eavesdropped on, about how they were feeling; a cat, about its colon; half a page of Braille, about the missing half; and arithmetic, about materials nobody had made yet. Most of this came before the mathematics. Two came with me: <a href="https://rin.io/biome/">the sensory processing diseasome</a>, and <a href="https://rin.io/megacolon/">treatments that work and were never written down</a>.
+            <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> What I have spent my time building, mostly, is instruments for overhearing. A blinded robot, feeling for its own hand. Rats, telling each other how they are feeling. A cat, feeling for his colon. A brain, through the scar it grows around anything that listens. Half a page of Braille, about the missing half. Arithmetic, about superconductors nobody had made yet. A drone, plasma, a face, a wheelchair, dinner, a stack of medical papers — and others. There are always others.
+          </p>
+          <p class="lvl lvl-plain lvl-curious">
+            Most of this came before the mathematics found me — or before I found it. Two threads have remained in my hands: <a href="https://rin.io/biome/">a cluster of diseases that keep showing up together and keep being treated apart</a>, and <a href="https://rin.io/megacolon/">a treatment that works and was never written down</a>.
           </p>
           <p class="lvl lvl-pedantic">
             <strong class="tldr-lead">A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer:</strong> motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure. Two lines remain active: <a href="https://rin.io/biome/">sensory processing as a shared mechanism across an autoimmune, gastrointestinal and chronic pain diseasome</a> (2024–), and <a href="https://rin.io/megacolon/">neostigmine in feline idiopathic megacolon</a> (2026).

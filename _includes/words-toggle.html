@@ -8,7 +8,7 @@
     ap.classList.toggle('words', words);
     btns.forEach(function (b) {
       b.setAttribute('aria-pressed', String(words));
-      b.textContent = words ? 'Back to pictures' : 'Overstimulated? Just words';
+      b.textContent = words ? 'Understimulated? Back to pictures.' : 'Overstimulated? Just words';
     });
   }
   var saved = false; try { saved = localStorage.getItem('rin-recents-words') === '1'; } catch (e) {}
