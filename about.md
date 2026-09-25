@@ -1155,7 +1155,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <div class="papers" style="--accent: var(--cyan);">
 
           <article class="paper">
-            <h3>A dictionary for a language nobody could hear<span class="status">late 2013 – mid 2014</span><span class="tech">Computational bioacoustics · unsupervised clustering of rodent ultrasonic vocalizations · quasi-real-time monitoring in the animal’s own cage · preclinical safety pharmacology · affective-state readout · 3Rs refinement</span></h3>
+            <h3>Learning the UltraSonic Language of Rats<span class="status">late 2013 – mid 2014</span><span class="tech">Computational bioacoustics · unsupervised clustering of rodent ultrasonic vocalizations · quasi-real-time monitoring in the animal’s own cage · preclinical safety pharmacology · affective-state readout · 3Rs refinement</span></h3>
             <p class="meta lvl lvl-plain">I taught a computer to sort what rats and mice say to each other, which became a way to test drugs before they reach people, and to bother the animals a good deal less while doing it.</p>
             <div class="lvl lvl-curious">
             <p class="why">
