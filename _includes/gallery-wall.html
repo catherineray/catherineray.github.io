@@ -282,6 +282,9 @@
   });
   btns.forEach(function (b) { b.addEventListener('click', function () { box.classList.add('gw-folded'); setTimeout(updateShowall, 0); }); });
   box.classList.add('gw-a', 'gw-folded');
+  // opened from a link like /portfolio/?group=on-walls#gallery : start with that group picked
+  var wantGroup = new URLSearchParams(location.search).get('group');
+  if (wantGroup) { var gb = box.querySelector('.gw-filters [data-filter="g-' + wantGroup + '"]'); if (gb) setTimeout(function () { gb.click(); }, 0); }
   // sub chips: shown while their group (or one of its subs) is picked
   var lead = document.createElement('span'); lead.className = 'gw-sub-lead'; lead.textContent = '→';
   var firstSub = box.querySelector('.gw-sub'); if (firstSub) firstSub.parentNode.insertBefore(lead, firstSub);

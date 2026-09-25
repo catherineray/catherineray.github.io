@@ -9,8 +9,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
   - { id: about-path, label: "THE PATH", color: "#6cc8f0" }
   - { id: about-lab, label: "SCI/ART", color: "#ec3f9e" }   # The Other Lab (and The Other Studio below it); color matches its section title
   - { id: about-contact, label: "CONTACT", color: "#f9a13c" }
-  - { id: about-published, label: "MATH", color: "#6cc8f0" }   # the research part: Published, Preprints, In progress, Expository
-  - { id: about-teaching, label: "TEACHING", color: "#6cc8f0" }
+  - { id: about-published, label: "MATH", color: "#9b7fd4" }   # the research part: Published, Preprints, In progress, Expository
+  - { id: about-teaching, label: "TEACHING", color: "#f4a58a" }
 ---
 
 <html lang="en">
@@ -321,7 +321,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     list-style: none;
     cursor: pointer;
     position: relative;
-    background: var(--yellow);
+    background: var(--paper);   /* white, like the other boxes (yellow was hard to read) */
     box-shadow: 8px 8px 0 var(--pink);
     transition: transform .08s ease, box-shadow .08s ease;
   }
@@ -849,6 +849,22 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .scroll .sec-head + * { margin-top: 0 !important; }
   .scroll .sec-head + .stub-line { margin-top: 0 !important; }
   .scroll > .jump { margin: 0 0 4rem; }
+  /* THE OTHER STUDIO: a picture per gallery group, then doors to comics, writing, music */
+  .studio-more { margin: 1.4rem 0 0; }
+  .studio-btns { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 1.4rem; }
+  .studio-btns .cv-art { flex: 1 1 220px; margin-top: 0; }
+  .studio-strip { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .studio-strip a { display: block; text-decoration: none !important; color: var(--ink) !important; font-weight: 400 !important; }
+  .studio-strip img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; margin: 0; border: 3px solid var(--ink); border-radius: 10px; }
+  .studio-strip span { display: block; margin-top: 4px; font: 700 .7rem var(--mono); text-align: center; }
+  .studio-strip a:hover img { transform: rotate(-3deg) scale(1.04); }
+  @media (max-width: 560px) { .studio-strip { grid-template-columns: repeat(3, 1fr); } }
+  .studio-doors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: .8rem; }
+  .studio-doors a { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; background: var(--paper); border: 3px solid var(--ink); border-radius: 12px; box-shadow: 5px 5px 0 var(--d); text-decoration: none !important; color: var(--ink) !important; }
+  .studio-doors a:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--d); }
+  .studio-doors b { font: 1.1rem var(--display); }
+  .studio-doors span { font: .78rem var(--mono); font-weight: 400; color: var(--ink-soft); }
+  @media (max-width: 620px) { .studio-doors { grid-template-columns: 1fr; } }
 </style>
 
 </head>
@@ -1785,19 +1801,22 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <section>
       <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="THE OTHER STUDIO" id="about-studio">THE OTHER STUDIO</h2>
 
-      <div class="note" style="--accent: var(--violet);">
-        <p>
-          I primarily work with pastels, acrylic, spray paint and polaroids. When I
-          spray I make colorful street murals of creatures. Please enjoy this small collection of my art.
-        </p>
-        <p class="chips" style="margin-top:.2em">
-          <span class="chip" style="background: var(--pink-btn);">pastels</span>
-          <span class="chip" style="background: var(--cyan);">acrylic</span>
-          <span class="chip" style="background: var(--orange);">spray paint</span>
-          <span class="chip" style="background: var(--peach);">polaroids</span>
-          <span class="chip" style="background: var(--lilac-deep);">tattoo design</span>
-        </p>
-        <a class="cv cv-art" href="/art/">SEE THE GALLERY →</a>
+      <div class="note studio" style="--accent: var(--violet);">
+        <p>Pastels, acrylic, spray-painted creature murals, tattoos, polaroids. A taste:</p>
+        <ul class="studio-strip">
+          <li><a href="/portfolio/?group=on-paper#gallery"><img src="{{ site.baseurl }}/gallery/Messenger_creation_FEBCBDB3-6B9E-44BC-8FBB-DFCE332BB1D5.jpeg" alt="" loading="lazy"><span>on paper</span></a></li>
+          <li><a href="/portfolio/?group=on-walls#gallery"><img src="{{ site.baseurl }}/gallery/caterpillar.png" alt="" loading="lazy"><span>on walls</span></a></li>
+          <li><a href="/portfolio/?group=on-from-bodies#gallery"><img src="{{ site.baseurl }}/gallery/chaos-penrose.png" alt="" loading="lazy"><span>on/from bodies</span></a></li>
+          <li><a href="/portfolio/?group=in-a-box#gallery"><img src="{{ site.baseurl }}/gallery/00-lain-mexicocity.png" alt="" loading="lazy"><span>in a box</span></a></li>
+          <li><a href="/portfolio/?group=on-glass#gallery"><img src="{{ site.baseurl }}/gallery/z-intuition-and-precision.png" alt="" loading="lazy"><span>on glass</span></a></li>
+        </ul>
+        <p class="studio-more">And beyond the gallery:</p>
+        <div class="studio-doors">
+          <a href="/portfolio/#comics" style="--d: #6cc8f0;"><b>Comics</b><span>Endomortis, with Petra Flurin</span></a>
+          <a href="/portfolio/#writing" style="--d: #f9a13c;"><b>Writing</b><span>a play and poems</span></a>
+          <a href="/portfolio/#music" style="--d: #9b7fd4;"><b>Music</b><span>songs about math, and not</span></a>
+        </div>
+        <div class="studio-btns"><a class="cv cv-art" href="/portfolio/">SEE THE PORTFOLIO →</a></div>
       </div>
     </section>
 
@@ -1831,9 +1850,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- publications -->
 
     <section id="research">
-      <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: -2deg;" data-text="PUBLISHED" id="about-published">PUBLISHED</h2>
+      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="PUBLISHED" id="about-published">PUBLISHED</h2>
 
-      <div class="papers" style="--accent: var(--cyan);">
+      <div class="papers" style="--accent: var(--violet);">
 
         <article class="paper">
           <h3><a href="https://link.springer.com/article/10.1007/s12215-020-00590-7">Automorphisms of Abelian Varieties and Principal Polarizations</a></h3>
@@ -1862,9 +1881,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- preprints -->
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: 2deg;" data-text="PREPRINTS" id="about-preprints">PREPRINTS</h2>
+      <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: 2deg;" data-text="PREPRINTS" id="about-preprints">PREPRINTS</h2>
 
-      <div class="papers" style="--accent: var(--pink);">
+      <div class="papers" style="--accent: var(--cyan);">
 
         <article class="paper">
           <h3><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture at Coheight 1</a><span class="status">Sept 2026</span></h3>
@@ -1909,9 +1928,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- in progress -->
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="IN PROGRESS" id="about-progress">IN PROGRESS</h2>
+      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="IN PROGRESS" id="about-progress">IN PROGRESS</h2>
 
-      <h3 class="sub" style="--accent: var(--violet);">Zeta Functions in Homotopy Theory</h3>
+      <h3 class="sub" style="--accent: var(--pink);">Zeta Functions in Homotopy Theory</h3>
 
       <div class="papers" style="--accent: var(--orange);">
         <article class="paper">
@@ -2043,9 +2062,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     </section>
 
     <section>
-      <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: -2deg;" data-text="TEACHING" id="about-teaching">TEACHING</h2>
+      <h2 class="sec-head" style="--shadow: var(--peach); --tilt: -2deg;" data-text="TEACHING" id="about-teaching">TEACHING</h2>
       <p class="stub-line"><span class="status">stub</span> An updated teaching statement is on its way; this is the current one.</p>
-      <div class="note" style="--accent: var(--cyan);">
+      <div class="note" style="--accent: var(--peach);">
         <p>I came into academia from outside, so I go out of my way to present mathematics in ways that are accessible to everyone. For me it is a visual, interactive, intuitive and artistic experience, and above all a narrative one. I keep learning materials for students of all levels on my <a href="/resources/">resources page</a>. My teaching statement:</p>
       </div>
       <a class="cv cv-art" href="/pdfs/teaching-statement.pdf">READ MY TEACHING STATEMENT →</a>
@@ -2109,3 +2128,4 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
 </body>
 </html>
+
