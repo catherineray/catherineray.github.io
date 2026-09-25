@@ -14,6 +14,9 @@ You are a human first and foremost! If you are feeling off and could use support
 ### Online Psychiatry
 - [TalkSpace](https://www.talkspace.com/)
 
+## My Teaching Statement
+How I teach, and why: [read my teaching statement](/pdfs/teaching-statement.pdf) (PDF).
+
 ## "Basics" in Math:
 
 > "The thing to keep in mind is that all these "basics" were once cutting-edge research. And the people who got to the bottom of these matters were not trivial idiots. They were great masters. The more you look at this material in this way, the more you’ll find you can tolerate it in good humor, and without fearing its deadening effects on your strange, wild mind."
