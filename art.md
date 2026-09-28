@@ -16,6 +16,9 @@ posts_link: { text: "Every drawing, comic, song, play and piece of writing poste
 # link: clicking the piece opens that page instead of the enlarged view. post: slug of the blog post it came from.
 # gallery_first: pieces that open both gallery walls, in this order (file names from the art: list)
 gallery_first: [neon-mantis, a-vibing, 00-lain-mexicocity, exhausted-silence]
+# pieces that open a group when its chip is picked, in that order (key = the group name as a slug)
+group_first:
+  in-a-box: [00-lain-mexicocity, b-katzenkindergarten, t-japan-cows, t-japan-shop, t-japan-statue, t-japan-izakaya, t-japan-arcade, t-japan-flowers, t-japan-horse, t-japan-towers, t-japan-round-street, t-japan-signs, t-japan-train, t-japan-alley, t-bbord, t-lisbon-tram, t-lisbon-lamppost, t-lisbon-balconies, t-lisbon-tree, t-lisbon-harbour, t-lisbon-wires]
 
 art:
   - file: caterpillar
@@ -114,6 +117,42 @@ art:
     types: [polaroid]
   - file: "t-bbord"
     types: [polaroid]
+  - file: "t-lisbon-tram"
+    types: [polaroid]
+  - file: "t-lisbon-lamppost"
+    types: [polaroid]
+  - file: "t-lisbon-balconies"
+    types: [polaroid]
+  - file: "t-lisbon-tree"
+    types: [polaroid]
+  - file: "t-lisbon-harbour"
+    types: [polaroid]
+  - file: "t-lisbon-wires"
+    types: [polaroid]
+  - file: "t-japan-cows"
+    types: [polaroid]
+  - file: "t-japan-shop"
+    types: [polaroid]
+  - file: "t-japan-statue"
+    types: [polaroid]
+  - file: "t-japan-izakaya"
+    types: [polaroid]
+  - file: "t-japan-arcade"
+    types: [polaroid]
+  - file: "t-japan-flowers"
+    types: [polaroid]
+  - file: "t-japan-horse"
+    types: [polaroid]
+  - file: "t-japan-towers"
+    types: [polaroid]
+  - file: "t-japan-round-street"
+    types: [polaroid]
+  - file: "t-japan-signs"
+    types: [polaroid]
+  - file: "t-japan-train"
+    types: [polaroid]
+  - file: "t-japan-alley"
+    types: [polaroid]
   - file: "t-blau-amstie"
     types: [polaroid]
   - file: "t-bw-storm"
@@ -134,7 +173,7 @@ art:
     types: [digital photo]
   - file: "z-intuition-and-precision"
     types: [digital]
-  - file: "zredclowncreep"
+  - file: "zredclown-creep"
     types: [digital photo]
   - file: ytm-2024-logo
     title: Young Topologists Meeting 2024 logo

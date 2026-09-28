@@ -136,6 +136,14 @@
   var first = {{ artpage.gallery_first | jsonify }} || [];
   first.slice().reverse().forEach(function (f) { var el = wall.querySelector('.gw-item[data-file="' + f + '"]'); if (el) wall.insertBefore(el, wall.firstChild); });
   var items = Array.prototype.slice.call(wall.querySelectorAll('.gw-item'));
+  // pieces listed in `group_first:` (art.md) open their group when it (or one of its sub chips) is picked
+  var groupFirst = {{ artpage.group_first | jsonify }} || {}, baseOrder = items.slice();
+  function orderFor(group) {
+    var lead = groupFirst[(group || '').replace(/^g-/, '')] || [], front = [];
+    lead.forEach(function (f) { var el = wall.querySelector('.gw-item[data-file="' + f + '"]'); if (el) front.push(el); });
+    items = front.concat(baseOrder.filter(function (it) { return front.indexOf(it) === -1; }));
+    items.forEach(function (it) { wall.appendChild(it); });
+  }
   var btns = box.querySelectorAll('.gw-filters button');
   var lastW = 0;
 
@@ -210,6 +218,7 @@
     b.addEventListener('click', function () {
       btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
       var f = b.dataset.filter;
+      orderFor(f.indexOf('g-') === 0 ? f : b.dataset.group);
       items.forEach(function (it) {
         it.classList.toggle('is-hidden', !(f === 'all' || (it.dataset.kind || '').split(' ').indexOf(f) !== -1));
         it.style.animation = 'none'; it.offsetWidth; it.style.animation = '';   // replay the fade-in

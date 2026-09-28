@@ -76,6 +76,24 @@
 "t-bbord": 0.8198
 "t-blau-amstie": 1.0000
 "t-bw-storm": 1.0012
+"t-japan-alley": 0.8677
+"t-japan-arcade": 0.8100
+"t-japan-cows": 0.8097
+"t-japan-flowers": 0.8101
+"t-japan-horse": 0.8680
+"t-japan-izakaya": 0.8101
+"t-japan-round-street": 0.8676
+"t-japan-shop": 0.8101
+"t-japan-signs": 0.8688
+"t-japan-statue": 0.8101
+"t-japan-towers": 0.8678
+"t-japan-train": 0.8687
+"t-lisbon-balconies": 0.8229
+"t-lisbon-harbour": 0.8229
+"t-lisbon-lamppost": 0.8229
+"t-lisbon-tram": 0.8225
+"t-lisbon-tree": 0.8229
+"t-lisbon-wires": 0.8229
 "ta-Screenshot from 2025-09-02 07-24-01": 0.9728
 "ta-Screenshot from 2025-09-02 07-24-26": 0.9714
 "ta-Screenshot from 2025-09-02 07-24-50": 0.9687
@@ -86,4 +104,4 @@
 "z-bplane": 0.7874
 "z-intuition-and-precision": 0.9819
 "z_IMG_20251115_152202_202": 0.7500
-"zredclowncreep": 0.7500
+"zredclown-creep": 0.7500
