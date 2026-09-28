@@ -56,6 +56,10 @@ layout: page
   .piece-foot { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-top: 2px solid var(--ink); padding-top: .5rem; margin-top: auto; }
   .piece-foot .piece-title { font-weight: 700; }
   .piece time { font: 14px 'Space Mono', monospace; color: var(--ink-soft); }
+  /* "there's more": a fading ellipsis after the opening lines, and a read-on chip */
+  .piece .verse-more { display: block; font-size: 1.4em; line-height: .8; letter-spacing: .1em; color: var(--ink-soft); }
+  .piece .read-on { align-self: flex-start; padding: 4px 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--yellow); font: 700 13px 'Space Mono', monospace; letter-spacing: .02em; }
+  a.piece:hover .read-on, a.piece:focus-visible .read-on { background: #6cc8f0; }
 
   /* the songs tile: a compact player */
   .tile.songs { grid-column: span 2; }

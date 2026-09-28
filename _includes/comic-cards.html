@@ -1,6 +1,6 @@
 {% comment %}
   comics: list from the page's front matter. Each entry either points at a post (slug)
-  or stands alone (title, credit, cover, description). Each card: portrait preview on the left, words on the right;
+  or stands alone (title, credit, cover, description; optional tagline, shown apart from the description). Each card: portrait preview on the left, words on the right;
   panels = images stacked top to bottom like a page;
   a missing cover/description shows a labeled placeholder.
 {% endcomment %}
@@ -19,6 +19,7 @@
       {% if c.status %}<span class="comic-status">{{ c.status }}</span>{% endif %}
       <span class="comic-title">{{ title }}</span>
       {% if c.credit %}<span class="comic-credit">{{ c.credit }}</span>{% endif %}
+      {% if c.tagline %}<span class="comic-tagline">{{ c.tagline }}</span>{% endif %}
       <span class="comic-note">{% if c.description %}{{ c.description }}{% elsif p %}Updated panel by panel as it's made. Started {{ p.date | date: "%B %Y" }}.{% else %}[DESCRIPTION]{% endif %}</span>
     </span>
   {% if href %}</a>{% else %}</div>{% endif %}
@@ -39,6 +40,7 @@
   .comic-status { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; background: #fbe919; border: 2px solid #1b1b1b; border-radius: 999px; padding: 1px 9px; }
   .comic-title { hyphens: manual; overflow-wrap: anywhere; font-family: 'Archivo Black', Impact, sans-serif; font-size: 1.15rem; line-height: 1.2; }
   .comic-credit { font-size: 13px; color: #4a3a63; }
+  .comic-tagline { font-size: 13px; font-weight: 700; color: #ec3f9e; margin-bottom: 8px; }
   .comic-note { font-family: 'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.45; color: #4a3a63; }
   @media (max-width: 420px) { .comic-meta { padding: 10px 12px; } .comic-title { font-size: 1rem; } .comic-note { font-size: 14px; } }
   @media (prefers-reduced-motion: reduce) { .comic-card { transition: none; } }

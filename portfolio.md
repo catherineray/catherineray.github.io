@@ -21,7 +21,8 @@ comics:
   - title: "Endo­mortis"   # has a soft hyphen: wraps as Endo-mortis on narrow screens
     credit: with Petra Flurin
     cover:
-    description: "Sunbean navigates their apartment changing around them guided by their cat, Mr. Rotisserie F*****t, and a recently deceased friend. Crayolapunk surrealist comic about grief."
+    tagline: "Crayolapunk surrealist comic about grief."
+    description: "Sunbean navigates their apartment changing around them guided by their cat, Mr. Rotisserie F*****t, and a recently deceased friend."
 
 # writing: kind = the stamp. An item with an image is a wide tile (the play, whose buttons come from the post's card_links);
 # the others are cards showing their opening lines.

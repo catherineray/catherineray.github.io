@@ -256,7 +256,8 @@ comics:
   - title: "Endo­mortis"   # has a soft hyphen: wraps as Endo-mortis on narrow screens
     credit: with Petra Flurin
     cover:
-    description: "Sunbean navigates their apartment changing around them guided by their cat, Mr. Rotisserie F*****t, and a recently deceased friend. Crayolapunk surrealist comic about grief."
+    tagline: "Crayolapunk surrealist comic about grief."
+    description: "Sunbean navigates their apartment changing around them guided by their cat, Mr. Rotisserie F*****t, and a recently deceased friend."
   - slug: webcomic-re-search
     status: in progress
     cover: /images/wp-content/uploads/2021/05/research0.jpg

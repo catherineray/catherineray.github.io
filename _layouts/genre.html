@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-{% comment %} Math / Science / Art posts / Prose pages: the genre's posts as the same tiles as All posts → Recents. {% endcomment %}
+{% comment %} Math / Science / Art posts / Prose pages: the genre's posts as the same tiles as All posts → Recents.
+   With `highlights: true` in the page's front matter, the genre's pinned posts (from _data/genres.yml) show on top as All posts-style highlight cards. {% endcomment %}
 {% assign g = site.data.genres | where: "key", page.genre_key | first %}
 {% assign genre_posts = site.posts | where: "genre", page.genre_key %}
 {% assign statics = site.static_files | map: "path" %}
@@ -13,6 +14,16 @@ layout: default
 <div class="genre-page ap recents-tiles" style="--genre: {{ g.color }};">
   {% include page-title.html text=g.name shadow=g.color %}
   <div class="genre-intro">{{ content }}</div>
+  {% if page.highlights and g.pinned %}
+  <div class="ap-sec-row" id="ap-hl-h"><h2 class="ap-sec">Highlights</h2><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></div>
+  <div class="ap-hl is-filtered" aria-label="Highlights">
+    <section class="ap-hl-col" style="--g: {{ g.color }};">
+      {% for slug in g.pinned %}{% assign p = site.posts | where: "slug", slug | first %}{% if p %}
+        {% include hl-card.html %}
+      {% endif %}{% endfor %}
+    </section>
+  </div>
+  {% endif %}
   <div class="ap-sec-row"><h2 class="ap-sec ap-sec-recents">{{ genre_posts.size }} posts <button type="button" class="sort-toggle" aria-label="Change order">newest first ↓</button></h2><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></div>
   <div id="ap-posts">
     <ol class="ap-list">

@@ -1,0 +1,89 @@
+<!-- Audience switch for posts whose expert text is wrapped in <div class="for-pros" markdown="1">.
+     "no background assumed" hides the expert text. "for biologists and healthcare workers" shows only the expert
+     text wherever a part of the post (the text between two headings) has some; parts without any, the ⚠ boxes, and anything marked {: .both} stay.
+     A copy of the switch sits under every section heading; all copies stay in sync.
+     Remembered in this browser; ?for=pros or ?for=plain in the URL wins. -->
+<style>
+  .audience { display: flex; flex-wrap: wrap; gap: 8px; margin: .2em 0 1.2em; }
+  .audience-btn { font: 700 13px 'Space Mono', monospace; letter-spacing: .04em; padding: 5px 12px; border: 2px solid #1b1b1b; border-radius: 999px; background: #fff; color: #1b1b1b; box-shadow: 3px 3px 0 #1b1b1b; cursor: pointer; }
+  .audience-btn:hover { background: #6cc8f0; }
+  .audience-btn[aria-pressed="true"] { background: #1b1b1b; color: #fbe919; }
+  .aud-plain .for-pros, .aud-pros .plain-only { display: none; }
+  /* big donation button (megacolon post) */
+  .donate { margin: 1.6em 0; }
+  .donate-btn { display: block; box-sizing: border-box; width: 100%; padding: .8em 1em; text-align: center; background: #ee5fd4; color: #fff; font-family: 'Archivo Black', Impact, sans-serif; font-size: clamp(1rem, 2.6vw, 1.35rem); line-height: 1.25; text-decoration: none; border: 3px solid #1b1b1b; border-radius: 999px; box-shadow: 6px 6px 0 #1b1b1b; transition: transform .12s, box-shadow .12s; }
+  .donate-btn:hover, .donate-btn:focus-visible { background: #ec3f9e; color: #fff; transform: translate(-2px, -2px); box-shadow: 8px 8px 0 #1b1b1b; }
+  @media (prefers-reduced-motion: reduce) { .donate-btn { transition: none; } }
+</style>
+<script>
+(function () {
+  var KEY = 'rin-post-audience';
+  var root = document.documentElement;
+  var aud = null;
+  try { aud = new URL(location.href).searchParams.get('for'); } catch (e) {}
+  if (aud !== 'pros' && aud !== 'plain') { try { aud = localStorage.getItem(KEY); } catch (e) {} }
+  aud = aud === 'pros' ? 'pros' : 'plain';
+
+  function set(a) {
+    aud = a;
+    root.classList.toggle('aud-plain', a !== 'pros');
+    root.classList.toggle('aud-pros', a === 'pros');
+    document.querySelectorAll('.audience-btn').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.aud === a));
+    });
+  }
+  set(aud);
+
+  function makeSwitch() {
+    var d = document.createElement('div');
+    d.className = 'audience'; d.setAttribute('role', 'group'); d.setAttribute('aria-label', 'Who is reading');
+    [['plain', 'no background assumed'], ['pros', 'for biologists and healthcare workers']].forEach(function (o) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'audience-btn'; b.dataset.aud = o[0]; b.textContent = o[1];
+      d.appendChild(b);
+    });
+    return d;
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var first = document.querySelector('.for-pros'); if (!first) return;
+    var kids = Array.prototype.slice.call(first.parentNode.children);
+
+    // Tag the plain text that sits in the same part as expert text, so the pros view can hide it.
+    var chunk = [];
+    function flush() {
+      if (chunk.some(function (el) { return el.classList.contains('for-pros'); })) {
+        chunk.forEach(function (el) {
+          var warn = el.tagName === 'BLOCKQUOTE' && el.querySelector('h3');
+          if (!el.classList.contains('for-pros') && !el.classList.contains('both') && !warn) el.classList.add('plain-only');
+        });
+      }
+      chunk = [];
+    }
+    // (the opening, before the first section heading, is marked by hand in the post)
+    var started = false;
+    kids.forEach(function (el) {
+      if (el.tagName === 'H2') started = true;
+      if (!started) return;
+      if (/^(H1|H2|H3|HR)$/.test(el.tagName) || el.classList.contains('footnotes')) flush();
+      else chunk.push(el);
+    });
+    flush();
+
+    // One switch under every section heading (not References).
+    kids.forEach(function (el) {
+      if (el.tagName === 'H2' && !/^references$/i.test(el.textContent.trim())) el.after(makeSwitch());
+    });
+    set(aud);
+
+    first.parentNode.addEventListener('click', function (e) {
+      var b = e.target.closest('.audience-btn'); if (!b) return;
+      var h = b.closest('.audience').previousElementSibling, top = h && h.getBoundingClientRect().top;
+      set(b.dataset.aud);
+      try { localStorage.setItem(KEY, b.dataset.aud); } catch (e) {}
+      // keep the section you clicked in where it was on screen
+      if (h) window.scrollBy(0, h.getBoundingClientRect().top - top);
+    });
+  });
+})();
+</script>

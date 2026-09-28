@@ -5,8 +5,10 @@
 {% if p %}
 <a class="piece" href="{{ site.baseurl }}{{ p.url }}">
   <span class="stamp">{{ include.stamp | default: "Lyrics" }}</span>
-  {% if m.lines %}<span class="verse">{% for line in m.lines %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span>{% endif %}
+  {% if m.lines %}<span class="verse">{% for line in m.lines %}{{ line }}<br>{% endfor %}<span class="verse-more" aria-hidden="true">…</span></span>{% endif %}
   {% if m.note %}<span class="piece-blurb">{{ m.note }}</span>{% endif %}
+  {% assign kind = include.stamp | default: "Lyrics" | downcase %}
+  <span class="read-on">{% if kind == "lyrics" %}read all the lyrics{% elsif kind == "poem" %}read the whole poem{% else %}keep reading{% endif %} →</span>
   <span class="piece-foot"><span class="piece-title">{{ m.title | default: p.title }}</span><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%Y" }}</time></span>
 </a>
 {% endif %}

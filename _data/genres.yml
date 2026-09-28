@@ -20,16 +20,6 @@
     - neuroprosthetic
     - wheelchair
     - pressure-ulcer-prevent
-- key: art
-  name: Art
-  url: /art/posts/
-  color: "#f9a13c"
-  icon: /images/icons/art.png
-  pinned:
-    - impaction
-    - webcomic-re-search
-    - ytm-2024-design
-    - cech-covers
 - key: prose
   name: Prose
   url: /prose/
@@ -41,3 +31,13 @@
     - im-not-good-at-math
     - caterpillars-life-lesson
     - the-purpose-of-communicaton-assigning-credit
+- key: art
+  name: Art
+  url: /art/posts/
+  color: "#f9a13c"
+  icon: /images/icons/art.png
+  pinned:
+    - impaction
+    - webcomic-re-search
+    - ytm-2024-design
+    - cech-covers
