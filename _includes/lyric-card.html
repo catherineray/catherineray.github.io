@@ -1,11 +1,11 @@
 {% comment %}
-  One card with opening lines, linking to its post. include.song: { slug, title, note, lines }; include.stamp: label (default "Lyrics")
+  One card with opening lines, linking to its post. include.song: { slug, title, note, lines, mid }; mid: true puts an ellipsis above the lines too (an excerpt from mid-stanza); include.stamp: label (default "Lyrics")
 {% endcomment %}
 {% assign m = include.song %}{% assign p = site.posts | where: "slug", m.slug | first %}
 {% if p %}
 <a class="piece" href="{{ site.baseurl }}{{ p.url }}">
   <span class="stamp">{{ include.stamp | default: "Lyrics" }}</span>
-  {% if m.lines %}<span class="verse">{% for line in m.lines %}{{ line }}<br>{% endfor %}<span class="verse-more" aria-hidden="true">…</span></span>{% endif %}
+  {% if m.lines %}<span class="verse">{% if m.mid %}<span class="verse-more verse-before" aria-hidden="true">…</span>{% endif %}{% for line in m.lines %}{{ line }}<br>{% endfor %}<span class="verse-more" aria-hidden="true">…</span></span>{% endif %}
   {% if m.note %}<span class="piece-blurb">{{ m.note }}</span>{% endif %}
   {% assign kind = include.stamp | default: "Lyrics" | downcase %}
   <span class="read-on">{% if kind == "lyrics" %}read all the lyrics{% elsif kind == "poem" %}read the whole poem{% else %}keep reading{% endif %} →</span>

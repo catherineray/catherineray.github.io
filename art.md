@@ -314,6 +314,7 @@ writing:
     blurb: "My first play. Performed in LA as part of *Nothing to See Here*, directed by Jacques Manjarrez. A clinic, a banana, a doctor in a rhinoceros mask."
   - slug: hidden-structure
     kind: Poem
+    mid: true   # the card starts mid-stanza
     lines:
       - "creation lives to create"
       - "chipping from the ob’lisk slate"

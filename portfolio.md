@@ -34,6 +34,7 @@ writing:
     blurb: "My first play, performed in LA as part of *Nothing to See Here*, directed by Jacques Manjarrez."
   - kind: Poem
     slug: hidden-structure
+    mid: true   # the card starts mid-stanza
     lines:
       - "creation lives to create"
       - "chipping from the ob’lisk slate"
