@@ -304,6 +304,8 @@ comics:
   - slug: webcomic-re-search
     status: in progress
     cover: /images/wp-content/uploads/2021/05/research0.jpg
+    tagline: "Illustrated fairy tale about getting lost in mathematics."
+    description: "A door blinks open in the wall, accidentally summoned by a student's notes. In they go, and tumble out in the dark as a toddler with a glowing donut in their hands. Cut it and throw it across space, and it plays like an instrument. They play until it sings modular forms. Behind them, every idea is tied to the last with spider silk, and every thread is a door."
 # writing: kind = the stamp. An item with an image is a wide tile; the others are cards showing their opening lines.
 writing:
   - slug: impaction
@@ -395,7 +397,7 @@ plates:
     idea: Formal groups from elliptic curves, as a walk through a flower garden
   - slug: webcomic-re-search
     image: /images/wp-content/uploads/2021/05/research0.jpg
-    idea: What doing mathematical research feels like, as a comic
+    idea: Elliptic curves and modular forms, found by a child with giant scissors
   - slug: introduction-to-algebraic-structures
     image: /images/wp-content/uploads/2014/05/moder.png
     idea: Groups, rings and lattices, illustrated
