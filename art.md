@@ -401,4 +401,13 @@ plates:
   - slug: introduction-to-algebraic-structures
     image: /images/wp-content/uploads/2014/05/moder.png
     idea: Groups, rings and lattices, illustrated
+  - slug: landweber-exactness
+    image: /images/wp-content/uploads/2015/04/11157286_10205364655788509_750654639_o.jpg
+    idea: Tensoring with R keeps sequences exact, and a kid wondering when
+  - slug: spectra
+    image: /images/wp-content/uploads/2015/05/11241165_10205562509814736_407002034_o1.jpg
+    idea: Spectra, met face to face
+  - slug: elliptic-curve
+    image: /images/wp-content/uploads/2015/03/Screen-Shot-2015-04-09-at-12.09.45-PM.png
+    idea: A family of elliptic curves, roughly as it doesn't look
 ---
