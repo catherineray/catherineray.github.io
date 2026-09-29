@@ -20,7 +20,7 @@ Sometimes, when juggling a particularly busy lifestyle, a stand-alone Todo list 
 
 At the beginning of the week, I created a weekly planner for myself (click the image to enlarge).
 
-[![](/wp-content/uploads/2013/10/Screenshot-1.png)](/wp-content/uploads/2013/10/Screenshot-1.png)
+[![](/images/wp-content/uploads/2013/10/Screenshot-1.png)](/images/wp-content/uploads/2013/10/Screenshot-1.png)
 
 The goals section outlines what you’d like done by the end of the week, and the immediate section is for quick brainstorming and immediate dispensable todo lists. _(The immediate section is used to eliminate excessive usage of post-it notes.)_
 

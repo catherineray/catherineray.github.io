@@ -18,9 +18,9 @@ topics:
 
 Bra-ket notation is concise and useful.
 
-A wavefunction is represented by a ket \(|\psi\rangle\).
+A wavefunction is represented by a ket \\\(|\psi\rangle\\\).
 
-The complex conjugate of wave function is written as a bra \(\langle\psi|\).
+The complex conjugate of wave function is written as a bra \\\(\langle\psi|\\\).
 
 The complex conjugate of a variable is found by swapping the sign of the imaginary part of said variable’s complex number, in other words: reflecting z across the real axis. For example, \\(z = x + iy\\) \\(z^* = x - iy\\)
 

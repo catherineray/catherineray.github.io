@@ -27,7 +27,7 @@ The poster I’m using to present my research creating CAMEL is finally finished
   <figcaption><a href="/images/wp-content/uploads/2013/04/Ray_CAMEL.pdf" target="_blank" rel="noopener">Open the full-size poster (PDF) ↗</a></figcaption>
 </figure>
 
-![Rin 2013-04-18 at 12.50.33 PM](/wp-content/uploads/2013/04/Rin-2013-04-18-at-12.50.33-PM.png)
+![Rin 2013-04-18 at 12.50.33 PM](/images/wp-content/uploads/2013/04/Rin-2013-04-18-at-12.50.33-PM.png)
 
 In order to condense [the entirety of my paper](/camel-paper/) into a viewer-friendly poster, I decided to **make diagrams to describe the program’s inner workings in layman’s terms**.
 
@@ -62,7 +62,7 @@ CAMEL deduces the complex grammar rules of Grade 2 Braille given partially trans
 
 CAMEL learns new symbols by taking 2 input text files (Braille text and corresponding English text), and analyzing them until all unknowns are identified, their meanings are found, and said symbols and their meanings are added to the dictionary.
 
-[![braille](/wp-content/uploads/2013/04/braille.png)](/wp-content/uploads/2013/04/braille.png)
+[![braille](/images/wp-content/uploads/2013/04/braille.png)](/images/wp-content/uploads/2013/04/braille.png)
 
 #### Methods of Tagging and Text Extraction
 
@@ -70,13 +70,13 @@ CAMEL must _Tag Unknowns & Compare to English(Extract Chunks)_ to infer symbol m
 
 Below are examples of how these different types of tags were each used to extract meaning.
 
-[![](/wp-content/uploads/2013/04/taggtypes1.jpg)](/wp-content/uploads/2013/04/taggtypes1.jpg)
+[![](/images/wp-content/uploads/2013/04/taggtypes1.jpg)](/images/wp-content/uploads/2013/04/taggtypes1.jpg)
 
 #### Using Contracted Braille as a Platform
 
 An example of this process infers the symbols that represent _en_ and _in_ using the word penguin (contracted to p{_en_}gu{_in_} in Grade 2 Braille).
 
-[![](/wp-content/uploads/2013/04/penguin-6.jpg)](/wp-content/uploads/2013/04/penguin-6.jpg)
+[![](/images/wp-content/uploads/2013/04/penguin-6.jpg)](/images/wp-content/uploads/2013/04/penguin-6.jpg)
 
 #### Results and Conclusions
 
@@ -92,7 +92,7 @@ An example of this process infers the symbols that represent _en_ and _in_ using
 
 #### Acknowledgements
 
-[![Rin 2013-04-18 at 10.51.48 AM](/wp-content/uploads/2013/04/Rin-2013-04-18-at-10.51.48-AM.png)](/wp-content/uploads/2013/04/Rin-2013-04-18-at-10.51.48-AM.png)
+[![Rin 2013-04-18 at 10.51.48 AM](/images/wp-content/uploads/2013/04/Rin-2013-04-18-at-10.51.48-AM.png)](/images/wp-content/uploads/2013/04/Rin-2013-04-18-at-10.51.48-AM.png)
 
 * * *
 

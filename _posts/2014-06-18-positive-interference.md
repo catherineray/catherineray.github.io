@@ -11,4 +11,4 @@ topics:
   - "Drawing, painting & comics"
 ---
 
-[![](/wp-content/uploads/2014/04/2014-04-16-19.07.16-2.jpg)](/wp-content/uploads/2014/04/2014-04-16-19.07.16-2.jpg)
+[![](/images/wp-content/uploads/2014/04/2014-04-16-19.07.16-2.jpg)](/images/wp-content/uploads/2014/04/2014-04-16-19.07.16-2.jpg)

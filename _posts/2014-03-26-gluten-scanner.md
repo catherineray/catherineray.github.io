@@ -42,13 +42,13 @@ This scanner would be able to analyze the food ~>1cm in depth without effecting 
 
 Originally planning on taking spectroscopic approach, I found that it was _incredibly noisy_ (see below) to detect gluten in a vinegar solution [gluten is insoluble in water], let alone among protein rich food!
 
-[![](/wp-content/uploads/2014/03/20140315_090810.jpg)](/wp-content/uploads/2014/03/20140315_090810.jpg)
+[![](/images/wp-content/uploads/2014/03/20140315_090810.jpg)](/images/wp-content/uploads/2014/03/20140315_090810.jpg)
 
-[![](/wp-content/uploads/2014/03/20140315_090845.jpg)](/wp-content/uploads/2014/03/20140315_090845.jpg)
+[![](/images/wp-content/uploads/2014/03/20140315_090845.jpg)](/images/wp-content/uploads/2014/03/20140315_090845.jpg)
 
-[![](/wp-content/uploads/2014/03/20140315_091009.jpg)](/wp-content/uploads/2014/03/20140315_091009.jpg)
+[![](/images/wp-content/uploads/2014/03/20140315_091009.jpg)](/images/wp-content/uploads/2014/03/20140315_091009.jpg)
 
-[![](/wp-content/uploads/2014/03/20140315_091035.jpg)](/wp-content/uploads/2014/03/20140315_091035.jpg)
+[![](/images/wp-content/uploads/2014/03/20140315_091035.jpg)](/images/wp-content/uploads/2014/03/20140315_091035.jpg)
 
 Thank you, Sunnyvale Biocurious, for training Paul on the spectrophotometer!
 
@@ -62,7 +62,7 @@ Although A1 has a higher sensitivity to gluten (0.33ppm) than G12 (0.5ppm), most
 
 Anti-gliadin antibodies can be paired with a colorimetric assay to form a biomarker-based detector in the form of: a toothpick-sized detector to poke into food || the gluten-detecting equivalent of litmus strips.
 
-<table style="float: left;" cellspacing="0" cellpadding="0"><tbody><tr><td style="text-align: center;"><a style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/03/g12_270.png"><img src="/wp-content/uploads/2014/03/g12_270.png" alt="" border="0"></a></td></tr><tr><td style="font-size: 13px; text-align: center;"><b>G12</b> (Image credit: PDB)</td></tr></tbody></table>
+<table style="float: left;" cellspacing="0" cellpadding="0"><tbody><tr><td style="text-align: center;"><a style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;" href="/images/wp-content/uploads/2014/03/g12_270.png"><img src="/images/wp-content/uploads/2014/03/g12_270.png" alt="" border="0"></a></td></tr><tr><td style="font-size: 13px; text-align: center;"><b>G12</b> (Image credit: PDB)</td></tr></tbody></table>
 
 In the past few days, I found that there are a set of devices, [GlutenTox](http://glutentox.com/), which use my planned approach. Since this realization, I’ve also come across [6sensorlabs](http://www.6sensorlabs.com/), and the [TellSpec](http://tellspec.com/).
 

@@ -44,13 +44,13 @@ _tl;dr Place sensors in synapses to identify the 3D coordinates of firing synaps
 
 Semi-permanent **localized deposition** of **florescent voltage sensor** to **neuromuscular junction**
 
-[![](/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-16-42-32.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-16-42-32.png)
+[![](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-16-42-32.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-16-42-32.png)
 
-[![](/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-02.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-02.png)
+[![](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-02.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-02.png)
 
-\(Rightarrow\) **monitoring** myocyte **activity** with a compact **infared light field microscope** with CMOS to record.
+\\\(Rightarrow\\\) **monitoring** myocyte **activity** with a compact **infared light field microscope** with CMOS to record.
 
-[![](/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-10.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-10.png)
+[![](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-10.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-12-15-06-10.png)
 
 Technical Q&A
 
@@ -80,11 +80,11 @@ Infared light field microscopy paired with [near infared flourescent proteins fo
 
 **A technique which allows for an instantaneous 3D image at micron resolution.** I suggest you fully appreciate the beauty of this technology by watching this [2-minute fantastic explanation of the concept](https://www.youtube.com/watch?v=3c--nNVx85s).
 
-<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/06/Screenshot-from-2014-06-11-16-30-25.png"><img src="/wp-content/uploads/2014/06/Screenshot-from-2014-06-11-16-30-25.png" alt="" width="320" height="302" border="0"></a></td></tr><tr><td style="text-align: center;"><a href="http://syntheticneurobiology.org/publications/publicationdetail/219/25">Image Source</a></td></tr></tbody></table>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-11-16-30-25.png"><img src="/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-11-16-30-25.png" alt="" width="320" height="302" border="0"></a></td></tr><tr><td style="text-align: center;"><a href="http://syntheticneurobiology.org/publications/publicationdetail/219/25">Image Source</a></td></tr></tbody></table>
 
 The most compact Light Field Microscope is currently:
 
-<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/wp-content/uploads/2014/06/MobileLFM2.jpg"><img src="/wp-content/uploads/2014/06/MobileLFM2.jpg" alt="" width="402" height="640" border="0"></a></td></tr><tr><td style="text-align: center;"><a href="http://graphics.stanford.edu/projects/lfmicroscope/">Image Source</a></td></tr></tbody></table>
+<table style="margin-left: auto; margin-right: auto; text-align: center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align: center;"><a style="margin-left: auto; margin-right: auto;" href="/images/wp-content/uploads/2014/06/MobileLFM2.jpg"><img src="/images/wp-content/uploads/2014/06/MobileLFM2.jpg" alt="" width="402" height="640" border="0"></a></td></tr><tr><td style="text-align: center;"><a href="http://graphics.stanford.edu/projects/lfmicroscope/">Image Source</a></td></tr></tbody></table>
 
 #### Why use light field microscopy?
 
@@ -94,7 +94,7 @@ Light field microscopy allows us to capture a whole volume with one snapshot (wi
 
 Fresnel zone plates! Instead of using refraction and reflection like lenses and curved mirrors, zone plates use diffraction.
 
-[![Sec4421](/wp-content/uploads/2014/06/Sec4421-300x255-1.jpg)](/wp-content/uploads/2014/06/Sec4421-300x255-1.jpg)
+[![Sec4421](/images/wp-content/uploads/2014/06/Sec4421-300x255-1.jpg)](/images/wp-content/uploads/2014/06/Sec4421-300x255-1.jpg)
 
 A zone plate consists of a set of radially symmetric rings, known as Fresnel zones, which alternate between opaque and transparent. Light hitting the zone plate will diffract around the opaque zones. The zones can be spaced so that the diffracted light constructively interferes at the desired focus, creating an image there. [[Source]](https://en.wikipedia.org/wiki/Zone_plate)
 

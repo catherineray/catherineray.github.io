@@ -17,7 +17,7 @@ topics:
 
 I recently saw an add for a product I am excited for (although most blind people I know prefer Siri):
 
-[![](/wp-content/uploads/2013/04/Rin-2013-04-19-at-10.10.17-AM.png)](/wp-content/uploads/2013/04/Rin-2013-04-19-at-10.10.17-AM.png)
+[![](/images/wp-content/uploads/2013/04/Rin-2013-04-19-at-10.10.17-AM.png)](/images/wp-content/uploads/2013/04/Rin-2013-04-19-at-10.10.17-AM.png)
 
 For anyone [who is curious](/introduction-to-braille/):
 

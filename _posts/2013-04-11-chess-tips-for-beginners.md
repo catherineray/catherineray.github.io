@@ -21,15 +21,15 @@ This post assumes you know basic chess rules and some chess terminology. If you 
 
 **Setting up the board.** Queen on her color.
 
-[![](/wp-content/uploads/2013/04/queenoncolor.png)](/wp-content/uploads/2013/04/queenoncolor.png)
+[![](/images/wp-content/uploads/2013/04/queenoncolor.png)](/images/wp-content/uploads/2013/04/queenoncolor.png)
 
 h8 should be a white square.
 
-[![](/wp-content/uploads/2013/04/h8.png)](/wp-content/uploads/2013/04/h8.png)
+[![](/images/wp-content/uploads/2013/04/h8.png)](/images/wp-content/uploads/2013/04/h8.png)
 
 Knights are next to rooks, don’t put them next to the king and queen!
 
-[![](/wp-content/uploads/2013/04/knight.png)](/wp-content/uploads/2013/04/knight.png)
+[![](/images/wp-content/uploads/2013/04/knight.png)](/images/wp-content/uploads/2013/04/knight.png)
 
 **Advance your pieces in the opening** so you can protect your king without blocking your attacking pieces.
 
@@ -39,35 +39,35 @@ Use a rook/queen to **protect an advancing pawn.**
 
 **Castle queen-side**. You will throw your opponent off, if only for a brief period of time. This a lesser known alternative to the typical king-side Castling.
 
-[![](/wp-content/uploads/2013/04/catli.png)](/wp-content/uploads/2013/04/catli.png)Queen-side O-O-O
+[![](/images/wp-content/uploads/2013/04/catli.png)](/images/wp-content/uploads/2013/04/catli.png)Queen-side O-O-O
 
-[![](/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-253a05-253a33.png)](/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-253a05-253a33.png) King-side O-O
+[![](/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-253a05-253a33.png)](/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-253a05-253a33.png) King-side O-O
 
 **Pawn structure, pawn structure, pawn structure.** A forward V is far more powerful than a backward V. Don’t underestimate a well-protected wall of pawns!
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-50.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-50.png"></a></td></tr><tr><td style="text-align: center;">NEIN!</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-50.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-50.png"></a></td></tr><tr><td style="text-align: center;">NEIN!</td></tr></tbody></table>
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-21.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-21.png"></a></td></tr><tr><td style="text-align: center;">Ja! Gut!</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-21.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-07-21.png"></a></td></tr><tr><td style="text-align: center;">Ja! Gut!</td></tr></tbody></table>
 
 For Fischer’s sake, **don’t stack your pawns** unless you have a sneaky plan.
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-09-16.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-09-16.png"></a></td></tr><tr><td style="text-align: center;">d2 and d3 are stacked</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-09-16.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-09-16.png"></a></td></tr><tr><td style="text-align: center;">d2 and d3 are stacked</td></tr></tbody></table>
 
 **Fianchetto** It is my understanding that to fianchetto means to develop your bishop to an extreme rank.
 
 There are two steps (and two options) for a simple opening queen-side fianchetto (you can also fianchetto on king-side, or fianchetto in midgame)
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-21.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-21.png"></a></td></tr><tr><td style="text-align: center;">Step 1) b3 (or b4) to clear the diagonal for Bc1</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-21.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-21.png"></a></td></tr><tr><td style="text-align: center;">Step 1) b3 (or b4) to clear the diagonal for Bc1</td></tr></tbody></table>
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-42.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-42.png"></a></td></tr><tr><td style="text-align: center;">Step 2 - Option 1) Ba3</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-42.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-11-42.png"></a></td></tr><tr><td style="text-align: center;">Step 2 - Option 1) Ba3</td></tr></tbody></table>
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-16-17.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-16-17.png"></a></td></tr><tr><td style="text-align: center;">Step 2 - Option 2) Bb2</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-16-17.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-09-16-17.png"></a></td></tr><tr><td style="text-align: center;">Step 2 - Option 2) Bb2</td></tr></tbody></table>
 
 **Fork** your opponent. Forking is when a single piece attacks two (or more) pieces simultaneously. This is typically done with the knight, but can be done with any piece.
 
 For example, in this endgame:
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-15-22-15-05.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-15-22-15-05.png"></a></td></tr><tr><td style="text-align: center;">Nf3+ threatens Qd2 and Kg1</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-15-22-15-05.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-15-22-15-05.png"></a></td></tr><tr><td style="text-align: center;">Nf3+ threatens Qd2 and Kg1</td></tr></tbody></table>
 
 Both white and black are forking.
 
@@ -77,11 +77,11 @@ Additionally, the white king is under check, and the white side is at a material
 
 Playing black? Confused during openings? Use the **Sicilian Defense.**
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-01-05.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-01-05.png"></a></td></tr><tr><td style="text-align: center;">1. e4 c5</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-01-05.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-01-05.png"></a></td></tr><tr><td style="text-align: center;">1. e4 c5</td></tr></tbody></table>
 
 or
 
-<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-02-16.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-02-16.png"></a></td></tr><tr><td style="text-align: center;">1. e4 d6</td></tr></tbody></table>
+<table align="center" cellpadding="0" cellspacing="0" style="height: 348px; margin-left: auto; margin-right: auto; text-align: center; width: 320px;"><tbody><tr><td style="text-align: center;"><a href="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-02-16.png" style="margin-left: auto; margin-right: auto;"><img border="0" src="/images/wp-content/uploads/2013/04/screenshot-from-2013-04-11-10-02-16.png"></a></td></tr><tr><td style="text-align: center;">1. e4 d6</td></tr></tbody></table>
 
 All black’s moves proceeding this are generally considered Sicilian Defense variations. In the latter case (1. … d6), a common white response is 2. Nf3 … 2. d4
 

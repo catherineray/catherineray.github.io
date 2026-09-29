@@ -17,4 +17,4 @@ Have no idea what’s going on? Have no fear: [Introduction to Visual Grade 2 Br
 
 Prefix Indicator
 
-[![](/wp-content/uploads/2013/10/vis.png)](/wp-content/uploads/2013/10/vis.png)
+[![](/images/wp-content/uploads/2013/10/vis.png)](/images/wp-content/uploads/2013/10/vis.png)

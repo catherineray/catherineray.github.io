@@ -20,7 +20,7 @@ A 10 year old girl and her father sat in the back of my car as I drove them home
 
 During this snippet of the conversation, I felt like I was punched in the chest.
 
-[![10814364_10204383402897800_2011252273_n](/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)](/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)
+[![10814364_10204383402897800_2011252273_n](/images/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)](/images/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)
 
 Do you like literature?
 

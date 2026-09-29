@@ -25,7 +25,7 @@ _Example: If you study the art of trombone playing, you are more likely to appre
 
 Wide-spread knowledge in [both art and STEM](/the-utility-of-art-vs-stem/) reveals connections between seemingly unrelated concepts; connections that others do not see. These connections often lead to valuable and creative solutions. [Overspecialization is dangerous.](/18-general-lessons-i-learned-in-university/)
 
-Fostering your competency in many fields \(\rightarrow\) wide-spread aesthetic appreciation \(\rightarrow\) being a connoisseur of life.
+Fostering your competency in many fields \\\(\rightarrow\\\) wide-spread aesthetic appreciation \\\(\rightarrow\\\) being a connoisseur of life.
 
 **Complement mere competency** by studying a few select topics in enough depth to appreciate their deeper beauty and underlying simplicity.
 

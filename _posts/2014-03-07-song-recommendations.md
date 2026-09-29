@@ -12,7 +12,7 @@ topics:
   - "Life, study & work"
 ---
 
-[![](/wp-content/uploads/2014/03/screenshot_from_2014-03-07_11_3a35_3a37.png)](/wp-content/uploads/2014/03/screenshot_from_2014-03-07_11_3a35_3a37-1.png)
+[![](/images/wp-content/uploads/2014/03/screenshot_from_2014-03-07_11_3a35_3a37.png)](/images/wp-content/uploads/2014/03/screenshot_from_2014-03-07_11_3a35_3a37-1.png)
 
 [Arbeit macht das Leben süß](https://open.spotify.com/playlist/0IpBHTQQPJpV7qfxdOafuv?play=true&utm_source=open.spotify.com&utm_medium=open&fb_action_ids=10202929050419897&fb_action_types=music.playlists&fb_source=feed_music&action_object_map=%7B%2210202929050419897%22%3A732004050164910%7D&action_type_map=%7B%2210202929050419897%22%3A%22music.playlists%22%7D&action_ref_map=%5B%5D)
 

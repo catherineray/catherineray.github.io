@@ -35,7 +35,7 @@ If two polynomials have the same roots with the same multiplicities, then they a
 
 Sidenote: This follows from the fundamental theorem of polynomial arithmetic.
 
-Every polynomial (in one variable?) factors uniquely into \((x - a)^n\) factors, with the a and n varying from factor to factor. Well, so you know how uniqueness works, right? You have to exclude 1 and -1 from the primes, if you want uniqueness.
+Every polynomial (in one variable?) factors uniquely into \\\((x - a)^n\\\) factors, with the a and n varying from factor to factor. Well, so you know how uniqueness works, right? You have to exclude 1 and -1 from the primes, if you want uniqueness.
 
 So, meromorphic functions don’t have to be rational functions, but they very nearly are.
 
@@ -45,17 +45,17 @@ So you impose that constraint at all points where it’s possible to do so, and 
 
 They’re like analytic functions, except that they may have singularities at finite points. As opposed to analytic functions, which only have singularities at infinity.
 
-Look at it this way: \(\sin(x)\) is analytic, but it isn’t a polynomial. \(\tan(x)\) is meromorphic, but it isn’t rational.
+Look at it this way: \\\(\sin(x)\\\) is analytic, but it isn’t a polynomial. \\\(\tan(x)\\\) is meromorphic, but it isn’t rational.
 
-Analytic functions are like generalized polynomials. \(\sin(x)\) is like a polynomial, in that it has isolated roots, and is (almost) uniquely determined by those roots.
+Analytic functions are like generalized polynomials. \\\(\sin(x)\\\) is like a polynomial, in that it has isolated roots, and is (almost) uniquely determined by those roots.
 
 We have, in fact, Euler’s product formula, \\(\sin(x) = x[(1 - (x/\pi)^2][(1 - (x/2\pi)^2][(1 - (x/3\pi)^2]… \\), which is like the expression
 
-\\(a + bx + cx^2 + … + mx^n = a(1 - x/r)(1 - x/s) … (1 - x/t)\\) where \(r, s, …, t\) are the \(n\) roots of the polynomial of degree \(n\) on the left-hand side.
+\\(a + bx + cx^2 + … + mx^n = a(1 - x/r)(1 - x/s) … (1 - x/t)\\) where \\\(r, s, …, t\\\) are the \\\(n\\\) roots of the polynomial of degree \\\(n\\\) on the left-hand side.
 
 Of course I do not mean to constrain these roots by insisting that no two of them may coincide. I want, on the contrary, to allow coincidences of that sort.
 
-Sidenote: A general degree-n polynomial factors, at least over the complex numbers, at least over the complex numbers it does. In complete generality, you have all kinds of annoyances. But in special situations you can get around them. I believe there is indeed a p-adic version of Riemann-Roch, but I don’t know exactly what it is. I mean p-adic analysis is pretty cool though. Probably the best example is really the first one, namely, Dirichlet’s theorem. Dirichlet proved that if a, b are relatively prime, then the sequence a + bn, as n ranges over the natural numbers, contains infinitely many primes. And indeed that the density of primes in this sequence is just 1/b times the density of primes in the integers. Here’s an example of a nice theorem in p-adic analysis: if {a_n} is a sequence which is such that \(a_n \to 0\) as \(n \to \infty\), then Sum(a_n) exists. (p-adically, that is.)
+Sidenote: A general degree-n polynomial factors, at least over the complex numbers, at least over the complex numbers it does. In complete generality, you have all kinds of annoyances. But in special situations you can get around them. I believe there is indeed a p-adic version of Riemann-Roch, but I don’t know exactly what it is. I mean p-adic analysis is pretty cool though. Probably the best example is really the first one, namely, Dirichlet’s theorem. Dirichlet proved that if a, b are relatively prime, then the sequence a + bn, as n ranges over the natural numbers, contains infinitely many primes. And indeed that the density of primes in this sequence is just 1/b times the density of primes in the integers. Here’s an example of a nice theorem in p-adic analysis: if {a_n} is a sequence which is such that \\\(a_n \to 0\\\) as \\\(n \to \infty\\\), then Sum(a_n) exists. (p-adically, that is.)
 
 Riemann-Roch asserts a sort of mismatch between poles and zeroes for meromorphic functions on a Riemann surface, with this mismatch due to the Euler characteristic.
 
@@ -69,7 +69,7 @@ Poles, on the one hand, and zeroes, on the other. Poles are zeroes of the recipr
 
 In some sense, it boils down to Poincare-Hopf, which in turn may be thought of as a sort of elaborate consequence of Sperner’s lemma.
 
-The Sperner lemma is the combinatorial root of almost all the theorems of (classical real and complex) analysis with a topological flavor. It really ought to be required reading for everybody interested in any topological applications in analysis! [Here](/wp-content/uploads/2015/07/sperner.pdf)‘s an elegant and well-illustrated paper on it.
+The Sperner lemma is the combinatorial root of almost all the theorems of (classical real and complex) analysis with a topological flavor. It really ought to be required reading for everybody interested in any topological applications in analysis! [Here](/images/wp-content/uploads/2015/07/sperner.pdf)‘s an elegant and well-illustrated paper on it.
 
 As the paper above shows, you take an arbitrary compact surface (e.g, the surface of the earth) and you remove points and make branch cuts until you have the surface decomposed into a (typically small) number of components to which Sperner’s lemma applies.
 

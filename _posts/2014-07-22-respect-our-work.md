@@ -20,7 +20,7 @@ Hopefully, this post will be helpful for you, my friends. Perhaps, to send to yo
 
 #### Why do you want to study theoretical science/math?
 
-[![Image Source ](/wp-content/uploads/2014/07/20101209.gif)](/wp-content/uploads/2014/07/20101209.gif)
+[![Image Source ](/images/wp-content/uploads/2014/07/20101209.gif)](/images/wp-content/uploads/2014/07/20101209.gif)
 
 [Image Source](http://www.smbc-comics.com/?id=2088)
 
@@ -28,7 +28,7 @@ Why do I want to study pure math? **The same reason that the scientist is provid
 
 There is an itch in minds of the analytic and aesthetically inclined that mathematics scratches like no other.
 
-I encourage you to read _[A Mathematician’s Apology](/wp-content/uploads/2014/07/a-mathematician_s-apology.pdf)_ and _[What is it Like to Understand Advanced Mathematics?](http://www.quora.com/Mathematics/What-is-it-like-to-understand-advanced-mathematics)_.
+I encourage you to read _[A Mathematician’s Apology](/images/wp-content/uploads/2014/07/a-mathematician_s-apology.pdf)_ and _[What is it Like to Understand Advanced Mathematics?](http://www.quora.com/Mathematics/What-is-it-like-to-understand-advanced-mathematics)_.
 
 #### What if you aren’t good at math?
 
@@ -46,7 +46,7 @@ Here’s an exploration of [Which Mathematical Ideas Have Done The Most To Chang
 
 #### How can math make you a better person?
 
-[![10152501_10152050265458030_1235372241_n](/wp-content/uploads/2014/07/10152501_10152050265458030_1235372241_n.jpg)](/wp-content/uploads/2014/07/10152501_10152050265458030_1235372241_n.jpg)
+[![10152501_10152050265458030_1235372241_n](/images/wp-content/uploads/2014/07/10152501_10152050265458030_1235372241_n.jpg)](/images/wp-content/uploads/2014/07/10152501_10152050265458030_1235372241_n.jpg)
 
 [Math provides you with powerful intuitions that can improve your daily life](http://www.quora.com/Academia/What-are-the-most-powerful-intuitions-in-your-field):
 

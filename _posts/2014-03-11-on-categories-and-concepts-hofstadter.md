@@ -26,11 +26,11 @@ A paradigm for the situational label is _Danny at the Grand Canyon_.
 
 Hofstadter's family traveled to see the Grand Canyon. As Hofstadter turned his entranced gaze away from the great abyss, he rested his eyes on his son. His 1-year-old son, Danny, sat facing away from the Grand Canyon and staring at ants. He was a child so young that he had no idea of distance. **This situation can be generalized** to the idea of focusing on what you're interested in (and are capable of focusing on), harboring little interest in what others consider as gems.
 
-Similarly, **idioms are categories**: Left hand doesn't know what the right hand is doing \(\equiv\) One part of an organization is contradicting the other
+Similarly, **idioms are categories**: Left hand doesn't know what the right hand is doing \\\(\equiv\\\) One part of an organization is contradicting the other
 
-Tail wagging a dog \(\equiv\) small things have inordinately large control over a situation.
+Tail wagging a dog \\\(\equiv\\\) small things have inordinately large control over a situation.
 
-**Conjunctions (logical connectives) are categories**: The conjunction "/" (\(\equiv\) "slash") is two things that aren't quite exclusive combined together. Formally, let \(A\) and \(B\) be categories, a slash denotes \({A \cup B : A \cap B \neq \varnothing}\). For example: they're a bimbo/self-marketing genius.
+**Conjunctions (logical connectives) are categories**: The conjunction "/" (\\\(\equiv\\\) "slash") is two things that aren't quite exclusive combined together. Formally, let \\\(A\\\) and \\\(B\\\) be categories, a slash denotes \\\({A \cup B : A \cap B \neq \varnothing}\\\). For example: they're a bimbo/self-marketing genius.
 
 We may consider ourselves as each having a unique, private repertoire of categories (memories and thoughts)
 
@@ -71,9 +71,9 @@ _Sidenote: Hofstadter realized that meaning had a contextual dependence after he
 
 Often, meaningful sounding questions are in fact meaningless due to ill-defined terms
 
-When queried: _How many languages do you know?_ He answers, "I'm \(\pi\)lingual".
+When queried: _How many languages do you know?_ He answers, "I'm \\\(\pi\\\)lingual".
 
-\(\pi\)lingual not in the sense that his knowledge of language is transcendental. Instead, \(\pi\) is the result of summing of pieces of languages he knows into blurred fractions.
+\\\(\pi\\\)lingual not in the sense that his knowledge of language is transcendental. Instead, \\\(\pi\\\) is the result of summing of pieces of languages he knows into blurred fractions.
 
 Before the question is meaningful, the questions _What does it mean to know?_ let alone _What does it mean to know a language?_ must be addressed.
 

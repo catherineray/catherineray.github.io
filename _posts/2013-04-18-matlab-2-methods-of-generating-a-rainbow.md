@@ -20,7 +20,7 @@ topics:
 
 In my data visualization class, we had an assignment to create a “rainbow” (create and display 128 vertical stripes of color in one image, in RGB sequence). Something like this:
 
-[![](/wp-content/uploads/2013/04/rainbow.png)](/wp-content/uploads/2013/04/rainbow.png)
+[![](/images/wp-content/uploads/2013/04/rainbow.png)](/images/wp-content/uploads/2013/04/rainbow.png)
 
 _In Matlab, a colormap is an m-by-3 matrix of real numbers between 0.0 and 1.0. Each row is an RGB vector that defines one color. The [R,G,B] color attribute value for a dataset with attribute value ranging between 0 and 1._
 
@@ -32,7 +32,7 @@ colormap(jet(128))
 print -dpng 'rainbow.png'
 ```
 
-[![](/wp-content/uploads/2013/04/rainbow2.png)](/wp-content/uploads/2013/04/rainbow2.png)
+[![](/images/wp-content/uploads/2013/04/rainbow2.png)](/images/wp-content/uploads/2013/04/rainbow2.png)
 
 _The command `colormap(jet(128))` creates a rainbow colormap with 128 colors. Files in the color folder generate a number of colormaps, and each file (in this case, “jet”) accepts the colormap size as an argument._ While this solution is certainly concise and clear, it is not the solution the professor is looking for. It turns out that the professor wants the map to be generated algorithmically (instead of using a built-in file from the color folder).
 
@@ -58,7 +58,7 @@ colormap(map)
 print -dpng 'rainbow.png' 
 ```
 
-[![](/wp-content/uploads/2013/04/rainbow3.png)](/wp-content/uploads/2013/04/rainbow3.png)
+[![](/images/wp-content/uploads/2013/04/rainbow3.png)](/images/wp-content/uploads/2013/04/rainbow3.png)
 
 This creates a different rainbow and satisfies the professor’s algorithmic requirement.
 

@@ -20,17 +20,17 @@ topics:
 
 From the biomechanical view of stresses inside tissue: compression stress, shear stress, tensile stress, pressure, and friction act in concert to create tissue damage.
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-17-56-25.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-17-56-25.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-17-56-25.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-17-56-25.png)
 
 If the compression reduces the pressure in local capillaries to less than 32 torr for 1 to 2 hours without intermittent relief, the cells die from lack of oxygen and nutrition [3,4].
 
-[![](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.15.51-AM.png)](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.15.51-AM.png)
+[![](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.15.51-AM.png)](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.15.51-AM.png)
 
-[![](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.01-AM.png)](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.01-AM.png)
+[![](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.01-AM.png)](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.01-AM.png)
 
-[![](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.08-AM.png)](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.08-AM.png)
+[![](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.08-AM.png)](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.08-AM.png)
 
-[![](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.14-AM.png)](/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.14-AM.png)
+[![](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.14-AM.png)](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-10-at-11.16.14-AM.png)
 
 Pressure ulcers are grouped into 4 stages according to the extent of tissue injury:
 
@@ -45,7 +45,7 @@ Pressure ulcers are grouped into 4 stages according to the extent of tissue inju
 
 Stage I ulcers can develop in less than 1 hour in people who are at _high risk_. Pressure ulcers are especially prevalent in geriatric care.
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-12-35-52.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-12-35-52.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-12-35-52.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-12-35-52.png)
 
 #### [Medical Overview](http://emedicine.medscape.com/article/1293614-overview#a0104) of Anatomical Effects of Ulceration
 
@@ -63,11 +63,11 @@ Each unit, termed a _bear_, consists of a bar with two gears perpendicular to th
 
  _Animation courtesy of [Nicky Case](http://ncase.me/)._
 
-To not shift position drastically, there are 2 options for the relative phase of the bear \(n_i\) to its neighbor \(n_{i+1}\): \(\frac{\tau}{4}\) and \(\frac{\tau}{2}\).
+To not shift position drastically, there are 2 options for the relative phase of the bear \\\(n_i\\\) to its neighbor \\\(n_{i+1}\\\): \\\(\frac{\tau}{4}\\\) and \\\(\frac{\tau}{2}\\\).
 
-[![](/wp-content/uploads/2014/05/bear1.png)](/wp-content/uploads/2014/05/bear1.png)
+[![](/images/wp-content/uploads/2014/05/bear1.png)](/images/wp-content/uploads/2014/05/bear1.png)
 
-The \(\frac{\tau}{4}\)-offset design allows for a lower cost mechanism. The larger gear pitch allows for less individual bear units \(\rightarrow\) less moving parts. To maintain uniformity, we wish to use the same pitch circle on each bear unit (use the same sized gears in series); the energy loss between the first and last gear is made negligible by overspecing the gears. The sinusoidal system is then covered with at least 8cm thick cushioning of LRPu (low-resilience polyurethane) to further distribute the pressure exerted by the bars on the user.
+The \\\(\frac{\tau}{4}\\\)-offset design allows for a lower cost mechanism. The larger gear pitch allows for less individual bear units \\\(\rightarrow\\\) less moving parts. To maintain uniformity, we wish to use the same pitch circle on each bear unit (use the same sized gears in series); the energy loss between the first and last gear is made negligible by overspecing the gears. The sinusoidal system is then covered with at least 8cm thick cushioning of LRPu (low-resilience polyurethane) to further distribute the pressure exerted by the bars on the user.
 
 #### Elastomer-Pocket Fluidic || Pneumatic Design
 
@@ -77,23 +77,23 @@ My first design of the Elastomer-Pocket employs fluid distribution in an array o
 
 Each pocket includes a pipette protection layer having a rigid imprint of half of the volume of a vertically oriented double-sided pipette, which cradles the vertically oriented double-sided pipette, which is configured adjacent to a pipette protection layer having a rigid imprint of the other half of the volume of vertically oriented double sided pipette on a back side, a layer of cushioning, and a rigid imprint of half of a volume of a horizontally oriented double-sided pipette that holds horizontally oriented double sided pipette between itself and pipette protection layer with a rigid imprint of half of the volume of the horizontally oriented double sided pipette.
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-18-28.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-18-28.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-18-28.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-18-28.png)
 
 An inflatable soft hydrophobic polymer container encompasses the resulting cushion mechanism, with a hermetic seal between itself and the next cell in an array and two openings for vertically oriented and horizontally oriented double-sided pipettes to connect a first cell to a second, adjacent cell.
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-50.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-50.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-50.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-50.png)
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-30.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-30.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-30.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-30.png)
 
 Double-sided pipettes are composed of hard tubing with a gap fixedly connected to a pipette filler, a soft polymer pipette filler having a surface covered by a thermally sensitive wire that contracts when electrically stimulated. The pipette filler is fixedly connected to a direction switch that switches direction of a double-sided pipette’s fluid distribution. Direction switches are controlled by a control station on the arm of the operant’s wheelchair and activated by selecting cells to inflate and/or to deflate.
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-43.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-43.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-43.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-18-06-43.png)
 
 **Actuation of Elastomer** Regarding the chemical composition of elastomer pocket material, PRIIIME implements soft robotic methods and rheology (the science of the deformation and flow of matter) into applications of pressure sore relief.
 
 The choice of materials, coupled with the design of the channels, determines the response of the pressure sore relief device to applied pressure. The pressure necessary to achieve a particular amplitude of actuation scales with the stiffness of the materials.
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-04-07-20-54-06.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-04-07-20-54-06.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-04-07-20-54-06.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-04-07-20-54-06.png)
 
 Pneumatically-driven actuators [Ilievski: a, b, & c] are among the most highly developed soft actuators, and have existed for more than 50 years; they consist of a bladder covered in a shell of braided, strong, inextensible fibers. These actuators can be fast, and have a length-load dependence similar to that of muscle [Ilievski] but possess one actuation mode—contraction and extension when pressurization changes. Unfortunately, the volume of air required for supporting high loads causes high acoustic intensity which is commonly reported as unpleasant to the operator. 
 
@@ -116,17 +116,17 @@ Because it is so soft, Ecoflex, if unsupported, will bend under its own weight (
 
 [Deprecated] Dual layered, with an outer harder shell and an inner pocket. The shells were a PDMS-Ecoflex blend protecting an inner pocket of soft polyurethane, which is viscoelastically optimal. Unfortunately, this is not cost effective, and too yielding at high loads.
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-49-13.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-49-13.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-49-13.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-49-13.png)
 
 _The cost-effective alternative [3] is composing the pockets with 25 Shore A EPDM (ethylene propylene diene monomer (M-class)) rubber, which results in a harder, cheaper, leak-resistant, and high-load bearing pocket. To lighten the system’s weight, we can switch from hydraulic actuation to pneumatic actuation comprising of a quiet, closed loop with a high volume air blower and a lower volume air pump._
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-46-52.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-46-52.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-46-52.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-08-11-46-52.png)
 
 To simplify the control system, we introduce AB timer logic [4]: this provides 2 modes for pressure relief and 1 floating mode (resulting in the **Trinary State Pneumatic Design):** The desired AB-manifold is manufactured as a bubblesheet with channels molded into each “bubble” [0]. The holes at the end of each channel are connected to the fill/dump valve.
 
 Fortunately, forming channels in silicones and other elastomers is a well understood, widely used technique in soft lithography and microfluidics.
 
-[![](/wp-content/uploads/2014/05/PnuematicAB.png)](/wp-content/uploads/2014/05/PnuematicAB.png)
+[![](/images/wp-content/uploads/2014/05/PnuematicAB.png)](/images/wp-content/uploads/2014/05/PnuematicAB.png)
 
 In practice, we can surround the pnuematic bladders with hard foam frame around the edges of the cushion to support and stabilize the patient during transfer between surfaces.
 
@@ -140,7 +140,7 @@ It is important to _never_ rub or massage any places where the skin has reddened
 
 To avoid harming delicate skin, we wish to stimulate circulation by gently re-distributing pressure. We can modify the commonly available double-bar massage chair back by adding a roller and double sided pressure distributing overlay.
 
-[![](/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-6.07.05-PM.png)](/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-6.07.05-PM.png)
+[![](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-6.07.05-PM.png)](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-6.07.05-PM.png)
 
 “The roller chair has a dynamic mechanism and a sliding unit. The sliding unit is movable between two tracks: each track having a first lateral plate and a second lateral plate. At least one of wheel units installed at a periphery of the sliding unit. Each wheel unit includes a first wheel, a second wheel and one elastic element. The elastic element resists one wheel outwards so that the first wheel and second wheel resist against inner sides of the two lateral plates of one respective track. Thus, since the sliding unit has wheels which are tightly resist against the lateral plates of moving tracks, no noise is generated as the dynamic mechanism of the roller chair moves.”
 
@@ -150,7 +150,7 @@ Note that the design of the double roller mechanical metal frame back (above) is
 
 The rollers press forward, compressing the air distributed throughout the hollow elastomer toroid to the front half of the chair to re-distribute pressure.
 
-[![](/wp-content/uploads/2014/05/image-2.png)](/wp-content/uploads/2014/05/image-2.png)
+[![](/images/wp-content/uploads/2014/05/image-2.png)](/images/wp-content/uploads/2014/05/image-2.png)
 
 Essentially, we have the pnuematic system (using EPDMr) without air compressors, valves, pumps, etc.
 
@@ -160,7 +160,7 @@ The rollers press forward to cause a deformation in the gel & foam cushioning of
 
 #### Band Design
 
-[![](/wp-content/uploads/2014/05/Diagram-1.png)](/wp-content/uploads/2014/05/Diagram-1.png)
+[![](/images/wp-content/uploads/2014/05/Diagram-1.png)](/images/wp-content/uploads/2014/05/Diagram-1.png)
 
 The band design is the lowest cost design. The basic principle of the device is adjusting the gel&foam padding from a natural state of contouring to a user’s body.
 
@@ -174,7 +174,7 @@ We wish to eliminate the deformation of two contiguous internal parts the patien
 
 If the blanket-blanket interface COF is lower than that of the other two interfaces, the two blankets will slide across one another before there is movement elsewhere, reducing shear.
 
-[![](/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-4.30.16-PM.png)](/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-4.30.16-PM.png)
+[![](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-4.30.16-PM.png)](/images/wp-content/uploads/2014/05/Screen-shot-2014-05-09-at-4.30.16-PM.png)
 
 For further shear reduction, we wish to wick moisture away and then absorb: microfiber top, cotton bottom.
 

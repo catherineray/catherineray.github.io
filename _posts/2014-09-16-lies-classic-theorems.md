@@ -21,47 +21,47 @@ We commonly study smooth manifolds, e.g. [Lie groups](/studying-symmetry/), by s
 
 #### The Theorems of Lie
 
-The assignment Lie : \(G \to \)Lie\((G)\) is [functorial](/categorical-language/). The theorems of Lie in their modern incarnation emerge out of the attempt to see how close this functor is to being an equivalence of categories. Note that we are working in [Diff](http://ncatlab.org/nlab/show/Diff).
+The assignment Lie : \\\(G \to \\\)Lie\\\((G)\\\) is [functorial](/categorical-language/). The theorems of Lie in their modern incarnation emerge out of the attempt to see how close this functor is to being an equivalence of categories. Note that we are working in [Diff](http://ncatlab.org/nlab/show/Diff).
 
 Lie proved that the category of local real Lie groups is equivalent to the category of finite-dimensional real Lie algebras.
 
-[![Screenshot from 2014-09-15 20:46:36](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204636.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204636.png)
+[![Screenshot from 2014-09-15 20:46:36](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204636.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204636.png)
 
 This equivalence was extended to global cases by Cartan: the category of real Lie algebras is equivalent to the category of simply-connected Lie Groups.
 
-[![Screenshot from 2014-09-15 20:45:39](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204539.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204539.png)
+[![Screenshot from 2014-09-15 20:45:39](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204539.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-204539.png)
 
-Note: We cannot drop the condition of being simply connected for \(G\), as, for example, \(G = S^1\) and \(G = \mathbb{R}\) have the same Lie algebras but are not isomorphic.
+Note: We cannot drop the condition of being simply connected for \\\(G\\\), as, for example, \\\(G = S^1\\\) and \\\(G = \mathbb{R}\\\) have the same Lie algebras but are not isomorphic.
 
-#### Lie I: Groups \(\to\) Algebras
+#### Lie I: Groups \\\(\to\\\) Algebras
 
-The assignment \(G \mapsto\) Lie\((G)\) induces a functor Lie: LieGrp \(\to\) LieAlg and for each morphism \(g:G \to H\) of Lie groups the following diagram commutes:
+The assignment \\\(G \mapsto\\\) Lie\\\((G)\\\) induces a functor Lie: LieGrp \\\(\to\\\) LieAlg and for each morphism \\\(g:G \to H\\\) of Lie groups the following diagram commutes:
 
-[![Screenshot from 2014-09-15 23:22:51](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-232251.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-232251.png)
+[![Screenshot from 2014-09-15 23:22:51](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-232251.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-232251.png)
 
-The Lie algebra homomorphism Lie\((g)\) is equivalent to the first order infinitesimal of the group homomorphism.
+The Lie algebra homomorphism Lie\\\((g)\\\) is equivalent to the first order infinitesimal of the group homomorphism.
 
-#### Lie II: Do You Even Lift, Lie? Alegbras \(\to\) Groups
+#### Lie II: Do You Even Lift, Lie? Alegbras \\\(\to\\\) Groups
 
-Let \(G\) and \(H\) be Lie groups with Lie algebras Lie\((G)\) and Lie\((H)\), with a Lie algebra homomorphism \(f:\)Lie\((G) \to\)Lie\((H)\).
+Let \\\(G\\\) and \\\(H\\\) be Lie groups with Lie algebras Lie\\\((G)\\\) and Lie\\\((H)\\\), with a Lie algebra homomorphism \\\(f:\\\)Lie\\\((G) \to\\\)Lie\\\((H)\\\).
 
-[![Screenshot from 2014-09-15 17:30:07](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-173007.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-173007.png)
+[![Screenshot from 2014-09-15 17:30:07](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-173007.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-173007.png)
 
-For notational convenience, we denote Lie\((G)\) as the lowercase gothic letter \(\mathfrak{g}\).
+For notational convenience, we denote Lie\\\((G)\\\) as the lowercase gothic letter \\\(\mathfrak{g}\\\).
 
-[![Screenshot from 2014-09-16 17:29:57](/wp-content/uploads/2014/09/Screenshot-from-2014-09-16-172957.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-16-172957.png)
+[![Screenshot from 2014-09-16 17:29:57](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-16-172957.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-16-172957.png)
 
-_Lie II_ states that there exists a unique morphism \(F\) lifting \(f\) [![Screenshot from 2014-09-15 17:41:44](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-174144.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-174144.png) such that \(f=\)Lie\((F)\).
+_Lie II_ states that there exists a unique morphism \\\(F\\\) lifting \\\(f\\\) [![Screenshot from 2014-09-15 17:41:44](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-174144.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-174144.png) such that \\\(f=\\\)Lie\\\((F)\\\).
 
-[![Screenshot from 2014-09-15 17:39:32](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-173932.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-174144.png)
+[![Screenshot from 2014-09-15 17:39:32](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-173932.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-174144.png)
 
-#### Lie-Cartan III: Groups \(\leftrightarrow\) Algebras
+#### Lie-Cartan III: Groups \\\(\leftrightarrow\\\) Algebras
 
 The functor Lie cannot be inverted because locally isomorphic Lie groups have isomorphic Lie algebras. However, we _can_ invert Lie on the _subcategory of simply connected Lie groups_. The essential surjectivity of this functor is the third theorem.
 
-For every finite-dimensional real Lie algebra \(\mathfrak{g}\) there exists a Lie group \(G\) with Lie algebra \(\mathfrak{g}\).
+For every finite-dimensional real Lie algebra \\\(\mathfrak{g}\\\) there exists a Lie group \\\(G\\\) with Lie algebra \\\(\mathfrak{g}\\\).
 
-[![Screenshot from 2014-09-15 20:02:05](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-200205.png)](/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-200205.png) Note that \(G\) is not necessarily unique.
+[![Screenshot from 2014-09-15 20:02:05](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-200205.png)](/images/wp-content/uploads/2014/09/Screenshot-from-2014-09-15-200205.png) Note that \\\(G\\\) is not necessarily unique.
 
 #### Sources
 

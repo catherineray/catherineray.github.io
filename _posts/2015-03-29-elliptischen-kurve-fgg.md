@@ -29,7 +29,7 @@ z.B. Von Lie-Gruppe (Gruppe internen in die Kategorie der glatten Mannigfaltigke
 2. Wir ein Produkt Morphismus definieren (Lie-Gruppe).
 3. Wir leiten eine infinitesimale Gruppe (Lie-Algebra).
 
-Wir können eine formelle Gruppengesetz der Dimension \(n\) konstruieren (aus jeder algebraischen Gruppe oder Lie-Gruppe der Dimension \(n\)) nehmen Koordinaten am Identität; formalen Potenzreihenentwicklung der Produktkarte schreiben. Die Konstruktion eine Lie-Algebra ist genau dieser Prozess nach dem ersten unendlich abgeschnitten.
+Wir können eine formelle Gruppengesetz der Dimension \\\(n\\\) konstruieren (aus jeder algebraischen Gruppe oder Lie-Gruppe der Dimension \\\(n\\\)) nehmen Koordinaten am Identität; formalen Potenzreihenentwicklung der Produktkarte schreiben. Die Konstruktion eine Lie-Algebra ist genau dieser Prozess nach dem ersten unendlich abgeschnitten.
 
 Wir konstrueiren unsere formalen Gruppengesetzen ebenso. **Die Kurve an der “0” sektion formelle vervollständigen!** Meine erster Interpretation der Beduetung des Wendung “die Kurve an der “0” sektion formelle vervollständigen” war “Taylorreihe der Kurve an der Identität entwicklungen.”
 
@@ -41,17 +41,17 @@ In diesem Beitrag, werden wir through ein weiteres Beispiel: aus dem Land der Gr
 
 Warum tun wir formelle Vervollständigung kümmern? Wir sind auf eine algebraischen Version der Lie-Algebra suchen!
 
-In differenzierbar Lie-Theorie, die Baker-Campbell-Hausdorff-Theorem beschreibt die Gruppengesetz in einem kleinen Viertel der Identität. Aber, die Baker-Campbell-Hausdorff-Theorem beruht auf die Exponentiellekarte. Auch in eine Potenzriehe, die Exponentiellekarte macht keinen Sinn in Charakteristik \(p\)! Aaron Mazel-Gee schreibe [eine groß Papier derüber](https://etale.site/xkcd/dieudonne-modules.pdf).
+In differenzierbar Lie-Theorie, die Baker-Campbell-Hausdorff-Theorem beschreibt die Gruppengesetz in einem kleinen Viertel der Identität. Aber, die Baker-Campbell-Hausdorff-Theorem beruht auf die Exponentiellekarte. Auch in eine Potenzriehe, die Exponentiellekarte macht keinen Sinn in Charakteristik \\\(p\\\)! Aaron Mazel-Gee schreibe [eine groß Papier derüber](https://etale.site/xkcd/dieudonne-modules.pdf).
 
-Dein rechtfertig unsere edlen Streben: beschreiben die Gruppengesetz in einem kleinen Viertel an der Identität die Kurve! [Bertrachten wir der elliptischen Kurve](/spectrum-of-ring/) \(E\) über \(\text{Spec }A\).
+Dein rechtfertig unsere edlen Streben: beschreiben die Gruppengesetz in einem kleinen Viertel an der Identität die Kurve! [Bertrachten wir der elliptischen Kurve](/spectrum-of-ring/) \\\(E\\\) über \\\(\text{Spec }A\\\).
 
-\(\text{Spec }A[t]/t^2\) ist die erste infinitesimale nachbarschaft des \(\text{Spec }A\).
+\\\(\text{Spec }A[t]/t^2\\\) ist die erste infinitesimale nachbarschaft des \\\(\text{Spec }A\\\).
 
-![Screen Shot 2015-03-22 at 2.14.29 PM](/wp-content/uploads/2015/03/Screen-Shot-2015-03-22-at-2.14.29-PM.png)
+![Screen Shot 2015-03-22 at 2.14.29 PM](/images/wp-content/uploads/2015/03/Screen-Shot-2015-03-22-at-2.14.29-PM.png)
 
-Wir brauchen eine größere infinitesimale Nachbarsaft für die zweite Ableitung… und \(\text{Spec }A[t]/t^3\) erzählt von die zweite Ableitung! (_Darüber nachdenken; wir trunkatten alles der Informationen nach der zweite Ableitung in das Taylorriehe._)
+Wir brauchen eine größere infinitesimale Nachbarsaft für die zweite Ableitung… und \\\(\text{Spec }A[t]/t^3\\\) erzählt von die zweite Ableitung! (_Darüber nachdenken; wir trunkatten alles der Informationen nach der zweite Ableitung in das Taylorriehe._)
 
-Im Fall von die formalen Gruppengezetsen, aufschrieben wollen wir die gesamte Riehe (alles von die Infinitesimalen), also wir nehmen die colimit von \(\text{Spec }A[t]/t^n\).
+Im Fall von die formalen Gruppengezetsen, aufschrieben wollen wir die gesamte Riehe (alles von die Infinitesimalen), also wir nehmen die colimit von \\\(\text{Spec }A[t]/t^n\\\).
 
 Warum?! Warum tun wir diese Definition der formallen Schemata kümmern? Wir sind auf einer algebraischen Version von “röhrenförmig Nachbarschaften” suchen — wenn man bedenkt den formellen Vervollständigungen eines Untervarietät in der Umgebungs Vielfalt.
 

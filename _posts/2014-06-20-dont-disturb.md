@@ -15,4 +15,4 @@ topics:
 
 [Joule](https://www.instagram.com/gigaj0ule/) and I built a sign for my desk.
 
-[![Screenshot from 2014-06-20 16:53:27](/wp-content/uploads/2014/06/Screenshot-from-2014-06-20-165327.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-20-165327.png)
+[![Screenshot from 2014-06-20 16:53:27](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-20-165327.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-20-165327.png)

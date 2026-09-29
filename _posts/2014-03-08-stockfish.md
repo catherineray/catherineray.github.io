@@ -71,7 +71,7 @@ Step 1. Initialize node
 
 Step 2. Check for aborted search and immediate draw. Enforce node limit here. (This only works with 1 search thread, as of Stockfish 2.3.1.)
 
-Step 3. Mate distance pruning. Even if we mate at the next move our score would be at best mate_in (\(\text{ss}\rightarrow\text{ply}+1\)), but if alpha is already bigger because a shorter mate was found upward in the tree then there is no need to search further, we will never beat current alpha. Same logic but with reversed signs applies also in the opposite condition of being mated instead of giving mate, in this case return a fail-high score.
+Step 3. Mate distance pruning. Even if we mate at the next move our score would be at best mate_in (\\\(\text{ss}\rightarrow\text{ply}+1\\\)), but if alpha is already bigger because a shorter mate was found upward in the tree then there is no need to search further, we will never beat current alpha. Same logic but with reversed signs applies also in the opposite condition of being mated instead of giving mate, in this case return a fail-high score.
 
 Step 4. Transposition table lookup. We don’t want the score of a partial search to overwrite a previous full search. We use a different position key in case of an excluded move.
 
@@ -168,7 +168,7 @@ print score
 
 This schema shows the input with the current position, and ends with the next move, in order to avoid over-powering the simple nature of Stockfish by showing both method names and method parameters, I have created a representation of the overall use of databases in Stockfish.
 
-![](/wp-content/uploads/2014/03/chess.png)
+![](/images/wp-content/uploads/2014/03/chess.png)
 
 The relationship of principle structures in the main database (governed by search.cpp)
 
@@ -202,7 +202,7 @@ Query 9) Are bishops occupying major diagonals?
 
 Query 10) What is the material difference between players?
 
-After these 10 questions have been answered, the chess evaluator can score a position, and feed this score into the chess tree to optimize the \(\alpha-\beta\) pruning that follows.
+After these 10 questions have been answered, the chess evaluator can score a position, and feed this score into the chess tree to optimize the \\\(\alpha-\beta\\\) pruning that follows.
 
 **Algebraic Chess Notation**
 
@@ -220,7 +220,7 @@ After these 10 questions have been answered, the chess evaluator can score a pos
 | e.p. | en passant capture (non-SAN), a note that a pawn was taken by another pawn passing it. When a pawns first move is a two space move (from 7 to 5 for black or 2 to 4 for white) it can be captured by moving behind it to the 6th rank (white taking black) or 3rd rank (black taking white). |
 | ?, ??, !, !! | editorial comments, weak, very weak, strong, very strong |
 
-![](/wp-content/uploads/2014/03/algnotation.png)
+![](/images/wp-content/uploads/2014/03/algnotation.png)
 
 Coordinates in Algebraic Chess Notation
 

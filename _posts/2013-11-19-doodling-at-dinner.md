@@ -14,7 +14,7 @@ topics:
   - "Drawing, painting & comics"
 ---
 
-[![](/wp-content/uploads/2013/11/drawing-1.jpg)](/wp-content/uploads/2013/11/drawing-1.jpg)
+[![](/images/wp-content/uploads/2013/11/drawing-1.jpg)](/images/wp-content/uploads/2013/11/drawing-1.jpg)
 
 While at dinner and conversing with friends, I took out my notebook and began to doodle (~2 hours).
 

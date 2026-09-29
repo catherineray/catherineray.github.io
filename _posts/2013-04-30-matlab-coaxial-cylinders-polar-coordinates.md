@@ -21,13 +21,13 @@ topics:
 
 Let’s say we want to create an aesthetically pleasing visualization of 2 coaxial cylinders.
 
-[![](/wp-content/uploads/2013/04/screenshot-from-2013-04-30-15-08-52.png)](/wp-content/uploads/2013/04/screenshot-from-2013-04-30-15-08-52.png)
+[![](/images/wp-content/uploads/2013/04/screenshot-from-2013-04-30-15-08-52.png)](/images/wp-content/uploads/2013/04/screenshot-from-2013-04-30-15-08-52.png)
 
 To do this, we’ll be adjusting the lighting, proportions, and transparency of the figure.
 
 The code to create this figure utilizes the coordinate transformation from Cartesian to 3D-Polar coordinates. Recall that the transformation between coordinate systems is as follows.
 
-[![](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-15-16-29.png)](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-15-16-29.png)
+[![](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-15-16-29.png)](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-15-16-29.png)
 
 Instead of using Matlab’s built in `cart2pol` method, we will manually convert each Cartesian (x, y, z) coordinate to it’s equivalent polar coordinate (r, phi, z) .
 

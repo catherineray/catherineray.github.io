@@ -29,7 +29,7 @@ Finally, I realized that **considering self-betterment an ongoing project is a p
 
 The board is broken up into (annotated below) **0. Self improvement & documentation** **1. Development of math & physics intuition** **2. Low priority** **3. Today (indexed 0,1,2,3 by order of planned completion — indexes adjusted throughout day)** **4. Done**
 
-[![](/wp-content/uploads/2014/05/Screenshot-from-2014-05-30-10-08-33.png)](/wp-content/uploads/2014/05/Screenshot-from-2014-05-30-10-08-33.png)
+[![](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-30-10-08-33.png)](/images/wp-content/uploads/2014/05/Screenshot-from-2014-05-30-10-08-33.png)
 
 If I’m not at home, I email myself todos to add to the board.
 

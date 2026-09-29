@@ -71,7 +71,7 @@ The problem with motorized wheelchairs is that they are large, clumsy and diffic
 
 #### Obstacle Avoidance
 
-[![Screenshot from 2014-06-21 18:31:32](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-183132.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-183132.png)
+[![Screenshot from 2014-06-21 18:31:32](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-183132.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-183132.png)
 
 People who are visually and cognitively impaired are denied powered wheelchairs due to safety concerns. Implementing a simple obstacle avoidance module grants the mobility of powered wheelchairs to those who need assistance. In a world where we optimize our lives through “smart” technology, a “smart wheelchair” is the next step. **Implementing basic obstacle avoidance techniques (using techniques well-established in the field of autonomous robotics) to remove constraints on the occupant’s state, and increasing safety by decreasing human error.**
 
@@ -109,13 +109,13 @@ Having the drive wheels in mid-position makes turning natural and intuitive. [Re
 
 ### Mecanum Wheel [4-Wheel Drive]
 
-[![Screenshot from 2014-06-21 19:26:23](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-192623.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-192623.png)
+[![Screenshot from 2014-06-21 19:26:23](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-192623.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-192623.png)
 
 [Image Source](http://www.kornylak.com/wheels/mecanumwheel_6inch.html)
 
-The split roller performs better on uneven surfaces since each side of the roller pair is able to spin independently of the other. Other advantages: the machining process is more complex when fabricating from a single piece of aluminum and also that it would have required twice the number of rollers as the single-roller design. The wheels also weigh less and provide added versatility, and the wheel requires less power [3]. The rollers are set orthogonal to the wheel hub and because opposing corners of the wheelchair have rollers set in the opposite orthogonal orientation, the wheelchair wheels must be driven independently to move in any direction. Rollers are attached to each side of a spoke or fin that protrudes from the center of the hub at a \(\frac{\Tau}{8}\) rad angle. This makes the drive system capable of full holonomic movement. Holonomicity refers to the relationship between the controllable and total degrees of freedom of the wheelchair. This exploded view [3] shows how the flange bearing and aluminum shaft and the wheelroller fit unto the wheelhub, which is angled at \(\frac{\Tau}{8}\) rads and accommodates a roller on each end.
+The split roller performs better on uneven surfaces since each side of the roller pair is able to spin independently of the other. Other advantages: the machining process is more complex when fabricating from a single piece of aluminum and also that it would have required twice the number of rollers as the single-roller design. The wheels also weigh less and provide added versatility, and the wheel requires less power [3]. The rollers are set orthogonal to the wheel hub and because opposing corners of the wheelchair have rollers set in the opposite orthogonal orientation, the wheelchair wheels must be driven independently to move in any direction. Rollers are attached to each side of a spoke or fin that protrudes from the center of the hub at a \\\(\frac{\Tau}{8}\\\) rad angle. This makes the drive system capable of full holonomic movement. Holonomicity refers to the relationship between the controllable and total degrees of freedom of the wheelchair. This exploded view [3] shows how the flange bearing and aluminum shaft and the wheelroller fit unto the wheelhub, which is angled at \\\(\frac{\Tau}{8}\\\) rads and accommodates a roller on each end.
 
-[![Screenshot from 2014-06-21 19:30:17](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193017.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193017.png)
+[![Screenshot from 2014-06-21 19:30:17](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193017.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193017.png)
 
 [Image Source](http://www.designworldonline.com/a-new-way-to-roll/)
 
@@ -123,7 +123,7 @@ A 10-in. wheel with nine spokes provides the narrowest possible profile and incr
 
 #### Seat Choice (Frame & Cushion Design)
 
-The frame design of wheelchair seats requires plastic bushings (iglide GLW || iglide G300) for seat height adjustment, backrest and headrest mechanisms. The frame must be lightweight, low profile, low noise, cost efficient, and have high static loads possible. When we sit on a cushion, a number of interacting factors determine whether it is comfortable, functional, and clinically safe. Many of these factors are interrelated; some factors are attributed to properties of the cushion, and others due to the characteristics and needs of the user. [![Screenshot from 2014-06-21 19:35:39](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193539.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193539.png) Factors that affect _comfort, functional and clinically safe_ include:
+The frame design of wheelchair seats requires plastic bushings (iglide GLW || iglide G300) for seat height adjustment, backrest and headrest mechanisms. The frame must be lightweight, low profile, low noise, cost efficient, and have high static loads possible. When we sit on a cushion, a number of interacting factors determine whether it is comfortable, functional, and clinically safe. Many of these factors are interrelated; some factors are attributed to properties of the cushion, and others due to the characteristics and needs of the user. [![Screenshot from 2014-06-21 19:35:39](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193539.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-193539.png) Factors that affect _comfort, functional and clinically safe_ include:
 
 - poor distribution of stresses in soft tissues
 - moisture accumulation
@@ -145,7 +145,7 @@ Rather than lying directly on a hip, lie at an angle with cushions supporting th
 
 #### Triple-phase Wheelchair Mechanism Design
 
-[![Screenshot from 2014-06-21 19:46:05](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-194605.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-194605.png) A wheelchair with triple-function of sitting, standing, and lying is essential yet currently non-existent in the market. The triple-phase mechanism design of PRIIIME allows for a **gentle transition between sitting and standing,** and the **transformation to a bed at the press of a button.** Traditionally, a wheelchair is a wheeled mobility device in which the user remains seated. This is propelled either manually (turning the wheels by hand or being pushed by an outside party) or via various automated systems, most commonly the fully-powered wheelchair. Manual with electric assist wheelchairs (similar in design to electric bicycles – using DC brushless hub motors around 1kW) are currently not cost effective, but have been introduced as concept designs. Dual-use mechanism designs are gaining popularity, but have not been accepted by regular or full-time wheelchair users due to a lack of cost-effectiveness and a non-comfortable design. These dual-use mechanism consist of either dual-function [lying-sitting || sitting-standing}, where PRIIIME ventures to be triple-function lying-sitting-standing to accommodate the essential mobility needs of daily users. A crucial aspect of the design of the triple-phase wheelchair is the rear wheels. The rear wheels are movable, so the entire centroid can move between the rear and front wheels of the chair. Note: linkage mechanism has been deprecated for a simple 6-wheel fixed-base mechanism.
+[![Screenshot from 2014-06-21 19:46:05](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-194605.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-194605.png) A wheelchair with triple-function of sitting, standing, and lying is essential yet currently non-existent in the market. The triple-phase mechanism design of PRIIIME allows for a **gentle transition between sitting and standing,** and the **transformation to a bed at the press of a button.** Traditionally, a wheelchair is a wheeled mobility device in which the user remains seated. This is propelled either manually (turning the wheels by hand or being pushed by an outside party) or via various automated systems, most commonly the fully-powered wheelchair. Manual with electric assist wheelchairs (similar in design to electric bicycles – using DC brushless hub motors around 1kW) are currently not cost effective, but have been introduced as concept designs. Dual-use mechanism designs are gaining popularity, but have not been accepted by regular or full-time wheelchair users due to a lack of cost-effectiveness and a non-comfortable design. These dual-use mechanism consist of either dual-function [lying-sitting || sitting-standing}, where PRIIIME ventures to be triple-function lying-sitting-standing to accommodate the essential mobility needs of daily users. A crucial aspect of the design of the triple-phase wheelchair is the rear wheels. The rear wheels are movable, so the entire centroid can move between the rear and front wheels of the chair. Note: linkage mechanism has been deprecated for a simple 6-wheel fixed-base mechanism.
 
 A wheelchair with triple-function of sitting, standing, and lying is essential yet currently non-existent in the market. The triple-phase mechanism design of PRIIIME allows for a **gentle transition between sitting and standing**, and the **transformation to a bed at the press of a button**. Traditionally, a wheelchair is a wheeled mobility device in which the user remains seated. This is propelled either manually (turning the wheels by hand or being pushed by an outside party) or via various automated systems, most commonly the fully-powered wheelchair. Manual with electric assist wheelchairs (similar in design to electric bicycles - using DC brushless hub motors around 1kW) are currently not cost effective, but have been introduced as concept designs. Dual-use mechanism designs are gaining popularity, but have not been accepted by regular or full-time wheelchair users due to a lack of cost-effectiveness and a non-comfortable design. These dual-use mechanism consist of either dual-function [lying-sitting || sitting-standing}, where PRIIIME ventures to be triple-function lying-sitting-standing to accommodate the essential mobility needs of daily users. A crucial aspect of the design of the triple-phase wheelchair is the rear wheels. The rear wheels are movable, so the entire centroid can move between the rear and front wheels of the chair. Note: linkage mechanism has been deprecated for a simple 6-wheel fixed-base mechanism.
 
@@ -155,7 +155,7 @@ The control mechanism is the core to the research and design of a multi-agent sy
 
 ### Power Module
 
-The motor is selected based on the rate power as given by \\(P_{rate}\frac{f_rMgv}{2}\\) where \(M\) is the total mass of the wheelchair and the occupant, \(f_r\) is the coefficient of rolling friction and \(v\) is the speed of the wheelchair.
+The motor is selected based on the rate power as given by \\(P_{rate}\frac{f_rMgv}{2}\\) where \\\(M\\\) is the total mass of the wheelchair and the occupant, \\\(f_r\\\) is the coefficient of rolling friction and \\\(v\\\) is the speed of the wheelchair.
 
 ### Area of Concern: Transmission System
 
@@ -183,7 +183,7 @@ Automated Hermetically-sealed Plastic Waste Containment design (deprecated) Afte
 
 #### Stair Climbing
 
-(deprecated -- Class 2 (see FDA approval)) Stairclimbing overcomplicates design with needed safegaurds => not cost-effective. My favorite design, created by Lakshmanprasad M and Abdul Basheth: [![Screenshot from 2014-06-21 20:29:59](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-202959.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-202959.png)
+(deprecated -- Class 2 (see FDA approval)) Stairclimbing overcomplicates design with needed safegaurds => not cost-effective. My favorite design, created by Lakshmanprasad M and Abdul Basheth: [![Screenshot from 2014-06-21 20:29:59](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-202959.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-202959.png)
 
 #### **Advancing to Consumer Use**
 
@@ -228,7 +228,7 @@ Veteran Affairs Rehabilitation R&D grant Wheelchairfoundation.org FIRST Kickstar
 
 #### Research Plans: Todo
 
-[![Screenshot from 2014-06-21 20:40:29](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-204029.png)](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-204029.png)![Screenshot from 2014-06-21 20:40:50](/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-204050.png)
+[![Screenshot from 2014-06-21 20:40:29](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-204029.png)](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-204029.png)![Screenshot from 2014-06-21 20:40:50](/images/wp-content/uploads/2014/06/Screenshot-from-2014-06-21-204050.png)
 
 #### Patents [Prior Art]
 

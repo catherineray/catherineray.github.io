@@ -98,4 +98,4 @@ Although possible to keep all of your project plans and todos in mind, a purely 
 
 ### 17. If you don’t immediately find your passion, fear not.
 
-I switched my major from: Philosophy/Physics \(\rightarrow\) Psychology/Studio Art \(\rightarrow\) Anthropology/Studio Art \(\rightarrow\) Math \(\rightarrow\) Math/Computer Science \(\rightarrow\) Math/Physics \(\rightarrow\) Electrical Engineering \(\rightarrow\) Computational Physics. Playing in these disciplines I’ve discovered that what makes me happy is implementing my passion for STEM to enable the disabled. I wonder what you will discover!
+I switched my major from: Philosophy/Physics \\\(\rightarrow\\\) Psychology/Studio Art \\\(\rightarrow\\\) Anthropology/Studio Art \\\(\rightarrow\\\) Math \\\(\rightarrow\\\) Math/Computer Science \\\(\rightarrow\\\) Math/Physics \\\(\rightarrow\\\) Electrical Engineering \\\(\rightarrow\\\) Computational Physics. Playing in these disciplines I’ve discovered that what makes me happy is implementing my passion for STEM to enable the disabled. I wonder what you will discover!

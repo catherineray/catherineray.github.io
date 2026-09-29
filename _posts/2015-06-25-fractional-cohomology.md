@@ -79,7 +79,7 @@ $$D^{1/2} e^x = 1/\sqrt{\pi} \frac{\partial}{\partial x} \int \frac{f(x)}{(x-t)^
 
 Hark! It is so! \\(D^{1/2} e^x = e^x\\)
 
-[![Bildschirmfoto 2015-06-24 um 8.22.56 nachm.](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.22.56-nachm..png)](/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.22.56-nachm..png)
+[![Bildschirmfoto 2015-06-24 um 8.22.56 nachm.](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.22.56-nachm..png)](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.22.56-nachm..png)
 
 Does this give us a reasonable notion of the “1/2th cohomology group”?
 
@@ -93,7 +93,7 @@ First, the integral \\(\int f(t)/(x-t)^{1/2} dt\\)
 
 Now let’s take the derivative wrt x:
 
-[![Bildschirmfoto 2015-06-24 um 8.57.56 nachm.](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.57.56-nachm..png)](/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.57.56-nachm..png)
+[![Bildschirmfoto 2015-06-24 um 8.57.56 nachm.](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.57.56-nachm..png)](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.57.56-nachm..png)
 
 [![Bildschirmfoto 2015-06-24 um 8.58.11 nachm.](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.58.11-nachm..png)](/images/wp-content/uploads/2015/06/Bildschirmfoto-2015-06-24-um-8.58.11-nachm..png)
 

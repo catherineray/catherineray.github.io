@@ -26,7 +26,7 @@ The text provided 4 versions of an algorithm and **claimed that each new version
 
 These algorithms **take some number n and return a list of all prime numbers up to and including n**. For example, if n = 13, this algorithm returns [2,3,5,7,11,13].
 
-I was skeptical of their claims \(\Rightarrow\) I took the pseudocode and converted it into functional Python, then wrote a timing function: this tests each algorithm by letting n = 2^6 to 2^20 and repeating each calculation 1000 times (in order to find the average runtime).
+I was skeptical of their claims \\\(\Rightarrow\\\) I took the pseudocode and converted it into functional Python, then wrote a timing function: this tests each algorithm by letting n = 2^6 to 2^20 and repeating each calculation 1000 times (in order to find the average runtime).
 
 I had to wrestle with Python in order to stop it from rounding off the calculated runtimes (treating runtime as a float), which lead to an interesting adventure into the time module man page.
 

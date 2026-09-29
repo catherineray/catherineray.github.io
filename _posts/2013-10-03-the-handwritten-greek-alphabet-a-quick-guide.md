@@ -17,4 +17,4 @@ Early on in their endeavors, most mathematicians and physicists teach themselves
 
 Below is a quick guide to how I handwrite the Greek alphabet. I’ve added illustrations to the less intuitive letters to help you implement the contents of this guide:
 
-[![](/wp-content/uploads/2013/10/screenshot-4-.png)](/wp-content/uploads/2013/10/screenshot-4-.png)
+[![](/images/wp-content/uploads/2013/10/screenshot-4-.png)](/images/wp-content/uploads/2013/10/screenshot-4-.png)

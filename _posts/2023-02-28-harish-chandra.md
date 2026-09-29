@@ -71,7 +71,7 @@ Let's compute the action of Casimir \\(\Omega\\) on \\(1_\lambda\\):
  ![](/images/Screenshot from 2023-10-17 15-42-48.png)
 
 So we have shown that under the Harish-Chandra map,
-![](images/Screenshot from 2023-10-17 15-42-52.png)
+![](/images/Screenshot from 2023-10-17 15-42-52.png)
 
 
 Let's check that \\(\frac{1}{2}\lambda^2 + \lambda\\) is invariant under the \\(W \bullet\\) action. For \\(\mathfrak{sl}_2\\), we have \\([H, E]=2E\\), so that the root associated to \\(E\\) is the function \\(\alpha(H) = 2.\\) Then, \\(\rho\\) is \\(\frac12\\) of the sum of the simple roots, in other words, \\(\rho = \frac12 (2) = 1\\). The action of \\(W \bullet\\) sends \\(\lambda \mapsto -(\lambda+1)-1 = -\lambda - 2.\\)

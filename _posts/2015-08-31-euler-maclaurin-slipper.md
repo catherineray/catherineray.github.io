@@ -115,7 +115,7 @@ If we assign a positive and negative weight to each vertex, that is: - + + -
 
 This is simple to see if you take the assignments of weights to be the incidence matrix of a graph, that is,
 
-\[ \left[ {\begin{array}{cc} -1 & 1 \ 1 & -1 \end{array} } \right] \]
+\\\[ \left[ {\begin{array}{cc} -1 & 1 \ 1 & -1 \end{array} } \right] \\\]
 
 ## Background on the Möbius tiling
 
@@ -275,7 +275,7 @@ Here we see that there are actually 4 transformations being done in succession,
 3. a homothety/rotation,
 4. and another translation.
 
-If, like me, you ask “how the hell did they come up with az+b/cz+d” I offer two pieces of thought \[ \left[ {\begin{array}{cc} a & b \end{array} } \right] \left[ {\begin{array}{c} z \ 1 \end{array} } \right] = \left[ {\begin{array}{c} az+b \ cz+d \end{array} } \right] \]
+If, like me, you ask “how the hell did they come up with az+b/cz+d” I offer two pieces of thought \\\[ \left[ {\begin{array}{cc} a & b \end{array} } \right] \left[ {\begin{array}{c} z \ 1 \end{array} } \right] = \left[ {\begin{array}{c} az+b \ cz+d \end{array} } \right] \\\]
 
 % farrey diagram, multipliying a/c*z/z is still az/cz
 

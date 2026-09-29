@@ -25,7 +25,7 @@ A fiber bundle expresses global phenomenon in terms of the output of local data.
 
 For example: if the microscale model is molecular dynamics and the macroscale model is continuum hydrodynamics, then this formula is the Irving-Kirkwood formula that expresses stress in terms of the atomistic data from molecular dynamics. If the microscale model is replaced by Brownian dynamics, then this link is replaced by Kramer’s expression, etc.​
 
-> “…in concurrent coupling methods, one does not compute the constitutive relation within the full range of these variables - only the values that actually occur in the simulation are needed, and these might be a very small subset of the entire range.” — [Ren, Seamless Multiscale Modeling of Complex Fluids via Fiber Bundle Dynamics](/wp-content/uploads/2015/02/mm_cms.pdf)
+> “…in concurrent coupling methods, one does not compute the constitutive relation within the full range of these variables - only the values that actually occur in the simulation are needed, and these might be a very small subset of the entire range.” — [Ren, Seamless Multiscale Modeling of Complex Fluids via Fiber Bundle Dynamics](/images/wp-content/uploads/2015/02/mm_cms.pdf)
 
 It’s interesting to think of (1) dependent types as fibrations and (2) a multi-scale model as a generalized transition system.
 
@@ -35,11 +35,11 @@ Allow me to elaborate on (1) and (2):
 
 “A function whose codomain varies depending on its argument is a dependent function, and the type of this function is called a dependent type.”
 
-\(B_x\) is a fiber over \(x: A\)
+\\\(B_x\\\) is a fiber over \\\(x: A\\\)
 
 The domain bundle and range bundles above can then be written as:
 
-\(\sum\limits_{x: A} B_x \to \sum\limits_{y: C} D_y\)
+\\\(\sum\limits_{x: A} B_x \to \sum\limits_{y: C} D_y\\\)
 
 For more on dependent types as fibrations: [Type Theory and Homotopy](http://www.andrew.cmu.edu/user/awodey/preprints/TTH.pdf)
 
@@ -65,46 +65,46 @@ What are the long-term predictions of the model? Are predictions by the model �
 
 #### Some Basics of Dynamical Systems:
 
-Recall that a dynamical system is a pair \((S, F)\)
+Recall that a dynamical system is a pair \\\((S, F)\\\)
 
-- a (metric) space \(S\) of all possible states of the system
-- a map \(F\) which determines the time evolution of the states, \(F: S \times \Gamma \to S\)
+- a (metric) space \\\(S\\\) of all possible states of the system
+- a map \\\(F\\\) which determines the time evolution of the states, \\\(F: S \times \Gamma \to S\\\)
 
-where \(\Gamma\) denotes the set of all instants in time being considered, usually either \(\mathbb{N}\) for discrete or \(\mathbb{R}^+\) for continuous.
+where \\\(\Gamma\\\) denotes the set of all instants in time being considered, usually either \\\(\mathbb{N}\\\) for discrete or \\\(\mathbb{R}^+\\\) for continuous.
 
 **Orbits and Rough Orbits**
 
-Given \(s \in S\), the sequence of values \(f^n(s)\) is called the orbit of s.
+Given \\\(s \in S\\\), the sequence of values \\\(f^n(s)\\\) is called the orbit of s.
 
-If \(f^n(s) = f^{n + \phi}\) the orbit is a periodic orbit (the smallest value of \(phi\) is then the period, and s is a periodic point).
+If \\\(f^n(s) = f^{n + \phi}\\\) the orbit is a periodic orbit (the smallest value of \\\(phi\\\) is then the period, and s is a periodic point).
 
-An \(\epsilon\)-chain (aka rough orbit) is a finite sequence \(s_0, s_1, …\) of length at least 2 s.t. \(d(s_{n+1}, f(s_n)) \leq \epsilon\)
+An \\\(\epsilon\\\)-chain (aka rough orbit) is a finite sequence \\\(s_0, s_1, …\\\) of length at least 2 s.t. \\\(d(s_{n+1}, f(s_n)) \leq \epsilon\\\)
 
 **What is stability?**
 
 For Y a nonempty closed subset of X , define the stable set of Y to be the set:
 
-\(W^s(Y) = {x \in X : d(f^n(x), f^n(Y)) \to 0}\) as \(n \to \infty\)
+\\\(W^s(Y) = {x \in X : d(f^n(x), f^n(Y)) \to 0}\\\) as \\\(n \to \infty\\\)
 
-In other words, \(f^n(Y)\) is a set that \(f^n(x)\) must approach as \(n \rightarrow \infty\).
+In other words, \\\(f^n(Y)\\\) is a set that \\\(f^n(x)\\\) must approach as \\\(n \rightarrow \infty\\\).
 
 Stability is the property of orbit convergence.
 
 _Stable and unstable manifolds may be of interest since they are defined in terms that sound suspiciously like Gaussian curvature. Note that a central theorem of dynamics is that attracted and repelled stable and unstable manifolds are smooth curves._
 
-Let \(S\) be a compact invariant set, then the following statements are equivalent:
+Let \\\(S\\\) be a compact invariant set, then the following statements are equivalent:
 
-1. \(S\) is an attracting set.
-2. \(S\) is asymptotically stable.
+1. \\\(S\\\) is an attracting set.
+2. \\\(S\\\) is asymptotically stable.
 3. This matters because the “chain stability” ensures that the attracting set is observable in a computer simulation of the dynamics (provided that round-off errors in the computation are sufficiently small).
 
-One of the measures of the complexity of a map is the growth rate of the number of “different” orbit segments of length \(n\) as \(n\) increases (this is made precise by the notion of topological entropy, which I can elaborate on if you are interested).
+One of the measures of the complexity of a map is the growth rate of the number of “different” orbit segments of length \\\(n\\\) as \\\(n\\\) increases (this is made precise by the notion of topological entropy, which I can elaborate on if you are interested).
 
-**How do we locate the invariant sets of \(f\)? When does a particular subset \(Y\) of \(X\) contain an invariant set?**
+**How do we locate the invariant sets of \\\(f\\\)? When does a particular subset \\\(Y\\\) of \\\(X\\\) contain an invariant set?**
 
-We might find use from a compact set \(N\) with the following property:
+We might find use from a compact set \\\(N\\\) with the following property:
 
-Whenever three points \((x, f(x), f^2(x))\) are contained on an orbit are contained in \(N\), then the middle point \(f(x)\) is contained in the interior of \(N\).
+Whenever three points \\\((x, f(x), f^2(x))\\\) are contained on an orbit are contained in \\\(N\\\), then the middle point \\\(f(x)\\\) is contained in the interior of \\\(N\\\).
 
 This type of set is called an isolating block (could be useful for structure hunting).
 
@@ -118,9 +118,9 @@ If you find this line of thought intriguing, the keywords to look into are const
 
 **Guidelines for Investigating Discrete Dynamical Systems**
 
-1. Stable features of the orbit structure of \(f\) are shared by maps “close” to \(f\).
+1. Stable features of the orbit structure of \\\(f\\\) are shared by maps “close” to \\\(f\\\).
 2. Partition state space by grouping together states whose orbits have similar long-term behavior (some “path” function space modded out by this equivalence relation on orbits).
-3. To study the dynamics globally, find the directed graphs (V = \(\epsilon\)-chain equivalence classes, \(E = \epsilon\)-chains) These practices are the dynamical systems perspective on how to approach an overarching goal: Solve the inverse problem.
+3. To study the dynamics globally, find the directed graphs (V = \\\(\epsilon\\\)-chain equivalence classes, \\\(E = \epsilon\\\)-chains) These practices are the dynamical systems perspective on how to approach an overarching goal: Solve the inverse problem.
 
 **Other perspectives:**
 

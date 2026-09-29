@@ -129,9 +129,9 @@ It is easiest to represent in 3D space because unfortunately, we have centered t
 
 ![](/images/wp-content/uploads/2017/08/0b.jpg)
 
-![](/images/wp-content/uploads/2017/08/20170815_110156.jpg)
+![](/images/wp-content/uploads/2017/08/20170815_110156-scaled.jpg)
 
-![](/images/wp-content/uploads/2017/08/20170815_110247.jpg)
+![](/images/wp-content/uploads/2017/08/20170815_110247-scaled.jpg)
 
 Note that the bottom edge and top edge are in fact identified, though this is not pictured.
 

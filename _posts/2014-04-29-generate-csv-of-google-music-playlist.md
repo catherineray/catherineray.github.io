@@ -36,7 +36,7 @@ for(var i =0; i<playlist.length ; i++) {
 
 Scroll and rerun until you have all entries.
 
-[![](/wp-content/uploads/2014/04/kk.png)](/wp-content/uploads/2014/04/kk.png)
+[![](/images/wp-content/uploads/2014/04/kk.png)](/images/wp-content/uploads/2014/04/kk.png)
 
 **2. Open your CSV in vim** to remove the _VM290:8_ at the end of each entry. For example: _Clamavi De Profundis,Far Over the Misty Mountains Cold VM290:8_
 

@@ -23,7 +23,7 @@ This is a continuation of [Matlab: Lorentz Attractor](/matlab-lorenz-attractor/)
 
 A slightly more aesthetically pleasing representation of the Lorentz Attractor can be achieved by adding `axis off`. And altering the view’s azimuth and elevation: `view(15, 48)`.
 
-[![](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-26-07.png)](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-26-07.png)
+[![](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-26-07.png)](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-26-07.png)
 
 Now we’re talking. Let’s say I want to make a surface or mesh from this dandy line plot. Using `surf` or `mesh` will throw an error, since x, y, and z are all 1D vectors! Whatever shall we do!
 
@@ -48,10 +48,10 @@ lighting phong
 shading interp
 ```
 
-[![](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-25-09.png)](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-25-09.png)
+[![](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-25-09.png)](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-25-09.png)
 
 What if we’d like a surface instead of the mesh? Then we’ll change `trimesh` to `trisurf` add transparency (`alpha = 0.7`) and find:
 
-[![](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-33-45.png)](/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-33-45.png)
+[![](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-33-45.png)](/images/wp-content/uploads/2013/04/Screenshot-from-2013-04-30-14-33-45.png)
 
 <p class="repo-link"><span class="repo-label">Code</span> <a href="https://github.com/catherineray/cow-code/blob/master/surfaceplot.m">cow-code / surfaceplot.m</a></p>

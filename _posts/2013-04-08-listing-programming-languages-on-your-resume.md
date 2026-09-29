@@ -33,6 +33,6 @@ If you are “familiar” at a programming language, you’ve coded at least 5 f
 
 For example, my ‘Language’ section currently looks like this:
 
-[![](/wp-content/uploads/2013/04/Rin-2013-04-08-at-7.30.21-PM.png)](/wp-content/uploads/2013/04/Rin-2013-04-08-at-7.30.21-PM.png)
+[![](/images/wp-content/uploads/2013/04/Rin-2013-04-08-at-7.30.21-PM.png)](/images/wp-content/uploads/2013/04/Rin-2013-04-08-at-7.30.21-PM.png)
 
 (I added my knowledge of Braille and Morse Code because it amuses me to present all types of languages in my language section.)

@@ -18,7 +18,7 @@ topics:
 
 At work the other day, I was reading about Hadoop’s 5 daemons. The information wasn’t quite clicking, so I drew a picture to cement the concepts into my mind. (I’ve checked that all information regarding Hadoop in this blogpost is publicly available.)
 
-[![](/wp-content/uploads/2013/06/hadoop.jpg)](/wp-content/uploads/2013/06/hadoop.jpg)
+[![](/images/wp-content/uploads/2013/06/hadoop.jpg)](/images/wp-content/uploads/2013/06/hadoop.jpg)
 
 [In words:](http://www.fromdev.com/2010/12/interview-questions-hadoop-mapreduce.html) Hadoop is comprised of five separate daemons. Each of these daemon runs in its own JVM. The following 3 Daemons run on Master nodes:
 

@@ -20,7 +20,7 @@ _Edit: When I say cobordism, I mean oriented cobordism unless stated otherwise. 
 
 Letâ€™s say \\(M\_1, M\_2,\\) and \\(X\\) are differentiable manifolds. We have a map \\(f\_1\\), and a map \\(f\_2\\).
 
-[![Screenshot from 2015-01-27 15:55:55](/wp-content/uploads/2015/01/Screenshot-from-2015-01-27-155555.png)](/wp-content/uploads/2015/01/Screenshot-from-2015-01-27-155555.png)
+[![Screenshot from 2015-01-27 15:55:55](/images/wp-content/uploads/2015/01/Screenshot-from-2015-01-27-155555.png)](/images/wp-content/uploads/2015/01/Screenshot-from-2015-01-27-155555.png)
 
 Letâ€™s think of a movie: Our first frame is the map from \\(M\_1 \\to X\\) Our last frame is the map from \\(M\_2 \\to X\\) What is in between? The instructions for how to deform \\(M\_1 \\to X\\) to look like \\(M\_2 \\to X\\).
 
