@@ -1,5 +1,5 @@
 ---
-title: "webcomic: re-search"
+title: "re-search"
 date: "2021-05-15"
 categories: 
   - "art"

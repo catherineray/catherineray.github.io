@@ -305,7 +305,7 @@ comics:
     status: in progress
     cover: /images/wp-content/uploads/2021/05/research0.jpg
     tagline: "Illustrated fairy tale about getting lost in mathematics."
-    description: "A door blinks open in the wall, accidentally summoned by a student's notes. In they go, and tumble out in the dark as a toddler with a glowing donut in their hands. Cut it and throw it across space, and it plays like an instrument. They play until it sings modular forms. Behind them, every idea is tied to the last with spider silk, and every thread is a door."
+    description: "A door blinks open in the wall, summoned by a student's notes. In they go, and tumble out as a toddler with a glowing donut. Cut it, throw it across space, and it plays until it sings modular forms. Every idea is tied to the last with spider silk, and every thread is a door."
 # writing: kind = the stamp. An item with an image is a wide tile; the others are cards showing their opening lines.
 writing:
   - slug: impaction
