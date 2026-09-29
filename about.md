@@ -909,7 +909,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <div class="card">
       <p>
         Prior to mathematics, my work was primarily in scientific simulation,
-        autonomous robotics, and medical technology — areas in which I remain active.
+        autonomous robotics, and medical technology — and two medical threads from that time are still active.
       </p>
       <p>
         <a class="chip" href="#about-lab">Read more ↓</a>
@@ -1065,7 +1065,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
               Then I went to work on understanding and treating <a href="https://rin.io/biome/">chronic pain</a>, which I am still doing.
             </p>
             <p class="why echo">
-              Both halves arrived, about a decade late. Medicare began covering
+              Both halves have since arrived, about a decade on. Medicare began covering
               <a href="https://www.cms.gov/medicare-coverage-database/view/ncd.aspx?ncdid=376">powered seat elevation</a>
               in 2023 — on the grounds of transfers and reach, not of meeting people at eye
               level, which is what the users I spoke to actually said. And automated pressure
@@ -1212,7 +1212,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
               deciding in advance what to listen for is the only way to hear a call nobody has
               named yet. The calls turned out to carry the animals’ libido
               and their stress, so I could discover and then implement a way of reading those off
-              the audio directly. It runs in pre-clinical trials, where it can tell you whether a
+              the audio directly. It was deployed in Vium’s preclinical studies, where it could tell you whether a
               compound shifts libido or stress <em>before</em> the drug ever reaches a human trial. Two write-ups came out of it,
               <em>A New Female–Female Mouse Vocalization Discovered via Unlabeled Machine
               Learning</em> and <em>On the Detection and Prevention of Aggression in Lab Mice via
@@ -1546,7 +1546,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
             </p>
           
             <p class="why echo">
-              The method won. H<sub>3</sub>S was calculated to superconduct near 200&nbsp;K and then
+              The approach paid off, in other people’s hands. H<sub>3</sub>S was calculated to superconduct near 200&nbsp;K and then
               <a href="https://arxiv.org/abs/1506.08190">measured at 203&nbsp;K</a>; LaH<sub>10</sub>
               was predicted in 2017 and
               <a href="https://www.nature.com/articles/s41586-019-1201-8">found at 250&nbsp;K</a>
@@ -1590,15 +1590,15 @@ rail_sections:   # listed in the sidebar under "About Rin"
             </p>
           
             <p class="why echo">
-              This turned into a field while I was looking elsewhere, and one of my own co-authors
-              on <em>Toward Directed Collapsibility</em> is in it: Nicole Sanderson now writes on
+              Other people were heading the same way, and one of my own co-authors
+              on <em>Toward Directed Collapsibility</em> is among them: Nicole Sanderson now writes on
               <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-neuro-112723-034315">topology and neural circuits</a>.
               Persistent homology has reached the tumour microenvironment too, picking out
               <a href="https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1615278/abstract">rare T-cell states under checkpoint blockade</a>.
               The immunotherapy daydream had other people in it all along.
             </p>
             <p class="why echo">
-              Both halves of that have names now. Directed type theory was rebuilt on
+              Both halves have since been developed, independently of me. Directed type theory was rebuilt on
               <a href="https://arxiv.org/abs/1705.07442">synthetic simplicial foundations</a>, where
               the objects under study are exactly
               <a href="https://arxiv.org/abs/2604.18668">cocartesian fibrations</a>, and the
@@ -1777,7 +1777,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
             <h4>Dependent and directed type systems for multiphysics models<span class="yr">2015</span></h4>
             <p class="ptags"><span class="ptag">type theory</span><span class="ptag">category theory</span><span class="ptag">scientific computing</span></p>
             <p>Proposal that multiphysics models be expressed in a dependent type language. Classical fields are <a href="https://ncatlab.org/nlab/show/fiber+bundles+in+physics">sections of fiber bundles</a>; dependent types are semantically fibrations; the correspondence permits model structure, including direction of coupling, to be carried in the type and exploited by the compiler. Visiting researcher, Santa Fe Institute.</p>
-            <p class="lim">Motivated by run time rather than correctness alone: dependently typed elimination of runtime checks <a href="https://www.cs.cmu.edu/~fp/papers/pldi98dml.pdf">measurably reduces execution time</a> on ordinary numerical code. Directed variants correspond to <a href="https://arxiv.org/abs/1705.07442">cocartesian fibrations</a>; the applied descendant is <a href="https://arxiv.org/abs/2401.17432">diagrammatic composition of PDE systems</a>, whose reported gains remain qualitative.</p>
+            <p class="lim">Motivated by run time rather than correctness alone: dependently typed elimination of runtime checks <a href="https://www.cs.cmu.edu/~fp/papers/pldi98dml.pdf">measurably reduces execution time</a> on ordinary numerical code. Directed variants correspond to <a href="https://arxiv.org/abs/1705.07442">cocartesian fibrations</a>; a related applied line of work is <a href="https://arxiv.org/abs/2401.17432">diagrammatic composition of PDE systems</a>, whose reported gains remain qualitative.</p>
           </div>
           <div class="pro">
             <h4>Flexible TiO<sub>2</sub> resistive-switching devices<span class="yr">2012</span></h4>
