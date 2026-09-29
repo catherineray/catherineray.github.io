@@ -947,7 +947,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           Before that, I graduated from
           <a href="http://newsdesk.gmu.edu/2013/12/mason-celebrates-winter-graduates/">George Mason University at 16</a>
           with a B.S. in Computational Physics, and accepted the
-          <a href="http://www.thielfellowship.org/about/about-the-fellowship/">Thiel Fellowship</a>
+          <a href="https://thielfellowship.org/">Thiel Fellowship</a>
           in 2014 to develop medical technology and study mathematics under my mentor,
           <a href="http://www.edwardfrenkel.com/">Edward Frenkel</a>.
         </p>
@@ -2008,7 +2008,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <div class="papers" style="--accent: var(--orange);">
 
         <article class="paper">
-          <h3><a href="pdfs/Zeta_Functions_and_THH_Talk3.pdf">Zeta Functions and THH</a></h3>
+          <h3><a href="/pdfs/Zeta_Functions_and_THH_Talk3.pdf">Zeta Functions and THH</a></h3>
           <p class="meta">16 July 2025</p>
         </article>
 
@@ -2023,7 +2023,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </article>
 
         <article class="paper">
-          <h3><a href="pdfs/application_general_audience.pdf">A 4-page summary of my graduate work for a general audience</a></h3>
+          <h3><a href="/pdfs/application_general_audience.pdf">A 4-page summary of my graduate work for a general audience</a></h3>
           <p class="meta">including original illustrations</p>
         </article>
 
@@ -2038,7 +2038,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </article>
 
         <article class="paper">
-          <h3><a href="/pdfs/officialober-1.pdf">An Overview of the Classic Theory of <i>p</i>-Divisible Groups</a></h3>
+          <h3><a href="/pdfs/officialober.pdf">An Overview of the Classic Theory of <i>p</i>-Divisible Groups</a></h3>
           <p class="meta">published in Oberwolfach Proceedings</p>
         </article>
 
