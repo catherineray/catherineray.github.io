@@ -963,7 +963,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <a href="https://en.wikipedia.org/wiki/Kazuya_Kato">Kazuya Kato (加藤 和也)</a>,
           and with my PhD from Northwestern working with
           <a href="https://sites.math.northwestern.edu/~pgoerss/">Paul Goerss</a>.
-          Yifung Liu advised me too, without the title.
+          Yifeng Liu advised me too, without the title.
           </p>
       </div>
     </section>
