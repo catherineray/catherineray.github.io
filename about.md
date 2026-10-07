@@ -7,10 +7,11 @@ hide_title: true   # the ABOUT ME artwork is the heading
 rail_highlights: true   # show the genre highlights in the sidebar here
 rail_sections:   # listed in the sidebar under "About Rin"
   - { id: about-path, label: "THE PATH", color: "#6cc8f0" }
-  - { id: about-lab, label: "SCI/ART", color: "#ec3f9e" }   # The Other Lab (and The Other Studio below it); color matches its section title
-  - { id: about-contact, label: "CONTACT", color: "#f9a13c" }
-  - { id: about-published, label: "MATH", color: "#9b7fd4" }   # the research part: Published, Preprints, In progress, Expository
+  - { id: about-lab, label: "THE LAB", color: "#ec3f9e" }   # color matches its section title
+  - { id: about-published, label: "THE PROOFS", color: "#9b7fd4" }   # the research part: Published, Preprints, In progress, Expository
   - { id: about-teaching, label: "TEACHING", color: "#f4a58a" }
+  - { id: about-studio, label: "THE STUDIO", color: "#fffdf7" }
+  - { id: about-contact, label: "CONTACT", color: "#f9a13c" }
 ---
 
 <html lang="en">
@@ -263,8 +264,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
   section { margin-bottom: 3.5rem; }
   section:last-of-type { margin-bottom: 0; }
-  /* Teaching is the last About section; the old-blog comments (also a <section>) follow it, so trim the gap */
-  section:has(#about-teaching) { margin-bottom: 0; }
+  /* Contact is the last About section; the old-blog comments (also a <section>) follow it, so trim the gap */
+  section:has(#about-contact) { margin-bottom: 0; }
   .archived-comments { margin-top: 2.5rem; }
 
   .sec-head {
@@ -837,7 +838,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .stub-line .status { margin: 0 .4em 0 0; background: var(--yellow); border: 2px solid var(--ink); }
   /* site-wide font rule: reading text Space Grotesk; small labels stay Space Mono */
   .chip, .status, .ptag, .yr, .lvl-label, .dial, .dial button, .lure-btn, .sub, .paper h3 .tech, time, .stub-line .status { font-family: var(--mono); }
-  /* the big pink buttons (CV MATH, PORTFOLIO, SEE THE PROJECTS, SEE THE GALLERY) keep the heading font, as before */
+  /* the big pink buttons (CV MATH, CV SCIENCE, PORTFOLIO, SEE THE GALLERY) keep the heading font, as before */
   .bubble, .card { font-family: var(--mono); }   /* the hero bubble and card stay in Space Mono */
   /* superscripts / subscripts sit where they should (H₃S, TiO₂); math itself is typeset by MathJax */
   sub, sup { font-size: .72em; line-height: 0; position: relative; vertical-align: baseline; }
@@ -868,6 +869,93 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .studio-doors b { font: 1.1rem var(--display); }
   .studio-doors span { font: .78rem var(--mono); font-weight: 400; color: var(--ink-soft); }
   @media (max-width: 620px) { .studio-doors { grid-template-columns: 1fr; } }
+
+  /* three hero buttons: the two CVs, and PORTFOLIO as a tag pinned to the drawing */
+  .cv-sci { left: 52%; top: 41.5%; width: 28%; --tilt: -3deg; }
+  .stage .cv-other { background: var(--orange); color: var(--ink); box-shadow: 6px 6px 0 var(--violet); }
+  .stage .cv-other:hover { background: var(--yellow); }
+  .stage .cv-other:active { box-shadow: 0 0 0 var(--violet); }
+  @media (min-width: 561px) {
+    .stage .cv-other {
+      left: 67%; top: 75.5%; width: 23%; --tilt: 3deg;
+      padding: 1.3% 0;
+      font-size: clamp(.58rem, 1.9vw, .98rem);
+      box-shadow: 5px 5px 0 var(--violet);
+      z-index: 10;
+    }
+  }
+  @media (max-width: 560px) { .cv-sci { order: 5; } }
+
+  /* a section title that sits over a run of titled sections */
+  .sec-over { display: table; margin-bottom: 1.5rem; font-size: clamp(1.45rem, 5.8vw, 2.35rem); }
+
+  /* jump row over THE PATH; its targets stop a little short of the top */
+  .jump-top { margin: 0 0 2rem; }
+  .pro-group, .pro, .paper, #about-published { scroll-margin-top: 1.5rem; }
+
+  /* the lab: the project lists sit open under the summary */
+  #before-math .narrative, #before-math .professional { margin-top: calc(1.9rem + 8px); }
+
+  /* the lab's project lists: the same groups and the same rows at every reading level */
+  #before-math .pro-group { margin-bottom: 2.8rem; }
+  #before-math .pro-group h3 {
+    font-family: var(--display);
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    line-height: 1.1;
+  }
+  #before-math .pro-group h3::before { width: .5em; height: .5em; border-width: 3px; vertical-align: .08em; }
+  /* one line under each group heading: what the group has in common */
+  #before-math .pro-group .gloss { margin: .2rem 0 1rem 0; font-size: .92rem; line-height: 1.5; font-style: italic; color: var(--ink); }
+
+  /* each project is a compact row that opens; title, year and tags always visible */
+  #before-math :is(details.pro, details.row) {
+    margin: 0 0 .7rem;
+    padding: 0;
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--accent, var(--cyan));
+    scroll-margin-top: 1.5rem;
+  }
+  #before-math :is(details.pro, details.row) > summary { display: block; padding: .8rem 2.6rem .75rem 1.1rem; position: relative; cursor: pointer; list-style: none; }
+  #before-math :is(details.pro, details.row) > summary::-webkit-details-marker { display: none; }
+  #before-math :is(details.pro, details.row) > summary::after { content: "+"; position: absolute; right: 1rem; top: .55rem; font-family: var(--display); font-size: 1.3rem; }
+  #before-math :is(details.pro, details.row)[open] > summary::after { content: "\2212"; }
+  #before-math :is(details.pro, details.row) > summary:hover { background: color-mix(in srgb, var(--accent, var(--cyan)) 22%, var(--paper)); border-radius: 9px; }
+  #before-math :is(details.pro, details.row) > summary:focus-visible { outline: 3px dashed var(--ink); outline-offset: 3px; }
+  #before-math :is(.pro, .row) h4 { margin: 0 0 .4em; font-family: var(--text); font-weight: 700; font-size: 1rem; line-height: 1.35; color: var(--ink); text-wrap: pretty; }
+  #main #before-math :is(.pro, .row) h4 a { color: var(--ink); text-decoration-color: var(--accent, var(--cyan)); text-decoration-thickness: 3px; }
+  .row .yr {
+    display: inline-block;
+    margin-left: .45em;
+    padding: .08em .5em;
+    background: var(--lilac-deep);
+    border-radius: 4px;
+    font-family: var(--mono);
+    font-size: .62rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  /* marks the projects still running */
+  .row .yr.now, .pro .yr.now { background: var(--yellow); border: 2px solid var(--ink); padding: 0 .5em; text-transform: uppercase; letter-spacing: .06em; }
+  .professional .ptags { margin: 0; }
+  .professional .ptag { font-size: .62rem; }
+  .professional .pro-body { padding: .2rem 1.1rem 1rem; }
+  .professional .pro p { font-size: .87rem; line-height: 1.65; color: var(--ink); }
+  .professional .pro .lim { margin-top: .6em; font-size: .82rem; color: var(--ink-soft); }
+
+  /* story and one-line rows: the searchable name, the one-liner, then the story inside */
+  .row .tech { margin: 0; font-family: var(--mono); font-size: .68rem; line-height: 1.5; letter-spacing: .015em; color: var(--ink-soft); }
+  #before-math .row summary .lvl-plain { margin-top: .55em; }
+  .row summary .chips { margin-top: .6em; }
+  .row-body { padding: .4rem 1.1rem 1rem; }
+  .row-body .why { margin-left: 0; border-radius: 10px; }
+  /* the one-line view has nothing to open */
+  #before-math[data-level="plain"] details.row > summary { padding-right: 1.1rem; cursor: default; pointer-events: none; }
+  #before-math[data-level="plain"] details.row > summary a { pointer-events: auto; }
+  #before-math[data-level="plain"] details.row > summary::after { content: none; }
+  #before-math[data-level="plain"] .row-body { display: none; }
 </style>
 
 </head>
@@ -888,7 +976,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
     <p class="bubble">
       My name is <b>Rin Ray</b>
-      (they/them), and I’m a mathematician and artist. My current math research is on
+      (they/them), and I’m a researcher-artist. My current math research is on
       arithmetic patterns in homotopy theory and physics.
     </p>
 
@@ -898,6 +986,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     </div>
 
     <a class="cv cv-math" href="/pdfs/RinRay-CV-Math.pdf">CV MATH</a>
+    <a class="cv cv-sci" href="/pdfs/RinRay-CV-Science.pdf">CV SCIENCE</a>
     <a class="cv cv-other" href="/portfolio/">PORTFOLIO</a>
 
     <div class="char-wrap">
@@ -908,8 +997,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
     <div class="card">
       <p>
-        Prior to mathematics, my work was primarily in scientific simulation,
-        autonomous robotics, and medical technology — and two medical threads from that time are still active.
+        Before the math and alongside: measurement and inference where
+        the observable is missing, degraded, or not addressed to the observer — in
+        biology, neural signals, robotics and physics.
       </p>
       <p>
         <a class="chip" href="#about-lab">Read more ↓</a>
@@ -921,6 +1011,26 @@ rail_sections:   # listed in the sidebar under "About Rin"
   <!-- the path -->
 
   <div class="scroll">
+
+    <p class="jump jump-top">
+      <span>Here for…</span>
+      <a class="chip" href="#about-lab" data-read="pedantic">the science ↓</a>
+      <a class="chip" href="#about-published">the math ↓</a>
+      <a class="chip" href="#about-studio">the art ↓</a>
+    </p>
+
+    <div class="note note-cream" style="--accent: var(--pink); margin-bottom: 2.6rem;" id="about-what">
+      <p>
+        <strong class="tldr-lead">I build instruments for overhearing.</strong>
+        Across mathematics, scientific computing, biological systems, robotics, and art, I am
+        interested in things that cannot be observed directly: a neural intention, an animal’s
+        affective state, a body’s internal signal, a physical parameter, a mathematical
+        structure.
+      </p>
+      <p>
+        I look for the traces they leave behind, and build ways to make those traces legible.
+      </p>
+    </div>
 
     <section>
       <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: -2deg;" data-text="THE PATH" id="about-path">THE PATH</h2>
@@ -951,6 +1061,11 @@ rail_sections:   # listed in the sidebar under "About Rin"
           in 2014 to develop medical technology and study mathematics under my mentor,
           <a href="http://www.edwardfrenkel.com/">Edward Frenkel</a>.
         </p>
+        <p>
+          I came to mathematics from the laboratory, and never really left: computational
+          physics, robotics, machine learning on biological signals, and medical devices
+          since 2011. That work is in <a href="#about-lab">The Lab</a>, below.
+        </p>
         <p class="chips" style="margin-top:.2em">
           <a class="chip" href="https://www.youtube.com/watch?v=LUA_efzGQlg">
             Interview — WIRED, on Medical Tech
@@ -968,28 +1083,27 @@ rail_sections:   # listed in the sidebar under "About Rin"
       </div>
     </section>
 
-    <!-- before math -->
+    <!-- the lab -->
 
     <p class="jump">
       <span>Here for the math?</span>
       <a class="chip" href="#research">Skip to the research ↓</a>
     </p>
 
-    <section id="before-math" data-level="curious">
-      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="THE OTHER LAB" id="about-lab">THE OTHER LAB</h2>
+    <section id="before-math" data-level="pedantic">
+      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="THE LAB" id="about-lab">THE LAB</h2>
 
       <div class="dial">
         <span class="lab">are you…</span>
         <button type="button" data-set="plain">passing through</button>
-        <button type="button" data-set="curious" aria-pressed="true">here for the story</button>
-        <button type="button" data-set="pedantic">here for the science</button>
+        <button type="button" data-set="curious">here for the story</button>
+        <button type="button" data-set="pedantic" aria-pressed="true">here for the science</button>
         <span class="hint lvl lvl-plain">No background assumed, one line per project.</span>
         <span class="hint lvl lvl-curious">What I built, why I cared, and where the field has gone since.</span>
         <span class="hint lvl lvl-pedantic">No story: what was done, how, and what limited it — grouped by method.</span>
       </div>
 
-      <details class="fold">
-        <summary class="note">
+      <div class="note" style="--accent: var(--pink);">
           <p class="lvl lvl-curious">
             <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> What I have spent my time building, mostly, is instruments for overhearing. A blinded robot, feeling for its own hand. Rats, telling each other how they are feeling. A cat, feeling for his colon. A brain, through the scar it grows around anything that listens. Half a page of Braille, about the missing half. Arithmetic, about superconductors nobody had made yet. A drone and a wheelchair, microwaved argon and a plate of food, a face, septic blood — and others. There are always others.
           </p>
@@ -1000,24 +1114,284 @@ rail_sections:   # listed in the sidebar under "About Rin"
             <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> For over a decade I have studied the three kinds of silence: what is absent, what is fading, and what is spoken in another room. Two threads remain in my hands: <a href="https://rin.io/biome/">a cluster of diseases that keep being treated apart</a>, and <a href="https://rin.io/megacolon/">a treatment that was never written down</a>.
           </p>
           <p class="lvl lvl-pedantic">
-            <strong class="tldr-lead">A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer:</strong> motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure. Two lines remain active: <a href="https://rin.io/biome/">sensory processing as a shared mechanism across an autoimmune, gastrointestinal and chronic pain diseasome</a> (2024–), and <a href="https://rin.io/megacolon/">neostigmine in feline idiopathic megacolon</a> (2026).
+            <strong class="tldr-lead">A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer:</strong> motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure.
           </p>
-          <span class="fold-cue">
-            <span class="when-closed">SEE THE PROJECTS</span>
-            <span class="when-open">FOLD THEM BACK UP</span>
-            <span class="arrow" aria-hidden="true">↓</span>
-          </span>
-        </summary>
+      </div>
 
         <div class="narrative">
-
-        <h3 class="sub" style="--accent: var(--pink);">Asking people what they need</h3>
-
-        <div class="papers" style="--accent: var(--pink);">
-
-          <article class="paper">
-            <h3><a href="https://rin.io/pressure-ulcer-prevent/">Fixing what is wrong with wheelchairs</a><span class="status">Summer 2013 – Spring 2014</span><span class="tech">Modular retrofit robotics for powered wheelchairs · automated pressure redistribution · powered seat elevation · assisted transfer · rough-terrain drive · user-led requirements · gaze-controlled assistive mobility · mentorship</span></h3>
-            <p class="meta lvl lvl-plain">I asked wheelchair users what they actually wanted, and built four attachments that bolt onto the chair they already own.</p>
+        <div class="pro-group" style="--accent: var(--pink);">
+          <h3>Living things</h3>
+          <p class="gloss">Hidden states, read from the traces a system emits.</p>
+          <details class="row" id="s-biome">
+            <summary>
+              <h4>Everything downstream of a sensitive nervous system<span class="yr">2024 – ongoing</span><span class="yr now">current</span></h4>
+              <p class="tech">Sensory processing as an organizing principle · gut microbiome · autoimmunity · chronic pain · glutamate excitability · joint with Luca Estinto</p>
+              <p class="meta lvl lvl-plain">An essay arguing that a cluster of conditions usually treated separately come from one mechanism.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/biome/">read the post</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              The people I interviewed about wheelchairs kept telling me about pain, and pain was
+              the thing nobody had an answer for. Years later the same shape kept appearing:
+              autoimmune conditions, gut trouble, chronic pain, sensory sensitivity, and certain
+              neuropsychiatric diagnoses turning up together in the same people and being treated
+              by five different specialists who never speak to each other.
+            </p>
+            <p class="meta">
+              A long essay written with Luca Estinto, treating these as a
+              <em>diseasome</em> — a set of conditions linked not by the organ they present
+              in but by the pathway underneath them — and arguing that sensory processing is
+              a good deal of what that pathway is. A nervous system which never habituates, and
+              keeps reporting a signal at full strength, produces consequences that cascade through
+              the immune and digestive systems by way of stress. The piece pulls together imaging
+              work on altered connectivity, the habituation literature, glutamate as a shared route
+              to overexcitability, microbiome composition differences, and the enteric nervous
+              system’s direct hand in immunoglobulin secretion.
+            </p>
+            </div>
+            </div>
+          </details>
+          <details class="row" id="s-megacolon">
+            <summary>
+              <h4>Restarting the nerves that move a colon<span class="yr">2026</span><span class="yr now">current</span></h4>
+              <p class="tech">Feline idiopathic megacolon · enteric motility and cholinergic transmission · neostigmine · owner documentation of an unpublished treatment</p>
+              <p class="meta lvl lvl-plain">A cat with a paralysed colon, and the treatment we found that is not in the literature.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/megacolon/">read the post</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              A cat of mine was dying because his colon was paralysed, and the two options put in
+              front of me were surgery and euthanasia. He was too heavy and too unwell to survive
+              the anesthetic, so in practice that was one option. There is a third, and it is not
+              in the literature: it circulates as folklore between practitioners, never reaches a
+              journal, and so whether it is offered to your animal depends almost entirely on who
+              you happen to be standing in front of that day.
+            </p>
+            <p class="meta">
+              An owner-reported case study, written up in enough detail to take to a vet and ask.
+              Recurrent idiopathic megacolon: the colon dilates and the nerves that should drive it
+              stop producing any useful push. Enemas, manual deobstipation, laxatives and dietary
+              modification all failed to prevent recurrence. The regime that held was neostigmine,
+              an acetylcholinesterase inhibitor borrowed from equine practice, injected when
+              palpation finds accumulation — it leaves acetylcholine in the junction longer,
+              so the cholinergic signal telling the muscle to contract actually lands. Alongside
+              it: daily lactulose to keep the stool soft, and an anti-NGF injection every six weeks
+              for spinal spondylosis.
+            </p>
+            <p class="meta">
+              Sequencing matters more than the drug. Neostigmine is given only after the colon has
+              been emptied under anesthetic and mechanical obstruction has been definitively
+              excluded, because a drug that makes a bowel contract harder is dangerous if that
+              bowel is genuinely blocked. Duration to treatment is the other variable: medical
+              management succeeds in about two thirds of cats presenting under six months of
+              symptoms, and in under six percent of those presenting later. Maintenance is
+              injections every few weeks, indefinitely.
+            </p>
+            </div>
+            </div>
+          </details>
+          <details class="row" id="s-usv">
+            <summary>
+              <h4>Learning the ultrasonic language of rats<span class="yr">late 2013 – mid 2014</span></h4>
+              <p class="tech">Computational bioacoustics · unsupervised clustering of rodent ultrasonic vocalizations · quasi-real-time monitoring in the animal’s own cage · preclinical safety pharmacology · affective-state readout · 3Rs refinement</p>
+              <p class="meta lvl lvl-plain">I taught a computer to sort what rats and mice say to each other, which became a way to test drugs before they reach people, and to bother the animals a good deal less while doing it.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/mouse-vocalizations/">read the post</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              A mouse cannot report a symptom, but it is talking constantly in a register we cannot
+              hear. Two things follow from listening properly. You get some understanding of what
+              these animals are actually saying to each other. And you get far more out of each
+              experiment while doing far less to the animals in it: a microphone over a cage takes
+              readings continuously, at night, in the dark, from an animal nobody has touched,
+              picked up, restrained or moved to a testing room — which is both a kinder life
+              and a cleaner measurement, since a frightened mouse is not the animal you meant to
+              study. More information out of every cohort, less disturbance per animal, and a
+              clearer picture of what a compound does before it goes anywhere near a person.
+            </p>
+            <p class="meta">
+              Computational
+              bioacoustics at Vium — unsupervised classification of ultrasonic vocalizations
+              in quasi-real time, which is also how I dipped my toes into audio processing. This was early: several years before MUPET and DeepSqueak made
+              unsupervised clustering the standard way to do this, and as far as I know the first
+              to run it in quasi-real time on cages being monitored continuously rather than on a
+              corpus after the fact. Letting the categories fall out of the recordings instead of
+              deciding in advance what to listen for is the only way to hear a call nobody has
+              named yet. The calls turned out to carry the animals’ libido
+              and their stress, so I could discover and then implement a way of reading those off
+              the audio directly. It was deployed in Vium’s preclinical studies, where it could tell you whether a
+              compound shifts libido or stress <em>before</em> the drug ever reaches a human trial. Two write-ups came out of it,
+              <em>A New Female–Female Mouse Vocalization Discovered via Unlabeled Machine
+              Learning</em> and <em>On the Detection and Prevention of Aggression in Lab Mice via
+              Quasi-Real Time Analysis</em>.
+            </p>
+          
+            <p class="why echo">
+              A multi-company validation in 2025 put three compounds that had
+              <a href="https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2025.1655330/full">passed conventional safety pharmacology</a>
+              under continuous non-invasive monitoring in their own cages and found signals anyway, some
+              persisting for days after dosing. Quietly watching animals who are left alone turns
+              out to see things that handling them on a schedule does not.
+            </p>
+          </div>
+            </div>
+          </details>
+          <details class="row" id="s-neuro">
+            <summary>
+              <h4>The signal under the scar<span class="yr">Summer 2014</span></h4>
+              <p class="tech">Intracortical brain–computer interfaces · decoder convergence analysis · foreign body response and chronic signal loss · optical recording</p>
+              <p class="meta lvl lvl-plain">Work on reading the intention to move out of a brain, from the software side and then the hardware side.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/neuroprosthetic/">read the post</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              Neuroprosthetics have two major issues. At the tissue end, putting an electrode into
+              a brain is an injury: microglia arrive, astrocytes proliferate, and a glial scar
+              closes around it, pushing the neurons you wanted away from the thing that is
+              listening — so the signal thins and gets noisier across the months in which a
+              person is coming to depend on it. At the other end, any single neuron tells you
+              almost nothing; the intention to move is legible only across a whole population of
+              them. I came at this from the software side and assumed both were software problems.
+              My first thought was that a decoder which recalibrated fast enough could just track
+              the signal as it drifted — that convergence was the thing to fix. I worked on
+              that for a while before accepting you cannot infer your way out of an electrode with
+              fewer and fewer neurons left to hear.
+            </p>
+            <p class="meta">
+              The software half was convergence analysis of the decoders then in common use: how
+              fast a Kalman-style filter settles onto a usable mapping from neural activity to
+              intended movement, how far that mapping degrades as the underlying signal drifts, and
+              how much of the loss you can claw back by letting the decoder keep adapting while
+              somebody is using it. The number that matters to a user is not peak accuracy on a
+              good day. It is how long recalibration takes every morning, and whether the thing is
+              still working by the afternoon.
+            </p>
+            <p class="meta">
+              The hardware half was optical recording: instead of pushing metal into cortex and
+              waiting for the scar, you get the neurons to express a fluorescent indicator that
+              brightens when they fire, and read them with light. It buys cell-type specificity and
+              thousands of cells at once. It costs you depth — a millimeter or so even with
+              two-photon, in an organ several centimeters thick — and temporal resolution,
+              because calcium rises and falls far more slowly than a spike does, and it requires
+              getting a gene into somebody, which is a much larger request than a connector.
+            </p>
+          
+            <p class="why echo">
+              Most of the answer has been materials. The stiffness mismatch is absurd —
+              silicon around 180&nbsp;GPa against a brain of a few kPa — so the field went
+              soft: ultraflexible polymer threads, mesh electronics injected through a syringe,
+              carbon fibers seven microns across, substrates stiff enough to go in and then soften
+              once wet. In mice it works beautifully. One open-mesh design
+              <a href="https://www.nature.com/articles/s41593-023-01267-x">tracked the same neurons for thirteen months</a>,
+              most of the animals’ adult lives. Coatings do the rest: PEDOT to drop
+              impedance, neural adhesion proteins, dexamethasone eluted to quiet the response.
+              Then the uncomfortable part. Across
+              <a href="https://www.medrxiv.org/content/10.1101/2025.07.02.25330310v1">fourteen BrainGate participants</a>
+              and up to seven and a half years, the arrays held spiking on about a third of their
+              electrodes and declined only about seven percent — and when arrays are taken
+              out and examined, the leading failure is
+              <a href="https://www.sciencedirect.com/science/article/pii/S1742706125001151">the silicon eroding and the metal coming away</a>,
+              not the tissue closing in. Softer probes may be the right fix for the wrong failure.
+              “Scar-free” was a mouse result in 2017 and has been quoted a long way
+              past its evidence. Meanwhile the thing these arrays turned out to decode best was not
+              a limb but <a href="https://www.nature.com/articles/s41586-023-06377-x">speech</a>,
+              which in 2014 I would not have guessed at all.
+            </p>
+          </div>
+            </div>
+          </details>
+          <details class="row" id="s-allergen">
+            <summary>
+              <h4>A laboratory on a keyring<span class="yr">2011 – 2014</span></h4>
+              <p class="tech">Point-of-consumption allergen detection · laser absorption spectroscopy · G12 antibody colorimetric assay · immunoassay cost and sampling limits</p>
+              <p class="meta lvl lvl-plain">A keyring-sized scanner meant to tell you whether the food in front of you would hurt you.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/gluten-scanner/">read the post</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              For someone with celiac disease or a severe food allergy, every meal they did not
+              cook themselves is an act of trust in a stranger, and the cost of that trust being
+              misplaced runs from a ruined week to a funeral. The idea was to hand the judgment
+              back to the person eating, in something small enough to live on a keyring.
+            </p>
+            <p class="meta">
+              I tried it twice. The first attempt was optical: a one-dimensional array of infrared
+              and visible lasers with an avalanche photodiode, looking for gluten’s
+              absorption signature, which would have read food about a centimeter deep without
+              touching it. It drowned in noise. Gluten’s signal is faint against everything
+              else going on in a protein-rich food, and protein-rich food is exactly where you need
+              to look.
+            </p>
+            <p class="meta">
+              So I switched from physics to chemistry: G12 antibodies, which bind gliadin, read out
+              by a colorimetric assay — a toothpick you poke into the food, or a strip that
+              works like litmus paper. G12 is less sensitive than A1 and much cheaper, and cheap is
+              what matters when the thing has to work at every meal. That is where it stopped, and
+              the wall was the antibodies: short of bulk synthesis, a per-meal consumable costs
+              more than the people who need it can spend.
+            </p>
+            <p class="why echo">
+              In March 2014 I found GlutenTox, TellSpec and 6SensorLabs already at it — the
+              good kind of disappointment. 6SensorLabs became Nima, which shipped in 2017,
+              <a href="https://www.glutenfreewatchdog.org/news/gluten-free-watchdogs-updated-position-statement-on-the-nima-sensor-for-gluten/">missed gluten at the legal threshold more than a fifth of the time</a>,
+              died in 2020, and
+              <a href="https://www.allergicliving.com/2026/05/05/the-nima-gluten-sensor-is-back-heres-what-changed/">came back in 2026</a>
+              claiming 10&nbsp;ppm, by its own measurement. My wall got routed around rather than
+              climbed: the expensive part was the antibody, and the field swapped it for
+              <a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1338408/full">aptamers</a>,
+              synthetic DNA that folds around a target for a fraction of the cost. One 2024 design
+              reads gliadin off gold nanoparticles with a phone camera. The part underneath is
+              still unsolved: a negative on one bite does not clear the plate, and sampling error
+              swamps measurement error.
+            </p>
+            </div>
+            </div>
+          </details>
+          <details class="row" id="s-polyglass">
+            <summary>
+              <h4>Polyglass — reading a pulse off a face, and why I would not build it now<span class="yr">HackMIT 2013</span></h4>
+              <p class="tech">Remote photoplethysmography from video · contactless physiological sensing on a head-mounted display · consent and surveillance ethics</p>
+              <p class="meta lvl lvl-plain">A Google Glass app that read your pulse off your face without touching you. I would not build it now.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/hackmit-polyglass/">read the post</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              The idea was to help autistic people read social communication: if the signals
+              everyone else is supposedly picking up on are real, a machine ought to be able to
+              surface them.
+            </p>
+            <p class="meta">
+              A Google Glass app that recovers a person’s pulse from the
+              video feed alone, no contact and no cuff, and reads the changes in it while they
+              talk. Joint with Kartik Talwar and Spencer Hewett.
+            </p>
+            <p class="why rethink">
+              I would not build this now. It takes a reading off someone’s body without their
+              knowledge and gives them no way to refuse — the person being measured is the
+              one person in the room with no say in it. The need was real; meeting it this way
+              moves the cost onto somebody who never agreed to carry it.
+            </p>
+          </div>
+            </div>
+          </details>
+        </div>
+        <div class="pro-group" style="--accent: var(--orange);">
+          <h3>Bodies in motion</h3>
+          <p class="gloss">A body reading the traces of its own movement.</p>
+          <details class="row" id="s-wheelchair">
+            <summary>
+              <h4>Fixing what is wrong with wheelchairs<span class="yr">Summer 2013 – Spring 2014</span></h4>
+              <p class="tech">Modular retrofit robotics for powered wheelchairs · automated pressure redistribution · powered seat elevation · assisted transfer · rough-terrain drive · user-led requirements · gaze-controlled assistive mobility · mentorship</p>
+              <p class="meta lvl lvl-plain">I asked wheelchair users what they actually wanted, and built four attachments that bolt onto the chair they already own.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/pressure-ulcer-prevent/">The wheelchair post</a><a class="chip" href="https://www.youtube.com/watch?v=LUA_efzGQlg">Interview — WIRED</a></p>
+            </summary>
+            <div class="row-body">
             <div class="lvl lvl-curious">
             <p class="why">
               My grandfather lost his mobility, so I volunteered at a spinal cord injury
@@ -1075,227 +1449,16 @@ rail_sections:   # listed in the sidebar under "About Rin"
               proxy; nobody has shown it prevents an injury.
             </p>
             </div>
-            <p class="chips">
-              <a class="chip" href="https://rin.io/pressure-ulcer-prevent/">The wheelchair post</a>
-              <a class="chip" href="https://www.youtube.com/watch?v=LUA_efzGQlg">Interview — WIRED</a>
-            </p>
-                    </article>
-          <article class="paper">
-            <h3><a href="https://rin.io/neuroprosthetic/">The signal under the scar</a><span class="status">Summer 2014</span><span class="tech">Intracortical brain–computer interfaces · decoder convergence analysis · foreign body response and chronic signal loss · optical recording</span></h3>
-            <p class="meta lvl lvl-plain">Work on reading the intention to move out of a brain, from the software side and then the hardware side.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              Neuroprosthetics have two major issues. At the tissue end, putting an electrode into
-              a brain is an injury: microglia arrive, astrocytes proliferate, and a glial scar
-              closes around it, pushing the neurons you wanted away from the thing that is
-              listening — so the signal thins and gets noisier across the months in which a
-              person is coming to depend on it. At the other end, any single neuron tells you
-              almost nothing; the intention to move is legible only across a whole population of
-              them. I came at this from the software side and assumed both were software problems.
-              My first thought was that a decoder which recalibrated fast enough could just track
-              the signal as it drifted — that convergence was the thing to fix. I worked on
-              that for a while before accepting you cannot infer your way out of an electrode with
-              fewer and fewer neurons left to hear.
-            </p>
-            <p class="meta">
-              The software half was convergence analysis of the decoders then in common use: how
-              fast a Kalman-style filter settles onto a usable mapping from neural activity to
-              intended movement, how far that mapping degrades as the underlying signal drifts, and
-              how much of the loss you can claw back by letting the decoder keep adapting while
-              somebody is using it. The number that matters to a user is not peak accuracy on a
-              good day. It is how long recalibration takes every morning, and whether the thing is
-              still working by the afternoon.
-            </p>
-            <p class="meta">
-              The hardware half was optical recording: instead of pushing metal into cortex and
-              waiting for the scar, you get the neurons to express a fluorescent indicator that
-              brightens when they fire, and read them with light. It buys cell-type specificity and
-              thousands of cells at once. It costs you depth — a millimeter or so even with
-              two-photon, in an organ several centimeters thick — and temporal resolution,
-              because calcium rises and falls far more slowly than a spike does, and it requires
-              getting a gene into somebody, which is a much larger request than a connector.
-            </p>
-          
-            <p class="why echo">
-              Most of the answer has been materials. The stiffness mismatch is absurd —
-              silicon around 180&nbsp;GPa against a brain of a few kPa — so the field went
-              soft: ultraflexible polymer threads, mesh electronics injected through a syringe,
-              carbon fibers seven microns across, substrates stiff enough to go in and then soften
-              once wet. In mice it works beautifully. One open-mesh design
-              <a href="https://www.nature.com/articles/s41593-023-01267-x">tracked the same neurons for thirteen months</a>,
-              most of the animals’ adult lives. Coatings do the rest: PEDOT to drop
-              impedance, neural adhesion proteins, dexamethasone eluted to quiet the response.
-              Then the uncomfortable part. Across
-              <a href="https://www.medrxiv.org/content/10.1101/2025.07.02.25330310v1">fourteen BrainGate participants</a>
-              and up to seven and a half years, the arrays held spiking on about a third of their
-              electrodes and declined only about seven percent — and when arrays are taken
-              out and examined, the leading failure is
-              <a href="https://www.sciencedirect.com/science/article/pii/S1742706125001151">the silicon eroding and the metal coming away</a>,
-              not the tissue closing in. Softer probes may be the right fix for the wrong failure.
-              “Scar-free” was a mouse result in 2017 and has been quoted a long way
-              past its evidence. Meanwhile the thing these arrays turned out to decode best was not
-              a limb but <a href="https://www.nature.com/articles/s41586-023-06377-x">speech</a>,
-              which in 2014 I would not have guessed at all.
-            </p>
-          </div>
-          </article>
-          <article class="paper">
-            <h3><a href="https://rin.io/gluten-scanner/">A laboratory on a keyring</a><span class="status">2011 – 2014</span><span class="tech">Point-of-consumption allergen detection · Raman spectroscopy · G12 antibody colorimetric assay · immunoassay cost and sampling limits</span></h3>
-            <p class="meta lvl lvl-plain">A keyring-sized scanner meant to tell you whether the food in front of you would hurt you.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              For someone with celiac disease or a severe food allergy, every meal they did not
-              cook themselves is an act of trust in a stranger, and the cost of that trust being
-              misplaced runs from a ruined week to a funeral. The idea was to hand the judgment
-              back to the person eating, in something small enough to live on a keyring.
-            </p>
-            <p class="meta">
-              I tried it twice. The first attempt was optical: a one-dimensional array of infrared
-              and visible lasers with an avalanche photodiode, looking for gluten’s
-              absorption signature, which would have read food about a centimeter deep without
-              touching it. It drowned in noise. Gluten’s signal is faint against everything
-              else going on in a protein-rich food, and protein-rich food is exactly where you need
-              to look.
-            </p>
-            <p class="meta">
-              So I switched from physics to chemistry: G12 antibodies, which bind gliadin, read out
-              by a colorimetric assay — a toothpick you poke into the food, or a strip that
-              works like litmus paper. G12 is less sensitive than A1 and much cheaper, and cheap is
-              what matters when the thing has to work at every meal. That is where it stopped, and
-              the wall was the antibodies: short of bulk synthesis, a per-meal consumable costs
-              more than the people who need it can spend.
-            </p>
-            <p class="why echo">
-              In March 2014 I found GlutenTox, TellSpec and 6SensorLabs already at it — the
-              good kind of disappointment. 6SensorLabs became Nima, which shipped in 2017,
-              <a href="https://www.glutenfreewatchdog.org/news/gluten-free-watchdogs-updated-position-statement-on-the-nima-sensor-for-gluten/">missed gluten at the legal threshold more than a fifth of the time</a>,
-              died in 2020, and
-              <a href="https://www.allergicliving.com/2026/05/05/the-nima-gluten-sensor-is-back-heres-what-changed/">came back in 2026</a>
-              claiming 10&nbsp;ppm, by its own measurement. My wall got routed around rather than
-              climbed: the expensive part was the antibody, and the field swapped it for
-              <a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1338408/full">aptamers</a>,
-              synthetic DNA that folds around a target for a fraction of the cost. One 2024 design
-              reads gliadin off gold nanoparticles with a phone camera. The part underneath is
-              still unsolved: a negative on one bite does not clear the plate, and sampling error
-              swamps measurement error.
-            </p>
             </div>
-          </article>
-        </div>
-
-        <h3 class="sub" style="--accent: var(--cyan);">Bodies that cannot say what is wrong</h3>
-
-        <div class="papers" style="--accent: var(--cyan);">
-
-          <article class="paper">
-            <h3><a href="/mouse-vocalizations/">Learning the ultrasonic language of rats</a><span class="status">late 2013 – mid 2014</span><span class="tech">Computational bioacoustics · unsupervised clustering of rodent ultrasonic vocalizations · quasi-real-time monitoring in the animal’s own cage · preclinical safety pharmacology · affective-state readout · 3Rs refinement</span></h3>
-            <p class="meta lvl lvl-plain">I taught a computer to sort what rats and mice say to each other, which became a way to test drugs before they reach people, and to bother the animals a good deal less while doing it.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              A mouse cannot report a symptom, but it is talking constantly in a register we cannot
-              hear. Two things follow from listening properly. You get some understanding of what
-              these animals are actually saying to each other. And you get far more out of each
-              experiment while doing far less to the animals in it: a microphone over a cage takes
-              readings continuously, at night, in the dark, from an animal nobody has touched,
-              picked up, restrained or moved to a testing room — which is both a kinder life
-              and a cleaner measurement, since a frightened mouse is not the animal you meant to
-              study. More information out of every cohort, less disturbance per animal, and a
-              clearer picture of what a compound does before it goes anywhere near a person.
-            </p>
-            <p class="meta">
-              Computational
-              bioacoustics at Vium — unsupervised classification of ultrasonic vocalizations
-              in quasi-real time, which is also how I dipped my toes into audio processing. This was early: several years before MUPET and DeepSqueak made
-              unsupervised clustering the standard way to do this, and as far as I know the first
-              to run it in quasi-real time on cages being monitored continuously rather than on a
-              corpus after the fact. Letting the categories fall out of the recordings instead of
-              deciding in advance what to listen for is the only way to hear a call nobody has
-              named yet. The calls turned out to carry the animals’ libido
-              and their stress, so I could discover and then implement a way of reading those off
-              the audio directly. It was deployed in Vium’s preclinical studies, where it could tell you whether a
-              compound shifts libido or stress <em>before</em> the drug ever reaches a human trial. Two write-ups came out of it,
-              <em>A New Female–Female Mouse Vocalization Discovered via Unlabeled Machine
-              Learning</em> and <em>On the Detection and Prevention of Aggression in Lab Mice via
-              Quasi-Real Time Analysis</em>.
-            </p>
-          
-            <p class="why echo">
-              A multi-company validation in 2025 put three compounds that had
-              <a href="https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2025.1655330/full">passed conventional safety pharmacology</a>
-              under continuous non-invasive monitoring in their own cages and found signals anyway, some
-              persisting for days after dosing. Quietly watching animals who are left alone turns
-              out to see things that handling them on a schedule does not.
-            </p>
-          </div>
-          </article>
-          <article class="paper">
-            <h3><a href="https://rin.io/megacolon/">Restarting the nerves that move a colon</a><span class="status">2026</span><span class="tech">Feline idiopathic megacolon · enteric motility and cholinergic transmission · neostigmine · owner documentation of an unpublished treatment</span></h3>
-            <p class="meta lvl lvl-plain">A cat with a paralysed colon, and the treatment we found that is not in the literature.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              A cat of mine was dying because his colon was paralysed, and the two options put in
-              front of me were surgery and euthanasia. He was too heavy and too unwell to survive
-              the anesthetic, so in practice that was one option. There is a third, and it is not
-              in the literature: it circulates as folklore between practitioners, never reaches a
-              journal, and so whether it is offered to your animal depends almost entirely on who
-              you happen to be standing in front of that day.
-            </p>
-            <p class="meta">
-              An owner-reported case study, written up in enough detail to take to a vet and ask.
-              Recurrent idiopathic megacolon: the colon dilates and the nerves that should drive it
-              stop producing any useful push. Enemas, manual deobstipation, laxatives and dietary
-              modification all failed to prevent recurrence. The regime that held was neostigmine,
-              an acetylcholinesterase inhibitor borrowed from equine practice, injected when
-              palpation finds accumulation — it leaves acetylcholine in the junction longer,
-              so the cholinergic signal telling the muscle to contract actually lands. Alongside
-              it: daily lactulose to keep the stool soft, and an anti-NGF injection every six weeks
-              for spinal spondylosis.
-            </p>
-            <p class="meta">
-              Sequencing matters more than the drug. Neostigmine is given only after the colon has
-              been emptied under anesthetic and mechanical obstruction has been definitively
-              excluded, because a drug that makes a bowel contract harder is dangerous if that
-              bowel is genuinely blocked. Duration to treatment is the other variable: medical
-              management succeeds in about two thirds of cats presenting under six months of
-              symptoms, and in under six percent of those presenting later. Maintenance is
-              injections every few weeks, indefinitely.
-            </p>
-            </div>
-          </article>
-          <article class="paper">
-            <h3><a href="https://rin.io/biome/">Everything downstream of a sensitive nervous system</a><span class="status">2024 – ongoing</span><span class="tech">Sensory processing as an organizing principle · gut microbiome · autoimmunity · chronic pain · glutamate excitability · joint with Luca Estinto</span></h3>
-            <p class="meta lvl lvl-plain">An essay arguing that a cluster of conditions usually treated separately come from one mechanism.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              The people I interviewed about wheelchairs kept telling me about pain, and pain was
-              the thing nobody had an answer for. Years later the same shape kept appearing:
-              autoimmune conditions, gut trouble, chronic pain, sensory sensitivity, and certain
-              neuropsychiatric diagnoses turning up together in the same people and being treated
-              by five different specialists who never speak to each other.
-            </p>
-            <p class="meta">
-              A long essay written with Luca Estinto, treating these as a
-              <em>diseasome</em> — a set of conditions linked not by the organ they present
-              in but by the pathway underneath them — and arguing that sensory processing is
-              a good deal of what that pathway is. A nervous system which never habituates, and
-              keeps reporting a signal at full strength, produces consequences that cascade through
-              the immune and digestive systems by way of stress. The piece pulls together imaging
-              work on altered connectivity, the habituation literature, glutamate as a shared route
-              to overexcitability, microbiome composition differences, and the enteric nervous
-              system’s direct hand in immunoglobulin secretion.
-            </p>
-            </div>
-          </article>
-        </div>
-
-        <h3 class="sub" style="--accent: var(--peach);">Machines working without the obvious sense</h3>
-
-        <div class="papers" style="--accent: var(--peach);">
-
-          <article class="paper">
-            <h3>When the cameras die, the hands take over<span class="status">Summer 2012</span><span class="tech">Proprioception-only contact-rich manipulation · blind peg-in-hole insertion · two-arm load equalization · Willow Garage PR2 · human–robot interaction</span></h3>
-            <p class="meta lvl lvl-plain">I taught a robot arm to find a hole and fit a shape into it with every sense but its own body switched off.</p>
-            <p class="chips"><a class="chip code" href="https://github.com/catherineray/PR2-positronics">code: PR2-positronics</a></p>
+          </details>
+          <details class="row" id="s-pr2">
+            <summary>
+              <h4>When the cameras die, the hands take over<span class="yr">Summer 2012</span></h4>
+              <p class="tech">Proprioception-only contact-rich manipulation · blind peg-in-hole insertion · two-arm load equalization · Willow Garage PR2 · human–robot interaction</p>
+              <p class="meta lvl lvl-plain">I taught a robot arm to find a hole and fit a shape into it with every sense but its own body switched off.</p>
+              <p class="chips"><a class="chip code" href="https://github.com/catherineray/PR2-positronics">code: PR2-positronics</a></p>
+            </summary>
+            <div class="row-body">
             <div class="lvl lvl-curious">
             <p class="why">
               Blindness in robots. A machine that stops dead the moment its camera fails is a
@@ -1332,10 +1495,59 @@ rail_sections:   # listed in the sidebar under "About Rin"
               recoverable when the channel everyone assumes you have is missing.
             </p>
             </div>
-          </article>
-          <article class="paper">
-            <h3>The homesickness robot<span class="status">2011</span><span class="tech">Mimicking animal motion and companionship · robot person following · gait-based re-identification · statically stable hexapedal locomotion</span></h3>
-            <p class="meta lvl lvl-plain">I missed my dog at university, so I built a six-legged robot that followed me around.</p>
+            </div>
+          </details>
+          <details class="row" id="s-slam">
+            <summary>
+              <h4>Drawing the map while flying through it<span class="yr">Fall 2012</span></h4>
+              <p class="tech">Simultaneous localization and mapping · monocular visual SLAM with parallax bootstrapping · loop closure · scale from sonar and inertial fusion · motion planning on a partial map</p>
+              <p class="meta lvl lvl-plain">I taught a toy drone to find its way outdoors while drawing its own map as it went.</p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              To know where you are, you need a map. To build a map, you need to know where you
+              are. So how does anything ever get off the ground?
+            </p>
+            <p class="meta">
+              You do not solve either one first. You estimate both at once and let them correct
+              each other. Take two frames from slightly different positions, triangulate the
+              handful of features visible in both, and you have a crude map — which means
+              you have to move before you can know anything at all, because depth comes from
+              parallax. After that it alternates: given the map, work out where the camera must be
+              to be seeing what it sees; given the poses, add new points and refine the old ones.
+              The tracker running underneath this was PTAM, whose trick was to split those two
+              jobs across threads — follow the features every frame, rebuild the map in the
+              background whenever there is time to spare.
+            </p>
+            <p class="meta">
+              Error accumulates the whole way, because every new position is measured against a map
+              built out of the previous ones. You get it back by recognizing somewhere you have
+              already been and closing the loop. And there is one thing a single camera can never
+              tell you: scale. A large room far away and a small room close up produce the same
+              picture. That number had to come from the sonar altimeter and the inertial unit.
+            </p>
+            <p class="meta">
+              All of it ran off-board, on a laptop, over WiFi. It held together where there was
+              texture and steady light, and fell apart where there was not: repetitive ground,
+              changing sun, and wind, which moves the aircraft between one frame and the next.
+            </p>
+            <p class="why rethink">
+              I would not take this on now. Navigating terrain nobody has surveyed is not a neutral
+              capability — there is very little daylight between solving it for a toy
+              quadcopter and solving it for something armed. I was treating it as a puzzle about
+              maps and motion, not thinking of the consequences.
+            </p>
+          </div>
+            </div>
+          </details>
+          <details class="row" id="s-gait">
+            <summary>
+              <h4>The homesickness robot<span class="yr">2011</span></h4>
+              <p class="tech">Mimicking animal motion and companionship · robot person following · gait-based re-identification · statically stable hexapedal locomotion</p>
+              <p class="meta lvl lvl-plain">I missed my dog at university, so I built a six-legged robot that followed me around.</p>
+            </summary>
+            <div class="row-body">
             <div class="lvl lvl-curious">
             <p class="why">
               My first robotics project, and the motive was homesickness — I missed my dog at
@@ -1383,151 +1595,20 @@ rail_sections:   # listed in the sidebar under "About Rin"
             </p>
             
             </div>
-          </article>
-          <article class="paper">
-            <h3>Drawing the map while flying through it<span class="status">Fall 2013</span><span class="tech">Simultaneous localization and mapping · monocular visual SLAM with parallax bootstrapping · loop closure · scale from sonar and inertial fusion · motion planning on a partial map</span></h3>
-            <p class="meta lvl lvl-plain">I taught a toy drone to find its way outdoors while drawing its own map as it went.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              To know where you are, you need a map. To build a map, you need to know where you
-              are. So how does anything ever get off the ground?
-            </p>
-            <p class="meta">
-              You do not solve either one first. You estimate both at once and let them correct
-              each other. Take two frames from slightly different positions, triangulate the
-              handful of features visible in both, and you have a crude map — which means
-              you have to move before you can know anything at all, because depth comes from
-              parallax. After that it alternates: given the map, work out where the camera must be
-              to be seeing what it sees; given the poses, add new points and refine the old ones.
-              The tracker running underneath this was PTAM, whose trick was to split those two
-              jobs across threads — follow the features every frame, rebuild the map in the
-              background whenever there is time to spare.
-            </p>
-            <p class="meta">
-              Error accumulates the whole way, because every new position is measured against a map
-              built out of the previous ones. You get it back by recognizing somewhere you have
-              already been and closing the loop. And there is one thing a single camera can never
-              tell you: scale. A large room far away and a small room close up produce the same
-              picture. That number had to come from the sonar altimeter and the inertial unit.
-            </p>
-            <p class="meta">
-              All of it ran off-board, on a laptop, over WiFi. It held together where there was
-              texture and steady light, and fell apart where there was not: repetitive ground,
-              changing sun, and wind, which moves the aircraft between one frame and the next.
-            </p>
-            <p class="why rethink">
-              I would not take this on now. Navigating terrain nobody has surveyed is not a neutral
-              capability — there is very little daylight between solving it for a toy
-              quadcopter and solving it for something armed. I was treating it as a puzzle about
-              maps and motion, not thinking of the consequences.
-            </p>
-          </div>
-          </article>
-          <article class="paper">
-            <h3><a href="https://rin.io/hackmit-polyglass/">Polyglass</a> — reading a pulse off a face, and why I would not build it now<span class="status">HackMIT 2013</span><span class="tech">Remote photoplethysmography from video · contactless physiological sensing on a head-mounted display · consent and surveillance ethics</span></h3>
-            <p class="meta lvl lvl-plain">A Google Glass app that read your pulse off your face without touching you. I would not build it now.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              The idea was to help autistic people read social communication: if the signals
-              everyone else is supposedly picking up on are real, a machine ought to be able to
-              surface them.
-            </p>
-            <p class="meta">
-              A Google Glass app that recovers a person’s pulse from the
-              video feed alone, no contact and no cuff, and reads the changes in it while they
-              talk. Joint with Kartik Talwar and Spencer Hewett.
-            </p>
-            <p class="why rethink">
-              I would not build this now. It takes a reading off someone’s body without their
-              knowledge and gives them no way to refuse — the person being measured is the
-              one person in the room with no say in it. The need was real; meeting it this way
-              moves the cost onto somebody who never agreed to carry it.
-            </p>
-          </div>
-          </article>
-          <article class="paper">
-            <h3><a href="https://rin.io/camel-paper/">Reading a language from the fragments somebody already translated</a><span class="status">Spring 2013</span><span class="tech">Unsupervised grammar and lexicon induction from partially parallel text · decipherment of incompletely understood scripts · contracted Braille as the test language · accessible signage</span></h3>
-            <p class="meta lvl lvl-plain">A method for working out a language you only partly have, tested on the Braille that gets signs wrong.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              This started because I read Braille and kept noticing that the signs around me were
-              wrong. The one that decided it: a door labeled <em>electrical room</em> in print and
-              <em>safety exit</em> in Braille. Whoever installed it could not read what they were
-              mounting, and nobody downstream of them could catch it. So I wanted translation to be
-              something a builder could get right at the point of installing a sign, rather than
-              something they had to take on faith.
-            </p>
-            <p class="meta">
-              The mistakes are easy to make, because Grade 2 Braille is not a cipher you can look
-              up letter by letter — it is contracted, with about a hundred and eighty
-              contractions, and the same six dots can be a letter, a whole word, or a fragment
-              glued to its neighbors depending on where in the word it falls and what sits beside
-              it.
-            </p>
-            <p class="meta">
-              Which makes it a very good test case for a problem much older than Braille: you have
-              a text in a script you only partly understand, and a translation of some of it, and
-              you want the rest. The method does not care that the script is Braille. It builds
-              probabilistic dictionaries from whatever parallel fragments exist and lets the
-              grammar fall out of the alignment — the same shape of problem as an
-              incompletely deciphered ancient script, where a handful of confident readings and a
-              great deal of unread text is exactly the situation you are in. Braille simply has the
-              advantage of a known answer to check against. It grew out of my automated
-              computational semantics research at GMU and became my other undergraduate thesis,
-              <em>Contextual Machine Learning through the Analysis and Chunking of Partially
-              Translated Grade 2 Braille</em>.
-            </p>
-            
-          
-            <p class="why echo">
-              The grammar was the problem, and the standards body agreed. When Unified English
-              Braille replaced the older code, nine contractions were
-              <a href="https://www.brailleauthority.org/ueb/overview_changes_ebae_ueb.html">deliberately deleted</a>
-              — in BANA's own words, to enable accurate automatic translation and reduce the
-              exceptions to the rules. They simplified the language rather than the model. It is
-              still not solved: frontier language models today
-              <a href="https://arxiv.org/html/2607.11893">refuse, hallucinate, or emit malformed Braille</a>,
-              and a small fine-tuned model beats all of them.
-            </p>
             </div>
-
-            <p class="chips">
-              <a class="chip code" href="https://github.com/catherineray/MachLearn-G2Braille">code: MachLearn-G2Braille</a>
-            </p>
-                    </article>
-
-          <article class="paper">
-            <h3>Trying to keep clinical doctors up to date<span class="status">2013</span><span class="tech">Automated computational semantics · abstractive summarization of biomedical literature · evidence fidelity</span></h3>
-            <p class="meta lvl lvl-plain">A machine that reads a scientific paper and tells a busy doctor whether it is worth their evening.</p>
-            <div class="lvl lvl-curious">
-            <p class="why">
-              I kept meeting working doctors who were further from the current literature than they
-              wanted to be. Not for any want of caring: seeing patients all day and reading a stack
-              of new papers every week are not two things one person can do. The volume is what
-              defeats them, so the volume is what to go after.
-            </p>
-            <p class="meta">
-              Automated computational semantics research at George Mason, aimed at getting a machine
-              to read a paper and return something faithful and short enough that a clinician
-              between appointments could decide whether the whole thing was worth an evening.
-            </p>
-          
-            <p class="why connection">
-              This is the research CAMEL grew out of, pointed the other way round. There, meaning
-              recovered from too little text; here, meaning kept intact while most of the text goes
-              away.
-            </p>
-            </div>
-          </article>
+          </details>
         </div>
-
-        <h3 class="sub" style="--accent: var(--yellow);">Where the geometry does the work</h3>
-
-        <div class="papers" style="--accent: var(--yellow);">
-
-          <article class="paper">
-            <h3><a href="https://rin.io/computational-materials-science/">Calculating a material into existence</a><span class="status">Fall 2012</span><span class="tech">Electronic-structure calculation · augmented plane wave method · superconducting transition temperature of intermetallic compounds · computational materials screening</span></h3>
-            <p class="meta lvl lvl-plain">Working out on a computer which materials would superconduct, instead of making them one at a time to find out.</p>
+        <div class="pro-group" style="--accent: var(--peach);">
+          <h3>Matter</h3>
+          <p class="gloss">Behaviour inferred from the traces that structure leaves.</p>
+          <details class="row" id="s-superconductor">
+            <summary>
+              <h4>Calculating a material into existence<span class="yr">2012 – 2013</span></h4>
+              <p class="tech">Electronic-structure calculation · augmented plane wave method · superconducting transition temperature of intermetallic compounds · computational materials screening</p>
+              <p class="meta lvl lvl-plain">Working out on a computer which materials would superconduct, instead of making them one at a time to find out.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/computational-materials-science/">read the post</a></p>
+            </summary>
+            <div class="row-body">
             <div class="lvl lvl-curious">
             <p class="why">
               A superconductor carries current with no resistance: nothing lost, nothing turned to
@@ -1555,11 +1636,15 @@ rail_sections:   # listed in the sidebar under "About Rin"
               is wiring a city with them yet.
             </p>
             </div>
-          </article>
-
-          <article class="paper">
-            <h3>Nothing interesting happens at only one scale<span class="status">Jan 2015</span><span class="tech">Multiscale modeling · directed type systems · compositional model building · topology applied to complex biological systems</span></h3>
-            <p class="meta lvl lvl-plain">A proposal that multiphysics models, which are already fibrations, be written in a dependent type language and run faster for it.</p>
+            </div>
+          </details>
+          <details class="row" id="s-types">
+            <summary>
+              <h4>Nothing interesting happens at only one scale<span class="yr">Jan 2015</span></h4>
+              <p class="tech">Multiscale modeling · directed type systems · compositional model building · topology applied to complex biological systems</p>
+              <p class="meta lvl lvl-plain">A proposal that multiphysics models, which are already fibrations, be written in a dependent type language and run faster for it.</p>
+            </summary>
+            <div class="row-body">
             <div class="lvl lvl-curious">
             <p class="why">
               A multiphysics simulation is several different physics solved over one domain at
@@ -1611,11 +1696,15 @@ rail_sections:   # listed in the sidebar under "About Rin"
               state of it.
             </p>
             </div>
-          </article>
-
-          <article class="paper">
-            <h3>What shapes will a plasma hold?<span class="status">2012</span><span class="tech">Standing-wave mode structure of a 2.45&nbsp;GHz argon discharge · conductive polyhedral cavity · deployable structures in ionospheric plasma</span></h3>
-            <p class="meta lvl lvl-plain">I filled a metal polyhedron with argon, put a microwave source inside, and looked at the shapes the plasma made.</p>
+            </div>
+          </details>
+          <details class="row" id="s-plasma">
+            <summary>
+              <h4>What shapes will a plasma hold?<span class="yr">2012</span></h4>
+              <p class="tech">Standing-wave mode structure of a 2.45&nbsp;GHz argon discharge · conductive polyhedral cavity · deployable structures in ionospheric plasma</p>
+              <p class="meta lvl lvl-plain">I filled a metal polyhedron with argon, put a microwave source inside, and looked at the shapes the plasma made.</p>
+            </summary>
+            <div class="row-body">
             <div class="lvl lvl-curious">
             <p class="why">
               Space is cool, and a satellite that folds is cooler: you launch something small and
@@ -1644,11 +1733,15 @@ rail_sections:   # listed in the sidebar under "About Rin"
               project.
             </p>
             </div>
-          </article>
-
-          <article class="paper">
-            <h3>A thinking film you could bend<span class="status">Spring 2012</span><span class="tech">Flexible TiO<sub>2</sub> resistive switching · memristive device fabrication and bend-cycle characterization · in-memory computing</span></h3>
-            <p class="meta lvl lvl-plain">A memristor is a resistor that remembers. I made bendable ones by hand and measured them until they failed.</p>
+            </div>
+          </details>
+          <details class="row" id="s-memristor">
+            <summary>
+              <h4>A thinking film you could bend<span class="yr">Spring 2012</span></h4>
+              <p class="tech">Flexible TiO<sub>2</sub> resistive switching · memristive device fabrication and bend-cycle characterization · in-memory computing</p>
+              <p class="meta lvl lvl-plain">A memristor is a resistor that remembers. I made bendable ones by hand and measured them until they failed.</p>
+            </summary>
+            <div class="row-body">
             <div class="lvl lvl-curious">
             <p class="why">
               A memristor is a resistor that remembers where you last left it. That sounds like a
@@ -1677,123 +1770,274 @@ rail_sections:   # listed in the sidebar under "About Rin"
               to have happened to a material I once held.
             </p>
             </div>
-          </article>
-
-          
-        </div>
-      </div>
-
-        <div class="professional">
-        <div class="pro-group" style="--accent: var(--peach);">
-          <h3>Biomedical and assistive engineering</h3>
-          <div class="pro">
-            <h4><a href="https://rin.io/pressure-ulcer-prevent/">Modular robotic retrofits for powered wheelchairs</a><span class="yr">2013–2014</span></h4>
-            <p class="ptags"><span class="ptag">mechanism design</span><span class="ptag">rehabilitation engineering</span><span class="ptag">user-led requirements</span></p>
-            <p>Four assemblies designed to fit chairs already configured to their users: automated pressure redistribution, powered seat elevation, assisted bed-to-chair transfer, rough-terrain drive. Requirements elicited from wheelchair users with spinal cord injury; subsequent mentorship of <a href="https://www.youtube.com/watch?v=YJxgEDr699w">gaze-controlled mobility assistance</a> for ALS and SCI.</p>
-            <p class="lim">Written as a nonprovisional patent application and deliberately not filed; released under Creative Commons. Interface pressure is a surrogate endpoint.</p>
-          </div>
-          <div class="pro">
-            <h4><a href="https://rin.io/neuroprosthetic/">Decoder convergence and optical recording for intracortical motor prostheses</a><span class="yr">2014</span></h4>
-            <p class="ptags"><span class="ptag">brain–computer interfaces</span><span class="ptag">decoder design</span><span class="ptag">neural interfaces</span></p>
-            <p>Convergence analysis of decoders in common use, including adaptation rate under signal drift and recalibration cost to the user; then optical recording via fluorescent indicators as an alternative to penetrating electrodes.</p>
-            <p class="lim">Foreign body response degrades yield; <a href="https://www.medrxiv.org/content/10.1101/2025.07.02.25330310v1">subsequent human longitudinal data</a> indicates abiotic electrode failure may dominate. Optical methods remain depth- and delivery-limited.</p>
-          </div>
-          <div class="pro">
-            <h4><a href="https://rin.io/gluten-scanner/">Portable detection of gluten and common allergenic proteins</a><span class="yr">2011–2014</span></h4>
-            <p class="ptags"><span class="ptag">immunoassay</span><span class="ptag">optical spectroscopy</span><span class="ptag">point-of-care</span></p>
-            <p>Two approaches: a laser and avalanche-photodiode optical assay, abandoned for insufficient SNR against protein-rich matrices; then a G12 antibody colorimetric assay in a toothpick or strip format.</p>
-            <p class="lim">Limiting factor was antibody cost per assay, not sensitivity. Sampling variance in heterogeneous food exceeds measurement variance, which bounds the device class; <a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1338408/full">aptamer assays</a> have since addressed the cost term.</p>
-          </div>
-          <div class="pro">
-            <h4><a href="https://rin.io/megacolon/">Neostigmine in feline idiopathic megacolon</a><span class="yr">2026</span></h4>
-            <p class="ptags"><span class="ptag">veterinary pharmacology</span><span class="ptag">case documentation</span><span class="ptag">enteric motility</span></p>
-            <p>Owner-reported case study of an acetylcholinesterase inhibitor used off-label to restore colonic motility, with lactulose and anti-NGF analgesia, documented to a standard usable in consultation.</p>
-            <p class="lim">Contraindicated without prior deobstipation and exclusion of mechanical obstruction. Medical management succeeds in roughly two thirds of cases presenting under six months and under six percent thereafter.</p>
-          </div>
-          <div class="pro">
-            <h4><a href="https://rin.io/biome/">Sensory processing as a shared mechanism across an autoimmune, gastrointestinal and chronic pain diseasome</a><span class="yr">2024–</span></h4>
-            <p class="ptags"><span class="ptag">systems biology</span><span class="ptag">neuroimmunology</span><span class="ptag">evidence synthesis</span></p>
-            <p>Synthesis arguing that failure of habituation constitutes a shared upstream mechanism, drawing on connectivity imaging, glutamatergic excitability, microbiome composition and enteric regulation of immunoglobulin secretion. With L. Estinto.</p>
-            <p class="lim">Hypothesis-generating; not experimentally validated.</p>
-          </div>
-        </div>
-        <div class="pro-group" style="--accent: var(--orange);">
-          <h3>Robotics and autonomous systems</h3>
-          <div class="pro">
-            <h4><a href="https://rin.io/autonomous-robotic-force-proprioception/">Proprioception-only contact-rich manipulation</a><span class="yr">2012</span></h4>
-            <p class="ptags"><span class="ptag">contact-rich manipulation</span><span class="ptag">proprioceptive control</span><span class="ptag">human–robot interaction</span></p>
-            <p>Autonomous acquisition of a shape-matched insertion task on a Willow Garage PR2 using commanded joint positions and gripper sensing only, with vision and external feedback disabled. Also <a href="https://link.springer.com/chapter/10.1007/978-3-319-00065-7_34">two-arm load equalization</a> for objects with off-center mass. HCI internship, George Washington University.</p>
-            <p class="lim">Demonstrates graceful degradation under total loss of exteroception; learning was small-scale policy search.</p>
-          </div>
-          <div class="pro">
-            <h4>Monocular visual SLAM with motion planning on a micro aerial vehicle<span class="yr">2013</span></h4>
-            <p class="ptags"><span class="ptag">SLAM</span><span class="ptag">sensor fusion</span><span class="ptag">motion planning</span></p>
-            <p>PTAM-class monocular SLAM, processed off-board, with metric scale recovered by fusing sonar altimetry and inertial measurement, coupled to frontier-based planning on a partially built map. Parrot ARDrone.</p>
-            <p class="lim">Bounded by repetitive texture, illumination change and airframe disturbance. Dual-use: unsurveyed autonomous navigation transfers directly to armed platforms.</p>
-          </div>
-          <div class="pro">
-            <h4>Gait-based re-identification for robot person following<span class="yr">2011</span></h4>
-            <p class="ptags"><span class="ptag">computer vision</span><span class="ptag">re-identification</span><span class="ptag">legged locomotion</span></p>
-            <p>Hexapedal platform; target enrollment by proximity, association by gait rather than appearance, steering on bearing. Alternating tripod gait for statically stable traversal.</p>
-            <p class="lim">Static stability is a guarantee over an idealized contact model and does not survive real terrain.</p>
-          </div>
-        </div>
-        <div class="pro-group" style="--accent: var(--cyan);">
-          <h3>Machine learning and signal processing</h3>
-          <div class="pro">
-            <h4><a href="/mouse-vocalizations/">Unsupervised classification of rodent ultrasonic vocalization for continuous preclinical monitoring</a><span class="yr">2013–2014</span></h4>
-            <p class="ptags"><span class="ptag">computational bioacoustics</span><span class="ptag">unsupervised learning</span><span class="ptag">safety pharmacology</span></p>
-            <p>Quasi-real-time clustering of ultrasonic calls from continuously monitored cages, deployed as a preclinical readout for compound effects on affective state. Vium. Two internal write-ups.</p>
-            <p class="lim">Non-contact acquisition removes handling stress as a confound and increases information yield per cohort; <a href="https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2025.1655330/full">later multi-company validation</a> supports the approach. Prior unsupervised USV clustering exists (Grimsley et al., 2013).</p>
-          </div>
-          <div class="pro">
-            <h4><a href="https://rin.io/camel-paper/">Unsupervised grammar and lexicon induction from partially parallel text</a><span class="yr">2013</span></h4>
-            <p class="ptags"><span class="ptag">natural language processing</span><span class="ptag">lexicon induction</span><span class="ptag">decipherment</span></p>
-            <p>Probabilistic lexicon induction over weakly parallel corpora, evaluated on contracted Grade 2 Braille, chosen as a test language with a known ground truth. Undergraduate thesis, George Mason University. <a href="https://github.com/catherineray/CAMEL">Code</a>.</p>
-            <p class="lim">Generalizes to incompletely deciphered scripts. Applied motivation: transcription error in installed accessible signage.</p>
-          </div>
-          <div class="pro">
-            <h4>Automated abstractive summarization of biomedical literature for clinical readers<span class="yr">2013</span></h4>
-            <p class="ptags"><span class="ptag">natural language processing</span><span class="ptag">summarization</span><span class="ptag">biomedical text</span></p>
-            <p>Automated computational semantics directed at reducing a paper to a triage-sufficient summary. George Mason University.</p>
-            <p class="lim">Evaluation of evidence fidelity, rather than generation, remains the open problem.</p>
-          </div>
-          <div class="pro">
-            <h4><a href="https://rin.io/hackmit-polyglass/">Remote photoplethysmography on a head-mounted display</a><span class="yr">2013</span></h4>
-            <p class="ptags"><span class="ptag">computer vision</span><span class="ptag">physiological sensing</span><span class="ptag">research ethics</span></p>
-            <p>Recovery of cardiac pulse and its variation from video alone, without contact, intended as a social-signal aid. HackMIT, with K. Talwar and S. Hewett.</p>
-            <p class="lim">Withdrawn on ethical grounds: the measured party cannot detect or refuse the measurement.</p>
-          </div>
+            </div>
+          </details>
         </div>
         <div class="pro-group" style="--accent: var(--violet);">
-          <h3>Computational physics, materials and modeling</h3>
-          <div class="pro">
-            <h4><a href="https://rin.io/computational-materials-science/">Electronic-structure prediction of superconducting transition temperature</a><span class="yr">2012</span></h4>
+          <h3>Fragments</h3>
+          <p class="gloss">Structure recovered from the traces a language leaves behind.</p>
+          <details class="row" id="s-braille">
+            <summary>
+              <h4>Reading a language from the fragments somebody already translated<span class="yr">Spring 2013</span></h4>
+              <p class="tech">Unsupervised grammar and lexicon induction from partially parallel text · decipherment of incompletely understood scripts · contracted Braille as the test language · accessible signage</p>
+              <p class="meta lvl lvl-plain">A method for working out a language you only partly have, tested on the Braille that gets signs wrong.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/camel-paper/">read the post</a> <a class="chip code" href="https://github.com/catherineray/MachLearn-G2Braille">code: MachLearn-G2Braille</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              This started because I read Braille and kept noticing that the signs around me were
+              wrong. The one that decided it: a door labeled <em>electrical room</em> in print and
+              <em>safety exit</em> in Braille. Whoever installed it could not read what they were
+              mounting, and nobody downstream of them could catch it. So I wanted translation to be
+              something a builder could get right at the point of installing a sign, rather than
+              something they had to take on faith.
+            </p>
+            <p class="meta">
+              The mistakes are easy to make, because Grade 2 Braille is not a cipher you can look
+              up letter by letter — it is contracted, with about a hundred and eighty
+              contractions, and the same six dots can be a letter, a whole word, or a fragment
+              glued to its neighbors depending on where in the word it falls and what sits beside
+              it.
+            </p>
+            <p class="meta">
+              Which makes it a very good test case for a problem much older than Braille: you have
+              a text in a script you only partly understand, and a translation of some of it, and
+              you want the rest. The method does not care that the script is Braille. It builds
+              probabilistic dictionaries from whatever parallel fragments exist and lets the
+              grammar fall out of the alignment — the same shape of problem as an
+              incompletely deciphered ancient script, where a handful of confident readings and a
+              great deal of unread text is exactly the situation you are in. Braille simply has the
+              advantage of a known answer to check against. It grew out of my automated
+              computational semantics research at GMU and became my other undergraduate thesis,
+              <em>Contextual Machine Learning through the Analysis and Chunking of Partially
+              Translated Grade 2 Braille</em>.
+            </p>
+            
+          
+            <p class="why echo">
+              The grammar was the problem, and the standards body agreed. When Unified English
+              Braille replaced the older code, nine contractions were
+              <a href="https://www.brailleauthority.org/ueb/overview_changes_ebae_ueb.html">deliberately deleted</a>
+              — in BANA's own words, to enable accurate automatic translation and reduce the
+              exceptions to the rules. They simplified the language rather than the model. It is
+              still not solved: frontier language models today
+              <a href="https://arxiv.org/html/2607.11893">refuse, hallucinate, or emit malformed Braille</a>,
+              and a small fine-tuned model beats all of them.
+            </p>
+            </div>
+            </div>
+          </details>
+          <details class="row" id="s-summarization">
+            <summary>
+              <h4>Trying to keep clinical doctors up to date<span class="yr">2013</span></h4>
+              <p class="tech">Automated computational semantics · abstractive summarization of biomedical literature · evidence fidelity</p>
+              <p class="meta lvl lvl-plain">A machine that reads a scientific paper and tells a busy doctor whether it is worth their evening.</p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              I kept meeting working doctors who were further from the current literature than they
+              wanted to be. Not for any want of caring: seeing patients all day and reading a stack
+              of new papers every week are not two things one person can do. The volume is what
+              defeats them, so the volume is what to go after.
+            </p>
+            <p class="meta">
+              Automated computational semantics research at George Mason, aimed at getting a machine
+              to read a paper and return something faithful and short enough that a clinician
+              between appointments could decide whether the whole thing was worth an evening.
+            </p>
+          
+            <p class="why connection">
+              This is the research CAMEL grew out of, pointed the other way round. There, meaning
+              recovered from too little text; here, meaning kept intact while most of the text goes
+              away.
+            </p>
+            </div>
+            </div>
+          </details>
+        </div>
+        </div>
+
+        <div class="professional">
+        <div class="pro-group" style="--accent: var(--pink);" id="lab-bio">
+          <h3>Living things</h3>
+          <p class="gloss">Hidden states, read from the traces a system emits.</p>
+          <details class="pro" id="p-biome">
+            <summary>
+            <h4><a href="https://rin.io/biome/">Sensory processing as a shared mechanism across an autoimmune, gastrointestinal and chronic pain diseasome</a><span class="yr">2024–</span><span class="yr now">current</span></h4>
+            <p class="ptags"><span class="ptag">systems biology</span><span class="ptag">neuroimmunology</span><span class="ptag">evidence synthesis</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Synthesis arguing that failure of habituation constitutes a shared upstream mechanism, drawing on connectivity imaging, glutamatergic excitability, microbiome composition and enteric regulation of immunoglobulin secretion. With L. Estinto.</p>
+            <p class="lim">Hypothesis-generating; not experimentally validated.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-megacolon">
+            <summary>
+            <h4><a href="https://rin.io/megacolon/">Neostigmine in feline idiopathic megacolon</a><span class="yr">2026</span><span class="yr now">current</span></h4>
+            <p class="ptags"><span class="ptag">veterinary pharmacology</span><span class="ptag">case documentation</span><span class="ptag">enteric motility</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Owner-reported case study of an acetylcholinesterase inhibitor used off-label to restore colonic motility, with lactulose and anti-NGF analgesia, documented to a standard usable in consultation.</p>
+            <p class="lim">Contraindicated without prior deobstipation and exclusion of mechanical obstruction. Medical management succeeds in roughly two thirds of cases presenting under six months and under six percent thereafter.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-usv">
+            <summary>
+            <h4><a href="/mouse-vocalizations/">Unsupervised classification of rodent ultrasonic vocalization for continuous preclinical monitoring</a><span class="yr">2013–2014</span></h4>
+            <p class="ptags"><span class="ptag">computational bioacoustics</span><span class="ptag">unsupervised learning</span><span class="ptag">safety pharmacology</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Unsupervised classification of rodent ultrasonic vocalizations in quasi-real time, deployed as a preclinical readout for compound effects on stress and libido — the first continuous non-invasive behavioral phenotyping system at Vium, several years before MUPET and DeepSqueak made the approach standard. Two write-ups: <em>A New Female–Female Mouse Vocalization Discovered via Unlabeled Machine Learning</em> and <em>On the Detection and Prevention of Aggression in Lab Mice via Quasi-Real Time Analysis</em>.</p>
+            <p class="lim">Non-contact acquisition removes handling stress as a confound and increases information yield per cohort; <a href="https://www.frontiersin.org/journals/toxicology/articles/10.3389/ftox.2025.1655330/full">later multi-company validation</a> supports the approach. Prior unsupervised USV clustering exists (Grimsley et al., 2013).</p>
+            </div>
+          </details>
+          <details class="pro" id="p-neuro">
+            <summary>
+            <h4><a href="https://rin.io/neuroprosthetic/">Decoder convergence and optical recording for intracortical motor prostheses</a><span class="yr">2014</span></h4>
+            <p class="ptags"><span class="ptag">brain–computer interfaces</span><span class="ptag">decoder design</span><span class="ptag">neural interfaces</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Convergence analysis of intracortical decoders under signal drift — how fast a Kalman-style filter settles onto a usable mapping from neural activity to intended movement, how far it degrades as glial scarring thins the neural population, and how much adaptive recalibration recovers. Then optical recording via fluorescent calcium indicators as an alternative to penetrating electrodes.</p>
+            <p class="lim">Foreign body response degrades yield; <a href="https://www.medrxiv.org/content/10.1101/2025.07.02.25330310v1">subsequent human longitudinal data</a> indicates abiotic electrode failure may dominate. Optical methods remain depth- and delivery-limited.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-allergen">
+            <summary>
+            <h4><a href="https://rin.io/gluten-scanner/">Portable detection of gluten and common allergenic proteins</a><span class="yr">2011–2014</span></h4>
+            <p class="ptags"><span class="ptag">immunoassay</span><span class="ptag">optical spectroscopy</span><span class="ptag">point-of-care</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Two approaches: a laser and avalanche-photodiode optical assay, abandoned for insufficient SNR against protein-rich matrices; then a G12 antibody colorimetric assay in a toothpick or strip format.</p>
+            <p class="lim">Limiting factor was antibody cost per assay, not sensitivity. Sampling variance in heterogeneous food exceeds measurement variance, which bounds the device class; <a href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1338408/full">aptamer assays</a> have since addressed the cost term.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-polyglass">
+            <summary>
+            <h4><a href="https://rin.io/hackmit-polyglass/">Remote photoplethysmography on a head-mounted display</a><span class="yr">2013</span></h4>
+            <p class="ptags"><span class="ptag">computer vision</span><span class="ptag">physiological sensing</span><span class="ptag">research ethics</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Recovery of cardiac pulse and its variation from video alone, without contact, intended as a social-signal aid. HackMIT, with K. Talwar and S. Hewett.</p>
+            <p class="lim">Withdrawn on ethical grounds: the measured party cannot detect or refuse the measurement.</p>
+            </div>
+          </details>
+        </div>
+        <div class="pro-group" style="--accent: var(--orange);" id="lab-embodied">
+          <h3>Bodies in motion</h3>
+          <p class="gloss">A body reading the traces of its own movement.</p>
+          <details class="pro" id="p-wheelchair">
+            <summary>
+            <h4><a href="https://rin.io/pressure-ulcer-prevent/">Modular robotic retrofits for powered wheelchairs</a><span class="yr">2013–2014</span></h4>
+            <p class="ptags"><span class="ptag">mechanism design</span><span class="ptag">rehabilitation engineering</span><span class="ptag">user-led requirements</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Four assemblies designed to fit chairs already configured to their users: automated pressure redistribution, powered seat elevation, assisted bed-to-chair transfer, rough-terrain drive. Requirements elicited from wheelchair users with spinal cord injury; subsequent mentorship of <a href="https://www.youtube.com/watch?v=YJxgEDr699w">gaze-controlled mobility assistance</a> for ALS and SCI.</p>
+            <p class="lim">Written as a nonprovisional patent application and deliberately not filed; released under Creative Commons. Interface pressure is a surrogate endpoint.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-pr2">
+            <summary>
+            <h4><a href="https://rin.io/autonomous-robotic-force-proprioception/">Graceful degradation under sensor failure: contact-rich manipulation on proprioception alone</a><span class="yr">2012</span></h4>
+            <p class="ptags"><span class="ptag">graceful degradation</span><span class="ptag">contact-rich manipulation</span><span class="ptag">proprioceptive control</span><span class="ptag">human–robot interaction</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>A robot that stops dead the moment its camera fails cannot be trusted around people, and sensors fail constantly. With vision and all external feedback disabled, a Willow Garage PR2 autonomously acquired a shape-matched insertion task from commanded joint positions and gripper sensing alone. Also <a href="https://link.springer.com/chapter/10.1007/978-3-319-00065-7_34">two-arm load equalization</a> for objects with off-center mass. HCI internship, George Washington University.</p>
+            <p class="lim">Demonstrates graceful degradation at the extreme: total loss of exteroception, not a partial fault. Learning was small-scale policy search.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-slam">
+            <summary>
+            <h4>Monocular visual SLAM with motion planning on a micro aerial vehicle<span class="yr">2012</span></h4>
+            <p class="ptags"><span class="ptag">SLAM</span><span class="ptag">sensor fusion</span><span class="ptag">motion planning</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>PTAM-class monocular SLAM, processed off-board, with metric scale recovered by fusing sonar altimetry and inertial measurement, coupled to frontier-based planning on a partially built map. Parrot ARDrone.</p>
+            <p class="lim">Bounded by repetitive texture, illumination change and airframe disturbance. Dual-use: unsurveyed autonomous navigation transfers directly to armed platforms.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-gait">
+            <summary>
+            <h4>Gait-based re-identification for robot person following<span class="yr">2011</span></h4>
+            <p class="ptags"><span class="ptag">computer vision</span><span class="ptag">re-identification</span><span class="ptag">legged locomotion</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Hexapedal platform; target enrollment by proximity, association by gait rather than appearance, steering on bearing. Alternating tripod gait for statically stable traversal.</p>
+            <p class="lim">Static stability is a guarantee over an idealized contact model and does not survive real terrain.</p>
+            </div>
+          </details>
+        </div>
+        <div class="pro-group" style="--accent: var(--peach);" id="lab-physical">
+          <h3>Matter</h3>
+          <p class="gloss">Behaviour inferred from the traces that structure leaves.</p>
+          <details class="pro" id="p-superconductor">
+            <summary>
+            <h4><a href="https://rin.io/computational-materials-science/">Electronic-structure prediction of superconducting transition temperature</a><span class="yr">2012–2013</span></h4>
             <p class="ptags"><span class="ptag">density functional methods</span><span class="ptag">electronic structure</span><span class="ptag">materials screening</span></p>
+            </summary>
+            <div class="pro-body">
             <p>Augmented plane wave band structure feeding an electron-phonon coupling estimate and a McMillan/Allen–Dynes transition temperature for intermetallic compounds. Advised by D. Papaconstantopoulos, George Mason University. Undergraduate thesis.</p>
             <p class="lim">Subsequently validated at scale by the <a href="https://www.nature.com/articles/s41586-019-1201-8">predicted-then-synthesized hydride superconductors</a>, at megabar pressures.</p>
-          </div>
-          <div class="pro">
+            </div>
+          </details>
+          <details class="pro" id="p-types">
+            <summary>
             <h4>Dependent and directed type systems for multiphysics models<span class="yr">2015</span></h4>
             <p class="ptags"><span class="ptag">type theory</span><span class="ptag">category theory</span><span class="ptag">scientific computing</span></p>
+            </summary>
+            <div class="pro-body">
             <p>Proposal that multiphysics models be expressed in a dependent type language. Classical fields are <a href="https://ncatlab.org/nlab/show/fiber+bundles+in+physics">sections of fiber bundles</a>; dependent types are semantically fibrations; the correspondence permits model structure, including direction of coupling, to be carried in the type and exploited by the compiler. Visiting researcher, Santa Fe Institute.</p>
             <p class="lim">Motivated by run time rather than correctness alone: dependently typed elimination of runtime checks <a href="https://www.cs.cmu.edu/~fp/papers/pldi98dml.pdf">measurably reduces execution time</a> on ordinary numerical code. Directed variants correspond to <a href="https://arxiv.org/abs/1705.07442">cocartesian fibrations</a>; a related applied line of work is <a href="https://arxiv.org/abs/2401.17432">diagrammatic composition of PDE systems</a>, whose reported gains remain qualitative.</p>
-          </div>
-          <div class="pro">
-            <h4>Flexible TiO<sub>2</sub> resistive-switching devices<span class="yr">2012</span></h4>
-            <p class="ptags"><span class="ptag">thin-film devices</span><span class="ptag">resistive switching</span><span class="ptag">device physics</span></p>
-            <p>Fabrication and characterization of <a href="https://www.nature.com/articles/nature06932">memristive devices</a> on compliant substrates, including switching behavior under bend cycling. Research assistantship, Mary Baldwin College.</p>
-            <p class="lim">Motivation was colocated storage and computation for body-worn sensing; now termed in-sensor and near-sensor computing.</p>
-          </div>
-          <div class="pro">
+            </div>
+          </details>
+          <details class="pro" id="p-plasma">
+            <summary>
             <h4>Standing-wave mode structure of an RF discharge in a polyhedral cavity<span class="yr">2012</span></h4>
             <p class="ptags"><span class="ptag">RF plasma</span><span class="ptag">electromagnetics</span><span class="ptag">cavity resonance</span></p>
+            </summary>
+            <div class="pro-body">
             <p>2.45&nbsp;GHz discharge in an evacuated aluminum polyhedron backfilled with argon; cavity geometry selects the supported resonant modes and the discharge organizes along the resulting standing wave. Motivated by deployable conductive structures in ionospheric plasma.</p>
             <p class="lim">Benchtop analogue only: argon matches neither ion mass nor electron temperature, and discharge density sits orders of magnitude above ionospheric values.</p>
-          </div>
+            </div>
+          </details>
+          <details class="pro" id="p-memristor">
+            <summary>
+            <h4>Flexible TiO<sub>2</sub> resistive-switching devices<span class="yr">2012</span></h4>
+            <p class="ptags"><span class="ptag">thin-film devices</span><span class="ptag">resistive switching</span><span class="ptag">device physics</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Fabrication and characterization of <a href="https://www.nature.com/articles/nature06932">memristive devices</a> on compliant substrates, including switching behavior under bend cycling. Research assistantship, Mary Baldwin College.</p>
+            <p class="lim">Motivation was colocated storage and computation for body-worn sensing; now termed in-sensor and near-sensor computing.</p>
+            </div>
+          </details>
+        </div>
+        <div class="pro-group" style="--accent: var(--violet);" id="lab-partial">
+          <h3>Fragments</h3>
+          <p class="gloss">Structure recovered from the traces a language leaves behind.</p>
+          <details class="pro" id="p-braille">
+            <summary>
+            <h4><a href="https://rin.io/camel-paper/">Unsupervised grammar and lexicon induction from partially parallel text</a><span class="yr">2013</span></h4>
+            <p class="ptags"><span class="ptag">natural language processing</span><span class="ptag">lexicon induction</span><span class="ptag">decipherment</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Probabilistic lexicon induction over weakly parallel corpora, evaluated on contracted Grade 2 Braille, chosen as a test language with a known ground truth. Undergraduate thesis, George Mason University. <a href="https://github.com/catherineray/CAMEL">Code</a>.</p>
+            <p>This grew out of automated computational semantics research at GMU, which also included work on abstractive summarization of biomedical literature — getting a machine to read a scientific paper and return something faithful and short enough that a clinician could decide whether the full paper was worth their evening.</p>
+            <p class="lim">Generalizes to incompletely deciphered scripts. Applied motivation: transcription error in installed accessible signage.</p>
+            </div>
+          </details>
+          <details class="pro" id="p-summarization">
+            <summary>
+            <h4>Automated abstractive summarization of biomedical literature for clinical readers<span class="yr">2013</span></h4>
+            <p class="ptags"><span class="ptag">natural language processing</span><span class="ptag">summarization</span><span class="ptag">biomedical text</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Automated computational semantics directed at reducing a paper to a triage-sufficient summary. George Mason University.</p>
+            <p class="lim">Evaluation of evidence fidelity, rather than generation, remains the open problem.</p>
+            </div>
+          </details>
         </div>
         </div>
-      </details>
 
       <div class="code-row">
         <p class="chips">
@@ -1802,61 +2046,11 @@ rail_sections:   # listed in the sidebar under "About Rin"
       </div>
     </section>
 
-    <!-- art portfolio -->
-
-    <section>
-      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="THE OTHER STUDIO" id="about-studio">THE OTHER STUDIO</h2>
-
-      <div class="note studio" style="--accent: var(--violet);">
-        <p>Pastels, acrylic, spray-painted creature murals, tattoos, polaroids. A taste:</p>
-        <ul class="studio-strip">
-          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/00-lain-mexicocity.png" alt="Open the gallery" loading="lazy"></a></li>
-          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/a-vibing.jpg" alt="Open the gallery" loading="lazy"></a></li>
-          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/neon-mantis.png" alt="Open the gallery" loading="lazy"></a></li>
-          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/chaos-penrose.png" alt="Open the gallery" loading="lazy"></a></li>
-          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/sleep-duck.png" alt="Open the gallery" loading="lazy"></a></li>
-        </ul>
-        <p class="studio-more">And beyond the gallery:</p>
-        <div class="studio-doors">
-          <a href="/portfolio/#comics" style="--d: #6cc8f0;"><b>Comics</b><span>Endomortis, with Petra Flurin</span></a>
-          <a href="/portfolio/#writing" style="--d: #f9a13c;"><b>Writing</b><span>a play and poems</span></a>
-          <a href="/portfolio/#music" style="--d: #9b7fd4;"><b>Music</b><span>songs and songwriting</span></a>
-        </div>
-        <div class="studio-btns"><a class="cv cv-art" href="/portfolio/">SEE THE PORTFOLIO →</a></div>
-      </div>
-    </section>
-
-    <!-- contact -->
-
-    <section>
-      <h2 class="sec-head" style="--shadow: var(--orange); --tilt: 2deg;" data-text="CONTACT ME" id="about-contact">CONTACT ME</h2>
-
-      <div class="note note-cream" style="--accent: var(--orange);">
-        <dl class="mails">
-          <div class="mail">
-            <dt>Curiosity is welcome</dt>
-            <dd><a href="mailto:fractalcows@gmail.com">fractalcows@gmail.com</a></dd>
-          </div>
-          <div class="mail">
-            <dt>My work email</dt>
-            <dd><a href="mailto:cray@uni-muenster.de">cray@uni-muenster.de</a></dd>
-          </div>
-        </dl>
-      </div>
-
-      <div class="note" style="--accent: var(--pink);">
-        <p>
-          You will find the name <b>Cathe(rin)e Ray</b> on old stuff and
-          <b>Rin Ray</b> on my newer works — these both refer to the same person.
-          I prefer Rin nowadays.
-        </p>
-      </div>
-    </section>
-
     <!-- publications -->
 
     <section id="research">
-      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="PUBLISHED" id="about-published">PUBLISHED</h2>
+      <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="about-published">THE PROOFS</h2>
+      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="PUBLISHED">PUBLISHED</h2>
 
       <div class="papers" style="--accent: var(--violet);">
 
@@ -1866,7 +2060,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
             joint with D. Lee ·
             <em>Rendiconti del Circolo Matematico di Palermo</em>, Series 2,
             vol. 71, pp. 483–494, 2022 ·
-            circulated in preprint as <em>Automorphisms of the Jacobian</em>
+            circulated in preprint as <em>Automorphisms of the Jacobian</em> ·
+            with a code base written for high-performance computing
           </p>
           <p class="chips"><a class="chip" href="https://arxiv.org/abs/1811.07007">arXiv</a> <a class="chip code" href="https://github.com/catherineray/aut-jac">code: aut-jac</a> </p>
         </article>
@@ -2076,6 +2271,58 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <a class="cv cv-art" href="/pdfs/teaching-statement.pdf">READ MY TEACHING STATEMENT →</a>
     </section>
 
+    <!-- art portfolio -->
+
+    <section>
+      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="THE STUDIO" id="about-studio">THE STUDIO</h2>
+
+      <div class="note studio" style="--accent: var(--violet);">
+        <p>Pastels, acrylic, spray-painted creature murals, tattoos, polaroids. A taste:</p>
+        <ul class="studio-strip">
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/00-lain-mexicocity.png" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/a-vibing.jpg" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/neon-mantis.png" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/chaos-penrose.png" alt="Open the gallery" loading="lazy"></a></li>
+          <li><a href="/portfolio/#gallery"><img src="{{ site.baseurl }}/gallery/sleep-duck.png" alt="Open the gallery" loading="lazy"></a></li>
+        </ul>
+        <p class="studio-more">And beyond the gallery:</p>
+        <div class="studio-doors">
+          <a href="/portfolio/#comics" style="--d: #6cc8f0;"><b>Comics</b><span>Endomortis, with Petra Flurin</span></a>
+          <a href="/portfolio/#writing" style="--d: #f9a13c;"><b>Writing</b><span>a play and poems</span></a>
+          <a href="/portfolio/#music" style="--d: #9b7fd4;"><b>Music</b><span>songs and songwriting</span></a>
+        </div>
+        <div class="studio-btns"><a class="cv cv-art" href="/portfolio/">SEE THE PORTFOLIO →</a></div>
+      </div>
+    </section>
+
+    <!-- contact -->
+
+    <section>
+      <h2 class="sec-head" style="--shadow: var(--orange); --tilt: 2deg;" data-text="CONTACT ME" id="about-contact">CONTACT ME</h2>
+
+      <div class="note note-cream" style="--accent: var(--orange);">
+        <dl class="mails">
+          <div class="mail">
+            <dt>Curiosity is welcome</dt>
+            <dd><a href="mailto:fractalcows@gmail.com">fractalcows@gmail.com</a></dd>
+          </div>
+          <div class="mail">
+            <dt>My work email</dt>
+            <dd><a href="mailto:cray@uni-muenster.de">cray@uni-muenster.de</a></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="note" style="--accent: var(--pink);">
+        <p>
+          You will find the name <b>Cathe(rin)e Ray</b> on old stuff and
+          <b>Rin Ray</b> on my newer works — these both refer to the same person.
+          I prefer Rin nowadays.
+        </p>
+      </div>
+    </section>
+
+
 
   </div>
 
@@ -2131,6 +2378,19 @@ rail_sections:   # listed in the sidebar under "About Rin"
     }
   })();
 </script>
+<script>
+  /* links that point into the method-first list: show it, unfold it, then let the jump happen */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[data-read]');
+    var sec = document.getElementById('before-math');
+    if (!a || !sec) return;
+    var btn = sec.querySelector('.dial [data-set="' + a.dataset.read + '"]');
+    if (btn) btn.click();
+    var det = sec.querySelector('details.fold');
+    if (det) det.open = true;
+  });
+</script>
+
 
 </body>
 </html>
