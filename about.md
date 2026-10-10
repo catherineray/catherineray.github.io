@@ -2147,7 +2147,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="meta">joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj</p>
         </article>
         <article class="paper">
-          <h3>All Bernoulli Numbers in Homotopy Theory Are Shifts<span class="status">on hiatus</span></h3>
+          <h3>All Bernoulli Numbers in Homotopy Theory Are Shifts</h3>
           <p class="meta">
             joint with Andres Mejia and Noah Riggenbach ·
             connecting Kervaire–Milnor to Quillen–Lichtenbaum using the
