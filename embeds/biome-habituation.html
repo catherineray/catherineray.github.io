@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal Habituation Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<style>
+:root{
+--font-sans:system-ui,-apple-system,sans-serif;
+--surface-1:#fff;--border:#e0e0e0;--border-strong:#aaa;
+--text-primary:#1a1a1a;--text-secondary:#444;--text-muted:#888;
+--radius:8px;
+}
+@media(prefers-color-scheme:dark){
+:root:not([data-mode="light"]){
+--surface-1:#1a1a1a;--border:#333;--border-strong:#555;
+--text-primary:#e8e8e8;--text-secondary:#bbb;--text-muted:#888;
+}
+}
+body{margin:0;padding:16px;background:var(--surface-1);color:var(--text-primary);font-family:var(--font-sans)}
+*{box-sizing:border-box}
+.wrap{padding:1rem 0;max-width:600px;margin:0 auto}
+.chart-area{position:relative;width:calc(100% - 40px);height:300px;border-left:2px solid var(--border-strong);border-bottom:2px solid var(--border-strong);margin:12px 0 8px 40px;box-sizing:border-box}
+.y-label{position:absolute;left:-40px;font:400 12px var(--font-sans);color:var(--text-secondary);transform-origin:center}
+.y-top{top:0}.y-mid{top:45%}.y-bot{bottom:0}
+.x-label{position:absolute;bottom:-22px;font:400 12px var(--font-sans);color:var(--text-secondary)}
+.x-start{left:0}.x-end{right:0}
+.axis-title{font:400 12px var(--font-sans);color:var(--text-muted);text-align:center}
+/* sits to the left of the High / Low labels, clear of the axis */
+.ax-y{position:absolute;left:-18px;top:50%;transform:translate(-50%,-50%) rotate(-90deg);white-space:nowrap}
+.controls{display:flex;gap:12px;justify-content:center;align-items:center;padding:8px 0}
+.btn{padding:6px 18px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface-1);color:var(--text-primary);font:400 14px var(--font-sans);cursor:pointer}
+.btn:hover{border-color:var(--border-strong)}
+.legend2{display:flex;gap:20px;justify-content:center;padding:4px 0}
+.legend2 span{display:flex;align-items:center;gap:6px;font:400 13px var(--font-sans);color:var(--text-secondary)}
+.lswatch{width:24px;height:3px;border-radius:2px;display:inline-block}
+canvas{display:block;width:100%;height:100%}
+.smell-icon{position:absolute;top:8px;right:12px;font:400 13px var(--font-sans);color:var(--text-muted);display:flex;align-items:center;gap:4px}
+
+/* ---- site colours and type: sits straight on the page's lilac ---- */
+:root{
+--font-sans:'Space Grotesk','Helvetica Neue',Helvetica,Arial,sans-serif;
+--surface-1:#fff;--border:#1b1b1b;--border-strong:#1b1b1b;
+--text-primary:#1b1b1b;--text-secondary:#1b1b1b;--text-muted:#4a3a63;
+}
+html,body{background:transparent;}
+.btn{font:700 12px 'Space Mono',monospace;letter-spacing:.04em;text-transform:uppercase;border:2px solid #1b1b1b;border-radius:999px;box-shadow:3px 3px 0 #1b1b1b;}
+.btn:hover{background:#fbe919;}
+.btn:active{transform:translate(3px,3px);box-shadow:0 0 0 #1b1b1b;}
+.lswatch{height:4px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="legend2">
+<span><span class="lswatch" style="background:#1b1b1b"></span> Typical person</span>
+<span><span class="lswatch" style="background:#ec3f9e"></span> Highly sensitive / chemical intolerance</span>
+</div>
+<div style="position:relative;margin-left:40px">
+<span class="axis-title ax-y">Signal intensity</span>
+<div class="chart-area" id="chartArea">
+<canvas id="cv"></canvas>
+<span class="y-label y-top">High</span>
+<span class="y-label y-bot">Low</span>
+<span class="x-label x-start">0s</span>
+<span class="x-label x-end">60s</span>
+<span class="smell-icon">&#x2248; Smell introduced</span>
+</div>
+</div>
+<div class="axis-title" style="margin-left:40px">Time after exposure</div>
+<div class="controls">
+<button class="btn" id="playBtn">&#x25B6; Play</button>
+<button class="btn" id="resetBtn">&#x21BB; Reset</button>
+</div>
+</div>
+<script>
+const cv=document.getElementById("cv");
+const ctx=cv.getContext("2d");
+const area=document.getElementById("chartArea");
+let W,H,dpr;
+function resize(){
+dpr=window.devicePixelRatio||1;
+W=area.clientWidth;H=area.clientHeight;
+cv.width=W*dpr;cv.height=H*dpr;
+cv.style.width=W+"px";cv.style.height=H+"px";
+ctx.setTransform(dpr,0,0,dpr,0,0);
+}
+resize();
+const pad={t:20,b:20,l:10,r:10};
+const pw=()=>W-pad.l-pad.r;
+const ph=()=>H-pad.t-pad.b;
+function typical(t){return 0.92*Math.exp(-3.5*t)+0.08;}
+function sensitive(t){return 0.88+0.04*Math.sin(t*6)*Math.exp(-0.3*t);}
+let progress=0;
+let animId=null;
+let playing=false;
+function draw(){
+ctx.clearRect(0,0,W,H);
+const w=pw(),h=ph();
+ctx.save();
+ctx.translate(pad.l,pad.t);
+const steps=Math.floor(progress*200);
+if(steps<2)return ctx.restore();
+ctx.lineWidth=3;ctx.lineJoin="round";ctx.lineCap="round";
+ctx.strokeStyle="#1b1b1b";
+ctx.beginPath();
+for(let i=0;i<=steps;i++){
+const t=i/200;
+const x=t*w;
+const y=(1-typical(t))*h;
+i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+}
+ctx.stroke();
+ctx.strokeStyle="#ec3f9e";
+ctx.beginPath();
+for(let i=0;i<=steps;i++){
+const t=i/200;
+const x=t*w;
+const y=(1-sensitive(t))*h;
+i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+}
+ctx.stroke();
+if(progress>=0.6){
+const tEnd=progress;
+const yTyp=(1-typical(tEnd))*h+pad.t;
+const yHsp=(1-sensitive(tEnd))*h+pad.t;
+const xEnd=tEnd*w+pad.l;
+ctx.restore();
+ctx.font="500 12px "+getComputedStyle(document.documentElement).getPropertyValue('--font-sans');
+ctx.fillStyle="#1b1b1b";
+ctx.textAlign="left";
+ctx.fillText("Habituated",xEnd+8,yTyp+4);
+ctx.fillStyle="#ec3f9e";
+ctx.fillText("Still intense",xEnd+8,yHsp+4);
+return;
+}
+ctx.restore();
+}
+function animate(ts){
+if(!playing)return;
+progress=Math.min(progress+0.006,1);
+draw();
+if(progress<1)animId=requestAnimationFrame(animate);
+else playing=false;
+}
+document.getElementById("playBtn").onclick=()=>{
+if(playing)return;
+if(progress>=1)progress=0;
+playing=true;
+animId=requestAnimationFrame(animate);
+};
+document.getElementById("resetBtn").onclick=()=>{
+playing=false;
+if(animId)cancelAnimationFrame(animId);
+progress=0;
+draw();
+};
+window.addEventListener("resize",()=>{resize();draw();});
+draw();
+// tell the embedding post how tall this is
+function tellHeight(){ if(window.parent!==window) window.parent.postMessage({embed:"biome-habituation",height:document.body.offsetHeight},"*"); }
+tellHeight();window.addEventListener("resize",tellHeight);
+</script>
+</body>
+</html>

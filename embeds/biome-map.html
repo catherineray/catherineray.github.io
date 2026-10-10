@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biome Connection Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{
+--font-sans:system-ui,-apple-system,sans-serif;
+--surface-1:#fff;--border:#e0e0e0;--border-strong:#aaa;
+--text-primary:#1a1a1a;--text-secondary:#444;--text-muted:#888;--text-accent:#2563eb;
+--radius:8px;
+}
+@media(prefers-color-scheme:dark){
+:root:not([data-mode="light"]){
+--surface-1:#1a1a1a;--border:#333;--border-strong:#555;
+--text-primary:#e8e8e8;--text-secondary:#bbb;--text-muted:#888;--text-accent:#60a5fa;
+}
+}
+[data-mode="dark"]{
+--surface-1:#1a1a1a;--border:#333;--border-strong:#555;
+--text-primary:#e8e8e8;--text-secondary:#bbb;--text-muted:#888;--text-accent:#60a5fa;
+}
+body{margin:0;padding:12px 8px;background:var(--surface-1);color:var(--text-primary);font-family:var(--font-sans)}
+*{box-sizing:border-box}
+/* the map keeps a readable size; on a narrow screen it scrolls sideways instead of piling up */
+.map-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.map-wrap{position:relative;width:100%;min-width:660px;max-width:900px;margin:0 auto;aspect-ratio:100/85;overflow:hidden}
+.sub .narrow{display:none}
+@media(max-width:675px){.sub .narrow{display:inline}}
+.map-inner{position:absolute;inset:0}
+svg.bg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+svg.bg path.hit{cursor:pointer}
+.nd{position:absolute;padding:7px 14px;border-radius:100px;cursor:pointer;font:500 11.5px var(--font-sans);text-align:center;user-select:none;z-index:3;white-space:nowrap;border:1px solid;transition:all .4s cubic-bezier(.4,0,.2,1);letter-spacing:.015em;line-height:1.3}
+.nd:hover{transform:translate(-50%,-50%) scale(1.08)}
+.nd.dim{opacity:.08;transform:translate(-50%,-50%) scale(.9)}
+.nd.lit{transform:translate(-50%,-50%) scale(1.1)}
+.nd.hub{padding:11px 22px;font-size:13.5px;border-radius:100px;z-index:4}
+.cat-spd{background:rgba(127,119,221,.12);border-color:rgba(127,119,221,.4);color:#534AB7}
+.cat-neuro{background:rgba(133,183,235,.12);border-color:rgba(133,183,235,.4);color:#185FA5}
+.cat-gut{background:rgba(93,202,165,.12);border-color:rgba(93,202,165,.4);color:#0F6E56}
+.cat-immune{background:rgba(240,153,123,.12);border-color:rgba(240,153,123,.4);color:#993C1D}
+.cat-mental{background:rgba(237,147,177,.12);border-color:rgba(237,147,177,.4);color:#993556}
+.nd.lit.cat-spd{background:rgba(127,119,221,.22);border-color:#534AB7}
+.nd.lit.cat-neuro{background:rgba(133,183,235,.22);border-color:#185FA5}
+.nd.lit.cat-gut{background:rgba(93,202,165,.22);border-color:#0F6E56}
+.nd.lit.cat-immune{background:rgba(240,153,123,.22);border-color:#993C1D}
+.nd.lit.cat-mental{background:rgba(237,147,177,.22);border-color:#993556}
+@media(prefers-color-scheme:dark){
+:root:not([data-mode="light"]) .cat-spd{background:rgba(175,169,236,.1);border-color:rgba(175,169,236,.3);color:#CECBF6}
+:root:not([data-mode="light"]) .cat-neuro{background:rgba(133,183,235,.1);border-color:rgba(133,183,235,.3);color:#B5D4F4}
+:root:not([data-mode="light"]) .cat-gut{background:rgba(93,202,165,.1);border-color:rgba(93,202,165,.3);color:#9FE1CB}
+:root:not([data-mode="light"]) .cat-immune{background:rgba(240,153,123,.1);border-color:rgba(240,153,123,.3);color:#F5C4B3}
+:root:not([data-mode="light"]) .cat-mental{background:rgba(237,147,177,.1);border-color:rgba(237,147,177,.3);color:#F4C0D1}
+:root:not([data-mode="light"]) .nd.lit.cat-spd{background:rgba(175,169,236,.2);border-color:#AFA9EC}
+:root:not([data-mode="light"]) .nd.lit.cat-neuro{background:rgba(133,183,235,.2);border-color:#85B7EB}
+:root:not([data-mode="light"]) .nd.lit.cat-gut{background:rgba(93,202,165,.2);border-color:#5DCAA5}
+:root:not([data-mode="light"]) .nd.lit.cat-immune{background:rgba(240,153,123,.2);border-color:#F0997B}
+:root:not([data-mode="light"]) .nd.lit.cat-mental{background:rgba(237,147,177,.2);border-color:#ED93B1}
+}
+[data-mode="dark"] .cat-spd{background:rgba(175,169,236,.1);border-color:rgba(175,169,236,.3);color:#CECBF6}
+[data-mode="dark"] .cat-neuro{background:rgba(133,183,235,.1);border-color:rgba(133,183,235,.3);color:#B5D4F4}
+[data-mode="dark"] .cat-gut{background:rgba(93,202,165,.1);border-color:rgba(93,202,165,.3);color:#9FE1CB}
+[data-mode="dark"] .cat-immune{background:rgba(240,153,123,.1);border-color:rgba(240,153,123,.3);color:#F5C4B3}
+[data-mode="dark"] .cat-mental{background:rgba(237,147,177,.1);border-color:rgba(237,147,177,.3);color:#F4C0D1}
+[data-mode="dark"] .nd.lit.cat-spd{background:rgba(175,169,236,.2);border-color:#AFA9EC}
+[data-mode="dark"] .nd.lit.cat-neuro{background:rgba(133,183,235,.2);border-color:#85B7EB}
+[data-mode="dark"] .nd.lit.cat-gut{background:rgba(93,202,165,.2);border-color:#5DCAA5}
+[data-mode="dark"] .nd.lit.cat-immune{background:rgba(240,153,123,.2);border-color:#F0997B}
+[data-mode="dark"] .nd.lit.cat-mental{background:rgba(237,147,177,.2);border-color:#ED93B1}
+.legend{font:400 11.5px var(--font-sans);color:var(--text-muted);display:flex;gap:14px;flex-wrap:wrap;padding:4px 0 2px;justify-content:center}
+.legend span{display:flex;align-items:center;gap:5px}
+.pip{width:7px;height:7px;border-radius:50%;display:inline-block;opacity:.7}
+.sub{font:400 11px var(--font-sans);color:var(--text-muted);text-align:center;padding:0 0 6px;letter-spacing:.03em}
+.tooltip{position:absolute;z-index:20;background:var(--surface-1);border:1px solid var(--border);border-radius:10px;padding:10px 14px;max-width:260px;opacity:0;transition:opacity .25s ease;font:400 12.5px/1.5 var(--font-sans);color:var(--text-secondary);pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.tooltip.show{opacity:1;pointer-events:auto}
+.tooltip .tt-title{font-weight:500;font-size:11px;color:var(--text-muted);letter-spacing:.04em;margin-bottom:3px;text-transform:uppercase}
+.tooltip .tt-link{display:inline-flex;align-items:center;gap:4px;margin-top:6px;font:500 11.5px var(--font-sans);color:var(--text-accent);text-decoration:none;cursor:pointer;letter-spacing:.01em}
+.tooltip .tt-link:hover{text-decoration:underline}
+
+/* ---- site colours: sits straight on the page's lilac, pills in the site palette ---- */
+:root{
+--font-sans:'Space Grotesk','Helvetica Neue',Helvetica,Arial,sans-serif;
+--ink:#1b1b1b;--ink-soft:#4a3a63;
+--surface-1:#fff;--border:rgba(74,58,99,.38);--border-strong:#1b1b1b;
+--text-primary:#1b1b1b;--text-secondary:#1b1b1b;--text-muted:#4a3a63;--text-accent:#006358;
+--c-spd:#9b7fd4;--c-neuro:#6cc8f0;--c-gut:#fbe919;--c-immune:#f9a13c;--c-mental:#ec3f9e;
+}
+html,body{background:transparent;}
+.nd{color:var(--ink);border:1.5px solid var(--ink);box-shadow:2px 2px 0 var(--ink);font-weight:500;}
+.nd.hub{border-width:2px;box-shadow:3px 3px 0 var(--ink);font-weight:700;}
+.cat-spd,.cat-neuro,.cat-gut,.cat-immune,.cat-mental{color:var(--ink);border-color:var(--ink);background:color-mix(in srgb,var(--c) 38%,#fff);}
+.cat-spd{--c:var(--c-spd);}.cat-neuro{--c:var(--c-neuro);}.cat-gut{--c:var(--c-gut);}.cat-immune{--c:var(--c-immune);}.cat-mental{--c:var(--c-mental);}
+.nd.lit.cat-spd,.nd.lit.cat-neuro,.nd.lit.cat-gut,.nd.lit.cat-immune,.nd.lit.cat-mental{background:color-mix(in srgb,var(--c) 80%,#fff);border-color:var(--ink);}
+.nd.dim{opacity:.22;box-shadow:none;}
+.pip{opacity:1;border:1px solid var(--ink);width:9px;height:9px;}
+.legend,.sub{color:var(--ink-soft);}
+.tooltip{border:2px solid var(--ink);box-shadow:4px 4px 0 var(--c-mental);color:var(--ink);}
+.tooltip .tt-link{font-weight:700;text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="legend">
+<span><span class="pip" style="background:#9b7fd4"></span> Sensory</span>
+<span><span class="pip" style="background:#6cc8f0"></span> Neurochemistry</span>
+<span><span class="pip" style="background:#fbe919"></span> Gut</span>
+<span><span class="pip" style="background:#f9a13c"></span> Immune</span>
+<span><span class="pip" style="background:#ec3f9e"></span> Mental</span>
+</div>
+<div class="sub">click a node · hover or tap a connection for detail<span class="narrow"> · scroll sideways for the rest</span></div>
+<div class="map-scroll">
+<div class="map-wrap">
+<div class="map-inner" id="mi">
+<svg class="bg" id="sv" preserveAspectRatio="xMidYMid meet"></svg>
+<div class="tooltip" id="tt"><div class="tt-title" id="ttT"></div><div id="ttB"></div><a class="tt-link" id="ttL" target="_top">&#x2193; Read this section</a></div>
+</div>
+</div>
+</div>
+<script>
+// links jump to the section of the post this map is embedded in
+const BASE="/biome/";
+const nodes=[
+{id:"spd",label:"Sensory processing disorder",px:50,py:48,cat:"spd",hub:true,rw:140,rh:20},
+{id:"chem",label:"Chemical intolerance",px:22,py:18,cat:"spd",rw:95,rh:16},
+{id:"pain",label:"Chronic pain",px:26,py:35,cat:"spd",rw:70,rh:16},
+{id:"tunnel",label:"Visual tunneling",px:13,py:50,cat:"spd",rw:85,rh:16},
+{id:"glut",label:"Excess glutamate",px:50,py:12,cat:"neuro",rw:90,rh:16},
+{id:"gaba",label:"Gabapentin / GABA",px:74,py:10,cat:"neuro",rw:95,rh:16},
+{id:"stress",label:"Perceived stress",px:78,py:30,cat:"neuro",rw:85,rh:16},
+{id:"sero",label:"Serotonin production",px:34,py:91,cat:"neuro",rw:100,rh:16},
+{id:"mental",label:"Excitable mental illness",px:81,py:50,cat:"mental",rw:110,rh:16},
+{id:"ens",label:"Enteric nervous system",px:46,py:78,cat:"gut",rw:110,rh:16},
+{id:"micro",label:"Gut microbiome",px:70,py:78,cat:"gut",rw:80,rh:16},
+{id:"virome",label:"Virome",px:86,py:72,cat:"gut",rw:50,rh:16},
+{id:"immune",label:"Low IgA / IgG",px:16,py:64,cat:"immune",rw:75,rh:16},
+{id:"auto",label:"Autoimmune disease",px:13,py:82,cat:"immune",rw:95,rh:16}
+];
+const edges=[
+["spd","chem","Same brain blood flow","EEG and fMRI show identical sustained signal intensity in both SPD and chemical intolerance — the brain never habituates to the stimulus.","#sensory-processing-disorders-and-connectivity"],
+["spd","pain","Same brain blood flow","Chronic pain patients show the same non-habituating brain blood flow as those with chemical intolerance — persistent signal processing at full intensity.","#sensory-processing-disorders-and-connectivity"],
+["spd","tunnel","Sensory overload","Visual tunneling is a subconscious spatial adaptation — the brain narrows its field to reduce the overwhelming volume of visual information.","#spd-causing-visual-tunneling-and-autoimmune-conditions-affecting-eyesight"],
+["spd","glut","Overexcitability","Excess free glutamate causes sensory overexcitability. A hangover mimics this: the temporary glutamate surplus makes every sense feel amplified.","#sensory-processing-disorders-and-glutamate"],
+["spd","mental","Makes more likely","A sensory processing disorder makes excitable mental illnesses more likely — ADHD, autism, bipolar, anxiety, and OCD all share \"ring of fire\" brain patterns.","#excitable-mental-illness-and-the-role-of-glutamate"],
+["spd","stress","Perceived stress ↑","Higher sensitivity leads to greater perceived stress, which cascades into immune suppression and accelerated immunosenescence.","#enteric-nervous-systemspd-causing-lowered-immune-system-causing-autoimmune-disease"],
+["glut","mental","Ring-of-fire pattern","SPECT imaging shows that excess glutamate creates \"ring of fire\" blood flow in ADHD, autism, bipolar, anxiety, and OCD brains.","#excitable-mental-illness-and-the-role-of-glutamate"],
+["glut","gaba","Inhibits synthesis","Gabapentin competitively inhibits BCAT, slowing glutamate synthesis. Effective at ~600mg for patients who self-medicate with alcohol for overexcitability.","#sensory-processing-disorders-and-glutamate"],
+["ens","sero","Produces 90%","The gut produces 90% of the body’s serotonin. Without adequate folic acid and basic nutrients, it literally cannot synthesize serotonin or dopamine.","#enteric-nervous-system-and-excitable-mental-illness"],
+["ens","immune","Controls IgA","IgA secretion is under direct enteric neural control — acetylcholine and norepinephrine act on crypt epithelial cells to promote IgA transcytosis.","#autoimmune-disease-is-under-direct-enteric-neural-control"],
+["ens","micro","Bidirectional","The enteric nervous system and gut microbiome communicate in both directions. Fecal transplants can transfer psychiatric symptoms between donors and recipients.","#enteric-nervous-system-and-excitable-mental-illness"],
+["micro","mental","Fecal transplants","Transplanting microbiota from psychiatrically ill donors to healthy recipients can transmit depressive and anxiety-like symptoms and behaviors.","#enteric-nervous-system-and-excitable-mental-illness"],
+["micro","virome","Phages maintain","Bacteriophages are the true controllers of the gut biome — they maintain the biodiversity of a healthy gut microbiome.","#virome-mediates-stress-and-memory-responses"],
+["micro","auto","Altered in ASD","50% of children with autism also have GI symptoms. They show decreased Bifidobacterium, Prevotella, and Desulfovibrio, and reduced short-chain fatty acids.","#sensory-processing-disorders-and-autoimmune-disease"],
+["immune","auto","10–20× celiac","People with IgA deficiency are 10–20× more likely to develop celiac. Standard IgA tests give false negatives because their baseline IgA is already low.","#enteric-nervous-systemspd-causing-lowered-immune-system-causing-autoimmune-disease"],
+["stress","immune","Lowers immunity","Perceived stress directly decreases IgA levels. Higher sensitivity → greater stress → lower immunity → earlier onset of autoimmune conditions.","#enteric-nervous-systemspd-causing-lowered-immune-system-causing-autoimmune-disease"],
+["sero","mental","Deficiency → symptoms","Severe serotonin deficiency from gut dysfunction contributes directly to psychiatric symptoms. The gut-brain axis is not metaphorical.","#enteric-nervous-system-and-excitable-mental-illness"],
+["pain","auto","Central sensitization","Original inflammation triggers faulty pain signaling that persists after the input is gone. Tricyclic antidepressants help.","#mechanisms-of-functional-dyspepsia-and-treatment-with-tricyclic-antidepressent"],
+["micro","sero","Bacteria set the level","Spore-forming gut bacteria push the enterochromaffin cells to make serotonin — shown in mice, and with human microbiota.","#enteric-nervous-system-and-excitable-mental-illness"],
+["stress","micro","Shifts the bacteria","Stress changes who lives in the gut. A single two-hour social stressor shifts the bacterial community in mice, and Lactobacillus drops under stress in rodents, primates and humans.","#enteric-nervous-system-and-excitable-mental-illness"],
+["virome","stress","Virome protects","Chronic stress changes the phages in a mouse’s gut, and giving a stressed mouse the virome it had before the stress protects it from the behavioural and immune effects.","#virome-mediates-stress-and-memory-responses"],
+["virome","auto","Changes come first","In children at genetic risk of type 1 diabetes, the gut virome became less diverse before the autoantibodies appeared.","#virome-mediates-stress-and-memory-responses"],
+["stress","auto","36% higher risk","In 106,464 Swedes with a stress-related disorder, the risk of a later autoimmune disease was 36% higher, and 46% higher with PTSD.","#enteric-nervous-systemspd-causing-lowered-immune-system-causing-autoimmune-disease"],
+["auto","mental","45% higher risk","In 3.56 million Danes, a prior autoimmune disease raised the risk of a later mood disorder by 45%.","#sensory-processing-disorders-and-autoimmune-disease"],
+["immune","micro","Different microbiota","People with IgA deficiency have a different gut microbiota from everyone else, even though their bodies secrete IgM to compensate.","#enteric-nervous-systemspd-causing-lowered-immune-system-causing-autoimmune-disease"]
+];
+const mi=document.getElementById("mi");
+const sv=document.getElementById("sv");
+const tt=document.getElementById("tt");
+const ttT=document.getElementById("ttT");
+const ttB=document.getElementById("ttB");
+const ttL=document.getElementById("ttL");
+const adj={};nodes.forEach(n=>adj[n.id]=[]);
+let W,H;
+function measure(){const r=mi.getBoundingClientRect();W=r.width;H=r.height;}
+measure();
+sv.setAttribute("viewBox","0 0 "+W+" "+H);
+const svgNS="http://www.w3.org/2000/svg";
+const orbG=document.createElementNS(svgNS,"g");
+sv.appendChild(orbG);
+[22,38].forEach(r=>{
+const c=document.createElementNS(svgNS,"circle");
+c.setAttribute("cx",50/100*W);c.setAttribute("cy",48/100*H);
+c.setAttribute("r",r/100*Math.min(W,H));
+c.setAttribute("fill","none");c.setAttribute("stroke","var(--border)");
+c.setAttribute("stroke-width","0.5");c.setAttribute("stroke-dasharray","3,6");
+c.setAttribute("opacity","0.35");
+orbG.appendChild(c);
+});
+const catStrokes={spd:"#5b3fa8",neuro:"#1b6f9c",gut:"#1b1b1b",immune:"#b35c00",mental:"#c2187a"};
+function ptOnQuad(x1,y1,cpx,cpy,x2,y2,t){
+return{x:(1-t)*(1-t)*x1+2*(1-t)*t*cpx+t*t*x2,y:(1-t)*(1-t)*y1+2*(1-t)*t*cpy+t*t*y2};
+}
+function bestT(x1,y1,cpx,cpy,x2,y2){
+let best=0.5,bestD=0;
+for(let t=0.25;t<=0.75;t+=0.05){
+const p=ptOnQuad(x1,y1,cpx,cpy,x2,y2,t);
+let minND=Infinity;
+for(const n of nodes){
+const nx=n.px/100*W,ny=n.py/100*H;
+const d=Math.sqrt((p.x-nx)**2+(p.y-ny)**2);
+if(d<minND)minND=d;
+}
+if(minND>bestD){bestD=minND;best=t;}
+}
+return best;
+}
+const edgeEls=[];
+const edgeG=document.createElementNS(svgNS,"g");
+sv.appendChild(edgeG);
+edges.forEach(([a,b,gist,detail,anchor])=>{
+const na=nodes.find(n=>n.id===a),nb=nodes.find(n=>n.id===b);
+const x1=na.px/100*W,y1=na.py/100*H,x2=nb.px/100*W,y2=nb.py/100*H;
+const dx=x2-x1,dy=y2-y1,len=Math.sqrt(dx*dx+dy*dy);
+const nx=-dy/len,ny=dx/len;
+const bulge=Math.min(len*.18,32);
+const cpx=(x1+x2)/2+nx*bulge,cpy=(y1+y2)/2+ny*bulge;
+const visPath=document.createElementNS(svgNS,"path");
+visPath.setAttribute("d","M"+x1+","+y1+" Q"+cpx+","+cpy+" "+x2+","+y2);
+visPath.setAttribute("fill","none");visPath.setAttribute("stroke","var(--border)");
+visPath.setAttribute("stroke-width","0.8");visPath.setAttribute("stroke-linecap","round");
+visPath.setAttribute("opacity","0.7");visPath.style.pointerEvents="none";
+visPath.style.transition="all .35s ease";
+edgeG.appendChild(visPath);
+const t=bestT(x1,y1,cpx,cpy,x2,y2);
+const lp=ptOnQuad(x1,y1,cpx,cpy,x2,y2,t);
+const offX=nx*14,offY=ny*14;
+const gistEl=document.createElementNS(svgNS,"text");
+gistEl.setAttribute("x",lp.x+offX);gistEl.setAttribute("y",lp.y+offY);
+gistEl.setAttribute("text-anchor","middle");
+gistEl.setAttribute("dominant-baseline","middle");
+gistEl.setAttribute("font-size","10");
+gistEl.setAttribute("fill","var(--text-primary)");gistEl.setAttribute("font-weight","700");
+gistEl.setAttribute("font-family","var(--font-sans)");
+gistEl.style.opacity="0";gistEl.style.transition="opacity .35s ease";
+gistEl.style.pointerEvents="none";
+gistEl.textContent=gist;
+edgeG.appendChild(gistEl);
+const hitPath=document.createElementNS(svgNS,"path");
+hitPath.setAttribute("d","M"+x1+","+y1+" Q"+cpx+","+cpy+" "+x2+","+y2);
+hitPath.setAttribute("fill","none");hitPath.setAttribute("stroke","transparent");
+hitPath.setAttribute("stroke-width","18");hitPath.classList.add("hit");
+hitPath.style.cursor="pointer";
+edgeG.appendChild(hitPath);
+const entry={visPath,gistEl,hitPath,a,b,gist,detail,anchor,lx:lp.x,ly:lp.y,q:[x1,y1,cpx,cpy,x2,y2],nx,ny};
+edgeEls.push(entry);
+adj[a].push(b);adj[b].push(a);
+hitPath.addEventListener("mouseenter",()=>hoverEdge(entry));
+hitPath.addEventListener("mouseleave",()=>unhoverEdge(entry));
+hitPath.addEventListener("click",(ev)=>{ev.stopPropagation();clickEdge(entry);});
+});
+let pinnedEdge=null;
+function styleEdgeOn(e){
+const c=nodes.find(n=>n.id===e.a).cat;
+e.visPath.setAttribute("stroke-width","2");
+e.visPath.setAttribute("opacity","1");
+e.visPath.setAttribute("stroke",catStrokes[c]);
+e.gistEl.style.opacity="1";
+}
+function styleEdgeOff(e){
+e.visPath.setAttribute("stroke-width","0.8");
+e.visPath.setAttribute("opacity","0.7");
+e.visPath.setAttribute("stroke","var(--border)");
+e.gistEl.style.opacity="0";
+}
+function showTip(e){
+const na=nodes.find(n=>n.id===e.a),nb=nodes.find(n=>n.id===e.b);
+ttT.textContent=na.label+" → "+nb.label;
+ttB.textContent=e.detail;
+ttL.href=BASE+e.anchor;
+let tx=e.lx,ty=e.ly-16;
+if(tx>W-140)tx=W-140;
+if(tx<140)tx=140;
+if(ty<90){ty=e.ly+30;tt.style.transform="translate(-50%,0)";}
+else{tt.style.transform="translate(-50%,-100%)";}
+tt.style.left=tx+"px";tt.style.top=ty+"px";
+tt.classList.add("show");
+}
+function hideTip(){tt.classList.remove("show");}
+function hoverEdge(e){
+if(pinnedEdge)return;
+styleEdgeOn(e);
+}
+function unhoverEdge(e){
+if(pinnedEdge===e)return;
+if(!pinnedEdge)styleEdgeOff(e);
+}
+function clickEdge(e){
+if(pinnedEdge===e){pinnedEdge=null;styleEdgeOff(e);hideTip();return;}
+if(pinnedEdge)styleEdgeOff(pinnedEdge);
+pinnedEdge=e;
+styleEdgeOn(e);
+showTip(e);
+}
+const nodeEls={};
+nodes.forEach(n=>{
+const div=document.createElement("div");
+div.className="nd cat-"+n.cat+(n.hub?" hub":"");
+div.textContent=n.label;
+div.style.left=n.px+"%";div.style.top=n.py+"%";
+div.style.transform="translate(-50%,-50%)";
+div.dataset.id=n.id;
+mi.appendChild(div);
+nodeEls[n.id]=div;
+});
+// put each connection's label where it covers no node and no other label
+function placeLabels(){
+const mr=mi.getBoundingClientRect();
+const boxes=nodes.map(n=>{const r=nodeEls[n.id].getBoundingClientRect();return{x0:r.left-mr.left-9,y0:r.top-mr.top-9,x1:r.right-mr.left+9,y1:r.bottom-mr.top+9};});
+const over=(a,b)=>Math.max(0,Math.min(a.x1,b.x1)-Math.max(a.x0,b.x0))*Math.max(0,Math.min(a.y1,b.y1)-Math.max(a.y0,b.y0));
+const placed=[];
+edgeEls.forEach(e=>{
+const tw=(e.gistEl.getComputedTextLength()||e.gist.length*5.8)/2+7,th=9;
+let best=null;
+for(let t=0.1;t<=0.901;t+=0.05){
+const p=ptOnQuad(...e.q,t);
+for(const off of [13,-13,24,-24,36,-36,48,-48,60,-60]){
+const cx=p.x+e.nx*off,cy=p.y+e.ny*off;
+const b={x0:cx-tw,y0:cy-th,x1:cx+tw,y1:cy+th};
+let s=Math.abs(t-0.5)*40+Math.abs(off);
+boxes.forEach(n=>s+=over(b,n)*4);
+placed.forEach(l=>s+=over(b,l)*4);
+if(b.x0<0||b.x1>W||b.y0<0||b.y1>H)s+=5000;
+if(!best||s<best.s)best={s,cx,cy,b};
+}
+}
+e.gistEl.setAttribute("x",best.cx);e.gistEl.setAttribute("y",best.cy);
+e.lx=best.cx;e.ly=best.cy;
+placed.push(best.b);
+});
+}
+placeLabels();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(placeLabels);
+let active=null;
+function highlight(id){
+if(active===id){active=null;reset();return;}
+active=id;pinnedEdge=null;hideTip();
+const conn=new Set(adj[id]);conn.add(id);
+Object.values(nodeEls).forEach(el=>{
+el.classList.toggle("dim",!conn.has(el.dataset.id));
+el.classList.toggle("lit",el.dataset.id===id);
+});
+edgeEls.forEach(e=>{
+const on=(e.a===id||e.b===id);
+e.visPath.style.opacity=on?"1":"0.04";
+e.visPath.setAttribute("stroke-width",on?"1.6":"0.8");
+e.gistEl.style.opacity=on?"1":"0";
+if(on){e.visPath.setAttribute("stroke",catStrokes[nodes.find(n=>n.id===id).cat]);}
+else{e.visPath.setAttribute("stroke","var(--border)");}
+});
+}
+function reset(){
+Object.values(nodeEls).forEach(el=>{el.classList.remove("dim","lit");});
+edgeEls.forEach(e=>{styleEdgeOff(e);});
+hideTip();pinnedEdge=null;
+}
+mi.addEventListener("click",e=>{
+const nd=e.target.closest(".nd");
+if(nd){highlight(nd.dataset.id);}
+else if(!e.target.closest(".hit")&&!e.target.closest(".tooltip")){active=null;reset();}
+});
+window.addEventListener("resize",()=>{
+measure();
+sv.setAttribute("viewBox","0 0 "+W+" "+H);
+});
+// tell the embedding post how tall this is
+function tellHeight(){ if(window.parent!==window) window.parent.postMessage({embed:"biome-map",height:document.body.offsetHeight},"*"); }
+tellHeight();window.addEventListener("resize",tellHeight);
+</script>
+</body>
+</html>
