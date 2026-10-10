@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="Skeletal structure of memantine, 3,5-dimethyladamantan-1-amine">
+  <!-- memantine (3,5-dimethyladamantan-1-amine); atom positions from the PubChem 2D record, CID 4054 -->
+  <rect width="1600" height="1000" fill="#6cc8f0"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#ec3f9e" stroke-width="26" transform="translate(14 14)">
+      <line x1="773.3" y1="252.1" x2="773.3" y2="395.6"/>
+      <line x1="944.7" y1="692.5" x2="773.3" y2="754.6"/>
+      <line x1="944.7" y1="692.5" x2="944.7" y2="494.6"/>
+      <line x1="944.7" y1="692.5" x2="817.3" y2="879.4"/>
+      <line x1="944.7" y1="692.5" x2="1089.7" y2="837.4"/>
+      <line x1="601.9" y1="692.5" x2="773.3" y2="754.6"/>
+      <line x1="601.9" y1="692.5" x2="601.9" y2="494.6"/>
+      <line x1="601.9" y1="692.5" x2="430.3" y2="791.5"/>
+      <line x1="601.9" y1="692.5" x2="456.9" y2="547.5"/>
+      <line x1="773.3" y1="395.6" x2="944.7" y2="494.6"/>
+      <line x1="773.3" y1="395.6" x2="601.9" y2="494.6"/>
+    </g>
+    <g stroke="#1b1b1b" stroke-width="16" opacity=".55">
+      <line x1="773.3" y1="395.6" x2="631.6" y2="567.4"/>
+      <line x1="631.6" y1="781.7" x2="817.3" y2="879.4"/>
+      <line x1="631.6" y1="781.7" x2="430.3" y2="791.5"/>
+      <line x1="631.6" y1="781.7" x2="631.6" y2="567.4"/>
+    </g>
+    <g stroke="#1b1b1b" stroke-width="26">
+      <line x1="773.3" y1="252.1" x2="773.3" y2="395.6"/>
+      <line x1="944.7" y1="692.5" x2="773.3" y2="754.6"/>
+      <line x1="944.7" y1="692.5" x2="944.7" y2="494.6"/>
+      <line x1="944.7" y1="692.5" x2="817.3" y2="879.4"/>
+      <line x1="944.7" y1="692.5" x2="1089.7" y2="837.4"/>
+      <line x1="601.9" y1="692.5" x2="773.3" y2="754.6"/>
+      <line x1="601.9" y1="692.5" x2="601.9" y2="494.6"/>
+      <line x1="601.9" y1="692.5" x2="430.3" y2="791.5"/>
+      <line x1="601.9" y1="692.5" x2="456.9" y2="547.5"/>
+      <line x1="773.3" y1="395.6" x2="944.7" y2="494.6"/>
+      <line x1="773.3" y1="395.6" x2="601.9" y2="494.6"/>
+    </g>
+  </g>
+  <g font-family="'Archivo Black','Arial Black',Impact,Arial,sans-serif" font-weight="900" font-size="150" text-anchor="middle">
+    <text x="813.3" y="235.6" fill="#ec3f9e" transform="translate(9 9)">NH<tspan font-size="96" dy="26">2</tspan></text>
+    <text x="813.3" y="235.6" fill="#fff" stroke="#1b1b1b" stroke-width="12" paint-order="stroke fill" stroke-linejoin="round">NH<tspan font-size="96" dy="26">2</tspan></text>
+  </g>
+</svg>

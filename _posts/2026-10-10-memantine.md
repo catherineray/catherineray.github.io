@@ -1,7 +1,7 @@
 ---
 title: "The Six-Cent Drug Nobody Will Test: Memantine as an Alternative to Opioids for Chronic Pain"
 date: "2026-10-10"
-description: "Memantine is a cheap generic dementia drug that might help with chronic pain. Nobody has tested it properly, and I think that's mostly about money."
+description: "Memantine is a cheap generic dementia drug that might help with chronic pain. Nobody has tested it properly, and that's mostly about money."
 categories:
   - "medicine"
   - "bio"
@@ -14,12 +14,13 @@ tags:
   - central-sensitization
   - drug-repurposing
   - cbd
+card_image: /images/memantine.svg   # the molecule, drawn for the post cards
 format: explanation
 topics:
   - "Biology & medicine"
 ---
 
-*Memantine is a cheap generic dementia drug that might help with chronic pain. Nobody has tested it properly, and I think that's mostly about money.*
+*Memantine is a cheap generic dementia drug that might help with chronic pain. Nobody has tested it properly, and that's mostly about money.*
 
 `Uncompetitive NMDA receptor antagonist` · `Off patent` · `≈ $0.06 per 10 mg tablet` · `Evidence: thin, mixed, underpowered`
 
