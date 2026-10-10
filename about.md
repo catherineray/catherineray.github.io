@@ -8,7 +8,7 @@ rail_highlights: true   # show the genre highlights in the sidebar here
 rail_sections:   # listed in the sidebar under "About Rin"
   - { id: about-path, label: "THE PATH", color: "#6cc8f0" }
   - { id: about-lab, label: "THE LAB", color: "#ec3f9e" }   # color matches its section title
-  - { id: about-published, label: "THE PROOFS", color: "#9b7fd4" }   # the research part: Published, Preprints, In progress, Expository
+  - { id: about-published, label: "THE PROOFS", color: "#9b7fd4" }   # the research part: Publications & Preprints, In progress, Expository
   - { id: about-teaching, label: "TEACHING", color: "#f4a58a" }
   - { id: about-studio, label: "THE STUDIO", color: "#fffdf7" }
   - { id: about-contact, label: "CONTACT", color: "#f9a13c" }
@@ -834,6 +834,12 @@ rail_sections:   # listed in the sidebar under "About Rin"
     .fold-cue { font-size: 1.05rem; padding: .85rem 1rem; transform: none; }
   }
   .sec-head[id] { scroll-margin-top: 20px; }
+  /* a long section title may wrap on a phone; its shadow copy wraps with it */
+  .sec-head.sec-wrap::before { white-space: normal; }
+  /* where a paper stands: published, submitted, or preprint */
+  .status.st-published { background: var(--yellow); border: 2px solid var(--ink); }
+  .status.st-submitted { background: var(--cyan); border: 2px solid var(--ink); }
+  .status.st-preprint { background: var(--paper); border: 2px solid var(--ink); }
   .stub-line { margin: -.6rem 0 1rem; font-size: .8rem; color: var(--ink-soft); }
   .stub-line .status { margin: 0 .4em 0 0; background: var(--yellow); border: 2px solid var(--ink); }
   /* site-wide font rule: reading text Space Grotesk; small labels stay Space Mono */
@@ -2050,44 +2056,13 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
     <section id="research">
       <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="about-published">THE PROOFS</h2>
-      <h2 class="sec-head" style="--shadow: var(--violet); --tilt: -2deg;" data-text="PUBLISHED">PUBLISHED</h2>
+      <h2 class="sec-head sec-wrap" style="--shadow: var(--violet); --tilt: -2deg;" data-text="PUBLICATIONS &amp; PREPRINTS" id="about-preprints">PUBLICATIONS &amp; PREPRINTS</h2>
 
+      <!-- published, submitted and preprints together, newest first -->
       <div class="papers" style="--accent: var(--violet);">
 
         <article class="paper">
-          <h3><a href="https://link.springer.com/article/10.1007/s12215-020-00590-7">Automorphisms of Abelian Varieties and Principal Polarizations</a></h3>
-          <p class="meta">
-            joint with D. Lee ·
-            <em>Rendiconti del Circolo Matematico di Palermo</em>, Series 2,
-            vol. 71, pp. 483–494, 2022 ·
-            circulated in preprint as <em>Automorphisms of the Jacobian</em> ·
-            with a code base written for high-performance computing
-          </p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1811.07007">arXiv</a> <a class="chip code" href="https://github.com/catherineray/aut-jac">code: aut-jac</a> </p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17">Toward Directed Collapsibility</a></h3>
-          <p class="meta">
-            joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy,
-            N. Sanderson, E. Vidaurre ·
-            <em>Advances in Mathematical Sciences</em>, vol. 21, pp. 255–271, 2020
-          </p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1902.01039">arXiv</a></p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- preprints -->
-
-    <section>
-      <h2 class="sec-head" style="--shadow: var(--cyan); --tilt: 2deg;" data-text="PREPRINTS" id="about-preprints">PREPRINTS</h2>
-
-      <div class="papers" style="--accent: var(--cyan);">
-
-        <article class="paper">
-          <h3><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture at Coheight 1</a><span class="status">Sept 2026</span></h3>
+          <h3><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture at Coheight 1</a><span class="status">Sept 2026</span><span class="status st-preprint">preprint</span></h3>
           <p class="meta">
             joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank,
             Jared Weinstein, and Xinyu Zhou ·
@@ -2096,15 +2071,15 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </article>
 
         <article class="paper">
-          <h3><a href="https://arxiv.org/abs/2509.23428">Moduli Stacks of <i>G</i>-Curves in Homotopy Theory at \(h = p-1\)</a><span class="status">updated Sept 2026</span></h3>
-          <p class="meta">Sept 2025, significant update Sept 2026</p>
+          <h3><a href="https://arxiv.org/abs/2509.23428">Moduli Stacks of <i>G</i>-Curves in Homotopy Theory at \(h = p-1\)</a><span class="status">Sept 2025</span><span class="status st-submitted">submitted</span></h3>
+          <p class="meta">significant update Sept 2026</p>
           <p class="chips"><a class="chip" href="https://arxiv.org/abs/2509.23428">arXiv</a></p>
         </article>
 
         <article class="paper">
-          <h3><a href="https://arxiv.org/abs/2507.10157">Toward the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem</a></h3>
+          <h3><a href="https://arxiv.org/abs/2507.10157">Toward the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem</a><span class="status">July 2025</span><span class="status st-submitted">submitted</span></h3>
           <p class="meta">
-            joint with Eva Belmont · July 2025 ·
+            joint with Eva Belmont ·
             the \(E_2\)-page for the homotopy fixed points spectral
             sequence computing \(\pi_*(E_6^{hC_9})\)
           </p>
@@ -2112,14 +2087,36 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </article>
 
         <article class="paper">
-          <h3><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a><span class="status">under construction</span></h3>
-          <p class="meta">July 2025 · expository errors, under construction</p>
+          <h3><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a><span class="status">July 2025</span><span class="status st-preprint">preprint</span></h3>
+          <p class="meta">expository errors, under construction</p>
           <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.00309">arXiv</a></p>
         </article>
 
         <article class="paper">
-          <h3><a href="https://arxiv.org/abs/1911.08615">A Global Crystalline Period Map</a></h3>
-          <p class="meta">joint with M. Neaton and A. Pieper · 2018</p>
+          <h3><a href="https://link.springer.com/article/10.1007/s12215-020-00590-7">Automorphisms of Abelian Varieties and Principal Polarizations</a><span class="status">2022</span><span class="status st-published">published</span></h3>
+          <p class="meta">
+            joint with D. Lee ·
+            <em>Rendiconti del Circolo Matematico di Palermo</em>, Series 2,
+            vol. 71, pp. 483–494 ·
+            circulated in preprint as <em>Automorphisms of the Jacobian</em> ·
+            with a code base written for high-performance computing
+          </p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1811.07007">arXiv</a> <a class="chip code" href="https://github.com/catherineray/aut-jac">code: aut-jac</a> </p>
+        </article>
+
+        <article class="paper">
+          <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17">Toward Directed Collapsibility</a><span class="status">2020</span><span class="status st-published">published</span></h3>
+          <p class="meta">
+            joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy,
+            N. Sanderson, E. Vidaurre ·
+            <em>Advances in Mathematical Sciences</em>, vol. 21, pp. 255–271
+          </p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1902.01039">arXiv</a></p>
+        </article>
+
+        <article class="paper">
+          <h3><a href="https://arxiv.org/abs/1911.08615">A Global Crystalline Period Map</a><span class="status">2018</span><span class="status st-preprint">preprint</span></h3>
+          <p class="meta">joint with M. Neaton and A. Pieper</p>
           <p class="chips"><a class="chip" href="https://arxiv.org/abs/1911.08615">arXiv</a></p>
         </article>
 
