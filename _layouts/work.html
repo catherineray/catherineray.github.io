@@ -149,7 +149,7 @@ layout: page
 </div>
 
 <div class="sec-head"><h2 id="gallery" class="gh" data-text="GALLERY" style="--shadow: #ec3f9e; --tilt: -2deg;">GALLERY</h2></div>
-{% if page.gallery_selected %}{% include gallery-wall.html video=page.gallery_video selected=true hide=page.gallery_hide %}{% else %}{% include gallery-wall.html video=page.gallery_video %}{% endif %}
+{% if page.gallery_selected %}{% include gallery-wall.html video=page.gallery_video selected=true hide=page.gallery_hide hide_files=page.gallery_hide_files %}{% else %}{% include gallery-wall.html video=page.gallery_video %}{% endif %}
 
 {% if page.comics %}
 <div class="sec-head"><h2 id="comics" class="gh" data-text="COMICS" style="--shadow: #6cc8f0; --tilt: 1.5deg;">COMICS</h2></div>

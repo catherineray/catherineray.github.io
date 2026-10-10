@@ -6,12 +6,15 @@
   include.selected (optional): true on the Portfolio = only the selected works, leaving out pieces that came
   from blog posts (`post:`) or stand for a post (`link:`); those show on the full /art/ wall only.
   include.hide (optional): mediums to leave off this wall (the Portfolio hides film and digital photos: polaroids only).
+  include.hide_files (optional): single pieces to leave off this wall, by file name (the Portfolio's `gallery_hide_files:`).
+  A page's own `gallery_first:` / `group_first:` set its order; without them the wall uses the ones in art.md.
   include.skip (optional): anchor for a "Skip the gallery" button at the end of the filter bar.
   include.video (optional): { file, youtube, poster }. It replaces the gallery image whose path
   matches `poster` and plays muted on a loop inside the wall.
 {% endcomment %}
 {% assign artpage = site.pages | where: "name", "art.md" | first %}
 {% assign wall_art = artpage.art %}{% if include.selected %}{% assign wall_art = artpage.art | where_exp: "e", "e.post == nil" | where_exp: "e", "e.link == nil" %}{% endif %}{% if include.hide %}{% assign kept = "" | split: "" %}{% for e in wall_art %}{% assign skip_it = false %}{% for t in e.types %}{% if include.hide contains t %}{% assign skip_it = true %}{% endif %}{% endfor %}{% unless skip_it %}{% assign kept = kept | push: e %}{% endunless %}{% endfor %}{% assign wall_art = kept %}{% endif %}
+{% if include.hide_files %}{% assign kept = "" | split: "" %}{% for e in wall_art %}{% unless include.hide_files contains e.file %}{% assign kept = kept | push: e %}{% endunless %}{% endfor %}{% assign wall_art = kept %}{% endif %}
 {% assign types = wall_art | map: "types" | join: "," | split: "," | uniq | sort %}
 {% assign vid = include.video %}
 
@@ -29,6 +32,7 @@
   {% for image in site.static_files %}{% if image.path contains '/gallery/' %}
     {% assign entry = artpage.art | where: "file", image.basename | first %}
     {% if include.selected %}{% if entry.post or entry.link %}{% continue %}{% endif %}{% endif %}
+    {% if include.hide_files contains image.basename %}{% continue %}{% endif %}
     {% if include.hide %}{% assign skip_it = false %}{% for t in entry.types %}{% if include.hide contains t %}{% assign skip_it = true %}{% endif %}{% endfor %}{% if skip_it %}{% continue %}{% endif %}{% endif %}
     {% if entry.title %}{% assign label = entry.title | markdownify | strip_html | strip %}{% else %}{% assign label = "" %}{% endif %}
     {% capture kinds %}{% for t in entry.types %}{{ t | slugify }} {% endfor %}{% assign wk = nil %}{% for w in site.data.medium_groups.works %}{% unless wk %}{% for t in entry.types %}{% if w.mediums contains t %}{% assign wk = w %}{% break %}{% endif %}{% endfor %}{% endunless %}{% endfor %}{% if wk %}g-{{ wk.name | slugify }} {% for sub in wk.subs %}{% for t in entry.types %}{% if sub.mediums contains t %}gs-{{ sub.name | slugify }} {% break %}{% endif %}{% endfor %}{% endfor %}{% endif %}{% for w in site.data.medium_groups.works %}{% if w != wk %}{% for t in entry.types %}{% if w.also contains t %}g-{{ w.name | slugify }} {% break %}{% endif %}{% endfor %}{% endif %}{% endfor %}{% endcapture %}
@@ -132,12 +136,12 @@
   var box = document.querySelector('.gw');
   if (!box) return;
   var wall = box.querySelector('.gw-wall');
-  // pieces listed in `gallery_first:` (art.md) open the wall, in that order
-  var first = {{ artpage.gallery_first | jsonify }} || [];
+  // pieces listed in `gallery_first:` (this page's, else art.md's) open the wall, in that order
+  var first = {{ page.gallery_first | default: artpage.gallery_first | jsonify }} || [];
   first.slice().reverse().forEach(function (f) { var el = wall.querySelector('.gw-item[data-file="' + f + '"]'); if (el) wall.insertBefore(el, wall.firstChild); });
   var items = Array.prototype.slice.call(wall.querySelectorAll('.gw-item'));
-  // pieces listed in `group_first:` (art.md) open their group when it (or one of its sub chips) is picked
-  var groupFirst = {{ artpage.group_first | jsonify }} || {}, baseOrder = items.slice();
+  // pieces listed in `group_first:` (this page's, else art.md's) open their group when it (or one of its sub chips) is picked
+  var groupFirst = {{ page.group_first | default: artpage.group_first | jsonify }} || {}, baseOrder = items.slice();
   function orderFor(group) {
     var lead = groupFirst[(group || '').replace(/^g-/, '')] || [], front = [];
     lead.forEach(function (f) { var el = wall.querySelector('.gw-item[data-file="' + f + '"]'); if (el) front.push(el); });

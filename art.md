@@ -34,7 +34,7 @@ art:
     title: Self Portrait Winter 2026
     types: [pastels]
   - file: pride-snakes
-    title: Pride Scissor Snakes 
+    title: "scissor snakes"
     types: [spraypaint, painting]
   - file: neon-mantis
     title: "an orchid, dr. beam"
@@ -55,12 +55,13 @@ art:
     title: Mischief (Interface) Tarantula
     types: [rainbow scratch paper]
   - file: sleep-duck
-    title: Sleep Rubber Duck
+    title: "purgatorical awakening"
     types: [photograph, body paint]
   - file: z_IMG_20251115_152202_202
     title: Egret Regret
     types: [acrylic, painting]
   - file: "00-lain-mexicocity"
+    title: "el caos de los cables"
     types: [polaroid]
   - file: "PXL_20250104_155509807"
     types: [digital photo]
@@ -72,10 +73,13 @@ art:
   - file: "aegidiimarkt"
     types: [pastels]
   - file: "b-katzenkindergarten"
+    title: "katzenkindergarten"
     types: [polaroid]
   - file: "blackboard-cleaner"
+    title: "cleaning the black board"
     types: [pastels]
   - file: "blue-edges"
+    title: "petting hiro"
     types: [acrylic, painting]
   - file: "botanicals"
     types: [polaroid]
@@ -92,20 +96,24 @@ art:
   - file: "hiro-posh"
     types: [pastels]
   - file: "halftone-unknown-origin-1"
+    title: "strained beauty"
     types: [digital]
   - file: "halftone-unknown-origin-2"
     types: [digital]
   - file: "homeless"
+    title: "Ты у меня всё"
     types: [digital]
   - file: "koln-hbf"
     types: [film]
   - file: "mind-melting"
+    title: "smeared mental"
     types: [pastels]
   - file: "mystical-door-tepoz"
     types: [polaroid]
   - file: "plane-belly"
     types: [digital photo]
   - file: "roest"
+    title: "midday cafe"
     types: [pastels]
   - file: "singlepoint"
     types: [polaroid]

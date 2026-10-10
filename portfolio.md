@@ -10,6 +10,13 @@ intro: "When the universe remembers it has no skin."
 other_link: { label: "See everything →", url: /art/ }
 gallery_selected: true   # only the selected pieces, not the ones that came from blog posts
 gallery_hide: [film, digital photo]   # In a box shows polaroids only here; the other photos are on /art/
+# pieces left off the Portfolio (they stay on /art/), by file name
+gallery_hide_files: ["freeiran", "halftone-unknown-origin-2", "z-beetlevessel", "z-intuition-and-precision", "t-japan-round-street", "t-lisbon-lamppost", "t-lisbon-balconies", "t-lisbon-tree", "t-lisbon-harbour", "t-japan-towers", "t-lisbon-tram"]
+# the Portfolio's own order: the wall as it opens, polaroids scattered among the drawn and painted pieces as before ...
+gallery_first: ["neon-mantis", "a-vibing", "00-lain-mexicocity", "exhausted-silence", "2020-10-25", "Messenger_creation_FEBCBDB3-6B9E-44BC-8FBB-DFCE332BB1D5", "t-japan-horse", "caterpillar", "b-katzenkindergarten", "chaos-penrose", "blackboard-cleaner", "t-japan-train", "t-japan-arcade", "t-japan-cows", "fab-liquid-demon", "blue-edges", "mind-melting", "ta-Screenshot from 2025-09-02 07-26-22", "t-japan-flowers", "chinesenewyear", "halftone-unknown-origin-1", "pride-snakes", "homeless", "mischief-tarantula", "static-depersonalization", "t-japan-shop", "z_IMG_20251115_152202_202", "sleep-duck", "t-japan-izakaya", "roest", "elevator", "sun", "ta-Screenshot from 2025-09-02 07-24-26", "bpi", "hiro-posh", "botanicals", "ta-Screenshot from 2025-09-02 07-24-50", "t-japan-signs", "t-japan-alley", "stairway", "t-lisbon-wires", "storm-coming", "t-japan-statue", "depths", "cartunnell", "ab-Screenshot from 2025-09-02 07-22-23", "mystical-door-tepoz", "singlepoint", "t-bbord", "steep-climb", "t-Screenshot from 2025-09-02 07-26-03", "t-blau-amstie", "t-bw-storm", "ta-Screenshot from 2025-09-02 07-24-01", "aegidiimarkt"]
+# ... and the polaroids when In a box is picked
+group_first:
+  in-a-box: ["00-lain-mexicocity", "t-japan-horse", "b-katzenkindergarten", "t-japan-train", "t-japan-arcade", "t-japan-cows", "ta-Screenshot from 2025-09-02 07-26-22", "t-japan-flowers", "t-japan-shop", "t-japan-izakaya", "elevator", "ta-Screenshot from 2025-09-02 07-24-26", "bpi", "botanicals", "ta-Screenshot from 2025-09-02 07-24-50", "t-japan-signs", "t-japan-alley", "stairway", "t-lisbon-wires", "storm-coming", "t-japan-statue", "depths", "cartunnell", "ab-Screenshot from 2025-09-02 07-22-23", "mystical-door-tepoz", "singlepoint", "t-bbord", "steep-climb", "t-Screenshot from 2025-09-02 07-26-03", "t-blau-amstie", "t-bw-storm", "ta-Screenshot from 2025-09-02 07-24-01"]
 
 # the caterpillar mural plays as a video tile inside the wall once `file` (or `youtube`) is set; `poster` is the image it replaces
 gallery_video:
