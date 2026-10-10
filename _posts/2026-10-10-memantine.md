@@ -96,7 +96,7 @@ NMDA receptors come in at least two functional populations. Synaptic receptors d
 
 The electrophysiological correlate is wind-up: repeated low-frequency C-fiber stimulation produces progressively larger dorsal horn responses, and NMDA antagonists abolish it. I am going from memory on that and have not attached a reference.
 
-A µ-agonist reduces the afferent drive into this circuit without lowering its gain, and with chronic exposure it raises the gain (section 01). An NMDA antagonist acts on the gain itself. The glutamate side of this, raised free glutamate and failure of habituation, is in [Everything downstream of a sensitive nervous system](https://rin.io/biome/).
+A µ-agonist reduces the afferent drive into this circuit without lowering its gain, and with chronic exposure it raises the gain (section 01). An NMDA antagonist acts on the gain itself. The glutamate side of this, raised free glutamate and failure of habituation, is in [Sensory Sensitivity as a Unifying Mechanism](https://rin.io/biome/).
 
 </div>
 
@@ -106,7 +106,7 @@ The NMDA receptor is a coincidence detector. At rest its channel is plugged by a
 
 The same process happens in the spinal cord with pain. Sustained input from pain fibers holds dorsal horn neurons depolarized for long enough to knock the magnesium out. Calcium enters, the synapse strengthens, and the same input now produces a larger output. This is **central sensitization**: the gain on the pain system has been turned up, and it stays up after the original injury has healed.
 
-I wrote about related things in [Everything downstream of a sensitive nervous system](https://rin.io/biome/): excess free glutamate, sensory signals that never habituate, and the conditions that come with them. Chronic pain is one of those conditions, and the hangover comparison I used there applies here too.
+I wrote about related things in [Sensory Sensitivity as a Unifying Mechanism](https://rin.io/biome/): excess free glutamate, sensory signals that never habituate, and the conditions that come with them. Chronic pain is one of those conditions, and the hangover comparison I used there applies here too.
 
 An opioid turns down the signal arriving at this system. It does nothing about the gain, and over months it turns the gain up further. An NMDA antagonist goes after the gain itself.
 
