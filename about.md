@@ -1117,7 +1117,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
             Most of this came before the mathematics found me — or before I found it. Two threads have remained in my hands: <a href="https://rin.io/biome/">a cluster of diseases that keep showing up together and keep being treated apart</a>, and <a href="https://rin.io/megacolon/">a treatment that works and was never written down</a>.
           </p>
           <p class="lvl lvl-plain">
-            <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> For over a decade I have studied the three kinds of silence: what is absent, what is fading, and what is spoken in another room. Two threads remain in my hands: <a href="https://rin.io/biome/">a cluster of diseases that keep being treated apart</a>, and <a href="https://rin.io/megacolon/">a treatment that was never written down</a>.
+            <strong class="tldr-lead">I build things, and I believe almost anything will answer you if you are willing to learn how it speaks.</strong> For over a decade I have studied the three kinds of silence: what is absent, what is fading, and what is spoken in another room. Three threads remain in my hands: <a href="https://rin.io/biome/">a cluster of diseases that keep being treated apart</a>, <a href="https://rin.io/megacolon/">a treatment that was never written down</a>, and <a href="https://rin.io/memantine/">a cheap drug for pain that nobody will test</a>.
           </p>
           <p class="lvl lvl-pedantic">
             <strong class="tldr-lead">A decade of work on measurement and inference where the observable is missing, degraded, or not addressed to the observer:</strong> motor intention from a thinning population of cortical units, affective state from ultrasonic vocalization, proprioception without vision, lexical structure from partial parallelism, superconducting transition temperature from electronic structure.
@@ -1194,6 +1194,31 @@ rail_sections:   # listed in the sidebar under "About Rin"
               management succeeds in about two thirds of cats presenting under six months of
               symptoms, and in under six percent of those presenting later. Maintenance is
               injections every few weeks, indefinitely.
+            </p>
+            </div>
+            </div>
+          </details>
+          <details class="row" id="s-memantine">
+            <summary>
+              <h4>The six-cent drug nobody will test<span class="yr">2026</span><span class="yr now">current</span></h4>
+              <p class="tech">Memantine · NMDA receptor antagonism · central sensitization · opioid tolerance and hyperalgesia · drug repurposing · trial design</p>
+              <p class="meta lvl lvl-plain">A cheap dementia drug that might treat chronic pain, and why nobody has paid to find out.</p>
+              <p class="chips"><a class="chip" href="https://rin.io/memantine/">read the post</a></p>
+            </summary>
+            <div class="row-body">
+            <div class="lvl lvl-curious">
+            <p class="why">
+              People who use mobility aids told me they were choosing every day between being
+              stoned past the point of finishing a sentence and being lucid and in agony. I wanted
+              to know whether anything avoids that choice.
+            </p>
+            <p class="meta">
+              An argument with references, written to be taken to a doctor or a funder. Memantine
+              blocks the same channel as ketamine, gently enough to take daily for years, at six
+              cents a tablet. The trial evidence is thin and mixed: it fails in old nerve injury
+              and shows promise where pain is central and ongoing. The post lays out the mechanism,
+              every trial including the negative ones, the commercial history that ended the
+              research, and the trial that would settle it.
             </p>
             </div>
             </div>
@@ -1392,7 +1417,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="gloss">A body reading the traces of its own movement.</p>
           <details class="row" id="s-wheelchair">
             <summary>
-              <h4>Fixing what is wrong with wheelchairs<span class="yr">Summer 2013 – Spring 2014</span></h4>
+              <h4>Fixing what is wrong with wheelchairs<span class="yr">2013 – 2015</span></h4>
               <p class="tech">Modular retrofit robotics for powered wheelchairs · automated pressure redistribution · powered seat elevation · assisted transfer · rough-terrain drive · user-led requirements · gaze-controlled assistive mobility · mentorship</p>
               <p class="meta lvl lvl-plain">I asked wheelchair users what they actually wanted, and built four attachments that bolt onto the chair they already own.</p>
               <p class="chips"><a class="chip" href="https://rin.io/pressure-ulcer-prevent/">The wheelchair post</a><a class="chip" href="https://www.youtube.com/watch?v=LUA_efzGQlg">Interview — WIRED</a></p>
@@ -1442,7 +1467,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
               <em>Robotic Mobility Assistive Wheelchairs</em>, and then decided not to file it, and
               they went out under a Creative Commons license instead. A patent would have meant the
               people I built them for waiting on somebody else to license it first.<br><br>
-              Then I went to work on understanding and treating <a href="https://rin.io/biome/">chronic pain</a>, which I am still doing.
+              Then I went to work on <a href="https://rin.io/biome/">understanding</a> and <a href="https://rin.io/memantine/">treating</a> chronic pain, which I am still doing.
             </p>
             <p class="why echo">
               Both halves have since arrived, about a decade on. Medicare began covering
@@ -1889,6 +1914,16 @@ rail_sections:   # listed in the sidebar under "About Rin"
             <p class="lim">Contraindicated without prior deobstipation and exclusion of mechanical obstruction. Medical management succeeds in roughly two thirds of cases presenting under six months and under six percent thereafter.</p>
             </div>
           </details>
+          <details class="pro" id="p-memantine">
+            <summary>
+            <h4><a href="https://rin.io/memantine/">Memantine as a candidate non-opioid analgesic in central sensitization</a><span class="yr">2026</span><span class="yr now">current</span></h4>
+            <p class="ptags"><span class="ptag">pharmacology</span><span class="ptag">evidence synthesis</span><span class="ptag">health policy</span></p>
+            </summary>
+            <div class="pro-body">
+            <p>Review of the mechanistic rationale, comparative pharmacology against ketamine and dextromethorphan, and the clinical trial record for memantine in chronic pain, with a proposed design for a publicly funded trial.</p>
+            <p class="lim">Evidence synthesis only. The pooled analysis of eleven trials is not significant; the positive signal rests on one 63-patient fibromyalgia trial.</p>
+            </div>
+          </details>
           <details class="pro" id="p-usv">
             <summary>
             <h4><a href="/mouse-vocalizations/">Unsupervised classification of rodent ultrasonic vocalization for continuous preclinical monitoring</a><span class="yr">2013–2014</span></h4>
@@ -1935,7 +1970,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="gloss">A body reading the traces of its own movement.</p>
           <details class="pro" id="p-wheelchair">
             <summary>
-            <h4><a href="https://rin.io/pressure-ulcer-prevent/">Modular robotic retrofits for powered wheelchairs</a><span class="yr">2013–2014</span></h4>
+            <h4><a href="https://rin.io/pressure-ulcer-prevent/">Modular robotic retrofits for powered wheelchairs</a><span class="yr">2013–2015</span></h4>
             <p class="ptags"><span class="ptag">mechanism design</span><span class="ptag">rehabilitation engineering</span><span class="ptag">user-led requirements</span></p>
             </summary>
             <div class="pro-body">

@@ -829,3 +829,21 @@ a.chip-genre, .chip-genre {
 .tile-btn, .ap-btn, .words-toggle, .gw-showall, .top .all, .rail .rail-pin-links a, .cv, .fold-cue, .chip, .btn { text-align: center; }
 .tile-actions, .ap-card-actions { align-items: stretch; }
 .tile-btn { display: flex; align-items: center; justify-content: center; }
+
+// footnoted posts (megacolon, memantine)
+// references: a quiet numbered list in a box, with small source tags
+.post sup[id^="fnref"] { font-size: .66em; line-height: 0; position: relative; top: -.55em; vertical-align: baseline; }
+.post sup[id^="fnref"] a.footnote { font-family: 'Space Mono', monospace; font-weight: 700; text-decoration: none; padding: 0 .1em; }
+.post .footnotes { margin: 1rem 0 2.4rem; padding: 1rem 1.2rem 1rem; background: rgba(255,255,255,.55); border-left: 6px solid #9b7fd4; border-radius: 0 10px 10px 0; font-size: .8em; line-height: 1.5; }
+.post .footnotes ol { margin: 0; padding-left: 2.4em; }
+.post .footnotes li { margin: 0 0 .6em; padding: .1em .3em; scroll-margin-top: 5rem; }
+.post .footnotes li:last-child { margin-bottom: 0; }
+.post .footnotes li::marker { font: 700 .85em 'Space Mono', monospace; color: #4a3a63; }
+.post .footnotes li:target { background: #fbe919; border-radius: 4px; }
+.post .footnotes p { margin: 0; }
+.post .footnotes em { color: #1b1b1b; }
+.post .footnotes a.ref-link { display: inline-block; margin: 0 .15em; padding: 0 .55em; background: #fff; color: #1b1b1b; border: 1.5px solid #1b1b1b; border-radius: 999px; font: 700 .78em/1.5 'Space Mono', monospace; letter-spacing: .03em; text-transform: uppercase; text-decoration: none; white-space: nowrap; }
+.post .footnotes a.ref-link:hover { background: #fbe919; }
+.post .footnotes a.reversefootnote { margin-left: .3em; text-decoration: none; font-weight: 400; color: #4a3a63; }
+// a reference cited many times keeps one way back, to its first use
+.post .footnotes a.reversefootnote ~ a.reversefootnote { display: none; }

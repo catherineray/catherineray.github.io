@@ -421,54 +421,54 @@ Next, let's consider ranitidine (1–2 mg/kg PO q12h) and nizatidine (2.5–5.0 
 
 ## References
 
-[^1]: Washabau RJ, Holt D. Pathogenesis, diagnosis, and therapy of feline idiopathic megacolon. *Veterinary Clinics of North America: Small Animal Practice.* 1999;29(2):589–603. [Link](https://www.sciencedirect.com/science/article/pii/S0195561699500363)
+[^1]: Washabau RJ, Holt D. Pathogenesis, diagnosis, and therapy of feline idiopathic megacolon. *Veterinary Clinics of North America: Small Animal Practice.* 1999;29(2):589–603. [source ↗](https://www.sciencedirect.com/science/article/pii/S0195561699500363){: .ref-link}
 
 [^2]: Washabau RJ, Stalis IH. Alterations in colonic smooth muscle function in cats with idiopathic megacolon. *American Journal of Veterinary Research.* 1996;57(4):580–587.
 
-[^3]: Trevail T, Gunn-Moore D, Carrera I, et al. Radiographic diameter of the colon in normal and constipated cats and in cats with megacolon. *Veterinary Radiology & Ultrasound.* 2011;52(5). [Link](https://www.research.ed.ac.uk/en/publications/radiographic-diameter-of-the-colon-in-normal-and-constipated-cats/)
+[^3]: Trevail T, Gunn-Moore D, Carrera I, et al. Radiographic diameter of the colon in normal and constipated cats and in cats with megacolon. *Veterinary Radiology & Ultrasound.* 2011;52(5). [source ↗](https://www.research.ed.ac.uk/en/publications/radiographic-diameter-of-the-colon-in-normal-and-constipated-cats/){: .ref-link}
 
-[^4]: Use of radiographic and histologic scores to evaluate cats with idiopathic megacolon grouped based on the duration of their clinical signs. *Frontiers in Veterinary Science.* 2022;9:1033090. [Link](https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2022.1033090/full) — *author list to be completed before print*
+[^4]: Use of radiographic and histologic scores to evaluate cats with idiopathic megacolon grouped based on the duration of their clinical signs. *Frontiers in Veterinary Science.* 2022;9:1033090. [source ↗](https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2022.1033090/full){: .ref-link} — *author list to be completed before print*
 
-[^5]: Thanaboonnipat C, Kumjumroon K, Boonkwang K, Tangsutthichai N, Sukserm W, Choisunirachon N. Radiographic lumbosacral vertebral abnormalities and constipation in cats. *Veterinary World.* 2021;14(2):492–498. [Link](https://www.veterinaryworld.org/Vol.14/February-2021/22.html)
+[^5]: Thanaboonnipat C, Kumjumroon K, Boonkwang K, Tangsutthichai N, Sukserm W, Choisunirachon N. Radiographic lumbosacral vertebral abnormalities and constipation in cats. *Veterinary World.* 2021;14(2):492–498. [source ↗](https://www.veterinaryworld.org/Vol.14/February-2021/22.html){: .ref-link}
 
-[^6]: Bennett D, Morton C. A study of owner observed behavioral and lifestyle changes in cats with musculoskeletal disease before and after analgesic therapy. *Journal of Feline Medicine and Surgery.* 2009;11(12):997–1004. doi:10.1016/j.jfms.2009.09.016 [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC11318772/)
+[^6]: Bennett D, Morton C. A study of owner observed behavioral and lifestyle changes in cats with musculoskeletal disease before and after analgesic therapy. *Journal of Feline Medicine and Surgery.* 2009;11(12):997–1004. doi:10.1016/j.jfms.2009.09.016 [source ↗](https://pmc.ncbi.nlm.nih.gov/articles/PMC11318772/){: .ref-link}
 
-[^7]: Webb CB. Hepatic lipidosis: clinical review drawn from collective effort. *Journal of Feline Medicine and Surgery.* 2018;20(3):217–227. [Link](https://journals.sagepub.com/doi/10.1177/1098612X18758591)
+[^7]: Webb CB. Hepatic lipidosis: clinical review drawn from collective effort. *Journal of Feline Medicine and Surgery.* 2018;20(3):217–227. [source ↗](https://journals.sagepub.com/doi/10.1177/1098612X18758591){: .ref-link}
 
-[^7b]: Hasler AH, Washabau RJ. Cisapride stimulates contraction of idiopathic megacolonic smooth muscle in cats. *Journal of Veterinary Internal Medicine.* 1997;11(6):313–318. [Link](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1939-1676.1997.tb00472.x)
+[^7b]: Hasler AH, Washabau RJ. Cisapride stimulates contraction of idiopathic megacolonic smooth muscle in cats. *Journal of Veterinary Internal Medicine.* 1997;11(6):313–318. [source ↗](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1939-1676.1997.tb00472.x){: .ref-link}
 
-[^8]: Nieto JE, et al. In vivo and in vitro effects of neostigmine on gastrointestinal tract motility of horses. *American Journal of Veterinary Research.* 2013;74(4):579–586. [Link](https://pubmed.ncbi.nlm.nih.gov/23531066/)
+[^8]: Nieto JE, et al. In vivo and in vitro effects of neostigmine on gastrointestinal tract motility of horses. *American Journal of Veterinary Research.* 2013;74(4):579–586. [source ↗](https://pubmed.ncbi.nlm.nih.gov/23531066/){: .ref-link}
 
-[^9]: Ultrasonographic evaluation of the effects of the administration of neostigmine and metoclopramide on duodenal, cecal, and colonic contractility in Arabian horses: a comparative study. [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC7750228/) — *author list and journal details to be completed before print*
+[^9]: Ultrasonographic evaluation of the effects of the administration of neostigmine and metoclopramide on duodenal, cecal, and colonic contractility in Arabian horses: a comparative study. [source ↗](https://pmc.ncbi.nlm.nih.gov/articles/PMC7750228/){: .ref-link} — *author list and journal details to be completed before print*
 
-[^10]: Drugs coordinating and restoring gastrointestinal motility and their effect on selected hypodynamic gastrointestinal disorders in horses and cattle. PMID 8822186. [Link](https://pubmed.ncbi.nlm.nih.gov/8822186/)
+[^10]: Drugs coordinating and restoring gastrointestinal motility and their effect on selected hypodynamic gastrointestinal disorders in horses and cattle. PMID 8822186. [source ↗](https://pubmed.ncbi.nlm.nih.gov/8822186/){: .ref-link}
 
-[^11]: Field triage of the neonatal foal. [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC7135403/) — neostigmine 0.005–0.01 mg/kg IM or SC for meconium impaction
+[^11]: Field triage of the neonatal foal. [source ↗](https://pmc.ncbi.nlm.nih.gov/articles/PMC7135403/){: .ref-link} — neostigmine 0.005–0.01 mg/kg IM or SC for meconium impaction
 
-[^12]: Kasi PM. The use of intravenous neostigmine in palliation of severe ileus. *Case Reports in Gastrointestinal Medicine.* 2013;2013:796739. doi:10.1155/2013/796739 [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3586442/)
+[^12]: Kasi PM. The use of intravenous neostigmine in palliation of severe ileus. *Case Reports in Gastrointestinal Medicine.* 2013;2013:796739. doi:10.1155/2013/796739 [source ↗](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3586442/){: .ref-link}
 
-[^13]: Neostigmine. In: *StatPearls.* Treasure Island (FL): StatPearls Publishing. [Link](https://www.ncbi.nlm.nih.gov/books/NBK470596/)
+[^13]: Neostigmine. In: *StatPearls.* Treasure Island (FL): StatPearls Publishing. [source ↗](https://www.ncbi.nlm.nih.gov/books/NBK470596/){: .ref-link}
 
-[^14]: Gruen ME, et al. Frunevetmab, a felinized anti-nerve growth factor monoclonal antibody, for the treatment of pain from osteoarthritis in cats. *Journal of Veterinary Internal Medicine.* 2021;35(6):2752–2762. [Link](https://onlinelibrary.wiley.com/doi/10.1111/jvim.16291)
+[^14]: Gruen ME, et al. Frunevetmab, a felinized anti-nerve growth factor monoclonal antibody, for the treatment of pain from osteoarthritis in cats. *Journal of Veterinary Internal Medicine.* 2021;35(6):2752–2762. [source ↗](https://onlinelibrary.wiley.com/doi/10.1111/jvim.16291){: .ref-link}
 
-[^15]: Solensia (frunevetmab injection) package insert. Zoetis Inc., Kalamazoo, MI. [Link](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a73b79c4-3623-4b52-81ea-6180528a031e)
+[^15]: Solensia (frunevetmab injection) package insert. Zoetis Inc., Kalamazoo, MI. [source ↗](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a73b79c4-3623-4b52-81ea-6180528a031e){: .ref-link}
 
-[^16]: Solensia summary of product characteristics. European Medicines Agency. [Link](https://ec.europa.eu/health/documents/community-register/2021/20210217150435/anx_150435_en.pdf)
+[^16]: Solensia summary of product characteristics. European Medicines Agency. [source ↗](https://ec.europa.eu/health/documents/community-register/2021/20210217150435/anx_150435_en.pdf){: .ref-link}
 
-[^17]: Neostigmine for animals: pharmacology and contraindications. *Trade source* — replace with a veterinary formulary (e.g. Plumb's) before print. [Link](https://www.vetscraft.com/neostigmine-for-animals/)
+[^17]: Neostigmine for animals: pharmacology and contraindications. *Trade source* — replace with a veterinary formulary (e.g. Plumb's) before print. [source ↗](https://www.vetscraft.com/neostigmine-for-animals/){: .ref-link}
 
-[^18]: Feline megacolon. WSAVA Congress Proceedings, 2003. *Conference proceeding.* [Link](https://www.vin.com/apputil/content/defaultadv1.aspx?pId=8768&id=3850188)
+[^18]: Feline megacolon. WSAVA Congress Proceedings, 2003. *Conference proceeding.* [source ↗](https://www.vin.com/apputil/content/defaultadv1.aspx?pId=8768&id=3850188){: .ref-link}
 
-[^19]: Washabau RJ. Feline megacolon: the hard facts / GI motility disorders. Conference proceedings. *Conference proceeding — reports signalment data (mean age 5.8 y, 70% male, 46% DSH), nizatidine and ranitidine AChE findings, prucalopride and bethanechol.* [Link](https://www.dvm360.com/view/feline-megacolon-hard-facts-proceedings)
+[^19]: Washabau RJ. Feline megacolon: the hard facts / GI motility disorders. Conference proceedings. *Conference proceeding — reports signalment data (mean age 5.8 y, 70% male, 46% DSH), nizatidine and ranitidine AChE findings, prucalopride and bethanechol.* [source ↗](https://www.dvm360.com/view/feline-megacolon-hard-facts-proceedings){: .ref-link}
 
-[^20]: Medical management of the colicky foal. *Trade source quoting clinician opinion on prokinetic use in the presence of obstruction — replace with a peer-reviewed source if one exists.* [Link](https://www.bloodhorse.com/horse-racing/articles/134471/medical-management-of-the-colicky-foal)
+[^20]: Medical management of the colicky foal. *Trade source quoting clinician opinion on prokinetic use in the presence of obstruction — replace with a peer-reviewed source if one exists.* [source ↗](https://www.bloodhorse.com/horse-racing/articles/134471/medical-management-of-the-colicky-foal){: .ref-link}
 
-[^21]: Neostigmine injection data sheet. Medsafe, New Zealand. [Link](https://www.medsafe.govt.nz/profs/datasheet/n/Neostigmineinj.pdf)
+[^21]: Neostigmine injection data sheet. Medsafe, New Zealand. [source ↗](https://www.medsafe.govt.nz/profs/datasheet/n/Neostigmineinj.pdf){: .ref-link}
 
 [^22]: Rondeau MP, Meltzer K, Michel KE, et al. Short chain fatty acids stimulate feline colonic smooth muscle contraction. *Journal of Feline Medicine and Surgery.* 2003;5:167–173.
 
-[^23]: Pharmacokinetics and immunogenicity of frunevetmab in osteoarthritic cats following intravenous and subcutaneous administration. [Link](https://pmc.ncbi.nlm.nih.gov/articles/PMC8222533/) — *author list to be completed before print*
+[^23]: Pharmacokinetics and immunogenicity of frunevetmab in osteoarthritic cats following intravenous and subcutaneous administration. [source ↗](https://pmc.ncbi.nlm.nih.gov/articles/PMC8222533/){: .ref-link} — *author list to be completed before print*
 
-[^24]: Grossman RM, Sumner JP, Lopez DJ, et al. Evaluation of outcomes following subtotal colectomy for the treatment of idiopathic megacolon in cats. *Journal of the American Veterinary Medical Association.* 2021. doi:10.2460/JAVMA.20.07.0418 — *18 hospitals, 2000–2018; high owner satisfaction; removal of the ileocolic junction associated with worse outcome; median follow-up 64 days.* [Link](https://everycat.org/cat-health/evaluation-of-outcomes-following-subtotal-colectomy-for-the-treatment-of-idiopathic-megacolon-in-cats/)
+[^24]: Grossman RM, Sumner JP, Lopez DJ, et al. Evaluation of outcomes following subtotal colectomy for the treatment of idiopathic megacolon in cats. *Journal of the American Veterinary Medical Association.* 2021. doi:10.2460/JAVMA.20.07.0418 — *18 hospitals, 2000–2018; high owner satisfaction; removal of the ileocolic junction associated with worse outcome; median follow-up 64 days.* [source ↗](https://everycat.org/cat-health/evaluation-of-outcomes-following-subtotal-colectomy-for-the-treatment-of-idiopathic-megacolon-in-cats/){: .ref-link}
 
-[^25]: Megacolon. American College of Veterinary Surgeons, owner education resource. *Post-colectomy course: soft stools and occasional diarrhea for the first few months, progressively firmer but rarely fully normal; occasional soft-stool leakage; postoperative constipation rare; continence preserved.* [Link](https://www.acvs.org/small-animal/megacolon/)
+[^25]: Megacolon. American College of Veterinary Surgeons, owner education resource. *Post-colectomy course: soft stools and occasional diarrhea for the first few months, progressively firmer but rarely fully normal; occasional soft-stool leakage; postoperative constipation rare; continence preserved.* [source ↗](https://www.acvs.org/small-animal/megacolon/){: .ref-link}
