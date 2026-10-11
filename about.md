@@ -1485,8 +1485,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <details class="row" id="s-pr2">
             <summary>
               <h4>When the cameras die, the hands take over<span class="yr">Summer 2012</span></h4>
-              <p class="tech">Proprioception-only contact-rich manipulation · blind peg-in-hole insertion · two-arm load equalization · Willow Garage PR2 · human–robot interaction</p>
-              <p class="meta lvl lvl-plain">I taught a robot arm to find a hole and fit a shape into it with every sense but its own body switched off.</p>
+              <p class="tech">Reinforcement learning · proprioception-only contact-rich manipulation · blind peg-in-hole insertion · two-arm load equalization · Willow Garage PR2 · human–robot interaction</p>
+              <p class="meta lvl lvl-plain">I taught a robot arm, via reinforcement learning, to find a hole and fit a shape into it with every sense but its own body switched off.</p>
               <p class="chips"><a class="chip code" href="https://github.com/catherineray/PR2-positronics">code: PR2-positronics</a></p>
             </summary>
             <div class="row-body">
@@ -1499,7 +1499,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
               So I
               <a href="https://rin.io/autonomous-robotic-force-proprioception/">programmed the PR2</a>
               to keep working with its other sensors switched fully off — no vision, no
-              external feedback of any kind — and to <em>learn</em>, under those conditions,
+              external feedback of any kind — and to <em>learn</em>, via reinforcement learning under those conditions,
               to place objects into the holes of the corresponding shape. All it had was its own
               past motor position commands and the finger gripper sensors, so the robot had to
               adapt to the task from its own sense of where its body had been.
@@ -1981,11 +1981,11 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <details class="pro" id="p-pr2">
             <summary>
             <h4><a href="https://rin.io/autonomous-robotic-force-proprioception/">Graceful degradation under sensor failure: contact-rich manipulation on proprioception alone</a><span class="yr">2012</span></h4>
-            <p class="ptags"><span class="ptag">graceful degradation</span><span class="ptag">contact-rich manipulation</span><span class="ptag">proprioceptive control</span><span class="ptag">human–robot interaction</span></p>
+            <p class="ptags"><span class="ptag">graceful degradation</span><span class="ptag">reinforcement learning</span><span class="ptag">contact-rich manipulation</span><span class="ptag">proprioceptive control</span><span class="ptag">human–robot interaction</span></p>
             </summary>
             <div class="pro-body">
-            <p>A robot that stops dead the moment its camera fails cannot be trusted around people, and sensors fail constantly. With vision and all external feedback disabled, a Willow Garage PR2 autonomously acquired a shape-matched insertion task from commanded joint positions and gripper sensing alone. Also <a href="https://link.springer.com/chapter/10.1007/978-3-319-00065-7_34">two-arm load equalization</a> for objects with off-center mass. HCI internship, George Washington University.</p>
-            <p class="lim">Demonstrates graceful degradation at the extreme: total loss of exteroception, not a partial fault. Learning was small-scale policy search.</p>
+            <p>A robot that stops dead the moment its camera fails cannot be trusted around people, and sensors fail constantly. With vision and all external feedback disabled, a Willow Garage PR2 acquired a shape-matched insertion task via reinforcement learning from commanded joint positions and gripper sensing alone. Also <a href="https://link.springer.com/chapter/10.1007/978-3-319-00065-7_34">two-arm load equalization</a> for objects with off-center mass. HCI internship, George Washington University.</p>
+            <p class="lim">Demonstrates graceful degradation at the extreme: total loss of exteroception, not a partial fault. The reinforcement learning was small-scale policy search.</p>
             </div>
           </details>
           <details class="pro" id="p-slam">

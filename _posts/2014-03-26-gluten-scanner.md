@@ -27,7 +27,7 @@ The situation can be re-framed as follows:
 
 I learned this lesson in 2011. After proving myself competent by assisting others in the lab (George Washington University Robotics Lab, Positronics Division), I was encouraged to pursue an independent research project using the PR2 as the research platform. I excitedly came up with a list of ideas, then grew progressively more disappointed as I proceeded to research each idea further. In the crowded lab, I said aloud, “It seems that almost every project I come up with has either already been proposed or wouldn’t be funded”. To which the senior engineer in the lab (whom had not spoken to me before) responded, “Welcome to science!”.
 
-_Sidenote: I ended up programming the PR2 to autonomously navigate and complete a task using only force proprioception._
+_Sidenote: I ended up programming the PR2 to autonomously navigate and complete a task using only force proprioception, via reinforcement learning._
 
 One of the main projects that I’ve been working on is a gluten scanner.
 

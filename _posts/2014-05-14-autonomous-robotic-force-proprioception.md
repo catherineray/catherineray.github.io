@@ -12,6 +12,7 @@ tags:
   - ros
   - pr2-robot
   - force-control
+  - reinforcement-learning
   - gazebo-simulation
   - python
 format: personal
@@ -22,7 +23,7 @@ topics:
 
 I’m experimenting with committing past projects to [github](https://github.com/catherineray).
 
-Over the summer (2012) at George Washington University Robotics Lab - Positronics Divison (with Roxana Leonetie as my mentor and Gregory Colella as my research partner), we wrote a package for the PR2 using ROS stacks and Python. In short, the PR2 completes a task moving a dowel into a hole (using only force proprioception) as a response to dynamic stimuli.
+Over the summer (2012) at George Washington University Robotics Lab - Positronics Divison (with Roxana Leonetie as my mentor and Gregory Colella as my research partner), we wrote a package for the PR2 using ROS stacks and Python. In short, the PR2 completes a task moving a dowel into a hole (using only force proprioception, via reinforcement learning) as a response to dynamic stimuli.
 
 If you are unfamiliar with the PR2: 
 
