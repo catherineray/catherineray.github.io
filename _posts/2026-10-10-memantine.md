@@ -42,15 +42,15 @@ The question came from patients. This started with a conversation in 2015: I ask
 
 In 2015 I asked people who use mobility aids what would make their lives better. Some of them talked about pain, and about the bargain it forced on them every day: stoned past the point of finishing a sentence, or lucid and in agony.
 
-That's why I care about this. I want to know if there's something that doesn't force that choice.
+That bargain is why I'm writing this. I wanted to know whether anything gets you out of it.
 
-Memantine is an Alzheimer's drug. It blocks the NMDA receptor, the same ion channel that ketamine, dextromethorphan and PCP block. It does this gently enough that people take it every day for years without getting high. It is also prescribed at a much smaller dose than ketamine is when ketamine is used for pain: 20 mg a day by mouth, against 80 mg or more per infusion into a vein.[^17] It's been off patent for years, and US pharmacies pay about six cents a tablet for it.[^1]
+The candidate I keep coming back to is memantine, an Alzheimer's drug. It plugs the NMDA receptor, which is the same ion channel that ketamine, dextromethorphan and PCP plug, except that it does it so gently that people take it every day for years and never get high. It is also prescribed at a far smaller dose than ketamine is when ketamine is used for pain: 20 mg a day by mouth, against 80 mg or more per infusion into a vein.[^17] It has been off patent for years, and a US pharmacy pays about six cents for a tablet.[^1]
 
-I think memantine could be an alternative to opioids for the kinds of chronic pain driven by central sensitization: fibromyalgia, complex regional pain syndrome, migraine, and maybe the pain that opioids themselves cause. We don't know yet if that's true. I think the reason we don't know is money, not science.
+My guess is that memantine could stand in for opioids in the kinds of chronic pain that come from central sensitization (fibromyalgia, complex regional pain syndrome, migraine), and maybe in the pain that opioids themselves cause. Nobody knows yet whether that guess is right, and as far as I can tell the reason nobody knows is money, not science.
 
-**Memantine is not an established treatment for chronic pain.** The only meta-analysis pooled eleven small trials and found no significant effect.[^2] The only Phase III trial a company ever paid for failed.[^3] I'm not saying anyone buried a drug that works. I'm saying a good trial would be cheap and nobody stands to make money from running one.
+**Memantine is not an established treatment for chronic pain.** The only meta-analysis pooled eleven small trials and found no significant effect,[^2] and the only Phase III trial a company ever paid for failed.[^3] So this is not a story about a miracle drug that somebody buried. It is a story about a trial that would be cheap to run and that nobody can make money from running.
 
-This isn't medical advice and it isn't a protocol. It's an argument with references. You can take it to a doctor or a funder and ask if it's worth considering.
+None of this is medical advice, and it is definitely not a protocol. It's an argument with the references attached, written so that you can hand it to a doctor or a funder and ask whether it's worth a look.
 
 |  |  |
 | --- | --- |
@@ -75,15 +75,15 @@ All of this is rodent data, so the opioid-sparing claim is a hypothesis and not 
 
 </div>
 
-Opioids work well for acute pain. For chronic pain, the best long trial we have says they do no better than a regimen that starts with acetaminophen.
+Opioids are very good at acute pain. For chronic pain, the best long trial we have says they do no better than a plan that starts with acetaminophen.
 
-The SPACE trial randomized 240 veterans with chronic back pain or hip or knee osteoarthritis to opioid or non-opioid medication and followed them for a year.[^4] Pain-related function did not differ between the groups. Pain intensity was *better* in the non-opioid group (3.5 against 4.0 on the Brief Pain Inventory), and medication-related symptoms were twice as common on opioids.
+That trial is called SPACE. It took 240 veterans with chronic back pain, or hip or knee osteoarthritis, put half on opioids and half on non-opioid medication, and followed them for a year.[^4] How well people could function came out the same in both groups. Pain intensity was actually *better* without opioids (3.5 against 4.0 on the Brief Pain Inventory), and the opioid group had twice as many medication-related symptoms.
 
-This matters because memantine isn't competing with a drug that works well for chronic pain. It's competing with a drug that did no better than non-opioids over a year and that people overdose on.
+I bring this up because it changes what memantine has to beat. It isn't up against a drug that works well for chronic pain, it's up against one that did no better than the alternatives over a year and that people overdose on.
 
-There's a mechanistic reason opioids fail here. Taking them long-term makes the nervous system more sensitive to pain, not less. The dose that worked in March doesn't work in September, and the pain between doses gets worse than the pain you started with. The first is called **tolerance** and the second **opioid-induced hyperalgesia**.
+There is a mechanical reason opioids let people down here. Taken for months, they make the nervous system more sensitive to pain, not less. The dose that worked in March has stopped working by September (that's **tolerance**), and the pain between doses ends up worse than the pain you started with (that's **opioid-induced hyperalgesia**).
 
-Both depend on the NMDA receptor.[^5] That's the main reason I think memantine is worth testing against opioids. It blocks the receptor that makes opioids stop working.
+Both of those run through the NMDA receptor,[^5] which is the whole reason I think memantine deserves a test against opioids: it blocks the receptor that makes opioids stop working.
 
 ## 02 · Chronic pain is a glutamate problem
 
@@ -101,15 +101,15 @@ A µ-agonist reduces the afferent drive into this circuit without lowering its g
 
 </div>
 
-Chronic pain often keeps going after the injury has healed, because the spinal cord and brain have become more responsive to pain signals. That change depends on the NMDA receptor.
+Chronic pain has a habit of carrying on after the injury has healed. What has happened is that the spinal cord and brain have turned up their own response to pain signals, and that turning-up depends on the NMDA receptor.
 
-The NMDA receptor is a coincidence detector. At rest its channel is plugged by a magnesium ion. It opens only when glutamate is bound *and* the neuron is already depolarized, so only when a signal arrives on top of other signals. When it opens, calcium flows in and the synapse gets stronger.[^8] This is how memories form.
+The NMDA receptor is a coincidence detector. While a neuron is at rest, the channel has a magnesium ion sitting in it like a cork. It only opens when glutamate is bound *and* the neuron is already depolarized, in other words when a signal lands on top of other signals. Then calcium floods in and the synapse gets stronger.[^8] This is how you form memories.
 
-The same process happens in the spinal cord with pain. Sustained input from pain fibers holds dorsal horn neurons depolarized for long enough to knock the magnesium out. Calcium enters, the synapse strengthens, and the same input now produces a larger output. This is **central sensitization**: the gain on the pain system has been turned up, and it stays up after the original injury has healed.
+Your spinal cord does the same thing with pain. If pain fibers keep firing for long enough, the neurons in the dorsal horn stay depolarized long enough to pop the magnesium out. Calcium comes in, the synapse strengthens, and from then on the same input produces a bigger output. That is **central sensitization**: the gain on the pain system has been turned up, and it stays up after the original injury is gone.
 
-I wrote about related things in [Sensory Sensitivity as a Unifying Mechanism](https://rin.io/biome/): excess free glutamate, sensory signals that never habituate, and the conditions that come with them. Chronic pain is one of those conditions, and the hangover comparison I used there applies here too.
+I wrote about the neighbours of this idea in [Sensory Sensitivity as a Unifying Mechanism](https://rin.io/biome/): excess free glutamate, sensory signals that never habituate, and the conditions that travel with them. Chronic pain is one of those conditions, and the hangover comparison from that post works here too.
 
-An opioid turns down the signal arriving at this system. It does nothing about the gain, and over months it turns the gain up further. An NMDA antagonist goes after the gain itself.
+An opioid turns down the signal coming into this system. It does nothing to the gain, and over months it actually turns the gain up. An NMDA antagonist goes for the gain.
 
 ## 03 · What memantine actually does
 
@@ -129,17 +129,17 @@ History: Eli Lilly synthesized it in 1963 as a candidate hypoglycemic agent, and
 
 </div>
 
-Memantine sits inside the open NMDA channel, where magnesium sits, and blocks it. Three things make it different from most other drugs that do this.
+Memantine sits inside the open NMDA channel, in the spot where the magnesium sits, and blocks it. Plenty of drugs do that. Three things make this one different.
 
 - **It only blocks channels that are open.** No glutamate, no block. Pharmacologists call this uncompetitive antagonism: the more pathologically active the receptor, the more of it gets blocked.[^8]
 - **It leaves quickly.** Its off-rate is fast enough that it doesn't pile up in channels during brief, ordinary synaptic signaling.[^8]
 - **It mostly blocks extrasynaptic receptors.** At therapeutic concentrations it blocks extrasynaptic NMDA currents about twice as potently as synaptic ones.[^9]
 
-So memantine reduces sustained, excessive NMDA activity and mostly leaves normal transmission alone. A sensitized dorsal horn *is* sustained, excessive NMDA activity. That's the pharmacological case for trying it in chronic pain.
+Put together, memantine damps down NMDA activity that is sustained and excessive, and mostly leaves ordinary signaling alone. A sensitized dorsal horn *is* sustained, excessive NMDA activity, which is the whole pharmacological case for trying it in chronic pain.
 
-Its history is odd. Eli Lilly synthesized memantine in 1963 as a diabetes drug. It didn't lower blood sugar. Merz, in Germany, took it over, found it did something in Parkinson's disease, and launched it for dementia in 1989, the same year its NMDA mechanism was worked out.[^10] The EU approved it for Alzheimer's in 2002 and the US in 2003.
+It also has a strange biography. Eli Lilly made it in 1963 hoping for a diabetes drug, and it didn't lower blood sugar. Merz, in Germany, picked it up, noticed it did something in Parkinson's disease, and ended up launching it for dementia in 1989, which happens to be the year somebody finally worked out that it acts on the NMDA receptor.[^10] The EU approved it for Alzheimer's in 2002 and the US in 2003.
 
-So it's already been repurposed twice, both times before anyone knew how it worked.
+So this drug has already been repurposed twice, and both times before anyone knew how it worked.
 
 ## 04 · Comparison with the dissociatives
 
@@ -149,7 +149,7 @@ PCP, ketamine and dextromethorphan are open-channel NMDA receptor blockers actin
 
 </div>
 
-PCP, ketamine and dextromethorphan block the same channel as memantine, and all of them have been tried for pain. The table compares them.
+PCP, ketamine and dextromethorphan all block the same channel as memantine, and every one of them has been tried for pain. Here they are side by side.
 
 | Drug | Known as | How it is given | Dissociation at clinical dose | Chronic pain evidence | What the market did with it |
 | --- | --- | --- | --- | --- | --- |
@@ -171,9 +171,9 @@ The usual description of memantine as a low-affinity blocker and ketamine as a h
 
 </div>
 
-You'll often read that memantine is a "low-affinity" blocker and ketamine a "high-affinity" one. That's mostly wrong. Their IC50, kinetics and voltage dependence at the NMDA receptor differ by less than a factor of two.[^13] Yet one is used as a dementia treatment and the other as an anesthetic.
+You will often read that memantine is a "low-affinity" blocker and ketamine a "high-affinity" one. That turns out to be mostly wrong: their IC50, kinetics and voltage dependence at the NMDA receptor differ by less than a factor of two.[^13] And yet one of them is a dementia drug and the other is an anesthetic.
 
-There are several possible explanations, and more than one may be true.
+There are a few candidate explanations, and more than one could be true at once.
 
 - **Which receptors.** Memantine favors extrasynaptic receptors,[^9] and it stabilizes a calcium-dependent desensitized state of the channel, which ketamine does not.[^14] It preferentially silences receptors that have been open too long.
 - **Magnesium.** With physiological magnesium present, ketamine still blocks NMDA receptors at rest. Memantine does not. Ketamine's block of resting receptors dephosphorylates eEF2 and releases a burst of BDNF synthesis; memantine does neither.[^15] This is the best current explanation for why ketamine is a rapid antidepressant and memantine is not.
@@ -189,9 +189,9 @@ The 60–80 hour half-life[^11] gives slow onset and a very long offset, which p
 
 </div>
 
-At high enough doses memantine acts like the others. A French analysis of online self-reports found recreational users taking an average of 156 mg, about eight times the maximum daily dose, and describing a dissociation that crept in over hours and lasted an average of 47 hours.[^16]
+Take enough memantine and it behaves like the rest of the family. A French analysis of online self-reports found recreational users taking 156 mg on average, about eight times the maximum daily dose, and describing a dissociation that crept in over hours and then lasted, on average, 47 hours.[^16]
 
-A high that comes on slowly and lasts two days isn't what most people want, which is probably why recreational use of memantine is rare. OxyContin was marketed with a slow-release coating that could be defeated by crushing the tablet. Memantine's slow action comes from its half-life, so there is nothing to crush.
+A high that takes all afternoon to arrive and then stays for two days is not what most people are shopping for, which is probably why hardly anyone uses memantine recreationally. Compare OxyContin, which was sold with a slow-release coating you could defeat by crushing the tablet. Memantine is slow because of its half-life, so there is nothing to crush.
 
 ### What the comparison says about pain
 
@@ -213,9 +213,9 @@ That predicts memantine should do better at prevention than at reversal, and bet
 
 </div>
 
-Ketamine has the best pain evidence of the four, but it needs infusions and monitoring, and outside CRPS the benefit has not been shown to last.[^17]
+Of the four, ketamine has the best evidence for pain. But it means infusions and monitoring, and outside CRPS nobody has shown that the benefit lasts.[^17]
 
-Dextromethorphan was compared with memantine head to head in diabetic neuropathy. Pain fell 33% on dextromethorphan, 17% on memantine and 16% on the lorazepam control. None of those differences reached significance in the main trial, but dextromethorphan, at a median 400 mg a day (several times what the cough-syrup label allows), showed a dose-response in its responders. Memantine was indistinguishable from the control.[^18]
+Dextromethorphan and memantine have been compared head to head exactly once, in diabetic neuropathy. Pain fell 33% on dextromethorphan, 17% on memantine and 16% on the lorazepam control. None of those differences was significant in the main trial, but dextromethorphan, at a median 400 mg a day (several times what the cough-syrup label allows), showed a dose-response in the people who responded. Memantine could not be told apart from the control.[^18]
 
 **The doses are nowhere near each other, and this matters more than anything else in this comparison.** As a painkiller, ketamine is given at a minimum of 80 mg per infusion, straight into a vein over two hours or more, and the guidelines say that higher doses given for longer work better.[^17] For CRPS that means infusions every day for ten days. Memantine is prescribed at 20 mg a day, by mouth.
 
@@ -231,7 +231,7 @@ The clinical evidence is about a dozen small, heterogeneous trials. The table li
 
 </div>
 
-The clinical evidence is a dozen or so small trials that disagree with each other. The table lists the main ones, including the negative results.
+What we have clinically is a dozen or so small trials that don't agree with each other. The table has the main ones, negative results included.
 
 | Condition | What was done | Result |
 | --- | --- | --- |
@@ -258,11 +258,57 @@ This is a post hoc reading of a small evidence base. No trial has been designed 
 
 </div>
 
-I see a pattern in the table. Memantine fails in established peripheral neuropathic pain: old shingles, old amputations, diabetic nerves. It works, in small trials, where the problem is central and either recent or ongoing: fibromyalgia, CRPS, fresh amputations, surgery that hasn't happened yet, migraine.
+When I look at that table I see a pattern. Memantine fails in peripheral neuropathic pain that has been there a long time: old shingles, old amputations, diabetic nerves. It works, in small trials, where the problem is central and either recent or still going on: fibromyalgia, CRPS, fresh amputations, surgery that hasn't happened yet, migraine.
 
-The fibromyalgia trial was based on spectroscopy showing raised glutamate in the insula, hippocampus and posterior cingulate of fibromyalgia patients.[^20] A 2024 network meta-analysis of 38 migraine trials placed memantine among the more effective preventives, with the lowest dropout rate of any drug compared, though the interval on that last estimate includes no difference.[^25]
+The fibromyalgia trial was built on spectroscopy showing raised glutamate in the insula, hippocampus and posterior cingulate of people with fibromyalgia.[^20] And a 2024 network meta-analysis of 38 migraine trials put memantine among the more effective preventives, with the lowest dropout rate of any drug compared, although the interval on that last estimate includes no difference.[^25]
 
-That's my reading, not a finding. Nobody has designed a trial to test it.
+To be clear, this is me reading a table, not a finding. Nobody has designed a trial to test it.
+
+### Checking the pattern with numbers
+
+<div class="for-pros" markdown="1">
+
+A subgroup meta-analysis by pain mechanism. The seven comparisons with extractable data (190 patients) were grouped following the 2025 Cochrane review of NMDA antagonists, which sorts these trials into peripheral neuropathic pain, CRPS and fibromyalgia;[^59] CRPS and fibromyalgia are combined here as the central sensitization group.
+
+Pooled, the central group gives g = −1.36 (95% CI −1.83 to −0.89; 2 comparisons, 83 patients)[^19][^60] and the peripheral group g = −0.04 (−0.16 to +0.08; 5 comparisons, 107 patients). All seven together give −0.35 (−0.83 to +0.14) with I² = 81%, in line with the published meta-analysis.[^2] The between-group difference is −1.32 (95% CI −1.96 to −0.69, p = 0.003), and within each group I² is 0%.
+
+Methods: the effect size is Hedges' g on end-of-treatment pain. The model is random-effects with REML, and the group difference is a meta-regression with a Knapp–Hartung test on 5 degrees of freedom. For the crossover trial I used the paired difference and its confidence interval, standardized by the between-patient SD.[^18]
+
+The result holds up when I change the choices. Using change from baseline for the CRPS trial, which had a baseline imbalance of 1.3 points, the difference is −1.19 (p = 0.005). Treating the crossover periods as independent groups, it is −1.36 (p = 0.005).
+
+Two effect sizes come from an earlier meta-analysis and not from the papers themselves.[^23] One prevention trial is plotted but not pooled.[^62] The chronic phantom limb trial is the one that leans toward placebo.[^61]
+
+One oddity in the source data. The crossover paper prints every ± as a standard error. For its postherpetic arm that can't be right, because it would mean a standard deviation of 28 on a 20-point scale. I treated those values as standard deviations.
+
+*Code and data to be linked before publishing. The numbers were read from web copies of the papers and still need checking against the PDFs.*
+
+</div>
+
+So I tried to test it myself, as far as the published numbers allow. I pooled the trials that had usable numbers and split them by pain type. The split follows the 2025 Cochrane review of NMDA antagonists, which sorts these trials into peripheral neuropathic pain, CRPS and fibromyalgia;[^59] I put CRPS and fibromyalgia together as the central group.
+
+![Pooled effect of memantine on pain by pain type. The central-sensitization group favors memantine; the peripheral neuropathic group sits at zero; all seven comparisons together cross zero.](/images/memantine-pooled.svg)
+{: .both}
+
+| Group | Comparisons | Patients | Effect size (95% CI) |
+| --- | --- | --- | --- |
+| Central sensitization (fibromyalgia, CRPS) | 2 | 83 | −1.36 (−1.83 to −0.89) |
+| Peripheral neuropathic pain | 5 | 107 | −0.04 (−0.16 to +0.08) |
+| All seven together | 7 | 190 | −0.35 (−0.83 to +0.14) |
+{: .both}
+
+Negative means less pain on memantine. The difference between the two groups is −1.32 (95% CI −1.96 to −0.69, p = 0.003).
+
+Lump all seven comparisons together and you get nothing significant, plus a lot of disagreement between trials (I² = 81%), which is exactly what the published meta-analysis found.[^2] Split them by pain type and the disagreement disappears: I² is 0% in each group.
+
+> ### ⚠ How much this is worth
+>
+> Not much yet. The split came from looking at these same trials, so this is not an independent test.
+>
+> The central group is two trials and 83 patients.[^19][^60] Without the fibromyalgia trial the difference is no longer significant (p = 0.07). With the stricter interval recommended for this few trials, the central estimate runs from −4.41 to +1.69.
+>
+> Six trials had no numbers I could use. Three small ones reported no effect. The largest, 421 people with diabetic neuropathy, reported a benefit at 40 mg, and that goes against the pattern.[^63] The phase III that followed it failed.[^3]
+>
+> The two central trials also differ from the others in ways that have nothing to do with pain type. The fibromyalgia trial ran six months, and no peripheral trial in this analysis ran longer than nine weeks. The peripheral comparisons that carry the most weight used an active placebo, and the central trials did not. In the CRPS trial, everyone was also on morphine.
 
 ### The number
 
@@ -272,7 +318,7 @@ The number needed to treat in the fibromyalgia trial was 6.2 (95% CI 3 to 47).[^
 
 </div>
 
-The number needed to treat in fibromyalgia was 6.2.[^19] For comparison, the pooled NNTs for the drugs we actually prescribe for neuropathic pain are 3.6 for tricyclics, 6.4 for SNRIs, 7.7 for pregabalin and 4.3 for strong opioids.[^27] On the point estimate, memantine in fibromyalgia is similar to the SNRIs and better than pregabalin.
+In fibromyalgia the number needed to treat was 6.2.[^19] For comparison, the pooled NNTs for the drugs we actually prescribe for neuropathic pain are 3.6 for tricyclics, 6.4 for SNRIs, 7.7 for pregabalin and 4.3 for strong opioids.[^27] Taken at face value, memantine in fibromyalgia is about as good as the SNRIs and better than pregabalin.
 
 > ### ⚠ An honest caveat
 >
@@ -296,49 +342,49 @@ Then there is blinding. An NMDA antagonist with noticeable CNS effects unblinds 
 
 </div>
 
-The claim in my title has even less support. There is the mouse data in section 01, and one randomized trial in which memantine made morphine work in CRPS when morphine alone did not.[^21] There is also one Medicare claims study suggesting memantine may be opioid-sparing in older adults with dementia and chronic pain, and its own authors say they can't tell which came first.[^26]
+The claim in my own title has even less under it. There's the mouse data in section 01, and one randomized trial in which memantine made morphine work in CRPS when morphine alone didn't.[^21] There is also a single Medicare claims study suggesting memantine may be opioid-sparing in older adults with dementia and chronic pain, whose own authors say they can't tell which came first.[^26]
 
-That's all I found. I think it's enough to justify a trial and not enough to justify prescribing.
+That is everything I found. To me it's enough to justify a trial, and nowhere near enough to justify a prescription.
 
 ## 06 · Why nobody ran the trial
 
-There was a commercial pain program for memantine. It ended in 2003. What the company did next shows how the incentives work.
+Memantine did once have a commercial pain program. It ended in 2003, and what the company did afterwards is a tidy lesson in incentives.
 
-In 2001, analysts expected Forest Laboratories to file memantine for neuropathic pain in 2003.[^28] Pain was where the money was. Neurobiological Technologies, the small company that had done the early work, stood to collect a 13% royalty on pain sales against 1% on Alzheimer's.[^29] An earlier trial of 40 mg had come out positive.[^3]
+Back in 2001, analysts expected Forest Laboratories to file memantine for neuropathic pain in 2003.[^28] Pain was where the money was: Neurobiological Technologies, the small company that had done the early work, stood to collect a 13% royalty on pain sales against 1% on Alzheimer's.[^29] An earlier trial at 40 mg had even come out positive.[^3]
 
-In May 2003 the confirmatory Phase III in diabetic neuropathy missed its primary endpoint.[^3] Forest said it would run another Phase II and perhaps file by 2006.[^30] Five months later memantine was approved for Alzheimer's. No pain indication ever followed.
+Then, in May 2003, the confirmatory Phase III in diabetic neuropathy missed its primary endpoint.[^3] Forest said it would run another Phase II and maybe file by 2006.[^30] Five months later memantine was approved for Alzheimer's, and no pain indication ever followed.
 
-That was one failed trial, in one condition, in the kind of pain where memantine looks worst, and it basically ended industry interest. I don't think that was irrational. A company with a newly approved blockbuster and a patent that's running out has no reason to pay for a second expensive attempt at working out *which* pain patients respond.
+So: one failed trial, in one condition, in exactly the kind of pain where memantine looks worst, and that was more or less the end of industry interest. I don't even think it was irrational. If you have a freshly approved blockbuster and a patent clock running, why would you pay for a second expensive attempt at figuring out *which* pain patients respond?
 
-It made business sense, and it left the question unanswered.
+It made perfect business sense, and the question stayed unanswered.
 
 ### What the company did before the patent expired
 
-With generic memantine due in 2015, Forest, which Actavis bought in the middle of all this, announced in 2014 that it would withdraw the twice-daily tablet and leave only a newer once-daily capsule, Namenda XR. People with Alzheimer's disease would be moved onto the new version before the cheap one existed, and pharmacists would then have nothing to substitute. The industry term is a **hard switch**.
+With generic memantine due in 2015, Forest (which Actavis bought in the middle of all this) announced in 2014 that it would pull the twice-daily tablet and leave only a newer once-daily capsule, Namenda XR. The idea was to move people with Alzheimer's disease onto the new version before the cheap one existed, so that pharmacists would have nothing to substitute. The industry calls this a **hard switch**.
 
-New York's attorney general sued. In May 2015 the Second Circuit upheld an injunction, the first appellate ruling that a product hop can violate the Sherman Act.[^31] A class action by direct purchasers, which also alleged a pay-for-delay deal with a generic manufacturer, settled for $750 million on the day trial was due to open. The company admitted nothing.[^32]
+New York's attorney general sued. In May 2015 the Second Circuit upheld an injunction, the first time an appeals court had ruled that a product hop can violate the Sherman Act.[^31] A class action by direct purchasers, which also alleged a pay-for-delay deal with a generic manufacturer, settled for $750 million on the day the trial was supposed to open. The company admitted nothing.[^32]
 
-So in the last years of memantine's exclusivity the pain program went nowhere, and the company's effort went into moving dementia patients from two tablets to one capsule to keep generics out.
+So in the last years of memantine's exclusivity, the pain program sat untouched while the company put its energy into moving dementia patients from two tablets to one capsule to keep the generics out.
 
-I don't think Forest was unusually bad. Each step was what a company maximizing profit would do, and none of those steps involved finding out whether the drug helps people in pain.
+I don't think Forest was unusually wicked. Every step was what a profit-maximizing company would do. It's just that none of those steps involved finding out whether the drug helps people in pain.
 
 ### The problem of new uses
 
-Once a drug is generic there's no incentive at all. If one company pays for a trial in a new indication, every other manufacturer gets to sell the same tablets off the back of it. Legal scholars call this the **problem of new uses**, and it applies to roughly 2,000 off-patent drugs.[^33] Health economists have said for years that generic repurposing needs public money because no private party will supply it.[^34]
+Once a drug goes generic, the incentive drops to zero. If one company pays for a trial in a new indication, every other manufacturer gets to sell the same tablets on the strength of it. Legal scholars call this the **problem of new uses**, and it applies to roughly 2,000 off-patent drugs.[^33] Health economists have been saying for years that generic repurposing needs public money, because no private party is going to supply it.[^34]
 
-Memantine's price shows the problem. US pharmacies acquire a 10 mg tablet for 6.4 cents.[^1] The "average retail price" of 28 of them is $145, and a discount card brings that to $4.68.[^35] The same box costs $1.80, $4.68 or $145 depending on who is paying and how. None of those prices tells you what the drug is worth.
+Memantine's price tells the same story. A US pharmacy buys a 10 mg tablet for 6.4 cents.[^1] The "average retail price" of 28 of them is $145, and a discount card gets that down to $4.68.[^35] So the same box costs $1.80, $4.68 or $145 depending on who's paying and how, and not one of those numbers tells you what the drug is worth.
 
 ### What happened to the related drugs
 
-Compare what happened to ketamine and dextromethorphan.
+Now look at what happened to its cousins, ketamine and dextromethorphan.
 
-Ketamine is generic. Its S-enantiomer was put in a nasal spray, wrapped in new patents, and launched as Spravato at $590 to $885 per session.[^36] The US cost-effectiveness body ICER priced a year at about $32,400, found too little evidence that it beat generic ketamine, and noted it cost roughly ten times the intravenous generic.[^37]
+Ketamine is generic. So its S-enantiomer was put in a nasal spray, wrapped in new patents, and launched as Spravato at $590 to $885 per session.[^36] ICER, the US cost-effectiveness body, priced a year of it at about $32,400, found too little evidence that it beat plain generic ketamine, and pointed out that it cost roughly ten times the intravenous generic.[^37]
 
-Dextromethorphan is cough syrup. Combined with a little quinidine to slow its metabolism, it became Nuedexta at around $1,235 a month.[^38] In 2019 its maker agreed to pay more than $108 million over kickbacks to doctors and misleading marketing in nursing homes, for use on dementia patients it was never approved for.[^39]
+Dextromethorphan is cough syrup. Add a little quinidine to slow its metabolism and you get Nuedexta, at around $1,235 a month.[^38] In 2019 its maker agreed to pay more than $108 million over kickbacks to doctors and misleading marketing in nursing homes, for use on dementia patients it was never approved for.[^39]
 
-In both cases an old NMDA antagonist showed promise, and companies did not test the old generic drug. They made a version that could be patented.
+Both times, an old NMDA antagonist looked promising, and both times nobody tested the old generic drug. They built a version that could be patented.
 
-Esketamine did get real trials this way, and that's the main argument for patents: exclusivity pays for evidence. It also means that a drug with no exclusivity gets no evidence. Memantine is the example: nobody owns it, so nobody paid for the trials, so a pain doctor deciding whether to try it has almost nothing to go on.
+In fairness, esketamine did get real trials out of this, and that is the best argument for patents there is: exclusivity pays for evidence. The flip side is that a drug with no exclusivity gets no evidence. Memantine is the example. Nobody owns it, so nobody paid for the trials, so a pain doctor wondering whether to try it has almost nothing to go on.
 
 ## 07 · CBD: the opposite case
 
@@ -348,9 +394,9 @@ Cannabidiol is the mirror case: a non-opioid with a large consumer market for pa
 
 </div>
 
-Cannabidiol (CBD) is the opposite of memantine. It is a non-opioid sold for pain, with an enormous market and almost no evidence.
+Cannabidiol (CBD) is memantine's mirror image: a non-opioid that is sold for pain, with an enormous market and almost no evidence behind it.
 
-If incentives decide what gets tested and sold, as I argued in section 06, there should also be drugs that sell well without being tested. CBD is one. Anyone can sell it, nobody has to show it works, and people in pain buy it.
+If incentives decide what gets tested and sold, which is what I argued in section 06, then there ought to be drugs that sell well without ever being tested. CBD is one. Anyone can sell it, nobody has to show that it works, and people in pain buy it.
 
 |  | Memantine | CBD |
 | --- | --- | --- |
@@ -372,9 +418,9 @@ One target converges on the NMDA receptor. In mice CBD behaves as a σ1 receptor
 
 </div>
 
-CBD is not a dissociative and it does not block the NMDA channel. It hits a lot of targets: it facilitates 5-HT1A and glycine receptors and impairs GPR55 and several TRP channels, at concentrations from nanomolar to micromolar.[^51] With that many targets it is easy to propose a mechanism for almost any condition, and hard to test any one of them.
+CBD is not a dissociative and it doesn't block the NMDA channel. What it does is hit a lot of targets at once: it facilitates 5-HT1A and glycine receptors and impairs GPR55 and several TRP channels, at concentrations anywhere from nanomolar to micromolar.[^51] With that many targets you can propose a mechanism for almost any condition, and you'll have a hard time testing any single one.
 
-One of those targets does connect back to the NMDA receptor. In mice, CBD behaves like a σ1 receptor antagonist. It weakens σ1's binding to the NR1 subunit of the NMDA receptor, enhances morphine antinociception and reduces NMDA-induced seizures.[^51] So CBD may reduce NMDA activity by a different route than memantine. This has only been shown in mice.
+One of those targets does lead back to the NMDA receptor. In mice, CBD behaves like a σ1 receptor antagonist: it weakens σ1's binding to the NR1 subunit of the NMDA receptor, enhances morphine antinociception and reduces NMDA-induced seizures.[^51] So CBD may be turning down NMDA activity by a different route than memantine does. So far that has only been shown in mice.
 
 ### What the trials say
 
@@ -386,11 +432,11 @@ I have to be consistent here. Those sixteen trials span twelve pain states, thre
 
 </div>
 
-A 2024 review collected every randomized trial that used pharmaceutical-grade CBD with pain as an outcome. There were sixteen trials across twelve pain conditions, with doses from 6 to 1,600 mg and durations from a single dose to twelve weeks. Fifteen found no benefit over placebo.[^50] The authors concluded that CBD for pain is expensive, ineffective and possibly harmful.
+A 2024 review rounded up every randomized trial that used pharmaceutical-grade CBD and measured pain. There were sixteen, across twelve pain conditions, with doses from 6 to 1,600 mg and durations from a single dose to twelve weeks. Fifteen found no benefit over placebo.[^50] The authors' conclusion was that CBD for pain is expensive, ineffective and possibly harmful.
 
-It's the same story for replacing opioids. An updated systematic review of cannabinoids in general found that animal and observational studies suggest an opioid-sparing effect and the higher-quality randomized trials do not.[^57]
+Replacing opioids goes the same way. An updated systematic review of cannabinoids in general found that the animal and observational studies suggest an opioid-sparing effect and the better randomized trials don't.[^57]
 
-CBD does work for some things. It reduces seizures in two severe childhood epilepsies, and proper trials were run for those.
+CBD does work for some things. It reduces seizures in two severe childhood epilepsies, and for those, proper trials were run.
 
 ### What the market did
 
@@ -408,11 +454,11 @@ Regulation: for seven years after the 2018 Farm Bill there was no federal produc
 
 The untested version is sold to people in pain, and the tested version is sold to insurers.
 
-Only 24% of 89 over-the-counter CBD topicals tested in 2022 contained what the label said; THC turned up in 35% of 105 products, including some sold as THC-free.[^52] An earlier study of online extracts got 31%.[^58] When the FDA ran its own trial of a consumer-range dose in healthy adults, 5.6% had liver enzymes above three times the upper limit of normal within four weeks, against none on placebo.[^53]
+Of 89 over-the-counter CBD topicals tested in 2022, only 24% contained what the label said, and THC turned up in 35% of 105 products, including some sold as THC-free.[^52] An earlier study of extracts sold online got 31%.[^58] And when the FDA ran its own trial of a consumer-range dose in healthy adults, 5.6% had liver enzymes above three times the upper limit of normal within four weeks, against nobody on placebo.[^53]
 
-The tested version is Epidiolex: the same molecule, purified, tested in trials and patented. It launched at about $32,500 a year.[^54] It earned $1,059 million in 2025, and its owner has settled with generic challengers for entry in the very late 2030s.[^55]
+The tested version is called Epidiolex. It's the same molecule, purified, put through trials and patented, and it launched at about $32,500 a year.[^54] It earned $1,059 million in 2025, and its owner has settled with generic challengers for entry in the very late 2030s.[^55]
 
-The regulation went the same way as it did for opioids (section 08). For seven years after the 2018 Farm Bill there was no federal product standard. Then, in November 2025, Congress redefined hemp in a spending bill, with a cap of 0.4 mg total THC per container due to take effect on November 12, 2026. The law is aimed at intoxicating hemp THC and sweeps up most full-spectrum CBD products with it. The industry says about 95% of hemp cannabinoid products will go, from a market it values at $28 billion.[^56] So there was no standard and then a ban, with no attempt at regulation in between.
+The regulation went the way it went for opioids (section 08). For seven years after the 2018 Farm Bill there was no federal product standard at all. Then in November 2025 Congress redefined hemp inside a spending bill, with a cap of 0.4 mg total THC per container due to take effect on November 12, 2026. The law is aimed at intoxicating hemp THC, but it sweeps up most full-spectrum CBD products along the way. The industry says about 95% of hemp cannabinoid products will go, out of a market it values at $28 billion.[^56] First no standard, then a ban, and nothing resembling regulation in between.
 
 ### Why this belongs in a post about memantine
 
@@ -426,11 +472,11 @@ I don't know whether σ1 antagonism and open-channel block would be additive. I 
 
 </div>
 
-The two drugs show the same problem from opposite directions.
+The two drugs are the same problem seen from opposite sides.
 
-Memantine has a mechanism and a few positive trials, and nobody markets it for pain. CBD is marketed everywhere for pain, and fifteen of sixteen trials were negative. In both cases companies sold what was profitable to sell.
+Memantine has a mechanism and a handful of positive trials, and nobody markets it for pain. CBD is marketed for pain everywhere you look, and fifteen of its sixteen trials were negative. Either way, companies sold what it paid to sell.
 
-The customers are often the same people. Someone whose opioid prescription was cut, and who was told there is nothing else, will try a product that promises natural pain relief. One of the review's authors said that chronic pain makes people vulnerable to promises like these.[^50]
+And the customers are often the same people. If your opioid prescription has been cut and you've been told there is nothing else, of course you'll try the product that promises natural pain relief. One of the review's authors made the point that chronic pain makes people vulnerable to promises like these.[^50]
 
 ## 08 · Two policy failures
 
@@ -438,33 +484,33 @@ People with chronic pain in the US got screwed twice, in opposite directions, by
 
 ### First, the overselling
 
-Purdue Pharma has pleaded guilty to federal charges over OxyContin twice, in 2007 and in 2020.[^40] McKinsey earned $93 million advising Purdue over roughly fifteen years,[^41] including a plan to "turbocharge" OxyContin sales while overdose deaths were climbing. In 2024 it paid $650 million to end the federal investigation, in a civil settlement that admits no liability.[^40]
+Purdue Pharma has pleaded guilty to federal charges over OxyContin twice, once in 2007 and again in 2020.[^40] McKinsey earned $93 million advising Purdue over roughly fifteen years,[^41] which included a plan to "turbocharge" OxyContin sales while overdose deaths were climbing. In 2024 it paid $650 million to end the federal investigation, in a civil settlement that admits no liability.[^40]
 
-In November 2025 a bankruptcy judge approved a $7.4 billion plan under which the Sackler family pays about $6.5 billion over fifteen years.[^42] Individual victims share something over $850 million of it.[^43]
+In November 2025 a bankruptcy judge approved a $7.4 billion plan under which the Sackler family pays about $6.5 billion over fifteen years.[^42] The individual victims share something over $850 million of that.[^43]
 
 ### Then, the crackdown
 
-When prescribing was restricted, patients paid for it more than the companies did. Doctors under regulatory pressure cut doses or stopped prescribing altogether.
+When prescribing finally was restricted, it was patients who paid for it, far more than the companies. Doctors under regulatory pressure cut doses or stopped prescribing altogether.
 
-A study of 113,618 patients on stable long-term opioids found that tapering was followed by significantly more overdoses and mental health crises.[^45] The paper was corrected in 2022 for coding errors; the associations got smaller but held up. For that reason I am not quoting the original headline figure.
+A study of 113,618 patients on stable long-term opioids found that tapering was followed by significantly more overdoses and mental health crises.[^45] That paper was corrected in 2022 for coding errors. The associations got smaller but held up, which is why I'm not quoting the original headline figure.
 
-Prescriptions fell, but deaths kept rising for years, because by then most were from illicit fentanyl. The CDC's provisional count for 2025 is 69,973 overdose deaths, 44,564 of them involving opioids, down from 81,313 and 55,296 the year before.[^44] That is three years of decline, and it is still about 120 opioid deaths a day.
+Prescriptions fell, and deaths kept rising for years anyway, because by then most of them were from illicit fentanyl. The CDC's provisional count for 2025 is 69,973 overdose deaths, 44,564 of them involving opioids, down from 81,313 and 55,296 the year before.[^44] That makes three years of decline, and it is still about 120 opioid deaths a day.
 
-So a person with chronic pain in America has been told three things in a row. This drug is safe, take more. This drug is dangerous, you can't have it. There's nothing else.
+So if you have chronic pain in America, you have been told three things in a row. First: this drug is safe, take more. Then: this drug is dangerous, you can't have it. And finally: there's nothing else.
 
-The third one is wrong. There are other options. Some have decent evidence, and memantine has never been properly tested.
+That last one is false. There are other options, some of them with decent evidence, and then there's memantine, which has never been properly tested.
 
 ### Germany as a comparison
 
-I'm writing this from Germany, where it went differently. Germany has ranked second in the world for opioid consumption per capita and, by all accounts, has no opioid epidemic.[^46] A systematic review of German prescribing found rising use and no sign of one.[^48]
+I'm writing this from Germany, where it went differently. Germany has ranked second in the world for opioid consumption per person and, by every account I can find, has no opioid epidemic.[^46] A systematic review of German prescribing found use going up and no sign of one.[^48]
 
-The usual explanation is how the system is set up. Opioids were never a first-line treatment here, prescribers face extra screening and paperwork, and addiction treatment is covered.[^47] One German primary-care paper lists what was different in the US: higher doses per patient, a heavy cost burden on individuals, lighter regulation, and a health system oriented toward profit.[^49]
+The usual explanation is the way the system is built. Opioids were never a first-line treatment here, prescribers face extra screening and paperwork, and addiction treatment is covered.[^47] One German primary-care paper lists what was different in the US: higher doses per patient, a heavy cost burden on individuals, lighter regulation, and a health system oriented toward profit.[^49]
 
-Memantine itself was on the market in Germany fourteen years before the FDA approved it.[^10]
+(Memantine itself, by the way, was on the market in Germany fourteen years before the FDA approved it.[^10])
 
-I should be honest that people use Germany to argue opposite things. The left reads it as proof that regulation and universal coverage work. Libertarians read it as proof that prescribing volume was never the cause and the American crackdown on prescribers was the real error. Both readings fit the German data. The tapering study is evidence for the second, which is awkward for an argument like mine that blames the market, and both are worth knowing.
+I should admit that people use Germany to argue opposite things. The left reads it as proof that regulation and universal coverage work. Libertarians read it as proof that prescribing volume was never the cause, and that the real mistake was the American crackdown on prescribers. The German data fits both. The tapering study is evidence for the second reading, which is awkward for an argument like mine that blames the market, so you should know about both.
 
-Both sides agree that the same drugs caused far fewer deaths in a different health system. So the crisis came from how the drugs were sold and regulated, and not only from the drugs themselves.
+What both sides agree on is that the same drugs killed far fewer people in a different health system. So the crisis came out of how the drugs were sold and regulated, and not only out of the drugs.
 
 ## 09 · What a real trial would look like
 
@@ -487,7 +533,7 @@ On funding: the Purdue plan describes its payments as compensating victims and a
 
 </div>
 
-The trial that would answer this is an ordinary one, and there is already money that could pay for it.
+The trial that would settle this is a completely ordinary one, and the money to pay for it already exists.
 
 - **Who.** Fibromyalgia and CRPS first, because that's where the signal is. A second arm in people tapering long-term opioids, because that's where the need is.
 - **Dose.** 20 mg and 40 mg against placebo. The only positive industry trial used 40.[^3] Even 40 mg a day is far below the doses at which ketamine is given for pain (section 04).
@@ -496,9 +542,9 @@ The trial that would answer this is an ordinary one, and there is already money 
 - **Outcomes.** Function and opioid dose, not only a pain score. SPACE used function as its main outcome.[^4]
 - **Sponsor.** Public money, since no company will pay.
 
-On the money: the Purdue plan describes its payments as compensating victims and abating the opioid crisis, and it follows a $26 billion settlement with the distributors and Johnson & Johnson in 2022.[^42] Testing whether a six-cent non-opioid works seems to me a reasonable use of abatement money. A memantine trial would cost a tiny fraction of either settlement.
+About that money. The Purdue plan describes its payments as compensating victims and abating the opioid crisis, and it comes on top of a $26 billion settlement with the distributors and Johnson & Johnson in 2022.[^42] Finding out whether a six-cent non-opioid works seems to me like a fair use of abatement money, and a memantine trial would cost a tiny fraction of either settlement.
 
-There is also a possible sponsor. Under the bankruptcy plan Purdue's assets pass to a new public benefit company, Knoa Pharma, chartered to make overdose-reversal and addiction-treatment drugs.[^42] A public benefit drug company is the kind of organization that could test a drug nobody can own. Whether it does is a political decision.
+There is even a possible sponsor. Under the bankruptcy plan, Purdue's assets pass to a new public benefit company, Knoa Pharma, chartered to make overdose-reversal and addiction-treatment drugs.[^42] A public benefit drug company is exactly the kind of organization that could test a drug nobody can own. Whether it will is a political decision.
 
 ## 10 · Taking this to your own doctor
 
@@ -519,7 +565,7 @@ On self-sourcing: in the French analysis, people self-medicating at a mean of 23
 
 </div>
 
-If you have chronic pain, these are questions you could ask your doctor.
+If you live with chronic pain, here are the questions I would take to a doctor.
 
 1. Is my pain plausibly centrally sensitized (fibromyalgia, CRPS, migraine, widespread pain out of proportion to any tissue damage) rather than an old peripheral nerve injury?
 2. Have the drugs with real evidence been tried and failed: a tricyclic, an SNRI, a gabapentinoid?[^27]
@@ -541,7 +587,7 @@ If you have chronic pain, these are questions you could ask your doctor.
 > Deliberately. The numbers in this document are what trials used. Titration, kidney function and interactions are a prescriber's job. This document exists to start a conversation, not to replace one.
 {: .both}
 
-Memantine hasn't been properly tested for pain, so I can't say it works. It costs six cents a tablet, and the last serious trial was twenty-three years ago. Since then there's been an opioid epidemic and tens of billions of dollars in settlements. I think someone should run the trial.
+I can't tell you memantine works for pain, because it has never been properly tested. What I can tell you is that it costs six cents a tablet, that the last serious trial was twenty-three years ago, and that since then there has been an opioid epidemic and tens of billions of dollars in settlements. Somebody should run the trial.
 {: .both}
 
 ## Keyword summary
@@ -675,6 +721,16 @@ Memantine hasn't been properly tested for pain, so I can't say it works. It cost
 [^57]: Opioid-sparing effect of cannabinoids for analgesia: an updated systematic review and meta-analysis of preclinical and clinical studies. *Neuropsychopharmacology.* 2022. doi:10.1038/s41386-022-01322-4 [summary ↗](https://www.iasp-pain.org/publications/pain-research-forum/papers-of-the-week/paper/195752-opioid-sparing-effect-cannabinoids-analgesia-updated-systematic-review-and-meta){: .ref-link}. *Author list to be completed before print.*
 
 [^58]: Bonn-Miller MO, Loflin MJE, Thomas BF, Marcu JP, Hyke T, Vandrey R. Labeling accuracy of cannabidiol extracts sold online. *JAMA.* 2017. doi:10.1001/jama.2017.11909
+
+[^59]: Ferraro MC, et al. Ketamine and other NMDA receptor antagonists for chronic pain. *Cochrane Database of Systematic Reviews.* 2025. CD015373. [source ↗](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD015373.pub2/full){: .ref-link}
+
+[^60]: Gustin SM, et al. NMDA-receptor antagonist and morphine decrease CRPS-pain and cerebral pain representation. *Pain.* 2010;151(1):69–76. [source ↗](https://www.crpscanada.org/parc/english/resources/GustinNMDA2011.pdf){: .ref-link}
+
+[^61]: Maier C, et al. Efficacy of the NMDA-receptor antagonist memantine in patients with chronic phantom limb pain: results of a randomized double-blinded, placebo-controlled trial. *Pain.* 2003;103:277–283. [source ↗](https://pubmed.ncbi.nlm.nih.gov/12791434/){: .ref-link}
+
+[^62]: Morel V, et al. Memantine before mastectomy prevents post-surgery pain: a randomized, blinded clinical trial in surgical patients. *PLoS One.* 2016;11(4):e0152741. [source ↗](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0152741){: .ref-link}
+
+[^63]: Memantine in the treatment of diabetics with painful peripheral neuropathy: a placebo-controlled phase IIB trial. *Pain Medicine.* 2002;3(2):182. Conference abstract. [source ↗](https://academic.oup.com/painmedicine/article-abstract/3/2/182/1941007){: .ref-link}. *Author list to be completed before print.*
 
 <style>
 /* the wide comparison tables: smaller type, cells aligned to the top, sideways scroll if they still do not fit */

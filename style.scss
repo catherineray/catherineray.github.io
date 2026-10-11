@@ -847,3 +847,6 @@ a.chip-genre, .chip-genre {
 .post .footnotes a.reversefootnote { margin-left: .3em; text-decoration: none; font-weight: 400; color: #4a3a63; }
 // a reference cited many times keeps one way back, to its first use
 .post .footnotes a.reversefootnote ~ a.reversefootnote { display: none; }
+
+// two footnote numbers in a row get a comma between them
+.post sup[id^="fnref"] + sup[id^="fnref"]::before { content: ","; margin-right: .15em; font: 700 1em 'Space Mono', monospace; }
