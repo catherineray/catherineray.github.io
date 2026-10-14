@@ -730,6 +730,29 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .papers + .note,
   .band-img + .papers,
   .papers + .band-img { margin-top: calc(1.6rem + 8px); }
+  .note.math-intro { margin-bottom: calc(2.4rem + 8px); }
+  /* publications: cards like the lab's science rows, always open */
+  .pubs { display: flex; flex-direction: column; gap: .9rem; }
+  .pub {
+    padding: .95rem 1.2rem 1rem;
+    background: var(--paper);
+    border: 3px solid var(--ink);
+    border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--accent, var(--violet));
+    scroll-margin-top: 1.5rem;
+  }
+  .pub h4 { margin: 0 0 .35em; font-family: var(--text); font-weight: 700; font-size: 1rem; line-height: 1.35; text-wrap: pretty; }
+  #main #research .pub h4 a { color: var(--ink); text-decoration-color: var(--accent, var(--violet)); text-decoration-thickness: 3px; }
+  .pub .pub-line { margin: 0 0 .5em; }
+  .pub .yr { display: inline-block; padding: .08em .5em; background: var(--lilac-deep); border-radius: 4px; font-family: var(--mono); font-size: .62rem; font-weight: 700; white-space: nowrap; }
+  .pub .status { font-size: .62rem; }
+  .pub .ptags { margin: 0 0 .6em; }
+  .pub .ptag { font-size: .62rem; }
+  .pub .pitch { margin: 0; font-size: .9rem; line-height: 1.6; color: var(--ink); }
+  .pub .who { margin: .45em 0 0; font-size: .78rem; line-height: 1.55; color: var(--ink-soft); }
+  .pub .spot { margin: .7em 0 0; padding: .55em .8em; background: var(--yellow); border: 2px solid var(--ink); border-radius: 8px; font-size: .84rem; line-height: 1.55; color: var(--ink); }
+  #main .pub .spot a { color: var(--ink); font-weight: 400; }
+  .pub .chips { margin-top: .7em; }
 
   .band-img.band-end {
     margin-top: 3rem;
@@ -962,6 +985,62 @@ rail_sections:   # listed in the sidebar under "About Rin"
   #before-math[data-level="plain"] details.row > summary a { pointer-events: auto; }
   #before-math[data-level="plain"] details.row > summary::after { content: none; }
   #before-math[data-level="plain"] .row-body { display: none; }
+
+  /* math-section preview options */
+  .mgroup { margin: 0 0 2.8rem; }
+  .mgroup > h3 { margin: 0 0 .15em; font-family: var(--display); font-size: 1.3rem; line-height: 1.1; text-transform: uppercase; letter-spacing: 0; }
+  .mgroup > h3::before { content: ''; display: inline-block; width: .5em; height: .5em; margin-right: .5em; background: var(--accent); border: 3px solid var(--ink); border-radius: 50%; vertical-align: .08em; }
+  .mgroup > h3 .yr { font-family: var(--mono); font-size: .62rem; vertical-align: .3em; }
+  .mgroup .gloss { margin: .2rem 0 1rem; font-size: .92rem; line-height: 1.5; font-style: italic; color: var(--ink); }
+  .status.st-in-progress { background: var(--paper); border: 2px dashed var(--ink); }
+  .thread { display: inline-block; margin-left: .5em; padding: .08em .55em; background: color-mix(in srgb, var(--accent) 45%, var(--paper)); border: 2px solid var(--ink); border-radius: 999px; font-family: var(--mono); font-size: .6rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; }
+  .math-intro .thread, .pub-line > .thread:first-child { margin: 0 .3em 0 0; }
+  #research[data-m="story"] .v-sci, #research[data-m="sci"] .v-story { display: none; }
+  .mdial { margin: 0 0 2rem; }
+  .pub h4 { color: var(--ink); }
+  .pub-body { border-top: 2px dashed rgba(27,27,27,.2); margin: 0 1.2rem; padding: .8rem 0 1rem !important; }
+  .pub-body > .pitch { font-size: .95rem; font-weight: 500; }
+  .pub .abs-body { margin: .9em 0 0 !important; padding: 0 0 0 .9em !important; background: none !important; border-left: 3px solid var(--accent); border-radius: 0 !important; }
+  .pub .abs-body p { font-size: .84rem !important; line-height: 1.65 !important; color: var(--ink-soft) !important; }
+  .pub .abs-body p.abs-label { margin: 0 0 .35em !important; font-family: var(--mono); font-size: .62rem !important; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink) !important; }
+  .msort { margin: 0 0 2rem; }
+  .mgroup > .pubs + .pubs, .thesis-block + .pubs { margin-top: .9rem; }
+  .pub .status.st-in-progress { margin-left: 0; }
+  .mflat .mlabel:first-child { margin-top: 0; }
+  .mflat .mbig { display: table; margin: 2.8rem 0 1.6rem; }
+  .mflat .mbig:first-child { margin-top: .4rem; }
+  details.pub { padding: 0; }
+  details.pub > summary { display: block; position: relative; padding: .85rem 2.8rem .85rem 1.2rem; cursor: pointer; list-style: none; }
+  details.pub > summary::-webkit-details-marker { display: none; }
+  details.pub > summary::after { content: "+"; position: absolute; right: 1rem; top: .6rem; font-family: var(--display); font-size: 1.3rem; }
+  details.pub[open] > summary::after { content: "\2212"; }
+  details.pub > summary:hover { background: color-mix(in srgb, var(--accent) 22%, var(--paper)); border-radius: 9px; }
+  details.pub > summary:focus-visible { outline: 3px dashed var(--ink); outline-offset: 3px; }
+  details.pub > summary .ptags { margin-bottom: 0; }
+  details.pub > summary .who { margin: .45em 0 0; }
+  .pub-body { padding: .1rem 1.2rem 1rem; }
+  .pub-body > .who { margin: .45em 0 0; }
+  .pub .seq { margin: 1.1em 0 0; padding: .5em .8em; background: color-mix(in srgb, var(--accent) 14%, var(--paper)); border-radius: 8px; font-size: .82rem; line-height: 1.55; font-style: italic; color: var(--ink); }
+  #main .pub .seq a { color: var(--ink); text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+  .part { display: inline-block; margin-right: .5em; padding: .08em .55em; background: var(--ink); color: var(--paper); border-radius: 4px; font-family: var(--mono); font-size: .62rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+  .status.st-forthcoming { margin-left: 0; background: var(--pink); border: 2px solid var(--ink); }
+  .thesis-block { margin: 0 0 .4rem; padding: 0 0 1.4rem; border-bottom: 2px dashed rgba(27,27,27,.28); }
+  .thesis-block .mlabel { margin-top: .4rem; }
+  .thesis-block .pubs { margin-top: 1rem; }
+  .mlabel { margin: 1.4rem 0 .6rem; font-family: var(--mono); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+  .mgroup .note-quiet { margin: 0 0 .4rem; }
+  .pub .status { margin-left: 0; }
+  .pub .yr + .status { margin-left: .5em; }
+  .pub details.abs { margin: .7em 0 0; }
+  .pub details.abs > summary { display: inline-block; cursor: pointer; list-style: none; padding: .3em .9em; border: 2px solid var(--ink); border-radius: 999px; background: var(--yellow); box-shadow: 3px 3px 0 var(--ink); font-family: var(--mono); font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .pub details.abs > summary::-webkit-details-marker { display: none; }
+  .pub details.abs > summary::before { content: "+ "; }
+  .pub details.abs[open] > summary::before { content: "\2212  "; }
+  .pub details.abs > summary:hover { background: color-mix(in srgb, var(--accent) 30%, var(--paper)); }
+  .pub .abs-body { margin: .6em 0 0; padding: .7em .9em; border-left: 4px solid var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--paper)); border-radius: 0 8px 8px 0; }
+  .pub .abs-body p { margin: 0 0 .6em; font-size: .82rem; line-height: 1.6; color: var(--ink); }
+  .pub .abs-body p:last-child { margin: 0; }
+  .mgroup > h3 .yr.now { display: inline-block; margin-left: .5em; padding: 0 .5em; background: var(--yellow); border: 2px solid var(--ink); border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
 </style>
 
 </head>
@@ -2091,105 +2170,118 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
     <section id="research">
       <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="about-published">THE PROOFS</h2>
-      <h2 class="sec-head sec-wrap" style="--shadow: var(--violet); --tilt: -2deg;" data-text="PUBLICATIONS &amp; PREPRINTS" id="about-preprints">PUBLICATIONS &amp; PREPRINTS</h2>
-
-      <!-- published, submitted and preprints together, newest first -->
-      <div class="papers" style="--accent: var(--violet);">
-
-        <article class="paper">
-          <h3><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture at Coheight 1</a><span class="status">Sept 2026</span><span class="status st-preprint">preprint</span></h3>
-          <p class="meta">
-            joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank,
-            Jared Weinstein, and Xinyu Zhou ·
-            on Jacquet–Langlands and homotopy theory
+      <div class="note math-intro" style="--accent: var(--violet);">
+          <p>
+            <strong class="tldr-lead">In math I build instruments for overhearing too.</strong> Homotopy theory and arithmetic keep arriving at the same numbers by different roads. I’m learning the language they share, the one that explains why the roads meet.
           </p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://arxiv.org/abs/2509.23428">Moduli Stacks of <i>G</i>-Curves in Homotopy Theory at \(h = p-1\)</a><span class="status">Sept 2025</span><span class="status st-submitted">submitted</span></h3>
-          <p class="meta">significant update Sept 2026</p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2509.23428">arXiv</a></p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://arxiv.org/abs/2507.10157">Toward the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem</a><span class="status">July 2025</span><span class="status st-submitted">submitted</span></h3>
-          <p class="meta">
-            joint with Eva Belmont ·
-            the \(E_2\)-page for the homotopy fixed points spectral
-            sequence computing \(\pi_*(E_6^{hC_9})\)
-          </p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.10157">arXiv</a></p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a><span class="status">July 2025</span><span class="status st-preprint">preprint</span></h3>
-          <p class="meta">expository errors, under construction</p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.00309">arXiv</a></p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://link.springer.com/article/10.1007/s12215-020-00590-7">Automorphisms of Abelian Varieties and Principal Polarizations</a><span class="status">2022</span><span class="status st-published">published</span></h3>
-          <p class="meta">
-            joint with D. Lee ·
-            <em>Rendiconti del Circolo Matematico di Palermo</em>, Series 2,
-            vol. 71, pp. 483–494 ·
-            circulated in preprint as <em>Automorphisms of the Jacobian</em> ·
-            with a code base written for high-performance computing
-          </p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1811.07007">arXiv</a> <a class="chip code" href="https://github.com/catherineray/aut-jac">code: aut-jac</a> </p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17">Toward Directed Collapsibility</a><span class="status">2020</span><span class="status st-published">published</span></h3>
-          <p class="meta">
-            joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy,
-            N. Sanderson, E. Vidaurre ·
-            <em>Advances in Mathematical Sciences</em>, vol. 21, pp. 255–271
-          </p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1902.01039">arXiv</a></p>
-        </article>
-
-        <article class="paper">
-          <h3><a href="https://arxiv.org/abs/1911.08615">A Global Crystalline Period Map</a><span class="status">2018</span><span class="status st-preprint">preprint</span></h3>
-          <p class="meta">joint with M. Neaton and A. Pieper</p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1911.08615">arXiv</a></p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- in progress -->
-
-    <section>
-      <h2 class="sec-head" style="--shadow: var(--pink); --tilt: -2deg;" data-text="IN PROGRESS" id="about-progress">IN PROGRESS</h2>
-
-      <h3 class="sub" style="--accent: var(--pink);">Zeta Functions in Homotopy Theory</h3>
-
-      <div class="papers" style="--accent: var(--orange);">
-        <article class="paper">
-          <h3>Syntomic cohomology of ring spectra and a \(T(h)\)-local zeta function</h3>
-          <p class="meta">joint with Gabe Angelini-Knoll</p>
-        </article>
-        <article class="paper">
-          <h3>Toward Categorifying the relationship of Symplectic <i>L</i>-functions and Reidemeister Torsion</h3>
-          <p class="meta">Riemann–Roch for Reidemeister torsion in <i>K</i>-theory and <i>L</i>-theory</p>
-        </article>
-        <article class="paper">
-          <h3><i>L</i>-genera and Localizations in <i>K</i>-theory</h3>
-          <p class="meta">joint with Daniel Berwick-Evans, Natalia Pacheco-Tallaj</p>
-        </article>
-        <article class="paper">
-          <h3>All Bernoulli Numbers in Homotopy Theory Are Shifts</h3>
-          <p class="meta">
-            joint with Andres Mejia and Noah Riggenbach ·
-            connecting Kervaire–Milnor to Quillen–Lichtenbaum using the
-            compatibility of \(K(\mathbb{S})\) and \(L_{K(1)}K(\mathbb{Z})\)
-          </p>
-        </article>
+          <ul>
+            <li><strong><a href="#m-scatter">Scattering</a>:</strong> On a curve over a finite field, Eisenstein series behave like quantum particles bouncing off a wall. I’m showing that the measure telling you how they bounce is secretly an index on the other side of the Langlands mirror, a trace of Frobenius in disguise.</li>
+            <li><strong><a href="#m-echo">Echoes</a>:</strong> I hunt for numbers that show up on both sides, like Bernoulli denominators in homotopy groups or special values of <i>L</i>-functions as orders of finite groups, and I ask what makes them agree.</li>
+            <li><strong><a href="#m-sym">Symmetry you can touch</a>:</strong> I build curves whose symmetries model the hidden Lubin–Tate action, so that impossible group actions become things you can draw.</li>
+          </ul>
       </div>
 
-      <h3 class="sub" style="--accent: var(--cyan);">Moduli Stacks of Curves in Homotopy Theory</h3>
+      <div class="dial msort">
+        <button type="button" data-sort="thread" aria-pressed="true">sorted by theme</button>
+        <button type="button" data-sort="date">sorted chronologically</button>
+        <button type="button" data-sort="status">papers, then work in progress</button>
+      </div>
+      <div class="mflat" hidden></div>
 
+      <div class="mgroup" id="m-scatter" style="--accent: var(--pink);">
+        <h3>Scattering <span class="yr now">current</span></h3>
+        <p class="gloss">The spectral measure of Eisenstein series is an index on the other side of the Langlands mirror.</p>
+      <div class="pubs">
+        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--pink);">
+          <summary>
+          <h4>The Unramified Eisenstein Spectrum as a Categorical Trace</h4>
+          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="ptags"><span class="ptag">Eisenstein series</span><span class="ptag">Plancherel measure</span><span class="ptag">categorical traces</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">On a curve over a finite field, Eisenstein series behave like particles scattering off a wall. The measure that normalizes them is an index on the Langlands dual side, a genus built from the curve’s zeta function and pushed forward along the Steinberg stack. I’m showing that this formula, Langlands’ constant term formula and the spectral decomposition are traces of Frobenius of one Morita context.</p>
+          <p class="who">working manuscript, 45 pp.</p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--pink);">
+          <summary>
+          <h4><i>L</i>-genera and Localizations in <i>K</i>-theory</h4>
+          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="ptags"><span class="ptag">genera</span><span class="ptag">equivariant localization</span><span class="ptag">theta characteristics</span></p>
+          <p class="who">joint with Daniel Berwick-Evans and Natalia Pacheco-Tallaj</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">The equivariant-cohomology side of the Eisenstein picture. Langlands’ sum over the Weyl group becomes fixed-point localization on the Steinberg stack, and genera whose recipe is an <i>L</i>-function form a new family next to the Todd, \(\hat A\) and Witten genera.</p>
+          </div>
+        </details>
+
+      </div>
+      </div>
+
+      <div class="mgroup" id="m-echo" style="--accent: var(--orange);">
+        <h3>Echoes <span class="yr now">current</span></h3>
+        <p class="gloss">The same numbers, computed twice: once by homotopy theory, once by arithmetic.</p>
+      <div class="pubs">
+        <details class="pub" data-key="9999999" data-st="forthcoming" style="--accent: var(--orange);">
+          <summary>
+          <h4>Syntomic Cohomology of Ring Spectra and a \(T(h)\)-local Zeta Function</h4>
+          <p class="pub-line"><span class="status st-forthcoming">forthcoming</span></p>
+          <p class="ptags"><span class="ptag">zeta functions</span><span class="ptag">syntomic cohomology</span><span class="ptag">functional equations</span></p>
+          <p class="who">joint with Gabe Angelini-Knoll</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">A zeta function for categories over the ring spectra \(BP\langle h\rangle\), built from \(T(h+1)\)-local syntomic cohomology. At the bottom it recovers the Euler factor of the Riemann zeta function at \(p\); a chromatic Tate twist lets it see the height, and its functional equation holds with no correction factor.</p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="9999999" data-st="forthcoming" style="--accent: var(--orange);">
+          <summary>
+          <h4><i>L</i>-functions and the Relative Image of <i>J</i> in Moore Spectra</h4>
+          <p class="pub-line"><span class="status st-forthcoming">forthcoming</span></p>
+          <p class="ptags"><span class="ptag">Moore spectra</span><span class="ptag">relative image of <i>J</i></span><span class="ptag">Dedekind zeta functions</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">Adams showed that the denominators of \(\zeta(1-n)\) count the image of <i>J</i>. For the mod \(p^k\) Moore spectrum the naive analogue is false once \(k\ge2\). I conjecture that its homotopy is glued from the two relative pieces of the extension \(F_k/\mathbb Q\), the cofibers of the unit and of the transfer, so that \(|\pi_{2n}(L_{K(1)}\mathbb S/p^k)|\) is the gcd of the denominators of \(\zeta_{\mathbb Q}(1-n)\) and of \((\zeta_{F_k}/\zeta_{\mathbb Q})(1-n)\). This recovers Salch’s theorem at \(k=1\).</p>
+          <p class="who">checked numerically for \(p = 3, 5\) and \(k \le 3\) from generalized Bernoulli numbers</p>
+          </div>
+        </details>
+
+      </div>
+      <div class="pubs">
+        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--orange);">
+          <summary>
+          <h4>Toward Categorifying Symplectic <i>L</i>-functions and Reidemeister Torsion</h4>
+          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="ptags"><span class="ptag">symplectic <i>L</i>-functions</span><span class="ptag"><i>L</i>-theory</span><span class="ptag">Reidemeister torsion</span></p>
+          <p class="who">joint with A. Petrov and M. Volpe</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">Abdurrahman and Venkatesh computed central values of symplectic <i>L</i>-functions of curves over finite fields from the Reidemeister torsion of 3-manifolds, turning the knots–primes analogy into a theorem. We categorify it through a motivic filtration on <i>L</i>-theory, so that the central value becomes the trace of a Poincaré structure.</p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--orange);">
+          <summary>
+          <h4>All Bernoulli Numbers in Homotopy Theory Are Shifts</h4>
+          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="ptags"><span class="ptag">Bernoulli numbers</span><span class="ptag">image of <i>J</i></span><span class="ptag">algebraic <i>K</i>-theory</span></p>
+          <p class="who">joint with Andres Mejia and Noah Riggenbach</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">Bernoulli denominators count elements twice: in the homotopy groups of spheres, through Kervaire–Milnor, and in the <i>K</i>-theory of number fields, through Quillen–Lichtenbaum. We connect the two counts using the compatibility of \(K(\mathbb S)\) and \(L_{K(1)}K(\mathbb Z)\).</p>
+          </div>
+        </details>
+
+
+      </div>
+      </div>
+
+      <div class="mgroup" id="m-sym" style="--accent: var(--cyan);">
+        <h3>Symmetry you can touch</h3>
+        <p class="gloss">Curves, Jacobians and periods built toward the group action Lubin–Tate space hides.</p>
+        <div class="thesis-block">
+        <p class="mlabel">My thesis, in three parts</p>
       <div class="note note-quiet" style="--accent: var(--cyan);">
         <p>
           The group cohomology of the maximal finite subgroups of the Lubin–Tate
@@ -2209,20 +2301,191 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </p>
         <p class="chips"><a class="chip" href="/pdfs/application_general_audience.pdf">My thesis, explained for everyone (PDF)</a> <a class="chip code" href="https://github.com/catherineray/h-splitting">code: h-splitting</a></p>
       </div>
+      <div class="pubs">
+        <details class="pub" id="pub-model" data-key="202507" data-st="preprint" style="--accent: var(--cyan);">
+          <summary>
+          <h4><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a></h4>
+          <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="status st-preprint">preprint</span></p>
+          <p class="ptags"><span class="ptag">group actions on stacks</span><span class="ptag">two-tower method</span><span class="ptag">Lubin–Tate action</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">How do you pin down a profinite group acting on a formal moduli stack, well enough to compute with it? A survey of the two ways, geometric modeling and the two-tower method, worked out for the Lubin–Tate action.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Suppose we are given a profinite group \(G\) acting on a formal moduli stack \(\mathcal{M}\), and we want to understand the group action, and compute cohomology related to this group action. How can we do it? This prolegomenon surveys two methods of pinning down such an action: geometric modeling and the two tower method. We highlight their use on a specific action - the automorphisms of a formal group acting on its deformation space, called the Lubin-Tate action.</p></div>
+          <p class="seq">Background for two projects. It surveys two ways of pinning down the Lubin–Tate action: geometric modeling, which Parts II and III carry out, and the known two-tower method, which the <a href="#pub-chrom">chromatic splitting paper</a> uses.</p>
+          <p class="who">expository errors, under construction</p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.00309">arXiv</a></p>
+          </div>
+        </details>
 
-      <div class="papers" style="--accent: var(--cyan); margin-top: 1.6rem;">
-        <article class="paper">
-          <h3>Writhing Jewels: A Conjectural Description of the Lubin–Tate Action via Moduli Stacks of <i>G</i>-Curves for \(h = p^{k-1}(p-1)\)</h3>
-        </article>
-        <article class="paper">
-          <h3>The Eigenvalues of Frobenius of Artin–Schreier–Witt Curves are Gauss Sums</h3>
-          <p class="meta">new families of Newton strata in the Torelli locus</p>
-          <p class="chips">
-            <a class="chip" href="/pdfs/Gauss_sums.pdf">Note toward this — PDF</a>
-            <a class="chip code" href="https://github.com/catherineray/newton">code: newton (Newton polygons)</a>
-          </p>
-        </article>
+        <details class="pub" data-key="202509" data-st="submitted" style="--accent: var(--cyan);">
+          <summary>
+          <h4><a href="https://arxiv.org/abs/2509.23428">Moduli Stacks of <i>G</i>-Curves in Homotopy Theory at \(h = p-1\)</a></h4>
+          <p class="pub-line"><span class="part">Part II</span><span class="yr">Sept 2025</span><span class="status st-submitted">submitted</span></p>
+          <p class="ptags"><span class="ptag">moduli of curves</span><span class="ptag">inverse Galois theory</span><span class="ptag">Lubin–Tate action</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">At height \(p-1\) the maximal finite subgroup \(G’\) of the Morava stabilizer group builds a curve on its own, and that curve’s deformations are Lubin–Tate space, \(G’\)-equivariantly. The hidden action becomes \(G’\) shifting and scaling \(p+1\) points on the projective line, with ramification in place of level structure.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Let \(p\) be odd and \(G' = \mathbb{Z}/p \rtimes \mathbb{Z}/(p-1)^2\) the maximal finite subgroup of the Morava stabilizer group at height \(p-1\). Inverse Galois theory produces from \(G'\) alone a curve \(X\), the unique curve of minimal genus with \(\operatorname{Aut}(X) \simeq G'\); its ramification, its field of definition and its equation are consequences of the group, not choices. We prove a \(G'\)-equivariant equivalence between the deformations of \(X\) and Lubin–Tate space, so that the Lubin–Tate action of \(G'\) is the action of \(\operatorname{Aut}(X)\) on deformations of the curve. The proof is a coordinate-free Kodaira–Spencer argument reducing to a single character count. The action becomes explicit: \(G'\) acts through \(\mathbb{F}_p \rtimes \mathbb{F}_p^\times\) shifting and scaling \(p+1\) points on \(\mathbb{P}^1\). From this we compute \(H^*(G', π_* E_{p-1})\) and its Tate cohomology. One identity, \(π^{p-1} = -p\), runs through every section.</p></div>
+          <p class="who">significant update Sept 2026</p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2509.23428">arXiv</a></p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="9999999" data-st="forthcoming" style="--accent: var(--cyan);">
+          <summary>
+          <h4>Writhing Jewels: The Lubin–Tate Action at \(h = p^{k-1}(p-1)\)</h4>
+          <p class="pub-line"><span class="part">Part III</span><span class="status st-forthcoming">forthcoming</span></p>
+          <p class="ptags"><span class="ptag">Schiffer stacks</span><span class="ptag">crystals</span><span class="ptag">Cartier operator</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">One height up, at \(h = p^{k-1}(p-1)\), no tower of curves models Lubin–Tate space, and I prove that none can. What works instead is a smooth stack of surgeries on the crystal of a single curve, made at the orbit of its branch points, whose tangent space is the Lubin–Tate tangent.</p>
+          <p class="who">working manuscript, 33 pp.</p>
+          </div>
+        </details>
+
       </div>
+        </div>
+      <div class="pubs">
+        <details class="pub" id="pub-chrom" data-key="202609" data-st="preprint" style="--accent: var(--cyan);">
+          <summary>
+          <h4><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture in Coheight 1</a></h4>
+          <p class="pub-line"><span class="yr">Sept 2026</span><span class="status st-preprint">preprint</span></p>
+          <p class="ptags"><span class="ptag">chromatic splitting</span><span class="ptag">two-tower isomorphism</span><span class="ptag">Fargues–Fontaine curve</span></p>
+          <p class="who">joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">Proves the coheight-one weak chromatic splitting conjecture at all heights and generic primes, by <i>p</i>-adic geometry instead of group-cohomology computations. The key is a new two-tower isomorphism in characteristic <i>p</i>, which describes the Lubin–Tate tower through extensions of vector bundles on the Fargues–Fontaine curve.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>This article confirms predictions made by Hopkins’ chromatic splitting conjecture in stable homotopy theory. A consequence of our main theorem is that a certain map of \(K(h-1)\)-local \(E_\infty\)-rings \(\mathbb{S}^{B\mathbb{Z}_p}_{K(h-1)} \to L_{K(h-1)}\mathbb{S}_{K(h)}\) admits a retract, so long as \(p-1\) does not divide \(h-1\). If \(h=2\) and \(p\) is odd, we show this map is an isomorphism.</p><p>We use methods from the theory of \(p\)-divisible groups and \(p\)-adic geometry. Along the way we prove an entirely new kind of “two-tower isomorphism”, in analogy with Faltings’ isomorphism between the Lubin–Tate and Drinfeld towers, which parametrizes \(p\)-divisible groups over characteristic \(p\) perfectoid spaces with fixed generic fiber in terms of negative Banach–Colmez spaces. Using the two-tower isomorphism, we gain control over the continuous cohomology of the Morava stabilizer group \(\mathbb{G}_h\) with coefficients in \(\pi_* L_{K(h-1)} E_h\).</p><p>To study the continuous action of \(\mathbb{G}_h\) on \(L_{K(h-1)} E_h\), it was necessary to develop the theory of solid Lubin–Tate spectra. Adapting Lurie’s constructions, we attach a solid Lubin–Tate spectrum to \(p\)-divisible groups over a broad class of solid rings in characteristic \(p\).</p></div>
+          <p class="seq">The background for this paper is in <a href="#pub-model">Modeling Group Actions on Stacks</a>, which surveys the two-tower method.</p>
+          <p class="chips"><a class="chip" href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">PDF</a></p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="202507" data-st="submitted" style="--accent: var(--cyan);">
+          <summary>
+          <h4><a href="https://arxiv.org/abs/2507.10157">Toward the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem</a></h4>
+          <p class="pub-line"><span class="yr">July 2025</span><span class="status st-submitted">submitted</span></p>
+          <p class="ptags"><span class="ptag">Kervaire invariant</span><span class="ptag">homotopy fixed points</span><span class="ptag">Morava <i>E</i>-theory</span></p>
+          <p class="who">joint with Eva Belmont</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">The prime 3 is the last open case of the Kervaire invariant problem. We prove the detection theorem there and, assuming a model of the \(C_9\)-action on \(E_6\), compute the \(E_2\)-page of the homotopy fixed points spectral sequence for \(\pi_*(E_6^{hC_9})\).</p>
+          <p class="spot"><strong>Used in a claimed resolution.</strong> In September 2026 OpenAI posted <a href="https://github.com/openai/math/blob/main/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/paper.pdf">a preprint claiming to resolve the Kervaire invariant problem at the prime 3</a>, <strong>using our results and the method Eva and I proposed in this paper</strong>.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Hill, Hopkins, and Ravenel suggest that the last remaining Kervaire invariant problem, the case of \(p=3\), can be solved by computing the homotopy fixed points spectral sequence for \(π_* E_6^{hC_9}\). We prove a detection theorem for this case and use a conjectural form of the \(C_9\)-action on \(E_6\) to compute the \(E_2\) page of this spectral sequence away from homological degree zero.</p></div>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.10157">arXiv</a><a class="chip" href="https://github.com/openai/math/blob/main/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/paper.pdf">OpenAI preprint</a></p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="202200" data-st="published" style="--accent: var(--cyan);">
+          <summary>
+          <h4><a href="https://link.springer.com/article/10.1007/s12215-020-00590-7">Automorphisms of Abelian Varieties and Principal Polarizations</a></h4>
+          <p class="pub-line"><span class="yr">2022</span><span class="status st-published">published</span></p>
+          <p class="ptags"><span class="ptag">principal polarizations</span><span class="ptag">Narasimhan–Nori conjecture</span><span class="ptag">high-performance computing</span></p>
+          <p class="who">joint with D. Lee</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">How many principal polarizations can one abelian variety carry? A new algorithm gives lower bounds, for example at least 9 on the Jacobian of the genus-4 curve underlying Schoen’s I-WP minimal surface, and explores the Jacobians of Klein’s quartic, Fermat’s quartic and Bring’s curve, with code written for high-performance computing.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>The Narasimhan-Nori conjecture asks for a closed formula for the number of non-isomorphic principal polarizations of any given abelian variety. In this paper, we introduce a new algorithm that gives a lower bound on the number of non-isomorphic principal polarizations on any given abelian variety. We show, for example, that the Jacobian of the genus four underlying curve of Schoen's I-WP minimal surface has at least 9 non-isomorphic principal polarizations. We also explore the Jacobians of Klein's quartic, Fermat's quartic, Bring's curve, and more.</p></div>
+          <p class="who"><em>Rendiconti del Circolo Matematico di Palermo</em>, Series 2, vol. 71, pp. 483–494 · circulated in preprint as <em>Automorphisms of the Jacobian</em></p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1811.07007">arXiv</a> <a class="chip code" href="https://github.com/catherineray/aut-jac">code: aut-jac</a></p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="201800" data-st="preprint" style="--accent: var(--cyan);">
+          <summary>
+          <h4><a href="https://arxiv.org/abs/1911.08615">A Global Crystalline Period Map</a></h4>
+          <p class="pub-line"><span class="yr">2018</span><span class="status st-preprint">preprint</span></p>
+          <p class="ptags"><span class="ptag">crystalline period map</span><span class="ptag"><i>p</i>-divisible groups</span><span class="ptag">moduli stacks</span></p>
+          <p class="who">joint with M. Neaton and A. Pieper</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">The crystalline period map linearizes <i>p</i>-divisible groups, but its original construction is local. We build it on the whole moduli stack of <i>p</i>-divisible groups up to isogeny, so that it specializes to the local map.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>The crystalline period map is a tool for linearizing \(p\)-divisible groups. It has been applied to study the Langlands correspondences, and has possible applications to the homotopy groups of spheres. The original construction of the period map is inherently local. We present an alternative construction, giving a map on the entire moduli stack of \(p\)-divisbile groups, up to isogeny, which specializes to the original local construction.</p></div>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1911.08615">arXiv</a></p>
+          </div>
+        </details>
+
+      </div>
+      <div class="pubs">
+        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--cyan);">
+          <summary>
+          <h4>The Eigenvalues of Frobenius of Artin–Schreier–Witt Curves are Gauss Sums</h4>
+          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="ptags"><span class="ptag">Artin–Schreier–Witt curves</span><span class="ptag">Gauss sums</span><span class="ptag">Newton polygons</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">The Frobenius eigenvalues of Artin–Schreier–Witt curves are Gauss sums, and reading off their slopes gives new families of Newton strata in the Torelli locus.</p>
+          <p class="chips"><a class="chip" href="/pdfs/Gauss_sums.pdf">note toward this (PDF)</a> <a class="chip code" href="https://github.com/catherineray/newton">code: newton</a></p>
+          </div>
+        </details>
+
+      </div>
+      </div>
+
+      <div class="mgroup" id="m-early" style="--accent: var(--violet);">
+        <h3>Earlier</h3>
+        <p class="gloss">Before the three threads: the geometry of parallel processes.</p>
+      <div class="pubs">
+        <details class="pub" data-key="202000" data-st="published" style="--accent: var(--violet);">
+          <summary>
+          <h4><a href="https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17">Toward Directed Collapsibility</a></h4>
+          <p class="pub-line"><span class="yr">2020</span><span class="status st-published">published</span></p>
+          <p class="ptags"><span class="ptag">directed topology</span><span class="ptag">concurrency</span><span class="ptag">parallel processes</span></p>
+          <p class="who">joint with R. Belton, R. Brooks, S. Ebli, L. Fajstrup, B. T. Fasy, N. Sanderson, E. Vidaurre</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">When several processes run in parallel, every way they can interleave is a path through a space that only runs forward. We define when such a space can be collapsed without losing any of those executions.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>In the directed setting, the spaces of directed paths between fixed initial and terminal points are the defining feature for distinguishing different directed spaces. The simplest case is when the space of directed paths is homotopy equivalent to that of a single path; we call this the trivial space of directed paths. Directed spaces that are topologically trivial may have non-trivial spaces of directed paths, which means that information is lost when the direction of these topological spaces is ignored. We define a notion of directed collapsibility in the setting of a directed Euclidean cubical complex using the spaces of directed paths of the underlying directed topological space relative to an initial or a final vertex. In addition, we give sufficient conditions for a directed Euclidean cubical complex to have a contractible or a connected space of directed paths from a fixed initial vertex. We also give sufficient conditions for the path space between two vertices in a Euclidean cubical complex to be disconnected. Our results have applications to speeding up the verification process of concurrent programming and to understanding partial executions in concurrent programs.</p></div>
+          <p class="who"><em>Advances in Mathematical Sciences</em>, vol. 21, pp. 255–271</p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/1902.01039">arXiv</a></p>
+          </div>
+        </details>
+
+      </div>
+      </div>
+
+    <script>
+    (function () {
+      var sec = document.getElementById('research');
+      var flat = sec.querySelector('.mflat');
+      var cards = Array.prototype.slice.call(sec.querySelectorAll('details.pub'));
+      var homes = cards.map(function (c) { var m = document.createComment('pub'); c.parentNode.insertBefore(m, c); return m; });
+      var groups = sec.querySelectorAll('.mgroup');
+      var RANK = { 'published': 0, 'submitted': 0, 'preprint': 0, 'forthcoming': 1, 'in progress': 2 };
+      var NAME = ['PUBLICATIONS & PREPRINTS', 'FORTHCOMING', 'IN PROGRESS'];
+      var SHADOW = ['var(--violet)', 'var(--cyan)', 'var(--pink)'];
+      function label(t) { var p = document.createElement('p'); p.className = 'mlabel'; p.textContent = t; return p; }
+      function big(i) {
+        var h = document.createElement('h2'); h.className = 'sec-head sec-wrap mbig'; h.textContent = NAME[i];
+        h.setAttribute('data-text', NAME[i]); h.style.setProperty('--shadow', SHADOW[i]); h.style.setProperty('--tilt', i % 2 ? '2deg' : '-2deg');
+        return h;
+      }
+      function list() { var d = document.createElement('div'); d.className = 'pubs'; return d; }
+      function show(mode) {
+        sec.querySelectorAll('.msort button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.sort === mode ? 'true' : 'false'); });
+        if (mode === 'thread') {
+          cards.forEach(function (c, i) { homes[i].parentNode.insertBefore(c, homes[i].nextSibling); });
+          flat.innerHTML = ''; flat.hidden = true;
+          groups.forEach(function (g) { g.hidden = false; });
+          return;
+        }
+        var by = cards.slice().sort(function (a, b) {
+          if (mode === 'status') { var r = RANK[a.dataset.st] - RANK[b.dataset.st]; if (r) return r; }
+          return b.dataset.key - a.dataset.key;
+        });
+        flat.innerHTML = '';
+        var cur = null, box = null;
+        by.forEach(function (c) {
+          var k = mode === 'status' ? RANK[c.dataset.st] : (c.dataset.key == 999999 ? 'In progress' : c.dataset.key == 9999999 ? 'Forthcoming' : String(Math.floor(c.dataset.key / 100)));
+          if (k !== cur) { cur = k; flat.appendChild(mode === 'status' ? big(k) : label(k)); box = list(); flat.appendChild(box); }
+          box.appendChild(c);
+        });
+        groups.forEach(function (g) { g.hidden = true; });
+        flat.hidden = false;
+      }
+      sec.querySelectorAll('.msort button').forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.sort); }); });
+    })();
+    </script>
     </section>
 
     <!-- expository -->
