@@ -280,8 +280,6 @@ Two effect sizes come from an earlier meta-analysis and not from the papers them
 
 One oddity in the source data. The crossover paper prints every ± as a standard error. For its postherpetic arm that can't be right, because it would mean a standard deviation of 28 on a 20-point scale. I treated those values as standard deviations.
 
-*Code and data to be linked before publishing. The numbers were read from web copies of the papers and still need checking against the PDFs.*
-
 </div>
 
 So I tried to test it myself, as far as the published numbers allow. I pooled the trials that had usable numbers and split them by pain type. The split follows the 2025 Cochrane review of NMDA antagonists, which sorts these trials into peripheral neuropathic pain, CRPS and fibromyalgia;[^59] I put CRPS and fibromyalgia together as the central group.
