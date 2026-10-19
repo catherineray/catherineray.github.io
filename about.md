@@ -79,6 +79,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
     padding-block: 0;
   }
   .stage > * { position: absolute; }
+  /* the stage overhangs the "Here for…" row below it; let clicks through its empty corners */
+  .stage { pointer-events: none; }
+  .stage > * { pointer-events: auto; }
 
   .title {
     left: 7%;
@@ -2227,11 +2230,11 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <summary>
           <h4>Syntomic Cohomology of Ring Spectra and a \(T(h)\)-local Zeta Function</h4>
           <p class="pub-line"><span class="status st-forthcoming">forthcoming</span></p>
-          <p class="ptags"><span class="ptag">zeta functions</span><span class="ptag">syntomic cohomology</span><span class="ptag">functional equations</span></p>
+          <p class="ptags"><span class="ptag">zeta functions</span><span class="ptag">syntomic cohomology</span><span class="ptag">higher local fields</span></p>
           <p class="who">joint with Gabe Angelini-Knoll</p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">A zeta function for categories over the ring spectra \(BP\langle h\rangle\), built from \(T(h+1)\)-local syntomic cohomology. At the bottom it recovers the Euler factor of the Riemann zeta function at \(p\); a chromatic Tate twist lets it see the height, and its functional equation holds with no correction factor.</p>
+          <p class="pitch">The zeta function of number theory, generalized from local fields to higher local fields. The role of the ring of integers is played by the chromatic ring spectra \(BP\langle h\rangle\), and the zeta function is built from their \(T(h+1)\)-local syntomic cohomology. At the bottom it recovers the Euler factor of the Riemann zeta function at \(p\); a chromatic Tate twist lets it see the height, and its functional equation holds with no correction factor.</p>
           </div>
         </details>
 
