@@ -1212,7 +1212,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="gloss">Hidden states, read from the traces a system emits.</p>
           <details class="row" id="s-biome">
             <summary>
-              <h4>Sensory Sensitivity as a Unifying Mechanism<span class="yr">2024 – ongoing</span><span class="yr now">current</span></h4>
+              <h4>Biome of Overstimulation: Sensory Sensitivity as a Unifying Mechanism<span class="yr">2024 – ongoing</span><span class="yr now">current</span></h4>
               <p class="tech">Sensory processing as an organizing principle · gut microbiome · autoimmunity · chronic pain · glutamate excitability · joint with Luca Estinto</p>
               <p class="meta lvl lvl-plain">An essay arguing that a cluster of conditions usually treated separately come from one mechanism.</p>
               <p class="chips"><a class="chip" href="https://rin.io/biome/">read the post</a></p>
@@ -1978,7 +1978,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="gloss">Hidden states, read from the traces a system emits.</p>
           <details class="pro" id="p-biome">
             <summary>
-            <h4><a href="https://rin.io/biome/">Sensory Sensitivity as a Unifying Mechanism</a><span class="yr">2024–</span><span class="yr now">current</span></h4>
+            <h4><a href="https://rin.io/biome/">Biome of Overstimulation: Sensory Sensitivity as a Unifying Mechanism</a><span class="yr">2024–</span><span class="yr now">current</span></h4>
             <p class="ptags"><span class="ptag">systems biology</span><span class="ptag">neuroimmunology</span><span class="ptag">evidence synthesis</span></p>
             </summary>
             <div class="pro-body">
