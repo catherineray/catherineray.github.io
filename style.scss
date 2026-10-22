@@ -852,3 +852,6 @@ a.chip-genre, .chip-genre {
 
 // two footnote numbers in a row get a comma between them
 .post sup[id^="fnref"] + sup[id^="fnref"]::before { content: ","; margin-right: .15em; font: 700 1em 'Space Mono', monospace; }
+
+/* a post's header picture (`{: .post-hero}` on the first image): framed like the post cards */
+.post img.post-hero { display: block; width: 100%; height: auto; box-sizing: border-box; margin: .4rem 0 1.6rem; border: 3px solid #1b1b1b; border-radius: 12px; box-shadow: 6px 6px 0 var(--genre, #ec3f9e); }
