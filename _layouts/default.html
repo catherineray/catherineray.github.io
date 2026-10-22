@@ -53,19 +53,7 @@
         if (pinned) pinned.removeAttribute('open');
       }
     </script>
-    {% unless page.rail == "minimal" or page.rail == "filters" %}
-    <script src="{{ site.baseurl }}/js/search-script.js"></script>
-    <script>
-      SimpleJekyllSearch({
-        searchInput: document.getElementById('rail-search-input'),
-        resultsContainer: document.getElementById('rail-search-results'),
-        json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<li><a href="{url}">{title}</a><span>{genre} · {tags}</span></li>',
-        noResultsText: '<li class="rail-search-empty">No posts found</li>',
-        limit: 12
-      });
-    </script>
-    {% endunless %}
+    {% unless page.rail == "minimal" %}<script src="{{ site.baseurl }}/js/site-search.js"></script>{% endunless %}
 
     {% include analytics.html %}
   </body>

@@ -472,6 +472,8 @@ body { background: #cdc6f4; }
   li a { font-weight: 700; display: block; }
   li span { display: block; color: var(--rail-soft); font-size: 12px; }
   .rail-search-empty { color: var(--rail-soft); }
+  li span.rail-snip { margin-top: 2px; font-size: 12px; line-height: 1.45; overflow-wrap: anywhere; }
+  mark { background: #fbe919; color: $rail-ink; padding: 0 1px; border-radius: 2px; }
 }
 
 .rail-pinned {

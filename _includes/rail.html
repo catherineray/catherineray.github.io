@@ -29,7 +29,7 @@
   {% if page.rail == "filters" %}
   <div class="rail-filters" role="search" aria-label="Filter the posts">
     <label class="rail-flabel" for="rail-q">Search posts</label>
-    <input type="search" id="rail-q" data-f="q" placeholder="title, tag, topic…" autocomplete="off">
+    <input type="search" id="rail-q" data-f="q" placeholder="any word or phrase…" autocomplete="off">
     <p class="rail-flabel">Genre</p>
     <button type="button" class="rail-genre-head rail-fbtn" data-f="genre" data-v="all" aria-pressed="true" style="--genre: transparent;"><span class="rail-all-dot"></span><span>All</span><span class="rail-count">{{ site.posts | size }}</span></button>
     {% for g in site.data.genres %}{% assign n = site.posts | where: "genre", g.key | size %}
@@ -47,7 +47,7 @@
   {% elsif minimal == false %}
   <div class="rail-search" role="search">
     <label for="rail-search-input">Search posts</label>
-    <input type="search" id="rail-search-input" placeholder="title, tag, topic…" autocomplete="off">
+    <input type="search" id="rail-search-input" placeholder="any word or phrase…" autocomplete="off" data-json="{{ site.baseurl }}/search.json">
     <ul id="rail-search-results" class="rail-search-results" aria-live="polite"></ul>
   </div>
   {% endif %}

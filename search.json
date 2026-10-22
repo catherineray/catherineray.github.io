@@ -2,15 +2,30 @@
 layout: null
 sitemap: false
 ---
+{% comment %} Read by js/site-search.js (sidebar search and the All posts filter). "text" is the post or page with its HTML removed. {% endcomment %}
+{% assign search_pages = "/about/,/resources/" | split: "," %}
 [
   {% for post in site.posts %}
     {
       "title"  : {{ post.title | jsonify }},
       "url"    : {{ post.url | prepend: site.baseurl | jsonify }},
       "genre"  : {{ post.genre | default: "" | jsonify }},
-      "format" : {{ post.format | default: "" | jsonify }},
       "tags"   : {{ post.tags | join: ", " | jsonify }},
-      "date"   : {{ post.date | date: "%Y-%m-%d" | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
+      "topics" : {{ post.topics | join: ", " | jsonify }},
+      "date"   : {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "text"   : {{ post.content | strip_html | normalize_whitespace | jsonify }}
+    },
   {% endfor %}
+  {% for p in site.pages %}{% if search_pages contains p.url %}
+    {
+      "title"  : {{ p.title | default: p.url | jsonify }},
+      "url"    : {{ p.url | prepend: site.baseurl | jsonify }},
+      "genre"  : "page",
+      "tags"   : "",
+      "topics" : "",
+      "date"   : "",
+      "text"   : {{ p.content | strip_html | normalize_whitespace | jsonify }}
+    },
+  {% endif %}{% endfor %}
+  null
 ]

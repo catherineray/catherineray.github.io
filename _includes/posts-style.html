@@ -58,6 +58,11 @@
   @media (max-width: 700px) { .ap-item { grid-template-columns: 12px 1fr; } .ap-item time { grid-column: 2; order: -1; } .ap-dot { grid-row: 1 / 3; } .ap-meta { grid-column: 2; justify-content: flex-start; } }
   .ap .is-hidden { display: none; }
   .ap-empty { font: 16px 'Space Mono', monospace; padding: 24px 0; }
+  /* a piece of the post's text when a search matches it */
+  .ap-snip { grid-column: 3 / -1; font-size: 13px; line-height: 1.45; color: var(--soft); overflow-wrap: anywhere; }
+  .ap-snip mark { background: var(--yellow, #fbe919); color: var(--ink); padding: 0 1px; border-radius: 2px; }
+  @media (max-width: 700px) { .ap-snip { grid-column: 2; } }
+  .recents-tiles .ap-item .ap-snip { order: 2; padding: 0 11px 6px; font-size: 12px; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
   @media (prefers-reduced-motion: reduce) { .ap-card { transition: none; } }
 
 

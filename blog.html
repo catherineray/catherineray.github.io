@@ -57,14 +57,36 @@ rail: filters
       else if (c.value !== state[f]) c.value = state[f];
     });
   }
+  // full-text matches come from js/site-search.js, loaded the first time someone searches
+  var hits = null;
+  function textHits() {
+    hits = null;
+    if (!state.q || !window.SiteSearch) return;
+    hits = {};
+    SiteSearch.search(state.q).forEach(function (r) { hits[r.url] = r; });
+  }
+  function qOk(el, linkSel, withSnip) {
+    if (!state.q) return true;
+    var a = el.matches(linkSel) ? el : el.querySelector(linkSel), url = a && a.getAttribute('href');
+    var r = hits && hits[url];
+    var snip = el.querySelector('.ap-snip');
+    var html = r && withSnip ? SiteSearch.snippet(r, state.q, 40, 90) : '';
+    if (html) {
+      if (!snip) { snip = document.createElement('span'); snip.className = 'ap-snip'; el.appendChild(snip); }
+      snip.innerHTML = html;
+    } else if (snip) snip.remove();
+    return !!r || el.dataset.text.indexOf(state.q) !== -1;
+  }
   function apply() {
     var n = 0;
+    textHits();
+    if (!state.q) document.querySelectorAll('.ap-snip').forEach(function (x) { x.remove(); });
     box.querySelectorAll('.ap-yearblock').forEach(function (block) {
       var k = 0;
       block.querySelectorAll('.ap-item').forEach(function (el) {
         var ok = (state.genre === 'all' || el.dataset.genre === state.genre)
           && (state.topic === 'all' || el.dataset.topics.indexOf('|' + state.topic + '|') !== -1)
-          && (!state.q || el.dataset.text.indexOf(state.q) !== -1);
+          && qOk(el, 'a:not(.ap-tthumb)', true);
         el.classList.toggle('is-hidden', !ok); if (ok) k++;
       });
       block.classList.toggle('is-hidden', !k); n += k;
@@ -76,7 +98,7 @@ rail: filters
       col.querySelectorAll('.ap-card').forEach(function (c) {
         var ok = (state.genre === 'all' || c.dataset.genre === state.genre)
           && (state.topic === 'all' || c.dataset.topics.indexOf('|' + state.topic + '|') !== -1)
-          && (!state.q || c.dataset.text.indexOf(state.q) !== -1);
+          && qOk(c, 'a.ap-card, .ap-card-link', false);
         c.classList.toggle('is-hidden', !ok); if (ok) k++;
       });
       col.classList.toggle('is-empty', !k); any += k;
@@ -97,8 +119,12 @@ rail: filters
     });
     box.dataset.order = old ? 'old' : 'new';
   }
+  function loadText() {
+    if (window.SiteSearch) SiteSearch.load('{{ site.baseurl }}/search.json').then(apply);
+  }
   function set(f, v) {
     state[f] = v; sync(); if (f === 'sort') order(); apply();
+    if (f === 'q' && v) loadText();
     if (f !== 'q') document.querySelector('.ap-title').scrollIntoView({ block: 'start' });
   }
   controls.forEach(function (c) {
@@ -113,6 +139,7 @@ rail: filters
   if (qs.get('q')) { state.q = qs.get('q').toLowerCase(); var qi = document.getElementById('rail-q'); if (qi) qi.value = qs.get('q'); }
   sync(); if (state.sort === 'old') order();
   apply();
+  if (state.q) document.addEventListener('DOMContentLoaded', loadText);
 })();
 </script>
 
