@@ -2305,31 +2305,31 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <p class="chips"><a class="chip" href="/pdfs/application_general_audience.pdf">My thesis, explained for everyone (PDF)</a> <a class="chip code" href="https://github.com/catherineray/h-splitting">code: h-splitting</a></p>
       </div>
       <div class="pubs">
-        <details class="pub" id="pub-model" data-key="202507" data-st="preprint" style="--accent: var(--cyan);">
+        <details class="pub" id="pub-model" data-key="202507" data-st="submitted" style="--accent: var(--cyan);">
           <summary>
           <h4><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a></h4>
-          <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="status st-preprint">preprint</span></p>
+          <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="status st-submitted">submitted: <i>Expositiones Mathematicae</i></span></p>
           <p class="ptags"><span class="ptag">group actions on stacks</span><span class="ptag">two-tower method</span><span class="ptag">Lubin–Tate action</span></p>
           </summary>
           <div class="pub-body">
           <p class="pitch">The groundwork for the thesis: before you can compute with a symmetry you cannot see directly, you need a way to make it visible.</p>
-          <div class="abs-body"><p class="abs-label">Abstract</p><p>Suppose we are given a profinite group \(G\) acting on a formal moduli stack \(\mathcal{M}\), and we want to understand the group action, and compute cohomology related to this group action. How can we do it? This prolegomenon surveys two methods of pinning down such an action: geometric modeling and the two tower method. We highlight their use on a specific action - the automorphisms of a formal group acting on its deformation space, called the Lubin-Tate action.</p></div>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Suppose we are given a profinite group \(G\) acting on a formal moduli stack \(\mathcal{M}\), and we want to understand the group action, and compute cohomology related to this group action. How can we do it? This prolegomenon conveys two methods of pinning down such an action: geometric modeling and the two-tower method. We highlight their use on a specific action – the automorphisms of a formal group acting on its deformation space, called the Lubin–Tate action.</p><p>We provide the toolkit that these two methods run on. The pieces of the kit are standard in their own subjects, but the Lubin–Tate action requires us to sew them together and ask more of them than their usual statements give, and several are set down here in that stronger form: equivariantly, in families, and with the grading kept. The tools are put to work in the two sequels, which build geometric models at height \(p-1\) and at the heights \(p^{k-1}(p-1)\) above it; the two-tower material is a companion to the proof of the coheight one weak chromatic splitting conjecture.</p></div>
           <p class="seq">Background for two projects. It surveys two ways of pinning down the Lubin–Tate action: geometric modeling, which Parts II and III carry out, and the known two-tower method, which the <a href="#pub-chrom">chromatic splitting paper</a> uses.</p>
-          <p class="who">expository errors, under construction</p>
+          <p class="who">v2, Oct 2026: expanded into three parts, with the shared background from Part II moved here</p>
           <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.00309">arXiv</a></p>
           </div>
         </details>
 
         <details class="pub" data-key="202509" data-st="submitted" style="--accent: var(--cyan);">
           <summary>
-          <h4><a href="https://arxiv.org/abs/2509.23428">Moduli Stacks of <i>G</i>-Curves in Homotopy Theory at \(h = p-1\)</a></h4>
-          <p class="pub-line"><span class="part">Part II</span><span class="yr">Sept 2025</span><span class="status st-submitted">submitted</span></p>
+          <h4><a href="https://arxiv.org/abs/2509.23428">Tiny and Unique: The Lubin–Tate Action at Height \(p-1\) from the Minimal Curve with Its Symmetries</a></h4>
+          <p class="pub-line"><span class="part">Part II</span><span class="yr">Sept 2025</span><span class="status st-submitted">submitted: <i>AG&amp;T</i></span></p>
           <p class="ptags"><span class="ptag">moduli of curves</span><span class="ptag">inverse Galois theory</span><span class="ptag">Lubin–Tate action</span></p>
           </summary>
           <div class="pub-body">
           <p class="pitch">A symmetry hidden inside homotopy theory turns out to be the symmetry of an actual curve, one you can write down and draw.</p>
           <div class="abs-body"><p class="abs-label">Abstract</p><p>Let \(p\) be odd and \(G' = \mathbb{Z}/p \rtimes \mathbb{Z}/(p-1)^2\) the maximal finite subgroup of the Morava stabilizer group at height \(p-1\). Inverse Galois theory produces from \(G'\) alone a curve \(X\), the unique curve of minimal genus with \(\operatorname{Aut}(X) \simeq G'\); its ramification, its field of definition and its equation are consequences of the group, not choices. We prove a \(G'\)-equivariant equivalence between the deformations of \(X\) and Lubin–Tate space, so that the Lubin–Tate action of \(G'\) is the action of \(\operatorname{Aut}(X)\) on deformations of the curve. The proof is a coordinate-free Kodaira–Spencer argument reducing to a single character count. The action becomes explicit: \(G'\) acts through \(\mathbb{F}_p \rtimes \mathbb{F}_p^\times\) shifting and scaling \(p+1\) points on \(\mathbb{P}^1\). From this we compute \(H^*(G', π_* E_{p-1})\) and its Tate cohomology. One identity, \(π^{p-1} = -p\), runs through every section.</p></div>
-          <p class="who">significant update Sept 2026</p>
+          <p class="who">v3, Oct 2026: retitled and revised together with Part I</p>
           <p class="chips"><a class="chip" href="https://arxiv.org/abs/2509.23428">arXiv</a></p>
           </div>
         </details>
@@ -2366,7 +2366,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
         <details class="pub" data-key="202507" data-st="submitted" style="--accent: var(--cyan);">
           <summary>
-          <h4><a href="https://arxiv.org/abs/2507.10157">Toward the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem</a></h4>
+          <h4><a href="https://arxiv.org/abs/2507.10157">Towards the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem: The \(E_2\)-page for the Homotopy Fixed Points Spectral Sequence Computing \(\pi_*(E_6^{hC_9})\)</a></h4>
           <p class="pub-line"><span class="yr">July 2025</span><span class="status st-submitted">submitted</span></p>
           <p class="ptags"><span class="ptag">Kervaire invariant</span><span class="ptag">homotopy fixed points</span><span class="ptag">Morava <i>E</i>-theory</span></p>
           <p class="who">joint with Eva Belmont</p>
