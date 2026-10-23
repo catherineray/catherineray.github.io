@@ -1236,7 +1236,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <h3>Scattering <span class="yr now">current</span></h3>
         <p class="gloss">The spectral measure of Eisenstein series is an index on the other side of the Langlands mirror.</p>
         <p class="chips" style="margin:.2rem 0 .8rem;"><a class="chip" href="#m-echo" style="background:var(--orange);">needs ← an L-function at height h, from Echoes</a> <a class="chip" href="#m-sym" style="background:var(--cyan);">needs ← the height-h theories, from Symmetry</a> </p>
-        <p class="mlabel">One project, two papers</p>
+        <p class="mlabel">One project, three papers</p>
       <div class="pubs">
         <details class="pub" data-key="99999999" data-st="manuscript" style="--accent: var(--pink);">
           <summary>
@@ -1262,6 +1262,17 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
+        <details class="pub" data-key="999999" data-st="early stage" style="--accent: var(--pink);">
+          <summary>
+          <h4>Habiro Characteristic Classes of <i>L</i>-function Genera</h4>
+          <p class="pub-line"><span class="status st-early">early stage</span></p>
+          <p class="ptags"><span class="ptag">Habiro cohomology</span><span class="ptag">characteristic classes</span><span class="ptag"><i>L</i>-function genera</span></p>
+          <p class="who">joint with Ferdinand Wagner</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">In the Eisenstein formula \(q\) does two jobs: on one side it is the size of a finite field, on the other a formal variable. We let \(q\) vary and ask whether the formula’s two faces, function fields in <i>K</i>-theory and number fields in cohomology, are specializations of one Habiro characteristic class. The Habiro ring sees \(q=1\) directly; the function field value \(q=p^n\) is not a root of unity, and that is the whole difficulty.</p>
+          </div>
+        </details>
 
       </div>
       </div>
