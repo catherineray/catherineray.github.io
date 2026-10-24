@@ -1290,7 +1290,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="who">joint with Gabe Angelini-Knoll</p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">A zeta function for chromatic ring spectra, built from \(T(h+1)\)-local syntomic cohomology. A chromatic Tate twist lets it see the height: for \(BP\langle h\rangle\) it has \(2^{h+1}\) zeros and poles, one for each exterior class, and its pole at \(T=1\) is redshift. Its functional equation holds with no correction factor, and it <em>is</em> Rognes’s higher Hodge duality.</p>
+          <p class="pitch">A zeta function for chromatic ring spectra, built from \(T(h+1)\)-local syntomic cohomology. A chromatic Tate twist lets it see the height: for \(BP\langle h\rangle\) it has \(2^{h+1}\) zeros and poles, one for each exterior class, and its pole at \(T=1\) is redshift. Its functional equation holds with no correction factor, and it <em>is</em> the higher arithmetic duality of Devalapurkar, Hahn and Rognes.</p>
           </div>
         </details>
 
