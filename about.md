@@ -1355,7 +1355,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <li><strong>Part III</strong> (2026): at every height \(p^{k-1}(p-1)\), the moduli are <em>surgeries</em>. Take the curve’s quotient by the centre of \(G'\), cut out the formal disk around each of its \(p^k\) branch points, and glue each one back in along an automorphism of the punctured disk. I prove the stack of these surgeries has exactly the Lubin–Tate tangent.</li>
           <li><strong>Chromatic splitting</strong> (2026, joint): with the two-tower method of Part I we prove the coheight-one weak chromatic splitting conjecture <strong>at every height at once</strong>, for generic primes. Before, it was known only at heights 1 and 2.</li>
           <li><strong>Kervaire:</strong> at \(p=3\), height 6, this is the action behind the detection theorem in the last open odd-primary case, with Eva Belmont.</li>
-          <li><strong>Part I</strong> is the toolkit.</li>
+          <li><strong>Part I</strong> is the toolkit: two ways to pin down a group acting on a formal moduli stack. Geometric modeling is what Parts II and III carry out; the two-tower method is what the splitting paper runs on. The tools are standard, but here they are set down in the stronger form the Lubin–Tate action needs: equivariantly, in families, and with the grading kept.</li>
         </ul>
         <p class="chips"><a class="chip" href="/pdfs/application_general_audience.pdf">My thesis, explained for everyone (PDF)</a> <a class="chip code" href="https://github.com/catherineray/h-splitting">code: h-splitting</a></p>
       </div>
