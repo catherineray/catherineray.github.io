@@ -1246,7 +1246,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="who">solo</p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">On a curve over a finite field, the inner product of two Eisenstein series is an index on the Langlands dual side, by a theorem of Kazhdan and Okounkov. In that formula a whole moduli of bundles is replaced by \(2g\) numbers and a sign: the curve enters only through a square root of its zeta function, and the answer forgets which square root. I argue that the formula is one reading of a single object, a trace of Frobenius on a Morita context, and that the square root is the orientation the category leaves out.</p>
+          <p class="pitch">Kazhdan and Okounkov proved that the inner product of Eisenstein series on a curve over a finite field is an index on the Langlands dual side, where the curve enters only through a square root of its zeta function. I show this measure is the Euler characteristic of an explicit sheaf, a Koszul complex on the Steinberg stack twisted by the chosen square root: the measure is canonical, the sheaf is not. Categorically, I conjecture the formula is one reading of a trace of Frobenius on a Morita context, with the square root as the orientation the category leaves out.</p>
           </div>
         </details>
 
