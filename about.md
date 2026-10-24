@@ -1255,7 +1255,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <h4><i>L</i>-genera and Localizations in <i>K</i>-theory</h4>
           <p class="pub-line"><span class="status st-early">early stage</span></p>
           <p class="ptags"><span class="ptag">genera</span><span class="ptag">string structures</span><span class="ptag">anomalies</span></p>
-          <p class="who">joint with Daniel Berwick-Evans and Natalia Pacheco-Tallaj</p>
+          <p class="who">in conversation with Daniel Berwick-Evans and Natalia Pacheco-Tallaj</p>
           </summary>
           <div class="pub-body">
           <p class="pitch">The Eisenstein formula is canonical, but writing it down takes a choice of square root that the answer forgets. The Witten genus has the same problem one height up: its class is canonical, but a cocycle for it takes a choice of rational string structure. We ask whether these are one phenomenon, and whether the forgetting is an anomaly that cancels.</p>
@@ -1267,7 +1267,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <h4>Habiro Characteristic Classes of <i>L</i>-function Genera</h4>
           <p class="pub-line"><span class="status st-early">early stage</span></p>
           <p class="ptags"><span class="ptag">Habiro cohomology</span><span class="ptag">characteristic classes</span><span class="ptag"><i>L</i>-function genera</span></p>
-          <p class="who">joint with Ferdinand Wagner</p>
+          <p class="who">in conversation with Ferdinand Wagner</p>
           </summary>
           <div class="pub-body">
           <p class="pitch">In the Eisenstein formula \(q\) does two jobs: on one side it is the size of a finite field, on the other a formal variable. We let \(q\) vary and ask whether the formula’s two faces, function fields in <i>K</i>-theory and number fields in cohomology, are specializations of one Habiro characteristic class. The Habiro ring sees \(q=1\) directly; the function field value \(q=p^n\) is not a root of unity, and that is the whole difficulty.</p>
