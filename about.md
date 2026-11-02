@@ -1779,8 +1779,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
               clearer picture of what a compound does before it goes anywhere near a person.
             </p>
             <p class="meta">
-              Computational
-              bioacoustics at Vium — unsupervised classification of ultrasonic vocalizations
+              Bioacoustics Engineer at Vium — unsupervised classification of ultrasonic vocalizations
               in quasi-real time, which is also how I dipped my toes into audio processing. This was early: several years before MUPET and DeepSqueak made
               unsupervised clustering the standard way to do this, and as far as I know the first
               to run it in quasi-real time on cages being monitored continuously rather than on a
