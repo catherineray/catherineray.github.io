@@ -3,6 +3,7 @@
 # cover: a book cover (images/resources/books/, from Open Library or the publisher).
 # Optional `image:` on a topic = picture at the top of its card.
 # Optional `quote:` + `quote_by:` on a topic = a small quote under its name.
+# A topic with only `quote:` + `quote_by:` (no name) is a full-width quote between the cards.
 # Optional `why:` on a topic = one line on why Rin picked it (shown under the topic name).
 mental_health:
   - name: Learning the basics
@@ -37,13 +38,18 @@ math:
           - { title: "Mathematics as Problem Solving", cover: "/images/resources/books/soifer.jpg", by: "Alexander Soifer" }
           - { title: "Proofs from the Book", cover: "/images/resources/books/proofs-book.jpg", by: "Martin Aigner and Günter M. Ziegler" }
           - { title: "Induction and Analogy in Mathematics", cover: "/images/resources/books/polya-induction.jpg", by: "Pólya" }
-      - name: Other basics
+      - name: Delicious pictures
         items:
           - { title: "An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures", url: "https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/" }
           - { title: "When is one thing equal to some other thing?", by: "Barry Mazur", url: "https://web.archive.org/web/20210101004524/http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf" }
           - { title: "Kindergarten Quantum Mechanics", by: "Bob Coecke", url: "https://arxiv.org/pdf/quant-ph/0510032.pdf" }
           - { title: "A Topological Picturebook", cover: "/images/resources/books/topological-picturebook.jpg", by: "George Francis" }
+          - { title: "Homotopical Topology", cover: "/images/resources/fomenko-drawing.jpg", by: "Fuchs and Fomenko", note: "for Fomenko's own drawings, which are reason enough to open it (picture: one of them, from his gallery Mathematical Impressions)" }
   - level: Medium spice
+    quote: >-
+      …one surveys an entire system of discoveries that follow from a single central idea… like a painting
+      before the mind’s eye.
+    quote_by: Gotthold Eisenstein, Curriculum Vitae (translated from German)
     topics:
       - name: Analysis
         items:
@@ -53,6 +59,14 @@ math:
           - { title: "Visual Complex Analysis", cover: "/images/resources/books/needham.jpg", by: "Tristan Needham" }
           - { title: "Ordinary Differential Equations", cover: "/images/resources/books/arnold-ode.jpg", by: "V. Arnol'd" }
           - { title: "A Source Book in Classical Analysis", cover: "/images/resources/books/birkhoff.jpg", by: "Garrett Birkhoff" }
+      - name: Information theory
+        items:
+          - { title: "A Mathematical Theory of Communication", by: "Claude Shannon", url: "https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf", note: "the 1948 paper that invented information theory and entropy as a measure of surprise" }
+      - quote: >-
+          ‘Should you just be an algebraist or a geometer?’ is like saying ‘Would you rather be deaf or blind?’
+          If you are blind, you do not see space, if you are deaf, you do not hear, and hearing takes place in time.
+          On the whole, we prefer to have both faculties.
+        quote_by: Michael Atiyah, Mathematics in the 20th century
       - name: Representation theory & number theory
         posts: [faulhaber-shift, studying-symmetry]   # "from my blog"
         items:
@@ -66,7 +80,7 @@ math:
           - { title: "Gauge Fields, Knots and Gravity", cover: "/images/resources/books/baez.jpg", by: "John Baez" }
           - { title: "Elementary Applied Topology", cover: "/images/resources/books/ghrist.jpg", by: "Robert Ghrist", url: "https://www2.math.upenn.edu/~ghrist/notes.html", note: "pictorial basic topology via physics and engineering examples" }
           - { title: "Topology for Physicists", by: "Martin Zirnbauer", url: "http://www.thp.uni-koeln.de/zirn/011_Website_Martin_Zirnbauer/3_Teaching/LectureNotes/02ToPhys_SS11.pdf" }
-          - { title: "Homotopic Topology", cover: "/images/resources/books/fomenko.jpg", by: "Fuchs and Fomenko" }
+          - { title: "Homotopical Topology", cover: "/images/resources/books/fomenko.jpg", by: "Fuchs and Fomenko" }
 science:
   - name: Machine learning & neural networks
     items:

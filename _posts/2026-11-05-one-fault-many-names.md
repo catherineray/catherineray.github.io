@@ -13,6 +13,7 @@ tags:
   - ibs
   - autoimmune-diseases
   - latent-variable-models
+card_blurb: "What chronic pain, IBS, anxiety and sensory overload might share, and how we could measure it."   # short line under the title on post cards
 card_image: /images/one-fault-clusters.svg   # figure 3, drawn for the post cards
 format: explanation
 topics:

@@ -8,18 +8,18 @@
   {% capture hdata %} data-genre="{{ p.genre }}" data-topics="|{{ p.topics | join: '|' }}|" data-text="{{ p.title | downcase | escape }} {{ p.tags | join: ' ' }} {{ p.topics | join: ' ' | downcase }}"{% endcapture %}
   {% if p.card_links %}
   <div class="ap-card has-links"{{ hdata }}>
-    <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}">{{ pic }}<span class="ap-card-body"><b>{{ p.title }}</b><time>{{ p.date | date: "%b %Y" }}</time></span></a>
+    <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}">{{ pic }}<span class="ap-card-body"><b>{{ p.title }}</b>{% if p.card_blurb %}<span class="ap-card-blurb">{{ p.card_blurb }}</span>{% endif %}<time>{{ p.date | date: "%b %Y" }}</time></span></a>
     <span class="ap-card-actions">{% for l in p.card_links %}{% if l.url == "post" %}<a class="ap-btn" href="{{ site.baseurl }}{{ p.url }}">{{ l.label }}</a>{% else %}<a class="ap-btn alt" href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}</span>
   </div>
   {% elsif p.card_audio %}
   <div class="ap-card has-audio"{{ hdata }}>
     <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}">{{ pic }}</a>
     <div class="ap-card-player">{% include tracklist.html tracks=p.card_audio %}</div>
-    <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}"><span class="ap-card-body"><b>{{ p.title }}</b><time>{{ p.date | date: "%b %Y" }}</time></span></a>
+    <a class="ap-card-link" href="{{ site.baseurl }}{{ p.url }}"><span class="ap-card-body"><b>{{ p.title }}</b>{% if p.card_blurb %}<span class="ap-card-blurb">{{ p.card_blurb }}</span>{% endif %}<time>{{ p.date | date: "%b %Y" }}</time></span></a>
   </div>
   {% else %}
   <a class="ap-card" href="{{ site.baseurl }}{{ p.url }}"{{ hdata }}>
     {{ pic }}
-    <span class="ap-card-body"><b>{{ p.title }}</b><time>{{ p.date | date: "%b %Y" }}</time></span>
+    <span class="ap-card-body"><b>{{ p.title }}</b>{% if p.card_blurb %}<span class="ap-card-blurb">{{ p.card_blurb }}</span>{% endif %}<time>{{ p.date | date: "%b %Y" }}</time></span>
   </a>
   {% endif %}

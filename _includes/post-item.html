@@ -6,6 +6,6 @@
       <a class="ap-tthumb" href="{{ site.baseurl }}{{ post.url }}" tabindex="-1" aria-hidden="true">{% if post.card_image %}<img src="{{ site.baseurl }}{{ post.card_image }}" alt="" loading="lazy">{% elsif post.card_lines %}<span class="ap-lines">{% for l in post.card_lines %}{{ l }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span>{% elsif statics contains thumb %}<img src="{{ site.baseurl }}{{ thumb }}" alt="" loading="lazy">{% else %}<span class="none"><img src="{{ site.baseurl }}{{ g.icon }}" alt=""></span>{% endif %}</a>
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
       <span class="ap-dot" title="{{ g.name }}"></span>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>{% if post.card_blurb %}<span class="ap-blurb">{{ post.card_blurb }}</span>{% endif %}
       <span class="ap-meta"><span class="ap-gtag"><img src="{{ site.baseurl }}{{ g.icon }}" alt="">{{ g.name }}</span>{% for t in post.topics %}<span class="ap-tag">{{ t }}</span>{% endfor %}</span>
     </li>

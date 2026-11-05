@@ -75,7 +75,10 @@ rail_sections:   # listed in the sidebar under "Resources"
   .rs-quote cite { display: block; margin-top: 6px; font: 13px 'Space Mono', monospace; font-style: normal; color: var(--soft); }
 
   /* topic cards */
-  .rs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px; align-items: start; }
+  /* one full-width card per topic, its entries in columns inside it: no holes between cards of different heights */
+  .rs-grid { display: flex; flex-direction: column; gap: 18px; }
+  .rs-grid > .rs-quote-wide { margin: 8px 0; }
+  .rs-card ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 4px 28px; align-items: start; }
   .rs-card { background: var(--paper); border: 3px solid var(--ink); border-radius: 12px; box-shadow: 5px 5px 0 var(--g); padding: 14px 16px 12px; }
   .rs-card.has-pic { padding-top: 0; }
   .rs-pic { display: block; margin: 0 -16px 12px; border-bottom: 3px solid var(--ink); background: var(--g); border-radius: 9px 9px 0 0; overflow: hidden; }
@@ -140,7 +143,7 @@ rail_sections:   # listed in the sidebar under "Resources"
   {% if lv.quote %}<blockquote class="rs-quote">“{{ lv.quote }}”<cite>— {{ lv.quote_by }}</cite></blockquote>{% endif %}
   {% for f in lv.features %}{% include feature-card.html url=f.url img=f.img kicker=f.kicker title=f.title text=f.text bg=f.bg %}{% endfor %}
   <div class="rs-grid">
-    {% for t in lv.topics %}{% include resource-card.html t=t %}{% endfor %}
+    {% for t in lv.topics %}{% if t.name %}{% include resource-card.html t=t %}{% else %}<blockquote class="rs-quote rs-quote-wide">“{{ t.quote }}”<cite>— {{ t.quote_by }}</cite></blockquote>{% endif %}{% endfor %}
   </div>
   {% endfor %}
 </div>
@@ -148,12 +151,12 @@ rail_sections:   # listed in the sidebar under "Resources"
 <div style="--g: {{ sg.color }};">
   <div class="rs-head"><img src="{{ site.baseurl }}{{ sg.icon }}" alt=""><h2 id="science" data-text="SCIENCE">SCIENCE</h2></div>
   <div class="rs-features">
+    {% capture phack_more %}Then read: <a href="https://doi.org/10.1177/0956797611417632">False-Positive Psychology</a> <span class="rs-by">(Simmons, Nelson and Simonsohn, 2011)</span> and <a href="https://doi.org/10.1371/journal.pbio.1002106">The Extent and Consequences of P-Hacking in Science</a> <span class="rs-by">(Head et al., 2015)</span>.{% endcapture %}
+    {% include feature-card.html url="https://www.youtube.com/watch?v=tLM7xS6t4FE" img="/images/resources/p-hacking.jpg" kicker="p-hacking" title="Every scientist needs this. Psychologists most of all." text="How honest people find false results by trying analyses until one looks significant. A short SciShow video." more=phack_more %}
     {% include feature-card.html url="https://explorabl.es/" img="/images/resources/explorables.png" title="Explorable Explanations" text="A whole library of interactive explanations across the sciences, gathered by Nicky Case." %}
     {% include feature-card.html url="https://ncase.me/polygons/" img="/images/resources/parable-of-the-polygons.png" title="Parable of the Polygons" text="How small biases add up to a segregated society. By Vi Hart and Nicky Case." %}
     {% include feature-card.html url="https://ncase.me/crowds/" img="/images/resources/wisdom-of-crowds.png" bg="#fff" title="The Wisdom and/or Madness of Crowds" text="How ideas spread through networks of people. By Nicky Case." %}
     {% include feature-card.html url="https://ncase.me/trust/" img="/images/resources/evolution-of-trust.png" bg="#fff" kicker="Game theory" title="The Evolution of Trust" text="Why we trust, why we don't, and how that changes. A playable guide by Nicky Case." %}
-    {% capture phack_more %}Then read: <a href="https://doi.org/10.1177/0956797611417632">False-Positive Psychology</a> <span class="rs-by">(Simmons, Nelson and Simonsohn, 2011)</span> and <a href="https://doi.org/10.1371/journal.pbio.1002106">The Extent and Consequences of P-Hacking in Science</a> <span class="rs-by">(Head et al., 2015)</span>.{% endcapture %}
-    {% include feature-card.html url="https://www.youtube.com/watch?v=tLM7xS6t4FE" img="/images/resources/p-hacking.jpg" kicker="p-hacking" title="Every scientist needs this. Psychologists most of all." text="How honest people find false results by trying analyses until one looks significant. A short SciShow video." more=phack_more %}
   </div>
   <div class="rs-grid" style="margin-top: 18px;">
     {% for t in site.data.resources.science %}{% include resource-card.html t=t %}{% endfor %}
