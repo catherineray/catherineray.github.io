@@ -199,7 +199,13 @@ It is largest for sparsely covered channels, for directions the cluster centres 
 
 </details>
 
-Open questions: which features of (s, u) are identified from a given set of projections; how small the bridge can be; and inference that keeps the posterior correlations mean-field methods delete,<sup class="src"><a href="#src-12">12</a></sup> which are exactly the quantities the identifiability question asks about.
+What I don't know yet:
+
+- **Which parts of s and u can actually be recovered** from cohorts that each see only a few channels?
+- **How small can the bridge be** and still catch the model being wrong?
+- **How do you fit this without deleting the answer?** The fast standard method, mean-field inference, treats the hidden quantities as uncorrelated,<sup class="src"><a href="#src-12">12</a></sup> and those correlations are exactly what the question is about.
+
+And the biggest one needs data, not math: **what happens when you run several sensory tests, in repeated mode, on the same person?** Every cohort so far has one or two channels at most. The whole idea depends on measuring the same people across skin, gut and brain, and nobody has done that yet.
 
 <details class="math-box" markdown="1">
 <summary>The math: inference</summary>
@@ -256,7 +262,7 @@ a polynomial of degree $$n + 2$$ whose coefficients are polynomial in the parame
 
 </details>
 
-If you have a cohort where two or more of these instruments were run on the same people, or you work on identifiability for models like this, I would like to hear from you: comment below or email me. I'm also on the job market this year.
+If you run one of these tests and could add a second on the same people, or already have a cohort where two or more were run together, or you work on identifiability for models like this, I would like to hear from you: comment below or email me. I'm also on the job market this year.
 
 <aside class="sources">
 <p class="sources-h">Sources</p>
