@@ -19,7 +19,7 @@ topics:
   - "Biology & medicine"
 ---
 
-![A triangle with corners skin, gut and cortex. People fall into three tight clusters, read as chronic pain, IBS and anxiety](/images/one-fault-hero.svg?v=2){: .post-hero}
+![A triangle with corners skin, gut and cortex. People fall into three tight clusters, read as chronic pain, IBS and anxiety](/images/one-fault-hero.svg?v=3){: .post-hero}
 
 **Some conditions travel together far more often than chance allows:** chronic pain, IBS, autoimmune disease, anxiety and mood disorders, sensory over-responsivity. Each gets its own specialist and its own name, and the people who have several of them get treated one specialist at a time.
 

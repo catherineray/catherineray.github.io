@@ -112,7 +112,7 @@ button.chip:focus-visible,input:focus-visible{outline:2px solid var(--accent);ou
   <div class="scroll-x"><svg id="mat" viewBox="0 0 760 360" aria-label="Cohorts by channels observation grid with optional bridging sample"></svg></div>
   <p class="hint swipe">swipe sideways to see every channel →</p>
   <div class="chips" style="margin-top:12px">
-    <button class="chip" id="bridgeBtn" aria-pressed="false">add bridging sample · n ≈ 300–500, nested in SPARK</button>
+    <button class="chip" id="bridgeBtn" aria-pressed="false">add bridging sample · n ≈ 400–650, nested in SPARK</button>
   </div>
   <div class="legend">
     <span style="--sw:var(--good)">observed</span>
@@ -348,7 +348,7 @@ function drawMat(){
     g+='<text x="'+cx+'" y="'+(two?54:64)+'" text-anchor="middle" fill="'+C.ink+'" font-family="'+MONO+'" font-size="13">'+ln[0]+'</text>';
     if(two) g+='<text x="'+cx+'" y="72" text-anchor="middle" fill="'+C.ink+'" font-family="'+MONO+'" font-size="13">'+ln[1]+'</text>';
   }
-  var rows=cohorts.slice(); if(bridge) rows.push({name:'bridge ⊂ SPARK', sub:'n ≈ 300–500', obs:[1,1,1,1,1,1], br:true});
+  var rows=cohorts.slice(); if(bridge) rows.push({name:'bridge ⊂ SPARK', sub:'n ≈ 400–650', obs:[1,1,1,1,1,1], br:true});
   for(var i=0;i<rows.length;i++){
     var r=rows[i], y=top+rh*i;
     g+='<text x="'+(left-10)+'" y="'+(y+rh/2-2)+'" text-anchor="end" fill="'+(r.br?C.accent:C.ink)+'" font-family="'+MONO+'" font-size="13"'+(r.br?' font-weight="600"':'')+'>'+r.name+'</text>';
