@@ -1,11 +1,12 @@
 {% comment %} One topic card on /resources/. include.t = a topic from _data/resources.yml {% endcomment %}
 {% assign t = include.t %}
-<article class="rs-card{% if t.image %} has-pic{% endif %}">
+<article class="rs-card{% if t.image %} has-pic{% endif %}" id="{{ t.name | slugify }}">
   {% if t.image %}{% assign first = t.items | first %}<a class="rs-pic" href="{{ t.image_link | default: first.url }}" tabindex="-1" aria-hidden="true"><img src="{{ site.baseurl }}{{ t.image }}" alt="" loading="lazy"></a>{% endif %}
   <h3>{{ t.name }}</h3>
+  {% if t.quote %}<blockquote class="rs-cardquote">“{{ t.quote }}”<cite>— {{ t.quote_by }}</cite></blockquote>{% endif %}
   {% if t.why %}<p class="rs-why">{{ t.why }}</p>{% endif %}
   <ul>
-    {% for i in t.items %}<li{% if i.cover %} class="has-cover"{% endif %}>{% if i.cover %}<img class="rs-cover" src="{{ site.baseurl }}{{ i.cover }}" alt="" loading="lazy">{% endif %}<span class="rs-txt">{% if i.url %}<a href="{{ i.url }}">{{ i.title }}</a>{% else %}<i>{{ i.title }}</i>{% endif %}{% if i.by %} <span class="rs-by">by {{ i.by }}</span>{% endif %}{% if i.note %}<span class="rs-note">{{ i.note }}</span>{% endif %}{% if i.image %}<a href="{{ i.url }}"><img src="{{ site.baseurl }}{{ i.image }}" alt="Flowchart of basic machine learning algorithms" loading="lazy"></a>{% endif %}</span></li>
+    {% for i in t.items %}<li{% if i.cover %} class="has-cover"{% endif %}>{% if i.cover %}<img class="rs-cover" src="{{ site.baseurl }}{{ i.cover }}" alt="" loading="lazy">{% endif %}<span class="rs-txt">{% if i.url %}<a href="{{ i.url }}">{{ i.title }}</a>{% else %}<i>{{ i.title }}</i>{% endif %}{% if i.by %} <span class="rs-by">by {{ i.by }}</span>{% endif %}{% if i.note %}<span class="rs-note">{{ i.note }}</span>{% endif %}{% if i.image %}<a href="{{ i.url }}" tabindex="-1" aria-hidden="true"><img src="{{ site.baseurl }}{{ i.image }}" alt="" loading="lazy"></a>{% endif %}</span></li>
     {% endfor %}
   </ul>
   {% if t.posts %}<div class="rs-mine"><b>From my blog</b>{% for slug in t.posts %}{% assign p = site.posts | where: "slug", slug | first %}{% if p %}<a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>{% endif %}{% endfor %}</div>{% endif %}

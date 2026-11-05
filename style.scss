@@ -784,6 +784,8 @@ a.chip-genre, .chip-genre {
 .rail .rail-pages .rail-sections a::before { content: ''; position: static; width: 12px; height: 12px; margin: 0; border-radius: 50%; background: var(--sc); border: 2px solid #1b1b1b; opacity: 1; -webkit-mask: none; mask: none; animation: none; flex: none; }
 .rail .rail-pages .rail-sections a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .rail .rail-pages .rail-sections a.is-here { text-decoration: underline; text-decoration-color: var(--sc); text-decoration-thickness: 4px; text-underline-offset: 4px; }
+.rail .rail-pages .rail-sections a.rail-sub { min-height: 24px; margin-left: 20px; font-size: 13px; gap: 6px; }
+.rail .rail-pages .rail-sections a.rail-sub::before { width: 8px; height: 8px; border-width: 1.5px; }
 
 // footer: a text badge for MathOverflow (no icon in the sprite set)
 .svg-icon.mo-icon { display: inline-flex; align-items: center; justify-content: center; vertical-align: top; width: 40px; height: 40px; font-size: 14px !important; border-radius: 50%; background: #1b1b1b; color: #fbe919; font: 700 11px 'Space Mono', monospace; font-style: normal; letter-spacing: 0; background-image: none; }

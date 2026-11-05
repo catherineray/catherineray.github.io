@@ -1,0 +1,12 @@
+{% comment %} A wide title card on /resources/: picture left, title + one line right.
+  include.url, include.img, include.title, include.text, include.bg (picture background, default ink),
+  include.kicker (small label above the title), include.more (extra HTML under the text, e.g. reading links) {% endcomment %}
+<div class="rs-feature">
+  <a class="rs-feature-pic" href="{{ include.url }}" tabindex="-1" aria-hidden="true" style="background: {{ include.bg | default: '#1b1b1b' }};"><img src="{{ site.baseurl }}{{ include.img }}" alt="" loading="lazy"></a>
+  <span class="rs-feature-body">
+    {% if include.kicker %}<span class="rs-kicker">{{ include.kicker }}</span>{% endif %}
+    <a class="rs-feature-title" href="{{ include.url }}">{{ include.title }}</a>
+    <span>{{ include.text }}</span>
+    {% if include.more %}<span class="rs-more">{{ include.more }}</span>{% endif %}
+  </span>
+</div>
