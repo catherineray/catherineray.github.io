@@ -50,11 +50,13 @@ Nobody has looked at all of them in the same people. That's what the rest of thi
 
 ## 1 · What I propose: measure habituation as a slope
 
-This is a proposal; nobody has run it yet. Deliver the same stimulus ten times. A typical nervous system decrements: each response is smaller. The faulty one keeps reporting at full strength. The number I propose to read off is the **failure-to-decrement slope**, one per channel. A channel would be one instrument run this way; the battery I propose has about six (all listed in section 4).
+This is a proposal. Deliver the same stimulus ten times. A typical nervous system decrements: each response is smaller. The faulty one keeps reporting at full strength. The number I propose to read off is the **failure-to-decrement slope**, one per channel. A channel would be one instrument run this way; the battery I propose has about six (all listed in section 4).
 
 <iframe class="biome-embed" data-embed="one-fault-1" src="/embeds/one-fault.html?act=1" title="Response amplitude over ten identical stimuli, healthy versus non-habituating" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:360px;border:0;margin:1.5rem 0;"></iframe>
 
-It needs no new equipment: the instruments every clinic already owns (QST, barostat, evoked responses) would just be run in **repeated mode**, reading the same quantity off each. Some of these have been run this way on their own, in their own groups of people; what I propose is running all of them on the same people.
+It needs no new equipment: the instruments every clinic already owns (QST, barostat, evoked responses) would just be run in **repeated mode**, reading the same quantity off each.
+
+Part of this has been done. A group at Balgrist in Zurich gave repeated contact-heat stimuli while recording pain ratings, evoked potentials and skin responses in the same people, across low back pain, neuropathic pain and CRPS. They found habituation preserved, not reduced.<sup class="src"><a href="#src-7">7</a></sup> In healthy people, the subjective and objective readouts behaved differently, which they read as different aspects of pain modulation.<sup class="src"><a href="#src-8">8</a></sup> Both results cut against the simple version of this idea. What I propose differs in three ways: a slope fitted over many repetitions instead of a change between two blocks; channels from different body systems, including the gut, in people from different specialists' clinics; and a measurement model that treats each instrument as a noisy view of one shared quantity, which raw correlations can't settle either way.
 
 <details class="math-box" markdown="1">
 <summary>The math: the vector h</summary>
@@ -104,7 +106,7 @@ Model u across the population as a mixture of von Mises–Fisher components. The
 
 <iframe class="biome-embed" data-embed="one-fault-3" src="/embeds/one-fault.html?act=3" title="Population of direction points on the simplex under three hypotheses" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:520px;border:0;margin:1.5rem 0;"></iframe>
 
-Nobody has measured these slopes across channels in the same people, so the clustering idea has never really been tested. But a few nearby findings point the same way. When people with nerve pain go through a full panel of sensory tests, they fall into three groups rather than one smear.<sup class="src"><a href="#src-7">7</a></sup> Autistic kids' sensory quirks sort into a handful of types, and almost all of them are still the same type a year later.<sup class="src"><a href="#src-8">8</a></sup> And in migraine, the brain's response to a repeated stimulus fails to die down between attacks, which is the slope from the first figure, in one channel and one diagnosis.<sup class="src"><a href="#src-9">9</a></sup> Nobody has put the three together, because nobody has run the whole battery in repeated mode.
+Nobody has measured these slopes across body systems in the same people, so the clustering idea has never really been tested. But a few nearby findings point the same way. When people with nerve pain go through a full panel of sensory tests, they fall into three groups rather than one smear.<sup class="src"><a href="#src-9">9</a></sup> Autistic kids' sensory quirks sort into a handful of types, and almost all of them are still the same type a year later.<sup class="src"><a href="#src-10">10</a></sup> And in migraine, the brain's response to a repeated stimulus fails to die down between attacks, which is the slope from the first figure, in one channel and one diagnosis.<sup class="src"><a href="#src-11">11</a></sup> Nobody has put the three together, because nobody has run the whole battery, across body systems, in repeated mode.
 
 <details class="math-box" markdown="1">
 <summary>The numbers</summary>
@@ -163,7 +165,7 @@ Here are all six channels, grouped by body system. Every dataset observes a diff
 
 <iframe class="biome-embed" data-embed="one-fault-4" src="/embeds/one-fault.html?act=4" title="Cohorts by channels observation grid with optional bridging sample" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:400px;border:0;margin:1.5rem 0;"></iframe>
 
-The registries know who was diagnosed with what, and nothing about anyone's senses. The autism cohorts, SPARK<sup class="src"><a href="#src-10">10</a></sup> and the Simons Simplex Collection,<sup class="src"><a href="#src-11">11</a></sup> have parent questionnaires and genetics, and I still need to go through which sensory, gut and immune questions they actually asked. None of them ran a single sensory test like the one in the first figure. The last row isn't a real cohort, just the kind of study a pain clinic runs: the pain tests and nothing else.
+The registries know who was diagnosed with what, and nothing about anyone's senses. The autism cohorts, SPARK<sup class="src"><a href="#src-12">12</a></sup> and the Simons Simplex Collection,<sup class="src"><a href="#src-13">13</a></sup> have parent questionnaires and genetics, and I still need to go through which sensory, gut and immune questions they actually asked. None of them ran a single sensory test like the one in the first figure. The last row isn't a real cohort, just the kind of study a pain clinic runs: the pain tests and nothing else.
 
 So can the pieces be glued back together? Mostly, if three things hold: every channel gets measured by somebody, the clusters look different from at least one cohort's point of view, and the cohorts overlap enough that you can tell it's the same cluster as you go from one to the next. If the model is right, that's enough. If it's wrong about two channels nobody ever measured together, the data can't tell you. That's what the bridge is for: a few hundred people already in SPARK who do the whole battery. At the very least that means adding a gut test and a brain-response test for people who have already done the rest. (How many people, exactly, is in the box below.)
 
@@ -204,16 +206,16 @@ What I don't know yet:
 
 - **Which parts of s and u can actually be recovered** from cohorts that each see only a few channels?
 - **How small can the bridge be** and still catch the model being wrong?
-- **How do you fit this without deleting the answer?** The fast standard method, mean-field inference, treats the hidden quantities as uncorrelated,<sup class="src"><a href="#src-12">12</a></sup> and those correlations are exactly what the question is about.
+- **How do you fit this without deleting the answer?** The fast standard method, mean-field inference, treats the hidden quantities as uncorrelated,<sup class="src"><a href="#src-14">14</a></sup> and those correlations are exactly what the question is about.
 
 And the biggest one needs data, not math: **what happens when you run several sensory tests, in repeated mode, on the same person?** Every cohort so far has one or two channels at most. The whole idea depends on measuring the same people across skin, gut and brain, and nobody has done that yet.
 
 <details class="math-box" markdown="1">
 <summary>The math: inference</summary>
 
-A factorised approximation $$q(\theta) = \prod_\ell q_\ell(\theta_\ell)$$ sets every posterior correlation to zero, and for Gaussian targets it underestimates the marginal variances.<sup class="src"><a href="#src-12">12</a></sup> Here the posterior is correlated by construction: each person's $$(s_i, u_i)$$ through $$h_i = s_i u_i$$; cluster centres across blocks through the chain of overlapping cohorts; and $$(\pi, \mu_j, \kappa_j)$$ whenever two clusters are close.
+A factorised approximation $$q(\theta) = \prod_\ell q_\ell(\theta_\ell)$$ sets every posterior correlation to zero, and for Gaussian targets it underestimates the marginal variances.<sup class="src"><a href="#src-14">14</a></sup> Here the posterior is correlated by construction: each person's $$(s_i, u_i)$$ through $$h_i = s_i u_i$$; cluster centres across blocks through the chain of overlapping cohorts; and $$(\pi, \mu_j, \kappa_j)$$ whenever two clusters are close.
 
-Better families, in order of cost: low-rank plus diagonal Gaussians $$\mathcal{N}(m, D + LL^\top)$$; Gaussians with full covariance inside each natural block; mixtures of Gaussians for the label-switching modes. Batch and match, a score-based alternative to maximising the ELBO, fits these families directly.<sup class="src"><a href="#src-13">13</a></sup> Benchmark against long-run HMC on small simulated instances, scoring the coverage of intervals for cross-block correlations and concentrations.
+Better families, in order of cost: low-rank plus diagonal Gaussians $$\mathcal{N}(m, D + LL^\top)$$; Gaussians with full covariance inside each natural block; mixtures of Gaussians for the label-switching modes. Batch and match, a score-based alternative to maximising the ELBO, fits these families directly.<sup class="src"><a href="#src-15">15</a></sup> Benchmark against long-run HMC on small simulated instances, scoring the coverage of intervals for cross-block correlations and concentrations.
 
 </details>
 
@@ -221,6 +223,7 @@ Better families, in order of cost: low-rank plus diagonal Gaussians $$\mathcal{N
 
 I'd give up on this if:
 
+- habituation measured as a slope turns out preserved, as the Balgrist group found with a two-block measure;
 - the channels don't actually move together once you account for each test's own quirks;
 - knowing where someone's fault lands adds nothing beyond knowing how bad it is;
 - a person's direction wanders around from one visit to the next;
@@ -274,13 +277,15 @@ If you run one of these tests and could add a second on the same people, or alre
 <li id="src-4" value="4"><a href="https://doi.org/10.1080/20473869.2024.2318529">Cross-disorder comparison of sensory reactivity, pain, gastro-intestinal symptoms and obsessive-compulsive symptoms in adolescents and young adults with autism and other neurodevelopmental disorders</a> <span class="src-yr">2025</span></li>
 <li id="src-5" value="5"><a href="https://www.dissertations.se/dissertation/061cfdd988/">Sick of Smells: Empirical Findings and a Theoretical Framework for Chemical Intolerance (Linus Andersson, doctoral thesis, Umeå University)</a> <span class="src-yr">2012</span></li>
 <li id="src-6" value="6"><a href="https://journals.lww.com/joem/Fulltext/2018/02000/Multiple_Chemical_Sensitivity__Review_of_the_State.5.aspx">Multiple Chemical Sensitivity Review of the State of the Art in Epidemiology, Diagnosis, and Future Perspectives</a> <span class="src-yr">2018</span></li>
-<li id="src-7" value="7"><a href="https://pubmed.ncbi.nlm.nih.gov/27893485/">Peripheral neuropathic pain: a mechanism-related organizing principle based on sensory profiles</a> <span class="src-yr">2017</span></li>
-<li id="src-8" value="8"><a href="https://pubmed.ncbi.nlm.nih.gov/25039572/">Sensory subtypes in children with autism spectrum disorder: latent profile transition analysis using a national survey of sensory features</a> <span class="src-yr">2014</span></li>
-<li id="src-9" value="9"><a href="https://pubmed.ncbi.nlm.nih.gov/24535465/">Altered processing of sensory stimuli in patients with migraine</a> <span class="src-yr">2014</span></li>
-<li id="src-10" value="10"><a href="https://pubmed.ncbi.nlm.nih.gov/29420931/">SPARK: A US Cohort of 50,000 Families to Accelerate Autism Research</a> <span class="src-yr">2018</span></li>
-<li id="src-11" value="11"><a href="https://pubmed.ncbi.nlm.nih.gov/20955926/">The Simons Simplex Collection: a resource for identification of autism genetic risk factors</a> <span class="src-yr">2010</span></li>
-<li id="src-12" value="12"><a href="https://arxiv.org/abs/2302.09163">Margossian &amp; Saul, The Shrinkage-Delinkage Trade-off: An Analysis of Factorized Gaussian Approximations for Variational Inference</a> <span class="src-yr">2023</span></li>
-<li id="src-13" value="13"><a href="https://arxiv.org/abs/2402.14758">Cai et al., Batch and match: black-box variational inference with a score-based divergence</a> <span class="src-yr">2024</span></li>
+<li id="src-7" value="7"><a href="https://doi.org/10.1016/j.clinph.2024.07.007">Novel neurophysiological evidence for preserved pain habituation across chronic pain conditions</a> <span class="src-yr">2024</span></li>
+<li id="src-8" value="8"><a href="https://doi.org/10.1038/s41598-024-73158-5">Understanding inter-individual variability of experimental pain habituation and conditioned pain modulation in healthy individuals</a> <span class="src-yr">2024</span></li>
+<li id="src-9" value="9"><a href="https://pubmed.ncbi.nlm.nih.gov/27893485/">Peripheral neuropathic pain: a mechanism-related organizing principle based on sensory profiles</a> <span class="src-yr">2017</span></li>
+<li id="src-10" value="10"><a href="https://pubmed.ncbi.nlm.nih.gov/25039572/">Sensory subtypes in children with autism spectrum disorder: latent profile transition analysis using a national survey of sensory features</a> <span class="src-yr">2014</span></li>
+<li id="src-11" value="11"><a href="https://pubmed.ncbi.nlm.nih.gov/24535465/">Altered processing of sensory stimuli in patients with migraine</a> <span class="src-yr">2014</span></li>
+<li id="src-12" value="12"><a href="https://pubmed.ncbi.nlm.nih.gov/29420931/">SPARK: A US Cohort of 50,000 Families to Accelerate Autism Research</a> <span class="src-yr">2018</span></li>
+<li id="src-13" value="13"><a href="https://pubmed.ncbi.nlm.nih.gov/20955926/">The Simons Simplex Collection: a resource for identification of autism genetic risk factors</a> <span class="src-yr">2010</span></li>
+<li id="src-14" value="14"><a href="https://arxiv.org/abs/2302.09163">Margossian &amp; Saul, The Shrinkage-Delinkage Trade-off: An Analysis of Factorized Gaussian Approximations for Variational Inference</a> <span class="src-yr">2023</span></li>
+<li id="src-15" value="15"><a href="https://arxiv.org/abs/2402.14758">Cai et al., Batch and match: black-box variational inference with a score-based divergence</a> <span class="src-yr">2024</span></li>
 </ol>
 </aside>
 

@@ -118,6 +118,7 @@ programs:
     quote_by: "C.S. Lewis, on friendship"
     items:
       - { title: "Women in Topology", url: "https://awm-math.org/research-networks/wit/", note: "research workshops for women in algebraic topology and homotopy theory · international" }
+      - { title: "Women in Numbers", url: "https://awm-math.org/research-networks/win/", note: "research collaboration workshops for women in number theory, with a European series (WINE) · international" }
       - { title: "European Women in Mathematics", url: "https://www.europeanwomeninmaths.org", note: "network, summer schools and meetings · Europe" }
       - { title: "Spectra", url: "https://www.lgbtmath.org", note: "LGBTQ+ mathematicians: community, Outlist, events · US/international" }
       - { title: "National Association of Mathematicians", url: "https://www.nam-math.org", note: "Black mathematicians: conferences, lectures, opportunities · US" }
