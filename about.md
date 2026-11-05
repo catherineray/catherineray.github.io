@@ -923,6 +923,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
   /* jump row over THE PATH; its targets stop a little short of the top */
   .jump-top { margin: 0 0 2rem; }
+  .market { margin: 0 0 .8rem; font-family: var(--text); font-weight: 700; font-size: 1.15rem; color: var(--ink); }
+  .market::before { content: "★ "; color: var(--pink); }
   .jump-top { font-size: .95rem; align-items: center; }
   .jump-top .chip { font-size: .9rem; padding: .3em 1em; box-shadow: 4px 4px 0 var(--ink); }
   .pro-group, .pro, .paper, #about-published { scroll-margin-top: 1.5rem; }
@@ -1115,6 +1117,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
   <div class="scroll">
 
+    <p class="market">I’m on the job market this year.</p>
     <p class="jump jump-top">
       <span>Here for…</span>
       <a class="chip" href="#about-published">the math ↓</a>

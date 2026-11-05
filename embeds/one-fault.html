@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Fault, Many Names</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --panel:rgba(255,255,255,.38); --ink:#1b1b1b; --muted:#4a3a63; --line:rgba(74,58,99,.22);
+  --accent:#d12d88; --accent-soft:rgba(209,45,136,.12);
+  --good:#2a7fb8; --warn:#6a4cb0;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:transparent}
+html{overflow-x:clip}
+body{padding:2px;color:var(--ink);font-family:var(--mono)}
+.act{display:none;color-scheme:light;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
+.act.on{display:block}
+.row{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start}
+.row>*{min-width:0}
+.fig{flex:1 1 520px}
+.side{flex:1 1 220px;display:flex;flex-direction:column;gap:12px}
+svg,canvas{display:block;width:100%;height:auto;touch-action:none}
+#tri,#pop,#pairs{max-width:440px;margin:0 auto}
+.fig,#mat{user-select:none;-webkit-user-select:none}
+label{display:block;font-size:.74rem;color:var(--muted);margin-bottom:4px}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.readout{font-size:.82rem;line-height:1.5;background:var(--accent-soft);border-radius:6px;padding:10px 12px}
+.readout em{color:var(--accent);font-style:normal;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+button.chip{font-family:var(--mono);font-size:.76rem;border:1px solid var(--line);background:transparent;color:var(--ink);
+  border-radius:999px;padding:6px 12px;cursor:pointer}
+button.chip:hover{border-color:var(--muted)}
+button.chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+button.chip:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.bars{display:grid;grid-template-columns:auto 1fr auto;gap:6px 10px;align-items:center;font-size:.76rem}
+.bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.72rem;color:var(--muted);margin-top:10px}
+.legend span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--sw)}
+.legend span.dash::before{border:var(--sb)}
+.scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.scroll-x svg{min-width:620px}
+.swipe{display:none;text-align:left}
+@media (max-width:660px){.swipe{display:block}}
+.hint{font-size:.72rem;color:var(--muted);margin:6px 0 0;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="act" id="act0">
+  <div class="row">
+    <div class="fig"><svg id="pairs" viewBox="0 0 520 440" aria-label="Six conditions, with each known link coloured by the group of people it was found in"></svg></div>
+    <div class="side">
+      <div class="chips" id="studies"></div>
+      <div class="readout" id="pairOut"></div>
+      <div class="chips"><button class="chip" id="needBtn" aria-pressed="false">what we'd need</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="act" id="act1">
+  <div class="row">
+    <div class="fig"><canvas id="habCv" width="760" height="300" role="img" aria-label="Response amplitude over ten identical stimuli, healthy versus non-habituating"></canvas></div>
+    <div class="side">
+      <div><label for="lam">habituation rate λ of patient trace</label>
+        <input id="lam" type="range" min="0" max="0.5" step="0.01" value="0.04"></div>
+      <div class="readout" id="habOut"></div>
+    </div>
+  </div>
+</div>
+
+<div class="act" id="act2">
+  <div class="row">
+    <div class="fig">
+      <svg id="tri" viewBox="0 0 520 440" aria-label="Direction simplex with draggable patient point"></svg>
+      <p class="hint">drag the point</p>
+    </div>
+    <div class="side">
+      <div><label for="sev">severity s = ‖h‖</label>
+        <input id="sev" type="range" min="0.1" max="2" step="0.01" value="1.2"></div>
+      <div class="bars" id="hbars"></div>
+      <div class="readout" id="dxOut"></div>
+      <div class="chips" id="presets">
+        <button class="chip" data-u="0.15,0.95,0.27">gut-dominant</button>
+        <button class="chip" data-u="0.95,0.2,0.24">skin-dominant</button>
+        <button class="chip" data-u="0.25,0.25,0.93">cortex-dominant</button>
+        <button class="chip" data-u="0.58,0.58,0.58">mixed</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="act" id="act3">
+  <div class="row">
+    <div class="fig"><svg id="pop" viewBox="0 0 520 440" aria-label="Population of direction points on the simplex under three hypotheses"></svg></div>
+    <div class="side">
+      <div class="chips" id="popMode">
+        <button class="chip" data-m="unif">uniform (null)</button>
+        <button class="chip" data-m="one">m = 1, small κ (null)</button>
+        <button class="chip" data-m="mix" aria-pressed="true">m = 3, large κ (claim)</button>
+      </div>
+      <div class="readout" id="popOut"></div>
+    </div>
+  </div>
+</div>
+
+<div class="act" id="act4">
+  <div class="scroll-x"><svg id="mat" viewBox="0 0 760 360" aria-label="Cohorts by channels observation grid with optional bridging sample"></svg></div>
+  <p class="hint swipe">swipe sideways to see every channel →</p>
+  <div class="chips" style="margin-top:12px">
+    <button class="chip" id="bridgeBtn" aria-pressed="false">add bridging sample · n ≈ 300–500, nested in SPARK</button>
+  </div>
+  <div class="legend">
+    <span style="--sw:var(--good)">observed</span>
+    <span style="--sw:transparent;--sb:1.6px dashed var(--good)" class="dash">parent report, items to check</span>
+    <span style="--sw:var(--line)">never measured</span>
+    <span style="--sw:var(--accent)">bridge: all channels, same people</span>
+  </div>
+</div>
+
+<div class="act" id="act5">
+  <div class="row">
+    <div class="fig"><svg id="tl" viewBox="0 0 760 330" aria-label="One person over twelve months: severity rises and falls while direction stays put, or drifts"></svg></div>
+  </div>
+  <div class="chips" id="tlMode" style="margin-top:12px">
+    <button class="chip" data-m="stable" aria-pressed="true">u stable, s tracks flares (claim)</button>
+    <button class="chip" data-m="drift">u drifts (hypothesis wrong)</button>
+    <button class="chip" id="tlPlay">pause</button>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+var act = (new URLSearchParams(location.search).get('act')) || '1';
+document.getElementById('act'+act).classList.add('on');
+var MONO = 'IBM Plex Mono,monospace';
+function narrow(){ return document.body.clientWidth < 560; }
+var C = {};
+function refresh(){
+  var css=getComputedStyle(document.documentElement);
+  ['ink','muted','line','accent','good','warn','panel'].forEach(function(k){ C[k]=css.getPropertyValue('--'+k).trim(); });
+}
+refresh();
+
+/* 0: the evidence comes in pairs */
+var nodes=[
+ {id:'sor',  name:['sensory','over-responsivity']},
+ {id:'gut',  name:['gut problems']},
+ {id:'mood', name:['anxiety','& mood']},
+ {id:'auto', name:['autoimmune','disease']},
+ {id:'pain', name:['chronic pain']},
+ {id:'smell',name:['chemical','intolerance']}
+];
+var studies=[
+ {key:'dk', label:'Danish registry', col:'accent', links:[['auto','mood']],
+  who:'3.56 million Danish adults, from hospital records',
+  what:'autoimmune disease came before mood disorders',
+  num:'45% higher risk of a later mood disorder (IRR 1.45, 95% CI 1.39–1.52)'},
+ {key:'se', label:'Swedish registry', col:'warn', links:[['mood','auto']],
+  who:'106,464 Swedish adults with a stress-related disorder',
+  what:'stress disorders came before autoimmune disease',
+  num:'36% higher risk of a later autoimmune disease (HR 1.36, 95% CI 1.33–1.40)'},
+ {key:'atn', label:'autistic children', col:'good', links:[['gut','sor'],['gut','mood']],
+  who:'2,973 autistic children, reported by their parents',
+  what:'chronic gut problems came with more sensory over-responsivity and more anxiety',
+  num:'every type of chronic GI problem; sensitivity and anxiety each predicted GI problems on their own'},
+ {key:'adhd', label:'ADHD study', col:'good2', links:[['gut','sor']],
+  who:'young people with autism, ADHD and other conditions',
+  what:'the same sensory and gut profile showed up in ADHD too',
+  num:'a smaller cross-disorder comparison'},
+ {key:'smell', label:'smell & pain studies', col:'ink2', links:[['smell','pain']],
+  who:'people who react strongly to smells, and people with chronic pain',
+  what:'both keep responding to a repeated stimulus instead of getting used to it',
+  num:'the same pattern of brain blood flow (EEG and fMRI)'}
+];
+var pickStudy=null, need=false;
+function nodeXY(i){ var a=-Math.PI/2+i*Math.PI/3; return [260+165*Math.cos(a), 220+165*Math.sin(a)]; }
+function colOf(c){ return c==='good2'?C.good:(c==='ink2'?C.muted:C[c]); }
+function drawPairs(){
+  var g='', idx={}; nodes.forEach(function(n,i){ idx[n.id]=i; });
+  if(need){
+    for(var i=0;i<6;i++) for(var j=i+1;j<6;j++){ var p=nodeXY(i), q=nodeXY(j);
+      g+='<line x1="'+p[0]+'" y1="'+p[1]+'" x2="'+q[0]+'" y2="'+q[1]+'" stroke="'+C.accent+'" stroke-width="1.6" stroke-dasharray="5 5" opacity="0.55"/>'; }
+  }
+  studies.forEach(function(st,k){
+    var on=!pickStudy||pickStudy===st.key, off={dk:-6,se:6,atn:-5,adhd:5}[st.key]||0;
+    st.links.forEach(function(l){
+      var a0=Math.min(idx[l[0]],idx[l[1]]), b0=Math.max(idx[l[0]],idx[l[1]]), p=nodeXY(a0), q=nodeXY(b0), dx=q[1]-p[1], dy=p[0]-q[0], n=Math.hypot(dx,dy);
+      var ox=dx/n*off, oy=dy/n*off;
+      g+='<line x1="'+(p[0]+ox)+'" y1="'+(p[1]+oy)+'" x2="'+(q[0]+ox)+'" y2="'+(q[1]+oy)+'" stroke="'+colOf(st.col)+'" stroke-width="'+(on?5:3)+'" stroke-linecap="round" opacity="'+(on?(need?0.5:0.9):0.12)+'"'+(st.key==='adhd'?' stroke-dasharray="2 8"':'')+'/>';
+    });
+  });
+  nodes.forEach(function(n,i){
+    var p=nodeXY(i), used=!pickStudy||studies.some(function(st){ return st.key===pickStudy && st.links.some(function(l){ return l[0]===n.id||l[1]===n.id; }); });
+    g+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="11" fill="'+(used?C.ink:C.line)+'"/>';
+    var below=p[1]>220, fs=narrow()?18:14, ty=below?p[1]+30:p[1]-16-(n.name.length-1)*(fs+2)-8, lx=p[0]+(Math.abs(p[0]-260)>50?(p[0]>260?34:-34):0);
+    n.name.forEach(function(t,r){ g+='<text x="'+lx+'" y="'+(ty+r*(fs+2))+'" text-anchor="middle" fill="'+(used?C.ink:C.muted)+'" font-family="'+MONO+'" font-size="'+fs+'">'+t+'</text>'; });
+  });
+  document.getElementById('pairs').innerHTML=g;
+  var out=document.getElementById('pairOut');
+  if(need) out.innerHTML='what we\'d need: <em>every pair</em>, measured in the <em>same people</em>. No study has done that yet.';
+  else if(!pickStudy) out.innerHTML='Each line was found in a <em>different group of people</em>. Click a study to see who.';
+  else { var st=studies.filter(function(x){return x.key===pickStudy;})[0];
+    out.innerHTML='<em>'+st.label+'</em><br>who: '+st.who+'<br>found: '+st.what+'<details style="margin-top:6px"><summary style="cursor:pointer;color:var(--muted)">the numbers</summary>'+st.num+'</details>'; }
+  tellHeight();
+}
+
+/* 1: habituation traces */
+function resp(l,t){ var fl=0.18; return fl + (1-fl)*Math.exp(-l*t*2.2); }
+function drawHab(){
+  var cv=document.getElementById('habCv'), c=cv.getContext('2d'), lam=document.getElementById('lam');
+  var want=narrow()?440:760; if(cv.width!==want) cv.width=want;
+  var w=cv.width,h=cv.height; c.clearRect(0,0,w,h);
+  var L=54,R=16,T=34,B=44, iw=w-L-R, ih=h-T-B, N=10;
+  c.strokeStyle=C.line; c.lineWidth=1;
+  c.beginPath(); c.moveTo(L,T); c.lineTo(L,T+ih); c.lineTo(L+iw,T+ih); c.stroke();
+  c.fillStyle=C.muted; c.font='13px '+MONO;
+  c.fillText('response',L-10,20);
+  c.fillText('stimulus #',L+iw/2-36,h-6);
+  for(var t=0;t<N;t++){
+    var x=L+iw*(t+0.5)/N;
+    c.fillRect(x-1,T+ih+4,2,8);
+    c.fillText(String(t+1), x-4, T+ih+26);
+  }
+  function trace(l,col,label,dy){
+    c.strokeStyle=col; c.lineWidth=2.5; c.beginPath();
+    for(var t=0;t<N;t++){
+      var x=L+iw*(t+0.5)/N, y=T+ih*(1-resp(l,t));
+      if(t===0) c.moveTo(x,y); else c.lineTo(x,y);
+    }
+    c.stroke();
+    for(t=0;t<N;t++){
+      var x2=L+iw*(t+0.5)/N, y2=T+ih*(1-resp(l,t));
+      c.fillStyle=col; c.beginPath(); c.arc(x2,y2,4,0,6.3); c.fill();
+    }
+    var xe=L+iw*(N-0.5)/N, ye=T+ih*(1-resp(l,N-1));
+    c.fillStyle=col; c.font='600 13px '+MONO; c.textAlign='right'; c.fillText(label, xe, ye+dy); c.textAlign='left';
+  }
+  var l=parseFloat(lam.value);
+  trace(0.42, C.good, 'typical: decrements', 24);
+  trace(l, C.accent, 'patient trace', -14);
+  // 0 = drops as much as the typical trace, 1 = does not drop at all
+  var hv=Math.min(1,Math.max(0,1-(resp(l,0)-resp(l,N-1))/(resp(0.42,0)-resp(0.42,N-1))));
+  document.getElementById('habOut').innerHTML='failure-to-decrement slope<br>h = <em>'+hv.toFixed(2)+'</em> &nbsp;(0 = typical, 1 = no habituation)';
+}
+
+/* simplex geometry */
+var A=[260,42], Bv=[46,398], Cv=[474,398]; // cortex top, skin left, gut right
+function baryToXY(w){ return [w[2]*A[0]+w[0]*Bv[0]+w[1]*Cv[0], w[2]*A[1]+w[0]*Bv[1]+w[1]*Cv[1]]; } // w=[skin,gut,cortex]
+function xyToBary(x,y){
+  var x1=Bv[0],y1=Bv[1],x2=Cv[0],y2=Cv[1],x3=A[0],y3=A[1];
+  var d=(y2-y3)*(x1-x3)+(x3-x2)*(y1-y3);
+  var l1=((y2-y3)*(x-x3)+(x3-x2)*(y-y3))/d;
+  var l2=((y3-y1)*(x-x3)+(x1-x3)*(y-y3))/d;
+  var w=[Math.max(l1,1e-4),Math.max(l2,1e-4),Math.max(1-l1-l2,1e-4)];
+  var s=w[0]+w[1]+w[2]; return [w[0]/s,w[1]/s,w[2]/s];
+}
+function triFrame(){
+  var t='fill="'+C.muted+'" font-family="'+MONO+'" font-size="'+(narrow()?20:13)+'"';
+  return '<polygon points="'+A+' '+Bv+' '+Cv+'" fill="none" stroke="'+C.line+'" stroke-width="1.5"/>'
+   +'<text x="'+A[0]+'" y="'+(A[1]-14)+'" text-anchor="middle" '+t+'>cortex · evoked</text>'
+   +'<text x="'+(Bv[0]-4)+'" y="'+(Bv[1]+24)+'" text-anchor="start" '+t+'>skin · QST</text>'
+   +'<text x="'+(Cv[0]+4)+'" y="'+(Cv[1]+24)+'" text-anchor="end" '+t+'>gut · barostat</text>';
+}
+
+/* 2: draggable decomposition */
+var u=[0.15,0.95,0.27]; (function(){var n=Math.hypot(u[0],u[1],u[2]);u=u.map(function(v){return v/n;});})();
+function drawTri(){
+  var tri=document.getElementById('tri'), sev=document.getElementById('sev');
+  var w=[u[0]*u[0],u[1]*u[1],u[2]*u[2]], p=baryToXY(w), s=parseFloat(sev.value);
+  var g=triFrame();
+  g+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+(8+s*16)+'" fill="'+C.accent+'" opacity="0.18"/>';
+  g+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="9" fill="'+C.accent+'" stroke="'+C.panel+'" stroke-width="2" style="cursor:grab"/>';
+  g+='<text x="'+(p[0]+14)+'" y="'+(p[1]-12)+'" fill="'+C.accent+'" font-family="'+MONO+'" font-size="12" font-weight="600">u</text>';
+  tri.innerHTML=g;
+  var names=['skin','gut','cortex'], bb='';
+  for(var i=0;i<3;i++){
+    var v=s*u[i];
+    bb+='<span>'+names[i]+'</span><div class="bar"><i style="width:'+Math.min(100,v*48)+'%"></i></div><span>'+v.toFixed(2)+'</span>';
+  }
+  document.getElementById('hbars').innerHTML='<span style="grid-column:1/-1;color:var(--muted)">h = s·u, per channel</span>'+bb;
+  var mx=Math.max(w[0],w[1],w[2]), dom=w.indexOf(mx);
+  var label = mx<0.5 ? 'mixed, multi-clinic presentation'
+    : ['reads as “chronic pain”','reads as “IBS”','reads as “anxiety / sensory over-responsivity”'][dom];
+  document.getElementById('dxOut').innerHTML='s = <em>'+s.toFixed(2)+'</em> · direction '+(mx<0.5?'':names[dom]+'-dominant')+'<br><em>'+label+'</em>';
+}
+function setFromPointer(ev){
+  var tri=document.getElementById('tri'), r=tri.getBoundingClientRect();
+  var w=xyToBary((ev.clientX-r.left)*520/r.width, (ev.clientY-r.top)*440/r.height);
+  u=[Math.sqrt(w[0]),Math.sqrt(w[1]),Math.sqrt(w[2])];
+  drawTri();
+}
+
+/* 3: population */
+var mode='mix', popPts=null;
+function gauss(){var a=Math.random(),b=Math.random();return Math.sqrt(-2*Math.log(a+1e-9))*Math.cos(6.2831853*b);}
+function samplePop(m){
+  var pts=[], n=260, means=[[0.92,0.3,0.25],[0.2,0.93,0.3],[0.3,0.35,0.89]];
+  for(var i=0;i<n;i++){
+    var v;
+    if(m==='unif') v=[Math.abs(gauss()),Math.abs(gauss()),Math.abs(gauss())];
+    else if(m==='one') v=[0.58+gauss()*0.5,0.58+gauss()*0.5,0.58+gauss()*0.5].map(Math.abs);
+    else { var mu=means[i%3]; v=[mu[0]+gauss()*0.09,mu[1]+gauss()*0.09,mu[2]+gauss()*0.09].map(Math.abs); }
+    var nn=Math.hypot(v[0],v[1],v[2]); pts.push([v[0]/nn,v[1]/nn,v[2]/nn, m==='mix'? i%3 : -1]);
+  }
+  return pts;
+}
+function drawPop(resample){
+  if(resample||!popPts) popPts=samplePop(mode);
+  var g=triFrame(), cols=[C.accent,C.good,C.warn];
+  for(var i=0;i<popPts.length;i++){
+    var q=popPts[i], p=baryToXY([q[0]*q[0],q[1]*q[1],q[2]*q[2]]);
+    g+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="3.4" fill="'+(q[3]>=0?cols[q[3]]:C.muted)+'" opacity="0.75"/>';
+  }
+  document.getElementById('pop').innerHTML=g;
+  document.getElementById('popOut').innerHTML = mode==='mix'
+    ? 'the claim: m = <em>3–6</em> tight vMF components (large κ).<br>cluster ↔ diagnosis family'
+    : (mode==='unif' ? 'uniform on the sphere: <em>hypothesis dead</em>' : 'one diffuse component: <em>hypothesis dead</em>');
+}
+
+/* 4: cohort x channel matrix */
+var bridge=false;
+var channels=[['QST','skin'],['temporal','summation'],['CPM',''],['barostat',''],['evoked','responses'],['sensory','profile']];
+var groups=[{name:'pain system',from:0,to:2},{name:'gut',from:3,to:3},{name:'cortex',from:4,to:4},{name:'report',from:5,to:5}];
+// 1 = measured, 2 = parent-reported items not yet checked
+var cohorts=[
+ {name:'Danish registry', sub:'3.56M adults', obs:[0,0,0,0,0,0], dx:true},
+ {name:'Swedish registry', sub:'106,464 adults', obs:[0,0,0,0,0,0], dx:true},
+ {name:'Autism Treatment Network', sub:'2,973 children', obs:[0,0,0,0,0,1]},
+ {name:'SPARK', sub:'50,000 families (target)', obs:[0,0,0,0,0,2]},
+ {name:'Simons Simplex', sub:'~2,600 families', obs:[0,0,0,0,0,2]},
+ {name:'a typical QST study', sub:'chronic pain clinic', obs:[1,1,1,0,0,0]}
+];
+function drawMat(){
+  var mat=document.getElementById('mat'), left=214, top=96, cw=(760-left-8)/6, rh=50, g='';
+  for(var k=0;k<groups.length;k++){
+    var gr=groups[k], x0=left+cw*gr.from+4, x1=left+cw*(gr.to+1)-4;
+    g+='<text x="'+((x0+x1)/2)+'" y="18" text-anchor="middle" fill="'+C.ink+'" font-family="'+MONO+'" font-size="13" font-weight="600">'+gr.name+'</text>';
+    g+='<path d="M'+x0+' 32 V26 H'+x1+' V32" fill="none" stroke="'+C.muted+'" stroke-width="1.2"/>';
+  }
+  for(var j=0;j<6;j++){
+    var cx=left+cw*j+cw/2, ln=channels[j], two=ln[1]!=='';
+    g+='<text x="'+cx+'" y="'+(two?54:64)+'" text-anchor="middle" fill="'+C.ink+'" font-family="'+MONO+'" font-size="13">'+ln[0]+'</text>';
+    if(two) g+='<text x="'+cx+'" y="72" text-anchor="middle" fill="'+C.ink+'" font-family="'+MONO+'" font-size="13">'+ln[1]+'</text>';
+  }
+  var rows=cohorts.slice(); if(bridge) rows.push({name:'bridge ⊂ SPARK', sub:'n ≈ 300–500', obs:[1,1,1,1,1,1], br:true});
+  for(var i=0;i<rows.length;i++){
+    var r=rows[i], y=top+rh*i;
+    g+='<text x="'+(left-10)+'" y="'+(y+rh/2-2)+'" text-anchor="end" fill="'+(r.br?C.accent:C.ink)+'" font-family="'+MONO+'" font-size="13"'+(r.br?' font-weight="600"':'')+'>'+r.name+'</text>';
+    g+='<text x="'+(left-10)+'" y="'+(y+rh/2+13)+'" text-anchor="end" fill="'+C.muted+'" font-family="'+MONO+'" font-size="11">'+r.sub+'</text>';
+    if(r.dx){
+      g+='<rect x="'+(left+3)+'" y="'+(y+7)+'" width="'+(cw*6-6)+'" height="'+(rh-14)+'" rx="5" fill="'+C.line+'" opacity="0.35"/>';
+      g+='<text x="'+(left+cw*3)+'" y="'+(y+rh/2+4)+'" text-anchor="middle" fill="'+C.muted+'" font-family="'+MONO+'" font-size="12">diagnosis codes only, no sensory data</text>';
+      continue;
+    }
+    for(var m=0;m<6;m++){
+      var on=r.obs[m], x=left+cw*m+3, w=cw-6, yy=y+7, hh=rh-14;
+      if(on===2){
+        g+='<rect x="'+x+'" y="'+yy+'" width="'+w+'" height="'+hh+'" rx="5" fill="none" stroke="'+C.good+'" stroke-width="1.6" stroke-dasharray="4 3"/>';
+        g+='<text x="'+(x+w/2)+'" y="'+(yy+hh/2+4)+'" text-anchor="middle" fill="'+C.good+'" font-family="'+MONO+'" font-size="11">to check</text>';
+      } else {
+        var fill=r.br?C.accent:(on?C.good:C.line), op=r.br?0.9:(on?0.8:0.35);
+        g+='<rect x="'+x+'" y="'+yy+'" width="'+w+'" height="'+hh+'" rx="5" fill="'+fill+'" opacity="'+op+'"/>';
+      }
+    }
+  }
+  var H=top+rh*rows.length+10;
+  g+='<text x="2" y="'+(H+8)+'" fill="'+C.muted+'" font-family="'+MONO+'" font-size="12">no person appears in two rows, until the bridge</text>';
+  mat.setAttribute('viewBox','0 0 760 '+(H+24));
+  mat.innerHTML=g;
+}
+
+/* 5: one person over a year */
+var tlMode='stable', tlT=0, tlPlaying=!window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function sev(t){ return 0.75+0.45*Math.max(0,Math.sin(t*0.9))+0.6*Math.exp(-Math.pow((t-7.5)/0.7,2)); } // t in months, 0..12
+function dirAt(t){
+  var a=[0.2,0.93,0.3];
+  if(tlMode==='drift'){ var f=t/12; a=[0.2+0.75*f,0.93-0.6*f,0.3+0.25*Math.sin(t)]; }
+  var n=Math.hypot(a[0],a[1],a[2]); return a.map(function(v){return v/n;});
+}
+function drawTl(){
+  var svg=document.getElementById('tl'), g='', nar=narrow(), T=nar?[200,40]:[150,40], S=0.62, fs=nar?15:12; // triangle on the left, or on top on phones
+  svg.setAttribute('viewBox', nar?'0 0 400 640':'0 0 760 330');
+  function tp(w){ var p=baryToXY(w); return [(p[0]-260)*S+T[0], (p[1]-42)*S+T[1]]; }
+  var a=tp([0,0,1]), b=tp([1,0,0]), c=tp([0,1,0]);
+  g+='<polygon points="'+a+' '+b+' '+c+'" fill="none" stroke="'+C.line+'" stroke-width="1.5"/>';
+  var lt='fill="'+C.muted+'" font-family="'+MONO+'" font-size="'+fs+'"';
+  g+='<text x="'+a[0]+'" y="'+(a[1]-10)+'" text-anchor="middle" '+lt+'>cortex</text>';
+  g+='<text x="'+b[0]+'" y="'+(b[1]+20)+'" text-anchor="start" '+lt+'>skin</text>';
+  g+='<text x="'+c[0]+'" y="'+(c[1]+20)+'" text-anchor="end" '+lt+'>gut</text>';
+  // path of u so far
+  var path='';
+  for(var t=0;t<=tlT;t+=0.1){ var d=dirAt(t), p=tp([d[0]*d[0],d[1]*d[1],d[2]*d[2]]); path+=(path?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1); }
+  if(path) g+='<path d="'+path+'" fill="none" stroke="'+C.accent+'" stroke-width="1.5" opacity="0.5"/>';
+  var d0=dirAt(tlT), p0=tp([d0[0]*d0[0],d0[1]*d0[1],d0[2]*d0[2]]), s0=sev(tlT);
+  g+='<circle cx="'+p0[0]+'" cy="'+p0[1]+'" r="'+(6+s0*14)+'" fill="'+C.accent+'" opacity="0.18"/>';
+  g+='<circle cx="'+p0[0]+'" cy="'+p0[1]+'" r="7" fill="'+C.accent+'"/>';
+  g+='<text x="'+T[0]+'" y="'+(nar?300:318)+'" text-anchor="middle" '+lt+'>direction u</text>';
+  // severity over time on the right
+  var L=nar?40:360, R=nar?380:740, Tp=nar?370:30, B=nar?580:270, sx=function(t){return L+(R-L)*t/12;}, sy=function(v){return B-(B-Tp)*v/2;};
+  g+='<path d="M'+L+' '+Tp+' V'+B+' H'+R+'" fill="none" stroke="'+C.line+'" stroke-width="1"/>';
+  g+='<text x="'+L+'" y="'+(Tp-12)+'" '+lt+'>severity s</text>';
+  g+='<text x="'+((L+R)/2)+'" y="'+(B+40)+'" text-anchor="middle" '+lt+'>months</text>';
+  for(var m=0;m<=12;m+=3) g+='<text x="'+sx(m)+'" y="'+(B+18)+'" text-anchor="middle" '+lt+'>'+m+'</text>';
+  var full='';
+  for(t=0;t<=12;t+=0.1) full+=(full?'L':'M')+sx(t).toFixed(1)+' '+sy(sev(t)).toFixed(1);
+  g+='<path d="'+full+'" fill="none" stroke="'+C.accent+'" stroke-width="1.5" opacity="0.2"/>';
+  var sp='';
+  for(t=0;t<=tlT;t+=0.1) sp+=(sp?'L':'M')+sx(t).toFixed(1)+' '+sy(sev(t)).toFixed(1);
+  g+='<path d="'+sp+'" fill="none" stroke="'+C.accent+'" stroke-width="2.5"/>';
+  g+='<circle cx="'+sx(tlT)+'" cy="'+sy(s0)+'" r="4.5" fill="'+C.accent+'"/>';
+  if(Math.abs(tlT-7.5)<1.2) g+='<text x="'+sx(7.5)+'" y="'+(sy(sev(7.5))-12)+'" text-anchor="middle" fill="'+C.accent+'" font-family="'+MONO+'" font-size="'+fs+'" font-weight="600">flare</text>';
+  svg.innerHTML=g;
+}
+function tick(){
+  if(tlPlaying){ tlT+=0.04; if(tlT>12.6) tlT=0; drawTl(); }
+  requestAnimationFrame(tick);
+}
+
+function redraw(){ refresh(); if(act==='0')drawPairs(); if(act==='1')drawHab(); if(act==='2')drawTri(); if(act==='3')drawPop(false); if(act==='4')drawMat(); if(act==='5')drawTl(); }
+
+if(act==='0'){
+  var box=document.getElementById('studies');
+  box.innerHTML=studies.map(function(st){ return '<button class="chip" data-k="'+st.key+'" aria-pressed="false"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;background:'+colOf(st.col)+'"></span>'+st.label+'</button>'; }).join('');
+  box.addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    pickStudy = pickStudy===b.dataset.k ? null : b.dataset.k; need=false;
+    document.getElementById('needBtn').setAttribute('aria-pressed','false');
+    box.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', String(x.dataset.k===pickStudy)); });
+    drawPairs();
+  });
+  document.getElementById('needBtn').addEventListener('click',function(){
+    need=!need; pickStudy=null; this.setAttribute('aria-pressed',String(need));
+    box.querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+    drawPairs();
+  });
+}
+if(act==='1'){ document.getElementById('lam').addEventListener('input',drawHab); }
+if(act==='2'){
+  var tri=document.getElementById('tri'), drag=false;
+  tri.addEventListener('pointerdown',function(e){e.preventDefault();drag=true;tri.setPointerCapture(e.pointerId);setFromPointer(e);});
+  tri.addEventListener('pointermove',function(e){if(drag)setFromPointer(e);});
+  tri.addEventListener('pointerup',function(){drag=false;});
+  document.getElementById('sev').addEventListener('input',drawTri);
+  document.getElementById('presets').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    var v=b.dataset.u.split(',').map(Number), n=Math.hypot(v[0],v[1],v[2]);
+    u=v.map(function(x){return x/n;}); drawTri();
+  });
+}
+if(act==='3'){
+  document.getElementById('popMode').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    this.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false');});
+    b.setAttribute('aria-pressed','true'); mode=b.dataset.m; drawPop(true); tellHeight();
+  });
+}
+if(act==='4'){
+  document.getElementById('bridgeBtn').addEventListener('click',function(){
+    bridge=!bridge; this.setAttribute('aria-pressed',String(bridge)); drawMat(); tellHeight();
+  });
+}
+if(act==='5'){
+  if(!tlPlaying){ tlT=12; document.getElementById('tlPlay').textContent='play'; }
+  document.getElementById('tlMode').addEventListener('click',function(e){
+    var b=e.target.closest('button'); if(!b)return;
+    if(b.id==='tlPlay'){ tlPlaying=!tlPlaying; b.textContent=tlPlaying?'pause':'play'; if(tlPlaying&&tlT>=12) tlT=0; return; }
+    this.querySelectorAll('button[data-m]').forEach(function(x){x.setAttribute('aria-pressed','false');});
+    b.setAttribute('aria-pressed','true'); tlMode=b.dataset.m; tlT=tlPlaying?0:12; drawTl();
+  });
+  requestAnimationFrame(tick);
+}
+redraw();
+
+if(window.parent!==window) document.documentElement.style.overflow='hidden';
+function tellHeight(){ if(window.parent!==window) window.parent.postMessage({embed:'one-fault-'+act,height:Math.ceil(document.getElementById('act'+act).getBoundingClientRect().bottom+4)},'*'); }
+tellHeight();
+window.addEventListener('resize',function(){ redraw(); tellHeight(); });
+if('ResizeObserver' in window) new ResizeObserver(tellHeight).observe(document.body);
+window.addEventListener('load',tellHeight);
+if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ redraw(); tellHeight(); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Four clinic doors, pain clinic, gastroenterology, rheumatology and psychiatry, each with its own diagnosis. One pink alarm signal that never dies down runs through all four.">
+  <!-- one fault, many names: the same non-habituating signal behind every specialist's door -->
+  <rect width="1600" height="900" fill="#e6defa"/>
+  <rect x="120" y="120" width="300" height="560" rx="22" fill="#1b1b1b"/>
+  <rect x="110" y="110" width="300" height="560" rx="22" fill="#ffffff" stroke="#1b1b1b" stroke-width="6"/>
+  <rect x="138" y="140" width="244" height="70" rx="10" fill="#6cc8f0" stroke="#1b1b1b" stroke-width="4"/>
+  <text x="260.0" y="186" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="30" font-weight="700" fill="#1b1b1b">PAIN CLINIC</text>
+  <text x="260.0" y="310" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="40" fill="#1b1b1b"><tspan x="260">“chronic</tspan><tspan x="260" dy="50">pain”</tspan></text>
+  <circle cx="370" cy="625" r="13" fill="#1b1b1b"/>
+  <rect x="480" y="120" width="300" height="560" rx="22" fill="#1b1b1b"/>
+  <rect x="470" y="110" width="300" height="560" rx="22" fill="#ffffff" stroke="#1b1b1b" stroke-width="6"/>
+  <rect x="498" y="140" width="244" height="70" rx="10" fill="#fbe919" stroke="#1b1b1b" stroke-width="4"/>
+  <text x="620.0" y="186" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="30" font-weight="700" fill="#1b1b1b">GASTRO</text>
+  <text x="620.0" y="310" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="40" fill="#1b1b1b">“IBS”</text>
+  <circle cx="730" cy="625" r="13" fill="#1b1b1b"/>
+  <rect x="840" y="120" width="300" height="560" rx="22" fill="#1b1b1b"/>
+  <rect x="830" y="110" width="300" height="560" rx="22" fill="#ffffff" stroke="#1b1b1b" stroke-width="6"/>
+  <rect x="858" y="140" width="244" height="70" rx="10" fill="#f9a13c" stroke="#1b1b1b" stroke-width="4"/>
+  <text x="980.0" y="186" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="25" font-weight="700" fill="#1b1b1b">RHEUMATOLOGY</text>
+  <text x="980.0" y="310" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="36" fill="#1b1b1b">“autoimmune”</text>
+  <circle cx="1090" cy="625" r="13" fill="#1b1b1b"/>
+  <rect x="1200" y="120" width="300" height="560" rx="22" fill="#1b1b1b"/>
+  <rect x="1190" y="110" width="300" height="560" rx="22" fill="#ffffff" stroke="#1b1b1b" stroke-width="6"/>
+  <rect x="1218" y="140" width="244" height="70" rx="10" fill="#9b7fd4" stroke="#1b1b1b" stroke-width="4"/>
+  <text x="1340.0" y="186" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="30" font-weight="700" fill="#1b1b1b">PSYCHIATRY</text>
+  <text x="1340.0" y="310" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="40" fill="#1b1b1b">“anxiety”</text>
+  <circle cx="1450" cy="625" r="13" fill="#1b1b1b"/>
+  <path d="M 30 550 L 60 550 L 70 430 L 80 568 L 88 550 L 116 550 L 126 430 L 136 568 L 144 550 L 172 550 L 182 430 L 192 568 L 200 550 L 228 550 L 238 430 L 248 568 L 256 550 L 284 550 L 294 430 L 304 568 L 312 550 L 340 550 L 350 430 L 360 568 L 368 550 L 396 550 L 406 430 L 416 568 L 424 550 L 452 550 L 462 430 L 472 568 L 480 550 L 508 550 L 518 430 L 528 568 L 536 550 L 564 550 L 574 430 L 584 568 L 592 550 L 620 550 L 630 430 L 640 568 L 648 550 L 676 550 L 686 430 L 696 568 L 704 550 L 732 550 L 742 430 L 752 568 L 760 550 L 788 550 L 798 430 L 808 568 L 816 550 L 844 550 L 854 430 L 864 568 L 872 550 L 900 550 L 910 430 L 920 568 L 928 550 L 956 550 L 966 430 L 976 568 L 984 550 L 1012 550 L 1022 430 L 1032 568 L 1040 550 L 1068 550 L 1078 430 L 1088 568 L 1096 550 L 1124 550 L 1134 430 L 1144 568 L 1152 550 L 1180 550 L 1190 430 L 1200 568 L 1208 550 L 1236 550 L 1246 430 L 1256 568 L 1264 550 L 1292 550 L 1302 430 L 1312 568 L 1320 550 L 1348 550 L 1358 430 L 1368 568 L 1376 550 L 1404 550 L 1414 430 L 1424 568 L 1432 550 L 1460 550 L 1470 430 L 1480 568 L 1488 550 L 1516 550 L 1526 430 L 1536 568 L 1544 550 L 1570 550" fill="none" stroke="#ffffff" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M 30 550 L 60 550 L 70 430 L 80 568 L 88 550 L 116 550 L 126 430 L 136 568 L 144 550 L 172 550 L 182 430 L 192 568 L 200 550 L 228 550 L 238 430 L 248 568 L 256 550 L 284 550 L 294 430 L 304 568 L 312 550 L 340 550 L 350 430 L 360 568 L 368 550 L 396 550 L 406 430 L 416 568 L 424 550 L 452 550 L 462 430 L 472 568 L 480 550 L 508 550 L 518 430 L 528 568 L 536 550 L 564 550 L 574 430 L 584 568 L 592 550 L 620 550 L 630 430 L 640 568 L 648 550 L 676 550 L 686 430 L 696 568 L 704 550 L 732 550 L 742 430 L 752 568 L 760 550 L 788 550 L 798 430 L 808 568 L 816 550 L 844 550 L 854 430 L 864 568 L 872 550 L 900 550 L 910 430 L 920 568 L 928 550 L 956 550 L 966 430 L 976 568 L 984 550 L 1012 550 L 1022 430 L 1032 568 L 1040 550 L 1068 550 L 1078 430 L 1088 568 L 1096 550 L 1124 550 L 1134 430 L 1144 568 L 1152 550 L 1180 550 L 1190 430 L 1200 568 L 1208 550 L 1236 550 L 1246 430 L 1256 568 L 1264 550 L 1292 550 L 1302 430 L 1312 568 L 1320 550 L 1348 550 L 1358 430 L 1368 568 L 1376 550 L 1404 550 L 1414 430 L 1424 568 L 1432 550 L 1460 550 L 1470 430 L 1480 568 L 1488 550 L 1516 550 L 1526 430 L 1536 568 L 1544 550 L 1570 550" fill="none" stroke="#d12d88" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="800.0" y="840" text-anchor="middle" font-family="Space Mono, IBM Plex Mono, Menlo, monospace" font-size="44" font-weight="700" fill="#1b1b1b">one fault, many names</text>
+</svg>
