@@ -1,0 +1,14 @@
+# "See highlights" on All posts (/blog/): the highlighted posts, grouped by what a visitor wants.
+# posts = slugs (filename without date). Start here picks one random highlight per genre from `pinned:` in genres.yml.
+- name: Math to sink into
+  blurb: Long reads with pictures
+  posts: [harish-chandra, informal-tmf, faulhaber-shift, dirichlethomology]
+- name: Bodies and biology
+  blurb: Science I did, and science I lived
+  posts: [one-fault-many-names, megacolon, biome, memantine, neuroprosthetic, wheelchair, pressure-ulcer-prevent]
+- name: Made to be experienced
+  blurb: A play, comics, songs, a design
+  posts: [impaction, webcomic-re-search, cech-covers, ytm-2024-design]
+- name: Thinking out loud
+  blurb: Essays on work, failure and credit
+  posts: [im-not-good-at-math, fuck-perfectionism, job-title-universe-debugger-importance, caterpillars-life-lesson, the-purpose-of-communicaton-assigning-credit]

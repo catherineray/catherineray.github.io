@@ -15,6 +15,7 @@
   color: "#6cc8f0"
   icon: /images/icons/science.png
   pinned:
+    - one-fault-many-names
     - megacolon
     - biome
     - memantine

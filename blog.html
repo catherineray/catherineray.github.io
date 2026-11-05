@@ -10,11 +10,49 @@ rail: filters
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
 {% include posts-style.html %}
+<style>
+  /* Start here + See highlights; the genre columns (.ap-hl) only show while filtering */
+  .ap:not(.is-filtering) #ap-hl-h, .ap:not(.is-filtering) .ap-hl { display: none; }
+  .ap.is-filtering .ap-start { display: none; }
+  .sh-btns { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .sh-blurb { margin: 0 0 12px; font-family: 'Newsreader', serif; font-style: italic; font-size: 1.05rem; color: var(--soft); }
+  .sh-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; align-items: start; margin: 0 0 26px; }
+  .sh-off { display: none; }
+  .sh-again { font: 700 13px 'Space Mono', monospace; padding: 5px 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); box-shadow: 2px 2px 0 var(--ink); cursor: pointer; }
+  .sh-again:hover { background: #6cc8f0; }
+  .sh-all { display: block; margin: 6px auto 34px; font: 400 clamp(18px, 2.4vw, 24px) 'Archivo Black', sans-serif; letter-spacing: .03em; text-transform: uppercase; padding: 14px 30px; border: 3px solid var(--ink); border-radius: 999px; background: #ee5fd4; color: var(--ink); box-shadow: 5px 5px 0 var(--ink); cursor: pointer; transition: transform .12s, box-shadow .12s; }
+  .sh-all:hover { background: #ec3f9e; transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--ink); }
+  @media (prefers-reduced-motion: reduce) { .sh-all { transition: none; } }
+  .sh-group h3 { font: 700 15px 'Space Mono', monospace; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 4px; }
+  .ap-sec-row:has(.ap-sec-recents) { border-top: 4px solid var(--lilac); padding-top: 26px; margin-top: 10px; }
+</style>
 
 <div class="ap recents-tiles">
   <div class="ap-title">{% include page-title.html text="Good Fibrations" shadow="#fbe919" %}</div>
   <p class="ap-tagline">math is art</p>
   <p class="ap-count">A blog since 2013. Scraps of a playground annealing in the dark.</p>
+
+  {% comment %} Unfiltered: "Start here" (one random highlight per genre) + "See highlights" (grouped, _data/highlight_groups.yml).
+     While a filter or search is on, these step aside and the matching highlights below show instead. {% endcomment %}
+  <div class="ap-start">
+    <div class="ap-sec-row"><h2 class="ap-sec">Start here</h2><span class="sh-btns"><button type="button" class="sh-again">↻ show me others</button><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></span></div>
+    <p class="sh-blurb">A few of the best. Different every time you come by.</p>
+    <div class="sh-row sh-pick">
+      {% for g in site.data.genres %}{% for slug in g.pinned %}{% assign p = site.posts | where: "slug", slug | first %}{% if p %}<div class="sh-c sh-off" data-gk="{{ g.key }}" style="--g: {{ g.color }};">{% include hl-card.html %}</div>{% endif %}{% endfor %}{% endfor %}
+    </div>
+    <button type="button" class="sh-all" aria-expanded="false">＋ See highlights</button>
+    <div class="sh-full" hidden>
+      {% for d in site.data.highlight_groups %}
+      <section class="sh-group">
+        <h3>{{ d.name }}</h3>
+        <p class="sh-blurb">{{ d.blurb }}</p>
+        <div class="sh-row">
+          {% for slug in d.posts %}{% assign p = site.posts | where: "slug", slug | first %}{% if p %}{% assign g = site.data.genres | where: "key", p.genre | first %}<div style="--g: {{ g.color }};">{% include hl-card.html %}</div>{% endif %}{% endfor %}
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+  </div>
 
   <div class="ap-sec-row" id="ap-hl-h"><h2 class="ap-sec">Highlights</h2><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></div>
   <div class="ap-hl" aria-label="Highlights">
@@ -44,6 +82,33 @@ rail: filters
 
 
 {% include words-toggle.html %}
+<script>
+// Start here: one random highlight per genre, avoiding last visit's picks when possible (remembered in this browser)
+(function () {
+  var cards = [].slice.call(document.querySelectorAll('.sh-pick .sh-c')), last = [];
+  try { last = JSON.parse(localStorage.getItem('rin-start-here') || '[]'); } catch (e) {}
+  function href(c) { return c.querySelector('a').getAttribute('href'); }
+  function choose() {
+    var now = [], genres = [];
+    cards.forEach(function (c) { if (genres.indexOf(c.dataset.gk) < 0) genres.push(c.dataset.gk); c.classList.add('sh-off'); });
+    genres.forEach(function (gk) {
+      var cs = cards.filter(function (c) { return c.dataset.gk === gk; });
+      var fresh = cs.filter(function (c) { return last.indexOf(href(c)) < 0; });
+      var pool = fresh.length ? fresh : cs, c = pool[Math.floor(Math.random() * pool.length)];
+      c.classList.remove('sh-off'); now.push(href(c));
+    });
+    last = now; try { localStorage.setItem('rin-start-here', JSON.stringify(now)); } catch (e) {}
+  }
+  choose();
+  document.querySelector('.sh-again').addEventListener('click', choose);
+  var all = document.querySelector('.sh-all'), full = document.querySelector('.sh-full');
+  all.addEventListener('click', function () {
+    full.hidden = !full.hidden;
+    all.setAttribute('aria-expanded', String(!full.hidden));
+    all.textContent = full.hidden ? '＋ See highlights' : '− Fewer highlights';
+  });
+})();
+</script>
 <script>
 // the sidebar controls (data-f) filter and order this list
 (function () {
@@ -106,6 +171,7 @@ rail: filters
     document.querySelector('.ap-hl').classList.toggle('is-empty', !any);
     document.querySelector('.ap-hl').classList.toggle('is-filtered', state.genre !== 'all' || state.topic !== 'all' || !!state.q);
     document.getElementById('ap-hl-h').classList.toggle('is-empty', !any);
+    document.querySelector('.ap').classList.toggle('is-filtering', state.genre !== 'all' || state.topic !== 'all' || !!state.q);
     document.querySelectorAll('.rail-shown .n').forEach(function (b) { b.textContent = n; });
     box.querySelector('.ap-empty').classList.toggle('is-hidden', n > 0);
   }
