@@ -1,5 +1,5 @@
 ---
-title: "Some Thoughts on Dynamical Systems"
+title: "Dependent Types are Fibrations"
 date: "2015-02-20"
 categories: 
   - "math"
@@ -16,6 +16,8 @@ topics:
   - "Homotopy theory"
   - "Physics"
 ---
+
+*This post is the source of my Santa Fe Institute project, [dependent and directed type systems for multiphysics models](/about/#p-types).*
 
 I’ve resurrected this post from my draft graveyard after chatting with Chas Leichner about the lightly related notion of [domain theory](http://en.wikipedia.org/wiki/Domain_theory), and the interaction between computation and [topos theory](/swashbuckling-topoi/).
 

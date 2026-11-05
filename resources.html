@@ -1,0 +1,110 @@
+---
+layout: page
+title_shadow: "#6cc8f0"   # color of the title's offset copy
+title: Resources
+permalink: /resources/
+# The reading lists live in _data/resources.yml (topics, books, links, "from my blog" posts, optional `why:` lines).
+---
+{% assign mg = site.data.genres | where: "key", "math" | first %}
+{% assign sg = site.data.genres | where: "key", "science" | first %}
+<style>
+  .rs { --ink: #1b1b1b; --soft: #4a3a63; --paper: #fff; --cream: #faf3c8; --lilac: #d5c2ef; --yellow: #fbe919; --orange: #f9a13c; }
+  .rs-intro { font-family: 'Newsreader', serif; font-style: italic; font-size: 1.25rem; line-height: 1.45; margin: 0 0 26px; max-width: 46rem; }
+  .rs-sub { margin: 10px 0 0; }
+  .rs-todo { border: 2px dashed var(--soft); border-radius: 10px; padding: 10px 14px; color: var(--soft); font: 14px 'Space Mono', monospace; font-style: normal; }
+
+  /* "You are a human first" card */
+  .rs-human { background: var(--cream); border: 3px solid var(--ink); border-radius: 14px; box-shadow: 6px 6px 0 var(--orange); padding: 18px 22px; margin: 0 0 40px; max-width: 46rem; }
+  .rs-human h2 { font: 700 15px 'Space Mono', monospace; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 6px; border: 0; padding: 0; }
+  .rs-human p { margin: 0 0 12px; }
+  .rs-human .rs-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .rs-studies { margin: 16px 0 0; padding: 14px 0 0; border-top: 2px dotted var(--ink); }
+  .rs-studies h3 { font: 700 13px 'Space Mono', monospace; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 8px; }
+  .rs-studies ul { margin: 0; padding: 0 0 0 18px; }
+  .rs-studies li { margin: 0 0 8px; line-height: 1.45; }
+  .rs-chip { display: inline-block; font: 700 13px 'Space Mono', monospace; padding: 6px 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); text-decoration: none; box-shadow: 2px 2px 0 var(--ink); }
+  .rs-chip:hover { background: var(--yellow); }
+  .rs-chip small { font-weight: 400; color: var(--soft); }
+
+  /* genre section titles: same drawn style as Portfolio/About, with the genre icon */
+  .rs-head { display: flex; align-items: center; gap: 12px; margin: 48px 0 6px; }
+  .rs-head img { width: 56px; height: 56px; margin: 0; }
+  .rs-head h2 { position: relative; display: inline-block; margin: 0; border: 0; padding: 0; font-family: 'Archivo Black', 'Helvetica Neue', Impact, sans-serif; font-weight: 400; font-size: clamp(1.6rem, 5vw, 2.3rem); line-height: 1; color: #fff; -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill; }
+  .rs-head h2::before { content: attr(data-text); position: absolute; left: 0; top: 0; transform: translate(5px, 5px); z-index: -1; color: var(--g); -webkit-text-stroke: 3px var(--g); paint-order: stroke fill; white-space: nowrap; }
+  .rs-level { display: flex; align-items: baseline; gap: 10px; margin: 26px 0 12px; font: 700 15px 'Space Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
+  .rs-level::after { content: ""; flex: 1; border-bottom: 3px solid var(--g); }
+  .rs-quote { margin: 0 0 18px; padding: 0 0 0 16px; border-left: 4px solid var(--g); font-family: 'Newsreader', serif; font-style: italic; font-size: 1.08rem; line-height: 1.5; max-width: 46rem; }
+  .rs-quote cite { display: block; margin-top: 6px; font: 13px 'Space Mono', monospace; font-style: normal; color: var(--soft); }
+
+  /* topic cards */
+  .rs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px; align-items: start; }
+  .rs-card { background: var(--paper); border: 3px solid var(--ink); border-radius: 12px; box-shadow: 5px 5px 0 var(--g); padding: 14px 16px 12px; }
+  .rs-card.has-pic { padding-top: 0; }
+  .rs-pic { display: block; margin: 0 -16px 12px; border-bottom: 3px solid var(--ink); background: var(--g); border-radius: 9px 9px 0 0; overflow: hidden; }
+  .rs-pic img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; margin: 0; }
+  .rs-card h3 { font: 700 16px 'Space Mono', monospace; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 4px; }
+  .rs-why { margin: 0 0 8px; font-family: 'Newsreader', serif; font-style: italic; color: var(--soft); }
+  .rs-card ul { list-style: none; margin: 8px 0 0; padding: 0; }
+  .rs-card li { margin: 0 0 9px; padding: 0 0 0 16px; position: relative; line-height: 1.35; }
+  .rs-card li::before { content: ""; position: absolute; left: 0; top: .5em; width: 8px; height: 8px; border-radius: 999px; background: var(--g); border: 1.5px solid var(--ink); }
+  .rs-card li.has-cover { display: grid; grid-template-columns: 46px 1fr; column-gap: 10px; align-items: center; padding-left: 0; }
+  .rs-card li.has-cover::before { display: none; }
+  .rs-cover { width: 46px; height: auto; margin: 0; border: 2px solid var(--ink); border-radius: 3px; box-shadow: 2px 2px 0 var(--g); }
+  .rs-by { color: var(--soft); font-size: .9em; }
+  .rs-note { display: block; color: var(--soft); font-size: .85em; }
+  .rs-card li img { display: block; max-width: 100%; margin: 8px 0 0; border: 2px solid var(--ink); border-radius: 6px; }
+  .rs-mine { margin: 10px 0 0; padding: 10px 0 0; border-top: 2px dotted var(--g); font-size: .9rem; }
+  .rs-mine b { font: 700 12px 'Space Mono', monospace; letter-spacing: .06em; text-transform: uppercase; display: block; margin: 0 0 4px; }
+  .rs-mine a { display: block; margin: 0 0 3px; }
+  .rs-foot { margin: 46px 0 0; padding: 18px 0 0; border-top: 3px solid var(--soft); }
+</style>
+
+<div class="rs">
+
+<section class="rs-human">
+  <h2>You are a human first</h2>
+  <p>If you are feeling off and could use support, you can set up an appointment within the next few days to talk to someone about your situation.</p>
+  <div class="rs-chips">
+    <a class="rs-chip" href="https://complicated.life/">It's Complicated <small>· talk therapy, European time zones</small></a>
+    <a class="rs-chip" href="https://www.betterhelp.com/">BetterHelp <small>· talk therapy, American time zones</small></a>
+    <a class="rs-chip" href="https://www.talkspace.com/">Talkspace <small>· psychiatry</small></a>
+  </div>
+  <div class="rs-studies">
+    <h3>It's not just you</h3>
+    <ul>
+      <li><b>Mental health in academia.</b> <a href="https://doi.org/10.1016/j.respol.2017.02.008">Work organization and mental health problems in PhD students</a> <span class="rs-by">(Levecque et al., <i>Research Policy</i>, 2017)</span>: about one in three PhD students at risk of a common psychiatric disorder. <a href="https://doi.org/10.1038/s41598-021-93687-7">Depression, anxiety and suicidal ideation among PhD students</a> <span class="rs-by">(Satinsky et al., <i>Scientific Reports</i>, 2021)</span>: a review of studies from many countries.</li>
+      <li><b>Why people leave.</b> <a href="https://doi.org/10.1073/pnas.1800478115">The rise of the temporary workforce</a> <span class="rs-by">(Milojević et al., <i>PNAS</i>, 2018)</span>: the typical career in science has shrunk to a few years. <a href="https://doi.org/10.1126/sciadv.adi2205">Gender and retention patterns among U.S. faculty</a> <span class="rs-by">(Spoon et al., <i>Science Advances</i>, 2023)</span>: most who leave are pushed by workplace climate, and women leave more at every career stage.</li>
+    </ul>
+  </div>
+</section>
+
+
+<div style="--g: {{ mg.color }};">
+  <div class="rs-head"><img src="{{ site.baseurl }}{{ mg.icon }}" alt=""><h2 id="math" data-text="MATH">MATH</h2></div>
+  {% for lv in site.data.resources.math %}
+  <div class="rs-level">{{ lv.level }}</div>
+  {% if lv.quote %}<blockquote class="rs-quote">“{{ lv.quote }}”<cite>— {{ lv.quote_by }}</cite></blockquote>{% endif %}
+  <div class="rs-grid">
+    {% for t in lv.topics %}{% include resource-card.html t=t %}{% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+<div style="--g: {{ sg.color }};">
+  <div class="rs-head"><img src="{{ site.baseurl }}{{ sg.icon }}" alt=""><h2 id="science" data-text="SCIENCE">SCIENCE</h2></div>
+  <div class="rs-grid" style="margin-top: 18px;">
+    {% for t in site.data.resources.science %}{% include resource-card.html t=t %}{% endfor %}
+  </div>
+</div>
+
+<div style="--g: #f9a13c;">
+  <div class="rs-head"><h2 id="programs" data-text="PROGRAMS">PROGRAMS</h2></div>
+  <p class="rs-intro">For those of us who arrived late, sideways, or without an invitation: the party is better than they let on. For the rich and interesting people who come to math and science from complex circumstances.</p>
+  <div class="rs-grid">
+    {% for t in site.data.resources.programs %}{% include resource-card.html t=t %}{% endfor %}
+  </div>
+</div>
+
+<p class="rs-foot">How I teach, and why: see <a href="{{ site.baseurl }}/about/#about-teaching">Teaching on my About page →</a></p>
+
+</div>

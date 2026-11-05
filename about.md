@@ -2561,7 +2561,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </details>
           <details class="pro" id="p-types">
             <summary>
-            <h4>Dependent and directed type systems for multiphysics models<span class="yr">2015</span></h4>
+            <h4><a href="https://rin.io/dynamical-systems/">Dependent and directed type systems for multiphysics models</a><span class="yr">2015</span></h4>
             <p class="ptags"><span class="ptag">type theory</span><span class="ptag">category theory</span><span class="ptag">scientific computing</span></p>
             </summary>
             <div class="pro-body">
@@ -2746,6 +2746,18 @@ rail_sections:   # listed in the sidebar under "About Rin"
 </script>
 
 
+<script>
+// a link to a project (e.g. /about/#p-types) opens its card and any fold around it
+(function () {
+  function openHash() {
+    var id = decodeURIComponent(location.hash.slice(1)), el = id && document.getElementById(id);
+    if (!el || el.tagName !== 'DETAILS') return;
+    for (var d = el; d; d = d.parentElement && d.parentElement.closest('details')) d.open = true;
+    el.scrollIntoView({ block: 'start' });
+  }
+  window.addEventListener('hashchange', openHash);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', openHash); else openHash();
+})();
+</script>
 </body>
 </html>
-

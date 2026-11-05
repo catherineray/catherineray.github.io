@@ -47,24 +47,24 @@ The trouble is that the evidence comes in pairs. Every link anyone has found bet
 
 Nobody has looked at all of them in the same people. That's what the rest of this post is about.
 
-## 1 · Habituation is measurable: a slope
+## 1 · What I propose: measure habituation as a slope
 
-Deliver the same stimulus ten times. A typical nervous system decrements: each response is smaller. The faulty one keeps reporting at full strength. The number we read off is the **failure-to-decrement slope**, one per channel. A channel is one instrument run this way; the full battery has about six (all listed in section 4).
+This is a proposal; nobody has run it yet. Deliver the same stimulus ten times. A typical nervous system decrements: each response is smaller. The faulty one keeps reporting at full strength. The number I propose to read off is the **failure-to-decrement slope**, one per channel. A channel would be one instrument run this way; the battery I propose has about six (all listed in section 4).
 
 <iframe class="biome-embed" data-embed="one-fault-1" src="/embeds/one-fault.html?act=1" title="Response amplitude over ten identical stimuli, healthy versus non-habituating" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:360px;border:0;margin:1.5rem 0;"></iframe>
 
-Same instruments every clinic already owns (QST, barostat, evoked responses), just run in **repeated mode**, reading the same quantity off each.
+It needs no new equipment: the instruments every clinic already owns (QST, barostat, evoked responses) would just be run in **repeated mode**, reading the same quantity off each. Some of these have been run this way on their own, in their own groups of people; what I propose is running all of them on the same people.
 
 <details class="math-box" markdown="1">
 <summary>The math: the vector h</summary>
 
-With $$k$$ channels, person $$i$$ has a habituation deficit vector
+With $$k$$ channels, person $$i$$ would have a habituation deficit vector
 
 $$h_i \in \mathbb{R}_{\ge 0}^k,$$
 
 where $$h_i^{(\alpha)}$$ is the failure-to-decrement slope on channel $$\alpha$$.
 
-The working list of channels: cutaneous QST, temporal summation, conditioned pain modulation (CPM), barostat, evoked responses, a parent- or self-reported sensory profile, and possibly affective reactivity.
+The channels I propose: cutaneous QST, temporal summation, conditioned pain modulation (CPM), barostat, evoked responses, a parent- or self-reported sensory profile, and possibly affective reactivity.
 
 </details>
 

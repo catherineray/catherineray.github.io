@@ -1,0 +1,120 @@
+# Resources page (/resources/). Each topic is a card. Items: title, by (optional), url (optional), note (optional).
+# posts: Rin's own posts on the topic (slugs), shown as "from my blog".
+# cover: a book cover (images/resources/books/, from Open Library or the publisher).
+# Optional `image:` on a topic = picture at the top of its card.
+# Optional `why:` on a topic = one line on why Rin picked it (shown under the topic name).
+math:
+  - level: Basics
+    quote: >-
+      The thing to keep in mind is that all these "basics" were once cutting-edge research. And the people who got to
+      the bottom of these matters were not trivial idiots. They were great masters. The more you look at this material
+      in this way, the more you’ll find you can tolerate it in good humor, and without fearing its deadening effects on
+      your strange, wild mind.
+    quote_by: Laurens Gunnarsen
+    topics:
+      - name: Linear algebra
+        items:
+          - { title: "The Manga Guide to Linear Algebra", cover: "/images/resources/books/manga-linear-algebra.jpg", by: "Shin Takahashi and Iroha Inoue" }
+          - { title: "The Magnificent 2D Matrix", url: "https://ncase.me/matrix/" }
+      - name: Calculus
+        items:
+          - { title: "Dangerous and Illegal Operations in Calculus", by: "Paul Garrett", url: "https://www-users.cse.umn.edu/~garrett/m/fun/dangerous_and_illegal.pdf" }
+      - name: Proof writing
+        items:
+          - { title: "Math Girls", cover: "/images/resources/books/math-girls.jpg", url: "http://bentobooks.com/resources/math-girls-sample.pdf", note: "sample chapter" }
+          - { title: "Mathematics as Problem Solving", cover: "/images/resources/books/soifer.jpg", by: "Alexander Soifer" }
+          - { title: "Proofs from the Book", cover: "/images/resources/books/proofs-book.jpg", by: "Martin Aigner and Günter M. Ziegler" }
+          - { title: "Induction and Analogy in Mathematics", cover: "/images/resources/books/polya-induction.jpg", by: "Pólya" }
+      - name: Other basics
+        items:
+          - { title: "An Illustrated Handbook of Theoretical Physics: Introduction to Mathematical Structures", url: "https://www.mathphysicsbook.com/mathematics/mathematical-structures/classifying-mathematical-concepts/" }
+          - { title: "When is one thing equal to some other thing?", by: "Barry Mazur", url: "https://web.archive.org/web/20210101004524/http://people.math.harvard.edu/~mazur/preprints/when_is_one.pdf" }
+          - { title: "Kindergarten Quantum Mechanics", by: "Bob Coecke", url: "https://arxiv.org/pdf/quant-ph/0510032.pdf" }
+          - { title: "A Topological Picturebook", cover: "/images/resources/books/topological-picturebook.jpg", by: "George Francis" }
+  - level: Medium spice
+    topics:
+      - name: Analysis
+        items:
+          - { title: "Analysis by Its History", cover: "/images/resources/books/hairer-wanner.jpg", by: "Hairer and Wanner" }
+          - { title: "Problems and Theorems in Analysis I: Series, Integral Calculus, Theory of Functions", cover: "/images/resources/books/polya-szego.jpg", by: "Pólya and Szegő" }
+          - { title: "Harmonic analysis as the exploitation of symmetry: a historical survey", by: "George W. Mackey" }
+          - { title: "Visual Complex Analysis", cover: "/images/resources/books/needham.jpg", by: "Tristan Needham" }
+          - { title: "Ordinary Differential Equations", cover: "/images/resources/books/arnold-ode.jpg", by: "V. Arnol'd" }
+          - { title: "A Source Book in Classical Analysis", cover: "/images/resources/books/birkhoff.jpg", by: "Garrett Birkhoff" }
+      - name: Representation theory & number theory
+        posts: [faulhaber-shift, studying-symmetry]   # "from my blog"
+        items:
+          - { title: "Introduction to Representation Theory", cover: "/images/resources/books/etingof.jpg", by: "Etingof, Golberg, Hensel, Liu, Schwendner, Vaintrob and Yudovina, with historical interludes by Slava Gerovitch" }
+          - { title: "The Mathematics of Frobenius in Context", cover: "/images/resources/books/hawkins.jpg", by: "Thomas Hawkins" }
+          - { title: "Lectures on Number Theory", cover: "/images/resources/books/dirichlet.jpg", by: "Dirichlet, edited by Dedekind", note: "based on the Disquisitiones Arithmeticae" }
+          - { title: "The Algebra II Lectures of the Poetic Kazuya Kato", url: "http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf" }
+      - name: Topology
+        posts: [topology-curriculum, bridging-worlds, intro-to-bundles]   # "from my blog"
+        items:
+          - { title: "Gauge Fields, Knots and Gravity", cover: "/images/resources/books/baez.jpg", by: "John Baez" }
+          - { title: "Elementary Applied Topology", cover: "/images/resources/books/ghrist.jpg", by: "Robert Ghrist", url: "https://www2.math.upenn.edu/~ghrist/notes.html", note: "pictorial basic topology via physics and engineering examples" }
+          - { title: "Topology for Physicists", by: "Martin Zirnbauer", url: "http://www.thp.uni-koeln.de/zirn/011_Website_Martin_Zirnbauer/3_Teaching/LectureNotes/02ToPhys_SS11.pdf" }
+          - { title: "Homotopic Topology", cover: "/images/resources/books/fomenko.jpg", by: "Fuchs and Fomenko" }
+science:
+  - name: Game theory
+    image: /images/resources/evolution-of-trust.png
+    items:
+      - { title: "The Evolution of Trust", url: "https://ncase.me/trust/" }
+  - name: p-hacking
+    image: /images/resources/p-hacking.jpg
+    items:
+      - { title: "p-hacking", by: "SciShow", url: "https://www.youtube.com/watch?v=tLM7xS6t4FE" }
+  - name: Machine learning & neural networks
+    image: /images/ml_map.png
+    image_link: "https://scikit-learn.org/stable/tutorial/machine_learning_map/"
+    items:
+      - { title: "Chris Olah's blog", url: "https://colah.github.io/", note: "clear explanations of the basics of neural networks and deep learning" }
+      - { title: "scikit-learn's map of the basic algorithms", url: "https://scikit-learn.org/stable/tutorial/machine_learning_map/", note: "all the basic ML algorithms in one graph; follow it and work through the examples" }
+# Programs, networks and funding for people on unusual paths (checked 5 Nov 2026). note = who it's for · region
+programs:
+  - name: Students
+    items:
+      - { title: "Program for the Exceptionally Gifted (PEG)", url: "https://marybaldwin.edu/peg", note: "girls and young women aged 12–16 start college early, living on campus at Mary Baldwin University · US" }
+      - { title: "EDGE Program", url: "https://www.edgeforwomen.org", note: "women and underrepresented minorities starting a math PhD: summer program, mentoring, research awards · US" }
+      - { title: "Causeway Postbaccalaureate Program", url: "https://sites.northwestern.edu/causeway", note: "a funded year of math courses and research at Northwestern for first-generation and low-income graduates heading to a PhD; paused for lack of funding, mailing list open · US" }
+      - { title: "MSRI-UP", url: "https://www.slmath.org/programs/msri-up", note: "funded summer research for undergraduates from underrepresented groups · US" }
+      - { title: "Directed Reading Program Network", url: "https://drp-network.org", note: "undergraduates read a topic for a term with a graduate mentor; helps departments start one · US/international" }
+  - name: Career breaks & coming back
+    items:
+      - { title: "LMS Emmy Noether Fellowships", url: "https://www.lms.ac.uk/grants/lms-emmy-noether-fellowships", note: "for mathematicians returning from a caring break or with heavy caring duties; refugee mathematicians eligible · UK" }
+      - { title: "LMS Grace Chisholm Young Fellowship", url: "https://www.lms.ac.uk/grants/grace-chisholm-young-fellowships", note: "keeps a mathematician research-active through a career interruption · UK" }
+      - { title: "Daphne Jackson Fellowships", url: "https://daphnejackson.org", note: "part-time retraining + research after a break of 2+ years, any field · UK/Ireland" }
+      - { title: "Royal Society Dorothy Hodgkin Fellowship", url: "https://royalsociety.org/grants/dorothy-hodgkin-fellowship/", note: "early-career fellowship for people who need flexible working (caring, health) · UK" }
+      - { title: "MSCA Postdoctoral Fellowships", url: "https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships", note: "career breaks don't count against the eligibility window · Europe" }
+  - name: Communities
+    items:
+      - { title: "Women in Topology", url: "https://awm-math.org/research-networks/wit/", note: "research workshops for women in algebraic topology and homotopy theory · international" }
+      - { title: "European Women in Mathematics", url: "https://www.europeanwomeninmaths.org", note: "network, summer schools and meetings · Europe" }
+      - { title: "Spectra", url: "https://www.lgbtmath.org", note: "LGBTQ+ mathematicians: community, Outlist, events · US/international" }
+      - { title: "National Association of Mathematicians", url: "https://www.nam-math.org", note: "Black mathematicians: conferences, lectures, opportunities · US" }
+      - { title: "Mathematically Gifted & Black", url: "https://mathematicallygiftedandblack.com", note: "Black mathematicians and their research · US" }
+      - { title: "Lathisms", url: "https://www.lathisms.org", note: "Latinx and Hispanic mathematicians · US" }
+      - { title: "SACNAS", url: "https://www.sacnas.org", note: "Chicano/Hispanic and Native American people in all of STEM · US" }
+      - { title: "500 Women Scientists", url: "https://500womenscientists.org", note: "women and gender minorities in science and medicine · international" }
+      - { title: "oSTEM", url: "https://ostem.org", note: "LGBTQ+ people in STEM: chapters, conference · US/UK" }
+      - { title: "Pride in STEM", url: "https://prideinstem.org", note: "LGBTQIA+ people in STEM, small grants · UK/international" }
+  - name: Outsider scientists
+    items:
+      - { title: "arXiv endorsement", url: "https://info.arxiv.org/help/endorsement.html", note: "since Dec 2025, a first math paper needs a personal endorsement from an active arXiv author in your area; an institutional email is no longer enough · worldwide" }
+      - { title: "Ronin Institute", url: "https://ronininstitute.org", note: "a home, an affiliation and colleagues for independent scholars (the 2025 successor of the original) · online" }
+      - { title: "Lean community", url: "https://leanprover-community.github.io", note: "open community formalizing math in Lean; a real way into serious collaboration for self-taught people · online" }
+      - { title: "PREreview", url: "https://prereview.org", note: "free, open reviews of preprints; ask for one or write one · online" }
+      - { title: "JSTOR personal account", url: "https://about.jstor.org/products/jpass/", note: "some free reading, or a paid personal pass, without a university library · online" }
+      - { title: "Library of Congress Reader Card", url: "https://www.loc.gov/rr/readerregistration.html", note: "free card, no affiliation needed; reading rooms and e-journals on site · Washington, DC" }
+  - name: Residencies & schools open to everyone
+    items:
+      - { title: "SFI Complex Systems Summer School", url: "https://www.santafe.edu/engage/learn/programs/sfi-complex-systems-summer-school", note: "weeks in Santa Fe, open to professionals of any discipline as well as academics; partial scholarships · US" }
+      - { title: "American Institute of Mathematics workshops", url: "https://aimath.org", note: "small week-long research workshops; many take open applications, welcoming people from smaller places · US" }
+      - { title: "Astera Residency", url: "https://astera.org/residency/", note: "paid 12–18 months to build open science projects; no PhD required · US" }
+      - { title: "Recurse Center", url: "https://www.recurse.com", note: "free self-directed programming retreat, 6 or 12 weeks · New York or remote" }
+  - name: Money for getting there
+    items:
+      - { title: "Emergent Ventures", url: "https://www.mercatus.org/emergent-ventures", note: "fast grants for individuals with ambitious projects, no affiliation needed · worldwide" }
+      - { title: "Experiment.com", url: "https://experiment.com", note: "crowdfunding for research projects; anyone can start one · online" }
+      - { title: "AWM Travel Grants", url: "https://awm-math.org/awards/travel-grants/", note: "women mathematicians: conference travel or a month with a senior collaborator · US" }
+      - { title: "LMS Caring Supplementary Grants", url: "https://www.lms.ac.uk/women/grants", note: "caring costs while attending research events · UK" }
