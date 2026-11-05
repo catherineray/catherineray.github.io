@@ -11,73 +11,70 @@ tags:
   - geometry
   - dialogue
 format: personal
+card_blurb: "A ten-year-old in the back seat, and why school math is spelling without the stories."
 topics:
   - "Geometry & topology"
   - "Life, study & work"
 ---
 
-A 10 year old girl and her father sat in the back of my car as I drove them home after Thanksgiving.
+After Thanksgiving I drove two strangers home, a ten-year-old girl and her father, which is the sort of thing you do after Thanksgiving. She had folded herself barefoot into the corner of the back seat with her hair over her face, and she told me, a total stranger, the thing girls learn to say about themselves before they learn almost anything else:
 
-During this snippet of the conversation, I felt like I was punched in the chest.
+[![A two-panel comic. Panel one: Rin drives, a cracked heart beside their head. From the back seat: "I'm not good at math." Rin: "What makes you say that?" Panel two: the girl, curled up on the seat: "I don't understand why equations work; and I'm bad at multiplication." Rin: "Do you think about pictures and shapes moving around when you're bored?" Girl: "Yeah..."](/images/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)](/images/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)
 
-[![10814364_10204383402897800_2011252273_n](/images/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)](/images/wp-content/uploads/2014/11/10814364_10204383402897800_2011252273_n.jpg)
+<div class="dialogue" markdown="1">
 
-Do you like literature?
+**Me:** Do you like literature?
 
-Yeah ... all the time when I space out.
+*Her:* I love stories!
 
-Do you like literature?
+**Me:** Do you like spelling?
 
-I love stories!
+*Her:* No, I'm bad at spelling.
 
-Do you like spelling?
+**Me:** What makes you say that?
 
-No, I’m bad at spelling.
+*Her:* I don't understand why letters go next to each other in the order they do.
 
-What makes you say that?
+**Me:** Imagine you were taught spelling, and never shown any stories. Do you think you would like literature?
 
-I don’t understand why letters go next to each other in the order they do.
+*Her:* If I didn't see the stories, how could I like literature?
 
-Imagine that you were taught spelling, and not shown any stories. Do think you would like literature?
+**Me:** What you're learning right now by memorizing: that is to math what spelling is to literature.
 
-If I didn’t see the stories, how could I like literature?
+*Her:* What do you mean?
 
-What you’re learning right now via memorization, that is to math as spelling is to literature.
+**Me:** Do you imagine pictures when you read?
 
-What do you mean?
+*Her:* Yeah, I love stories!
 
-Do you imagine pictures when you read?
+**Me:** Do you like patterns?
 
-Yeah, I love stories!
+*Her:* I like patterns!
 
-Do you like patterns?
+**Me:** Why?
 
-I like patterns!
+*Her:* They're pretty!
 
-Why?
+**Me:** I love patterns too. I spend all of my time imagining pictures and moving shapes, just like you do.
 
-They’re pretty!
+*Her:* I thought you did math.
 
-I love patterns too. I spend all of my time imagining pictures and moving shapes just like you do.
+**Me:** Moving, stretching and building shapes is math. It's called geometry.
 
-I thought you did math.
+Her face lit up like she was seeing color for the first time.
 
-Moving, stretching, and constructing shapes is a form of math. It’s called geometry.
+*Her:* Whoa! Really? I'm learning geometry in class, but we just memorize the formulas for volume.
 
-Whoa! Really? I’m learning geometry in class, but we just memorize the formulas for volume.
+**Me:** Memorizing formulas is spelling practice, not literature.
 
-Memorizing formulas is like spelling practice instead of literature.
+*Her:* Can you be my tutor for real geometry? For four hours every day!
 
-Can you be my tutor for real geometry? For 4 hours everyday!
+*Her dad:* No, sweetie, she's probably very busy.
 
-*Her dad: No, sweetie, she’s probably very busy.*
+**Me:** I can give your dad the names of a few people who could teach you the literature of shapes.
 
-I can give your dad the information of a few people who would be better qualified than me to teach you the literature of shapes.
+</div>
 
-*She falls asleep*
+She fell asleep the way children do, all at once and completely, as if someone had pulled her plug.
 
-I forgot to mention to her (wrt her worry of being bad at multiplication) that two of the greatest mathematicians of all time said they were unable to add without mistakes.
-
-> As for myself, I must confess, I am absolutely incapable even of adding without mistakes. — Jules Henri Poincaré
-> 
-> I’ve always been weak in arithmetic. — Alexander Grothendieck
+I forgot to tell her, about the multiplication, that some of the greatest mathematicians who ever lived couldn't add without making mistakes either.

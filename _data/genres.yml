@@ -28,11 +28,7 @@
   color: "#9b7fd4"
   icon: /images/icons/excerpts.png
   pinned:
-    - job-title-universe-debugger-importance
-    - fuck-perfectionism
     - im-not-good-at-math
-    - caterpillars-life-lesson
-    - the-purpose-of-communicaton-assigning-credit
 - key: art
   name: Art
   url: /art/posts/
