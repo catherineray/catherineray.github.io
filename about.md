@@ -1625,9 +1625,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
     <section>
       <h2 class="sec-head" style="--shadow: var(--peach); --tilt: 2deg;" data-text="TEACHING" id="about-teaching">TEACHING</h2>
-      <p class="stub-line"><span class="status">stub</span> An updated teaching statement is on its way; this is the current one.</p>
       <div class="note" style="--accent: var(--peach);">
-        <p>I came into academia from outside, so I go out of my way to present mathematics in ways that are accessible to everyone. For me it is a visual, interactive, intuitive and artistic experience, and above all a narrative one. I keep learning materials for students of all levels on my <a href="/resources/">resources page</a>. My teaching statement:</p>
+        <p>I came into academia from outside, so I go out of my way to present mathematics in ways that are accessible to everyone. For me it is visual, interactive, intuitive and artistic, and above all a story.</p>
+        <p>I have been a teaching assistant for Northwestern&rsquo;s honors sequence in linear algebra and multivariable calculus, for linear algebra and for discrete mathematics (student evaluations: 5.65 out of 6 for interest in teaching). I mentored undergraduates through the Directed Reading Program and the Chicago REU, taught Math Circles for children on the South Side of Chicago, and designed math workshops for children for Mathe trifft Kunst in M&uuml;nster. I keep learning materials for students of all levels on my <a href="/resources/">resources page</a>. My teaching statement:</p>
       </div>
       <a class="cv cv-art" href="/pdfs/teaching-statement.pdf">READ MY TEACHING STATEMENT →</a>
     </section>
