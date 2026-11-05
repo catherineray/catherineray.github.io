@@ -61,7 +61,11 @@ rail_sections:   # listed in the sidebar under "Resources"
   @media (max-width: 600px) { .rs-feature { grid-template-columns: 1fr; } .rs-feature-pic { border-right: 0; border-bottom: 3px solid var(--ink); } }
   @media (prefers-reduced-motion: reduce) { .rs-feature { transition: none; } }
   .rs-chip { display: inline-block; font: 700 13px 'Space Mono', monospace; padding: 6px 12px; border: 2px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); text-decoration: none; box-shadow: 2px 2px 0 var(--ink); }
-  .rs-chip:hover { background: var(--yellow); }
+  .rs-chip:hover { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--ink); }
+  .rs-human .rs-chip:nth-child(3n+1) { background: #6cc8f0; }
+  .rs-human .rs-chip:nth-child(3n+2) { background: #f07fe0; }
+  .rs-human .rs-chip:nth-child(3n+3) { background: #fbe919; }
+  .rs-human .rs-chip small { color: var(--ink); opacity: .8; }
   .rs-chip small { font-weight: 400; color: var(--soft); }
 
   /* genre section titles: same drawn style as Portfolio/About, with the genre icon */
