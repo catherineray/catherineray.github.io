@@ -2168,7 +2168,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </div>
         <div class="pro-group" style="--accent: var(--peach);">
           <h3>Matter</h3>
-          <p class="gloss">Behaviour inferred from the traces that structure leaves.</p>
+          <p class="gloss">Behavior inferred from the traces that structure leaves.</p>
           <details class="row" id="s-superconductor">
             <summary>
               <h4>Calculating a material into existence<span class="yr">2012 – 2013</span></h4>
@@ -2463,7 +2463,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </details>
           <details class="pro" id="p-usv">
             <summary>
-            <h4><a href="/mouse-vocalizations/">Unsupervised classification of rodent ultrasonic vocalization for continuous preclinical monitoring</a><span class="yr">2013–2014</span></h4>
+            <h4><a href="/mouse-vocalizations/">Unsupervised classification of rodent ultrasonic vocalization for continuous preclinical monitoring</a><span class="yr">2013–2015</span></h4>
             <p class="ptags"><span class="ptag">computational bioacoustics</span><span class="ptag">unsupervised learning</span><span class="ptag">safety pharmacology</span></p>
             </summary>
             <div class="pro-body">
@@ -2548,7 +2548,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         </div>
         <div class="pro-group" style="--accent: var(--peach);" id="lab-physical">
           <h3>Matter</h3>
-          <p class="gloss">Behaviour inferred from the traces that structure leaves.</p>
+          <p class="gloss">Behavior inferred from the traces that structure leaves.</p>
           <details class="pro" id="p-superconductor">
             <summary>
             <h4><a href="https://rin.io/computational-materials-science/">Electronic-structure prediction of superconducting transition temperature</a><span class="yr">2012–2013</span></h4>
