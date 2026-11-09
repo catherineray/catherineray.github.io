@@ -266,6 +266,10 @@ a polynomial of degree $$n + 2$$ whose coefficients are polynomial in the parame
 
 </details>
 
+## 7 · Why it matters
+
+Drug trials for these conditions enroll by diagnosis, so a drug that works for people whose gain is stuck gets diluted by everyone else. If the fault can be measured, a trial could enroll by mechanism instead and test one drug once against the shared fault, rather than five times against five names. That would make trials small enough to fund publicly for cheap, off-patent drugs like [memantine](/memantine/).
+
 If you run one of these tests and could add a second on the same people, or already have a cohort where two or more were run together, or you work on identifiability for models like this, I would like to hear from you: comment below or email me. I'm also on the job market this year.
 
 <aside class="sources">
