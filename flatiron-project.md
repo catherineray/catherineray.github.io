@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "One Fault, Many Phenotypes: the Project"
+title: "Interactive Research Statement"
 permalink: /flatiron/project/
 sitemap: false
 noindex: true
