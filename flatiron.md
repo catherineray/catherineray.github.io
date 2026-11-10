@@ -27,9 +27,12 @@ comments: false
   .fl-help th { font-family: 'Space Mono', monospace; font-size: .8em; text-transform: uppercase; letter-spacing: .05em; }
   .fl-help td:first-child { white-space: nowrap; font-weight: 600; }
   @media (max-width: 640px) { .fl-help td:first-child { white-space: normal; } }
+  .fl-note { border-left: 4px solid #1b1b1b; padding: 4px 0 4px 14px; margin: 10px 0 22px; }
 </style>
 
 Thank you for writing for me. Everything for my Flatiron application is here, with Lawrence Saul as proposed mentor.
+
+<p class="fl-note">In case it's useful: Flatiron asks letters to speak to original research, independence, working across fields, and communication. One piece of context you may not know: my postdoc includes a one-year extension, approved by the DFG, for a career interruption.</p>
 
 <div class="fl-btns">
   <a class="fl-btn" style="background:#ee5fd4" href="/pdfs/RinRay-CV-Science.pdf"><b>1 · Science CV</b><span>PDF, four pages</span></a>
