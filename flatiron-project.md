@@ -71,8 +71,10 @@ comments: false
   .fm-part > summary { list-style: none; cursor: pointer; background: var(--neon); padding: 12px 16px; line-height: 1.5; }
   .fm-part > summary::-webkit-details-marker { display: none; }
   .fm-part > summary .pill { display: inline-block; font: 400 12px 'Archivo Black', sans-serif; text-transform: uppercase; border: 2px solid #1b1b1b; border-radius: 999px; padding: 1px 10px; margin-right: 4px; background: #fff; }
-  .fm-part > summary .more::after { content: "＋ the math"; display: block; font: 700 11px 'Space Mono', monospace; text-transform: uppercase; letter-spacing: .06em; margin-top: 6px; }
-  .fm-part[open] > summary .more::after { content: "− close"; }
+  .fm-part > summary .more { display: block; margin-top: 10px; }
+  .fm-part > summary .more::after { content: "▸ Open: details, figures and the math"; display: inline-block; font: 700 12px 'Space Mono', monospace; text-transform: uppercase; letter-spacing: .05em; background: #1b1b1b; color: #fff; border-radius: 999px; padding: 5px 14px; box-shadow: 3px 3px 0 #fff; }
+  .fm-part[open] > summary .more::after { content: "▾ Close"; background: #fff; color: #1b1b1b; box-shadow: none; outline: 2px solid #1b1b1b; }
+  .fm-part > summary:hover .more::after { transform: translateY(-1px); }
   .fm-part > summary:hover { filter: brightness(1.04); }
   .fm-part-body { padding: 6px 20px 8px; border-top: 3px solid #1b1b1b; }
   .fm-part-body p, .fm-part-body li { line-height: 1.55; }
@@ -140,7 +142,7 @@ comments: false
   </g>
 </svg>
 <div class="fm-plain">
-<p>The proposed project has four main parts. Tap one to open its math.</p>
+<p>The proposed project has four main parts. Each one opens: press <b>▸ Open</b> on a part to see its details, figures and the math behind it.</p>
 <details class="fm-part" style="--neon:#fbe919;--pastel:#fff6b0">
 <summary><span class="pill">Measure</span> <b>Re-analyze data that already exists.</b> Studies have already given people the same stimulus many times in a row and recorded every response. From those recordings I estimate, for each person and each test, how much their response <i>fails to fade</i>, with an error bar. The current score (the change between two blocks of trials) is too crude to settle the question; a slope fitted to every trial is not. <span class="more"></span></summary>
 <div class="fm-part-body">
