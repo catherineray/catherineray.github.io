@@ -32,8 +32,6 @@ comments: false
 
 Thank you for writing for me. Everything for my Flatiron application is here, with Lawrence Saul as proposed mentor.
 
-<p class="fl-note">In case it's useful: Flatiron asks letters to speak to original research, independence, working across fields, and communication. One piece of context you may not know: my postdoc includes a one-year extension, approved by the DFG, for a career interruption.</p>
-
 <div class="fl-btns">
   <a class="fl-btn" style="background:#ee5fd4" href="/pdfs/RinRay-CV-Science.pdf"><b>1 · Science CV</b><span>PDF, four pages</span></a>
   <div class="fl-pair">
