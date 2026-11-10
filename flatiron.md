@@ -33,10 +33,7 @@ Thank you for writing for me. Everything for my Flatiron application is here, wi
 
 <div class="fl-btns">
   <a class="fl-btn" style="background:#ee5fd4" href="/pdfs/RinRay-CV-Science.pdf"><b>1 · Science CV</b><span>PDF, four pages</span></a>
-  <div class="fl-pair">
-    <a class="fl-btn" style="background:#b9a3ef" href="/flatiron/project/"><b>2 · The project</b><span>the two questions, the model, the math with Lawrence Saul's group, and the potential broader impact</span></a>
-    <a class="fl-btn" style="background:#ffa86b" href="/one-fault-many-names/"><b>…and the blog post</b><span><i>One Fault, Many Names</i>, the science in plain words</span></a>
-  </div>
+  <a class="fl-btn" style="background:#b9a3ef" href="/flatiron/project/"><b>2 · The project</b><span>the two questions, the model, the math with Lawrence Saul's group, and the potential broader impact</span></a>
   <div class="fl-btn static" style="background:#fbe919"><b>3 · Research statement</b><span>attached to my email (draft)</span></div>
   <a class="fl-btn" style="background:#7fd8e8" href="/about/#about-lab"><b>4 · What I've done</b><span>the Lab, on my About page</span></a>
   <a class="fl-btn" style="background:#9be38a" href="/pdfs/teaching-statement.pdf"><b>5 · Teaching and community</b><span>my teaching statement, PDF</span></a>
