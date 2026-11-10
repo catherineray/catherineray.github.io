@@ -38,7 +38,7 @@ Thank you for writing for me. Everything for my Flatiron application is here, wi
   <a class="fl-btn" style="background:#ee5fd4" href="/pdfs/RinRay-CV-Science.pdf"><b>1 · Science CV</b><span>PDF, four pages</span></a>
   <div class="fl-pair">
     <a class="fl-btn" style="background:#b9a3ef" href="/flatiron/project/"><b>2 · Interactive research statement</b><span>the two questions, the model, the math with Lawrence Saul's group, and the potential broader impact</span></a>
-    <a class="fl-btn" style="background:#ffa86b" href="/pdfs/RinRay-CV-Math.pdf"><b>…and my mathematics</b><span>the same shape as this project: one hidden object, seen only through partial views, made computable by finding the right model</span></a>
+    <a class="fl-btn" style="background:#ffa86b" href="/flatiron/mathematics/"><b>…and my mathematics</b><span>the same shape as this project: one hidden object, seen only through partial views, made computable by finding the right model</span></a>
   </div>
   <div class="fl-btn static" style="background:#fbe919"><b>3 · Research statement</b><span>the formal PDF, to follow this week</span></div>
   <a class="fl-btn" style="background:#7fd8e8" href="/about/#about-lab"><b>4 · What I've done</b><span>the Lab, on my About page</span></a>
