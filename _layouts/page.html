@@ -10,7 +10,7 @@ layout: default
     {{ content }}
   </div>
 
-  {% include giscus.html %}
+  {% unless page.comments == false %}{% include giscus.html %}{% endunless %}
 
   {% include archived-comments.html %}
 </article>

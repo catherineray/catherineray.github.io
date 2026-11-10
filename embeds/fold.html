@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tipping point</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+:root{ --panel:rgba(255,255,255,.55); --ink:#1b1b1b; --muted:#4a3a63; --line:rgba(74,58,99,.22); --pink:#d12d88; --blue:#2a7fb8; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; }
+*{box-sizing:border-box}
+html,body{margin:0;background:transparent}
+body{padding:2px;color:var(--ink);font-family:var(--mono)}
+.wrap{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color-scheme:light}
+.row{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
+.row>*{min-width:0}
+.fig{flex:1 1 320px}
+.side{flex:1 1 220px;display:flex;flex-direction:column;gap:10px;font-size:.8rem;line-height:1.45}
+svg{display:block;width:100%;height:auto}
+label{display:block;font-size:.76rem;color:var(--muted);margin-bottom:4px}
+input[type=range]{width:100%;accent-color:var(--pink)}
+.state{font-weight:600}
+.note{border-left:3px solid var(--pink);padding-left:10px}
+button{font-family:var(--mono);font-size:.75rem;border:2px solid var(--ink);border-radius:999px;background:#fff;padding:3px 10px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="row">
+  <div class="fig">
+    <svg id="curve" viewBox="0 0 420 260" role="img" aria-label="Settled response against resting gain, with a ball following the normal or stuck branch"></svg>
+    <svg id="series" viewBox="0 0 420 90" role="img" aria-label="Repeated measurements of the response over time"></svg>
+  </div>
+  <div class="side">
+    <div>
+      <label for="g">Resting gain g₀ (set by the gut, raised by stress): <b id="gv"></b></label>
+      <input id="g" type="range" min="0" max="1.4" step="0.005" value="0.1">
+    </div>
+    <div>State: <span class="state" id="st"></span></div>
+    <div class="note" id="msg"></div>
+    <div><button id="reset" type="button">reset</button></div>
+    <div style="color:var(--muted)">Slide right slowly, then back left. The system jumps up at one fold and only comes down at the other. Watch the measurements below get noisier and stickier just before the jump: the early warning.</div>
+  </div>
+</div>
+</div>
+<script>
+(function(){
+  // the model's settled states: positive roots of P(x) = (x + 0.1x^2 - g0)(16 + x^4) - 4x^4
+  function P(x,g){ return (x+0.1*x*x-g)*(16+Math.pow(x,4))-4*Math.pow(x,4); }
+  function dP(x,g){ var h=1e-4; return (P(x+h,g)-P(x-h,g))/(2*h); }
+  function roots(g){ var r=[],a=0.001,fa=P(a,g); for(var x=0.011;x<20;x+=0.01){ var fb=P(x,g); if(fa*fb<0){ var lo=x-0.01,hi=x; for(var i=0;i<40;i++){ var m=(lo+hi)/2; if(P(lo,g)*P(m,g)<=0) hi=m; else lo=m; } r.push((lo+hi)/2); } fa=fb; } return r; }
+  var G0=0, G1=1.4, X0=0, X1=6;
+  var W=420,H=260,L=44,R=12,T=12,B=34;
+  function sx(g){ return L+(g-G0)/(G1-G0)*(W-L-R); }
+  function sy(x){ return H-B-(x-X0)/(X1-X0)*(H-T-B); }
+  var NS='http://www.w3.org/2000/svg', svg=document.getElementById('curve');
+  function el(t,a){ var e=document.createElementNS(NS,t); for(var k in a) e.setAttribute(k,a[k]); svg.appendChild(e); return e; }
+  // axes
+  el('line',{x1:L,y1:H-B,x2:W-R,y2:H-B,stroke:'#1b1b1b','stroke-width':1.5});
+  el('line',{x1:L,y1:H-B,x2:L,y2:T,stroke:'#1b1b1b','stroke-width':1.5});
+  var t=el('text',{x:(L+W-R)/2,y:H-8,'text-anchor':'middle','font-size':11}); t.textContent='resting gain g₀';
+  t=el('text',{x:12,y:(T+H-B)/2,'text-anchor':'middle','font-size':11,transform:'rotate(-90 12 '+((T+H-B)/2)+')'}); t.textContent='settled response';
+  // branches
+  var low=[],mid=[],high=[];
+  for(var g=G0; g<=G1+1e-9; g+=0.005){ var r=roots(g);
+    if(r.length===1){ (r[0]<2?low:high).push([g,r[0]]); }
+    else if(r.length===3){ low.push([g,r[0]]); mid.push([g,r[1]]); high.push([g,r[2]]); } }
+  function path(pts,attrs){ if(!pts.length) return; var d='M'+pts.map(function(p){return sx(p[0]).toFixed(1)+' '+sy(p[1]).toFixed(1);}).join(' L'); attrs.d=d; attrs.fill='none'; el('path',attrs); }
+  high.sort(function(a,b){return a[0]-b[0];});
+  path(low,{stroke:'#2a7fb8','stroke-width':4}); path(mid,{stroke:'#1b1b1b','stroke-width':2,'stroke-dasharray':'6 5'}); path(high,{stroke:'#d12d88','stroke-width':4});
+  var fl=mid.length?mid[0][0]:0.28, fh=mid.length?mid[mid.length-1][0]:0.88;
+  [fl,fh].forEach(function(f){ el('line',{x1:sx(f),y1:T,x2:sx(f),y2:H-B,stroke:'rgba(74,58,99,.35)','stroke-dasharray':'3 4'}); });
+  t=el('text',{x:sx(fh)+4,y:T+12,'font-size':10}); t.textContent='fold: flare starts';
+  t=el('text',{x:sx(fl)+4,y:T+26,'font-size':10}); t.textContent='fold: recovery';
+  var ball=el('circle',{r:7,fill:'#fff',stroke:'#1b1b1b','stroke-width':3});
+  // series
+  var ser=document.getElementById('series'); function sel(t,a){ var e=document.createElementNS(NS,t); for(var k in a) e.setAttribute(k,a[k]); ser.appendChild(e); return e; }
+  sel('line',{x1:44,y1:80,x2:408,y2:80,stroke:'rgba(74,58,99,.35)'});
+  var st=sel('text',{x:44,y:12,'font-size':10}); st.textContent='repeated measurements over time';
+  var line=sel('polyline',{fill:'none',stroke:'#1b1b1b','stroke-width':1.5});
+  var slider=document.getElementById('g'), branch='low', hist=[], noise=0;
+  function settle(g){ var r=roots(g); if(r.length===1){ branch = r[0]<2?'low':'high'; return r[0]; } return branch==='low'?r[0]:r[2]; }
+  function draw(){
+    var g=parseFloat(slider.value), x=settle(g);
+    document.getElementById('gv').textContent=g.toFixed(2);
+    ball.setAttribute('cx',sx(g)); ball.setAttribute('cy',sy(x)); ball.setAttribute('fill', branch==='low'?'#2a7fb8':'#d12d88');
+    document.getElementById('st').textContent = branch==='low' ? 'normal: habituates' : 'stuck high: the fault';
+    document.getElementById('st').style.color = branch==='low' ? '#2a7fb8' : '#d12d88';
+    var bi = roots(g).length===3;
+    document.getElementById('msg').textContent = !bi ? (branch==='low' ? 'Only one state exists here: the system always recovers.' : 'Only one state exists here: the response stays high.')
+      : (branch==='low' ? 'Two stable states exist. You are on the normal one; push further right and it disappears.' : 'Two stable states exist. You are stuck high: lowering the gain a little is not enough to come back down.');
+    return {x:x,slope:Math.abs(dP(x,g))};
+  }
+  var seed=3; function rnd(){ seed=(seed*16807)%2147483647; return seed/2147483647-0.5; }
+  function tick(){
+    var s=draw();
+    var rate=Math.min(0.97, 1-Math.min(1,s.slope/60)*0.9); // recovery slows near a fold
+    noise = rate*noise + rnd()*0.5;
+    hist.push(s.x+noise); if(hist.length>120) hist.shift();
+    line.setAttribute('points', hist.map(function(v,i){ return (44+i*3).toFixed(1)+','+(78-Math.max(0,Math.min(1,v/X1))*62).toFixed(1); }).join(' '));
+  }
+  slider.addEventListener('input',draw);
+  document.getElementById('reset').addEventListener('click',function(){ slider.value=0.1; branch='low'; hist=[]; noise=0; draw(); });
+  draw(); setInterval(tick,90);
+})();
+</script>
+</body>
+</html>
