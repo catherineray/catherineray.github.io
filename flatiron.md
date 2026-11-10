@@ -55,7 +55,10 @@ Lawrence suggested a joint application. A joint application is two separate appl
 - **CCB**: due **30 November** (recommended). Research statement up to 3 pages, including synergies with CCB; a cover letter summarizing my most significant contributions in graduate school; two letters.
 - **CCN**: rolling. Research statement up to 3 pages, including relevance to CCN; a cover letter naming the research group(s); at least two letters.
 
-The biology has two sides. The genetic side asks whether the shared latent state carries the association with autism genetic risk in SPARK and SSC, more than the domain-specific factors do; it builds on work from CCB's Genomics group, led by Olga Troyanskaya. The mechanistic side asks what makes the hypersensitive state persist, a question about adaptation dynamics, closer to CCB's Statistical Biophysics group or to CCN.
+The biology has two sides, and each points to a different partner center:
+
+- **The genetic side: does the shared state carry the genetic risk?** In SPARK and the Simons Simplex Collection, autism cohorts with genomes, the test is whether the shared latent state accounts for more of the association with autism genetic risk than the condition-specific factors do. This builds on work from CCB's Genomics group, led by Olga Troyanskaya.
+- **The mechanistic side: why does the state persist?** What keeps the nervous system's gain stuck high after the trigger is gone: a question about adaptation dynamics (the Explain part of the interactive research statement), closest to CCB's Statistical Biophysics group or to CCN.
 
 <details class="fl-ccm" markdown="1">
 <summary><b>What CCM is looking for</b></summary>
