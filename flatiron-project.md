@@ -89,7 +89,7 @@ comments: false
   .fm-mathline { background: rgba(255,255,255,.7); border: 2px dashed #1b1b1b; border-radius: 10px; padding: 8px 12px; margin: 10px 0 12px; }
 </style>
 
-<p class="fm-lead">Chronic pain, irritable bowel syndrome, autoimmune disease, anxiety disorders and sensory over-responsivity are comorbid far beyond chance, yet each is diagnosed and treated as a separate condition. My hypothesis is <b>one latent mechanism with many phenotypes</b>: a deficit in habituation, the nervous system’s failure to attenuate its response to a repeated stimulus. The project builds a latent-variable model of this comorbidity around two questions:</p>
+<p class="fm-lead">Chronic pain, irritable bowel syndrome, autoimmune disease, anxiety disorders and sensory over-responsivity are comorbid far beyond chance, yet each is diagnosed and treated as a separate condition. The hypothesis, which Luca Estinto and I developed together in our essay <a href="/biome/">Biome of Overstimulation</a>, is <b>one latent mechanism with many phenotypes</b>: a deficit in habituation, the nervous system’s failure to attenuate its response to a repeated stimulus. The project builds a latent-variable model of this comorbidity around two questions:</p>
 
 <ol class="fm-qlist">
   <li><span class="qn" style="background:#ee5fd4">1</span>Is there a single shared latent state, rather than several independent mechanisms?</li>
