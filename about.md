@@ -8,7 +8,7 @@ rail_highlights: true   # show the genre highlights in the sidebar here
 rail_sections:   # listed in the sidebar under "About Rin"
   - { id: about-path, label: "THE PATH", color: "#6cc8f0" }
   - { id: about-lab, label: "THE LAB", color: "#ec3f9e" }   # color matches its section title
-  - { id: about-published, label: "THE PROOFS", color: "#9b7fd4" }   # the research part: Publications & Preprints, In progress, Expository
+  - { id: math, label: "THE PROOFS", color: "#9b7fd4" }   # the research part: Publications & Preprints, In progress, Expository
   - { id: about-teaching, label: "TEACHING", color: "#f4a58a" }
   - { id: about-studio, label: "THE STUDIO", color: "#fffdf7" }
   - { id: about-contact, label: "CONTACT", color: "#f9a13c" }
@@ -923,7 +923,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
   /* jump row over THE PATH; its targets stop a little short of the top */
   .jump-top { margin: 0 0 2rem; }
-  .pro-group, .pro, .paper, #about-published { scroll-margin-top: 1.5rem; }
+  .pro-group, .pro, .paper, #math { scroll-margin-top: 1.5rem; }
 
   /* the lab: the project lists sit open under the summary */
   #before-math .narrative, #before-math .professional { margin-top: calc(1.9rem + 8px); }
@@ -1027,6 +1027,18 @@ rail_sections:   # listed in the sidebar under "About Rin"
   #main .pub .seq a { color: var(--ink); text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
   .part { display: inline-block; margin-right: .5em; padding: .08em .55em; background: var(--ink); color: var(--paper); border-radius: 4px; font-family: var(--mono); font-size: .62rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
   .status.st-forthcoming { margin-left: 0; background: var(--pink); border: 2px solid var(--ink); }
+  .status.st-manuscript { background: var(--orange); border: 2px solid var(--ink); }
+  .status.st-in-prep { background: var(--lilac); border: 2px solid var(--ink); }
+  .status.st-conjecture { background: var(--cream); border: 2px solid var(--ink); }
+  .status.st-early { background: var(--paper); border: 2px dashed var(--ink); }
+  .status.st-note { background: var(--paper); border: 2px dotted var(--ink); }
+  .status.st-hold { background: var(--paper); border: 2px dashed var(--ink-soft); color: var(--ink-soft); }
+  .stagekey-box { margin-bottom: 2rem; }
+  .stagekey-box .mlabel { margin-top: 0; }
+  ul.stagekey { list-style: none; margin: 0; padding: 0; font-size: .82rem; line-height: 1.5; }
+  ul.stagekey li { margin: .45em 0; }
+  ul.stagekey .status { display: inline-block; min-width: 11.5em; margin: 0 .6em 0 0; text-align: center; }
+  .mgroup .gloss + .gloss { margin-top: -.4em; font-style: italic; }
   .thesis-block { margin: 0 0 .4rem; padding: 0 0 1.4rem; border-bottom: 2px dashed rgba(27,27,27,.28); }
   .thesis-block .mlabel { margin-top: .4rem; }
   .thesis-block .pubs { margin-top: 1rem; }
@@ -1103,7 +1115,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <p class="jump jump-top">
       <span>Here for…</span>
       <a class="chip" href="#about-lab" data-read="pedantic">the science ↓</a>
-      <a class="chip" href="#about-published">the math ↓</a>
+      <a class="chip" href="#math">the math ↓</a>
       <a class="chip" href="#about-studio">the art ↓</a>
     </p>
 
@@ -1326,8 +1338,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
               clearer picture of what a compound does before it goes anywhere near a person.
             </p>
             <p class="meta">
-              Computational
-              bioacoustics at Vium — unsupervised classification of ultrasonic vocalizations
+              Bioacoustics Engineer at Vium — unsupervised classification of ultrasonic vocalizations
               in quasi-real time, which is also how I dipped my toes into audio processing. This was early: several years before MUPET and DeepSqueak made
               unsupervised clustering the standard way to do this, and as far as I know the first
               to run it in quasi-real time on cages being monitored continuously rather than on a
@@ -2172,45 +2183,59 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- publications -->
 
     <section id="research">
-      <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="about-published">THE PROOFS</h2>
+      <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="math">THE PROOFS</h2>
       <div class="note math-intro" style="--accent: var(--violet);">
           <p>
-            <strong class="tldr-lead">In math I build instruments for overhearing too.</strong> Homotopy theory and arithmetic keep arriving at the same numbers by different roads. I’m learning the language they share, the one that explains why the roads meet.
+            <strong class="tldr-lead">Two computations that agree, in fields that do not talk to each other, are often two shadows of one object.</strong> My program takes the arithmetic of number fields and function fields (zeta functions, automorphic spectra, special values, all of which live at chromatic height one) and asks what it is a shadow of at every height. The work is to find the object, name the light, and see what else it casts.
           </p>
           <ul>
-            <li><strong><a href="#m-scatter">Scattering</a>:</strong> On a curve over a finite field, Eisenstein series behave like quantum particles bouncing off a wall. I’m showing that the measure telling you how they bounce is secretly an index on the other side of the Langlands mirror, a trace of Frobenius in disguise.</li>
-            <li><strong><a href="#m-echo">Echoes</a>:</strong> I hunt for numbers that show up on both sides, like Bernoulli denominators in homotopy groups or special values of <i>L</i>-functions as orders of finite groups, and I ask what makes them agree.</li>
-            <li><strong><a href="#m-sym">Symmetry you can touch</a>:</strong> I build curves whose symmetries model the hidden Lubin–Tate action, so that impossible group actions become things you can draw.</li>
+            <li><strong><a href="#m-scatter">Scattering</a></strong> <em>(function fields)</em>: On a curve over a finite field, Eisenstein series behave like particles bouncing off a wall. Kazhdan and Okounkov showed that the measure of how they bounce is an index on the other side of the Langlands mirror. I’m working on why: what that formula is one level up, and what it becomes at every height.</li>
+            <li><strong><a href="#m-echo">Echoes</a></strong> <em>(number fields)</em>: Special values of zeta functions count homotopy groups, a zeta function at height <i>h</i> has a functional equation that is a duality on a category, and the number 691 appears both in exotic 23-spheres and in the <i>K</i>-theory of the integers. I ask what makes the two sides agree.</li>
+            <li><strong><a href="#m-sym">Symmetry you can touch</a></strong> <em>(where the two meet)</em>: A symmetry coming from a division algebra over the <i>p</i>-adic numbers turns out to be the symmetry of a curve in characteristic <i>p</i>, so a hidden group action becomes something you can draw.</li>
+          </ul>
+          <p>All three point to one theorem: <strong>the Eisenstein spectrum at every height.</strong></p>
+      </div>
+      <div class="note stagekey-box" style="--accent: var(--cyan);">
+          <p class="mlabel">How far along each project is</p>
+          <ul class="stagekey">
+            <li><span class="status st-published">published</span> in a journal</li>
+            <li><span class="status st-submitted">submitted</span> under review at a journal</li>
+            <li><span class="status st-preprint">preprint</span> public, not yet submitted</li>
+            <li><span class="status st-manuscript">manuscript</span> full draft written, not yet public</li>
+            <li><span class="status st-in-prep">in preparation</span> main theorems proved, being written up</li>
+            <li><span class="status st-conjecture">conjecture, checked</span> computations done, no proof yet</li>
+            <li><span class="status st-early">early stage</span> started, nothing to share yet</li>
+            <li><span class="status st-note">note</span> a short write-up, not a paper</li>
+            <li><span class="status st-hold">on hold</span> paused</li>
           </ul>
       </div>
-
       <div class="dial msort">
         <button type="button" data-sort="thread" aria-pressed="true">sorted by theme</button>
         <button type="button" data-sort="date">sorted chronologically</button>
-        <button type="button" data-sort="status">papers, then work in progress</button>
+        <button type="button" data-sort="status">sorted by stage</button>
       </div>
       <div class="mflat" hidden></div>
 
       <div class="mgroup" id="m-scatter" style="--accent: var(--pink);">
         <h3>Scattering <span class="yr now">current</span></h3>
-        <p class="gloss">The spectral measure of Eisenstein series is an index on the other side of the Langlands mirror.</p>
+        <p class="gloss">Why the spectral measure of Eisenstein series is an index on the other side of the Langlands mirror, and what it becomes at every height.</p>
       <div class="pubs">
-        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--pink);">
+        <details class="pub" data-key="999999" data-st="manuscript" style="--accent: var(--pink);">
           <summary>
           <h4>The Unramified Eisenstein Spectrum as a Categorical Trace</h4>
-          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="pub-line"><span class="status st-manuscript">manuscript, 45 pp.</span></p>
           <p class="ptags"><span class="ptag">Eisenstein series</span><span class="ptag">Plancherel measure</span><span class="ptag">categorical traces</span></p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">On a curve over a finite field, Eisenstein series behave like particles scattering off a wall. The measure that normalizes them is an index on the Langlands dual side, a genus built from the curve’s zeta function and pushed forward along the Steinberg stack. I’m showing that this formula, Langlands’ constant term formula and the spectral decomposition are traces of Frobenius of one Morita context.</p>
+          <p class="pitch">On a curve over a finite field, Eisenstein series behave like particles scattering off a wall. Kazhdan and Okounkov showed that the measure that normalizes them is an index on the Langlands dual side, a genus built from the curve’s zeta function and pushed forward along the Steinberg stack. I conjecture that this formula, Langlands’ constant term formula and the spectral decomposition are three readings of one trace of Frobenius on a Morita context, ask what the formula becomes at every chromatic height, and read the volumes of the space of bundles as orders of <i>K</i>-groups of finite fields.</p>
           <p class="who">working manuscript, 45 pp.</p>
           </div>
         </details>
 
-        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--pink);">
+        <details class="pub" data-key="999999" data-st="on hold" style="--accent: var(--pink);">
           <summary>
           <h4><i>L</i>-genera and Localizations in <i>K</i>-theory</h4>
-          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="pub-line"><span class="status st-hold">on hold</span></p>
           <p class="ptags"><span class="ptag">genera</span><span class="ptag">equivariant localization</span><span class="ptag">theta characteristics</span></p>
           <p class="who">joint with Daniel Berwick-Evans and Natalia Pacheco-Tallaj</p>
           </summary>
@@ -2225,11 +2250,12 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <div class="mgroup" id="m-echo" style="--accent: var(--orange);">
         <h3>Echoes <span class="yr now">current</span></h3>
         <p class="gloss">The same numbers, computed twice: once by homotopy theory, once by arithmetic.</p>
+        <p class="gloss">This supplies the height-<i>h</i> <i>L</i>-function that Scattering needs.</p>
       <div class="pubs">
-        <details class="pub" data-key="9999999" data-st="forthcoming" style="--accent: var(--orange);">
+        <details class="pub" data-key="999999" data-st="in preparation" style="--accent: var(--orange);">
           <summary>
           <h4>Syntomic Cohomology of Ring Spectra and a \(T(h)\)-local Zeta Function</h4>
-          <p class="pub-line"><span class="status st-forthcoming">forthcoming</span></p>
+          <p class="pub-line"><span class="status st-in-prep">in preparation</span></p>
           <p class="ptags"><span class="ptag">zeta functions</span><span class="ptag">syntomic cohomology</span><span class="ptag">higher local fields</span></p>
           <p class="who">joint with Gabe Angelini-Knoll</p>
           </summary>
@@ -2238,24 +2264,24 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
-        <details class="pub" data-key="9999999" data-st="forthcoming" style="--accent: var(--orange);">
+        <details class="pub" data-key="999999" data-st="conjecture" style="--accent: var(--orange);">
           <summary>
           <h4><i>L</i>-functions and the Relative Image of <i>J</i> in Moore Spectra</h4>
-          <p class="pub-line"><span class="status st-forthcoming">forthcoming</span></p>
+          <p class="pub-line"><span class="status st-conjecture">conjecture, checked</span></p>
           <p class="ptags"><span class="ptag">Moore spectra</span><span class="ptag">relative image of <i>J</i></span><span class="ptag">Dedekind zeta functions</span></p>
           </summary>
           <div class="pub-body">
           <p class="pitch">Adams showed that the denominators of \(\zeta(1-n)\) count the image of <i>J</i>. For the mod \(p^k\) Moore spectrum the naive analogue is false once \(k\ge2\). I conjecture that its homotopy is glued from the two relative pieces of the extension \(F_k/\mathbb Q\), the cofibers of the unit and of the transfer, so that \(|\pi_{2n}(L_{K(1)}\mathbb S/p^k)|\) is the gcd of the denominators of \(\zeta_{\mathbb Q}(1-n)\) and of \((\zeta_{F_k}/\zeta_{\mathbb Q})(1-n)\). This recovers Salch’s theorem at \(k=1\).</p>
-          <p class="who">checked numerically for \(p = 3, 5\) and \(k \le 3\) from generalized Bernoulli numbers</p>
+          <p class="who">checked numerically for \(p = 3, 5, 7\) and \(k \le 3\) from generalized Bernoulli numbers</p>
           </div>
         </details>
 
       </div>
       <div class="pubs">
-        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--orange);">
+        <details class="pub" data-key="999999" data-st="early" style="--accent: var(--orange);">
           <summary>
           <h4>Toward Categorifying Symplectic <i>L</i>-functions and Reidemeister Torsion</h4>
-          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="pub-line"><span class="status st-early">early stage</span></p>
           <p class="ptags"><span class="ptag">symplectic <i>L</i>-functions</span><span class="ptag"><i>L</i>-theory</span><span class="ptag">Reidemeister torsion</span></p>
           <p class="who">joint with A. Petrov and M. Volpe</p>
           </summary>
@@ -2264,10 +2290,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
-        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--orange);">
+        <details class="pub" data-key="999999" data-st="early" style="--accent: var(--orange);">
           <summary>
           <h4>All Bernoulli Numbers in Homotopy Theory Are Shifts</h4>
-          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
+          <p class="pub-line"><span class="status st-early">early stage</span></p>
           <p class="ptags"><span class="ptag">Bernoulli numbers</span><span class="ptag">image of <i>J</i></span><span class="ptag">algebraic <i>K</i>-theory</span></p>
           <p class="who">joint with Andres Mejia and Noah Riggenbach</p>
           </summary>
@@ -2282,7 +2308,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
       <div class="mgroup" id="m-sym" style="--accent: var(--cyan);">
         <h3>Symmetry you can touch</h3>
-        <p class="gloss">Curves, Jacobians and periods built toward the group action Lubin–Tate space hides.</p>
+        <p class="gloss">Curves whose symmetries make the hidden Lubin–Tate action explicit.</p>
+        <p class="gloss">This builds the coefficient theories the other two run on.</p>
         <div class="thesis-block">
         <p class="mlabel">My thesis, in three parts</p>
       <div class="note note-quiet" style="--accent: var(--cyan);">
@@ -2309,7 +2336,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <summary>
           <h4><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a></h4>
           <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="status st-submitted">submitted: <i>Expositiones Mathematicae</i></span></p>
-          <p class="ptags"><span class="ptag">group actions on stacks</span><span class="ptag">two-tower method</span><span class="ptag">Lubin–Tate action</span></p>
+          <p class="ptags"><span class="ptag">group actions on stacks</span><span class="ptag">two-tower method</span><span class="ptag">Lubin–Tate action</span><span class="ptag">research paper with expository aims</span></p>
           </summary>
           <div class="pub-body">
           <p class="pitch">The groundwork for the thesis: before you can compute with a symmetry you cannot see directly, you need a way to make it visible.</p>
@@ -2334,14 +2361,14 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
-        <details class="pub" data-key="9999999" data-st="forthcoming" style="--accent: var(--cyan);">
+        <details class="pub" data-key="999999" data-st="manuscript" style="--accent: var(--cyan);">
           <summary>
-          <h4>Writhing Jewels: The Lubin–Tate Action at \(h = p^{k-1}(p-1)\)</h4>
-          <p class="pub-line"><span class="part">Part III</span><span class="status st-forthcoming">forthcoming</span></p>
+          <h4>Only the Gauge Grows: The Lubin–Tate Action at Height \(p^{k-1}(p-1)\) via Surgeries on Curves</h4>
+          <p class="pub-line"><span class="part">Part III</span><span class="status st-manuscript">manuscript, 33 pp.</span></p>
           <p class="ptags"><span class="ptag">Schiffer stacks</span><span class="ptag">crystals</span><span class="ptag">Cartier operator</span></p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">One height up, at \(h = p^{k-1}(p-1)\), no tower of curves models Lubin–Tate space, and I prove that none can. What works instead is a smooth stack of surgeries on the crystal of a single curve, made at the orbit of its branch points, whose tangent space is the Lubin–Tate tangent.</p>
+          <p class="pitch">One height up, at \(h = p^{k-1}(p-1)\), no tower of curves models Lubin–Tate space, and I prove that none can. What works instead is a smooth stack of Beauville–Laszlo surgeries on the curve, made at the free orbit of its branch points, whose tangent space is the Lubin–Tate tangent.</p>
           <p class="who">working manuscript, 33 pp.</p>
           </div>
         </details>
@@ -2357,7 +2384,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="who">joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou</p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">Homotopy theory breaks the sphere into layers, one for each height, and Hopkins predicted how neighbouring layers fit back together. We confirm that prediction for neighbouring layers at every height, using geometry rather than brute-force computation.</p>
+          <p class="pitch">Homotopy theory breaks the sphere into layers, one for each height, and Hopkins predicted how neighbouring layers fit back together. We confirm that prediction for neighbouring layers at all heights and generic primes, using geometry rather than brute-force computation.</p>
           <div class="abs-body"><p class="abs-label">Abstract</p><p>This article confirms predictions made by Hopkins’ chromatic splitting conjecture in stable homotopy theory. A consequence of our main theorem is that a certain map of \(K(h-1)\)-local \(E_\infty\)-rings \(\mathbb{S}^{B\mathbb{Z}_p}_{K(h-1)} \to L_{K(h-1)}\mathbb{S}_{K(h)}\) admits a retract, so long as \(p-1\) does not divide \(h-1\). If \(h=2\) and \(p\) is odd, we show this map is an isomorphism.</p><p>We use methods from the theory of \(p\)-divisible groups and \(p\)-adic geometry. Along the way we prove an entirely new kind of “two-tower isomorphism”, in analogy with Faltings’ isomorphism between the Lubin–Tate and Drinfeld towers, which parametrizes \(p\)-divisible groups over characteristic \(p\) perfectoid spaces with fixed generic fiber in terms of negative Banach–Colmez spaces. Using the two-tower isomorphism, we gain control over the continuous cohomology of the Morava stabilizer group \(\mathbb{G}_h\) with coefficients in \(\pi_* L_{K(h-1)} E_h\).</p><p>To study the continuous action of \(\mathbb{G}_h\) on \(L_{K(h-1)} E_h\), it was necessary to develop the theory of solid Lubin–Tate spectra. Adapting Lurie’s constructions, we attach a solid Lubin–Tate spectrum to \(p\)-divisible groups over a broad class of solid rings in characteristic \(p\).</p></div>
           <p class="seq">The background for this paper is in <a href="#pub-model">Modeling Group Actions on Stacks</a>, which surveys the two-tower method.</p>
           <p class="chips"><a class="chip" href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">PDF</a></p>
@@ -2379,7 +2406,28 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
-        <details class="pub" data-key="202200" data-st="published" style="--accent: var(--cyan);">
+      </div>
+      <div class="pubs">
+        <details class="pub" data-key="999999" data-st="note" style="--accent: var(--cyan);">
+          <summary>
+          <h4>The Eigenvalues of Frobenius of Artin–Schreier–Witt Curves are Gauss Sums</h4>
+          <p class="pub-line"><span class="status st-note">note</span></p>
+          <p class="ptags"><span class="ptag">Artin–Schreier–Witt curves</span><span class="ptag">Gauss sums</span><span class="ptag">Newton polygons</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">The Frobenius eigenvalues of Artin–Schreier–Witt curves are Gauss sums, and reading off their slopes gives new families of Newton strata in the Torelli locus. The Newton polygon of a curve’s zeta function is what certifies a curve as a model for the Lubin–Tate action.</p>
+          <p class="chips"><a class="chip" href="/pdfs/Gauss_sums.pdf">note toward this (PDF)</a> <a class="chip code" href="https://github.com/catherineray/newton">code: newton</a></p>
+          </div>
+        </details>
+
+      </div>
+      </div>
+
+      <div class="mgroup" id="m-early" style="--accent: var(--violet);">
+        <h3>Earlier</h3>
+        <p class="gloss">Before the three threads: polarizations, period maps, and the geometry of parallel processes.</p>
+      <div class="pubs">
+        <details class="pub" data-key="202200" data-st="published" style="--accent: var(--violet);">
           <summary>
           <h4><a href="https://link.springer.com/article/10.1007/s12215-020-00590-7">Automorphisms of Abelian Varieties and Principal Polarizations</a></h4>
           <p class="pub-line"><span class="yr">2022</span><span class="status st-published">published</span></p>
@@ -2394,7 +2442,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
-        <details class="pub" data-key="201800" data-st="preprint" style="--accent: var(--cyan);">
+        <details class="pub" data-key="201800" data-st="preprint" style="--accent: var(--violet);">
           <summary>
           <h4><a href="https://arxiv.org/abs/1911.08615">A Global Crystalline Period Map</a></h4>
           <p class="pub-line"><span class="yr">2018</span><span class="status st-preprint">preprint</span></p>
@@ -2408,27 +2456,6 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
-      </div>
-      <div class="pubs">
-        <details class="pub" data-key="999999" data-st="in progress" style="--accent: var(--cyan);">
-          <summary>
-          <h4>The Eigenvalues of Frobenius of Artin–Schreier–Witt Curves are Gauss Sums</h4>
-          <p class="pub-line"><span class="status st-in-progress">in progress</span></p>
-          <p class="ptags"><span class="ptag">Artin–Schreier–Witt curves</span><span class="ptag">Gauss sums</span><span class="ptag">Newton polygons</span></p>
-          </summary>
-          <div class="pub-body">
-          <p class="pitch">The Frobenius eigenvalues of Artin–Schreier–Witt curves are Gauss sums, and reading off their slopes gives new families of Newton strata in the Torelli locus.</p>
-          <p class="chips"><a class="chip" href="/pdfs/Gauss_sums.pdf">note toward this (PDF)</a> <a class="chip code" href="https://github.com/catherineray/newton">code: newton</a></p>
-          </div>
-        </details>
-
-      </div>
-      </div>
-
-      <div class="mgroup" id="m-early" style="--accent: var(--violet);">
-        <h3>Earlier</h3>
-        <p class="gloss">Before the three threads: the geometry of parallel processes.</p>
-      <div class="pubs">
         <details class="pub" data-key="202000" data-st="published" style="--accent: var(--violet);">
           <summary>
           <h4><a href="https://link.springer.com/chapter/10.1007/978-3-030-42687-3_17">Toward Directed Collapsibility</a></h4>
@@ -2454,9 +2481,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
       var cards = Array.prototype.slice.call(sec.querySelectorAll('details.pub'));
       var homes = cards.map(function (c) { var m = document.createComment('pub'); c.parentNode.insertBefore(m, c); return m; });
       var groups = sec.querySelectorAll('.mgroup');
-      var RANK = { 'published': 0, 'submitted': 0, 'preprint': 0, 'forthcoming': 1, 'in progress': 2 };
-      var NAME = ['PUBLICATIONS & PREPRINTS', 'FORTHCOMING', 'IN PROGRESS'];
-      var SHADOW = ['var(--violet)', 'var(--cyan)', 'var(--pink)'];
+      var RANK = { 'published': 0, 'submitted': 0, 'preprint': 0, 'manuscript': 1, 'in preparation': 2, 'conjecture': 3, 'early': 4, 'note': 4, 'on hold': 4, 'in progress': 4 };
+      var NAME = ['PUBLICATIONS & PREPRINTS', 'MANUSCRIPTS', 'IN PREPARATION', 'CONJECTURES, CHECKED', 'EARLY STAGE & NOTES'];
+      var SHADOW = ['var(--violet)', 'var(--orange)', 'var(--cyan)', 'var(--pink)', 'var(--peach)'];
       function label(t) { var p = document.createElement('p'); p.className = 'mlabel'; p.textContent = t; return p; }
       function big(i) {
         var h = document.createElement('h2'); h.className = 'sec-head sec-wrap mbig'; h.textContent = NAME[i];
@@ -2479,7 +2506,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         flat.innerHTML = '';
         var cur = null, box = null;
         by.forEach(function (c) {
-          var k = mode === 'status' ? RANK[c.dataset.st] : (c.dataset.key == 999999 ? 'In progress' : c.dataset.key == 9999999 ? 'Forthcoming' : String(Math.floor(c.dataset.key / 100)));
+          var k = mode === 'status' ? RANK[c.dataset.st] : (c.dataset.key == 999999 ? 'Not yet public' : String(Math.floor(c.dataset.key / 100)));
           if (k !== cur) { cur = k; flat.appendChild(mode === 'status' ? big(k) : label(k)); box = list(); flat.appendChild(box); }
           box.appendChild(c);
         });

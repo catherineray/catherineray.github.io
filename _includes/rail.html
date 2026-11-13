@@ -101,7 +101,7 @@
     es.forEach(function (e) { if (e.isIntersecting) { links.forEach(function (a) { a.classList.toggle('is-here', a === byId[e.target.id]); }); } });
   }, { rootMargin: '0px 0px -70% 0px' });
   // headings without their own link (e.g. Preprints, In progress) keep the previous link underlined
-  var alias = { 'about-preprints': 'about-published', 'about-progress': 'about-published', 'about-expository': 'about-published', 'about-studio': 'about-lab' };
+  var alias = { 'about-preprints': 'math', 'about-progress': 'math', 'about-expository': 'math', 'about-studio': 'about-lab' };
   Object.keys(alias).forEach(function (k) { if (byId[alias[k]] && !byId[k]) byId[k] = byId[alias[k]]; });
   document.addEventListener('DOMContentLoaded', function () { Object.keys(byId).forEach(function (id) { var h = document.getElementById(id); if (h) io.observe(h); }); });
 })();
