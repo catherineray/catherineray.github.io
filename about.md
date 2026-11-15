@@ -993,6 +993,29 @@ rail_sections:   # listed in the sidebar under "About Rin"
   #before-math[data-level="plain"] details.row > summary::after { content: none; }
   #before-math[data-level="plain"] .row-body { display: none; }
 
+  /* the link button sits on the right, under the +, so it stops covering the text */
+  #before-math details.row > summary { display: grid; grid-template-columns: minmax(0, 1fr) minmax(1.6rem, auto); column-gap: 1rem; padding-right: 1rem; }
+  #before-math details.row > summary > * { grid-column: 1; }
+  #before-math details.row > summary > .chips { grid-column: 2; grid-row: 1 / span 4; align-self: start; margin-top: 2.1rem; flex-direction: column; align-items: flex-end; }
+  #before-math[data-level="plain"] details.row > summary { grid-template-columns: minmax(0, 1fr) auto; }
+  #before-math[data-level="plain"] details.row > summary > .chips { margin-top: .15rem; }
+  @media (max-width: 560px) {
+    #before-math details.row > summary > .chips { grid-column: 1 / -1; grid-row: auto; flex-direction: row; justify-content: flex-end; margin-top: .7em; }
+  }
+
+  /* passing through: the tags read as a label strip, the one-liner as the sentence */
+  #before-math[data-level="plain"] .row .tech {
+    justify-self: start;
+    padding: .3em .7em;
+    background: color-mix(in srgb, var(--accent, var(--cyan)) 20%, var(--paper));
+    border-left: 4px solid var(--accent, var(--cyan));
+    border-radius: 0 6px 6px 0;
+    font-size: .6rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  #before-math[data-level="plain"] .row summary .lvl-plain { margin-top: .7em; font-size: .98rem; line-height: 1.55; font-weight: 500; }
+
   /* math-section preview options */
   .mgroup { margin: 0 0 2.8rem; }
   .mgroup > h3 { margin: 0 0 .15em; font-family: var(--display); font-size: 1.3rem; line-height: 1.1; text-transform: uppercase; letter-spacing: 0; }
@@ -1031,11 +1054,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
   #main .pub .seq a { color: var(--ink); text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
   .part { display: inline-block; margin-right: .5em; padding: .08em .55em; background: var(--ink); color: var(--paper); border-radius: 4px; font-family: var(--mono); font-size: .62rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
   .status.st-forthcoming { margin-left: 0; background: var(--pink); border: 2px solid var(--ink); }
-  .status.st-manuscript { margin-left: 0; background: var(--orange); border: 2px solid var(--ink); }
-  .status.st-in-prep { margin-left: 0; background: var(--peach); border: 2px solid var(--ink); }
+  .status.st-in-prep { margin-left: 0; background: var(--orange); border: 2px solid var(--ink); }
   .status.st-conjecture { margin-left: 0; background: var(--cream); border: 2px solid var(--ink); }
   .status.st-early { margin-left: 0; background: var(--paper); border: 2px dashed var(--ink); }
-  .status.st-note { margin-left: 0; background: var(--paper); border: 2px dotted var(--ink); }
+  .status.st-note { margin-left: 0; background: var(--peach); border: 2px dotted var(--ink); }
   details.stagekey { margin: .2rem 0 1.4rem; font-size: .8rem; }
   ul.thesis-parts { margin: .6rem 0 .4rem; padding-left: 1.1rem; }
   ul.thesis-parts li { margin: .55em 0; }
@@ -1190,7 +1212,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <ul>
             <li><strong><a href="#m-scatter">Scattering</a></strong> (function fields): an inner product of Eisenstein series and an index on the Langlands dual side are two shadows of one object; Kazhdan and Okounkov proved they agree. I look for the object behind both, a trace of Frobenius on a Morita context, and ask what it casts at every height.</li>
             <li><strong><a href="#m-echo">Echoes</a></strong> (number fields): special values of zeta functions and homotopy groups count the same things, and the prime 691 appears both in exotic spheres and in the <i>K</i>-theory of the integers. I look for the objects behind these coincidences at every chromatic height, starting with a zeta function whose functional equation is a duality.</li>
-            <li><strong><a href="#m-sym">Symmetry you can touch</a></strong> (where the two meet): a symmetry coming from a division algebra over \(\mathbb Q_p\) and the symmetry of a curve in characteristic \(p\) are two shadows of one action. I prove the curve is forced by the group alone, and find the action inside it.</li>
+            <li><strong><a href="#m-sym">Symmetry you can touch</a></strong> (where the two meet): a symmetry coming from a division algebra over \(\mathbb Q_p\) and the symmetry of a curve in characteristic \(p\) are two shadows of one action. I prove the group forces a unique curve, and the Lubin–Tate action is the symmetry of that curve.</li>
           </ul>
       </div>
 
@@ -1217,8 +1239,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <p style="font-size:.85rem;margin:.4rem 0 0;">Arrows point from what supplies to what needs it. Click a box to jump to it.</p>
       </div>
       <div class="dial msort">
-        <button type="button" data-sort="thread" aria-pressed="true">sorted by theme</button>
-        <button type="button" data-sort="status">papers, then work in progress</button>
+        <button type="button" data-sort="status" aria-pressed="true">papers, then work in progress</button>
+        <button type="button" data-sort="thread">sorted by theme</button>
         <button type="button" data-sort="date">sorted chronologically</button>
       </div>
       <details class="stagekey">
@@ -1227,7 +1249,6 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <li><span class="status st-published">published</span> in a journal</li>
           <li><span class="status st-submitted">submitted</span> under review at a journal</li>
           <li><span class="status st-preprint">preprint</span> public, not yet submitted</li>
-          <li><span class="status st-manuscript">manuscript</span> full draft written, not yet public</li>
           <li><span class="status st-in-prep">in preparation</span> main theorems proved, being written up</li>
           <li><span class="status st-conjecture">conjecture, checked</span> computations done, no proof yet</li>
           <li><span class="status st-early">early stage</span> started, nothing to share yet</li>
@@ -1242,15 +1263,16 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <p class="chips" style="margin:.2rem 0 .8rem;"><a class="chip" href="#m-echo" style="background:var(--orange);">needs ← an L-function at height h, from Echoes</a> <a class="chip" href="#m-sym" style="background:var(--cyan);">needs ← the height-h theories, from Symmetry</a> </p>
         <p class="mlabel">One project, three papers</p>
       <div class="pubs">
-        <details class="pub" data-key="99999999" data-st="manuscript" style="--accent: var(--pink);">
+        <details class="pub" data-key="9999999" data-st="note" style="--accent: var(--pink);">
           <summary>
           <h4>The Unramified Eisenstein Spectrum as a Categorical Trace</h4>
-          <p class="pub-line"><span class="status st-manuscript">manuscript</span></p>
+          <p class="pub-line"><span class="status st-note">note</span></p>
           <p class="ptags"><span class="ptag">Eisenstein series</span><span class="ptag">Plancherel measure</span><span class="ptag">categorical traces</span></p>
           <p class="who">solo</p>
           </summary>
           <div class="pub-body">
           <p class="pitch">On a curve over a finite field, the inner product of two Eisenstein series is an index on the Langlands dual side, by a theorem of Kazhdan and Okounkov. In that formula a whole moduli of bundles is replaced by \(2g\) numbers and a sign: the curve enters only through a square root of its zeta function, and the answer forgets which square root. I show the measure is the Euler characteristic of an explicit sheaf, the Koszul complex of the tangent bundle of the Steinberg stack twisted by the chosen half of the curve’s cohomology. The measure is canonical; the sheaf computing it is not. Categorically, I conjecture the formula is one reading of a single object, a trace of Frobenius on a Morita context, with the square root as the orientation the category leaves out.</p>
+          <ul class="who"><li><strong>A.</strong> On \(\mathbb P^1\) the Eisenstein measure is a product of orders of \(K\)-groups of \(\mathbb F_q\); it sees \(K_3(\mathbb F_q)\) with Suslin’s correction rather than the pre-Bloch group; and it does not \(p\)-complete. (Theorem; solo.)</li><li><strong>B.</strong> Langlands’ formula, the spectral decomposition, and the genus formula are three readings of one Morita context traced over Frobenius. (Conjecture; forty-seven pages of notes circulated to seven readers, November 2026, every assertion labeled proven, conditional or expected, with the paper in preparation; solo.)</li><li><strong>C.</strong> The spectral side makes sense at every chromatic height; find the automorphic side. (Problem; at height two the spectral side exists integrally, in the elliptic affine Hecke algebra, and is a short paper in preparation; solo.)</li></ul>
           </div>
         </details>
 
@@ -1294,7 +1316,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="who">joint with Gabe Angelini-Knoll</p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">A zeta function for chromatic ring spectra, built from \(T(h+1)\)-local syntomic cohomology. A chromatic Tate twist lets it see the height: for \(BP\langle h\rangle\) it has \(2^{h+1}\) zeros and poles, one for each exterior class, and its pole at \(T=1\) is redshift. Its functional equation holds with no correction factor, and it <em>is</em> the higher arithmetic duality of Devalapurkar, Hahn and Rognes.</p>
+          <p class="pitch">A zeta function for chromatic ring spectra, built from \(T(h+1)\)-local syntomic cohomology. A chromatic Tate twist lets it see the height: for \(BP\langle h\rangle\) it has \(2^{h+1}\) zeros and poles, one for each exterior monomial, and its pole at \(T=1\) is redshift. For \(h\ge1\) its functional equation holds with no correction factor, and it <em>is</em> the higher arithmetic duality of Devalapurkar, Hahn and Rognes.</p>
+          <p class="who"><strong>Result:</strong> \(T(h+1)\)-local syntomic cohomology of a \(BP\langle h\rangle\)-linear category carries a zeta function, and its functional equation is higher Hodge duality with no correction factor. (Theorem for \(BP\langle h\rangle\) and \(h\ge1\); for general categories under stated hypotheses; with G. Angelini-Knoll.)</p>
           </div>
         </details>
 
@@ -1306,21 +1329,23 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </summary>
           <div class="pub-body">
           <p class="pitch">Adams showed that the denominators of \(\zeta(1-n)\) count the image of <i>J</i>. For the mod \(p^k\) Moore spectrum the naive analogue is false once \(k\ge2\). I conjecture that its homotopy is glued from the two relative pieces of the extension \(F_k/\mathbb Q\), the cofibers of the unit and of the transfer, so that \(|\pi_{2n}(L_{K(1)}\mathbb S/p^k)|\) is the gcd of the denominators of \(\zeta_{\mathbb Q}(1-n)\) and of \((\zeta_{F_k}/\zeta_{\mathbb Q})(1-n)\). This recovers Salch’s theorem at \(k=1\).</p>
+          <p class="who"><strong>Result:</strong> Special values of Dedekind zeta functions count homotopy groups of Moore spectra, with the field forced rather than chosen. (Conjecture, verified for \(p=3,5,7\) through \(p^3\) and \(p=11,13\) through \(p^4\); solo.)</p>
           <p class="who">checked numerically for \(p = 3, 5, 7\) and \(k \le 3\) from generalized Bernoulli numbers</p>
           </div>
         </details>
 
       </div>
       <div class="pubs">
-        <details class="pub" data-key="9999999" data-st="in preparation" style="--accent: var(--orange);">
+        <details class="pub" data-key="9999999" data-st="note" style="--accent: var(--orange);">
           <summary>
           <h4>Toward Categorifying Symplectic <i>L</i>-functions and Reidemeister Torsion</h4>
-          <p class="pub-line"><span class="status st-in-prep">in preparation</span></p>
+          <p class="pub-line"><span class="status st-note">note</span></p>
           <p class="ptags"><span class="ptag">symplectic <i>L</i>-functions</span><span class="ptag">hermitian <i>K</i>-theory</span><span class="ptag">Reidemeister torsion</span></p>
           <p class="who">joint with A. Petrov and M. Volpe</p>
           </summary>
           <div class="pub-body">
           <p class="pitch">A curve over a finite field behaves like a 3-manifold. Abdurrahman and Venkatesh went past the analogy: they proved that the central value of a symplectic <i>L</i>-function, mod squares, is a Reidemeister torsion, the invariant topologists use to tell 3-manifolds apart. The natural route to categorifying it, through <i>L</i>-theory, provably fails: their invariant is exactly the part of the symplectic Chern class that <i>L</i>-theory cannot see. So we work in hermitian <i>K</i>-theory instead, where it appears as a secondary invariant, left over when the <i>L</i>-theory class vanishes for a canonical reason.</p>
+          <p class="who"><strong>Result:</strong> The symplectic Chern class does not factor through <i>L</i>-theory, already over \(\mathbb F_q\), so the Abdurrahman-Venkatesh invariant is the part of it that only \(K(R)_{hC_2}\) sees. (Theorem; note, November 2026; joint with A. Petrov and M. Volpe.)</p>
           </div>
         </details>
 
@@ -1355,8 +1380,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
           curve.</strong>
         </p>
         <ul class="thesis-parts">
-          <li><strong>Part II</strong> (my thesis, 2023): at height \(p-1\), the deformations of the curve <em>are</em> Lubin–Tate space. This solved a 40-year-old problem, and from the curve I compute \(\pi_*E_{p-1}\) and its cohomology.</li>
-          <li><strong>Part III</strong> (2026): at every height \(p^{k-1}(p-1)\), the moduli are <em>surgeries</em>. Take the curve’s quotient by the centre of \(G'\), cut out the formal disk around each of its \(p^k\) branch points, and glue each one back in along an automorphism of the punctured disk. I prove the stack of these surgeries has exactly the Lubin–Tate tangent.</li>
+          <li><strong>Part II</strong> (my thesis, 2023): at height \(p-1\), the deformations of the curve <em>are</em> Lubin–Tate space, and from the curve I compute \(\pi_*E_{p-1}\) and its cohomology.</li>
+          <li><strong>Part III</strong> (2026): at every height \(p^{k-1}(p-1)\), the moduli are <em>surgeries</em>. Take the curve’s quotient by the centre of \(G'\), cut out the formal disk around each of its \(p^k\) branch points, and glue each one back in along an automorphism of the punctured disk. I prove the stack of these surgeries has exactly the Lubin–Tate tangent. This solves a 40-year-old problem. In preparation.</li>
           <li><strong>Chromatic splitting</strong> (2026, joint): with the two-tower method of Part I we prove the coheight-one weak chromatic splitting conjecture <strong>at every height at once</strong>, for generic primes. Before, it was known only at heights 1 and 2.</li>
           <li><strong>Kervaire:</strong> at \(p=3\), height 6, this is the action behind the detection theorem in the last open odd-primary case, with Eva Belmont.</li>
           <li><strong>Part I</strong> is the toolkit: two ways to pin down a group acting on a formal moduli stack. Geometric modeling is what Parts II and III carry out; the two-tower method is what the splitting paper runs on. The tools are standard, but here they are set down in the stronger form the Lubin–Tate action needs: equivariantly, in families, and with the grading kept.</li>
@@ -1393,10 +1418,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </div>
         </details>
 
-        <details class="pub" data-key="99999999" data-st="manuscript" style="--accent: var(--cyan);">
+        <details class="pub" data-key="99999999" data-st="in-prep" style="--accent: var(--cyan);">
           <summary>
           <h4>Only the Gauge Grows: Moduli Stacks of <i>G</i>-Curves in Homotopy Theory at \(h = p^{k-1}(p-1)\)</h4>
-          <p class="pub-line"><span class="part">Part III</span><span class="status st-manuscript">manuscript</span></p>
+          <p class="pub-line"><span class="part">Part III</span><span class="status st-in-prep">in preparation</span></p>
           <p class="ptags"><span class="ptag">stacks of surgeries</span><span class="ptag">Cartier operator</span></p>
           </summary>
           <div class="pub-body">
@@ -1518,9 +1543,9 @@ rail_sections:   # listed in the sidebar under "About Rin"
       var cards = Array.prototype.slice.call(sec.querySelectorAll('details.pub'));
       var homes = cards.map(function (c) { var m = document.createComment('pub'); c.parentNode.insertBefore(m, c); return m; });
       var groups = sec.querySelectorAll('.mgroup');
-      var RANK = { 'published': 0, 'submitted': 0, 'preprint': 0, 'manuscript': 1, 'in preparation': 2, 'conjecture': 2, 'in progress': 2, 'note': 2, 'early stage': 3 };
-      var NAME = ['PUBLICATIONS & PREPRINTS', 'MANUSCRIPTS', 'IN PREPARATION', 'EARLY STAGE'];
-      var SHADOW = ['var(--violet)', 'var(--cyan)', 'var(--pink)', 'var(--orange)'];
+      var RANK = { 'published': 0, 'submitted': 0, 'preprint': 0, 'manuscript': 1, 'in preparation': 1, 'in-prep': 1, 'conjecture': 1, 'in progress': 1, 'note': 1, 'early stage': 2 };
+      var NAME = ['PUBLICATIONS & PREPRINTS', 'IN PREPARATION', 'EARLY STAGE'];
+      var SHADOW = ['var(--violet)', 'var(--pink)', 'var(--orange)'];
       function label(t) { var p = document.createElement('p'); p.className = 'mlabel'; p.textContent = t; return p; }
       function big(i) {
         var h = document.createElement('h2'); h.className = 'sec-head sec-wrap mbig'; h.textContent = NAME[i];
@@ -1543,7 +1568,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         flat.innerHTML = '';
         var cur = null, box = null;
         by.forEach(function (c) {
-          var k = mode === 'status' ? RANK[c.dataset.st] : (c.dataset.key == 99999999 ? 'Manuscripts' : c.dataset.key == 9999999 ? 'In preparation' : c.dataset.key == 999999 ? 'Early stage' : String(Math.floor(c.dataset.key / 100)));
+          var k = mode === 'status' ? RANK[c.dataset.st] : (c.dataset.key == 99999999 ? 'In preparation' : c.dataset.key == 9999999 ? 'In preparation' : c.dataset.key == 999999 ? 'Early stage' : String(Math.floor(c.dataset.key / 100)));
           if (k !== cur) { cur = k; flat.appendChild(mode === 'status' ? big(k) : label(k)); box = list(); flat.appendChild(box); }
           box.appendChild(c);
         });
@@ -1551,6 +1576,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
         flat.hidden = false;
       }
       sec.querySelectorAll('.msort button').forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.sort); }); });
+      /* papers first, then work in progress, is the view the page opens in */
+      show('status');
     })();
     </script>
     </section>
@@ -2702,6 +2729,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
       btns.forEach(function (b) {
         b.setAttribute('aria-pressed', String(b.dataset.set === level));
       });
+      /* the story view starts with every story open */
+      if (level === 'curious') {
+        sec.querySelectorAll('details.row').forEach(function (d) { d.open = true; });
+      }
       if (remember) { try { localStorage.setItem(KEY, level); } catch (e) {} }
     }
 
