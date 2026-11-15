@@ -1392,7 +1392,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <details class="pub" id="pub-model" data-key="202507" data-st="submitted" style="--accent: var(--cyan);">
           <summary>
           <h4><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a></h4>
-          <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="status st-submitted">submitted: <i>Journal of Geometry and Physics</i></span></p>
+          <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="yr">updated Oct 2026</span><span class="status st-submitted">submitted: <i>Journal of Geometry and Physics</i></span></p>
           <p class="ptags"><span class="ptag">group actions on stacks</span><span class="ptag">two-tower method</span><span class="ptag">Lubin–Tate action</span><span class="ptag">research paper with expository aims</span></p>
           </summary>
           <div class="pub-body">
@@ -1407,7 +1407,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <details class="pub" data-key="202509" data-st="submitted" style="--accent: var(--cyan);">
           <summary>
           <h4><a href="https://arxiv.org/abs/2509.23428">Tiny and Unique: The Lubin–Tate Action at Height \(p-1\) from the Minimal Curve with Its Symmetries</a></h4>
-          <p class="pub-line"><span class="part">Part II</span><span class="yr">Sept 2025</span><span class="status st-submitted">submitted: <i>AG&amp;T</i></span></p>
+          <p class="pub-line"><span class="part">Part II</span><span class="yr">Sept 2025</span><span class="yr">updated Oct 2026</span><span class="status st-submitted">submitted: <i>AG&amp;T</i></span></p>
           <p class="ptags"><span class="ptag">moduli of curves</span><span class="ptag">inverse Galois theory</span><span class="ptag">Lubin–Tate action</span></p>
           </summary>
           <div class="pub-body">
