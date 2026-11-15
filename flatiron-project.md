@@ -239,11 +239,11 @@ comments: false
 <p>The gap between the two jumps is why the deficit outlasts its trigger: once stuck high, removing the stimulus is not enough to come back down.</p>
 
 
-<p><b>Three parts, three speeds.</b></p>
+<p><b>Three parts, three speeds.</b> Each τ is the timescale of its part: small τ means fast.</p>
 <table class="fm-eqtable">
-<tr><td class="eqc">τ<sub><i>r</i></sub> <i>ṙ</i> = −<i>r</i> + <i>g</i>·<i>I</i> ⁄ (σ + β<i>a</i>)</td><td><b>Response <i>r</i></b> (fast, seconds): how strongly the system fires right now, to a stimulus of strength <i>I</i>, amplified by the knob <i>g</i> and damped by the brake <i>a</i>.</td></tr>
+<tr><td class="eqc">τ<sub><i>r</i></sub> <i>ṙ</i> = −<i>r</i> + <i>g</i>·<i>I</i> ⁄ (σ + β<i>a</i>)</td><td><b>Response <i>r</i></b> (fast, seconds): how strongly the system fires right now, to a stimulus of strength <i>I</i>, amplified by the knob <i>g</i> and damped by the brake <i>a</i>. Here σ is the baseline damping and β how strongly the brake acts.</td></tr>
 <tr><td class="eqc">τ<sub><i>a</i></sub> <i>ȧ</i> = −<i>a</i> + <i>r</i></td><td><b>Brake <i>a</i></b> (slower, minutes): builds up while the response stays on. This is ordinary habituation, the response fading over repeated trials.</td></tr>
-<tr><td class="eqc">τ<sub><i>g</i></sub> <i>ġ</i> = −(<i>g</i> − <i>g</i><sub>0</sub>(<i>M</i>)) + <i>k</i>·<i>H</i>(<i>r</i>)</td><td><b>Knob <i>g</i></b> (very slow, weeks): drifts back toward a resting level <i>g</i><sub>0</sub>, set by the gut microbiome <i>M</i>, but is pushed up by sustained strong responses (<i>H</i> is a switch-like curve).</td></tr>
+<tr><td class="eqc">τ<sub><i>g</i></sub> <i>ġ</i> = −(<i>g</i> − <i>g</i><sub>0</sub>(<i>M</i>)) + <i>k</i>·<i>H</i>(<i>r</i>)</td><td><b>Knob <i>g</i></b> (very slow, weeks): drifts back toward a resting level <i>g</i><sub>0</sub>, set by the gut microbiome <i>M</i>, but is pushed up by sustained strong responses. <i>H</i>(<i>r</i>) = <i>r<sup>n</sup></i> ⁄ (<i>K<sup>n</sup></i> + <i>r<sup>n</sup></i>) is a switch-like curve that turns on once <i>r</i> passes the threshold <i>K</i>, more sharply the larger <i>n</i> is, and <i>k</i> is how hard it pushes.</td></tr>
 </table>
 
 <p><b>Why it can get stuck.</b> Because the three speeds are so different, the fast parts settle first and the whole system reduces to one question: where can the slow knob come to rest? The answer is the positive roots of a single polynomial,</p>
