@@ -148,7 +148,7 @@ comments: false
 <div class="fm-part-body">
 <p class="fm-mathline"><b>The math here:</b> Bayesian measurement models, one per test, fitted to every trial.</p>
 <iframe class="biome-embed" src="/embeds/one-fault.html?act=1" title="Response amplitude over ten identical stimuli, healthy versus non-habituating" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:360px;border:0;margin:1rem 0 1.2rem;"></iframe>
-<p>The first step needs no new experiment. A group in Zurich has already recorded pain ratings, evoked potentials and skin responses to every one of a series of identical heat pulses, in patients and healthy people. Michèle Hubli’s group at Balgrist holds the single-trial data and is open to a joint reanalysis. They scored it with a two-point measure: the percent change between the averages of two blocks of 15 to 20 identical stimuli. Noisy single responses are set to zero, non-responders are dropped, and the index is capped. A null from an estimator like that is weak evidence, and three such scores failing to correlate cannot tell three phenomena from one hidden decrement seen through three noisy instruments.</p>
+<p>The first step needs no new experiment. A group in Zurich has already recorded pain ratings, evoked potentials and skin responses to every one of a series of identical heat pulses, in patients and healthy people. Michèle Hubli’s group at Balgrist retains the single-trial data and is interested in a more detailed analysis. Because clinical data cannot leave Balgrist, I would build and validate the model at CCM on simulated data, and run it on their recordings with her group. They scored it with a two-point measure: the percent change between the averages of two blocks of 15 to 20 identical stimuli. Noisy single responses are set to zero, non-responders are dropped, and the index is capped. A null from an estimator like that is weak evidence, and three such scores failing to correlate cannot tell three phenomena from one hidden decrement seen through three noisy instruments.</p>
 <p>Instead, one measurement model per channel, fitted to every trial, with the decrement as a latent quantity:</p>
 <ul>
 <li><b>Pain rating:</b> an ordinal response, with a person-specific scale and drift in where people anchor.</li>
@@ -159,27 +159,27 @@ comments: false
 </div>
 </details>
 <details class="fm-part" style="--neon:#ee5fd4;--pastel:#fbd3f2">
-<summary><span class="pill">Model</span> <b>Turn those numbers into a severity and a direction.</b> Severity is how much of the fault a person has; direction is which systems it hits (gut, skin, mood). The model groups people by direction and answers both questions: is it one shared state, and what decides the phenotype? <span class="more"></span></summary>
+<summary><span class="pill">Model</span> <b>Turn those numbers into a severity and a pattern.</b> Severity is how much of the deficit a person has; pattern is which systems it hits (gut, skin, mood). The model groups people by pattern and answers both questions: is it one shared state, and what decides the phenotype? <span class="more"></span></summary>
 <div class="fm-part-body">
 <p class="fm-mathline"><b>The math here:</b> a latent-variable mixture model on the sphere, and model comparison. <b>Lawrence Saul’s methods enter here</b>, to fit it without losing the correlations.</p>
 <p><b>What we measure.</b> For each person, Measure gives one number per test: how much that person’s response <i>fails</i> to fade. The tests: a skin heat test, pain build-up with repetition, pain inhibition, a gut balloon test, brain responses, and a sensory questionnaire. Together these numbers form the person’s <b>profile</b>, <i>h</i>.</p>
 <p><b>How the model reads a profile.</b> It splits it into two parts:</p>
 <p class="eq"><i>h</i> = <i>s</i> × <i>u</i></p>
 <ul>
-<li><b><i>s</i>, severity:</b> how big the profile is, that is, how much of the fault the person has.</li>
-<li><b><i>u</i>, direction:</b> the shape of the profile, which systems it hits most: gut, skin or mood.</li>
+<li><b><i>s</i>, severity:</b> how big the profile is, that is, how much of the deficit the person has.</li>
+<li><b><i>u</i>, pattern:</b> the shape of the profile, which systems it hits most: gut, skin or mood.</li>
 </ul>
-<p>Drag the point to move one person around: the corners are skin, gut and brain, and where the point sits is that person’s direction.</p>
+<p>Drag the point to move one person around: the corners are skin, gut and brain, and where the point sits is that person’s pattern.</p>
 <iframe class="biome-embed" src="/embeds/one-fault.html?act=2" title="Direction simplex with draggable patient point" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:520px;border:0;margin:1rem 0 1.2rem;"></iframe>
-<p><b>How people are grouped.</b> The model assumes people fall into a few groups. Each group has a typical direction (a phenotype, like “mostly gut”), and its members cluster tightly around it. Written out, with vMF a bell curve on a sphere:</p>
+<p><b>How people are grouped.</b> The model assumes people fall into a few groups. Each group has a typical pattern (a phenotype, like “mostly gut”), and its members cluster tightly around it. Written out, with vMF a bell curve on a sphere:</p>
 <p class="eq"><i>s<sub>i</sub></i> ∼ <i>p<sub>s</sub></i>, &nbsp; group <i>z<sub>i</sub></i> ∼ Cat(π), &nbsp; <i>u<sub>i</sub></i> | <i>z<sub>i</sub></i> = <i>j</i> ∼ vMF(μ<sub><i>j</i></sub>, κ<sub><i>j</i></sub>)</p>
-<p>Here μ<sub><i>j</i></sub> is group <i>j</i>’s typical direction, κ<sub><i>j</i></sub> how tightly its members stick to it, and π<sub><i>j</i></sub> how common it is.</p>
+<p>Here μ<sub><i>j</i></sub> is group <i>j</i>’s typical pattern, κ<sub><i>j</i></sub> how tightly its members stick to it, and π<sub><i>j</i></sub> how common it is.</p>
 <p><b>How this answers the two questions.</b></p>
 <ul>
-<li><b>Is it one shared state?</b> Compare two models: one where a single severity <i>s</i> drives every test, and one where each test has its own unrelated problem. Then check whether the directions form a few tight groups (3 to 6) or are scattered.</li>
-<li><b>What decides the phenotype?</b> The group a person’s direction falls into. Two tests: a direction measured once should predict that person’s future diagnoses better than any single test; and it should stay the same across visits, while severity rises and falls with flares.</li>
+<li><b>Is it one shared state?</b> Compare two models: one where a single severity <i>s</i> drives every test, and one where each test has its own unrelated problem. Then check whether the patterns form a few tight groups (3 to 6) or are scattered.</li>
+<li><b>What decides the phenotype?</b> The group a person’s pattern falls into. Two tests: a pattern measured once should predict that person’s future diagnoses better than any single test; and it should stay the same across visits, while severity rises and falls with flares.</li>
 </ul>
-<p>What the population of directions should look like under each hypothesis, and what one person looks like over a year (severity moves, direction stays):</p>
+<p>What the population of patterns should look like under each hypothesis, and what one person looks like over a year (severity moves, pattern stays):</p>
 <iframe class="biome-embed" src="/embeds/one-fault.html?act=3" title="Population of direction points on the simplex under three hypotheses" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:520px;border:0;margin:1rem 0 1.2rem;"></iframe>
 <iframe class="biome-embed" src="/embeds/one-fault.html?act=5" title="One person over twelve months: severity rises and falls while direction stays put, or drifts" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:420px;border:0;margin:1rem 0 1.2rem;"></iframe>
 <p>There is precedent: neuropathic pain patients fall into three sensory groups that cut across causes, and autistic children into four sensory subtypes, nine in ten still in the same one a year later. Neither study measured habituation.</p>
@@ -189,7 +189,7 @@ comments: false
   <p class="fm-papers">Margossian &amp; Saul 2023 <a href="#m1">[1]</a> · Margossian, Pillaud-Vivien &amp; Saul 2024 <a href="#m2">[2]</a></p>
   <p>A mean-field fit of a correlated posterior sets the correlations to zero and shrinks the variances, and however it is fitted it gets at most one of three measures of spread right: variances, precisions, or overall spread (the table next to the slider). In my project it would lean toward "several separate conditions" whatever the truth, and report the link between cohorts as absent.</p>
   <p class="fm-label">What I would prove</p>
-  <p>The same analysis for the decision I care about, one shared fault against several: how strongly skin and gut must really be linked, and how much correlation an approximation must keep, before it gets the answer right.</p>
+  <p>The same analysis for the decision I care about, one shared deficit against several: how strongly skin and gut must really be linked, and how much correlation an approximation must keep, before it gets the answer right.</p>
 </div>
 <p>The figure shows the problem on two tests, skin and gut:</p>
 <p class="fm-legend"><span style="color:#d12d88">● pink ellipse and dots</span>: the true posterior, no approximation; tilted because skin and gut share one severity. <span style="color:#2a7fb8">● blue circle</span>: the fast approximation (mean-field, fitted the standard way). <span style="color:#6a4cb0">◌ dashed circle</span>: mean-field fitted another way. Slide to change how strongly skin and gut truly move together: the ellipse stretches, the circles stay round.</p>
@@ -202,7 +202,7 @@ comments: false
 <p class="fm-mathline"><b>The math here:</b> identifiability (what the studies together can determine) and information gain. <b>Lawrence Saul’s methods enter here too</b>, to fit one model across all the studies.</p>
 <p><b>The problem.</b> No single study measures all the tests. SPARK, a large autism study, has sensory questionnaires and genomes but almost no immune data; national health registries have immune and psychiatric diagnoses but no sensory tests. A study that only saw skin tests cannot, on its own, say how skin relates to gut.</p>
 <p><b>Combining is itself a modeling problem.</b> Each study sees only part of each person’s profile, measured with its own instruments (a parent questionnaire here, a diagnosis code there). So before the studies can be joined, we need a model of how each partial view relates to the full profile, and a way to work out which parts of the full picture the studies, taken together, actually determine.</p>
-<p><b>What makes joining possible: overlap.</b> If some people are measured on tests from both sides, those shared tests anchor everything. For example, a few hundred SPARK participants could do the full set of tests: a <i>bridge</i>. The model then places everyone, from every study, on the same map of severity and direction.</p>
+<p><b>What makes joining possible: overlap.</b> If some people are measured on tests from both sides, those shared tests anchor everything. For example, a few hundred SPARK participants could do the full set of tests: a <i>bridge</i>. The model then places everyone, from every study, on the same map of severity and pattern.</p>
 <p>Which study measures which test, and what a small bridge group adds:</p>
 <iframe class="biome-embed" src="/embeds/one-fault.html?act=4" title="Cohorts by channels observation grid with optional bridging sample" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:400px;border:0;margin:1rem 0 1.2rem;"></iframe>
 <p><b>When it works.</b> Three conditions:</p>
@@ -219,24 +219,24 @@ comments: false
   <p>Batch and match fits Gaussian approximations with full or structured covariance, fast, using a score-based divergence.</p>
   <p class="fm-label">What I would build</p>
   <ul>
-    <li><b>A family shaped like the model:</b> full covariance for the few population parameters (how strongly each channel shows the fault, where the clusters sit), low-rank-plus-diagonal for each of thousands of people. It keeps the person-to-population correlations at a cost linear in the number of people.</li>
-    <li><b>The same on the sphere:</b> a person's direction <i>u</i> lives on a sphere, where a Gaussian is the wrong shape, so I would extend these methods to projected normal and von Mises–Fisher families.</li>
+    <li><b>A family shaped like the model:</b> full covariance for the few population parameters (how strongly each channel shows the deficit, where the clusters sit), low-rank-plus-diagonal for each of thousands of people. It keeps the person-to-population correlations at a cost linear in the number of people.</li>
+    <li><b>The same on the sphere:</b> a person's pattern <i>u</i> lives on a sphere, where a Gaussian is the wrong shape, so I would extend these methods to projected normal and von Mises–Fisher families.</li>
   </ul>
 </div>
 </div>
 </details>
 <details class="fm-part" style="--neon:#ffa86b;--pastel:#ffe0c8">
-<summary><span class="pill">Explain</span> <b>Model the mechanism.</b> A dynamical model of how the nervous system turns its own gain up and down: why the fault persists once triggered, why flares come, and which system tips first, which is what sets a person’s direction. <span class="more"></span></summary>
+<summary><span class="pill">Explain</span> <b>Model the mechanism.</b> A dynamical model of how the nervous system turns its own gain up and down: why the deficit persists once triggered, why flares come, and which system tips first, which is what sets a person’s pattern. <span class="more"></span></summary>
 <div class="fm-part-body">
 <div class="fm-mathline"><p><b>The math here:</b> dynamical systems, real algebraic geometry, and manifold learning.</p>
 <ul>
 <li><b>Reduction and folds.</b> Separating fast and slow timescales (geometric singular perturbation theory) reduces the model to one equation on a <i>slow manifold</i>. Its repeated roots are the folds, and cylindrical algebraic decomposition finds them exactly.</li>
 <li><b>Lawrence Saul’s manifold learning.</b> His methods (locally linear embedding, with Roweis; maximum variance unfolding, with Weinberger) recover a low-dimensional manifold from high-dimensional samples. Here the samples are people’s repeated measurements over months, across all their tests. If the model is right, those points lie near the slow manifold, and unfolding them recovers it, folds included, from the data alone. That is a direct test of the mechanism: the folds the data show should match the folds the equations predict.</li>
 </ul></div>
-<p><b>The idea.</b> Picture each body system (skin, gut, mood) as having a <b>volume knob</b>, its gain. When the same signal keeps arriving, a healthy system turns the knob down: that is habituation. But the knob also turns itself <i>up</i> slowly when strong signals keep coming. Past a tipping point it can no longer turn back down, and the response stays loud even after the stimulus is gone. That stuck-high state is the fault.</p>
+<p><b>The idea.</b> Picture each body system (skin, gut, mood) as having a <b>volume knob</b>, its gain. When the same signal keeps arriving, a healthy system turns the knob down: that is habituation. But the knob also turns itself <i>up</i> slowly when strong signals keep coming. Past a tipping point it can no longer turn back down, and the response stays loud even after the stimulus is gone. That stuck-high state is the deficit.</p>
 <p><b>Try it.</b> Slide the resting gain right and back: the ball follows the normal branch, jumps up at one tipping point, and only comes down at the other.</p>
 <iframe class="biome-embed" src="/embeds/fold.html" title="Interactive tipping point: settled response against resting gain, with repeated measurements below" loading="lazy" allowtransparency="true" style="display:block;background:transparent;width:100%;height:470px;border:0;margin:.8rem 0 1rem;"></iframe>
-<p>The gap between the two jumps is why the fault outlasts its trigger: once stuck high, removing the stimulus is not enough to come back down.</p>
+<p>The gap between the two jumps is why the deficit outlasts its trigger: once stuck high, removing the stimulus is not enough to come back down.</p>
 
 
 <p><b>Three parts, three speeds.</b></p>
@@ -255,7 +255,7 @@ comments: false
 <p><b>What the math gives.</b></p>
 <ul>
 <li><b>Exact tipping points.</b> The coefficients of <i>P</i> are polynomials in the parameters, so cylindrical algebraic decomposition gives the exact regions of parameter space with one or two stable states, rather than a parameter sweep in simulation.</li>
-<li><b>Where the fault lands.</b> Each system has its own knob. Whichever crosses its tipping point first decides a person’s direction <i>u</i>, which is a mechanistic account of the groups in Model.</li>
+<li><b>Where the deficit lands.</b> Each system has its own knob. Whichever crosses its tipping point first decides a person’s pattern <i>u</i>, which is a mechanistic account of the groups in Model.</li>
 <li><b>An early warning of flares.</b> Near a tipping point, the system recovers more slowly from small disturbances, so repeated measurements become noisier and more correlated over time. That predicts a flare before it happens.</li>
 </ul>
 <p><b>Evidence for the pieces.</b> In mice, keeping gut enterochromaffin cells active left the gut hypersensitive after the trigger stopped, with anxiety-like behaviour reversed by blocking serotonin: a knob held on the high branch (Bayrer et al., 2023). In a Swedish national cohort, stress-related disorders raised the later risk of autoimmune disease, the slow loop through stress, immunity and the gut back to the resting gain (Song et al., 2018).</p>
@@ -265,12 +265,12 @@ comments: false
 </div>
 <div class="fm-evidence" style="background:#fff">
 <h3>What would show this wrong</h3>
-<p>I’d give up on this if:</p>
+<p>It would be strong evidence against the hypothesis if:</p>
 <ul>
-<li>habituation measured as a slope turns out preserved, as the Balgrist group found with a two-block measure;</li>
+<li>habituation measured as a model-based rate turns out preserved in patients, as the Balgrist group found with a two-block measure;</li>
 <li>the channels don’t actually move together once you account for each test’s own quirks;</li>
-<li>knowing where someone’s fault lands adds nothing beyond knowing how bad it is;</li>
-<li>a person’s direction wanders around from one visit to the next;</li>
+<li>knowing where someone’s deficit lands adds nothing beyond knowing how bad it is;</li>
+<li>a person’s pattern wanders around from one visit to the next;</li>
 <li>or the clusters predict someone’s next diagnosis no better than the single best test does.</li>
 </ul>
 <p>A clean negative, with the data behind it, would also change how these fields work.</p>
@@ -280,8 +280,8 @@ comments: false
   <h3>Potential broader impact</h3>
   <p class="fm-label">Mechanism-based trial stratification</p>
   <p>A new measure changes care when it changes how treatments are developed and tested. Trials of drugs that target central sensitization now enroll by diagnosis, so a true effect in the mechanistically defined subgroup is diluted by everyone else. With <i>s</i> and <i>u</i> estimated, a trial can enrich for the mechanism and use the habituation slope as an early pharmacodynamic endpoint. <b>The same drug can then be tested once against the shared mechanism, rather than five times against five diagnoses.</b></p>
-  <p><b>What measuring a person would look like, if it all works.</b> A short, non-invasive session: a few series of identical, repeated stimuli (heat or pressure on the skin, for example), each rated as it comes, plus a questionnaire, in a clinic or with a home kit. The model turns that into a severity and a direction with error bars. Which few tests are enough is exactly what the information-gain ranking in Combine decides, so the session can be as short as the data allow.</p>
-<p>That is also the most realistic route to actually improving the daily lives of patients. Smaller, better-powered trials with a clear biological rationale are what make industry partners willing to invest, and regulatory and clinical uptake follows a successful trial. And where no company has an incentive, as with cheap off-patent drugs like <a href="/memantine/">memantine</a>, the same smaller trials become affordable for public funders.</p>
+  <p>What measuring a person would look like, if it all works. A short, non-invasive session: a few series of identical, repeated stimuli (heat or pressure on the skin, for example), each rated as it comes, plus a questionnaire, in a clinic or with a home kit. The model turns that into a severity and a pattern, each with its uncertainty. Which few tests are enough is exactly what the information-gain ranking in Combine decides, so the session can be as short as the data allow.</p>
+<p>That is also the most realistic route to actually improving the daily lives of patients. <b>Smaller, better-powered trials with a clear biological rationale are what make industry partners willing to invest</b>, and regulatory and clinical uptake follows a successful trial. And where no company has an incentive, as with cheap off-patent drugs like <a href="/memantine/">memantine</a>, <b>the same smaller trials become affordable</b> for public funders.</p>
 </div>
 
 The full plan is in my research statement.

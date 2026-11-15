@@ -287,7 +287,7 @@ function drawTri(){
   var mx=Math.max(w[0],w[1],w[2]), dom=w.indexOf(mx);
   var label = mx<0.5 ? 'mixed, multi-clinic presentation'
     : ['reads as “chronic pain”','reads as “IBS”','reads as “anxiety / sensory over-responsivity”'][dom];
-  document.getElementById('dxOut').innerHTML='s = <em>'+s.toFixed(2)+'</em> · direction '+(mx<0.5?'':names[dom]+'-dominant')+'<br><em>'+label+'</em>';
+  document.getElementById('dxOut').innerHTML='s = <em>'+s.toFixed(2)+'</em> · pattern '+(mx<0.5?'':names[dom]+'-dominant')+'<br><em>'+label+'</em>';
 }
 function setFromPointer(ev){
   var tri=document.getElementById('tri'), r=tri.getBoundingClientRect();
@@ -400,7 +400,7 @@ function drawTl(){
   var d0=dirAt(tlT), p0=tp([d0[0]*d0[0],d0[1]*d0[1],d0[2]*d0[2]]), s0=sev(tlT);
   g+='<circle cx="'+p0[0]+'" cy="'+p0[1]+'" r="'+(6+s0*14)+'" fill="'+C.accent+'" opacity="0.18"/>';
   g+='<circle cx="'+p0[0]+'" cy="'+p0[1]+'" r="7" fill="'+C.accent+'"/>';
-  g+='<text x="'+T[0]+'" y="'+(nar?300:318)+'" text-anchor="middle" '+lt+'>direction u</text>';
+  g+='<text x="'+T[0]+'" y="'+(nar?300:318)+'" text-anchor="middle" '+lt+'>pattern u</text>';
   // severity over time on the right
   var L=nar?40:360, R=nar?380:740, Tp=nar?370:30, B=nar?580:270, sx=function(t){return L+(R-L)*t/12;}, sy=function(v){return B-(B-Tp)*v/2;};
   g+='<path d="M'+L+' '+Tp+' V'+B+' H'+R+'" fill="none" stroke="'+C.line+'" stroke-width="1"/>';
