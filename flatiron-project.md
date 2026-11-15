@@ -241,13 +241,13 @@ comments: false
 
 <p><b>Three parts, three speeds.</b></p>
 <table class="fm-eqtable">
-<tr><td class="eqc">τ<sub><i>r</i></sub> <i>ṙ</i> = −<i>r</i> + <i>g</i>·<i>s</i> ⁄ (σ + β<i>a</i>)</td><td><b>Response <i>r</i></b> (fast, seconds): how strongly the system fires right now, to a stimulus of strength <i>s</i>, amplified by the knob <i>g</i> and damped by the brake <i>a</i>.</td></tr>
+<tr><td class="eqc">τ<sub><i>r</i></sub> <i>ṙ</i> = −<i>r</i> + <i>g</i>·<i>I</i> ⁄ (σ + β<i>a</i>)</td><td><b>Response <i>r</i></b> (fast, seconds): how strongly the system fires right now, to a stimulus of strength <i>I</i>, amplified by the knob <i>g</i> and damped by the brake <i>a</i>.</td></tr>
 <tr><td class="eqc">τ<sub><i>a</i></sub> <i>ȧ</i> = −<i>a</i> + <i>r</i></td><td><b>Brake <i>a</i></b> (slower, minutes): builds up while the response stays on. This is ordinary habituation, the response fading over repeated trials.</td></tr>
 <tr><td class="eqc">τ<sub><i>g</i></sub> <i>ġ</i> = −(<i>g</i> − <i>g</i><sub>0</sub>(<i>M</i>)) + <i>k</i>·<i>H</i>(<i>r</i>)</td><td><b>Knob <i>g</i></b> (very slow, weeks): drifts back toward a resting level <i>g</i><sub>0</sub>, set by the gut microbiome <i>M</i>, but is pushed up by sustained strong responses (<i>H</i> is a switch-like curve).</td></tr>
 </table>
 
 <p><b>Why it can get stuck.</b> Because the three speeds are so different, the fast parts settle first and the whole system reduces to one question: where can the slow knob come to rest? The answer is the positive roots of a single polynomial,</p>
-<p class="eq"><i>P</i>(<i>x</i>) = (σ<i>x</i> + β<i>x</i>² − <i>s g</i><sub>0</sub>)(<i>K<sup>n</sup></i> + <i>x<sup>n</sup></i>) − <i>s k x<sup>n</sup></i>,</p>
+<p class="eq"><i>P</i>(<i>x</i>) = (σ<i>x</i> + β<i>x</i>² − <i>I g</i><sub>0</sub>)(<i>K<sup>n</sup></i> + <i>x<sup>n</sup></i>) − <i>I k x<sup>n</sup></i>,</p>
 <p>where <i>x</i> is the settled response. One root means the system always recovers. Three roots mean two stable states, normal and stuck-high, separated by a tipping point (a <b>fold</b>), as in the picture above.</p>
 
 
