@@ -7,7 +7,7 @@ hide_title: true   # the ABOUT ME artwork is the heading
 rail_highlights: true   # show the genre highlights in the sidebar here
 rail_sections:   # listed in the sidebar under "About Rin"
   - { id: about-path, label: "THE PATH", color: "#6cc8f0" }
-  - { id: about-published, label: "THE PROOFS", color: "#9b7fd4" }   # the research part: Publications & Preprints, In progress, Expository
+  - { id: about-math, label: "THE PROOFS", color: "#9b7fd4" }   # the research part: Publications & Preprints, In progress, Expository
   - { id: about-teaching, label: "TEACHING", color: "#f4a58a" }
   - { id: about-lab, label: "THE LAB", color: "#ec3f9e" }   # color matches its section title
   - { id: about-studio, label: "THE STUDIO", color: "#fffdf7" }
@@ -927,7 +927,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .market::before { content: "★ "; color: var(--pink); }
   .jump-top { font-size: .95rem; align-items: center; }
   .jump-top .chip { font-size: .9rem; padding: .3em 1em; box-shadow: 4px 4px 0 var(--ink); }
-  .pro-group, .pro, .paper, #about-published { scroll-margin-top: 1.5rem; }
+  .pro-group, .pro, .paper, #about-math, #about-published { scroll-margin-top: 1.5rem; }
 
   /* the lab: the project lists sit open under the summary */
   #before-math .narrative, #before-math .professional { margin-top: calc(1.9rem + 8px); }
@@ -1120,7 +1120,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <p class="market">I’m on the job market this year.</p>
     <p class="jump jump-top">
       <span>Here for…</span>
-      <a class="chip" href="#about-published">the math ↓</a>
+      <a class="chip" href="#about-math">the math ↓</a>
       <a class="chip" href="#about-lab" data-read="pedantic">the science ↓</a>
       <a class="chip" href="#about-studio">the art ↓</a>
     </p>
@@ -1181,7 +1181,8 @@ rail_sections:   # listed in the sidebar under "About Rin"
     <!-- publications -->
 
     <section id="research">
-      <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="about-published">THE PROOFS</h2>
+      <span id="about-published" aria-hidden="true"></span>
+      <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="about-math">THE PROOFS</h2>
       <div class="note math-intro" style="--accent: var(--violet);">
           <p>
             <strong class="tldr-lead">In the beautiful mountains of mathematics, the same shadow often falls into two valleys that do not talk to each other. My work is to find the peak, name the light, and see what else it casts.</strong> The arithmetic of number fields and function fields, with its zeta functions, automorphic spectra and special values, lives at chromatic height one. My program is to find what it is a shadow of at every height.
