@@ -1071,6 +1071,13 @@ rail_sections:   # listed in the sidebar under "About Rin"
   .thesis-block .pubs { margin-top: 1rem; }
   .mlabel { margin: 1.4rem 0 .6rem; font-family: var(--mono); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
   .mgroup .note-quiet { margin: 0 0 .4rem; }
+  .subgroup .sub-head, #m-scatter .sub-head { margin: 0 0 .5rem; font-family: var(--display); font-size: 1.1rem; line-height: 1.2; text-transform: uppercase; }
+  .subgroup .sub-head::before, #m-scatter .sub-head::before { content: ''; display: inline-block; width: .5em; height: .5em; margin-right: .5em; background: var(--accent); border: 3px solid var(--ink); border-radius: 50%; vertical-align: .08em; }
+  .subgroup .sub-note, #m-scatter .sub-note { display: block; margin-top: .2rem; font-family: var(--mono); font-size: .68rem; font-weight: 700; letter-spacing: .08em; color: var(--ink-soft); }
+  /* summaries: sticker cards in the theme color */
+  #research .mgroup > .gloss, #m-scatter .sub-gloss, .subgroup .sub-gloss { font-style: normal; font-size: .95rem; line-height: 1.6; padding: .9rem 1.1rem; margin: .4rem 6px 1.4rem 0; background: var(--paper); border: 3px solid var(--ink); border-radius: 16px; box-shadow: 6px 6px 0 var(--accent); }
+  .subgroup { margin-top: 2.2rem; }
+  .subgroup:first-of-type { margin-top: 1.2rem; }
   .pub .status { margin-left: 0; }
   .pub .yr + .status { margin-left: .5em; }
   .pub details.abs { margin: .7em 0 0; }
@@ -1207,16 +1214,21 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <h2 class="sec-head sec-over" style="--shadow: var(--pink); --tilt: 2deg;" data-text="THE PROOFS" id="about-math">THE PROOFS</h2>
       <div class="note math-intro" style="--accent: var(--violet);">
           <p>
-            <strong class="tldr-lead">In the beautiful mountains of mathematics, the same shadow often falls into two valleys that do not talk to each other. My work is to find the peak, name the light, and see what else it casts.</strong> The arithmetic of number fields and function fields, with its zeta functions, automorphic spectra and special values, lives at chromatic height one. My program is to find what it is a shadow of at every height.
+            <strong class="tldr-lead">In the beautiful mountains of mathematics, the same shadow often falls into two valleys that do not talk to each other. My work is to find the peak, name the light, and see what else it casts.</strong> I am interested in understanding the arithmetic invariants in homotopy theory systematically, explaining the connections between known, seemingly unrelated invariants and finding new ones.
           </p>
           <ul>
-            <li><strong><a href="#m-scatter">Scattering</a></strong> (function fields): an inner product of Eisenstein series and an index on the Langlands dual side are two shadows of one object; Kazhdan and Okounkov proved they agree. I look for the object behind both, a trace of Frobenius on a Morita context, and ask what it casts at every height.</li>
-            <li><strong><a href="#m-echo">Echoes</a></strong> (number fields): special values of zeta functions and homotopy groups count the same things, and the prime 691 appears both in exotic spheres and in the <i>K</i>-theory of the integers. I look for the objects behind these coincidences at every chromatic height, starting with a zeta function whose functional equation is a duality.</li>
-            <li><strong><a href="#m-sym">Symmetry you can touch</a></strong> (where the two meet): a symmetry coming from a division algebra over \(\mathbb Q_p\) and the symmetry of a curve in characteristic \(p\) are two shadows of one action. I prove the group forces a unique curve, and the Lubin–Tate action is the symmetry of that curve.</li>
+            <li>My Lubin-Tate work: trade a group action you cannot compute for one you can.
+              <ul>
+                <li><strong><a href="#m-toolkit">The toolkit</a></strong> (Modeling Group Actions on Stacks): the two methods below, geometric modeling and the two-tower method, and the tools they run on.</li>
+                <li><strong><a href="#m-sym">Symmetry you can touch</a></strong> (geometric modeling with curves): starting from the largest finite group of symmetries alone, I build curves whose deformations model the Lubin-Tate action of that group: completely at height \(p-1\), and up to the fibers of a smooth map at the heights \(p^{k-1}(p-1)\).</li>
+                <li><strong><a href="#m-towers">Two Towers</a></strong> (the whole group at once): with six coauthors, a new two-tower isomorphism in characteristic \(p\), and with it the coheight-one weak chromatic splitting conjecture at every height, for generic primes.</li>
+              </ul>
+            </li>
+            <li><strong><a href="#m-echo">Echoes</a></strong> (zeta functions in homotopy theory): Zeta functions measure sizes of homotopy groups, torsions, and Euler characteristics. One project goes the other way: it builds a zeta function out of higher arithmetic duality.</li>
           </ul>
       </div>
 
-<div class="note" id="m-map" style="--accent: var(--violet); margin-top: 1.2rem; margin-bottom: 1.6rem;">
+<div class="note" id="m-map" hidden style="--accent: var(--violet); margin-top: 1.2rem; margin-bottom: 1.6rem;">
       <svg viewBox="0 0 720 166" role="img" aria-label="Echoes and Symmetry each feed Scattering" style="width:100%;height:auto;display:block;font-family:'Space Grotesk',sans-serif;">
         <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1b1b"/></marker></defs>
         <g fill="#1b1b1b">
@@ -1236,77 +1248,162 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <text x="360" y="156" text-anchor="middle" font-size="13" font-style="italic">the Eisenstein spectrum at every height</text>
         </g>
       </svg>
-      <p style="font-size:.85rem;margin:.4rem 0 0;">Arrows point from what supplies to what needs it. Click a box to jump to it.</p>
+      <p style="font-size:.85rem;margin:.4rem 0 0;">Arrows are hopes, not theorems yet: they point from what could supply to what asks for it. Click a box to jump to it.</p>
       </div>
       <div class="dial msort">
         <button type="button" data-sort="status" aria-pressed="true">papers, then work in progress</button>
         <button type="button" data-sort="thread">sorted by theme</button>
         <button type="button" data-sort="date">sorted chronologically</button>
       </div>
-      <details class="stagekey">
-        <summary>What the labels on papers mean</summary>
-        <ul>
-          <li><span class="status st-published">published</span> in a journal</li>
-          <li><span class="status st-submitted">submitted</span> under review at a journal</li>
-          <li><span class="status st-preprint">preprint</span> public, not yet submitted</li>
-          <li><span class="status st-in-prep">in preparation</span> main theorems proved, being written up</li>
-          <li><span class="status st-conjecture">conjecture, checked</span> computations done, no proof yet</li>
-          <li><span class="status st-early">early stage</span> started, nothing to share yet</li>
-          <li><span class="status st-note">note</span> a short write-up, not a paper</li>
-        </ul>
-      </details>
       <div class="mflat" hidden></div>
 
-      <div class="mgroup" id="m-scatter" style="--accent: var(--pink);">
-        <h3>Scattering <span class="yr now">current</span></h3>
-        <p class="gloss">The spectral measure of Eisenstein series is an index on the other side of the Langlands mirror.</p>
-        <p class="chips" style="margin:.2rem 0 .8rem;"><a class="chip" href="#m-echo" style="background:var(--orange);">needs ← an L-function at height h, from Echoes</a> <a class="chip" href="#m-sym" style="background:var(--cyan);">needs ← the height-h theories, from Symmetry</a> </p>
-        <p class="mlabel">One project, three papers</p>
+      <div class="mgroup" id="m-lt" style="--accent: var(--cyan);">
+        <h3>The Lubin-Tate action</h3>
+        <p class="gloss">One project: trade a group action you cannot compute for one you can. It has three parts. The toolkit sets out two methods, geometric modeling and the two-tower method. Symmetry you can touch carries out geometric modeling with curves, for the finite subgroup \(G'\). Two Towers uses the two-tower method, for the full profinite group.</p>
+
+      <div class="subgroup" id="m-toolkit" style="--accent: var(--lilac);">
+        <h4 class="sub-head">The toolkit <span class="sub-note">part 1 of the Lubin-Tate project</span></h4>
+        <p class="gloss sub-gloss">Two ways to pin down a group acting on a formal moduli stack, geometric modeling and the two-tower method, and the tools they run on. Shared by Symmetry you can touch and Two Towers.</p>
       <div class="pubs">
-        <details class="pub" data-key="9999999" data-st="note" style="--accent: var(--pink);">
+        <details class="pub" id="pub-model" data-key="202507" data-st="submitted" style="--accent: var(--lilac);">
           <summary>
-          <h4>The Unramified Eisenstein Spectrum as a Categorical Trace</h4>
-          <p class="pub-line"><span class="status st-note">note</span></p>
-          <p class="ptags"><span class="ptag">Eisenstein series</span><span class="ptag">Plancherel measure</span><span class="ptag">categorical traces</span></p>
-          <p class="who">solo</p>
+          <h4><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a></h4>
+          <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="yr">updated Oct 2026</span><span class="status st-submitted">submitted: <i>Journal of Geometry and Physics</i></span></p>
+          <p class="ptags"><span class="ptag">group actions on stacks</span><span class="ptag">two-tower method</span><span class="ptag">Lubin–Tate action</span><span class="ptag">research paper with expository aims</span></p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">On a curve over a finite field, the inner product of two Eisenstein series is an index on the Langlands dual side, by a theorem of Kazhdan and Okounkov. In that formula a whole moduli of bundles is replaced by \(2g\) numbers and a sign: the curve enters only through a square root of its zeta function, and the answer forgets which square root. I show the measure is the Euler characteristic of an explicit sheaf, the Koszul complex of the tangent bundle of the Steinberg stack twisted by the chosen half of the curve’s cohomology. The measure is canonical; the sheaf computing it is not. Categorically, I conjecture the formula is one reading of a single object, a trace of Frobenius on a Morita context, with the square root as the orientation the category leaves out.</p>
-          <ul class="who"><li><strong>A.</strong> On \(\mathbb P^1\) the Eisenstein measure is a product of orders of \(K\)-groups of \(\mathbb F_q\); it sees \(K_3(\mathbb F_q)\) with Suslin’s correction rather than the pre-Bloch group; and it does not \(p\)-complete. (Theorem; solo.)</li><li><strong>B.</strong> Langlands’ formula, the spectral decomposition, and the genus formula are three readings of one Morita context traced over Frobenius. (Conjecture; forty-seven pages of notes circulated to seven readers, November 2026, every assertion labeled proven, conditional or expected, with the paper in preparation; solo.)</li><li><strong>C.</strong> The spectral side makes sense at every chromatic height; find the automorphic side. (Problem; at height two the spectral side exists integrally, in the elliptic affine Hecke algebra, and is a short paper in preparation; solo.)</li></ul>
+          <p class="pitch">The groundwork for the thesis: before you can compute with a symmetry you cannot see directly, you need a way to make it visible.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Suppose we are given a profinite group \(G\) acting on a formal moduli stack \(\mathcal{M}\), and we want to understand the group action, and compute cohomology related to this group action. How can we do it? This prolegomenon conveys two methods of pinning down such an action: geometric modeling and the two-tower method. We highlight their use on a specific action – the automorphisms of a formal group acting on its deformation space, called the Lubin–Tate action.</p><p>We provide the toolkit that these two methods run on. The pieces of the kit are standard in their own subjects, but the Lubin–Tate action requires us to sew them together and ask more of them than their usual statements give, and several are set down here in that stronger form: equivariantly, in families, and with the grading kept. The tools are put to work in the two sequels, which build geometric models at height \(p-1\) and at the heights \(p^{k-1}(p-1)\) above it; the two-tower material is a companion to the proof of the coheight one weak chromatic splitting conjecture.</p></div>
+          <p class="seq">Background for two projects. It surveys two ways of pinning down the Lubin–Tate action: geometric modeling, which Part II carries out and <em>The Group Determines the Curve</em> extends up to the fibers of a smooth map, and the known two-tower method, which the <a href="#pub-chrom">chromatic splitting paper</a> uses.</p>
+          <p class="who">v2, Oct 2026: expanded into three parts, with the shared background from Part II moved here</p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.00309">arXiv</a></p>
+          </div>
+        </details>
+      </div>
+      </div>
+
+      <div class="subgroup" id="m-sym" style="--accent: var(--cyan);">
+        <h4 class="sub-head">Symmetry you can touch <span class="sub-note">part 2 of the Lubin-Tate project: geometric modeling with curves</span></h4>
+        <p class="gloss sub-gloss">Curves, Jacobians and periods built toward the group action Lubin–Tate space hides.</p>
+        <div class="thesis-block">
+        <p class="mlabel">The Lubin–Tate action: geometric modeling with curves</p>
+      <div class="note" id="lt-note" style="--accent: var(--cyan);">
+        <div class="dial lt-dial" style="margin:0 0 1rem;">
+          <button type="button" data-view="math" aria-pressed="true">for specialists</button>
+          <button type="button" data-view="sci" aria-pressed="false">plain words</button>
+        </div>
+        <div class="lt-view" data-view="sci" hidden>
+          <p><strong>My mathematics has one shape: one hidden object, seen only through partial views, made computable by finding the right model.</strong> In homotopy theory a <em>spectrum</em> (not the eigenvalue kind) is the stable, linearized version of a space, and the simplest one, the sphere, breaks into layers, one for each height. Each layer is governed by its own Lubin-Tate action, the action of the layer’s symmetry group, a group action at the heart of both homotopy theory and the Langlands program, which cannot be computed directly.</p>
+          <p>The symmetries of order \(p\) carry the most information in any layer and are the hardest to compute, and they first appear at height \(p-1\). I first set out two general methods for modeling group actions on stacks, geometric modeling and the two-tower method, with toolkits for both. I built a geometric model determined <em>entirely</em> by the largest finite group of symmetries at height \(p-1\), with no choices, and used it to describe and compute the action of this group for every odd prime \(p\) at once. I extended the model to show that the group determines the model again at every height \(p^{k-1}(p-1)\), the first height with a symmetry of order \(p^k\). There my work predicted a formula for the Lubin-Tate action; its proof is in preparation. At the prime 3, where this height is 6, Eva Belmont and I used my formula to prove the detection theorem for the last open odd-primary case of the Kervaire invariant one problem, and to compute the starting page of its spectral sequence.</p>
+        </div>
+        <div class="lt-view" data-view="math">
+        <p>
+          The Morava stabilizer group acts on Lubin–Tate space. The Lubin-Tate action
+          drives the \(K(h)\)-local sphere, yet it is explicit almost nowhere.
+          <strong>For its maximal finite subgroup \(G'\), the group alone
+          determines a unique curve, and the symmetry of that curve is the
+          Lubin-Tate action.</strong>
+        </p>
+        <p style="margin-top:1rem;"><strong>Geometric modeling with curves, for the finite subgroup \(G'\).</strong></p>
+        <ul class="thesis-parts">
+          <li><strong>Part II</strong> (my thesis, 2023): at height \(p-1\), the deformations of the curve <em>are</em> Lubin–Tate space, and from the curve I compute \(\pi_*E_{p-1}\) and its cohomology.</li>
+          <li><strong>The Group Determines the Curve</strong> (2026): at every height \(p^{k-1}(p-1)\), the group again picks a curve, and its Jacobian hides a formal group of height \(h\). I prove that sending a deformation of the curve to that formal group is a smooth, \(G'\)-equivariant map onto Lubin-Tate space, defined on the deformations that keep the formal group. So the curve is a model of the Lubin-Tate action after quotienting by the fibers of this map. This solves a 40-year-old problem. In preparation.</li>
+          <li><strong>Kervaire:</strong> at \(p=3\), height 6, with Eva Belmont: assuming a formula for the Lubin-Tate action, we prove the detection theorem in the last open odd-primary case and compute the \(E_2\)-page.</li>
+        </ul>
+        </div>
+        <script>
+        (function () {
+          var box = document.getElementById('lt-note');
+          var btns = box.querySelectorAll('.lt-dial button');
+          btns.forEach(function (b) { b.addEventListener('click', function () {
+            btns.forEach(function (c) { c.setAttribute('aria-pressed', c === b ? 'true' : 'false'); });
+            box.querySelectorAll('.lt-view').forEach(function (v) { v.hidden = v.dataset.view !== b.dataset.view; });
+          }); });
+        })();
+        </script>
+        <p class="chips"><a class="chip" href="/pdfs/application_general_audience.pdf">My thesis, explained for everyone (PDF)</a> <a class="chip code" href="https://github.com/catherineray/h-splitting">code: h-splitting</a></p>
+      </div>
+      <div class="pubs">
+        <details class="pub" data-key="202509" data-st="submitted" style="--accent: var(--cyan);">
+          <summary>
+          <h4><a href="https://arxiv.org/abs/2509.23428">Tiny and Unique: The Lubin–Tate Action at Height \(p-1\) from the Minimal Curve with Its Symmetries</a></h4>
+          <p class="pub-line"><span class="part">Part II</span><span class="yr">Sept 2025</span><span class="yr">updated Oct 2026</span><span class="status st-submitted">submitted: <i>AG&amp;T</i></span></p>
+          <p class="ptags"><span class="ptag">moduli of curves</span><span class="ptag">inverse Galois theory</span><span class="ptag">Lubin–Tate action</span></p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">A symmetry hidden inside homotopy theory turns out to be the symmetry of an actual curve, one you can write down and draw.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Let \(p\) be odd and \(G' = \mathbb{Z}/p \rtimes \mathbb{Z}/(p-1)^2\) the maximal finite subgroup of the Morava stabilizer group at height \(p-1\). Inverse Galois theory produces from \(G'\) alone a curve \(X\), the unique curve of minimal genus with \(\operatorname{Aut}(X) \simeq G'\); its ramification, its field of definition and its equation are consequences of the group, not choices. We prove a \(G'\)-equivariant equivalence between the deformations of \(X\) and Lubin–Tate space, so that the Lubin–Tate action of \(G'\) is the action of \(\operatorname{Aut}(X)\) on deformations of the curve. The proof is a coordinate-free Kodaira–Spencer argument reducing to a single character count. The action becomes explicit: \(G'\) acts through \(\mathbb{F}_p \rtimes \mathbb{F}_p^\times\) shifting and scaling \(p+1\) points on \(\mathbb{P}^1\). From this we compute \(H^*(G', π_* E_{p-1})\) and its Tate cohomology. One identity, \(π^{p-1} = -p\), runs through every section.</p></div>
+          <p class="who">v3, Oct 2026: retitled and revised together with Part I</p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2509.23428">arXiv</a></p>
           </div>
         </details>
 
-        <details class="pub" data-key="999999" data-st="early stage" style="--accent: var(--pink);">
+        <details class="pub" data-key="99999999" data-st="in-prep" style="--accent: var(--cyan);">
           <summary>
-          <h4><i>L</i>-genera and Localizations in <i>K</i>-theory</h4>
-          <p class="pub-line"><span class="status st-early">early stage</span></p>
-          <p class="ptags"><span class="ptag">genera</span><span class="ptag">string structures</span><span class="ptag">anomalies</span></p>
-          <p class="who">in conversation with Daniel Berwick-Evans and Natalia Pacheco-Tallaj</p>
+          <h4>The Group Determines the Curve: \(p^k\) Torsion in the Lubin-Tate Action</h4>
+          <p class="pub-line"><span class="status st-in-prep">in preparation</span></p>
+          <p class="ptags"><span class="ptag">Cartier operator</span><span class="ptag">Gauss sums</span><span class="ptag">Newton polygons</span></p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">The Eisenstein formula is canonical, but writing it down takes a choice of square root that the answer forgets. The Witten genus has the same problem one height up: its class is canonical, but a cocycle for it takes a choice of rational string structure. We ask whether these are one phenomenon, and whether the forgetting is an anomaly that cancels.</p>
+          <p class="pitch">At every height \(h = p^{k-1}(p-1)\), the group \(G'\) picks an Artin-Schreier-Witt curve, and the Jacobian of the curve has a quotient formal group of height \(h\). A deformation of the curve is <em>block-preserving</em> if this quotient deforms along with it. Sending a block-preserving deformation to its formal group is a \(G'\)-equivariant, formally smooth map onto Lubin-Tate space. At \(k=1\) this map is the equivalence of Part II; at \(k\ge2\) it has fibers, and Lubin-Tate space is the base of a smooth fibration. Surgeries, regluing the curve at its \(p^k\) branch points, are one way to see the tangent directions.</p>
+          <p class="who"><strong>How far along:</strong> proved: the curve, and the smooth equivariant map onto Lubin-Tate space, for every odd \(p\) and every \(k\ge2\). At \(k=2\), Frobenius on the curve alone finds the formal group: proved at \((p,k)=(3,2)\), and for every odd \(p\) the proof is written and being checked. Also written and being checked: a presentation of the Lubin-Tate ring with its \(G'\)-action.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Let \(p\) be odd and \(h = p^{k-1}(p-1)\). The Morava stabilizer group at height \(h\) has a maximal finite subgroup \(G' \cong \mathbb{Z}/p^k \rtimes \mathbb{Z}/(p-1)^2\), containing an element \(\sigma\) of order \(p^k\), and \(G'\) acts on Lubin-Tate space. We ask two questions about this action, and give two answers.</p><p>Can the Lubin-Tate action be modeled by curves, starting from the group alone? Yes. From \(G'\) we build a curve \(X_k\). Some deformations of \(X_k\) keep a one-dimensional formal group of height \(h\) as a quotient of the Jacobian. Sending such a deformation to that formal group gives a \(G'\)-equivariant, formally smooth map onto Lubin-Tate space. At \(k = 1\) this map is an isomorphism, as in the prequel. At \(k \ge 2\) it has fibers: the deformations of the curve that the formal group does not notice. The heart of the proof is one exact sequence, which is an isomorphism at \(k = 1\) and stays onto for every \(k\).</p><p>Can the Lubin-Tate action be described without any curve? Yes. The element \(\sigma\) of order \(p^k\) makes the formal group a module over \(\mathbb{Z}_p[\zeta_{p^k}]\), and the fixed points of \(\sigma\) on Lubin-Tate space carry the formal group of local class field theory. From these fixed points we write down the Lubin-Tate ring with its \(G'\)-action.</p><p>One identity, Frobenius \(= (\sigma - 1)\cdot\text{unit}\), appears in both answers.</p></div>
+          <p class="seq">Part of this paper: the Frobenius eigenvalues of Artin–Schreier–Witt curves are Gauss sums. The Newton polygon of a curve, the slopes of its Frobenius eigenvalues, is what splits a height-\(h\) formal piece off its Jacobian. At level \(k\) the slopes are a theorem of Liu and Wan; the paper reads them through Gauss sums.</p>
+          <p class="chips"><a class="chip" href="/pdfs/Gauss_sums.pdf">Gauss sums: note toward this (PDF)</a> <a class="chip code" href="https://github.com/catherineray/newton">code: newton</a></p>
           </div>
         </details>
 
-        <details class="pub" data-key="999999" data-st="early stage" style="--accent: var(--pink);">
+
+      </div>
+        </div>
+      <div class="pubs">
+        
+
+        <details class="pub" data-key="202507" data-st="submitted" style="--accent: var(--cyan);">
           <summary>
-          <h4>Habiro Characteristic Classes of <i>L</i>-function Genera</h4>
-          <p class="pub-line"><span class="status st-early">early stage</span></p>
-          <p class="ptags"><span class="ptag">Habiro cohomology</span><span class="ptag">characteristic classes</span><span class="ptag"><i>L</i>-function genera</span></p>
-          <p class="who">in conversation with Ferdinand Wagner</p>
+          <h4><a href="https://arxiv.org/abs/2507.10157">Towards the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem: The \(E_2\)-page for the Homotopy Fixed Points Spectral Sequence Computing \(\pi_*(E_6^{hC_9})\)</a></h4>
+          <p class="pub-line"><span class="yr">July 2025</span><span class="status st-submitted">submitted</span></p>
+          <p class="ptags"><span class="ptag">Kervaire invariant</span><span class="ptag">homotopy fixed points</span><span class="ptag">Morava <i>E</i>-theory</span></p>
+          <p class="who">joint with Eva Belmont</p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">In the Eisenstein formula \(q\) does two jobs: on one side it is the size of a finite field, on the other a formal variable. We let \(q\) vary and ask whether the formula’s two faces, function fields in <i>K</i>-theory and number fields in cohomology, are specializations of one Habiro characteristic class. The Habiro ring sees \(q=1\) directly; the function field value \(q=p^n\) is not a root of unity, and that is the whole difficulty.</p>
+          <p class="pitch">The Kervaire invariant problem, one of the classical questions about high-dimensional manifolds, has one case left: the prime 3. This paper sets up the computation that decides it.</p>
+          <p class="spot"><strong>Used in a claimed resolution.</strong> In September 2026 OpenAI posted <a href="https://github.com/openai/math/blob/main/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/paper.pdf">a preprint claiming to resolve the Kervaire invariant problem at the prime 3</a>, <strong>using our results and the method Eva and I proposed in this paper</strong>.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>Hill, Hopkins, and Ravenel suggest that the last remaining Kervaire invariant problem, the case of \(p=3\), can be solved by computing the homotopy fixed points spectral sequence for \(π_* E_6^{hC_9}\). We prove a detection theorem for this case and use a conjectural form of the \(C_9\)-action on \(E_6\) to compute the \(E_2\) page of this spectral sequence away from homological degree zero.</p></div>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.10157">arXiv</a><a class="chip" href="https://github.com/openai/math/blob/main/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/paper.pdf">OpenAI preprint</a></p>
           </div>
         </details>
 
       </div>
+      </div>
+
+      <div class="subgroup" id="m-towers" style="--accent: var(--yellow);">
+        <h4 class="sub-head">Two Towers <span class="sub-note">part 3 of the Lubin-Tate project: the full profinite group</span></h4>
+        <p class="gloss sub-gloss">How do neighboring layers of the sphere spectrum fit back together? This involves computing the Lubin-Tate action of the full profinite group.</p>
+      <div class="pubs">
+        <details class="pub" id="pub-chrom" data-key="202609" data-st="preprint" style="--accent: var(--yellow);">
+          <summary>
+          <h4><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture in Coheight 1</a></h4>
+          <p class="pub-line"><span class="yr">Sept 2026</span><span class="status st-preprint">preprint</span></p>
+          <p class="ptags"><span class="ptag">chromatic splitting</span><span class="ptag">two-tower isomorphism</span><span class="ptag">Fargues–Fontaine curve</span></p>
+          <p class="who">joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">Homotopy theory breaks the sphere into layers, one for each height, and Hopkins predicted how neighboring layers fit back together. We confirm that prediction for neighboring layers at every height, using geometry rather than brute-force computation.</p>
+          <p class="spot"><strong>Every height at once.</strong> We prove the coheight-one form of chromatic splitting at every height \(h\), for all primes with \(p-1\nmid h-1\). Before this it was known only at heights 1 and 2.</p>
+          <div class="abs-body"><p class="abs-label">Abstract</p><p>This article confirms predictions made by Hopkins’ chromatic splitting conjecture in stable homotopy theory. A consequence of our main theorem is that a certain map of \(K(h-1)\)-local \(E_\infty\)-rings \(\mathbb{S}^{B\mathbb{Z}_p}_{K(h-1)} \to L_{K(h-1)}\mathbb{S}_{K(h)}\) admits a retract, so long as \(p-1\) does not divide \(h-1\). If \(h=2\) and \(p\) is odd, we show this map is an isomorphism.</p><p>We use methods from the theory of \(p\)-divisible groups and \(p\)-adic geometry. Along the way we prove an entirely new kind of “two-tower isomorphism”, in analogy with Faltings’ isomorphism between the Lubin–Tate and Drinfeld towers, which parametrizes \(p\)-divisible groups over characteristic \(p\) perfectoid spaces with fixed generic fiber in terms of negative Banach–Colmez spaces. Using the two-tower isomorphism, we gain control over the continuous cohomology of the Morava stabilizer group \(\mathbb{G}_h\) with coefficients in \(\pi_* L_{K(h-1)} E_h\).</p><p>To study the continuous action of \(\mathbb{G}_h\) on \(L_{K(h-1)} E_h\), it was necessary to develop the theory of solid Lubin–Tate spectra. Adapting Lurie’s constructions, we attach a solid Lubin–Tate spectrum to \(p\)-divisible groups over a broad class of solid rings in characteristic \(p\).</p></div>
+          <p class="seq">The background for this paper is in <a href="#pub-model">Modeling Group Actions on Stacks</a>, which surveys the two-tower method.</p>
+          <p class="chips"><a class="chip" href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">PDF</a></p>
+          </div>
+        </details>
+      </div>
+      </div>
+
       </div>
 
       <div class="mgroup" id="m-echo" style="--accent: var(--orange);">
         <h3>Echoes <span class="yr now">current</span></h3>
-        <p class="gloss">The same numbers, computed twice: once by homotopy theory, once by arithmetic.</p>
-        <p class="chips" style="margin:.2rem 0 .8rem;"><a class="chip" href="#m-scatter" style="background:var(--pink);">gives → Scattering its height-h L-function</a> </p>
+        <p class="gloss">Zeta functions measure sizes of homotopy groups, torsions, and Euler characteristics. One project goes the other way: it builds a zeta function out of higher arithmetic duality.</p>
       <div class="pubs">
         <details class="pub" data-key="9999999" data-st="in preparation" style="--accent: var(--orange);">
           <summary>
@@ -1317,7 +1414,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           </summary>
           <div class="pub-body">
           <p class="pitch">A zeta function for chromatic ring spectra, built from \(T(h+1)\)-local syntomic cohomology. A chromatic Tate twist lets it see the height: for \(BP\langle h\rangle\) it has \(2^{h+1}\) zeros and poles, one for each exterior monomial, and its pole at \(T=1\) is redshift. For \(h\ge1\) its functional equation holds with no correction factor, and it <em>is</em> the higher arithmetic duality of Devalapurkar, Hahn and Rognes.</p>
-          <p class="who"><strong>Result:</strong> \(T(h+1)\)-local syntomic cohomology of a \(BP\langle h\rangle\)-linear category carries a zeta function, and its functional equation is higher Hodge duality with no correction factor. (Theorem for \(BP\langle h\rangle\) and \(h\ge1\); for general categories under stated hypotheses; with G. Angelini-Knoll.)</p>
+          <p class="who"><strong>Result:</strong> \(T(h+1)\)-local syntomic cohomology of a \(BP\langle h\rangle\)-linear category carries a zeta function, and its functional equation is higher arithmetic duality with no correction factor. (Theorem for \(BP\langle h\rangle\) and \(h\ge1\); for general categories under stated hypotheses; with G. Angelini-Knoll.)</p>
           </div>
         </details>
 
@@ -1363,125 +1460,48 @@ rail_sections:   # listed in the sidebar under "About Rin"
 
 
       </div>
-      </div>
-
-      <div class="mgroup" id="m-sym" style="--accent: var(--cyan);">
-        <h3>Symmetry you can touch</h3>
-        <p class="gloss">Curves, Jacobians and periods built toward the group action Lubin–Tate space hides.</p>
-        <p class="chips" style="margin:.2rem 0 .8rem;"><a class="chip" href="#m-scatter" style="background:var(--pink);">gives → Scattering the height-h theories</a> </p>
-        <div class="thesis-block">
-        <p class="mlabel">The Lubin–Tate action, in four papers</p>
-      <div class="note note-quiet" style="--accent: var(--cyan);">
-        <p>
-          The Morava stabilizer group acts on Lubin–Tate space. That action
-          drives the \(K(h)\)-local sphere, yet it is explicit almost nowhere.
-          <strong>For its maximal finite subgroup \(G'\), the group alone
-          determines a unique curve, and the action is the symmetry of that
-          curve.</strong>
-        </p>
-        <ul class="thesis-parts">
-          <li><strong>Part II</strong> (my thesis, 2023): at height \(p-1\), the deformations of the curve <em>are</em> Lubin–Tate space, and from the curve I compute \(\pi_*E_{p-1}\) and its cohomology.</li>
-          <li><strong>Part III</strong> (2026): at every height \(p^{k-1}(p-1)\), the moduli are <em>surgeries</em>. Take the curve’s quotient by the centre of \(G'\), cut out the formal disk around each of its \(p^k\) branch points, and glue each one back in along an automorphism of the punctured disk. I prove the stack of these surgeries has exactly the Lubin–Tate tangent. This solves a 40-year-old problem. In preparation.</li>
-          <li><strong>Chromatic splitting</strong> (2026, joint): with the two-tower method of Part I we prove the coheight-one weak chromatic splitting conjecture <strong>at every height at once</strong>, for generic primes. Before, it was known only at heights 1 and 2.</li>
-          <li><strong>Kervaire:</strong> at \(p=3\), height 6, this is the action behind the detection theorem in the last open odd-primary case, with Eva Belmont.</li>
-          <li><strong>Part I</strong> is the toolkit: two ways to pin down a group acting on a formal moduli stack. Geometric modeling is what Parts II and III carry out; the two-tower method is what the splitting paper runs on. The tools are standard, but here they are set down in the stronger form the Lubin–Tate action needs: equivariantly, in families, and with the grading kept.</li>
-        </ul>
-        <p class="chips"><a class="chip" href="/pdfs/application_general_audience.pdf">My thesis, explained for everyone (PDF)</a> <a class="chip code" href="https://github.com/catherineray/h-splitting">code: h-splitting</a></p>
-      </div>
+      <div id="m-scatter" style="--accent: var(--pink); margin-top:2.2rem;">
+        <h4 class="sub-head">Scattering <span class="sub-note">the Eisenstein project: one project, three papers</span></h4>
+        <p class="gloss sub-gloss">Kazhdan and Okounkov computed the inner product of Eisenstein series in two very different ways and found the same answer. I find one trace of Frobenius that the first way reads, and conjecture that the second way reads it too, at every chromatic height.</p>
       <div class="pubs">
-        <details class="pub" id="pub-model" data-key="202507" data-st="submitted" style="--accent: var(--cyan);">
+        <details class="pub" data-key="9999999" data-st="note" style="--accent: var(--pink);">
           <summary>
-          <h4><a href="https://arxiv.org/abs/2507.00309">Modeling Group Actions on Stacks (Especially the Lubin–Tate Action)</a></h4>
-          <p class="pub-line"><span class="part">Part I</span><span class="yr">July 2025</span><span class="yr">updated Oct 2026</span><span class="status st-submitted">submitted: <i>Journal of Geometry and Physics</i></span></p>
-          <p class="ptags"><span class="ptag">group actions on stacks</span><span class="ptag">two-tower method</span><span class="ptag">Lubin–Tate action</span><span class="ptag">research paper with expository aims</span></p>
-          </summary>
-          <div class="pub-body">
-          <p class="pitch">The groundwork for the thesis: before you can compute with a symmetry you cannot see directly, you need a way to make it visible.</p>
-          <div class="abs-body"><p class="abs-label">Abstract</p><p>Suppose we are given a profinite group \(G\) acting on a formal moduli stack \(\mathcal{M}\), and we want to understand the group action, and compute cohomology related to this group action. How can we do it? This prolegomenon conveys two methods of pinning down such an action: geometric modeling and the two-tower method. We highlight their use on a specific action – the automorphisms of a formal group acting on its deformation space, called the Lubin–Tate action.</p><p>We provide the toolkit that these two methods run on. The pieces of the kit are standard in their own subjects, but the Lubin–Tate action requires us to sew them together and ask more of them than their usual statements give, and several are set down here in that stronger form: equivariantly, in families, and with the grading kept. The tools are put to work in the two sequels, which build geometric models at height \(p-1\) and at the heights \(p^{k-1}(p-1)\) above it; the two-tower material is a companion to the proof of the coheight one weak chromatic splitting conjecture.</p></div>
-          <p class="seq">Background for two projects. It surveys two ways of pinning down the Lubin–Tate action: geometric modeling, which Parts II and III carry out, and the known two-tower method, which the <a href="#pub-chrom">chromatic splitting paper</a> uses.</p>
-          <p class="who">v2, Oct 2026: expanded into three parts, with the shared background from Part II moved here</p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.00309">arXiv</a></p>
-          </div>
-        </details>
-
-        <details class="pub" data-key="202509" data-st="submitted" style="--accent: var(--cyan);">
-          <summary>
-          <h4><a href="https://arxiv.org/abs/2509.23428">Tiny and Unique: The Lubin–Tate Action at Height \(p-1\) from the Minimal Curve with Its Symmetries</a></h4>
-          <p class="pub-line"><span class="part">Part II</span><span class="yr">Sept 2025</span><span class="yr">updated Oct 2026</span><span class="status st-submitted">submitted: <i>AG&amp;T</i></span></p>
-          <p class="ptags"><span class="ptag">moduli of curves</span><span class="ptag">inverse Galois theory</span><span class="ptag">Lubin–Tate action</span></p>
-          </summary>
-          <div class="pub-body">
-          <p class="pitch">A symmetry hidden inside homotopy theory turns out to be the symmetry of an actual curve, one you can write down and draw.</p>
-          <div class="abs-body"><p class="abs-label">Abstract</p><p>Let \(p\) be odd and \(G' = \mathbb{Z}/p \rtimes \mathbb{Z}/(p-1)^2\) the maximal finite subgroup of the Morava stabilizer group at height \(p-1\). Inverse Galois theory produces from \(G'\) alone a curve \(X\), the unique curve of minimal genus with \(\operatorname{Aut}(X) \simeq G'\); its ramification, its field of definition and its equation are consequences of the group, not choices. We prove a \(G'\)-equivariant equivalence between the deformations of \(X\) and Lubin–Tate space, so that the Lubin–Tate action of \(G'\) is the action of \(\operatorname{Aut}(X)\) on deformations of the curve. The proof is a coordinate-free Kodaira–Spencer argument reducing to a single character count. The action becomes explicit: \(G'\) acts through \(\mathbb{F}_p \rtimes \mathbb{F}_p^\times\) shifting and scaling \(p+1\) points on \(\mathbb{P}^1\). From this we compute \(H^*(G', π_* E_{p-1})\) and its Tate cohomology. One identity, \(π^{p-1} = -p\), runs through every section.</p></div>
-          <p class="who">v3, Oct 2026: retitled and revised together with Part I</p>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2509.23428">arXiv</a></p>
-          </div>
-        </details>
-
-        <details class="pub" data-key="99999999" data-st="in-prep" style="--accent: var(--cyan);">
-          <summary>
-          <h4>Only the Gauge Grows: Moduli Stacks of <i>G</i>-Curves in Homotopy Theory at \(h = p^{k-1}(p-1)\)</h4>
-          <p class="pub-line"><span class="part">Part III</span><span class="status st-in-prep">in preparation</span></p>
-          <p class="ptags"><span class="ptag">stacks of surgeries</span><span class="ptag">Cartier operator</span></p>
-          </summary>
-          <div class="pub-body">
-          <p class="pitch">At every height \(h = p^{k-1}(p-1)\), the moduli are <em>surgeries</em> on \(Y_k\), the quotient of the curve by the centre of \(G'\), at the free orbit \(B_0\) of its \(p^k\) branch points over \(0\in\mathbb P^1\). A surgery is a deformation of \(Y_k\) obtained by regluing it from \(Y_k\smallsetminus B_0\) and the formal disks at the points of \(B_0\), along automorphisms of the punctured disks. The pole order of that automorphism filters the surgeries; at \(k=1\) a surgery of pole order zero just moves a branch point. I build the smooth stack of these surgeries and prove that its tangent space and the Lubin–Tate tangent are the same representation: functions on the branch points, modulo a gauge. The moduli stay on the branch points; only the gauge grows.</p>
-          <p class="who"><strong>How far along:</strong> proved: the curve, the stack, the matching representation, the derivative of the period map, and the Cartier chain at \(k=2\) for every \(p\). Conjectured: that Lubin–Tate space is the horizontal surgeries modulo the kernel of the period map, checked by machine at \((p,k)=(3,2),(5,2)\).</p>
-          <div class="abs-body"><p class="abs-label">Abstract</p><p>Fix an odd prime \(p\) and an integer \(k\ge1\). The Morava stabilizer group \(\mathbb{G}_h\) has finite subgroups of order divisible by \(p\) only at heights \(h=p^{k-1}(p-1)m\), and at \(m=1\) a maximal one, maximal in the sense of not being properly contained in a larger finite subgroup, is \(G'=\mathbb{Z}/p^k\rtimes\mathbb{Z}/(p-1)^2\). Set \(h=p^{k-1}(p-1)\); then \(G'\) acts on the Lubin–Tate deformation space \(\mathrm{Def}(H_h)\) of a formal group of height \(h\). Our first theorem identifies the tangent space of \(\mathrm{Def}(H_h)\) at its closed point as a representation of \(G'\): it is \((\mathfrak{p}_L/p\mathcal{O}_L)^\vee\) for \(L=\mathbb{Q}_p(\zeta_{p^k})\) and \(\mathfrak{p}_L=(\zeta_{p^k}-1)\); equivalently, it is the space of functions \(W_k(\mathbb{F}_p)\to\overline{\mathbb{F}}_p\) on the Witt vectors of length \(k\), modulo those of difference degree at most \(p^{k-1}\), with \(\mathbb{Z}/p^k\) acting by translating \(W_k(\mathbb{F}_p)\) and \(\mathbb{Z}/(p-1)^2\) by Teichmüller scaling.</p><p>We then realize this representation geometrically. There is a unique curve \(X_k\) of smallest genus carrying a faithful \(G'\)-action. Writing \(Y_k\) for its quotient by the centre of \(G'\), the subgroup \(\mathbb{Z}/p^k\) acts on \(Y_k\) with \(Y_k/(\mathbb{Z}/p^k)\cong\mathbb{P}^1\), and the fibre \(B_0\) over \(0\) is a free orbit of \(p^k\) points, canonically identified with \(W_k(\mathbb{F}_p)\). A <em>surgery</em> is a deformation of \(Y_k\) obtained by regluing it from \(Y_k\smallsetminus B_0\) and the formal disks at the points of \(B_0\) along automorphisms of the punctured disks; the pole orders of those automorphisms filter the surgeries. We prove that the surgeries of pole order exactly \(p^{k-1}-1\) form a smooth formal stack \(\mathfrak{S}_k\) over \(W(\overline{\mathbb{F}}_p)\) of dimension \(h-1\), and that its tangent space is the representation above. At \(k=1\) a surgery of pole order \(0\) moves a branch point, and \(\mathfrak{S}_1\) is the configuration space of Part II.</p><p>Along a family of surgeries the crystalline cohomology of \(Y_k\) is constant as an isocrystal, and only its lattice moves. Projecting that lattice to the slope-\(1/h\) summand and reading its Hodge line defines a period map \(\Phi\) to \(\mathrm{Def}(H_h)\), on those surgeries for which the Hodge line stays in the summand. We compute the derivative of \(\Phi\) as an explicit residue, and conjecture that \(\Phi\) identifies \(\mathrm{Def}(H_h)\) with the stack of such surgeries modulo the kernel of \(d\Phi\). For \(k=2\) we locate the representation inside the curve: on the isotypic part of \(H^0(X_2,\Omega^1)\) for the centre, the Cartier operator has exactly one Jordan block of length at least \(p\), of length \(p^2-2\); dually, the image of \(\bar F^{\,p-1}\) on \(H^1(X_2,\mathcal{O})\) is, after one explicit character twist, the representation above, for every odd \(p\).</p></div>
-          </div>
-        </details>
-
-        <details class="pub" id="pub-chrom" data-key="202609" data-st="preprint" style="--accent: var(--cyan);">
-          <summary>
-          <h4><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture in Coheight 1</a></h4>
-          <p class="pub-line"><span class="yr">Sept 2026</span><span class="status st-preprint">preprint</span></p>
-          <p class="ptags"><span class="ptag">chromatic splitting</span><span class="ptag">two-tower isomorphism</span><span class="ptag">Fargues–Fontaine curve</span></p>
-          <p class="who">joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou</p>
-          </summary>
-          <div class="pub-body">
-          <p class="pitch">Homotopy theory breaks the sphere into layers, one for each height, and Hopkins predicted how neighbouring layers fit back together. We confirm that prediction for neighbouring layers at every height, using geometry rather than brute-force computation.</p>
-          <p class="spot"><strong>Every height at once.</strong> We prove the coheight-one form of chromatic splitting at every height \(h\), for all primes with \(p-1\nmid h-1\). Before this it was known only at heights 1 and 2.</p>
-          <div class="abs-body"><p class="abs-label">Abstract</p><p>This article confirms predictions made by Hopkins’ chromatic splitting conjecture in stable homotopy theory. A consequence of our main theorem is that a certain map of \(K(h-1)\)-local \(E_\infty\)-rings \(\mathbb{S}^{B\mathbb{Z}_p}_{K(h-1)} \to L_{K(h-1)}\mathbb{S}_{K(h)}\) admits a retract, so long as \(p-1\) does not divide \(h-1\). If \(h=2\) and \(p\) is odd, we show this map is an isomorphism.</p><p>We use methods from the theory of \(p\)-divisible groups and \(p\)-adic geometry. Along the way we prove an entirely new kind of “two-tower isomorphism”, in analogy with Faltings’ isomorphism between the Lubin–Tate and Drinfeld towers, which parametrizes \(p\)-divisible groups over characteristic \(p\) perfectoid spaces with fixed generic fiber in terms of negative Banach–Colmez spaces. Using the two-tower isomorphism, we gain control over the continuous cohomology of the Morava stabilizer group \(\mathbb{G}_h\) with coefficients in \(\pi_* L_{K(h-1)} E_h\).</p><p>To study the continuous action of \(\mathbb{G}_h\) on \(L_{K(h-1)} E_h\), it was necessary to develop the theory of solid Lubin–Tate spectra. Adapting Lurie’s constructions, we attach a solid Lubin–Tate spectrum to \(p\)-divisible groups over a broad class of solid rings in characteristic \(p\).</p></div>
-          <p class="seq">The background for this paper is in <a href="#pub-model">Modeling Group Actions on Stacks</a>, which surveys the two-tower method.</p>
-          <p class="chips"><a class="chip" href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">PDF</a></p>
-          </div>
-        </details>
-
-      </div>
-        </div>
-      <div class="pubs">
-        
-
-        <details class="pub" data-key="202507" data-st="submitted" style="--accent: var(--cyan);">
-          <summary>
-          <h4><a href="https://arxiv.org/abs/2507.10157">Towards the <i>p</i>&nbsp;=&nbsp;3 Kervaire Invariant Problem: The \(E_2\)-page for the Homotopy Fixed Points Spectral Sequence Computing \(\pi_*(E_6^{hC_9})\)</a></h4>
-          <p class="pub-line"><span class="yr">July 2025</span><span class="status st-submitted">submitted</span></p>
-          <p class="ptags"><span class="ptag">Kervaire invariant</span><span class="ptag">homotopy fixed points</span><span class="ptag">Morava <i>E</i>-theory</span></p>
-          <p class="who">joint with Eva Belmont</p>
-          </summary>
-          <div class="pub-body">
-          <p class="pitch">The Kervaire invariant problem, one of the classical questions about high-dimensional manifolds, has one case left: the prime 3. This paper sets up the computation that decides it.</p>
-          <p class="spot"><strong>Used in a claimed resolution.</strong> In September 2026 OpenAI posted <a href="https://github.com/openai/math/blob/main/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/paper.pdf">a preprint claiming to resolve the Kervaire invariant problem at the prime 3</a>, <strong>using our results and the method Eva and I proposed in this paper</strong>.</p>
-          <div class="abs-body"><p class="abs-label">Abstract</p><p>Hill, Hopkins, and Ravenel suggest that the last remaining Kervaire invariant problem, the case of \(p=3\), can be solved by computing the homotopy fixed points spectral sequence for \(π_* E_6^{hC_9}\). We prove a detection theorem for this case and use a conjectural form of the \(C_9\)-action on \(E_6\) to compute the \(E_2\) page of this spectral sequence away from homological degree zero.</p></div>
-          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2507.10157">arXiv</a><a class="chip" href="https://github.com/openai/math/blob/main/preprints/The-Kervaire-Invariant-Problem-at-the-Prime-Three-September-24-2026/paper.pdf">OpenAI preprint</a></p>
-          </div>
-        </details>
-
-      </div>
-      <div class="pubs">
-        <details class="pub" data-key="9999999" data-st="note" style="--accent: var(--cyan);">
-          <summary>
-          <h4>The Eigenvalues of Frobenius of Artin–Schreier–Witt Curves are Gauss Sums</h4>
+          <h4>The Unramified Eisenstein Spectrum as a Categorical Trace</h4>
           <p class="pub-line"><span class="status st-note">note</span></p>
-          <p class="ptags"><span class="ptag">Artin–Schreier–Witt curves</span><span class="ptag">Gauss sums</span><span class="ptag">Newton polygons</span></p>
+          <p class="ptags"><span class="ptag">Eisenstein series</span><span class="ptag">equivariant <i>K</i>-theory</span><span class="ptag">categorical traces</span></p>
+          <p class="who">solo</p>
           </summary>
           <div class="pub-body">
-          <p class="pitch">The Frobenius eigenvalues of Artin–Schreier–Witt curves are Gauss sums, and reading off their slopes gives new families of Newton strata in the Torelli locus.</p>
-          <p class="seq">This is what certifies the curves above as models: the Newton polygon of a curve, the slopes of its Frobenius eigenvalues, is what splits a height-\(h\) formal summand off its Jacobian.</p>
-          <p class="chips"><a class="chip" href="/pdfs/Gauss_sums.pdf">note toward this (PDF)</a> <a class="chip code" href="https://github.com/catherineray/newton">code: newton</a></p>
+          <p class="pitch">On a curve over a finite field, the inner product of two Eisenstein series is an index on the Langlands dual side, by a theorem of Kazhdan and Okounkov. In that formula a whole moduli of bundles is replaced by \(2g\) numbers and a sign: the curve enters only through a square root of its zeta function, and the answer forgets which square root. I read their formula as the Euler characteristic of an explicit sheaf, the Koszul complex of the tangent bundle of the Steinberg stack twisted by the chosen half of the curve’s cohomology. The measure is canonical; the sheaf computing it is not. Categorically, I conjecture the formula is one reading of a single object, a trace of Frobenius on a Morita context, with the square root as the orientation the category leaves out.</p>
+          <ul class="who"><li><strong>A.</strong> On \(\mathbb P^1\) the Eisenstein measure is a product of orders of \(K\)-groups of \(\mathbb F_q\); it sees \(K_3(\mathbb F_q)\) with Suslin’s correction rather than the pre-Bloch group; and it does not \(p\)-complete. (Computed, in notes; solo.)</li><li><strong>B.</strong> Langlands’ formula, the spectral decomposition, and the genus formula are three readings of one Morita context traced over Frobenius. (Conjecture, in notes, November 2026, every assertion labeled proven, conditional or expected; solo.)</li><li><strong>C.</strong> The spectral side makes sense at every chromatic height; find the automorphic side. (Problem; at height two the spectral side exists integrally, in the elliptic affine Hecke algebra, in notes; solo.)</li></ul>
           </div>
         </details>
 
+        <details class="pub" data-key="999999" data-st="early stage" style="--accent: var(--pink);">
+          <summary>
+          <h4><i>L</i>-genera and Localizations in <i>K</i>-theory</h4>
+          <p class="pub-line"><span class="status st-early">early stage</span></p>
+          <p class="ptags"><span class="ptag">genera</span><span class="ptag">string structures</span><span class="ptag">anomalies</span></p>
+          <p class="who">in conversation with Daniel Berwick-Evans and Natalia Pacheco-Tallaj</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">The Eisenstein formula is canonical, but writing it down takes a choice of square root that the answer forgets. One height up, the class of the Witten genus is canonical, but a cocycle for it takes a choice of rational string structure. We ask whether this and the square root are one phenomenon, and whether the forgetting is an anomaly that cancels.</p>
+          </div>
+        </details>
+
+        <details class="pub" data-key="999999" data-st="early stage" style="--accent: var(--pink);">
+          <summary>
+          <h4>Habiro Characteristic Classes of <i>L</i>-function Genera</h4>
+          <p class="pub-line"><span class="status st-early">early stage</span></p>
+          <p class="ptags"><span class="ptag">Habiro cohomology</span><span class="ptag">characteristic classes</span><span class="ptag"><i>L</i>-function genera</span></p>
+          <p class="who">in conversation with Ferdinand Wagner</p>
+          </summary>
+          <div class="pub-body">
+          <p class="pitch">In the Eisenstein formula \(q\) does two jobs: on one side it is the size of a finite field, on the other a formal variable. We let \(q\) vary and ask whether the formula’s two faces, function fields in <i>K</i>-theory and number fields in cohomology, are specializations of one Habiro characteristic class. The Habiro ring sees \(q=1\) directly; the function field value \(q=p^n\) is not a root of unity, and that is the whole difficulty.</p>
+          </div>
+        </details>
+
+      </div>
       </div>
       </div>
 
