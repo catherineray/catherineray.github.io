@@ -56,7 +56,7 @@ rail: filters
 
   <div class="ap-sec-row" id="ap-hl-h"><h2 class="ap-sec">Highlights</h2><button type="button" class="words-toggle" aria-pressed="false">Overstimulated? Just words</button></div>
   <div class="ap-hl" aria-label="Highlights">
-    {% for g in site.data.genres %}{% assign n = site.posts | where: "genre", g.key | size %}
+    {% for g in site.data.genres %}{% assign also = site.posts | where_exp: "x", "x.also_genres contains g.key" %}{% assign n = site.posts | where: "genre", g.key | size | plus: also.size %}
     <section class="ap-hl-col" style="--g: {{ g.color }};">
       <a class="ap-hl-head" href="{{ site.baseurl }}{{ g.url }}"><img src="{{ site.baseurl }}{{ g.icon }}" alt="">{{ g.name }}<span>{{ n }}</span></a>
       {% for slug in g.pinned %}{% assign p = site.posts | where: "slug", slug | first %}{% if p %}
@@ -149,7 +149,7 @@ rail: filters
     box.querySelectorAll('.ap-yearblock').forEach(function (block) {
       var k = 0;
       block.querySelectorAll('.ap-item').forEach(function (el) {
-        var ok = (state.genre === 'all' || el.dataset.genre === state.genre)
+        var ok = (state.genre === 'all' || (' ' + el.dataset.genre + ' ').indexOf(' ' + state.genre + ' ') !== -1)
           && (state.topic === 'all' || el.dataset.topics.indexOf('|' + state.topic + '|') !== -1)
           && qOk(el, 'a:not(.ap-tthumb)', true);
         el.classList.toggle('is-hidden', !ok); if (ok) k++;
@@ -161,7 +161,7 @@ rail: filters
     document.querySelectorAll('.ap-hl-col').forEach(function (col) {
       var k = 0;
       col.querySelectorAll('.ap-card').forEach(function (c) {
-        var ok = (state.genre === 'all' || c.dataset.genre === state.genre)
+        var ok = (state.genre === 'all' || (' ' + c.dataset.genre + ' ').indexOf(' ' + state.genre + ' ') !== -1)
           && (state.topic === 'all' || c.dataset.topics.indexOf('|' + state.topic + '|') !== -1)
           && qOk(c, 'a.ap-card, .ap-card-link', false);
         c.classList.toggle('is-hidden', !ok); if (ok) k++;

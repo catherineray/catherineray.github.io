@@ -6,6 +6,7 @@ categories:
   - "math"
   - "music"
 genre: art
+also_genres: [math]   # also listed under Math (genre pages, counts, filters)
 tags:
   - songwriting
   - sheaf-cohomology

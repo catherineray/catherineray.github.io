@@ -34,7 +34,7 @@
     <input type="search" id="rail-q" data-f="q" placeholder="any word or phrase…" autocomplete="off">
     <p class="rail-flabel">Genre</p>
     <button type="button" class="rail-genre-head rail-fbtn" data-f="genre" data-v="all" aria-pressed="true" style="--genre: transparent;"><span class="rail-all-dot"></span><span>All</span><span class="rail-count">{{ site.posts | size }}</span></button>
-    {% for g in site.data.genres %}{% assign n = site.posts | where: "genre", g.key | size %}
+    {% for g in site.data.genres %}{% assign also = site.posts | where_exp: "x", "x.also_genres contains g.key" %}{% assign n = site.posts | where: "genre", g.key | size | plus: also.size %}
     <button type="button" class="rail-genre-head rail-fbtn" data-f="genre" data-v="{{ g.key }}" aria-pressed="false" style="--genre: {{ g.color }};"><img src="{{ site.baseurl }}{{ g.icon }}" alt=""><span>{{ g.name }}</span><span class="rail-count">{{ n }}</span></button>
     {% endfor %}
     <p class="rail-flabel">Topic</p>
@@ -58,12 +58,12 @@
   <details class="rail-pinned" open>
     <summary>Highlights</summary>
     {% for g in site.data.genres %}
-      {% assign genre_posts = site.posts | where: "genre", g.key %}
+      {% assign genre_posts = site.posts | where: "genre", g.key %}{% assign also = site.posts | where_exp: "x", "x.also_genres contains g.key" %}
       <div class="rail-genre" style="--genre: {{ g.color }};">
         <div class="rail-genre-head">
           <img src="{{ site.baseurl }}{{ g.icon }}" alt="">
           <a href="{{ site.baseurl }}{{ g.url }}">{{ g.name }}</a>
-          <span class="rail-count">{{ genre_posts.size }}</span>
+          <span class="rail-count">{{ genre_posts.size | plus: also.size }}</span>
         </div>
         {% for slug in g.pinned %}
           {% assign p = site.posts | where: "slug", slug | first %}
