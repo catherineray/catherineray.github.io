@@ -104,6 +104,13 @@ rail_sections:   # listed in the sidebar under "Resources"
   .rs-mine b { font: 700 12px 'Space Mono', monospace; letter-spacing: .06em; text-transform: uppercase; display: block; margin: 0 0 4px; }
   .rs-mine a { display: block; margin: 0 0 3px; }
   .rs-foot { margin: 46px 0 0; padding: 18px 0 0; border-top: 3px solid var(--soft); }
+  /* big pink button, same look as the About page buttons */
+  .rs-teach { margin: 0 0 14px; font: 700 15px 'Space Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
+  .rs-btn { display: flex; align-items: center; justify-content: center; box-sizing: border-box; max-width: 46rem; padding: .9rem 1.2rem; background: #ee5fd4; color: #fff; font-family: 'Archivo Black', 'Helvetica Neue', Impact, sans-serif; font-size: clamp(.9rem, 3.4vw, 1.3rem); letter-spacing: .01em; text-align: center; text-decoration: none; border: 3px solid var(--ink); border-radius: 999px; box-shadow: 6px 6px 0 #9b7fd4; transform: rotate(-1deg); transition: transform .08s ease, box-shadow .08s ease, background .12s ease; }
+  .rs-btn:hover { background: #ec3f9e; }
+  .rs-btn:active { transform: translate(6px, 6px) rotate(-1deg); box-shadow: 0 0 0 #9b7fd4; }
+  .rs-btn:focus-visible { outline: 3px dashed var(--ink); outline-offset: 5px; }
+  @media (prefers-reduced-motion: reduce) { .rs-btn { transition: none; } }
 </style>
 
 <div class="rs">
@@ -175,6 +182,9 @@ rail_sections:   # listed in the sidebar under "Resources"
   </div>
 </div>
 
-<p class="rs-foot">How I teach, and why: see <a href="{{ site.baseurl }}/about/#about-teaching">Teaching on my About page →</a></p>
+<div class="rs-foot">
+  <p class="rs-teach">How I teach and why:</p>
+  <a class="rs-btn" href="{{ site.baseurl }}/about/#about-teaching">TEACHING →</a>
+</div>
 
 </div>

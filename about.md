@@ -1675,9 +1675,15 @@ rail_sections:   # listed in the sidebar under "About Rin"
       <h2 class="sec-head" style="--shadow: var(--peach); --tilt: 2deg;" data-text="TEACHING" id="about-teaching">TEACHING</h2>
       <div class="note" style="--accent: var(--peach);">
         <p>I came into academia from outside, so I go out of my way to present mathematics in ways that are accessible to everyone. For me it is visual, interactive, intuitive and artistic, and above all a story.</p>
-        <p>I have been a teaching assistant for Northwestern&rsquo;s honors sequence in linear algebra and multivariable calculus, for linear algebra and for discrete mathematics (student evaluations: 5.65 out of 6 for interest in teaching). I mentored undergraduates through the Directed Reading Program and the Chicago REU, taught Math Circles for children on the South Side of Chicago, and designed math workshops for children for Mathe trifft Kunst in M&uuml;nster. I keep learning materials for students of all levels on my <a href="/resources/">resources page</a>. My teaching statement:</p>
+        <p>I keep learning materials for students of all levels on my <a href="/resources/">resources page</a>.</p>
       </div>
-      <a class="cv cv-art" href="/pdfs/teaching-statement.pdf">READ MY TEACHING STATEMENT →</a>
+      <div class="studio-btns" style="margin-top: 1.6rem;">
+        <a class="cv cv-art" href="/pdfs/teaching-statement.pdf">READ MY TEACHING STATEMENT →</a>
+        <a class="cv cv-art" href="/resources/"><img src="/images/icons/resources.png" alt="" style="height: 3.4em; width: auto; margin: -.9em .6em -.9em 0; border: 0; box-shadow: none;">RESOURCES →</a>
+      </div>
+      <div class="note" style="--accent: var(--peach); margin-top: 2.4rem; position: relative; z-index: 1;">
+        <p>I have taught math in lecture halls and on the pavement: as a teaching assistant at Northwestern (5.65/6 for interest in teaching, 5.48/6 for clarity), at the Chicago REU, in Math Circles on Chicago&rsquo;s South Side, and in Escher workshops I designed for kids in M&uuml;nster.</p>
+      </div>
     </section>
 
     <!-- the lab -->
