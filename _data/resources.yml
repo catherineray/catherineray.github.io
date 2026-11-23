@@ -32,6 +32,7 @@ math:
       - name: Calculus
         items:
           - { title: "Dangerous and Illegal Operations in Calculus", by: "Paul Garrett", url: "https://www-users.cse.umn.edu/~garrett/m/fun/dangerous_and_illegal.pdf" }
+          - { title: "Quantum Calculus", by: "Victor Kac and Pokman Cheung", url: "https://link.springer.com/978-0-387-95341-0", note: "calculus with no limits: the q-derivative and the Jackson integral" }
       - name: Proof writing
         items:
           - { title: "Math Girls", cover: "/images/resources/books/math-girls.jpg", url: "http://bentobooks.com/resources/math-girls-sample.pdf", note: "a math-loving high school boy, his kōhai Tetra, who is just learning and asks the most interesting questions, and tsundere Miruka, who makes him solve riddles to talk to her. The link is a sample chapter." }
@@ -57,6 +58,7 @@ math:
           - { title: "Problems and Theorems in Analysis I: Series, Integral Calculus, Theory of Functions", cover: "/images/resources/books/polya-szego.jpg", by: "Pólya and Szegő" }
           - { title: "Harmonic analysis as the exploitation of symmetry: a historical survey", by: "George W. Mackey" }
           - { title: "Visual Complex Analysis", cover: "/images/resources/books/needham.jpg", by: "Tristan Needham" }
+          - { title: "Möbius Transformations Revealed", by: "Douglas Arnold and Jonathan Rogness", url: "https://www.youtube.com/watch?v=0z1fIsUNhO4", note: "a short video showing what a Möbius transformation does to the sphere" }
           - { title: "Ordinary Differential Equations", cover: "/images/resources/books/arnold-ode.jpg", by: "V. Arnol'd" }
           - { title: "A Source Book in Classical Analysis", cover: "/images/resources/books/birkhoff.jpg", by: "Garrett Birkhoff" }
       - name: Information theory
@@ -73,6 +75,7 @@ math:
           - { title: "Introduction to Representation Theory", cover: "/images/resources/books/etingof.jpg", by: "Etingof, Golberg, Hensel, Liu, Schwendner, Vaintrob and Yudovina, with historical interludes by Slava Gerovitch" }
           - { title: "The Mathematics of Frobenius in Context", cover: "/images/resources/books/hawkins.jpg", by: "Thomas Hawkins" }
           - { title: "Lectures on Number Theory", cover: "/images/resources/books/dirichlet.jpg", by: "Dirichlet, edited by Dedekind", note: "based on the Disquisitiones Arithmeticae" }
+          - { title: "Visualizing the p-adic Integers", by: "Albert A. Cuoco", url: "/pdfs/Cuoco-visualizing-p-adic-integers.pdf", note: "American Mathematical Monthly 98 (1991), pp. 355-364" }
           - { title: "The Algebra II Lectures of the Poetic Kazuya Kato", url: "http://math.uchicago.edu/~chonoles/expository-notes/courses/2013/326/notes/math326notes.pdf" }
       - name: Topology
         posts: [topology-curriculum, bridging-worlds, intro-to-bundles]   # "from my blog"
