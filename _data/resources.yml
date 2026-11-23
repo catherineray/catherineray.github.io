@@ -56,7 +56,7 @@ math:
         items:
           - { title: "Analysis by Its History", cover: "/images/resources/books/hairer-wanner.jpg", by: "Hairer and Wanner" }
           - { title: "Problems and Theorems in Analysis I: Series, Integral Calculus, Theory of Functions", cover: "/images/resources/books/polya-szego.jpg", by: "Pólya and Szegő" }
-          - { title: "Harmonic analysis as the exploitation of symmetry: a historical survey", by: "George W. Mackey" }
+          - { title: "Harmonic analysis as the exploitation of symmetry: a historical survey", by: "George W. Mackey", url: "https://www.ams.org/bull/1980-03-01/S0273-0979-1980-14783-7/" }
           - { title: "Visual Complex Analysis", cover: "/images/resources/books/needham.jpg", by: "Tristan Needham" }
           - { title: "Möbius Transformations Revealed", by: "Douglas Arnold and Jonathan Rogness", url: "https://www.youtube.com/watch?v=0z1fIsUNhO4", note: "a short video showing what a Möbius transformation does to the sphere" }
           - { title: "Ordinary Differential Equations", cover: "/images/resources/books/arnold-ode.jpg", by: "V. Arnol'd" }
