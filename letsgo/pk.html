@@ -1258,7 +1258,7 @@ has a point over a finite extension \(L_1\) of \(L_0\); lift it through \(\class
 </div></main>
 </div>
 <div class="toggle"><label><input id="clean" type="checkbox"/> clean view</label> · <label><input id="showcl" type="checkbox"/> highlight rewrite-here lines</label></div>
-<script>(function(){function o(){var d=location.hash&&document.querySelector(location.hash);if(!d)return;var q=d;while(q){if(q.tagName==='DETAILS')q.open=true;q=q.parentElement;}d.scrollIntoView({block:'center'});}window.addEventListener('hashchange',o);o();})();</script>
+<script>(function(){function o(){var d=location.hash&&document.querySelector(location.hash);if(!d)return;var q=d;while(q){if(q.tagName==='DETAILS')q.open=true;q=q.parentElement;}d.scrollIntoView({block:(d.tagName==='DETAILS'||d.offsetHeight>innerHeight*0.6)?'start':'center'});}window.addEventListener('hashchange',o);o();})();</script>
 <script>(function(){var b=document.getElementById('fnbtn'),f=document.getElementById('why');b.addEventListener('click',function(){f.hidden=!f.hidden;b.setAttribute('aria-expanded',String(!f.hidden));});})();</script>
 <script>(function(){var cv=document.getElementById('clean');function a(){document.body.classList.toggle('clean',cv.checked)}cv.addEventListener('change',a);if(/[?&]clean/.test(location.search)){cv.checked=true;}a();})();</script>
 <script>(function(){var cb=document.getElementById('showcl');function a(){document.body.classList.toggle('mark-cl',cb.checked)}cb.addEventListener('change',a);a();})();</script>
