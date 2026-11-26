@@ -9,7 +9,7 @@
   include.hide_files (optional): single pieces to leave off this wall, by file name (the Portfolio's `gallery_hide_files:`).
   A page's own `gallery_first:` / `group_first:` set its order; without them the wall uses the ones in art.md.
   include.skip (optional): anchor for a "Skip the gallery" button at the end of the filter bar.
-  include.video (optional): { file, youtube, poster }. It replaces the gallery image whose path
+  include.video (optional): { file, youtube, poster, ratio }. `ratio` (width / height) sizes the video tile so the video is not cropped. It replaces the gallery image whose path
   matches `poster` and plays muted on a loop inside the wall.
 {% endcomment %}
 {% assign artpage = site.pages | where: "name", "art.md" | first %}
@@ -40,6 +40,7 @@
     {% assign ar = site.data.gallery_dims[image.basename] | default: 0 %}
     {% assign from_post = nil %}{% if entry.post %}{% assign from_post = site.posts | where: "slug", entry.post | first %}{% endif %}
     {% assign is_video = false %}{% if vid and image.path == vid.poster %}{% if vid.file or vid.youtube %}{% assign is_video = true %}{% endif %}{% endif %}
+    {% if is_video and vid.ratio %}{% assign ar = vid.ratio %}{% endif %}
     <li data-file="{{ image.basename }}" class="gw-item{% if is_video %} gw-video{% endif %}"{% unless is_video %} tabindex="0"{% endunless %} data-kind="{{ kinds | strip }}" data-ar="{{ ar }}" data-title="{{ label | escape }}" data-types="{{ entry.types | join: ' · ' }}"{% if entry.link %} data-link="{{ site.baseurl }}{{ entry.link }}"{% endif %}{% if from_post %} data-post-url="{{ site.baseurl }}{{ from_post.url }}" data-post-title="{{ from_post.title | escape }}"{% endif %} style="--m: {{ site.data.mediums[first_type] | default: '#1b1b1b' }};">
       {% if is_video and vid.file %}<video src="{{ site.baseurl }}{{ vid.file | uri_escape }}" poster="{{ site.baseurl }}{{ image.path }}" autoplay muted loop playsinline preload="metadata" aria-label="{{ label }}"></video>
       {% elsif is_video %}<iframe src="https://www.youtube-nocookie.com/embed/{{ vid.youtube }}?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist={{ vid.youtube }}&amp;controls=0&amp;playsinline=1&amp;modestbranding=1" title="{{ label }}" allow="autoplay; encrypted-media" loading="lazy"></iframe>

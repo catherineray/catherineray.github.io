@@ -154,6 +154,7 @@ art:
   - file: "t-japan-flowers"
     types: [polaroid]
   - file: "t-japan-horse"
+    title: "yakitori basement unicorn oni"
     types: [polaroid]
   - file: "t-japan-towers"
     types: [polaroid]
@@ -300,7 +301,8 @@ art:
 
 gallery_video:
   poster: /gallery/caterpillar.png
-  file:
+  file: /images/caterpillar-mural-day.mp4
+  ratio: 1.7778   # the video is 16:9; the tile takes this shape so nothing is cropped
   youtube:
 
 comics:
