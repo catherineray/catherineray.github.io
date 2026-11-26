@@ -432,6 +432,9 @@ nav.rail i{width:11px!important;height:11px!important;border:1.5px solid var(--e
 html.calm{filter:invert(.93) grayscale(1) contrast(.95);background:#fff}
 html.calm img,html.calm video,html.calm picture{filter:invert(1)}
 html.calm *{text-shadow:none!important;box-shadow:none!important;animation:none!important;transition:none!important}
+/* stickers: colored fills turn to the same grey as their words, so in calm mode every sticker is a plain outlined chip (light words on dark after the invert) */
+html.calm .mt-box::before,html.calm .def::before,html.calm [data-tag]::before,html.calm .brk,html.calm b.n,html.calm code.lab,html.calm .pf-mark,html.calm .g3-step,html.calm .gx-step,html.calm .r3-kib,html.calm .upd,html.calm .g3-n,html.calm .gx-n,html.calm main button{background:#fff!important;color:#111!important;border:1.5px solid #111!important}
+html.calm main button[aria-pressed="true"],html.calm main button.on{background:#111!important;color:#fff!important}
 </style></head><body><button id="calm-btn" type="button" aria-pressed="false">Overstimulated? Just words.</button>
 <script>(function(){var K='gauge-calm',b=document.getElementById('calm-btn'),h=document.documentElement;
 function set(on){h.classList.toggle('calm',on);b.textContent=on?'Back to color':'Overstimulated? Just words.';b.setAttribute('aria-pressed',String(on));try{localStorage.setItem(K,on?'1':'0')}catch(e){}}
