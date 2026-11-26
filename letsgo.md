@@ -34,10 +34,11 @@ Thank you for writing for me. Everything for my mathematics applications is here
 
 <div class="fl-btns">
   <a class="fl-btn" style="background:#ee5fd4" href="/pdfs/RinRay-CV-Math.pdf"><b>1 · Math CV</b><span>PDF, three pages</span></a>
-  <a class="fl-btn" style="background:#b9a3ef" href="/letsgo/pk/"><b>2 · The Group Determines the Curve</b><span>p<sup>k</sup> torsion in the Lubin-Tate action · early version, 13 November 2026</span></a>
-  <a class="fl-btn" style="background:#ffa86b" href="https://arxiv.org/abs/2509.23428"><b>3 · Tiny and Unique</b><span>the prequel, the case k = 1, on arXiv</span></a>
-  <a class="fl-btn" style="background:#7fd8e8" href="/about/#about-math"><b>4 · What I've done</b><span>my mathematics, on my About page</span></a>
-  <a class="fl-btn" style="background:#9be38a" href="/pdfs/teaching-statement.pdf"><b>5 · Teaching and community</b><span>my teaching statement, PDF</span></a>
+  <div class="fl-btn static" style="background:#fbe919"><b>2 · Research statement</b><span>sent by email</span></div>
+  <a class="fl-btn" style="background:#b9a3ef" href="/letsgo/pk/"><b>3 · The Group Determines the Curve</b><span>p<sup>k</sup> torsion in the Lubin-Tate action · early version, 13 November 2026</span></a>
+  <a class="fl-btn" style="background:#ffa86b" href="https://arxiv.org/abs/2509.23428"><b>4 · Tiny and Unique</b><span>the prequel, the case k = 1, on arXiv</span></a>
+  <a class="fl-btn" style="background:#7fd8e8" href="/about/#about-math"><b>5 · What I've done</b><span>my mathematics, on my About page</span></a>
+  <a class="fl-btn" style="background:#9be38a" href="/pdfs/teaching-statement.pdf"><b>6 · Teaching and community</b><span>my teaching statement, PDF</span></a>
 </div>
 </div>
 
