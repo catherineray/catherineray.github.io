@@ -1381,10 +1381,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <h4 class="sub-head">Two Towers <span class="sub-note">part 3 of the Lubin-Tate project: the full profinite group</span></h4>
         <p class="gloss sub-gloss">How do neighboring layers of the sphere spectrum fit back together? This involves computing the Lubin-Tate action of the full profinite group.</p>
       <div class="pubs">
-        <details class="pub" id="pub-chrom" data-key="202609" data-st="preprint" style="--accent: var(--yellow);">
+        <details class="pub" id="pub-chrom" data-key="202611" data-st="preprint" style="--accent: var(--yellow);">
           <summary>
-          <h4><a href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">On the Chromatic Splitting Conjecture in Coheight 1</a></h4>
-          <p class="pub-line"><span class="yr">Sept 2026</span><span class="status st-preprint">preprint</span></p>
+          <h4><a href="https://arxiv.org/abs/2611.27879">On the Chromatic Splitting Conjecture in Coheight 1</a></h4>
+          <p class="pub-line"><span class="yr">Nov 2026</span><span class="status st-preprint">preprint</span></p>
           <p class="ptags"><span class="ptag">chromatic splitting</span><span class="ptag">two-tower isomorphism</span><span class="ptag">Fargues–Fontaine curve</span></p>
           <p class="who">joint with Tobias Barthel, Lucas Mann, Andy Senger, Tomer Schlank, Jared Weinstein, and Xinyu Zhou</p>
           </summary>
@@ -1393,7 +1393,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
           <p class="spot"><strong>Every height at once.</strong> We prove the coheight-one form of chromatic splitting at every height \(h\), for all primes with \(p-1\nmid h-1\). Before this it was known only at heights 1 and 2.</p>
           <div class="abs-body"><p class="abs-label">Abstract</p><p>This article confirms predictions made by Hopkins’ chromatic splitting conjecture in stable homotopy theory. A consequence of our main theorem is that a certain map of \(K(h-1)\)-local \(E_\infty\)-rings \(\mathbb{S}^{B\mathbb{Z}_p}_{K(h-1)} \to L_{K(h-1)}\mathbb{S}_{K(h)}\) admits a retract, so long as \(p-1\) does not divide \(h-1\). If \(h=2\) and \(p\) is odd, we show this map is an isomorphism.</p><p>We use methods from the theory of \(p\)-divisible groups and \(p\)-adic geometry. Along the way we prove an entirely new kind of “two-tower isomorphism”, in analogy with Faltings’ isomorphism between the Lubin–Tate and Drinfeld towers, which parametrizes \(p\)-divisible groups over characteristic \(p\) perfectoid spaces with fixed generic fiber in terms of negative Banach–Colmez spaces. Using the two-tower isomorphism, we gain control over the continuous cohomology of the Morava stabilizer group \(\mathbb{G}_h\) with coefficients in \(\pi_* L_{K(h-1)} E_h\).</p><p>To study the continuous action of \(\mathbb{G}_h\) on \(L_{K(h-1)} E_h\), it was necessary to develop the theory of solid Lubin–Tate spectra. Adapting Lurie’s constructions, we attach a solid Lubin–Tate spectrum to \(p\)-divisible groups over a broad class of solid rings in characteristic \(p\).</p></div>
           <p class="seq">The background for this paper is in <a href="#pub-model">Modeling Group Actions on Stacks</a>, which surveys the two-tower method.</p>
-          <p class="chips"><a class="chip" href="https://math.bu.edu/people/jsweinst/ChromaticSplitting.pdf">PDF</a></p>
+          <p class="chips"><a class="chip" href="https://arxiv.org/abs/2611.27879">arXiv</a></p>
           </div>
         </details>
       </div>

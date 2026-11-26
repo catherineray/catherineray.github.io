@@ -40,7 +40,6 @@ Thank you for writing for me. Everything for my mathematics applications is here
   <a class="fl-btn" style="background:#7fd8e8" href="/about/#about-math"><b>5 · What I've done</b><span>my mathematics, on my About page</span></a>
   <a class="fl-btn" style="background:#9be38a" href="/pdfs/teaching-statement.pdf"><b>6 · Teaching and community</b><span>my teaching statement, PDF</span></a>
 </div>
-</div>
 
 ## The applications
 
@@ -51,5 +50,10 @@ All due **1 December**:
 - **UCLA, Hedrick Math Fellow**: through UC Recruit. Romyar Sharifi, Kefeng Liu, Burt Totaro, Chandrashekhar Khare and Zhouli Xu.
 - **UC Davis, Krener Fellow**: through UC Recruit. Melissa Zhang, Eugene Gorsky, Elena Fuchs and Dan Romik.
 - **USC, Assistant Professor (RTPC)**: through MathJobs. Aravind Asok, Peter Haine and Biman Roy.
+- **IAS, School of Mathematics, Member**
 
-**Spring deadlines**: to be added.
+**Spring deadlines**:
+
+- **ICREA Research Professor, Barcelona**: opens in the second half of January 2027, closes at the beginning of March.
+- **JSPS Standard fellowship, RIMS Kyoto**: due **23 April 2027**, submitted by RIMS, so everything is needed around March. Akio Tamagawa.
+- **MPIM Bonn**: due **4 June 2027**, application and letters on the same date. Letter requests go out after I upload.
