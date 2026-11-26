@@ -1256,10 +1256,13 @@ rail_sections:   # listed in the sidebar under "About Rin"
         <button type="button" data-sort="date">sorted chronologically</button>
       </div>
       <div class="mflat" hidden></div>
+      <img class="band-img" id="mflat-img" src="{{ site.baseurl }}/images/twisted-baby.jpeg" alt="Rin at a whiteboard: the twisted love of addition and multiplication, the dream question for G', and the guiding light at height p-1" loading="lazy" style="display: none; --accent: var(--cyan); margin: .9rem 0 calc(.9rem + 8px);">
 
       <div class="mgroup" id="m-lt" style="--accent: var(--cyan);">
         <h3>The Lubin-Tate action</h3>
         <p class="gloss">One project: trade a group action you cannot compute for one you can. It has three parts. The toolkit sets out two methods, geometric modeling and the two-tower method. Symmetry you can touch carries out geometric modeling with curves, for the finite subgroup \(G'\). Two Towers uses the two-tower method, for the full profinite group.</p>
+
+      <img class="band-img" src="{{ site.baseurl }}/images/twisted-baby.jpeg" alt="Rin at a whiteboard: the twisted love of addition and multiplication, the dream question for G', and the guiding light at height p-1" loading="lazy" style="margin: 1rem 0 calc(1.6rem + 8px);">
 
       <div class="subgroup" id="m-toolkit" style="--accent: var(--lilac);">
         <h4 class="sub-head">The toolkit <span class="sub-note">part 1 of the Lubin-Tate project</span></h4>
@@ -1560,6 +1563,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
     (function () {
       var sec = document.getElementById('research');
       var flat = sec.querySelector('.mflat');
+      var flatImg = document.getElementById('mflat-img');
       var cards = Array.prototype.slice.call(sec.querySelectorAll('details.pub'));
       var homes = cards.map(function (c) { var m = document.createComment('pub'); c.parentNode.insertBefore(m, c); return m; });
       var groups = sec.querySelectorAll('.mgroup');
@@ -1578,6 +1582,7 @@ rail_sections:   # listed in the sidebar under "About Rin"
         if (mode === 'thread') {
           cards.forEach(function (c, i) { homes[i].parentNode.insertBefore(c, homes[i].nextSibling); });
           flat.innerHTML = ''; flat.hidden = true;
+          flatImg.style.display = 'none'; sec.appendChild(flatImg);
           groups.forEach(function (g) { g.hidden = false; });
           return;
         }
@@ -1594,6 +1599,10 @@ rail_sections:   # listed in the sidebar under "About Rin"
         });
         groups.forEach(function (g) { g.hidden = true; });
         flat.hidden = false;
+        /* default view: the whiteboard picture sits between the chromatic splitting card and Tiny and Unique */
+        var tiny = flat.querySelector('details.pub[data-key="202509"]');
+        if (mode === 'status' && tiny) { tiny.parentNode.insertBefore(flatImg, tiny); flatImg.style.display = ''; }
+        else { flatImg.style.display = 'none'; sec.appendChild(flatImg); }
       }
       sec.querySelectorAll('.msort button').forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.sort); }); });
       /* papers first, then work in progress, is the view the page opens in */
