@@ -36,4 +36,19 @@ Thank you for writing for me. Everything for my mathematics applications is here
   <a class="fl-btn" style="background:#ee5fd4" href="/letsgo/pk/"><b>1 · The Group Determines the Curve</b><span>p<sup>k</sup> torsion in the Lubin-Tate action · early version, 13 November 2026</span></a>
   <a class="fl-btn" style="background:#b9a3ef" href="https://arxiv.org/abs/2509.23428"><b>2 · Tiny and Unique</b><span>the prequel, the case k = 1, on arXiv</span></a>
   <a class="fl-btn" style="background:#ffa86b" href="/about/#about-published"><b>3 · My mathematics</b><span>on my About page</span></a>
+  <a class="fl-btn" style="background:#fbe919" href="/pdfs/RinRay-CV-Math.pdf"><b>4 · Math CV</b><span>PDF</span></a>
+  <a class="fl-btn" style="background:#9be38a" href="/pdfs/teaching-statement.pdf"><b>5 · Teaching and community</b><span>my teaching statement, PDF</span></a>
+  <div class="fl-btn static" style="background:#fbe919"><b>4 · Research statement</b><span>attached to my email</span></div>
 </div>
+
+## The applications
+
+All due **1 December**:
+
+- **Caltech, Fairchild / Johnson Fellowship**: Matthias Flach and Elena Mantovan.
+- **Columbia, Ritt Assistant Professor**: Andrei Okounkov, Michael Harris, Chao Li and Andrew Blumberg.
+- **UCLA, Hedrick Math Fellow**: through UC Recruit. Romyar Sharifi, Kefeng Liu, Burt Totaro, Chandrashekhar Khare and Zhouli Xu.
+- **UC Davis, Krener Fellow**: through UC Recruit. Melissa Zhang, Eugene Gorsky, Elena Fuchs and Dan Romik.
+- **USC, Assistant Professor (RTPC)**: through MathJobs. Aravind Asok, Peter Haine and Biman Roy.
+
+**Spring deadlines**: to be added.
