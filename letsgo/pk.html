@@ -425,30 +425,13 @@ nav.rail i{width:11px!important;height:11px!important;border:1.5px solid var(--e
 .bo-legend span{display:inline-flex;align-items:center;gap:5px}
 .bo-legend i{width:11px;height:11px;border-radius:50%;display:inline-block}
 </style><style id="calm-mode">
-/* 26 Nov (Rin): "Overstimulated? Just words." Calm mode = white words on black, no pictures, no stickers */
+/* 26 Nov (Rin): "Overstimulated? Just words." Calm mode = the SAME page (every figure, table, button), shown in soft grey on dark, no color.
+   Done by inverting the light color page as a whole, so anything legible in color mode stays legible here. */
 #calm-btn{position:fixed;top:12px;right:14px;z-index:60;font:600 13px Inter,system-ui,sans-serif;background:#fff;color:#1b1b1b;border:1.5px solid #1b1b1b;border-radius:999px;padding:6px 14px;cursor:pointer}
 #calm-btn:hover{background:#f4f1f8}
-html.calm #calm-btn{background:#111;color:#eee;border-color:#666}
-html.calm,html.calm body{background:#111!important;color:#e8e8e8!important}
-html.calm *{text-shadow:none!important;box-shadow:none!important}
-html.calm .sheet,html.calm .res,html.calm .r,html.calm .r3-kip,html.calm .gx-card,html.calm .g3-card,html.calm .r3-def,html.calm .gx-defp,html.calm .gx-fact,html.calm .g3-fact,html.calm details,html.calm .def,html.calm .r3-lem,html.calm .r3-ex,html.calm .r3-why,html.calm .k-fun,html.calm .claims-figbox,html.calm .thm,html.calm .mt-box,html.calm .card,html.calm table,html.calm td,html.calm th,html.calm .qa,html.calm .r1-q,html.calm .r1-a,html.calm .abs,html.calm [class*="abs"],html.calm .pf-stmt,html.calm .pf-proof,html.calm .step,html.calm .pfull,html.calm .r3-stepbox,html.calm .fw,html.calm .todo{background:transparent!important;color:#e8e8e8!important;border-color:#333!important;border-radius:0!important}
-html.calm .sheet{border:0!important;border-top:1px solid #333!important;padding:18px 0!important}
-html.calm .sheet .mt-box{border:1px solid #444!important;padding:14px 16px!important}
-html.calm .sheet .mt-box::before,html.calm .def::before,html.calm [data-tag]::before{display:none!important}
-html.calm h1,html.calm .sheet>h2,html.calm .sheet h2.mt-title,html.calm h2,html.calm h3,html.calm h4{color:#f2f2f2!important;font:600 20px/1.3 "Source Serif 4",Georgia,serif!important;text-transform:none!important;letter-spacing:0!important}
-html.calm h1{font-size:26px!important}
-html.calm main svg,html.calm .fp-pic,html.calm .gm-fig,html.calm .bo-wrap,html.calm .side-pic,html.calm .r3-tree,html.calm .wd{display:none!important}
-html.calm .pill{background:transparent!important;color:#aaa!important;border-color:#555!important}
-html.calm .qa-lab,html.calm .ct-kick,html.calm .r3-kip-h,html.calm .gx-title,html.calm .g3-title,html.calm .r1-h,html.calm .r3-pf-lab,html.calm .r3-st,html.calm .thm-head,html.calm .st,html.calm .sub,html.calm .byline,html.calm .aside-ptr,html.calm .claims-figcap,html.calm .lab,html.calm code,html.calm .r1-ref{color:#bbb!important;background:transparent!important}
-html.calm a{color:#e8e8e8!important}
-html.calm nav.rail,html.calm nav.rail a{color:#ccc!important;background:#111!important}
-html.calm nav.rail a i,html.calm nav.rail a i[style]{background:#555!important}
-html.calm main button{border-color:#555!important;color:#ddd!important;background:transparent!important}
-html.calm main button[aria-pressed="true"]{background:#ddd!important;color:#111!important;border-color:#ddd!important}
-html.calm .cl{background:none!important}
-html.calm .toggle,html.calm .rbtn,html.calm .tag{display:none!important}
-html.calm mjx-container [class*="gk-"]:hover{background:none!important}
-html.calm mark,html.calm .hl{background:transparent!important;color:inherit!important}
+html.calm{filter:invert(.93) grayscale(1) contrast(.95);background:#fff}
+html.calm img,html.calm video,html.calm picture{filter:invert(1)}
+html.calm *{text-shadow:none!important;box-shadow:none!important;animation:none!important;transition:none!important}
 </style></head><body><button id="calm-btn" type="button" aria-pressed="false">Overstimulated? Just words.</button>
 <script>(function(){var K='gauge-calm',b=document.getElementById('calm-btn'),h=document.documentElement;
 function set(on){h.classList.toggle('calm',on);b.textContent=on?'Back to color':'Overstimulated? Just words.';b.setAttribute('aria-pressed',String(on));try{localStorage.setItem(K,on?'1':'0')}catch(e){}}
