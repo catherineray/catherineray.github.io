@@ -57,6 +57,11 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
   clip-path: polygon(50% 0,61% 18%,80% 8%,79% 30%,100% 32%,86% 50%,100% 68%,79% 70%,80% 92%,61% 82%,50% 100%,39% 82%,20% 92%,21% 70%,0 68%,14% 50%,0 32%,21% 30%,20% 8%,39% 18%);
   transform: rotate(14deg) scale(0); transition: transform .35s cubic-bezier(.3,1.6,.5,1); pointer-events: none; }
 .card.complete .burst { transform: rotate(14deg) scale(1); }
+.drawer { margin-top: 40px; border: 3px dashed var(--ink); border-radius: 22px; padding: 4px 18px; background: rgba(255,255,255,.5); }
+.drawer[open] { padding-bottom: 22px; }
+.drawer summary { font: 400 18px var(--display); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; padding: 12px 0; }
+.drawer summary:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; border-radius: 8px; }
+.drawer-note { margin: 0; font-size: 12.5px; color: var(--muted); }
 .foot { margin-top: 40px; font-size: 12.5px; color: var(--muted); max-width: 70ch; }
 @media (prefers-reduced-motion: reduce) { .burst, .bar i { transition: none; } }
 </style>
@@ -84,17 +89,22 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
   <h2>January and February 2027</h2>
   <div class="grid" id="janfeb"></div>
 
-  <h2>Late but not dead</h2>
-  <div class="grid" id="late"></div>
+  <details class="drawer">
+    <summary>Later, not now</summary>
+    <p class="drawer-note">These wait their turn. They are not counted in the bar above.</p>
 
-  <h2>Spring 2027</h2>
-  <div class="grid" id="spring"></div>
+    <h2>Late but not dead</h2>
+    <div class="grid" id="late"></div>
 
-  <h2>Summer 2027</h2>
-  <div class="grid" id="summer"></div>
+    <h2>Spring 2027</h2>
+    <div class="grid" id="spring"></div>
 
-  <h2>Next round</h2>
-  <div class="grid" id="next"></div>
+    <h2>Summer 2027</h2>
+    <div class="grid" id="summer"></div>
+
+    <h2>Next round</h2>
+    <div class="grid" id="next"></div>
+  </details>
 
   <p class="foot">Stickers you tap are saved in this browser only. Tell Claude when something is done and the page gets updated for good.</p>
 </div>
@@ -158,6 +168,8 @@ const isDone = (a, i) => (a.id + ':' + i) in saved ? saved[a.id + ':' + i] : !!a
 const STICKERS = ['✿', '★', '♥', '✦', '☺', '✌'];
 const CHEERS = ['let\'s go', 'warming up', 'ooh look at you', 'halfway, babe', 'so close', 'unstoppable', 'ALL DONE, legend'];
 
+const LATER = ['late', 'spring', 'summer', 'next'];
+
 function render() {
   let total = 0, done = 0;
   for (const g of ['sent', 'dec', 'dec10', 'janfeb', 'late', 'spring', 'summer', 'next']) document.getElementById(g).innerHTML = '';
@@ -172,7 +184,7 @@ function render() {
     const ul = card.querySelector('.slots');
     let all = true;
     a.slots.forEach((s, i) => {
-      const d = isDone(a, i); total++; if (d) done++; else all = false;
+      const d = isDone(a, i); if (!LATER.includes(a.group)) { total++; if (d) done++; } if (!d) all = false;
       const li = document.createElement('li');
       const b = document.createElement('button');
       b.type = 'button'; b.id = 'slot-' + a.id + '-' + i;
