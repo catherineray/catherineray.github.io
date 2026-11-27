@@ -54,7 +54,7 @@ All due **1 December**:
 - **Caltech, Fairchild / Johnson Fellowship**: Matthias Flach and Elena Mantovan.
 - **Columbia, Ritt Assistant Professor**: Andrei Okounkov, Michael Harris, Chao Li and Andrew Blumberg.
 - **UCLA, Hedrick Math Fellow**: through UC Recruit. Romyar Sharifi, Kefeng Liu, Burt Totaro, Chandrashekhar Khare and Zhouli Xu.
-- **UC Davis, Krener Fellow**: through UC Recruit. Melissa Zhang, Eugene Gorsky, Elena Fuchs, Dan Romik and Motohico Mulase.
+- <span class="fl-done">**UC Davis, Krener Fellow**: through UC Recruit. Melissa Zhang, Eugene Gorsky, Elena Fuchs, Dan Romik and Motohico Mulase.</span> <span class="fl-sent">sent ★</span>
 - <span class="fl-done">**USC, Assistant Professor (RTPC)**: through MathJobs. Aravind Asok, Peter Haine and Biman Roy.</span> <span class="fl-sent">sent ★</span>
 - **IAS, School of Mathematics, Member**
 
