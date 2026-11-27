@@ -86,6 +86,9 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
   <h2>Due 10 December</h2>
   <div class="grid" id="dec10"></div>
 
+  <h2>Due 16 December</h2>
+  <div class="grid" id="dec16"></div>
+
   <h2>January and February 2027</h2>
   <div class="grid" id="janfeb"></div>
 
@@ -123,6 +126,8 @@ const APPS = [
   { id: 'ucla', group: 'dec', c: 'var(--pink)', name: 'UCLA', city: 'Los Angeles', meta: 'Hedrick Math Fellow · UC Recruit JPF11412', slots: [
     ['Mission statement', 'paused at: choose the shape', 0], ['Cover letter', '', 0], ['CV', '', 0], ['Research statement', '', 0],
     ['Teaching statement', '', 0], ['Letters', '', 0], ['Submitted', '', 0] ] },
+  { id: 'uclafellow', group: 'dec', c: 'var(--cyan)', name: 'UCLA Math Fellow', city: 'Los Angeles', meta: 'UC Recruit JPF11411 · same documents as Hedrick · six courses a year', slots: [
+    ['Ticked with the Hedrick application', 'same files', 0], ['Submitted', 'review date 1 December', 0] ] },
   { id: 'caltech', group: 'dec', c: 'var(--orange)', name: 'Caltech', city: 'Pasadena', meta: 'Fairchild / Johnson · hard deadline, letters too', slots: [
     ['Cover letter', '', 0], ['CV', '', 0], ['Research statement', '', 0], ['Letters in by 1 Dec', 'writers need the link early', 0], ['Submitted', '', 0] ] },
   { id: 'columbia', group: 'dec', c: 'var(--lilac)', name: 'Columbia', city: 'New York', meta: 'Ritt Assistant Professor', slots: [
@@ -132,6 +137,9 @@ const APPS = [
   { id: 'kcl', group: 'dec10', c: 'var(--green)', name: "King's College London", city: 'London', meta: 'Research Associate in Number Theory · job id 164747 · contact Andrea Dotto · 20 months from 1 Oct 2027', slots: [
     ['CV with publication list', '', 0], ['Research statement', 'Dotto: p-adic Langlands, mod p representations; lead with Lubin-Tate and height p-1', 0],
     ['Two referees', 'choose which two', 0], ['Submitted', 'closes 10 December', 0] ] },
+  { id: 'uclatt', group: 'dec16', c: 'var(--orange)', name: 'UCLA Tenure Track', city: 'Los Angeles', meta: 'Assistant Professor · UC Recruit JPF11458 · all fields · apply by 16 December', slots: [
+    ['Cover letter', 'adapt the Hedrick one', 0], ['CV', '', 0], ['Research statement', '', 0], ['Teaching statement', '', 0],
+    ['Mission statement', 'reuse the Hedrick one', 0], ['Letters', '', 0], ['Submitted', 'by 16 December', 0] ] },
   { id: 'chch', group: 'janfeb', c: 'var(--cyan)', name: 'Christ Church Oxford', city: 'Oxford', meta: 'Junior Research Fellowship (sciences) · closes 11 January 2027, 12 noon', slots: [
     ['Check that mathematics counts', '', 0], ['Submitted', 'by 11 January', 0] ] },
   { id: 'branco', group: 'janfeb', c: 'var(--pink)', name: 'Branco Weiss', city: 'Lausanne (host EPFL)', meta: 'Society in Science · 5 years, up to CHF 600,000 · final deadline 15 January 2027, 5pm CET (submit 1 to 2 days early)', slots: [
@@ -172,7 +180,7 @@ const LATER = ['late', 'spring', 'summer', 'next'];
 
 function render() {
   let total = 0, done = 0;
-  for (const g of ['sent', 'dec', 'dec10', 'janfeb', 'late', 'spring', 'summer', 'next']) document.getElementById(g).innerHTML = '';
+  for (const g of ['sent', 'dec', 'dec10', 'dec16', 'janfeb', 'late', 'spring', 'summer', 'next']) document.getElementById(g).innerHTML = '';
   APPS.forEach(a => {
     const card = document.createElement('section');
     card.className = 'card'; card.style.setProperty('--c', a.c);
