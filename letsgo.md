@@ -28,6 +28,8 @@ comments: false
   .fl-help td:first-child { white-space: nowrap; font-weight: 600; }
   @media (max-width: 640px) { .fl-help td:first-child { white-space: normal; } }
   .fl-note { border-left: 4px solid #1b1b1b; padding: 4px 0 4px 14px; margin: 10px 0 22px; }
+  .fl-sent { display: inline-block; margin-left: 8px; padding: 1px 10px 2px; font: 400 12px/1.5 'Archivo Black', sans-serif; letter-spacing: .06em; text-transform: uppercase; color: #1b1b1b; background: #fbe919; border: 2px solid #1b1b1b; border-radius: 99px; box-shadow: 2px 2px 0 #1b1b1b; transform: rotate(-4deg); vertical-align: 1px; white-space: nowrap; }
+  .fl-done { opacity: .78; }
 </style>
 
 Thank you for writing for me. Everything for my mathematics applications is here.
@@ -43,13 +45,17 @@ Thank you for writing for me. Everything for my mathematics applications is here
 
 ## The applications
 
+Already sent:
+
+- <span class="fl-done">**Johns Hopkins, Sylvester Assistant Professor**: through MathJobs. David Gepner, Dat Pham, Yiannis Sakellaridis, Zhaolin Li and Sanath Devalapurkar.</span> <span class="fl-sent">sent ★</span>
+
 All due **1 December**:
 
 - **Caltech, Fairchild / Johnson Fellowship**: Matthias Flach and Elena Mantovan.
 - **Columbia, Ritt Assistant Professor**: Andrei Okounkov, Michael Harris, Chao Li and Andrew Blumberg.
 - **UCLA, Hedrick Math Fellow**: through UC Recruit. Romyar Sharifi, Kefeng Liu, Burt Totaro, Chandrashekhar Khare and Zhouli Xu.
 - **UC Davis, Krener Fellow**: through UC Recruit. Melissa Zhang, Eugene Gorsky, Elena Fuchs, Dan Romik and Motohico Mulase.
-- **USC, Assistant Professor (RTPC)**: through MathJobs. Aravind Asok, Peter Haine and Biman Roy.
+- <span class="fl-done">**USC, Assistant Professor (RTPC)**: through MathJobs. Aravind Asok, Peter Haine and Biman Roy.</span> <span class="fl-sent">sent ★</span>
 - **IAS, School of Mathematics, Member**
 
 **Spring deadlines**:
