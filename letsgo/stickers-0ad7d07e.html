@@ -79,6 +79,9 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
   <h2>Due 10 December</h2>
   <div class="grid" id="dec10"></div>
 
+  <h2>Late but not dead</h2>
+  <div class="grid" id="late"></div>
+
   <h2>Spring 2027</h2>
   <div class="grid" id="spring"></div>
 
@@ -111,6 +114,8 @@ const APPS = [
   { id: 'kcl', group: 'dec10', c: 'var(--green)', name: "King's College London", meta: 'Research Associate in Number Theory · job id 164747 · contact Andrea Dotto · 20 months from 1 Oct 2027', slots: [
     ['CV with publication list', '', 0], ['Research statement', 'Dotto: p-adic Langlands, mod p representations; lead with Lubin-Tate and height p-1', 0],
     ['Two referees', 'choose which two', 0], ['Submitted', 'closes 10 December', 0] ] },
+  { id: 'ucsd', group: 'late', c: 'var(--orange)', name: 'UC San Diego', meta: 'Warschawski Math Fellowship · UC Recruit JPF04618 · 3 years, all areas · review date was 20 Nov, final date 30 June 2027', slots: [
+    ['Find out which documents it asks for', '', 0], ['Three letters', 'at least one on teaching in depth (Aaron)', 0], ['Submitted', 'read if the position is still open', 0] ] },
   { id: 'icrea', group: 'spring', c: 'var(--lilac)', name: 'ICREA', meta: 'Research Professor, Barcelona · opens late Jan, closes early Mar', slots: [
     ['Find out what it asks for', '', 0], ['Submitted', '', 0] ] },
   { id: 'jsps', group: 'spring', c: 'var(--cyan)', name: 'JSPS at RIMS', meta: 'Standard fellowship · host files by 23 Apr, materials ~March', slots: [
@@ -132,7 +137,7 @@ const CHEERS = ['let\'s go', 'warming up', 'ooh look at you', 'halfway, babe', '
 
 function render() {
   let total = 0, done = 0;
-  for (const g of ['sent', 'dec', 'dec10', 'spring', 'next']) document.getElementById(g).innerHTML = '';
+  for (const g of ['sent', 'dec', 'dec10', 'late', 'spring', 'next']) document.getElementById(g).innerHTML = '';
   APPS.forEach(a => {
     const card = document.createElement('section');
     card.className = 'card'; card.style.setProperty('--c', a.c);
