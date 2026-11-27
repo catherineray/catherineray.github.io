@@ -38,6 +38,7 @@ h1 .hl { background: var(--pink); padding: 0 .15em; box-decoration-break: clone;
 h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .04em; margin: 34px 0 14px; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 22px; }
 .card { position: relative; border: 3px solid var(--ink); border-radius: 22px; box-shadow: 5px 5px 0 var(--ink); padding: 16px 18px 18px; background: var(--c); min-width: 0; }
+.card h3 a { color: inherit; text-decoration: underline 2px; text-underline-offset: 3px; }
 .card h3 { font: 400 19px/1.15 var(--display); text-transform: uppercase; margin: 0 0 2px; padding-right: 70px; }
 .card .meta { font-size: 12.5px; margin: 0 0 12px; color: var(--ink); opacity: .8; }
 .slots { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
@@ -79,6 +80,9 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
   <h2>Due 10 December</h2>
   <div class="grid" id="dec10"></div>
 
+  <h2>January and February 2027</h2>
+  <div class="grid" id="janfeb"></div>
+
   <h2>Late but not dead</h2>
   <div class="grid" id="late"></div>
 
@@ -87,6 +91,9 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
 
   <h2>Summer 2027</h2>
   <div class="grid" id="summer"></div>
+
+  <h2>Biology track</h2>
+  <div class="grid" id="bio"></div>
 
   <h2>Next round</h2>
   <div class="grid" id="next"></div>
@@ -117,6 +124,18 @@ const APPS = [
   { id: 'kcl', group: 'dec10', c: 'var(--green)', name: "King's College London", meta: 'Research Associate in Number Theory · job id 164747 · contact Andrea Dotto · 20 months from 1 Oct 2027', slots: [
     ['CV with publication list', '', 0], ['Research statement', 'Dotto: p-adic Langlands, mod p representations; lead with Lubin-Tate and height p-1', 0],
     ['Two referees', 'choose which two', 0], ['Submitted', 'closes 10 December', 0] ] },
+  { id: 'chch', group: 'janfeb', c: 'var(--cyan)', name: 'Christ Church Oxford', meta: 'Junior Research Fellowship (sciences) · closes 11 January 2027, 12 noon', slots: [
+    ['Check that mathematics counts', '', 0], ['Submitted', 'by 11 January', 0] ] },
+  { id: 'branco', group: 'janfeb', c: 'var(--pink)', name: 'Branco Weiss', meta: 'Society in Science · 5 years, up to CHF 600,000 · final deadline 15 January 2027, 5pm CET (submit 1 to 2 days early)', slots: [
+    ['Invitation letter from host', 'mentor Kathryn Hess (EPFL); ask 14 to 15 December', 0],
+    ['Project (5 pages incl. abstract)', 'must depart from the mainstream', 0],
+    ['Reference name', 'not the mentor', 0], ['Written reason for Lausanne', 'outside the city list', 0], ['Submitted', 'by 15 January', 0] ] },
+  { id: 'helveticum', group: 'janfeb', c: 'var(--yellow)', name: 'Collegium Helveticum', meta: 'Early-career fellowship, Zurich · 10 months from 1 September 2027 · due 11 February 2027, 5pm CET', slots: [
+    ['Check academic age (5 years max)', 'their platform calculates it', 0],
+    ['Associate fellow at ETH, UZH or ZHdK', 'up to two; artists count', 0], ['Submitted', 'by 11 February', 0] ] },
+  { id: 'leverhulme', group: 'janfeb', c: 'var(--green)', name: 'Leverhulme Early Career', meta: 'UK host university · national deadline 18 February 2027, 4pm · portal opens 1 January', slots: [
+    ['Pick a UK host', 'internal deadlines are earlier, some already in Nov or Dec', 0],
+    ['Host internal deadline met', '', 0], ['Submitted', 'by 18 February', 0] ] },
   { id: 'ucsd', group: 'late', c: 'var(--orange)', name: 'UC San Diego', meta: 'Warschawski Math Fellowship · UC Recruit JPF04618 · 3 years, all areas · review date was 20 Nov, final date 30 June 2027', slots: [
     ['Find out which documents it asks for', '', 0], ['Three letters', 'at least one on teaching in depth (Aaron)', 0], ['Submitted', 'read if the position is still open', 0] ] },
   { id: 'icrea', group: 'spring', c: 'var(--lilac)', name: 'ICREA', meta: 'Research Professor, Barcelona · opens late Jan, closes early Mar', slots: [
@@ -128,6 +147,17 @@ const APPS = [
   { id: 'msca', group: 'summer', c: 'var(--lilac)', name: 'Marie Curie (MSCA)', meta: 'Postdoctoral Fellowship 2027 · opens 7 April, closes 8 September 2027 (planned dates) · 8 years max after PhD · any field', slots: [
     ['Find a host supervisor', 'host must be outside Germany (mobility rule: max 12 months in the host country in the last 36)', 0],
     ['Proposal written', '', 0], ['Submitted', 'by 8 September 2027', 0] ] },
+  { id: 'ccm', group: 'bio', c: 'var(--green)', name: 'Flatiron CCM', href: 'https://rin.io/flatiron/', meta: 'Flatiron Research Fellowship, Center for Computational Mathematics · mentor Lawrence Saul', slots: [
+    ['Research statement', '', 1], ['CV', '', 1], ['Letters', '', 1], ['Submitted', '15 November', 1] ] },
+  { id: 'ccb', group: 'bio', c: 'var(--cyan)', name: 'Flatiron CCB Genomics', href: 'https://rin.io/flatiron/', meta: 'Troyanskaya group · interfolio 194660 · due 30 November (recommended)', slots: [
+    ['Research statement (3 pages, with CCB synergies)', '', 0], ['Cover letter', 'most significant grad school contributions', 0],
+    ['Two letters', 'Kathryn and Philip?', 0], ['Submitted', '', 0] ] },
+  { id: 'nitmb', group: 'bio', c: 'var(--orange)', name: 'NITMB', meta: 'MathJobs #28792 · date was 15 November', slots: [
+    ['Check if still open', '', 0], ['Submitted', '', 0] ] },
+  { id: 'f2f', group: 'bio', c: 'var(--lilac)', name: 'Simons Fellows-to-Faculty', meta: 'SFARI / SCPAB / SCENE (autism and neuroscience) · due 13 January 2027, 12 noon ET', slots: [
+    ['Check fit', 'asks for a mentored postdoc in a lab', 0], ['Submitted', 'by 13 January', 0] ] },
+  { id: 'eipod', group: 'bio', c: 'var(--yellow)', name: 'EMBL EIPOD-LinC', meta: 'about 1 February 2027 (date unconfirmed)', slots: [
+    ['Check the date on embl.org/eipod', '', 0], ['Submitted', '', 0] ] },
   { id: 'ucppfp', group: 'next', c: 'var(--pink)', name: "UC President's Postdoctoral Fellowship", meta: 'covers every UC campus · this round closed 1 November 2026', slots: [
     ['Find a faculty mentor', 'needed before applying', 0], ['Submitted', 'next round', 0] ] },
 ];
@@ -143,12 +173,13 @@ const CHEERS = ['let\'s go', 'warming up', 'ooh look at you', 'halfway, babe', '
 
 function render() {
   let total = 0, done = 0;
-  for (const g of ['sent', 'dec', 'dec10', 'late', 'spring', 'summer', 'next']) document.getElementById(g).innerHTML = '';
+  for (const g of ['sent', 'dec', 'dec10', 'janfeb', 'late', 'spring', 'summer', 'bio', 'next']) document.getElementById(g).innerHTML = '';
   APPS.forEach(a => {
     const card = document.createElement('section');
     card.className = 'card'; card.style.setProperty('--c', a.c);
     card.innerHTML = '<div class="burst">all<br>done!</div><h3></h3><p class="meta"></p><ul class="slots"></ul>';
-    card.querySelector('h3').textContent = a.name;
+    if (a.href) { const l = document.createElement('a'); l.href = a.href; l.target = '_blank'; l.rel = 'noopener'; l.textContent = a.name + ' ↗'; card.querySelector('h3').appendChild(l); }
+    else card.querySelector('h3').textContent = a.name;
     card.querySelector('.meta').textContent = a.meta;
     const ul = card.querySelector('.slots');
     let all = true;
