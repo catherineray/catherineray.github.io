@@ -85,6 +85,9 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
   <h2>Spring 2027</h2>
   <div class="grid" id="spring"></div>
 
+  <h2>Summer 2027</h2>
+  <div class="grid" id="summer"></div>
+
   <h2>Next round</h2>
   <div class="grid" id="next"></div>
 
@@ -122,6 +125,9 @@ const APPS = [
     ['Materials to Akio Tamagawa', '', 0], ['Submitted by RIMS', '', 0] ] },
   { id: 'mpim', group: 'spring', c: 'var(--orange)', name: 'MPIM Bonn', meta: 'due 4 June 2027, letters on the same date', slots: [
     ['Uploaded', '', 0], ['Letter requests out', '', 0] ] },
+  { id: 'msca', group: 'summer', c: 'var(--lilac)', name: 'Marie Curie (MSCA)', meta: 'Postdoctoral Fellowship 2027 · opens 7 April, closes 8 September 2027 (planned dates) · 8 years max after PhD · any field', slots: [
+    ['Find a host supervisor', 'host must be outside Germany (mobility rule: max 12 months in the host country in the last 36)', 0],
+    ['Proposal written', '', 0], ['Submitted', 'by 8 September 2027', 0] ] },
   { id: 'ucppfp', group: 'next', c: 'var(--pink)', name: "UC President's Postdoctoral Fellowship", meta: 'covers every UC campus · this round closed 1 November 2026', slots: [
     ['Find a faculty mentor', 'needed before applying', 0], ['Submitted', 'next round', 0] ] },
 ];
@@ -137,7 +143,7 @@ const CHEERS = ['let\'s go', 'warming up', 'ooh look at you', 'halfway, babe', '
 
 function render() {
   let total = 0, done = 0;
-  for (const g of ['sent', 'dec', 'dec10', 'late', 'spring', 'next']) document.getElementById(g).innerHTML = '';
+  for (const g of ['sent', 'dec', 'dec10', 'late', 'spring', 'summer', 'next']) document.getElementById(g).innerHTML = '';
   APPS.forEach(a => {
     const card = document.createElement('section');
     card.className = 'card'; card.style.setProperty('--c', a.c);
