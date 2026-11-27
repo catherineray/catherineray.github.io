@@ -80,8 +80,14 @@ h2 { font: 400 20px var(--display); text-transform: uppercase; letter-spacing: .
   <h2>January and February 2027</h2>
   <div class="grid" id="janfeb"></div>
 
+  <h2>Rolling or date to check</h2>
+  <div class="grid" id="rolling"></div>
+
   <h2>Check if still open</h2>
   <div class="grid" id="check"></div>
+
+  <h2>Next round</h2>
+  <div class="grid" id="next"></div>
 
   <p class="foot">Stickers you tap are saved in this browser only. Tell Claude when something is done and the page gets updated for good.</p>
 </div>
@@ -93,6 +99,13 @@ const APPS = [
   { id: 'ccb', group: 'nov30', c: 'var(--cyan)', name: 'Flatiron CCB Genomics', href: 'https://rin.io/flatiron/', meta: 'Troyanskaya group · interfolio 194660 · due 30 November (recommended)', slots: [
     ['Research statement (3 pages, with CCB synergies)', '', 0], ['Cover letter', 'most significant grad school contributions', 0],
     ['Two letters', 'Kathryn and Philip?', 0], ['Submitted', '', 0] ] },
+  { id: 'ccbsb', group: 'rolling', c: 'var(--pink)', name: 'Flatiron CCB Statistical Biophysics', href: 'https://rin.io/flatiron/', meta: 'the mechanistic side: why the gain stays stuck high · posting dated 29 September 2026', slots: [
+    ['Find the deadline on the posting', '', 0], ['Research statement (with CCB synergies)', '', 0], ['Cover letter', '', 0], ['Letters', '', 0], ['Submitted', '', 0] ] },
+  { id: 'ccn', group: 'rolling', c: 'var(--orange)', name: 'Flatiron CCN', href: 'https://rin.io/flatiron/', meta: 'Center for Computational Neuroscience · rolling · start early September 2027', slots: [
+    ['Research statement (3 pages, relevance to CCN)', '', 0], ['Cover letter naming the research group(s)', 'Chklovskii, Clark, Pearson, Simoncelli, Tu, Williams', 0],
+    ['At least two letters', '', 0], ['Submitted', 'rolling, so sooner is better', 0] ] },
+  { id: 'sfi', group: 'next', c: 'var(--green)', name: 'Santa Fe Institute', meta: 'Complexity Postdoctoral Fellowship · up to 3 years in residence · 2027 cohort closed 30 September 2026 · PhD within 6 years of the deadline', slots: [
+    ['Watch for the next call', 'expected around September 2027', 0], ['Submitted', '', 0] ] },
   { id: 'nitmb', group: 'check', c: 'var(--orange)', name: 'NITMB', meta: 'MathJobs #28792 · date was 15 November', slots: [
     ['Check if still open', '', 0], ['Submitted', '', 0] ] },
   { id: 'f2f', group: 'janfeb', c: 'var(--lilac)', name: 'Simons Fellows-to-Faculty', meta: 'SFARI / SCPAB / SCENE (autism and neuroscience) · due 13 January 2027, 12 noon ET', slots: [
@@ -112,7 +125,7 @@ const CHEERS = ['let\'s go', 'warming up', 'ooh look at you', 'halfway, babe', '
 
 function render() {
   let total = 0, done = 0;
-  for (const g of ['sent', 'nov30', 'janfeb', 'check']) document.getElementById(g).innerHTML = '';
+  for (const g of ['sent', 'nov30', 'janfeb', 'rolling', 'check', 'next']) document.getElementById(g).innerHTML = '';
   APPS.forEach(a => {
     const card = document.createElement('section');
     card.className = 'card'; card.style.setProperty('--c', a.c);
